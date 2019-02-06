@@ -9,6 +9,7 @@ MediaPlayer::MediaPlayer(QWidget *parent) :
   _currentFolder(".")
 {
   ui->setupUi(this);
+  this->setDisabledMovie(true);
 }
 
 MediaPlayer::~MediaPlayer()
@@ -16,21 +17,23 @@ MediaPlayer::~MediaPlayer()
   delete ui;
 }
 
+/*
 void MediaPlayer::setDisabled(bool state)
 {
   ui->append->setDisabled(state);
   MediaPlayer::setDisabled(state);
 }
+*/
 
 void MediaPlayer::setDisabledMovie(bool state)
 {
-  ui->play->setEnabled(state);
-  ui->next->setEnabled(state);
-  ui->previous->setEnabled(state);
-  ui->faster->setEnabled(state);
-  ui->slower->setEnabled(state);
-  ui->repeat->setEnabled(state);
-  ui->record->setEnabled(state);
+  ui->play->setDisabled(state);
+  ui->next->setDisabled(state);
+  ui->previous->setDisabled(state);
+  ui->faster->setDisabled(state);
+  ui->slower->setDisabled(state);
+  ui->repeat->setDisabled(state);
+  ui->record->setDisabled(state);
 }
 
 void MediaPlayer::setPlay(bool state)
@@ -116,20 +119,22 @@ void MediaPlayer::on_repeat_clicked(bool checked)
     case None:
       _repeat = Repeat;
       ui->repeat->setIcon(QIcon(":/mplayer/icons/rotate-cw.svg"));
+      emit(repeat());
       break;
     case Repeat:
       ui->repeat->toggle();
       _repeat = Palindrome;
       ui->repeat->setIcon(QIcon(":/mplayer/icons/repeat.svg"));
+      emit(palindrome());
       break;
     case Palindrome:
       _repeat = None;
       ui->repeat->setIcon(QIcon(":/mplayer/icons/rotate-cw.svg"));
+      emit(norepeat());
       break;
     default:
       break;
     }
-  emit(repeat(_repeat));
 }
 
 void MediaPlayer::on_record_toggled(bool checked)
@@ -148,11 +153,11 @@ void MediaPlayer::on_record_clicked(bool checked)
 {
    if (checked)
      {
-       emit(record(true));
+       emit(record());
      }
    else
      {
-       emit(record(false));
+       emit(stopRecord());
      }
 }
 
@@ -205,7 +210,7 @@ void MediaPlayer::on_open_clicked()
 
 void MediaPlayer::on_append_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml) All (*)");
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)");
 
   if ( !fileNames.empty() )
     {

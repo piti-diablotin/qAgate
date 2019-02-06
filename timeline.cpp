@@ -1,5 +1,7 @@
 #include "timeline.h"
 #include "ui_timeline.h"
+#include <QDebug>
+#include <QKeyEvent>
 
 TimeLine::TimeLine(QWidget *parent) :
   QWidget(parent),
@@ -10,6 +12,7 @@ TimeLine::TimeLine(QWidget *parent) :
   _timeTotal(0)
 {
   ui->setupUi(this);
+  //this->set_splitter();
   ui->timeBegin->setMaximum(_timeTotal);
   ui->timeBegin->setValue(_timeBegin);
   ui->timeEnd->setMaximum(_timeTotal);
@@ -43,31 +46,32 @@ int TimeLine::time() const
 
 void TimeLine::on_timeBegin_valueChanged(int time)
 {
-  auto sizes = ui->splitter->sizes();
-  int total = sizes[0]+sizes[1]+sizes[2];
+  //auto sizes = ui->splitter->sizes();
+  //int total = sizes[0]+sizes[1]+sizes[2];
   if ( time >= _timeEnd ) return;
-  sizes[0] = total*time/_timeTotal;
-  sizes[1] = total-sizes[0]-sizes[2];
+  //sizes[0] = total*time/_timeTotal;
+  //sizes[1] = total-sizes[0]-sizes[2];
   _timeBegin = time;
   set_splitter();
-  emit(timeBeginChanged(_timeBegin));
+  emit(timeBeginChanged());
 }
 
 void TimeLine::on_slider_valueChanged(int value)
 {
-  emit(timeChanged(value));
+  _time = value;
+  emit(timeChanged());
 }
 
 void TimeLine::on_timeEnd_valueChanged(int time)
 {
-  auto sizes = ui->splitter->sizes();
-  int total = sizes[0]+sizes[1]+sizes[2];
+  //auto sizes = ui->splitter->sizes();
+  //int total = sizes[0]+sizes[1]+sizes[2];
   if ( time < _timeBegin && time >=_timeTotal ) return;
   _timeEnd = time;
-  sizes[2] = total*(_timeTotal-1-_timeEnd)/_timeTotal;
-  sizes[1] = total-sizes[0]-sizes[2];
+  //sizes[2] = total*(_timeTotal-1-_timeEnd)/_timeTotal;
+  //sizes[1] = total-sizes[0]-sizes[2];
   set_splitter();
-  emit(timeEndChanged(_timeEnd));
+  emit(timeEndChanged());
 }
 
 void TimeLine::on_splitter_splitterMoved(int pos, int index)
@@ -93,6 +97,7 @@ void TimeLine::on_splitter_splitterMoved(int pos, int index)
 
 void TimeLine::set_splitter()
 {
+  if (_timeTotal == 0) return;
   ui->timeEnd->setRange(0,_timeTotal-1);
   ui->timeBegin->setRange(0,_timeTotal-1);
   ui->slider->setRange(_timeBegin,_timeEnd);
@@ -121,13 +126,15 @@ void TimeLine::setTime(int time)
 
 void TimeLine::setTimeTotal(int time)
 {
+  if (time < 1) return;
   if (time <= _timeEnd) _timeEnd = time-1;
   if (time < _timeBegin) _timeBegin = time-1;
   if (time < _time) _time = time-1;
   _timeTotal = time;
-  TimeLine::setTimeBegin(_timeBegin);
-  TimeLine::setTimeEnd(_timeEnd);
-  TimeLine::setTime(_time);
+  set_splitter();
+  //TimeLine::setTimeBegin(_timeBegin);
+  //TimeLine::setTimeEnd(_timeEnd);
+  //TimeLine::setTime(_time);
 }
 
 void TimeLine::setTimes(int begin, int end, int time, int total)
@@ -144,6 +151,7 @@ void TimeLine::setTimes(int begin, int end, int time, int total)
   _timeBegin = begin;
   _timeEnd = end;
   _time = time;
+  set_splitter();
   TimeLine::setTimeBegin(begin);
   TimeLine::setTimeEnd(end);
   TimeLine::setTime(time);

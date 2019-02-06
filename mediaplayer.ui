@@ -185,10 +185,10 @@
    <item>
     <widget class="QToolButton" name="faster">
      <property name="toolTip">
-      <string>Speed up the movie</string>
+      <string>Speed up</string>
      </property>
      <property name="statusTip">
-      <string>Speed up the movie</string>
+      <string>Speed up</string>
      </property>
      <property name="whatsThis">
       <string>Speed up the movie</string>
@@ -448,7 +448,7 @@
        <normaloff>:/mplayer/icons/file-plus.svg</normaloff>:/mplayer/icons/file-plus.svg</iconset>
      </property>
      <property name="shortcut">
-      <string>Ctrl+A</string>
+      <string>Ctrl+Shift+A</string>
      </property>
      <property name="autoRaise">
       <bool>true</bool>

@@ -15,10 +15,8 @@ TEMPLATE = app
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
-DEFINES += QT_DEPRECATED_WARNINGS
-DEFINES += _NOEXCEPT=noexcept
-#DEFINES += DEFAULT_FONT='"/usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf"'
-#DEFINES += DEFAULT_FONT='$(fc-match -v UbuntuMono | grep file | sed 's/.*\"\(.*\)\".*/\1/')'
+DEFINES += QT_DEPRECATED_WARNING
+DEFINES += HAVE_CONFIG_H
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -31,19 +29,22 @@ SOURCES += \
         qagate.cpp \
     timeline.cpp \
     mediaplayer.cpp \
-    view.cpp
+    view.cpp \
+    commandline.cpp
 
 HEADERS += \
         qagate.h \
     timeline.h \
     mediaplayer.h \
-    view.h
+    view.h \
+    commandline.h
 
 FORMS += \
         qagate.ui \
     timeline.ui \
     mediaplayer.ui \
-    view.ui
+    view.ui \
+    commandline.ui
 
 RESOURCES += \
     qagate.qrc
@@ -55,3 +56,5 @@ else:unix: LIBS += -L$$PWD/../../../../usr/lib/ -lagate
 
 INCLUDEPATH += $$PWD/../../../../usr/include/agate
 DEPENDPATH += $$PWD/../../../../usr/include/agate
+
+INCLUDEPATH += /usr/include/freetype2/

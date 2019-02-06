@@ -24,20 +24,23 @@ private:
 signals:
   void play();
   void pause();
-  void repeat(RepeatMode);
+  void norepeat();
+  void repeat();
+  void palindrome();
   void next();
   void previous();
   void faster();
   void slower();
   void snapshot();
-  void record(bool);
+  void record();
+  void stopRecord();
   void open(QString);
   void append(QString);
   void zoomIn();
   void zoomOut();
 
 public slots:
-  void setDisabled(bool state);
+  //void setDisabled(bool state);
   void setDisabledMovie(bool state);
   void setPlay(bool state);
   void setRecord(bool state);

@@ -44,9 +44,9 @@ private:
   int _timeTotal;
 
 signals:
-  void timeBeginChanged(int);
-  void timeEndChanged(int);
-  void timeChanged(int);
+  void timeBeginChanged();
+  void timeEndChanged();
+  void timeChanged();
 };
 
 #endif // TIMELINE_H

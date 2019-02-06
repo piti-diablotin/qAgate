@@ -2,6 +2,7 @@
 #define QAGATE_H
 
 #include <QMainWindow>
+#include <QString>
 
 namespace Ui {
   class qAgate;
@@ -17,6 +18,14 @@ public:
 
 private:
   Ui::qAgate *ui;
+
+protected slots:
+  void manageSignal();
+  void manageSignal(QString filename);
+  void syncWithUserInput();
+
+signals:
+  void emitCommand(QString);
 };
 
 #endif // QAGATE_H
