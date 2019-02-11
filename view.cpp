@@ -27,6 +27,8 @@ View::View(QWidget *parent) :
   _mouseButtonLeft = 0;
   _mouseButtonRight = 1;
   _mouseButtonMiddle = 2;
+  connect(ui->commandLine,SIGNAL(goBackwards()),this,SLOT(backInHistory()));
+  connect(ui->commandLine,SIGNAL(goForwards()),this,SLOT(forwardInHistory()));
 }
 
 View::~View()
@@ -172,17 +174,17 @@ void View::timeOut()
 
 void View::backInHistory()
 {
-  if ( (_commandStackNo - 1) < _commandStack.size()) { // _commandStackNo is unsigend so if <0 it is apriori >> _commandStack.size()
-    _command = _commandStack[--_commandStackNo];
-    ui->commandLine->setText(QString::fromStdString(_command));
+  if ( (_commandStackNo-1) < _commandStack.size()) { // _commandStackNo is unsigend so if <0 it is apriori >> _commandStack.size()
+    auto tmp = _commandStack[--_commandStackNo];
+    ui->commandLine->setText(QString::fromStdString(tmp.substr(0,tmp.size()-1)));
     }
 }
 
 void View::forwardInHistory()
 {
   if ( (_commandStackNo+1) < _commandStack.size() ) {
-    _command = _commandStack[++_commandStackNo];
-    ui->commandLine->setText(QString::fromStdString(_command));
+    auto tmp = _commandStack[++_commandStackNo];
+    ui->commandLine->setText(QString::fromStdString(tmp.substr(0,tmp.size()-1)));
     }
 }
 
@@ -202,7 +204,7 @@ void View::processCommand(QString command, bool pop)
     while (_inputChar.size() > 0 ) _inputChar.pop();
   for ( int i = 0 ; i < command.size() ; ++i )
     _inputChar.push((unsigned int)command[i].toLatin1());
-  _inputChar.push((unsigned int)'\n');
+  if (command.startsWith(':')) _inputChar.push((unsigned int)'\n');
 }
 
 void View::mousePressEvent( QMouseEvent *mouseEvent ) {
@@ -322,6 +324,7 @@ void View::on_commandFocus_clicked()
   ui->commandLine->setReadOnly(false);
   ui->commandLine->setFocus();
   ui->commandLine->setText(":");
+  _commandStackNo = _commandStack.size();
 }
 
 void View::on_commandLine_returnPressed()

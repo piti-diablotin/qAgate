@@ -30,21 +30,26 @@ SOURCES += \
     timeline.cpp \
     mediaplayer.cpp \
     view.cpp \
-    commandline.cpp
+    commandline.cpp \
+    logger.cpp \
+    qostreamcatcher.cpp
 
 HEADERS += \
         qagate.h \
     timeline.h \
     mediaplayer.h \
     view.h \
-    commandline.h
+    commandline.h \
+    logger.h \
+    qostreamcatcher.h
 
 FORMS += \
         qagate.ui \
     timeline.ui \
     mediaplayer.ui \
     view.ui \
-    commandline.ui
+    commandline.ui \
+    logger.ui
 
 RESOURCES += \
     qagate.qrc
