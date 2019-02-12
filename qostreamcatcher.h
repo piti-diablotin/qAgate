@@ -20,12 +20,12 @@ private:
 
 public:
 
-  QOstreamCatcher(QWidget* parent);
+  explicit QOstreamCatcher(QWidget* parent);
   QString readAll() {return _data.readAll();}
 
 protected:
 
-  virtual int pubsync();
+  virtual int sync();
 
   virtual int_type overflow(basic_streambuf<char>::int_type v);
 

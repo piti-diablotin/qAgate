@@ -25,8 +25,8 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-        main.cpp \
-        qagate.cpp \
+    main.cpp \
+    qagate.cpp \
     timeline.cpp \
     mediaplayer.cpp \
     view.cpp \
@@ -35,7 +35,7 @@ SOURCES += \
     qostreamcatcher.cpp
 
 HEADERS += \
-        qagate.h \
+    qagate.h \
     timeline.h \
     mediaplayer.h \
     view.h \
@@ -44,7 +44,7 @@ HEADERS += \
     qostreamcatcher.h
 
 FORMS += \
-        qagate.ui \
+    qagate.ui \
     timeline.ui \
     mediaplayer.ui \
     view.ui \

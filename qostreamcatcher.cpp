@@ -10,10 +10,10 @@ QOstreamCatcher::QOstreamCatcher(QWidget* parent): QWidget(parent), streambuf(),
     setp( buffer, buffer + bufferSize - 1 );
 }
 
-int QOstreamCatcher::pubsync()
+int QOstreamCatcher::sync()
 {
   emit synchronized();
-  return streambuf::pubsync();
+  return streambuf::sync();
 }
 
 basic_streambuf<char>::int_type QOstreamCatcher::overflow(basic_streambuf<char>::int_type v)

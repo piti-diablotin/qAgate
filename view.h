@@ -4,6 +4,7 @@
 #include <QOpenGLWidget>
 #include <QOpenGLFunctions>
 #include <QTimer>
+#include <QRegExpValidator>
 #include "window/window.hpp"
 
 namespace Ui {
@@ -28,6 +29,7 @@ public:
   virtual void dragEnterEvent( QDragEnterEvent *dragEnterEvent );
   virtual void dropEvent( QDropEvent *dropEvent );
   virtual void setTitle(const std::string &title);
+  virtual void setSize(const int width, const int height);
   const std::map<std::string,bool>& optionBool() const;
   const std::map<std::string,float>& optionFloat() const;
   const std::map<std::string,int>& optionInt() const;
@@ -61,6 +63,7 @@ private slots:
 public slots:
   void stop();
   void start();
+  void setDebugMode(bool debug);
 
 signals:
   void fileOpened(QString);
@@ -77,6 +80,8 @@ private:
   static const size_t _maxKeys = 14;
   std::array<bool,_maxKeys> _inputKeys;
   double _wheelDelta;
+  QRegExpValidator _cmdValidator;
+  bool _debug;
 };
 
 #endif // VIEW_H

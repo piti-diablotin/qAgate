@@ -39,6 +39,9 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->view,SIGNAL(closeMe()),this,SLOT(close()));
   connect(ui->view,SIGNAL(userInput()),this,SLOT(syncWithUserInput()));
 
+  // logger
+  connect(ui->logger,SIGNAL(debugMode(bool)),ui->view,SLOT(setDebugMode(bool)));
+
   // Self
   connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
 }

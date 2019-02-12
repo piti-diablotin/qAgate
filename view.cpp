@@ -11,9 +11,11 @@ View::View(QWidget *parent) :
   _updateFromTimer(false),
   _timer(new QTimer(this)),
   _inputKeys({false}),
-  _wheelDelta(0)
+  _wheelDelta(0),
+  _cmdValidator(QRegExp("^:.*$"),this)
 {
   ui->setupUi(this);
+  ui->commandLine->setValidator(&_cmdValidator);
   int fps = 60;
   int seconde = 1000; // ms
   int timerInterval = seconde/fps;
@@ -205,6 +207,10 @@ void View::processCommand(QString command, bool pop)
   for ( int i = 0 ; i < command.size() ; ++i )
     _inputChar.push((unsigned int)command[i].toLatin1());
   if (command.startsWith(':')) _inputChar.push((unsigned int)'\n');
+  if (_debug)
+    {
+      std::clog << command.toStdString() << std::endl;
+    }
 }
 
 void View::mousePressEvent( QMouseEvent *mouseEvent ) {
@@ -312,6 +318,19 @@ void View::setTitle(const std::string &title)
   emit(fileOpened(QString::fromStdString(title)));
 }
 
+void View::setSize(const int width, const int height)
+{
+  if (width==_width && height==_height) return;
+  int dw = width-_width;
+  int dh = height-_height;
+  QWidget* main = this;
+  while (main->parentWidget() != nullptr)
+    main = main->parentWidget();
+  auto msize = main->size();
+  msize+=QSize(dw,dh);
+  main->resize(msize.width(),msize.height());
+}
+
 const std::map<std::string, bool> &View::optionBool() const {return _optionb;}
 
 const std::map<std::string, float> &View::optionFloat() const  {return _optionf;}
@@ -343,3 +362,8 @@ void View::on_commandLine_cleared()
 void View::stop() { _timer->stop(); while ( !_inputChar.empty() ) _inputChar.pop();}
 
 void View::start() { _timer->start();}
+
+void View::setDebugMode(bool debug)
+{
+  _debug = debug;
+}

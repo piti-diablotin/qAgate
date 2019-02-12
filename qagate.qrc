@@ -16,4 +16,11 @@
         <file>icons/file.svg</file>
         <file>icons/file-plus.svg</file>
     </qresource>
+    <qresource prefix="/logger">
+        <file>icons/alert-triangle.svg</file>
+        <file>icons/alert-circle.svg</file>
+        <file>icons/info.svg</file>
+        <file>icons/chevrons-down.svg</file>
+        <file>icons/chevrons-right.svg</file>
+    </qresource>
 </RCC>
