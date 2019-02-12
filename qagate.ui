@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>624</width>
-    <height>555</height>
+    <width>768</width>
+    <height>768</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,6 +27,37 @@
     </sizepolicy>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <widget class="Settings" name="settings">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="icon">
+        <iconset resource="qagate.qrc">
+         <normaloff>:/settings/icons/settings.svg</normaloff>:/settings/icons/settings.svg</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Settings</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>General settings</string>
+       </attribute>
+       <attribute name="whatsThis">
+        <string>General settings</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
     <item>
      <widget class="QSplitter" name="splitter">
       <property name="frameShape">
@@ -170,7 +201,15 @@
    <header>logger.h</header>
    <container>1</container>
   </customwidget>
+  <customwidget>
+   <class>Settings</class>
+   <extends>QWidget</extends>
+   <header>settings.h</header>
+   <container>1</container>
+  </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="qagate.qrc"/>
+ </resources>
  <connections/>
 </ui>

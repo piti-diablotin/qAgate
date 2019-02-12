@@ -23,4 +23,7 @@
         <file>icons/chevrons-down.svg</file>
         <file>icons/chevrons-right.svg</file>
     </qresource>
+    <qresource prefix="/settings">
+        <file>icons/settings.svg</file>
+    </qresource>
 </RCC>

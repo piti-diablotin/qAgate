@@ -32,7 +32,8 @@ SOURCES += \
     view.cpp \
     commandline.cpp \
     logger.cpp \
-    qostreamcatcher.cpp
+    qostreamcatcher.cpp \
+    settings.cpp
 
 HEADERS += \
     qagate.h \
@@ -41,7 +42,8 @@ HEADERS += \
     view.h \
     commandline.h \
     logger.h \
-    qostreamcatcher.h
+    qostreamcatcher.h \
+    settings.h
 
 FORMS += \
     qagate.ui \
@@ -49,7 +51,8 @@ FORMS += \
     mediaplayer.ui \
     view.ui \
     commandline.ui \
-    logger.ui
+    logger.ui \
+    settings.ui
 
 RESOURCES += \
     qagate.qrc
