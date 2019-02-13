@@ -1,7 +1,7 @@
 #ifndef VIEW_H
 
 #include <QtOpenGL>
-#include <QOpenGLWidget>
+#include <QGLWidget>
 #include <QOpenGLFunctions>
 #include <QTimer>
 #include <QRegExpValidator>
@@ -11,7 +11,7 @@ namespace Ui {
   class View;
 }
 
-class View : public QOpenGLWidget, protected QOpenGLFunctions, public Window
+class View : public QGLWidget, protected QOpenGLFunctions, public Window
 {
   Q_OBJECT
 

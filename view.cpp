@@ -5,7 +5,7 @@
 #include <QDebug>
 
 View::View(QWidget *parent) :
-  QOpenGLWidget(parent),
+  QGLWidget(parent),
   Window(),
   ui(new Ui::View),
   _updateFromTimer(false),
@@ -43,7 +43,7 @@ void View::initializeGL()
   Window::beginGl();
   _arrow.reset(new TriArrow(true));
   _canvas.reset(new CanvasPos(true));
-  this->setUpdateBehavior(QOpenGLWidget::PartialUpdate);
+  //this->setUpdateBehavior(QOpenGLWidget::PartialUpdate);
 }
 
 void View::resizeGL(int width, int height)
