@@ -1,7 +1,14 @@
 #ifndef VIEW_H
 
+#include <QtGlobal>
 #include <QtOpenGL>
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+#include <QOpenGLWidget>
+#else
 #include <QGLWidget>
+#endif
+
 #include <QOpenGLFunctions>
 #include <QTimer>
 #include <QRegExpValidator>
@@ -11,7 +18,11 @@ namespace Ui {
   class View;
 }
 
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+class View : public QOpenGLWidget, protected QOpenGLFunctions, public Window
+#else
 class View : public QGLWidget, protected QOpenGLFunctions, public Window
+#endif
 {
   Q_OBJECT
 

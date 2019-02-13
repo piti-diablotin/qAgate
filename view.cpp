@@ -5,7 +5,11 @@
 #include <QDebug>
 
 View::View(QWidget *parent) :
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+  QOpenGLWidget(parent),
+#else
   QGLWidget(parent),
+#endif
   Window(),
   ui(new Ui::View),
   _updateFromTimer(false),
@@ -43,7 +47,9 @@ void View::initializeGL()
   Window::beginGl();
   _arrow.reset(new TriArrow(true));
   _canvas.reset(new CanvasPos(true));
-  //this->setUpdateBehavior(QOpenGLWidget::PartialUpdate);
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+  this->setUpdateBehavior(QOpenGLWidget::PartialUpdate);
+#endif
 }
 
 void View::resizeGL(int width, int height)
