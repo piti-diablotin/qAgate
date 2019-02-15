@@ -18,6 +18,7 @@ public:
 
 private:
   Ui::qAgate *ui;
+  bool _tabHiden;
 
 protected slots:
   void manageSignal();
@@ -26,6 +27,9 @@ protected slots:
 
 signals:
   void emitCommand(QString);
+private slots:
+  void on_tabWidget_tabBarClicked(int index);
+  void on_tabWidget_currentChanged(int index);
 };
 
 #endif // QAGATE_H

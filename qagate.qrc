@@ -25,5 +25,11 @@
     </qresource>
     <qresource prefix="/settings">
         <file>icons/settings.svg</file>
+        <file>icons/mesh.svg</file>
+        <file>icons/perspective.svg</file>
+        <file>icons/angles.svg</file>
+        <file>icons/aliasing.svg</file>
+        <file>icons/anti-aliasing.svg</file>
+        <file>icons/sun.svg</file>
     </qresource>
 </RCC>

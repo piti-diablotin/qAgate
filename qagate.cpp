@@ -7,7 +7,8 @@
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
-  ui(new Ui::qAgate)
+  ui(new Ui::qAgate),
+  _tabHiden(false)
 {
   ui->setupUi(this);
   // MediaPlayer
@@ -132,4 +133,36 @@ void qAgate::syncWithUserInput()
   int ntime = std::max(canvas->ntime(),1);
   ui->mediaPlayer->setDisabledMovie(ntime<2);
   ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+}
+
+void qAgate::on_tabWidget_tabBarClicked(int index)
+{
+   if (index == ui->tabWidget->currentIndex())
+     {
+       _tabHiden ?
+             ui->tabWidget->currentWidget()->show()
+           : ui->tabWidget->currentWidget()->hide();
+       _tabHiden = !_tabHiden;
+       if (_tabHiden)
+         {
+           for (int i = 0; i < ui->tabWidget->count(); ++i)
+             ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+         }
+       else
+         {
+           for (int i = 0; i < ui->tabWidget->count(); ++i)
+             ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+         }
+     }
+}
+
+void qAgate::on_tabWidget_currentChanged(int index)
+{
+  if (_tabHiden)
+    {
+      for (int i = 0; i < ui->tabWidget->count(); ++i)
+        ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+      _tabHiden = !_tabHiden;
+    }
+  ui->tabWidget->currentWidget()->show();
 }
