@@ -34,7 +34,8 @@ SOURCES += \
     commandline.cpp \
     logger.cpp \
     qostreamcatcher.cpp \
-    settings.cpp
+    settings.cpp \
+    abstracttab.cpp
 
 HEADERS += \
     qagate.h \
@@ -44,7 +45,8 @@ HEADERS += \
     commandline.h \
     logger.h \
     qostreamcatcher.h \
-    settings.h
+    settings.h \
+    abstracttab.h
 
 FORMS += \
     qagate.ui \

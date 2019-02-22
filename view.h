@@ -1,4 +1,5 @@
 #ifndef VIEW_H
+#define VIEW_H
 
 #include <QtGlobal>
 #include <QtOpenGL>
@@ -44,6 +45,7 @@ public:
   const std::map<std::string,bool>& optionBool() const;
   const std::map<std::string,float>& optionFloat() const;
   const std::map<std::string,int>& optionInt() const;
+  void imageSaverInfo(ImageSaver::ImageType& format, int& quality, ImageSuffix& suffix) const;
 
 protected:
   virtual bool getChar(unsigned key);
@@ -83,6 +85,7 @@ signals:
   void updated();
   void closeMe();
   void closeAll();
+  void newSize(int width,int height);
 
 private:
   Ui::View *ui;

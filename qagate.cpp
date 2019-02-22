@@ -4,6 +4,7 @@
 #include <QMetaMethod>
 #include <QDebug>
 #include <QMap>
+#include "abstracttab.h"
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
@@ -39,9 +40,19 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->view,SIGNAL(updated()),this,SLOT(manageSignal()));
   connect(ui->view,SIGNAL(closeMe()),this,SLOT(close()));
   connect(ui->view,SIGNAL(userInput()),this,SLOT(syncWithUserInput()));
+  connect(ui->view,SIGNAL(newSize(int,int)),ui->settings,SLOT(updateDisplaySize(int,int)));
 
   // logger
   connect(ui->logger,SIGNAL(debugMode(bool)),ui->view,SLOT(setDebugMode(bool)));
+
+  // settings
+  connect(ui->settings,SIGNAL(sendCommand(QString)),this,SLOT(manageSignal(QString)));
+  connect(ui->settings,SIGNAL(switchFilling()),this,SLOT(manageSignal()));
+  connect(ui->settings,SIGNAL(switchLight()),this,SLOT(manageSignal()));
+  connect(ui->settings,SIGNAL(switchPerspective()),this,SLOT(manageSignal()));
+  connect(ui->settings,SIGNAL(switchAA()),this,SLOT(manageSignal()));
+  connect(ui->settings,SIGNAL(switchAngles()),this,SLOT(manageSignal()));
+  connect(ui->settings,SIGNAL(switchTimeInfo()),this,SLOT(manageSignal()));
 
   // Self
   connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
@@ -72,7 +83,13 @@ void qAgate::manageSignal()
     {"stopRecord", "m"},
     {"timeBeginChanged", ":tbegin "},
     {"timeEndChanged", ":tend "},
-    {"timeChanged", ":"}
+    {"timeChanged", ":"},
+    {"switchFilling", "o"},
+    {"switchLight","l"},
+    {"switchPerspective","p"},
+    {"switchAA","A"},
+    {"switchAngles","a"},
+    {"switchTimeInfo","t"}
   };
   if (mapping.contains(signal))
     {
@@ -87,6 +104,7 @@ void qAgate::manageSignal()
       auto canvas = ui->view->canvas();
       ui->mediaPlayer->setPlay(!canvas->isPaused());
       ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+      this->updateTab();
     }
 }
 
@@ -104,11 +122,15 @@ void qAgate::manageSignal(QString filename)
       command = mapping[signal]+" "+filename;
       emit(emitCommand(command));
     }
-  if (signal=="fileOpened")
+  else if (signal=="fileOpened")
     {
       ui->mediaPlayer->setDisabledAppend(false);
       this->setWindowTitle(filename+" - qAgate");
       ui->timeLine->setEnabled(true);
+    }
+  else if (signal == "sendCommand")
+    {
+      emit(emitCommand(filename));
     }
 
 }
@@ -133,6 +155,11 @@ void qAgate::syncWithUserInput()
   int ntime = std::max(canvas->ntime(),1);
   ui->mediaPlayer->setDisabledMovie(ntime<2);
   ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+}
+
+void qAgate::updateTab()
+{
+  dynamic_cast<AbstractTab*>(ui->tabWidget->currentWidget())->update(*ui->view);
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)
@@ -165,4 +192,5 @@ void qAgate::on_tabWidget_currentChanged(int index)
       _tabHiden = !_tabHiden;
     }
   ui->tabWidget->currentWidget()->show();
+  this->updateTab();
 }

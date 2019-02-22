@@ -31,5 +31,7 @@
         <file>icons/aliasing.svg</file>
         <file>icons/anti-aliasing.svg</file>
         <file>icons/sun.svg</file>
+        <file>icons/background.svg</file>
+        <file>icons/foreground.svg</file>
     </qresource>
 </RCC>

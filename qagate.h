@@ -24,6 +24,7 @@ protected slots:
   void manageSignal();
   void manageSignal(QString filename);
   void syncWithUserInput();
+  void updateTab();
 
 signals:
   void emitCommand(QString);

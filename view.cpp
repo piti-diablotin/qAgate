@@ -16,7 +16,8 @@ View::View(QWidget *parent) :
   _timer(new QTimer(this)),
   _inputKeys({false}),
   _wheelDelta(0),
-  _cmdValidator(QRegExp("^:.*$"),this)
+  _cmdValidator(QRegExp("^:.*$"),this),
+  _debug(false)
 {
   ui->setupUi(this);
   ui->commandLine->setValidator(&_cmdValidator);
@@ -56,6 +57,7 @@ void View::resizeGL(int width, int height)
 {
   _width = width;
   _height = height;
+  emit(newSize(_width,_height));
 }
 
 void View::paintGL()
@@ -335,6 +337,7 @@ void View::setSize(const int width, const int height)
   auto msize = main->size();
   msize+=QSize(dw,dh);
   main->resize(msize.width(),msize.height());
+  emit(newSize(width,height));
 }
 
 const std::map<std::string, bool> &View::optionBool() const {return _optionb;}
@@ -342,6 +345,13 @@ const std::map<std::string, bool> &View::optionBool() const {return _optionb;}
 const std::map<std::string, float> &View::optionFloat() const  {return _optionf;}
 
 const std::map<std::string, int> &View::optionInt() const {return _optioni;}
+
+void View::imageSaverInfo(ImageSaver::ImageType &format, int &quality, Window::ImageSuffix &suffix) const
+{
+  format = _image.getFormat();
+  quality = _image.getQuality();
+  suffix = _imageSuffixMode;
+}
 
 void View::on_commandFocus_clicked()
 {
