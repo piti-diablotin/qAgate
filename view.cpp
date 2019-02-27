@@ -229,6 +229,7 @@ void View::mousePressEvent( QMouseEvent *mouseEvent ) {
     case Qt::LeftButton:
       _inputKeys[_mouseButtonLeft] = true;
       this->setCursor(QCursor(Qt::ClosedHandCursor));
+      ui->commandFocus->setFocus();
       break;
     case Qt::RightButton:
       _inputKeys[_mouseButtonRight] = true;
