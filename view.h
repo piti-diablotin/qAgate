@@ -42,9 +42,8 @@ public:
   virtual void dropEvent( QDropEvent *dropEvent );
   virtual void setTitle(const std::string &title);
   virtual void setSize(const int width, const int height);
-  const std::map<std::string,bool>& optionBool() const;
-  const std::map<std::string,float>& optionFloat() const;
-  const std::map<std::string,int>& optionInt() const;
+  template<typename T>
+  T option(QString key);
   void imageSaverInfo(ImageSaver::ImageType& format, int& quality, ImageSuffix& suffix) const;
 
 protected:
@@ -96,6 +95,7 @@ private:
   double _wheelDelta;
   QRegExpValidator _cmdValidator;
   bool _debug;
+  bool _fromCommandLine;
 };
 
 #endif // VIEW_H

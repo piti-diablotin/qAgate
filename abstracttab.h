@@ -1,17 +1,23 @@
 #ifndef ABSTRACTTAB_H
 #define ABSTRACTTAB_H
 
+#include <QWidget>
 #include "view.h"
 
-class AbstractTab
+class AbstractTab : public QWidget
 {
+  Q_OBJECT
+
 private:
-  bool _autoUpdate;
+
 protected:
-  virtual void updateStatus(const View& view)=0;
+  bool _autoUpdate;
+  virtual void updateStatus(View* view)=0;
+
 public:
-  AbstractTab();
-  void update(const View &view);
+  explicit AbstractTab(QWidget* parent);
+  void update(View* view);
+  virtual void plugActions(QWidget* widget);
 };
 
 #endif // ABSTRACTTAB_H

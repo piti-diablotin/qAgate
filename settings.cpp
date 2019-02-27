@@ -1,12 +1,40 @@
 #include "settings.h"
 #include "ui_settings.h"
+#include <QFileDialog>
+#include "canvas/canvaspos.hpp"
+#include "mendeleev.h"
 
 Settings::Settings(QWidget *parent) :
-  QWidget(parent),
+  AbstractTab(parent),
   ui(new Ui::Settings),
-  _autoUpdate(false)
+  _bondRadiusUnit(UnitConverter::bohr),
+  _mendeleev(this)
 {
   ui->setupUi(this);
+  ui->angles->setDefaultAction(ui->actionAngles);
+  ui->antialiasing->setDefaultAction(ui->actionAA);
+  ui->filling->setDefaultAction(ui->actionFilling);
+  ui->light->setDefaultAction(ui->actionLight);
+  ui->perspective->setDefaultAction(ui->actionPerspective);
+  ui->time->setDefaultAction(ui->actionTime);
+  ui->mendeleev->setDefaultAction(ui->actionMendeleev);
+
+  ui->actionAngles->setChecked(true);
+  ui->actionAA->setChecked(true);
+  ui->actionFilling->setChecked(true);
+  ui->actionLight->setChecked(true);
+  ui->actionPerspective->setChecked(true);
+  ui->actionTime->setChecked(true);
+
+  this->addAction(ui->actionAA);
+  this->addAction(ui->actionAngles);
+  this->addAction(ui->actionFilling);
+  this->addAction(ui->actionLight);
+  this->addAction(ui->actionPerspective);
+  this->addAction(ui->actionTime);
+  this->addAction(ui->actionMendeleev);
+
+  connect(&_mendeleev,SIGNAL(accepted()),this,SLOT(updateMendeleev()));
 }
 
 Settings::~Settings()
@@ -14,16 +42,43 @@ Settings::~Settings()
   delete ui;
 }
 
-void Settings::updateStatus(const View &view)
+void Settings::updateStatus(View* view)
 {
 // Images
-  ui->format;
-  ui->suffix;
-  ui->quality;
+  ImageSaver::ImageType format;
+  int quality;
+  View::ImageSuffix suffix;
+  view->imageSaverInfo(format,quality,suffix);
+  ui->format->setCurrentIndex((int)format);
+  ui->suffix->setCurrentIndex((int)suffix);
+  ui->quality->setValue(quality);
 // OpenGL
-  ui->ndiv;
+  ui->ndiv->setValue(view->canvas()->ndiv());
 //display
-  ui->size;
+  ui->width->setValue(view->width());
+  ui->height->setValue(view->height());
+  try
+  {
+    ui->axis->setChecked(view->option<bool>("axis"));
+  }
+  catch(...){;}
+  try
+  {
+    ui->size->setValue(view->option<int>("fontSize"));
+  }
+  catch(...){;}
+// Atoms
+  double rad, factor;
+  CanvasPos* canvas;
+  if ((canvas = dynamic_cast<CanvasPos*>(view->canvas())))
+    {
+      canvas->getBondInfo(rad,factor);
+      ui->bond->setValue(factor);
+      UnitConverter tmp = _bondRadiusUnit;
+      tmp.rebase((UnitConverter::bohr));
+      ui->bondRadius->setValue(rad*_bondRadiusUnit);
+      ui->bond->setValue(factor);
+    }
 }
 
 void Settings::updateDisplaySize(int width, int height)
@@ -34,27 +89,27 @@ void Settings::updateDisplaySize(int width, int height)
   _autoUpdate = false;
 }
 
-void Settings::on_perspective_clicked()
+void Settings::on_actionPerspective_triggered()
 {
   emit(switchPerspective());
 }
 
-void Settings::on_light_clicked()
+void Settings::on_actionLight_triggered()
 {
    emit(switchLight());
 }
 
-void Settings::on_filling_clicked()
+void Settings::on_actionFilling_triggered()
 {
   emit(switchFilling());
 }
 
-void Settings::on_antialiasing_clicked()
+void Settings::on_actionAA_triggered()
 {
    emit(switchAA());
 }
 
-void Settings::on_angles_clicked()
+void Settings::on_actionAngles_triggered()
 {
    emit(switchAngles()) ;
 }
@@ -62,10 +117,117 @@ void Settings::on_angles_clicked()
 void Settings::on_ndiv_valueChanged(int arg1)
 {
   if (!_autoUpdate) emit(sendCommand(":div "+QString::number(arg1)));
-
 }
 
 void Settings::on_format_currentIndexChanged(const QString &arg1)
 {
   if (!_autoUpdate) emit(sendCommand(":image_format "+arg1));
+}
+
+void Settings::on_actionTime_triggered()
+{
+  emit(switchTimeInfo());
+}
+
+void Settings::on_suffix_currentIndexChanged(const QString &arg1)
+{
+  if (!_autoUpdate) emit(sendCommand(":image_suffix "+arg1));
+}
+
+void Settings::on_quality_valueChanged(const QString &arg1)
+{
+  if (!_autoUpdate) emit(sendCommand(":image_quality "+arg1));
+}
+
+void Settings::on_size_valueChanged(const QString &arg1)
+{
+   if (!_autoUpdate) emit(sendCommand(":fontsize "+arg1));
+}
+
+void Settings::on_ndiv_valueChanged(const QString &arg1)
+{
+   if (!_autoUpdate) emit(sendCommand(":division "+arg1));
+}
+
+void Settings::on_background_clicked()
+{
+  QColor color(0,0,0);
+  color = QColorDialog::getColor(color,this,tr("Background color"),QColorDialog::DontUseNativeDialog);
+  QString command = ":background " + QString::number(color.red())
+      + " " + QString::number(color.green())
+      + " " + QString::number(color.blue());
+  emit(sendCommand(command));
+}
+
+void Settings::on_foreground_clicked()
+{
+  QColor color(0,0,0);
+  color = QColorDialog::getColor(color,this,tr("Foreground color"),QColorDialog::DontUseNativeDialog);
+  QString command = ":foreground " + QString::number(color.red())
+      + " " + QString::number(color.green())
+      + " " + QString::number(color.blue());
+  emit(sendCommand(command));
+}
+
+void Settings::on_axis_clicked()
+{
+  emit(sendCommand(":axis"));
+}
+/*
+void Settings::on_width_valueChanged(const QString &arg1)
+{
+   if (!_autoUpdate) emit(sendCommand(":width "+arg1));
+}
+
+void Settings::on_height_valueChanged(const QString &arg1)
+{
+   if (!_autoUpdate) emit(sendCommand(":height "+arg1));
+}
+i*/
+void Settings::on_width_editingFinished()
+{
+  if (!_autoUpdate) emit(sendCommand(":width "+QString::number(ui->width->value())));
+}
+
+void Settings::on_height_editingFinished()
+{
+  if (!_autoUpdate) emit(sendCommand(":height "+QString::number(ui->height->value())));
+}
+
+void Settings::on_bond_valueChanged(double arg1)
+{
+   if (!_autoUpdate) emit(sendCommand(":bond "+QString::number(arg1)));
+}
+
+void Settings::on_bondRadius_valueChanged(double arg1)
+{
+  if (!_autoUpdate)
+    {
+      double radBohr = arg1/_bondRadiusUnit;
+      emit(sendCommand(":rad bond "+QString::number(radBohr)));
+    }
+}
+
+void Settings::on_comboBox_currentIndexChanged(const QString &arg1)
+{
+    UnitConverter newUnit = UnitConverter::getFromString(arg1.toStdString());
+    newUnit.rebase(UnitConverter::bohr);
+    double rad = ui->bondRadius->value()/_bondRadiusUnit*newUnit;
+    _bondRadiusUnit = newUnit;
+    ui->bondRadius->setValue(rad);
+}
+
+void Settings::on_actionMendeleev_triggered()
+{
+  _mendeleev.build();
+  _mendeleev.show();
+}
+
+void Settings::updateMendeleev()
+{
+  QStringList modifs = _mendeleev.modifications();
+  for ( auto it = modifs.begin(); it != modifs.end(); ++it)
+    {
+      emit(sendCommand(*it,false));
+    }
 }

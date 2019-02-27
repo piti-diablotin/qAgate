@@ -105,7 +105,7 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
       <item>
        <widget class="QLabel" name="console">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -122,6 +122,19 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
        </widget>
       </item>
       <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
        <widget class="QCheckBox" name="debug">
         <property name="toolTip">
          <string>Debug mode</string>
@@ -134,6 +147,58 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
         </property>
         <property name="text">
          <string>Debug</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="trash">
+        <property name="toolTip">
+         <string>Clear console</string>
+        </property>
+        <property name="statusTip">
+         <string>Clear console</string>
+        </property>
+        <property name="whatsThis">
+         <string>Clear console</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/logger/icons/trash-2.svg</normaloff>:/logger/icons/trash-2.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+Alt+C</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="copy">
+        <property name="toolTip">
+         <string>Copy content to clipboard</string>
+        </property>
+        <property name="statusTip">
+         <string>Copy content to clipboard</string>
+        </property>
+        <property name="whatsThis">
+         <string>Copy content to clipboard</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/logger/icons/copy.svg</normaloff>:/logger/icons/copy.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+Shift+C</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -227,6 +292,8 @@ background: url(:/logger/icons/alert-circle.svg) no-repeat;
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="qagate.qrc"/>
+ </resources>
  <connections/>
 </ui>

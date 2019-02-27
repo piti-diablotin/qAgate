@@ -35,7 +35,9 @@ SOURCES += \
     logger.cpp \
     qostreamcatcher.cpp \
     settings.cpp \
-    abstracttab.cpp
+    abstracttab.cpp \
+    mendeleev.cpp \
+    atomicdata.cpp
 
 HEADERS += \
     qagate.h \
@@ -46,7 +48,9 @@ HEADERS += \
     logger.h \
     qostreamcatcher.h \
     settings.h \
-    abstracttab.h
+    abstracttab.h \
+    mendeleev.h \
+    atomicdata.h
 
 FORMS += \
     qagate.ui \
@@ -55,7 +59,9 @@ FORMS += \
     view.ui \
     commandline.ui \
     logger.ui \
-    settings.ui
+    settings.ui \
+    mendeleev.ui \
+    atomicdata.ui
 
 RESOURCES += \
     qagate.qrc

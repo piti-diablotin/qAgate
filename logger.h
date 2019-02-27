@@ -24,6 +24,11 @@ private slots:
 
   void on_debug_toggled(bool checked);
 
+  void on_trash_clicked();
+
+  void on_copy_clicked();
+  virtual void mousePressEvent(QMouseEvent* mouseEvent);
+
 private:
   Ui::Logger *ui;
   bool _isRead;
@@ -34,6 +39,7 @@ private:
 
  signals:
   void debugMode(bool debug);
+  void copied(QString,int);
 };
 
 #endif // LOGGER_H

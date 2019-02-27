@@ -17,7 +17,8 @@ View::View(QWidget *parent) :
   _inputKeys({false}),
   _wheelDelta(0),
   _cmdValidator(QRegExp("^:.*$"),this),
-  _debug(false)
+  _debug(false),
+  _fromCommandLine(false)
 {
   ui->setupUi(this);
   ui->commandLine->setValidator(&_cmdValidator);
@@ -36,6 +37,7 @@ View::View(QWidget *parent) :
   _mouseButtonMiddle = 2;
   connect(ui->commandLine,SIGNAL(goBackwards()),this,SLOT(backInHistory()));
   connect(ui->commandLine,SIGNAL(goForwards()),this,SLOT(forwardInHistory()));
+  _canvas.reset(new CanvasPos(true));
 }
 
 View::~View()
@@ -47,7 +49,6 @@ void View::initializeGL()
 {
   Window::beginGl();
   _arrow.reset(new TriArrow(true));
-  _canvas.reset(new CanvasPos(true));
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
   this->setUpdateBehavior(QOpenGLWidget::PartialUpdate);
 #endif
@@ -163,7 +164,8 @@ bool View::userInput(std::stringstream &info)
           + QString::number(_background[1])+","
           + QString::number(_background[2])+",0); }");
     }
-  if (newAction) emit(userInput());
+  if (newAction && _modeMouse != mode_mouse && _fromCommandLine) emit(userInput());
+  _fromCommandLine = false;
   ui->infoLine->setText(QString::fromStdString(info.str()));
   return newAction;
 }
@@ -337,14 +339,46 @@ void View::setSize(const int width, const int height)
   auto msize = main->size();
   msize+=QSize(dw,dh);
   main->resize(msize.width(),msize.height());
-  emit(newSize(width,height));
+  emit(newSize(_width,_height));
 }
 
-const std::map<std::string, bool> &View::optionBool() const {return _optionb;}
+template<>
+bool View::option(QString key)
+{
+  try
+  {
 
-const std::map<std::string, float> &View::optionFloat() const  {return _optionf;}
+    return _optionb[key.toStdString()];
+  }
+  catch (...)
+  {
+    throw EXCEPTION("key " + key.toStdString()+ " does not exit",ERRDIV);
+  }
+}
 
-const std::map<std::string, int> &View::optionInt() const {return _optioni;}
+template<>
+float View::option(QString key)
+{
+  try
+  {
+    return _optionf[key.toStdString()];
+  }
+  catch (...)
+  {
+    throw EXCEPTION("key " + key.toStdString()+ " does not exit",ERRDIV);
+  }
+}
+
+template<>
+int View::option(QString key)
+{
+  auto it = _optioni.find(key.toStdString());
+  if (it == _optioni.end() )
+    throw EXCEPTION("key " + key.toStdString()+ " does not exit",ERRDIV);
+  else
+    return it->second;
+  return 0;
+}
 
 void View::imageSaverInfo(ImageSaver::ImageType &format, int &quality, Window::ImageSuffix &suffix) const
 {
@@ -365,6 +399,7 @@ void View::on_commandFocus_clicked()
 void View::on_commandLine_returnPressed()
 {
   QString command = ui->commandLine->text();
+  _fromCommandLine = true;
   this->processCommand(command);
   ui->commandLine->clear();
 }

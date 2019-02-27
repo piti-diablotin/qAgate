@@ -4,6 +4,7 @@
 #include <QMetaMethod>
 #include "base/exception.hpp"
 #include "base/utils.hpp"
+#include <QClipboard>
 
 Logger::Logger(QWidget *parent) :
   QWidget(parent),
@@ -107,4 +108,21 @@ void Logger::on_debug_toggled(bool checked)
   if (checked) utils::dumpConfig(std::clog);
   Exception::setVerbosity(checked?VDEBUG:5);
   emit(debugMode(checked));
+}
+
+void Logger::on_trash_clicked()
+{
+  ui->logger->clear();
+}
+
+void Logger::on_copy_clicked()
+{
+   QApplication::clipboard()->setText(ui->logger->toPlainText());
+   emit(copied(tr("Content copied to clipboard"),2000));
+}
+
+void Logger::mousePressEvent(QMouseEvent *mouseEvent)
+{
+  if (mouseEvent->button() == Qt::LeftButton)
+    ui->more->toggle();
 }

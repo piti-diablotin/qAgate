@@ -12,6 +12,7 @@ qAgate::qAgate(QWidget *parent) :
   _tabHiden(false)
 {
   ui->setupUi(this);
+  ui->settings->plugActions(this);
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(pause()),this,SLOT(manageSignal()));
@@ -44,9 +45,10 @@ qAgate::qAgate(QWidget *parent) :
 
   // logger
   connect(ui->logger,SIGNAL(debugMode(bool)),ui->view,SLOT(setDebugMode(bool)));
+  connect(ui->logger,SIGNAL(copied(QString,int)),ui->statusBar,SLOT(showMessage(QString,int)));
 
   // settings
-  connect(ui->settings,SIGNAL(sendCommand(QString)),this,SLOT(manageSignal(QString)));
+  connect(ui->settings,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
   connect(ui->settings,SIGNAL(switchFilling()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchLight()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchPerspective()),this,SLOT(manageSignal()));
@@ -56,6 +58,7 @@ qAgate::qAgate(QWidget *parent) :
 
   // Self
   connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
+  this->updateTab();
 }
 
 qAgate::~qAgate()
@@ -104,7 +107,6 @@ void qAgate::manageSignal()
       auto canvas = ui->view->canvas();
       ui->mediaPlayer->setPlay(!canvas->isPaused());
       ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
-      this->updateTab();
     }
 }
 
@@ -137,6 +139,7 @@ void qAgate::manageSignal(QString filename)
 
 void qAgate::syncWithUserInput()
 {
+  this->updateTab();
   if (ui->view->canvas() == nullptr) return;
   auto canvas = ui->view->canvas();
   MediaPlayer::RepeatMode repeat;
@@ -159,7 +162,7 @@ void qAgate::syncWithUserInput()
 
 void qAgate::updateTab()
 {
-  dynamic_cast<AbstractTab*>(ui->tabWidget->currentWidget())->update(*ui->view);
+  dynamic_cast<AbstractTab*>(ui->tabWidget->currentWidget())->update(ui->view);
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)

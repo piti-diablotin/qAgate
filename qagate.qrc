@@ -22,6 +22,8 @@
         <file>icons/info.svg</file>
         <file>icons/chevrons-down.svg</file>
         <file>icons/chevrons-right.svg</file>
+        <file>icons/copy.svg</file>
+        <file>icons/trash-2.svg</file>
     </qresource>
     <qresource prefix="/settings">
         <file>icons/settings.svg</file>
@@ -33,5 +35,8 @@
         <file>icons/sun.svg</file>
         <file>icons/background.svg</file>
         <file>icons/foreground.svg</file>
+        <file>icons/time.svg</file>
+        <file>icons/axis.svg</file>
+        <file>icons/mendeleev.svg</file>
     </qresource>
 </RCC>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mendeleev</class>
+ <widget class="QDialog" name="Mendeleev">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>926</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mendeleev table - qAgate</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="elements" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item row="4" column="3">
+       <widget class="atomicData" name="Zr" native="true"/>
+      </item>
+      <item row="3" column="4">
+       <widget class="atomicData" name="V" native="true"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="atomicData" name="H" native="true"/>
+      </item>
+      <item row="2" column="13">
+       <widget class="atomicData" name="Si" native="true"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="atomicData" name="Mg" native="true"/>
+      </item>
+      <item row="1" column="15">
+       <widget class="atomicData" name="O" native="true"/>
+      </item>
+      <item row="3" column="17">
+       <widget class="atomicData" name="Kr" native="true"/>
+      </item>
+      <item row="7" column="13">
+       <widget class="atomicData" name="Er" native="true"/>
+      </item>
+      <item row="0" column="17">
+       <widget class="atomicData" name="He" native="true"/>
+      </item>
+      <item row="1" column="17">
+       <widget class="atomicData" name="Ne" native="true"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="atomicData" name="Cs" native="true"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="atomicData" name="Ra" native="true"/>
+      </item>
+      <item row="3" column="11">
+       <widget class="atomicData" name="Zn" native="true"/>
+      </item>
+      <item row="4" column="14">
+       <widget class="atomicData" name="Sb" native="true"/>
+      </item>
+      <item row="1" column="12">
+       <widget class="atomicData" name="B" native="true"/>
+      </item>
+      <item row="5" column="17">
+       <widget class="atomicData" name="Rn" native="true"/>
+      </item>
+      <item row="7" column="3">
+       <widget class="atomicData" name="Ce" native="true"/>
+      </item>
+      <item row="6" column="10">
+       <widget class="atomicData" name="Rg" native="true"/>
+      </item>
+      <item row="5" column="10">
+       <widget class="atomicData" name="Au" native="true"/>
+      </item>
+      <item row="3" column="15">
+       <widget class="atomicData" name="Se" native="true"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="atomicData" name="Sc" native="true"/>
+      </item>
+      <item row="1" column="13">
+       <widget class="atomicData" name="C" native="true"/>
+      </item>
+      <item row="2" column="12">
+       <widget class="atomicData" name="Al" native="true"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="atomicData" name="Li" native="true"/>
+      </item>
+      <item row="1" column="14">
+       <widget class="atomicData" name="N" native="true"/>
+      </item>
+      <item row="4" column="12">
+       <widget class="atomicData" name="In" native="true"/>
+      </item>
+      <item row="3" column="9">
+       <widget class="atomicData" name="Ni" native="true"/>
+      </item>
+      <item row="2" column="15">
+       <widget class="atomicData" name="S" native="true"/>
+      </item>
+      <item row="3" column="5">
+       <widget class="atomicData" name="Cr" native="true"/>
+      </item>
+      <item row="4" column="13">
+       <widget class="atomicData" name="Sn" native="true"/>
+      </item>
+      <item row="2" column="17">
+       <widget class="atomicData" name="Ar" native="true"/>
+      </item>
+      <item row="4" column="4">
+       <widget class="atomicData" name="Nb" native="true"/>
+      </item>
+      <item row="5" column="9">
+       <widget class="atomicData" name="Pt" native="true"/>
+      </item>
+      <item row="4" column="17">
+       <widget class="atomicData" name="Xe" native="true"/>
+      </item>
+      <item row="4" column="6">
+       <widget class="atomicData" name="Tc" native="true"/>
+      </item>
+      <item row="4" column="7">
+       <widget class="atomicData" name="Ru" native="true"/>
+      </item>
+      <item row="4" column="9">
+       <widget class="atomicData" name="Pd" native="true"/>
+      </item>
+      <item row="1" column="16">
+       <widget class="atomicData" name="F" native="true"/>
+      </item>
+      <item row="6" column="9">
+       <widget class="atomicData" name="Ds" native="true"/>
+      </item>
+      <item row="4" column="8">
+       <widget class="atomicData" name="Rh" native="true"/>
+      </item>
+      <item row="6" column="13">
+       <widget class="atomicData" name="Fl" native="true"/>
+      </item>
+      <item row="6" column="12">
+       <widget class="atomicData" name="Nh" native="true"/>
+      </item>
+      <item row="5" column="12">
+       <widget class="atomicData" name="Tl" native="true"/>
+      </item>
+      <item row="3" column="12">
+       <widget class="atomicData" name="Ga" native="true"/>
+      </item>
+      <item row="6" column="16">
+       <widget class="atomicData" name="Ts" native="true"/>
+      </item>
+      <item row="6" column="14">
+       <widget class="atomicData" name="Mc" native="true"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="atomicData" name="Ca" native="true"/>
+      </item>
+      <item row="2" column="16">
+       <widget class="atomicData" name="Cl" native="true"/>
+      </item>
+      <item row="3" column="14">
+       <widget class="atomicData" name="As" native="true"/>
+      </item>
+      <item row="7" column="11">
+       <widget class="atomicData" name="Dy" native="true"/>
+      </item>
+      <item row="7" column="12">
+       <widget class="atomicData" name="Ho" native="true"/>
+      </item>
+      <item row="7" column="15">
+       <widget class="atomicData" name="Yb" native="true"/>
+      </item>
+      <item row="6" column="17">
+       <widget class="atomicData" name="Og" native="true"/>
+      </item>
+      <item row="5" column="15">
+       <widget class="atomicData" name="Po" native="true"/>
+      </item>
+      <item row="3" column="6">
+       <widget class="atomicData" name="Mn" native="true"/>
+      </item>
+      <item row="3" column="13">
+       <widget class="atomicData" name="Ge" native="true"/>
+      </item>
+      <item row="2" column="14">
+       <widget class="atomicData" name="P" native="true"/>
+      </item>
+      <item row="7" column="6">
+       <widget class="atomicData" name="Pm" native="true"/>
+      </item>
+      <item row="6" column="6">
+       <widget class="atomicData" name="Bh" native="true"/>
+      </item>
+      <item row="5" column="6">
+       <widget class="atomicData" name="Re" native="true"/>
+      </item>
+      <item row="6" column="5">
+       <widget class="atomicData" name="Sg" native="true"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="atomicData" name="K" native="true"/>
+      </item>
+      <item row="5" column="14">
+       <widget class="atomicData" name="Bi" native="true"/>
+      </item>
+      <item row="5" column="13">
+       <widget class="atomicData" name="Pb" native="true"/>
+      </item>
+      <item row="4" column="16">
+       <widget class="atomicData" name="I" native="true"/>
+      </item>
+      <item row="5" column="3">
+       <widget class="atomicData" name="Hf" native="true"/>
+      </item>
+      <item row="4" column="11">
+       <widget class="atomicData" name="Cd" native="true"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="atomicData" name="Y" native="true"/>
+      </item>
+      <item row="7" column="7">
+       <widget class="atomicData" name="Sm" native="true"/>
+      </item>
+      <item row="3" column="16">
+       <widget class="atomicData" name="Br" native="true"/>
+      </item>
+      <item row="3" column="10">
+       <widget class="atomicData" name="Cu" native="true"/>
+      </item>
+      <item row="4" column="15">
+       <widget class="atomicData" name="Te" native="true"/>
+      </item>
+      <item row="5" column="8">
+       <widget class="atomicData" name="Ir" native="true"/>
+      </item>
+      <item row="5" column="4">
+       <widget class="atomicData" name="Ta" native="true"/>
+      </item>
+      <item row="6" column="4">
+       <widget class="atomicData" name="Db" native="true"/>
+      </item>
+      <item row="6" column="8">
+       <widget class="atomicData" name="Mt" native="true"/>
+      </item>
+      <item row="5" column="5">
+       <widget class="atomicData" name="W" native="true"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="atomicData" name="Ti" native="true"/>
+      </item>
+      <item row="7" column="10">
+       <widget class="atomicData" name="Tb" native="true"/>
+      </item>
+      <item row="7" column="8">
+       <widget class="atomicData" name="Eu" native="true"/>
+      </item>
+      <item row="7" column="9">
+       <widget class="atomicData" name="Gd" native="true"/>
+      </item>
+      <item row="7" column="5">
+       <widget class="atomicData" name="Nd" native="true"/>
+      </item>
+      <item row="5" column="11">
+       <widget class="atomicData" name="Hg" native="true"/>
+      </item>
+      <item row="6" column="11">
+       <widget class="atomicData" name="Cn" native="true"/>
+      </item>
+      <item row="6" column="7">
+       <widget class="atomicData" name="Hs" native="true"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="atomicData" name="Lr" native="true"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="atomicData" name="Lu" native="true"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="atomicData" name="Ba" native="true"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="atomicData" name="Sr" native="true"/>
+      </item>
+      <item row="3" column="8">
+       <widget class="atomicData" name="Co" native="true"/>
+      </item>
+      <item row="5" column="16">
+       <widget class="atomicData" name="At" native="true"/>
+      </item>
+      <item row="6" column="15">
+       <widget class="atomicData" name="Lv" native="true"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="atomicData" name="Be" native="true"/>
+      </item>
+      <item row="3" column="7">
+       <widget class="atomicData" name="Fe" native="true"/>
+      </item>
+      <item row="4" column="10">
+       <widget class="atomicData" name="Ag" native="true"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="atomicData" name="Rb" native="true"/>
+      </item>
+      <item row="5" column="7">
+       <widget class="atomicData" name="Os" native="true"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="atomicData" name="Fr" native="true"/>
+      </item>
+      <item row="6" column="3">
+       <widget class="atomicData" name="Rf" native="true"/>
+      </item>
+      <item row="7" column="14">
+       <widget class="atomicData" name="Tm" native="true"/>
+      </item>
+      <item row="7" column="4">
+       <widget class="atomicData" name="Pr" native="true"/>
+      </item>
+      <item row="7" column="2">
+       <widget class="atomicData" name="La" native="true"/>
+      </item>
+      <item row="4" column="5">
+       <widget class="atomicData" name="Mo" native="true"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="atomicData" name="Na" native="true"/>
+      </item>
+      <item row="8" column="2">
+       <widget class="atomicData" name="Ac" native="true"/>
+      </item>
+      <item row="8" column="3">
+       <widget class="atomicData" name="Th" native="true"/>
+      </item>
+      <item row="8" column="4">
+       <widget class="atomicData" name="Pa" native="true"/>
+      </item>
+      <item row="8" column="5">
+       <widget class="atomicData" name="U" native="true"/>
+      </item>
+      <item row="8" column="6">
+       <widget class="atomicData" name="Np" native="true"/>
+      </item>
+      <item row="8" column="7">
+       <widget class="atomicData" name="Pu" native="true"/>
+      </item>
+      <item row="8" column="8">
+       <widget class="atomicData" name="Am" native="true"/>
+      </item>
+      <item row="8" column="9">
+       <widget class="atomicData" name="Cm" native="true"/>
+      </item>
+      <item row="8" column="10">
+       <widget class="atomicData" name="Bk" native="true"/>
+      </item>
+      <item row="8" column="11">
+       <widget class="atomicData" name="Cf" native="true"/>
+      </item>
+      <item row="8" column="12">
+       <widget class="atomicData" name="Es" native="true"/>
+      </item>
+      <item row="8" column="13">
+       <widget class="atomicData" name="Fm" native="true"/>
+      </item>
+      <item row="8" column="14">
+       <widget class="atomicData" name="Md" native="true"/>
+      </item>
+      <item row="8" column="15">
+       <widget class="atomicData" name="No" native="true"/>
+      </item>
+      <item row="1" column="6">
+       <widget class="atomicData" name="legend" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="name">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="massLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Mass:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="mass">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>260.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="massUnit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>amu</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>emu</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="colorLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>Color:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="color">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoRaise">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="radiusLabel">
+        <property name="text">
+         <string>Atomic radius:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="radius">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="radiusUnit">
+        <item>
+         <property name="text">
+          <string>bohr</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="rcovLabel">
+        <property name="text">
+         <string>Covalent radius:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="rcov">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="rcovUnit">
+        <item>
+         <property name="text">
+          <string>bohr</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>atomicData</class>
+   <extends>QWidget</extends>
+   <header>atomicdata.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Mendeleev</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>498</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Mendeleev</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>498</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
