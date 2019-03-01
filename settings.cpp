@@ -11,27 +11,22 @@ Settings::Settings(QWidget *parent) :
   _mendeleev(this)
 {
   ui->setupUi(this);
-  ui->angles->setDefaultAction(ui->actionAngles);
+
   ui->antialiasing->setDefaultAction(ui->actionAA);
   ui->filling->setDefaultAction(ui->actionFilling);
   ui->light->setDefaultAction(ui->actionLight);
   ui->perspective->setDefaultAction(ui->actionPerspective);
-  ui->time->setDefaultAction(ui->actionTime);
   ui->mendeleev->setDefaultAction(ui->actionMendeleev);
 
-  ui->actionAngles->setChecked(true);
   ui->actionAA->setChecked(true);
   ui->actionFilling->setChecked(true);
   ui->actionLight->setChecked(true);
   ui->actionPerspective->setChecked(true);
-  ui->actionTime->setChecked(true);
 
   this->addAction(ui->actionAA);
-  this->addAction(ui->actionAngles);
   this->addAction(ui->actionFilling);
   this->addAction(ui->actionLight);
   this->addAction(ui->actionPerspective);
-  this->addAction(ui->actionTime);
   this->addAction(ui->actionMendeleev);
 
   connect(&_mendeleev,SIGNAL(accepted()),this,SLOT(updateMendeleev()));
@@ -57,11 +52,6 @@ void Settings::updateStatus(View* view)
 //display
   ui->width->setValue(view->width());
   ui->height->setValue(view->height());
-  try
-  {
-    ui->axis->setChecked(view->option<bool>("axis"));
-  }
-  catch(...){;}
   try
   {
     ui->size->setValue(view->option<int>("fontSize"));
@@ -109,11 +99,6 @@ void Settings::on_actionAA_triggered()
    emit(switchAA());
 }
 
-void Settings::on_actionAngles_triggered()
-{
-   emit(switchAngles()) ;
-}
-
 void Settings::on_ndiv_valueChanged(int arg1)
 {
   if (!_autoUpdate) emit(sendCommand(":div "+QString::number(arg1)));
@@ -122,11 +107,6 @@ void Settings::on_ndiv_valueChanged(int arg1)
 void Settings::on_format_currentIndexChanged(const QString &arg1)
 {
   if (!_autoUpdate) emit(sendCommand(":image_format "+arg1));
-}
-
-void Settings::on_actionTime_triggered()
-{
-  emit(switchTimeInfo());
 }
 
 void Settings::on_suffix_currentIndexChanged(const QString &arg1)
@@ -167,11 +147,6 @@ void Settings::on_foreground_clicked()
       + " " + QString::number(color.green())
       + " " + QString::number(color.blue());
   emit(sendCommand(command));
-}
-
-void Settings::on_axis_clicked()
-{
-  emit(sendCommand(":axis"));
 }
 /*
 void Settings::on_width_valueChanged(const QString &arg1)

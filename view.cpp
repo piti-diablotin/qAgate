@@ -165,6 +165,7 @@ bool View::userInput(std::stringstream &info)
           + QString::number(_background[2])+",0); }");
     }
   if (newAction && _modeMouse != mode_mouse && _fromCommandLine) emit(userInput());
+  if (newAction && _modeMouse == mode_mouse) emit(mouseInput());
   _fromCommandLine = false;
   ui->infoLine->setText(QString::fromStdString(info.str()));
   return newAction;

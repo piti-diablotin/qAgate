@@ -80,6 +80,7 @@ public slots:
 signals:
   void fileOpened(QString);
   void userInput();
+  void mouseInput();
   void commandProcessed();
   void updated();
   void closeMe();

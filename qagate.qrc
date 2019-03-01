@@ -39,4 +39,15 @@
         <file>icons/axis.svg</file>
         <file>icons/mendeleev.svg</file>
     </qresource>
+    <qresource prefix="/visuals">
+        <file>icons/eye.svg</file>
+        <file>icons/minus-square.svg</file>
+        <file>icons/plus-square.svg</file>
+        <file>icons/angles.svg</file>
+        <file>icons/axis.svg</file>
+        <file>icons/time.svg</file>
+        <file>icons/psi.svg</file>
+        <file>icons/phi.svg</file>
+        <file>icons/theta.svg</file>
+    </qresource>
 </RCC>

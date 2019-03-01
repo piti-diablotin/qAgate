@@ -1,0 +1,61 @@
+#ifndef VISUALS_H
+#define VISUALS_H
+
+#include <QWidget>
+#include "abstracttab.h"
+
+namespace Ui {
+  class Visuals;
+}
+
+class Visuals : public AbstractTab
+{
+  Q_OBJECT
+
+public:
+  explicit Visuals(QWidget *parent = 0);
+  ~Visuals();
+
+protected:
+  virtual void updateStatus(View* view);
+
+private:
+  Ui::Visuals *ui;
+
+signals:
+  void switchAngles();
+  void switchTimeInfo();
+  void translatePX();
+  void translateMX();
+  void translatePY();
+  void translateMY();
+  void translatePZ();
+  void translateMZ();
+  void alongX();
+  void alongY();
+  void alongZ();
+  void sendCommand(QString command,bool=true);
+private slots:
+  void on_actionAngles_triggered();
+  void on_actionTime_triggered();
+  void on_axis_clicked();
+  void on_action_px_triggered();
+  void on_action_py_triggered();
+  void on_action_pz_triggered();
+  void on_action_mz_triggered();
+  void on_action_my_triggered();
+  void on_action_mx_triggered();
+  void on_actionX_triggered();
+  void on_actionY_triggered();
+  void on_actionZ_triggered();
+  void on_psi_valueChanged(int arg1);
+
+  void on_theta_valueChanged(int arg1);
+
+  void on_phi_valueChanged(int arg1);
+
+public slots:
+  void updateAngles(View* view);
+};
+
+#endif // VISUALS_H

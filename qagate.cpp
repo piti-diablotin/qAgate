@@ -12,7 +12,9 @@ qAgate::qAgate(QWidget *parent) :
   _tabHiden(false)
 {
   ui->setupUi(this);
-  ui->settings->plugActions(this);
+  for (int index = 0; index < ui->tabWidget->count(); ++index)
+    dynamic_cast<AbstractTab*>(ui->tabWidget->widget(index))->plugActions(this);
+
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(pause()),this,SLOT(manageSignal()));
@@ -41,6 +43,7 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->view,SIGNAL(updated()),this,SLOT(manageSignal()));
   connect(ui->view,SIGNAL(closeMe()),this,SLOT(close()));
   connect(ui->view,SIGNAL(userInput()),this,SLOT(syncWithUserInput()));
+  connect(ui->view,SIGNAL(mouseInput()),this,SLOT(syncWithUserInput()));
   connect(ui->view,SIGNAL(newSize(int,int)),ui->settings,SLOT(updateDisplaySize(int,int)));
 
   // logger
@@ -53,8 +56,20 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->settings,SIGNAL(switchLight()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchPerspective()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchAA()),this,SLOT(manageSignal()));
-  connect(ui->settings,SIGNAL(switchAngles()),this,SLOT(manageSignal()));
-  connect(ui->settings,SIGNAL(switchTimeInfo()),this,SLOT(manageSignal()));
+
+  // visuals
+  connect(ui->visuals,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
+  connect(ui->visuals,SIGNAL(switchTimeInfo()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(switchAngles()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(translatePX()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(translateMX()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(translatePY()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(translateMY()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(translatePZ()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(translateMZ()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(alongX()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(alongY()),this,SLOT(manageSignal()));
+  connect(ui->visuals,SIGNAL(alongZ()),this,SLOT(manageSignal()));
 
   // Self
   connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
@@ -92,7 +107,16 @@ void qAgate::manageSignal()
     {"switchPerspective","p"},
     {"switchAA","A"},
     {"switchAngles","a"},
-    {"switchTimeInfo","t"}
+    {"switchTimeInfo","t"},
+    {"translatePX","+x"},
+    {"translateMX","-x"},
+    {"translatePY","+y"},
+    {"translateMY","-y"},
+    {"translatePZ","+z"},
+    {"translateMZ","-z"},
+    {"alongX","x"},
+    {"alongY","y"},
+    {"alongZ","z"},
   };
   if (mapping.contains(signal))
     {
@@ -139,30 +163,41 @@ void qAgate::manageSignal(QString filename)
 
 void qAgate::syncWithUserInput()
 {
-  this->updateTab();
-  if (ui->view->canvas() == nullptr) return;
-  auto canvas = ui->view->canvas();
-  MediaPlayer::RepeatMode repeat;
-  switch ( canvas->nLoop() ) {
-    case -2 :
-      repeat = MediaPlayer::Palindrome;
-      break;
-    case -1 :
-      repeat = MediaPlayer::Repeat;
-      break;
-    default :
-      repeat = MediaPlayer::None;
-    }
-  ui->mediaPlayer->setRepeatMode(repeat);
+  QMetaMethod metaMethod = sender()->metaObject()->method(senderSignalIndex());
+  auto signal = metaMethod.name();
+  if ( signal == "userInput")
+    {
+      this->updateTab();
+      if (ui->view->canvas() == nullptr) return;
+      auto canvas = ui->view->canvas();
+      MediaPlayer::RepeatMode repeat;
+      switch ( canvas->nLoop() ) {
+        case -2 :
+          repeat = MediaPlayer::Palindrome;
+          break;
+        case -1 :
+          repeat = MediaPlayer::Repeat;
+          break;
+        default :
+          repeat = MediaPlayer::None;
+        }
+      ui->mediaPlayer->setRepeatMode(repeat);
 
-  int ntime = std::max(canvas->ntime(),1);
-  ui->mediaPlayer->setDisabledMovie(ntime<2);
-  ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+      int ntime = std::max(canvas->ntime(),1);
+      ui->mediaPlayer->setDisabledMovie(ntime<2);
+      ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+    }
+  else if (signal == "mouseInput")
+    {
+      ui->visuals->updateAngles(ui->view);
+    }
 }
 
 void qAgate::updateTab()
 {
   dynamic_cast<AbstractTab*>(ui->tabWidget->currentWidget())->update(ui->view);
+  if (ui->tabWidget->currentWidget() == ui->visuals)
+    ui->visuals->updateAngles(ui->view);
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)

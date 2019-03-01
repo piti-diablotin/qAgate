@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>704</width>
-    <height>119</height>
+    <height>121</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>16777215</width>
-    <height>119</height>
+    <height>128</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -206,8 +206,8 @@
         </property>
         <property name="iconSize">
          <size>
-          <width>54</width>
-          <height>22</height>
+          <width>40</width>
+          <height>20</height>
          </size>
         </property>
         <property name="autoRaise">
@@ -502,8 +502,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>22</width>
-             <height>22</height>
+             <width>17</width>
+             <height>17</height>
             </size>
            </property>
            <property name="autoRaise">
@@ -531,105 +531,9 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>22</width>
-             <height>22</height>
+             <width>17</width>
+             <height>17</height>
             </size>
-           </property>
-           <property name="autoRaise">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QToolButton" name="angles">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string>Toggle angles</string>
-           </property>
-           <property name="statusTip">
-            <string>Toggle angles</string>
-           </property>
-           <property name="whatsThis">
-            <string>Toggle angles</string>
-           </property>
-           <property name="text">
-            <string>...</string>
-           </property>
-           <property name="icon">
-            <iconset resource="qagate.qrc">
-             <normaloff>:/settings/icons/angles.svg</normaloff>:/settings/icons/angles.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
-           </property>
-           <property name="shortcut">
-            <string>A</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <property name="autoRaise">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QToolButton" name="time">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="qagate.qrc">
-             <normaloff>:/settings/icons/time.svg</normaloff>:/settings/icons/time.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <property name="autoRaise">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QToolButton" name="axis">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="qagate.qrc">
-             <normaloff>:/settings/icons/axis.svg</normaloff>:/settings/icons/axis.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>22</width>
-             <height>22</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -714,8 +618,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>22</width>
-             <height>22</height>
+             <width>17</width>
+             <height>17</height>
             </size>
            </property>
            <property name="shortcut">
@@ -752,8 +656,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>22</width>
-             <height>22</height>
+             <width>17</width>
+             <height>17</height>
             </size>
            </property>
            <property name="shortcut">
@@ -790,8 +694,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>22</width>
-             <height>22</height>
+             <width>17</width>
+             <height>17</height>
             </size>
            </property>
            <property name="shortcut">
@@ -828,8 +732,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>22</width>
-             <height>22</height>
+             <width>17</width>
+             <height>17</height>
             </size>
            </property>
            <property name="shortcut">
@@ -845,6 +749,19 @@
             <bool>true</bool>
            </property>
           </widget>
+         </item>
+         <item row="0" column="4">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </widget>
@@ -874,8 +791,17 @@
              <pointsize>10</pointsize>
             </font>
            </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
            <property name="text">
             <string>Divisions</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+           <property name="margin">
+            <number>0</number>
            </property>
           </widget>
          </item>
@@ -981,7 +907,19 @@
         </item>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="1" column="0">
+       <widget class="QLabel" name="suffixLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Suffix</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
        <widget class="QComboBox" name="suffix">
         <property name="font">
          <font>
@@ -1000,7 +938,19 @@
         </item>
        </widget>
       </item>
-      <item row="4" column="1">
+      <item row="2" column="0">
+       <widget class="QLabel" name="qualityLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Quality</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
        <widget class="QSpinBox" name="quality">
         <property name="font">
          <font>
@@ -1024,30 +974,6 @@
         </property>
         <property name="value">
          <number>50</number>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="suffixLabel">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Suffix</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="qualityLabel">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Quality</string>
         </property>
        </widget>
       </item>
@@ -1150,51 +1076,6 @@
    </property>
    <property name="shortcut">
     <string>Shift+A</string>
-   </property>
-  </action>
-  <action name="actionAngles">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="icon">
-    <iconset resource="qagate.qrc">
-     <normaloff>:/settings/icons/angles.svg</normaloff>:/settings/icons/angles.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Angles</string>
-   </property>
-   <property name="toolTip">
-    <string>Show/Hide angles</string>
-   </property>
-   <property name="statusTip">
-    <string>Show/Hide angles</string>
-   </property>
-   <property name="shortcut">
-    <string>A</string>
-   </property>
-  </action>
-  <action name="actionTime">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="icon">
-    <iconset resource="qagate.qrc">
-     <normaloff>:/settings/icons/time.svg</normaloff>:/settings/icons/time.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Time</string>
-   </property>
-   <property name="toolTip">
-    <string>Show/Hide time info</string>
-   </property>
-   <property name="statusTip">
-    <string>Show/Hide time info</string>
-   </property>
-   <property name="whatsThis">
-    <string>Show/Hide time info</string>
-   </property>
-   <property name="shortcut">
-    <string>T</string>
    </property>
   </action>
   <action name="actionMendeleev">

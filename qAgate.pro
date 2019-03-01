@@ -37,7 +37,8 @@ SOURCES += \
     settings.cpp \
     abstracttab.cpp \
     mendeleev.cpp \
-    atomicdata.cpp
+    atomicdata.cpp \
+    visuals.cpp
 
 HEADERS += \
     qagate.h \
@@ -50,7 +51,8 @@ HEADERS += \
     settings.h \
     abstracttab.h \
     mendeleev.h \
-    atomicdata.h
+    atomicdata.h \
+    visuals.h
 
 FORMS += \
     qagate.ui \
@@ -61,7 +63,8 @@ FORMS += \
     logger.ui \
     settings.ui \
     mendeleev.ui \
-    atomicdata.ui
+    atomicdata.ui \
+    visuals.ui
 
 RESOURCES += \
     qagate.qrc

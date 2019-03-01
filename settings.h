@@ -43,17 +43,14 @@ private slots:
   void on_actionLight_triggered();
   void on_actionFilling_triggered();
   void on_actionAA_triggered();
-  void on_actionAngles_triggered();
   void on_ndiv_valueChanged(int arg1);
   void on_format_currentIndexChanged(const QString &arg1);
-  void on_actionTime_triggered();
   void on_suffix_currentIndexChanged(const QString &arg1);
   void on_quality_valueChanged(const QString &arg1);
   void on_size_valueChanged(const QString &arg1);
   void on_ndiv_valueChanged(const QString &arg1);
   void on_background_clicked();
   void on_foreground_clicked();
-  void on_axis_clicked();
   //void on_width_valueChanged(const QString &arg1);
   //void on_height_valueChanged(const QString &arg1);
   void on_width_editingFinished();

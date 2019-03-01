@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>qAgate</string>
   </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -72,6 +75,15 @@
           <property name="currentIndex">
            <number>0</number>
           </property>
+          <widget class="Visuals" name="visuals">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/visuals/icons/eye.svg</normaloff>:/visuals/icons/eye.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>&amp;Visuals</string>
+           </attribute>
+          </widget>
           <widget class="Settings" name="settings">
            <attribute name="icon">
             <iconset resource="qagate.qrc">
@@ -196,6 +208,12 @@
    <class>Settings</class>
    <extends>QWidget</extends>
    <header>settings.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Visuals</class>
+   <extends>QWidget</extends>
+   <header>visuals.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
