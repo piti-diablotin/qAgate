@@ -54,6 +54,12 @@ private slots:
 
   void on_phi_valueChanged(int arg1);
 
+  void on_displayGroup_buttonClicked(QAbstractButton* button);
+
+  void on_optionsGroup_buttonClicked(QAbstractButton* button);
+
+  void on_spin_currentTextChanged(const QString &arg1);
+
 public slots:
   void updateAngles(View* view);
 };

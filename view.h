@@ -45,6 +45,8 @@ public:
   template<typename T>
   T option(QString key);
   void imageSaverInfo(ImageSaver::ImageType& format, int& quality, ImageSuffix& suffix) const;
+  unsigned getDisplay() const;
+  const Canvas* getCanvas();
 
 protected:
   virtual bool getChar(unsigned key);

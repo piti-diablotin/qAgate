@@ -60,6 +60,8 @@ private slots:
   void on_comboBox_currentIndexChanged(const QString &arg1);
   void on_actionMendeleev_triggered();
   void updateMendeleev();
+  void on_up_clicked();
+  void on_down_clicked();
 };
 
 #endif // SETTINGS_H

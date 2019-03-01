@@ -389,6 +389,18 @@ void View::imageSaverInfo(ImageSaver::ImageType &format, int &quality, Window::I
   suffix = _imageSuffixMode;
 }
 
+unsigned View::getDisplay() const
+{
+  if (dynamic_cast<CanvasPos*>(_canvas.get()))
+    return dynamic_cast<CanvasPos*>(_canvas.get())->getDisplay();
+  return 0;
+}
+
+const Canvas *View::getCanvas()
+{
+  return _canvas.get();
+}
+
 void View::on_commandFocus_clicked()
 {
   if (ui->commandLine->isReadOnly()) ui->commandLine->clear();

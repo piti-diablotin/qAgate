@@ -206,3 +206,23 @@ void Settings::updateMendeleev()
       emit(sendCommand(*it,false));
     }
 }
+
+void Settings::on_up_clicked()
+{
+  QColor color(255,127,0);
+  color = QColorDialog::getColor(color,this,tr("Spin up color"),QColorDialog::DontUseNativeDialog);
+  QString command = ":color up " + QString::number(color.red())
+      + " " + QString::number(color.green())
+      + " " + QString::number(color.blue());
+  emit(sendCommand(command));
+}
+
+void Settings::on_down_clicked()
+{
+  QColor color(0,255,127);
+  color = QColorDialog::getColor(color,this,tr("Spin down color"),QColorDialog::DontUseNativeDialog);
+  QString command = ":color down " + QString::number(color.red())
+      + " " + QString::number(color.green())
+      + " " + QString::number(color.blue());
+  emit(sendCommand(command));
+}

@@ -1,6 +1,8 @@
 #include "visuals.h"
 #include "ui_visuals.h"
 #include "base/phys.hpp"
+#include "canvas/canvaspos.hpp"
+#include "base/mendeleev.hpp"
 
 Visuals::Visuals(QWidget *parent) :
   AbstractTab(parent),
@@ -49,6 +51,28 @@ void Visuals::updateStatus(View *view)
     ui->axis->setChecked(view->option<bool>("axis"));
   }
   catch(...){;}
+  unsigned display = view->getDisplay();
+  ui->atom->setChecked(display & CanvasPos::DISP_ATOM);
+  ui->bond->setChecked(display & CanvasPos::DISP_BOND);
+  ui->border->setChecked(display & CanvasPos::DISP_BORDER);
+  if (display & CanvasPos::DISP_ID)
+    ui->id->setChecked(true);
+  else if (display & CanvasPos::DISP_ZNUCL)
+    ui->znucl->setChecked(true);
+  else if (display & CanvasPos::DISP_NAME)
+    ui->name->setChecked(true);
+  // Octahedra
+  const Canvas* canvas = view->getCanvas();
+  if (canvas!=nullptr)
+    {
+      const HistData* hist = canvas->histdata();
+      if ((hist)!=nullptr)
+      {
+        auto znucl = hist->znucl();
+        for (int i = 0; i < znucl.size(); ++i)
+          ui->octaAdd->addItem(QIcon(),QString(Agate::Mendeleev.name[znucl[i]]));
+      }
+    }
 }
 
 
@@ -136,5 +160,25 @@ void Visuals::on_theta_valueChanged(int arg1)
 
 void Visuals::on_phi_valueChanged(int arg1)
 {
-   if (!_autoUpdate) emit(sendCommand(":phi "+QString::number(arg1)));
+  if (!_autoUpdate) emit(sendCommand(":phi "+QString::number(arg1)));
+}
+
+void Visuals::on_displayGroup_buttonClicked(QAbstractButton *button)
+{
+  emit(sendCommand(":show "+button->objectName()));
+}
+
+void Visuals::on_optionsGroup_buttonClicked(QAbstractButton *button)
+{
+  emit(sendCommand((button->isChecked()?":show ":":hide ")+button->objectName()));
+}
+
+void Visuals::on_spin_currentTextChanged(const QString &arg1)
+{
+  if (!_autoUpdate)
+    {
+      QString direction = arg1;
+      (direction == "None") ? direction = "" : direction = " "+direction;
+      emit(sendCommand(":spin"+direction));
+    }
 }

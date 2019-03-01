@@ -153,6 +153,7 @@ void qAgate::manageSignal(QString filename)
       ui->mediaPlayer->setDisabledAppend(false);
       this->setWindowTitle(filename+" - qAgate");
       ui->timeLine->setEnabled(true);
+      this->updateTab();
     }
   else if (signal == "sendCommand")
     {

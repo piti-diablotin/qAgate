@@ -38,6 +38,8 @@
         <file>icons/time.svg</file>
         <file>icons/axis.svg</file>
         <file>icons/mendeleev.svg</file>
+        <file>icons/arrow-down.svg</file>
+        <file>icons/arrow-up.svg</file>
     </qresource>
     <qresource prefix="/visuals">
         <file>icons/eye.svg</file>
