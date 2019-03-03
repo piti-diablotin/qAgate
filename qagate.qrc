@@ -51,5 +51,7 @@
         <file>icons/psi.svg</file>
         <file>icons/phi.svg</file>
         <file>icons/theta.svg</file>
+        <file>icons/plus-circle.svg</file>
+        <file>icons/minus-circle.svg</file>
     </qresource>
 </RCC>

@@ -67,7 +67,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidget">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
@@ -76,6 +76,12 @@
            <number>0</number>
           </property>
           <widget class="Visuals" name="visuals">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <attribute name="icon">
             <iconset resource="qagate.qrc">
              <normaloff>:/visuals/icons/eye.svg</normaloff>:/visuals/icons/eye.svg</iconset>
@@ -85,6 +91,12 @@
            </attribute>
           </widget>
           <widget class="Settings" name="settings">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <attribute name="icon">
             <iconset resource="qagate.qrc">
              <normaloff>:/settings/icons/settings.svg</normaloff>:/settings/icons/settings.svg</iconset>

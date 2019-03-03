@@ -6,7 +6,8 @@
 
 Visuals::Visuals(QWidget *parent) :
   AbstractTab(parent),
-  ui(new Ui::Visuals)
+  ui(new Ui::Visuals),
+  _znuclOrder()
 {
   ui->setupUi(this);
 
@@ -62,17 +63,42 @@ void Visuals::updateStatus(View *view)
   else if (display & CanvasPos::DISP_NAME)
     ui->name->setChecked(true);
   // Octahedra
-  const Canvas* canvas = view->getCanvas();
+  const CanvasPos* canvas = dynamic_cast<const CanvasPos*>(view->getCanvas());
   if (canvas!=nullptr)
+  {
+    const HistData* hist = canvas->histdata();
+    if ((hist)!=nullptr)
     {
-      const HistData* hist = canvas->histdata();
-      if ((hist)!=nullptr)
+      ui->octaAdd->clear();
+      ui->octaDel->clear();
+      ui->octaAdd->addItem(QIcon(":/visuals/icons/plus-circle.svg"),"");
+      ui->octaDel->addItem(QIcon(":/visuals/icons/minus-circle.svg"),"");
+      bool draw;
+      auto octa = canvas->getOctahedra(draw);
+      ui->atoms->setChecked(draw);
+      auto znucl = hist->znucl();
+      _znuclOrder = QVector<int>::fromStdVector(znucl);
+      for (unsigned i = 0; i < znucl.size(); ++i)
       {
-        auto znucl = hist->znucl();
-        for (int i = 0; i < znucl.size(); ++i)
-          ui->octaAdd->addItem(QIcon(),QString(Agate::Mendeleev.name[znucl[i]]));
+        auto found = std::find(octa.begin(),octa.end(),znucl[i]);
+        QVariant data(znucl[i]);
+        if (found == octa.end())
+        {
+          int newPos = 1;
+          for (newPos=1 ; newPos<ui->octaAdd->count(); ++newPos)
+            if (ui->octaAdd->itemData(newPos)>data) break;
+          ui->octaAdd->insertItem(newPos,QString(Agate::Mendeleev.name[znucl[i]]),data);
+        }
+        else
+        {
+          int newPos = 1;
+          for (newPos=1 ; newPos<ui->octaDel->count(); ++newPos)
+            if (ui->octaDel->itemData(newPos)>data) break;
+          ui->octaDel->insertItem(newPos,QString(Agate::Mendeleev.name[znucl[i]]),data);
+        }
       }
     }
+  }
 }
 
 
@@ -181,4 +207,44 @@ void Visuals::on_spin_currentTextChanged(const QString &arg1)
       (direction == "None") ? direction = "" : direction = " "+direction;
       emit(sendCommand(":spin"+direction));
     }
+}
+
+void Visuals::on_octaAdd_activated(int index)
+{
+  if (index==0) return;
+  QString atoms = ui->atoms->isChecked() ? " 1" : " 0";
+  QString command=":octa_z "+ui->octaAdd->itemText(index)+atoms;
+  auto data = ui->octaAdd->itemData(index);
+  int newPos = 1;
+  for (newPos=1 ; newPos<ui->octaDel->count(); ++newPos)
+      if (ui->octaDel->itemData(newPos)>data) break;
+  ui->octaDel->insertItem(newPos,ui->octaAdd->itemText(index),data);
+  ui->octaAdd->removeItem(index);
+  ui->octaAdd->setCurrentIndex(0);
+  emit(sendCommand(command));
+}
+
+void Visuals::on_octaDel_activated(int index)
+{
+  if (index==0) return;
+  QString atoms = ui->atoms->isChecked() ? " 1" : " 0";
+  QString command=":octa_z -"+ui->octaDel->itemText(index)+atoms;
+  auto data = ui->octaDel->itemData(index);
+  int newPos = 1;
+  for (newPos=1 ; newPos<ui->octaAdd->count(); ++newPos)
+      if (ui->octaAdd->itemData(newPos)>data) break;
+  ui->octaAdd->insertItem(newPos,ui->octaDel->itemText(index),data);
+  ui->octaDel->removeItem(index);
+  ui->octaDel->setCurrentIndex(0);
+  emit(sendCommand(command));
+}
+
+void Visuals::on_atoms_clicked(bool checked)
+{
+  QString atoms = checked ? " 1" : " 0";
+  if (ui->octaDel->count()>1)
+  {
+      QString command=":octa_z "+ui->octaDel->itemText(1)+atoms;
+      emit(sendCommand(command));
+  }
 }

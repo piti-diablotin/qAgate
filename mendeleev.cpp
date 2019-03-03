@@ -78,7 +78,8 @@ void Mendeleev::editElement(atomicData* elt)
 void Mendeleev::on_mass_valueChanged(double arg1)
 {
   if (_selfSet) return;
-  _modifications.push_back(":amu "+_activeElement->name()+" "+QString::number(arg1/_massUnit));
+  //_modifications.push_back(":amu "+_activeElement->name()+" "+QString::number(arg1/_massUnit));
+  Agate::Mendeleev.mass[_activeElement->z()] = arg1/_massUnit;
   _activeElement->setMass(arg1/_massUnit);
 }
 
@@ -104,17 +105,23 @@ void Mendeleev::on_color_clicked()
   QPalette pal = ui->color->palette();
   pal.setColor(QPalette::Button,newColor);
   ui->color->setPalette(pal);
+  /*
   _modifications.push_back(":color "+_activeElement->name()+" "+
                    QString::number(newColor.red())+" "+
                    QString::number(newColor.green())+" "+
                    QString::number(newColor.blue())
                    );
+                   */
+  Agate::Mendeleev.color[_activeElement->z()][0] = newColor.red()/255.f;
+  Agate::Mendeleev.color[_activeElement->z()][1] = newColor.green()/255.f;
+  Agate::Mendeleev.color[_activeElement->z()][2] = newColor.blue()/255.f;
 }
 
 void Mendeleev::on_radius_valueChanged(double arg1)
 {
   if (_selfSet) return;
-  _modifications.push_back(":radius "+_activeElement->name()+" "+QString::number(arg1/_radiusUnit));
+  //_modifications.push_back(":radius "+_activeElement->name()+" "+QString::number(arg1/_radiusUnit));
+  Agate::Mendeleev.radius[_activeElement->z()] = arg1/_radiusUnit;
   _activeElement->setRadius(arg1/_radiusUnit);
 }
 
@@ -135,7 +142,8 @@ void Mendeleev::on_radiusUnit_currentIndexChanged(const QString &arg1)
 void Mendeleev::on_rcov_valueChanged(double arg1)
 {
   if (_selfSet) return;
-  _modifications.push_back(":rcov "+_activeElement->name()+" "+QString::number(arg1/_rcovUnit));
+  //_modifications.push_back(":rcov "+_activeElement->name()+" "+QString::number(arg1/_rcovUnit));
+  Agate::Mendeleev.rcov[_activeElement->z()] = arg1/_rcovUnit;
   _activeElement->setRcov(arg1/_rcovUnit);
 }
 

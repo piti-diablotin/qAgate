@@ -327,6 +327,7 @@ void View::dropEvent(QDropEvent *dropEvent)
 void View::setTitle(const std::string &title)
 {
   _title = title;
+  _image.setBasename(_title);
   emit(fileOpened(QString::fromStdString(title)));
 }
 

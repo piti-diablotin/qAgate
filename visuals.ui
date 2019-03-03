@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>704</width>
-    <height>121</height>
+    <width>710</width>
+    <height>133</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>16777215</width>
-    <height>121</height>
+    <height>133</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -614,7 +614,7 @@
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>35</height>
+          <height>17</height>
          </size>
         </property>
        </spacer>
@@ -657,7 +657,7 @@
          </font>
         </property>
         <property name="toolTip">
-         <string>Display nothing on atoms</string>
+         <string>Display id on atoms</string>
         </property>
         <property name="statusTip">
          <string>Display id of atoms</string>
@@ -914,9 +914,16 @@
            <property name="whatsThis">
             <string>Add octahedra</string>
            </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
            <item>
             <property name="text">
-             <string>Select</string>
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="qagate.qrc">
+              <normaloff>:/visuals/icons/plus-circle.svg</normaloff>:/visuals/icons/plus-circle.svg</iconset>
             </property>
            </item>
           </widget>
@@ -937,9 +944,16 @@
            <property name="whatsThis">
             <string>Remove octahedra</string>
            </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
            <item>
             <property name="text">
-             <string>Select</string>
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="qagate.qrc">
+              <normaloff>:/visuals/icons/minus-circle.svg</normaloff>:/visuals/icons/minus-circle.svg</iconset>
             </property>
            </item>
           </widget>
@@ -965,6 +979,9 @@
            </property>
            <property name="text">
             <string>Atoms</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
            </property>
           </widget>
          </item>

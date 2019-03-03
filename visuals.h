@@ -21,6 +21,7 @@ protected:
 
 private:
   Ui::Visuals *ui;
+  QVector<int> _znuclOrder;
 
 signals:
   void switchAngles();
@@ -59,6 +60,12 @@ private slots:
   void on_optionsGroup_buttonClicked(QAbstractButton* button);
 
   void on_spin_currentTextChanged(const QString &arg1);
+
+  void on_octaAdd_activated(int index);
+
+  void on_octaDel_activated(int index);
+
+  void on_atoms_clicked(bool checked);
 
 public slots:
   void updateAngles(View* view);

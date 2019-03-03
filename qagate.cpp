@@ -230,6 +230,6 @@ void qAgate::on_tabWidget_currentChanged(int index)
         ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
       _tabHiden = !_tabHiden;
     }
-  ui->tabWidget->currentWidget()->show();
+  ui->tabWidget->widget(index)->show();
   this->updateTab();
 }

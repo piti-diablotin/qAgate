@@ -205,6 +205,7 @@ void Settings::updateMendeleev()
     {
       emit(sendCommand(*it,false));
     }
+  emit(sendCommand("r",false));
 }
 
 void Settings::on_up_clicked()

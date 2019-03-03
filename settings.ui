@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>704</width>
-    <height>121</height>
+    <height>133</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>16777215</width>
-    <height>128</height>
+    <height>133</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -53,7 +53,7 @@
    <item>
     <widget class="QGroupBox" name="atoms">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -63,7 +63,7 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <property name="spacing">
-       <number>3</number>
+       <number>7</number>
       </property>
       <property name="sizeConstraint">
        <enum>QLayout::SetDefaultConstraint</enum>
@@ -95,8 +95,11 @@
          <property name="bottomMargin">
           <number>0</number>
          </property>
-         <property name="spacing">
+         <property name="horizontalSpacing">
           <number>2</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
          </property>
          <item row="1" column="1">
           <widget class="QDoubleSpinBox" name="bondRadius">
@@ -231,7 +234,7 @@
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <property name="spacing">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="leftMargin">
        <number>0</number>
@@ -252,7 +255,7 @@
           <number>2</number>
          </property>
          <property name="verticalSpacing">
-          <number>2</number>
+          <number>6</number>
          </property>
          <property name="leftMargin">
           <number>0</number>
@@ -426,7 +429,7 @@
           <number>2</number>
          </property>
          <property name="verticalSpacing">
-          <number>2</number>
+          <number>4</number>
          </property>
          <property name="leftMargin">
           <number>0</number>
@@ -564,12 +567,18 @@
    </item>
    <item>
     <widget class="QGroupBox" name="openGl">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="title">
       <string>OpenGL</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <property name="spacing">
-       <number>2</number>
+       <number>9</number>
       </property>
       <property name="leftMargin">
        <number>0</number>
@@ -851,7 +860,7 @@
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>40</height>
+          <height>17</height>
          </size>
         </property>
        </spacer>
@@ -861,6 +870,12 @@
    </item>
    <item>
     <widget class="QGroupBox" name="images">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="title">
       <string>Images</string>
      </property>
@@ -869,7 +884,7 @@
        <number>2</number>
       </property>
       <property name="verticalSpacing">
-       <number>2</number>
+       <number>8</number>
       </property>
       <property name="leftMargin">
        <number>0</number>
