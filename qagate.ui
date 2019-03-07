@@ -75,9 +75,18 @@
           <property name="currentIndex">
            <number>0</number>
           </property>
+          <widget class="Home" name="home">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/home/icons/home.svg</normaloff>:/home/icons/home.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>&amp;Home</string>
+           </attribute>
+          </widget>
           <widget class="Visuals" name="visuals">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -226,6 +235,12 @@
    <class>Visuals</class>
    <extends>QWidget</extends>
    <header>visuals.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Home</class>
+   <extends>QWidget</extends>
+   <header>home.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

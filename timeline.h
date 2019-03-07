@@ -49,6 +49,7 @@ signals:
   void timeBeginChanged();
   void timeEndChanged();
   void timeChanged();
+  void updatedTime();
 };
 
 #endif // TIMELINE_H

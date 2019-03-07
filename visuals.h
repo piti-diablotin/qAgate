@@ -35,7 +35,6 @@ signals:
   void alongX();
   void alongY();
   void alongZ();
-  void sendCommand(QString command,bool=true);
 private slots:
   void on_actionAngles_triggered();
   void on_actionTime_triggered();

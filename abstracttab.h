@@ -18,6 +18,9 @@ public:
   explicit AbstractTab(QWidget* parent);
   void update(View* view);
   virtual void plugActions(QWidget* widget);
+
+signals:
+  void sendCommand(QString command,bool=true);
 };
 
 #endif // ABSTRACTTAB_H

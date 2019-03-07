@@ -133,6 +133,7 @@ void Settings::on_background_clicked()
 {
   QColor color(0,0,0);
   color = QColorDialog::getColor(color,this,tr("Background color"),QColorDialog::DontUseNativeDialog);
+  if (!color.isValid()) return;
   QString command = ":background " + QString::number(color.red())
       + " " + QString::number(color.green())
       + " " + QString::number(color.blue());
@@ -143,6 +144,7 @@ void Settings::on_foreground_clicked()
 {
   QColor color(0,0,0);
   color = QColorDialog::getColor(color,this,tr("Foreground color"),QColorDialog::DontUseNativeDialog);
+  if (!color.isValid()) return;
   QString command = ":foreground " + QString::number(color.red())
       + " " + QString::number(color.green())
       + " " + QString::number(color.blue());

@@ -9,11 +9,17 @@
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
   ui(new Ui::qAgate),
-  _tabHiden(false)
+  _tabHiden(false),
+  _homeNeedsDistance(false),
+  _homeNeedsAngle(false)
 {
   ui->setupUi(this);
   for (int index = 0; index < ui->tabWidget->count(); ++index)
-    dynamic_cast<AbstractTab*>(ui->tabWidget->widget(index))->plugActions(this);
+    {
+      AbstractTab* tab = dynamic_cast<AbstractTab*>(ui->tabWidget->widget(index));
+      tab->plugActions(this);
+      connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
+    }
 
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
@@ -51,14 +57,12 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->logger,SIGNAL(copied(QString,int)),ui->statusBar,SLOT(showMessage(QString,int)));
 
   // settings
-  connect(ui->settings,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
   connect(ui->settings,SIGNAL(switchFilling()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchLight()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchPerspective()),this,SLOT(manageSignal()));
   connect(ui->settings,SIGNAL(switchAA()),this,SLOT(manageSignal()));
 
   // visuals
-  connect(ui->visuals,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
   connect(ui->visuals,SIGNAL(switchTimeInfo()),this,SLOT(manageSignal()));
   connect(ui->visuals,SIGNAL(switchAngles()),this,SLOT(manageSignal()));
   connect(ui->visuals,SIGNAL(translatePX()),this,SLOT(manageSignal()));
@@ -71,6 +75,10 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->visuals,SIGNAL(alongY()),this,SLOT(manageSignal()));
   connect(ui->visuals,SIGNAL(alongZ()),this,SLOT(manageSignal()));
 
+  // home
+  connect(ui->home,SIGNAL(needAngle(bool)),this,SLOT(setNeeds(bool)));
+  connect(ui->home,SIGNAL(needDistance(bool)),this,SLOT(setNeeds(bool)));
+
   // Self
   connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
   this->updateTab();
@@ -79,6 +87,25 @@ qAgate::qAgate(QWidget *parent) :
 qAgate::~qAgate()
 {
   delete ui;
+}
+
+void qAgate::updateNeeds()
+{
+  if (ui->tabWidget->currentWidget() == ui->home )
+    {
+      if (_homeNeedsAngle)
+        {
+          int atom1, atom2, atom3;
+          ui->home->getAngleAtoms(atom1,atom2,atom3);
+          ui->home->setAngle(ui->view->getAngle(atom1,atom2,atom3));
+        }
+      if (_homeNeedsDistance)
+        {
+          int atom1, atom2;
+          ui->home->getDistanceAtoms(atom1,atom2);
+          ui->home->setDistance(ui->view->getDistance(atom1,atom2));
+        }
+    }
 }
 
 void qAgate::manageSignal()
@@ -130,7 +157,17 @@ void qAgate::manageSignal()
     {
       auto canvas = ui->view->canvas();
       ui->mediaPlayer->setPlay(!canvas->isPaused());
-      ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+      int max = ui->timeLine->timeTotal();
+      if (max!=canvas->ntime())
+        {
+          int ntime = canvas->ntime();
+          ui->mediaPlayer->setDisabledMovie(ntime<2);
+          ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),ntime);
+        }
+      else {
+          ui->timeLine->setTime(canvas->itime());
+          this->updateNeeds();
+        }
     }
 }
 
@@ -201,25 +238,34 @@ void qAgate::updateTab()
     ui->visuals->updateAngles(ui->view);
 }
 
+void qAgate::setNeeds(bool need)
+{
+  QMetaMethod metaMethod = sender()->metaObject()->method(senderSignalIndex());
+  auto signal = metaMethod.name();
+  if (signal=="needAngle") _homeNeedsAngle = need;
+  else if (signal=="needDistance") _homeNeedsDistance = need;
+  this->updateNeeds();
+}
+
 void qAgate::on_tabWidget_tabBarClicked(int index)
 {
-   if (index == ui->tabWidget->currentIndex())
-     {
-       _tabHiden ?
-             ui->tabWidget->currentWidget()->show()
-           : ui->tabWidget->currentWidget()->hide();
-       _tabHiden = !_tabHiden;
-       if (_tabHiden)
-         {
-           for (int i = 0; i < ui->tabWidget->count(); ++i)
-             ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
-         }
-       else
-         {
-           for (int i = 0; i < ui->tabWidget->count(); ++i)
-             ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-         }
-     }
+  if (index == ui->tabWidget->currentIndex())
+    {
+      _tabHiden ?
+            ui->tabWidget->currentWidget()->show()
+          : ui->tabWidget->currentWidget()->hide();
+      _tabHiden = !_tabHiden;
+      if (_tabHiden)
+        {
+          for (int i = 0; i < ui->tabWidget->count(); ++i)
+            ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+        }
+      else
+        {
+          for (int i = 0; i < ui->tabWidget->count(); ++i)
+            ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        }
+    }
 }
 
 void qAgate::on_tabWidget_currentChanged(int index)

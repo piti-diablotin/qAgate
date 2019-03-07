@@ -56,6 +56,7 @@ void Logger::cout_handle()
   if (signal == "synchronized") text += "\n";
   ui->logger->insertPlainText(text);
   ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
+  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
   if (ui->more->isChecked()) return;
   ui->console->setText(tr("Console*"));
 }
@@ -68,6 +69,7 @@ void Logger::clog_handle()
   if (signal == "synchronized") text += "\n";
   ui->logger->insertPlainText(text);
   ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
+  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
   if (ui->more->isChecked()) return;
   if (text.contains("Warning")) ui->warning->show();
   if (text.contains("Error")) ui->error->show();
@@ -83,6 +85,7 @@ void Logger::cerr_handle()
   //if (signal == "synchronized" && !text.endsWith('\n')) text += "\n";
   ui->logger->insertPlainText(text);
   ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
+  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
   if (ui->more->isChecked()) return;
   if (text.contains("Warning")) ui->warning->show();
   if (text.contains("Error")) ui->error->show();
@@ -113,6 +116,7 @@ void Logger::on_debug_toggled(bool checked)
 void Logger::on_trash_clicked()
 {
   ui->logger->clear();
+  ui->trash->setIcon(QIcon(":/logger/icons/trash.svg"));
 }
 
 void Logger::on_copy_clicked()

@@ -38,7 +38,10 @@ SOURCES += \
     abstracttab.cpp \
     mendeleev.cpp \
     atomicdata.cpp \
-    visuals.cpp
+    visuals.cpp \
+    home.cpp \
+    dialogs/dumpdialog.cpp \
+    dialogs/writedialog.cpp
 
 HEADERS += \
     qagate.h \
@@ -52,7 +55,10 @@ HEADERS += \
     abstracttab.h \
     mendeleev.h \
     atomicdata.h \
-    visuals.h
+    visuals.h \
+    home.h \
+    dialogs/dumpdialog.h \
+    dialogs/writedialog.h
 
 FORMS += \
     qagate.ui \
@@ -64,7 +70,10 @@ FORMS += \
     settings.ui \
     mendeleev.ui \
     atomicdata.ui \
-    visuals.ui
+    visuals.ui \
+    home.ui \
+    dialogs/dumpdialog.ui \
+    dialogs/writedialog.ui
 
 RESOURCES += \
     qagate.qrc

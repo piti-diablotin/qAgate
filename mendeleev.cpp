@@ -101,6 +101,7 @@ void Mendeleev::on_color_clicked()
 {
   QColor currentColor = _activeElement->color();
   QColor newColor = QColorDialog::getColor(currentColor,this,tr("Pick a color"),QColorDialog::DontUseNativeDialog);
+  if (!newColor.isValid()) return;
   _activeElement->setColor(newColor);
   QPalette pal = ui->color->palette();
   pal.setColor(QPalette::Button,newColor);

@@ -402,6 +402,40 @@ const Canvas *View::getCanvas()
   return _canvas.get();
 }
 
+double View::getAngle(int atom1, int atom2, int atom3) const
+{
+  try {
+    if (_canvas->histdata()!=nullptr)
+      {
+        return _canvas->histdata()->getAngle(atom1,atom2,atom3,_canvas->itime());
+      }
+    else
+      return 0;
+  }
+  catch (...)
+  {
+    return 0;
+  }
+  return 0;
+}
+
+double View::getDistance(int atom1, int atom2) const
+{
+  try {
+    if (_canvas->histdata()!=nullptr)
+      {
+        return _canvas->histdata()->getDistance(atom1,atom2,_canvas->itime());
+      }
+    else
+      return 0;
+  }
+  catch (...)
+  {
+    return 0;
+  }
+  return 0;
+}
+
 void View::on_commandFocus_clicked()
 {
   if (ui->commandLine->isReadOnly()) ui->commandLine->clear();

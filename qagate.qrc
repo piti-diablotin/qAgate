@@ -24,6 +24,7 @@
         <file>icons/chevrons-right.svg</file>
         <file>icons/copy.svg</file>
         <file>icons/trash-2.svg</file>
+        <file>icons/trash.svg</file>
     </qresource>
     <qresource prefix="/settings">
         <file>icons/settings.svg</file>
@@ -53,5 +54,16 @@
         <file>icons/theta.svg</file>
         <file>icons/plus-circle.svg</file>
         <file>icons/minus-circle.svg</file>
+    </qresource>
+    <qresource prefix="/home">
+        <file>icons/save-abinit.svg</file>
+        <file>icons/save-poscar.svg</file>
+        <file>icons/folder.svg</file>
+        <file>icons/save.svg</file>
+        <file>icons/refresh-cw.svg</file>
+        <file>icons/upload.svg</file>
+        <file>icons/home.svg</file>
+        <file>icons/rule.svg</file>
+        <file>icons/angle.svg</file>
     </qresource>
 </RCC>

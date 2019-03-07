@@ -19,12 +19,16 @@ public:
 private:
   Ui::qAgate *ui;
   bool _tabHiden;
+  bool _homeNeedsDistance;
+  bool _homeNeedsAngle;
+  void updateNeeds();
 
 protected slots:
   void manageSignal();
   void manageSignal(QString filename);
   void syncWithUserInput();
   void updateTab();
+  void setNeeds(bool need);
 
 signals:
   void emitCommand(QString);

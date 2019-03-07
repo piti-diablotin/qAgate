@@ -37,7 +37,6 @@ signals:
   void switchAA();
   void switchAngles();
   void switchTimeInfo();
-  void sendCommand(QString command,bool=true);
 private slots:
   void on_actionPerspective_triggered();
   void on_actionLight_triggered();

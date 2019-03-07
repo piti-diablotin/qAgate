@@ -66,6 +66,7 @@ void TimeLine::on_slider_valueChanged(int value)
 {
   _time = value;
   if ( !_autoUpdate ) emit(timeChanged());
+  emit(updatedTime());
 }
 
 void TimeLine::on_timeEnd_valueChanged(int time)

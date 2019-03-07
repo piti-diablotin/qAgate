@@ -166,7 +166,7 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
         </property>
         <property name="icon">
          <iconset resource="qagate.qrc">
-          <normaloff>:/logger/icons/trash-2.svg</normaloff>:/logger/icons/trash-2.svg</iconset>
+          <normaloff>:/logger/icons/trash.svg</normaloff>:/logger/icons/trash.svg</iconset>
         </property>
         <property name="shortcut">
          <string>Ctrl+Alt+C</string>

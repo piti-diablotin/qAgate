@@ -47,6 +47,8 @@ public:
   void imageSaverInfo(ImageSaver::ImageType& format, int& quality, ImageSuffix& suffix) const;
   unsigned getDisplay() const;
   const Canvas* getCanvas();
+  double getAngle(int atom1, int atom2, int atom3) const;
+  double getDistance(int atom1, int atom2) const;
 
 protected:
   virtual bool getChar(unsigned key);

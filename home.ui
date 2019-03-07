@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Home</class>
+ <widget class="QWidget" name="Home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>127</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>4</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Import/Export</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="saveAbinit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Write abinit input file</string>
+        </property>
+        <property name="statusTip">
+         <string>Write abinit input file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Write abinit input file</string>
+        </property>
+        <property name="text">
+         <string>Abinit</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="dumpHist">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Export trajectory to _HIST format</string>
+        </property>
+        <property name="statusTip">
+         <string>Export trajectory to _HIST format</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export trajectory to _HIST format</string>
+        </property>
+        <property name="text">
+         <string>HIST</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="load">
+        <property name="toolTip">
+         <string>Open a script file</string>
+        </property>
+        <property name="statusTip">
+         <string>Open a script file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Open a script file</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="savePoscar">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Write VASP POSCAR</string>
+        </property>
+        <property name="statusTip">
+         <string>Write VASP POSCAR</string>
+        </property>
+        <property name="whatsThis">
+         <string>Write VASP POSCAR</string>
+        </property>
+        <property name="text">
+         <string>VASP</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/save-poscar.svg</normaloff>:/home/icons/save-poscar.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="dumpXyz">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Export trajectory to XYZ format</string>
+        </property>
+        <property name="statusTip">
+         <string>Export trajectory to XYZ format</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export trajectory to XYZ format</string>
+        </property>
+        <property name="text">
+         <string>XYZ</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QToolButton" name="saveCif">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Write CIF file</string>
+        </property>
+        <property name="statusTip">
+         <string>Write CIF file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Write CIF file</string>
+        </property>
+        <property name="text">
+         <string>CIF</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/save.svg</normaloff>:/home/icons/save.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="update">
+        <property name="toolTip">
+         <string>Reload the current file</string>
+        </property>
+        <property name="statusTip">
+         <string>Reload the current file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Reload the current file</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/home/icons/refresh-cw.svg</normaloff>:/home/icons/refresh-cw.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Edit</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Explore</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="distanceCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Distance measurement</string>
+           </property>
+           <property name="statusTip">
+            <string>Distance between 2 atoms</string>
+           </property>
+           <property name="whatsThis">
+            <string>Distance measurement</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/home/icons/rule.svg</normaloff>:/home/icons/rule.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>17</width>
+             <height>17</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="distanceAtom1">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Atom 1</string>
+           </property>
+           <property name="statusTip">
+            <string>Atom 1</string>
+           </property>
+           <property name="whatsThis">
+            <string>Atom 1</string>
+           </property>
+           <property name="prefix">
+            <string>Atom </string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="distanceAtom2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Atom 2</string>
+           </property>
+           <property name="statusTip">
+            <string>Atom 2</string>
+           </property>
+           <property name="whatsThis">
+            <string>Atom 2</string>
+           </property>
+           <property name="prefix">
+            <string>Atom </string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="distanceResult">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Measurement</string>
+           </property>
+           <property name="statusTip">
+            <string>Measurement</string>
+           </property>
+           <property name="whatsThis">
+            <string>Measurement</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="distanceUnit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Unit for this distance</string>
+           </property>
+           <property name="statusTip">
+            <string>Unit for this distance</string>
+           </property>
+           <property name="whatsThis">
+            <string>Unit for this distance</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>bohr</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>A</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="angleCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Angle measurement</string>
+           </property>
+           <property name="statusTip">
+            <string>Angle between 3 atoms</string>
+           </property>
+           <property name="whatsThis">
+            <string>Angle measurement</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/home/icons/angle.svg</normaloff>:/home/icons/angle.svg</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="angleAtom1">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Atom 1</string>
+           </property>
+           <property name="statusTip">
+            <string>Atom 1</string>
+           </property>
+           <property name="whatsThis">
+            <string>Atom 1</string>
+           </property>
+           <property name="prefix">
+            <string>Atom </string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="angleAtom2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Atom 2</string>
+           </property>
+           <property name="statusTip">
+            <string>Atom 2</string>
+           </property>
+           <property name="whatsThis">
+            <string>Atom 2</string>
+           </property>
+           <property name="prefix">
+            <string>Atom </string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="angleAtom3">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Atom 3</string>
+           </property>
+           <property name="statusTip">
+            <string>Atom 3</string>
+           </property>
+           <property name="whatsThis">
+            <string>Atom 3</string>
+           </property>
+           <property name="prefix">
+            <string>Atom </string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="angleResult">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Measurement</string>
+           </property>
+           <property name="statusTip">
+            <string>Measurement</string>
+           </property>
+           <property name="whatsThis">
+            <string>Measurement</string>
+           </property>
+           <property name="text">
+            <string notr="true">0°</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QToolButton" name="spg">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="toolTip">
+            <string>Space group of current time</string>
+           </property>
+           <property name="statusTip">
+            <string>Space group of current time</string>
+           </property>
+           <property name="whatsThis">
+            <string>Space group of current time</string>
+           </property>
+           <property name="text">
+            <string>Space Group</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="thermo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Thermo</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>387</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="qagate.qrc"/>
+ </resources>
+ <connections/>
+</ui>
