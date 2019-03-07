@@ -17,6 +17,7 @@ public:
   int timeBegin() const;
   int timeEnd() const;
   int time() const;
+  int timeTotal() const;
 
 private slots:
   void set_splitter();
@@ -42,6 +43,7 @@ private:
   int _timeEnd;
   int _time;
   int _timeTotal;
+  bool _autoUpdate;
 
 signals:
   void timeBeginChanged();

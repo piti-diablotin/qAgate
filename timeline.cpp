@@ -9,7 +9,8 @@ TimeLine::TimeLine(QWidget *parent) :
   _timeBegin(0),
   _timeEnd(0),
   _time(0),
-  _timeTotal(0)
+  _timeTotal(0),
+  _autoUpdate(false)
 {
   ui->setupUi(this);
   //this->set_splitter();
@@ -44,6 +45,11 @@ int TimeLine::time() const
   return _time;
 }
 
+int TimeLine::timeTotal() const
+{
+  return _timeTotal;
+}
+
 void TimeLine::on_timeBegin_valueChanged(int time)
 {
   //auto sizes = ui->splitter->sizes();
@@ -53,13 +59,13 @@ void TimeLine::on_timeBegin_valueChanged(int time)
   //sizes[1] = total-sizes[0]-sizes[2];
   _timeBegin = time;
   set_splitter();
-  emit(timeBeginChanged());
+  if ( !_autoUpdate ) emit(timeBeginChanged());
 }
 
 void TimeLine::on_slider_valueChanged(int value)
 {
   _time = value;
-  emit(timeChanged());
+  if ( !_autoUpdate ) emit(timeChanged());
 }
 
 void TimeLine::on_timeEnd_valueChanged(int time)
@@ -71,7 +77,7 @@ void TimeLine::on_timeEnd_valueChanged(int time)
   //sizes[2] = total*(_timeTotal-1-_timeEnd)/_timeTotal;
   //sizes[1] = total-sizes[0]-sizes[2];
   set_splitter();
-  emit(timeEndChanged());
+  if ( !_autoUpdate ) emit(timeEndChanged());
 }
 
 void TimeLine::on_splitter_splitterMoved(int pos, int index)
@@ -111,27 +117,35 @@ void TimeLine::set_splitter()
 
 void TimeLine::setTimeBegin(int time)
 {
+  _autoUpdate = true;
   ui->timeBegin->setValue(time);
+  _autoUpdate = false;
 }
 
 void TimeLine::setTimeEnd(int time)
 {
+  _autoUpdate = true;
   ui->timeEnd->setValue(time);
+  _autoUpdate = false;
 }
 
 void TimeLine::setTime(int time)
 {
+  _autoUpdate = true;
   ui->slider->setValue(time);
+  _autoUpdate = false;
 }
 
 void TimeLine::setTimeTotal(int time)
 {
+  _autoUpdate = true;
   if (time < 1) return;
   if (time <= _timeEnd) _timeEnd = time-1;
   if (time < _timeBegin) _timeBegin = time-1;
   if (time < _time) _time = time-1;
   _timeTotal = time;
   set_splitter();
+  _autoUpdate = false;
   //TimeLine::setTimeBegin(_timeBegin);
   //TimeLine::setTimeEnd(_timeEnd);
   //TimeLine::setTime(_time);
