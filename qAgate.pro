@@ -41,7 +41,14 @@ SOURCES += \
     visuals.cpp \
     home.cpp \
     dialogs/dumpdialog.cpp \
-    dialogs/writedialog.cpp
+    dialogs/writedialog.cpp \
+    tools/distanceunitcombo.cpp \
+    tools/unitcombo.cpp \
+    dialogs/spgdialog.cpp \
+    dialogs/supercelldialog.cpp \
+    dialogs/shiftdialog.cpp \
+    dialogs/movedialog.cpp \
+    dialogs/typatdialog.cpp
 
 HEADERS += \
     qagate.h \
@@ -58,7 +65,14 @@ HEADERS += \
     visuals.h \
     home.h \
     dialogs/dumpdialog.h \
-    dialogs/writedialog.h
+    dialogs/writedialog.h \
+    tools/distanceunitcombo.h \
+    tools/unitcombo.h \
+    dialogs/spgdialog.h \
+    dialogs/supercelldialog.h \
+    dialogs/shiftdialog.h \
+    dialogs/movedialog.h \
+    dialogs/typatdialog.h
 
 FORMS += \
     qagate.ui \
@@ -73,7 +87,12 @@ FORMS += \
     visuals.ui \
     home.ui \
     dialogs/dumpdialog.ui \
-    dialogs/writedialog.ui
+    dialogs/writedialog.ui \
+    dialogs/spgdialog.ui \
+    dialogs/supercelldialog.ui \
+    dialogs/shiftdialog.ui \
+    dialogs/movedialog.ui \
+    dialogs/typatdialog.ui
 
 RESOURCES += \
     qagate.qrc

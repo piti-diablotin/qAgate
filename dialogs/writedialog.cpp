@@ -10,6 +10,7 @@ WriteDialog::WriteDialog(QWidget *parent) :
 {
   ui->setupUi(this);
   this->setModal(true);
+  this->setWindowTitle(tr("Save options"));
 }
 
 WriteDialog::~WriteDialog()

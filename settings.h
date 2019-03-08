@@ -5,7 +5,6 @@
 #include "view.h"
 #include "abstracttab.h"
 #include "mendeleev.h"
-#include "base/unitconverter.hpp"
 
 namespace Ui {
   class Settings;
@@ -56,7 +55,7 @@ private slots:
   void on_height_editingFinished();
   void on_bond_valueChanged(double arg1);
   void on_bondRadius_valueChanged(double arg1);
-  void on_comboBox_currentIndexChanged(const QString &arg1);
+  void on_comboBox_newUnit(UnitConverter::Unit unit);
   void on_actionMendeleev_triggered();
   void updateMendeleev();
   void on_up_clicked();

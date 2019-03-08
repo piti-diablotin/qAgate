@@ -185,9 +185,9 @@ void Settings::on_bondRadius_valueChanged(double arg1)
     }
 }
 
-void Settings::on_comboBox_currentIndexChanged(const QString &arg1)
+void Settings::on_comboBox_newUnit(UnitConverter::Unit unit)
 {
-    UnitConverter newUnit = UnitConverter::getFromString(arg1.toStdString());
+    UnitConverter newUnit(unit);
     newUnit.rebase(UnitConverter::bohr);
     double rad = ui->bondRadius->value()/_bondRadiusUnit*newUnit;
     _bondRadiusUnit = newUnit;
@@ -214,6 +214,7 @@ void Settings::on_up_clicked()
 {
   QColor color(255,127,0);
   color = QColorDialog::getColor(color,this,tr("Spin up color"),QColorDialog::DontUseNativeDialog);
+  if (!color.isValid()) return;
   QString command = ":color up " + QString::number(color.red())
       + " " + QString::number(color.green())
       + " " + QString::number(color.blue());
@@ -224,6 +225,7 @@ void Settings::on_down_clicked()
 {
   QColor color(0,255,127);
   color = QColorDialog::getColor(color,this,tr("Spin down color"),QColorDialog::DontUseNativeDialog);
+  if (!color.isValid()) return;
   QString command = ":color down " + QString::number(color.red())
       + " " + QString::number(color.green())
       + " " + QString::number(color.blue());

@@ -65,5 +65,13 @@
         <file>icons/home.svg</file>
         <file>icons/rule.svg</file>
         <file>icons/angle.svg</file>
+        <file>icons/noperiodic.svg</file>
+        <file>icons/periodic.svg</file>
+        <file>icons/centroid.svg</file>
+        <file>icons/average.svg</file>
+        <file>icons/supercell.svg</file>
+        <file>icons/move.svg</file>
+        <file>icons/typat.svg</file>
+        <file>icons/shift.svg</file>
     </qresource>
 </RCC>

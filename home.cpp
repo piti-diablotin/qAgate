@@ -2,17 +2,24 @@
 #include "ui_home.h"
 #include "dialogs/dumpdialog.h"
 #include <QLocale>
+#include "dialogs/supercelldialog.h"
+#include "dialogs/movedialog.h"
+#include "dialogs/shiftdialog.h"
+#include "dialogs/typatdialog.h"
 
 Home::Home(QWidget *parent) :
   AbstractTab(parent),
   ui(new Ui::Home),
   _dumpDialog(this),
   _writeDialog(this),
+  _spgDialog(this),
   _natom(0),
   _distance(0),
   _distanceUnit(UnitConverter::bohr)
 {
   ui->setupUi(this);
+  ui->choiceWhat->setItemData(0,"");
+  ui->choiceWhat->setItemData(1,"all");
 }
 
 Home::~Home()
@@ -56,9 +63,17 @@ void Home::updateStatus(View *view)
   ui->saveCif->setEnabled(something);
   ui->update->setEnabled(something);
 
+  ui->edit->setEnabled(something);
+  ui->explore->setEnabled(something);
+  if (something)
+    {
+      ui->centoid->setEnabled(view->getCanvas()->histdata()->nimage()>1);
+    }
+  /*
   ui->distanceCheckBox->setEnabled(something);
   ui->angleCheckBox->setEnabled(something);
   ui->spg->setEnabled(something);
+  */
 
   _natom = something ? view->getCanvas()->histdata()->natom() : 0;
   ui->distanceAtom1->setRange(1,_natom);
@@ -66,6 +81,11 @@ void Home::updateStatus(View *view)
   ui->angleAtom1->setRange(1,_natom);
   ui->angleAtom2->setRange(1,_natom);
   ui->angleAtom3->setRange(1,_natom);
+
+  if (something)
+    {
+      _znucl = QVector<int>::fromStdVector(view->getCanvas()->histdata()->znucl());
+    }
 }
 
 void Home::on_update_clicked()
@@ -153,9 +173,9 @@ void Home::on_angleCheckBox_clicked(bool checked)
   emit(needAngle(checked));
 }
 
-void Home::on_distanceUnit_currentTextChanged(const QString &arg1)
+void Home::on_distanceUnit_newUnit(UnitConverter::Unit unit)
 {
-  _distanceUnit = UnitConverter::getUnit(arg1.toStdString());
+  _distanceUnit = unit;
   double distance = _distance*_distanceUnit;
   ui->distanceResult->setText(QString::number(distance,'g',3));
 
@@ -193,5 +213,82 @@ void Home::on_angleAtom3_valueChanged(int arg1)
 
 void Home::on_spg_clicked()
 {
-   emit(sendCommand(":spg"));
+  _spgDialog.exec();
+  double precision = _spgDialog.precision();
+  if (precision < 0) return;
+  emit(sendCommand(":spg "+QString::number(precision,'g',8)));
+}
+
+void Home::on_periodic_clicked()
+{
+   emit(sendCommand(":periodic 1 "+ui->choiceWhat->currentData().toString()));
+}
+
+void Home::on_deperiodic_clicked()
+{
+   emit(sendCommand(":periodic 0 "+ui->choiceWhat->currentData().toString()));
+}
+
+void Home::on_average_clicked()
+{
+   emit(sendCommand(":average"));
+}
+
+void Home::on_centoid_clicked()
+{
+   emit(sendCommand(":centroid"));
+}
+
+void Home::on_supercell_clicked()
+{
+  SupercellDialog dialog(this);
+  dialog.exec();
+  QVector<int> mat = dialog.matrix();
+  if (!mat.isEmpty())
+    {
+      emit(sendCommand(":supercell "+QString::number(mat[0])
+                       + " " + QString::number(mat[4])
+                       + " " + QString::number(mat[8])));
+    }
+}
+
+void Home::on_move_clicked()
+{
+    MoveDialog dialog(this);
+    dialog.configure(_natom);
+    dialog.exec();
+    int iatom;
+    double x, y ,z;
+    dialog.result(iatom,x,y,z);
+    if (iatom==0) return;
+    emit(sendCommand(":move "+QString::number(iatom)
+                     +" " + QString::number(x)
+                     +" " + QString::number(y)
+                     +" " + QString::number(z)
+                     ));
+}
+
+void Home::on_shift_clicked()
+{
+    ShiftDialog dialog(this);
+    dialog.exec();
+    double x, y ,z;
+    dialog.result(x,y,z);
+    if (std::abs(x)<1e-6 && std::abs(y)<1e-8 && std::abs(z)<1e-8) return;
+    emit(sendCommand(":shift "
+                     + QString::number(x)
+                     +" " + QString::number(y)
+                     +" " + QString::number(z)
+                     +ui->choiceWhat->currentData().toString()
+                     ));
+}
+
+void Home::on_typat_clicked()
+{
+    TypatDialog dialog(this);
+    dialog.configure(_natom,_znucl);
+    dialog.exec();
+    int iatom, znucl;
+    dialog.result(iatom,znucl);
+    emit(sendCommand(":typat "+QString::number(iatom)+ " " +QString::number(znucl)));
 }
