@@ -4,7 +4,7 @@
 #include <QMetaMethod>
 #include <QDebug>
 #include <QMap>
-#include "abstracttab.h"
+#include "tabs/abstracttab.h"
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),

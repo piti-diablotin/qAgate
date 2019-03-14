@@ -240,25 +240,25 @@
   <customwidget>
    <class>Settings</class>
    <extends>QWidget</extends>
-   <header>settings.h</header>
+   <header>tabs/settings.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>Visuals</class>
    <extends>QWidget</extends>
-   <header>visuals.h</header>
+   <header>tabs/visuals.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>Home</class>
    <extends>QWidget</extends>
-   <header>home.h</header>
+   <header>tabs/home.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>MD</class>
    <extends>QWidget</extends>
-   <header>md.h</header>
+   <header>tabs/md.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
