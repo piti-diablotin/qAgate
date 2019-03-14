@@ -57,7 +57,9 @@ SOURCES += \
     dialogs/plandialog.cpp \
     dialogs/pdfdialog.cpp \
     tools/energyunitcombo.cpp \
-    dialogs/smearingdialog.cpp
+    dialogs/smearingdialog.cpp \
+    conducti/qconducti.cpp \
+    tabs/tools.cpp
 
 HEADERS += \
     qagate.h \
@@ -90,7 +92,9 @@ HEADERS += \
     dialogs/plandialog.h \
     dialogs/pdfdialog.h \
     tools/energyunitcombo.h \
-    dialogs/smearingdialog.h
+    dialogs/smearingdialog.h \
+    conducti/qconducti.h \
+    tabs/tools.h
 
 FORMS += \
     qagate.ui \
@@ -116,7 +120,9 @@ FORMS += \
     dialogs/atomdialog.ui \
     dialogs/plandialog.ui \
     dialogs/pdfdialog.ui \
-    dialogs/smearingdialog.ui
+    dialogs/smearingdialog.ui \
+    conducti/qconducti.ui \
+    tabs/tools.ui
 
 RESOURCES += \
     qagate.qrc

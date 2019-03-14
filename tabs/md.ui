@@ -189,7 +189,7 @@
          <string>d</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/acell.svg</normaloff>:/MD/icons/acell.svg</iconset>
         </property>
         <property name="iconSize">
@@ -218,7 +218,7 @@
          <string>A</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/angles.svg</normaloff>:/MD/icons/angles.svg</iconset>
         </property>
         <property name="iconSize">
@@ -247,7 +247,7 @@
          <string>A</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/angle.svg</normaloff>:/MD/icons/angle.svg</iconset>
         </property>
         <property name="iconSize">
@@ -276,7 +276,7 @@
          <string>D</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/rule.svg</normaloff>:/MD/icons/rule.svg</iconset>
         </property>
         <property name="iconSize">
@@ -305,7 +305,7 @@
          <string>V</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/volume.svg</normaloff>:/MD/icons/volume.svg</iconset>
         </property>
         <property name="iconSize">
@@ -358,7 +358,7 @@
          <string>P</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/pressure.svg</normaloff>:/MD/icons/pressure.svg</iconset>
         </property>
         <property name="iconSize">
@@ -387,7 +387,7 @@
          <string>K</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/kinetic.svg</normaloff>:/MD/icons/kinetic.svg</iconset>
         </property>
         <property name="iconSize">
@@ -416,7 +416,7 @@
          <string>S</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/entropy.svg</normaloff>:/MD/icons/entropy.svg</iconset>
         </property>
         <property name="iconSize">
@@ -445,7 +445,7 @@
          <string>thermo</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/thermodynamics.svg</normaloff>:/MD/icons/thermodynamics.svg</iconset>
         </property>
         <property name="iconSize">
@@ -474,7 +474,7 @@
          <string>E</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/energy.svg</normaloff>:/MD/icons/energy.svg</iconset>
         </property>
         <property name="iconSize">
@@ -503,7 +503,7 @@
          <string>S</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/stress.svg</normaloff>:/MD/icons/stress.svg</iconset>
         </property>
         <property name="iconSize">
@@ -532,7 +532,7 @@
          <string>T</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/thermometer.svg</normaloff>:/MD/icons/thermometer.svg</iconset>
         </property>
         <property name="iconSize">
@@ -585,7 +585,7 @@
          <string>PDOS</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/pdos.svg</normaloff>:/MD/icons/pdos.svg</iconset>
         </property>
         <property name="iconSize">
@@ -614,7 +614,7 @@
          <string>VACF</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/vacf.svg</normaloff>:/MD/icons/vacf.svg</iconset>
         </property>
         <property name="iconSize">
@@ -643,7 +643,7 @@
          <string>MSD</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/msd.svg</normaloff>:/MD/icons/msd.svg</iconset>
         </property>
         <property name="iconSize">
@@ -672,7 +672,7 @@
          <string>gy</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/gyration.svg</normaloff>:/MD/icons/gyration.svg</iconset>
         </property>
         <property name="iconSize">
@@ -701,7 +701,7 @@
          <string>PDF</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/pdf.svg</normaloff>:/MD/icons/pdf.svg</iconset>
         </property>
         <property name="iconSize">
@@ -730,7 +730,7 @@
          <string>Pos</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/MD/icons/positions.svg</normaloff>:/MD/icons/positions.svg</iconset>
         </property>
         <property name="iconSize">
@@ -763,7 +763,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="qagate.qrc"/>
+  <include location="../qagate.qrc"/>
  </resources>
  <connections/>
 </ui>

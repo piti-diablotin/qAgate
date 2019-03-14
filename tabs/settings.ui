@@ -191,7 +191,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/settings/icons/mendeleev.svg</normaloff>:/settings/icons/mendeleev.svg</iconset>
         </property>
         <property name="iconSize">
@@ -382,7 +382,7 @@
             <string>A</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/foreground.svg</normaloff>:/settings/icons/foreground.svg</iconset>
            </property>
            <property name="iconSize">
@@ -447,7 +447,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/background.svg</normaloff>:/settings/icons/background.svg</iconset>
            </property>
            <property name="iconSize">
@@ -476,7 +476,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/arrow-up.svg</normaloff>:/settings/icons/arrow-up.svg</iconset>
            </property>
            <property name="iconSize">
@@ -505,7 +505,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/arrow-down.svg</normaloff>:/settings/icons/arrow-down.svg</iconset>
            </property>
            <property name="iconSize">
@@ -598,7 +598,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/sun.svg</normaloff>:/settings/icons/sun.svg</iconset>
            </property>
            <property name="iconSize">
@@ -636,7 +636,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/mesh.svg</normaloff>:/settings/icons/mesh.svg</iconset>
            </property>
            <property name="iconSize">
@@ -674,7 +674,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/perspective.svg</normaloff>:/settings/icons/perspective.svg</iconset>
            </property>
            <property name="iconSize">
@@ -712,7 +712,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/settings/icons/anti-aliasing.svg</normaloff>:/settings/icons/anti-aliasing.svg</iconset>
            </property>
            <property name="iconSize">
@@ -1110,7 +1110,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/settings/icons/mesh.svg</normaloff>:/settings/icons/mesh.svg</iconset>
    </property>
    <property name="text">
@@ -1131,7 +1131,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/settings/icons/sun.svg</normaloff>:/settings/icons/sun.svg</iconset>
    </property>
    <property name="text">
@@ -1152,7 +1152,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/settings/icons/perspective.svg</normaloff>:/settings/icons/perspective.svg</iconset>
    </property>
    <property name="text">
@@ -1173,7 +1173,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/settings/icons/aliasing.svg</normaloff>:/settings/icons/aliasing.svg</iconset>
    </property>
    <property name="text">
@@ -1191,7 +1191,7 @@
   </action>
   <action name="actionMendeleev">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/settings/icons/mendeleev.svg</normaloff>:/settings/icons/mendeleev.svg</iconset>
    </property>
    <property name="text">
@@ -1222,7 +1222,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="qagate.qrc"/>
+  <include location="../qagate.qrc"/>
  </resources>
  <connections/>
 </ui>

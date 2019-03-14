@@ -126,6 +126,15 @@
             <string>&amp;Settings</string>
            </attribute>
           </widget>
+          <widget class="Tools" name="tools">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/tools/icons/tools.svg</normaloff>:/tools/icons/tools.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>&amp;Tools</string>
+           </attribute>
+          </widget>
          </widget>
         </item>
         <item>
@@ -259,6 +268,12 @@
    <class>MD</class>
    <extends>QWidget</extends>
    <header>tabs/md.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Tools</class>
+   <extends>QWidget</extends>
+   <header>tabs/tools.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

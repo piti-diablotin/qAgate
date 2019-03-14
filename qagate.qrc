@@ -97,4 +97,7 @@
         <file>icons/pdf.svg</file>
         <file>icons/md.svg</file>
     </qresource>
+    <qresource prefix="/tools">
+        <file>icons/tools.svg</file>
+    </qresource>
 </RCC>

@@ -108,7 +108,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
            </property>
            <property name="autoRaise">
@@ -131,7 +131,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
            </property>
            <property name="autoRaise">
@@ -154,7 +154,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
            </property>
            <property name="autoRaise">
@@ -184,7 +184,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
            </property>
            <property name="autoRaise">
@@ -207,7 +207,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
            </property>
            <property name="autoRaise">
@@ -230,7 +230,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset resource="../qagate.qrc">
              <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
            </property>
            <property name="autoRaise">
@@ -284,7 +284,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="qagate.qrc">:/visuals/icons/theta.svg</pixmap>
+            <pixmap resource="../qagate.qrc">:/visuals/icons/theta.svg</pixmap>
            </property>
           </widget>
          </item>
@@ -296,7 +296,7 @@
             </font>
            </property>
            <property name="pixmap">
-            <pixmap resource="qagate.qrc">:/visuals/icons/psi.svg</pixmap>
+            <pixmap resource="../qagate.qrc">:/visuals/icons/psi.svg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>false</bool>
@@ -314,7 +314,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="qagate.qrc">:/visuals/icons/phi.svg</pixmap>
+            <pixmap resource="../qagate.qrc">:/visuals/icons/phi.svg</pixmap>
            </property>
           </widget>
          </item>
@@ -507,7 +507,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/visuals/icons/axis.svg</normaloff>:/visuals/icons/axis.svg</iconset>
         </property>
         <property name="iconSize">
@@ -542,7 +542,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/visuals/icons/time.svg</normaloff>:/visuals/icons/time.svg</iconset>
         </property>
         <property name="iconSize">
@@ -583,7 +583,7 @@
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate.qrc">
           <normaloff>:/visuals/icons/angles.svg</normaloff>:/visuals/icons/angles.svg</iconset>
         </property>
         <property name="iconSize">
@@ -925,7 +925,7 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="qagate.qrc">
+             <iconset resource="../qagate.qrc">
               <normaloff>:/visuals/icons/plus-circle.svg</normaloff>:/visuals/icons/plus-circle.svg</iconset>
             </property>
            </item>
@@ -955,7 +955,7 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="qagate.qrc">
+             <iconset resource="../qagate.qrc">
               <normaloff>:/visuals/icons/minus-circle.svg</normaloff>:/visuals/icons/minus-circle.svg</iconset>
             </property>
            </item>
@@ -1150,7 +1150,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/angles.svg</normaloff>:/visuals/icons/angles.svg</iconset>
    </property>
    <property name="text">
@@ -1171,7 +1171,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/time.svg</normaloff>:/visuals/icons/time.svg</iconset>
    </property>
    <property name="text">
@@ -1192,7 +1192,7 @@
   </action>
   <action name="action_px">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
    </property>
    <property name="text">
@@ -1207,7 +1207,7 @@
   </action>
   <action name="action_py">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
    </property>
    <property name="text">
@@ -1222,7 +1222,7 @@
   </action>
   <action name="action_pz">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
    </property>
    <property name="text">
@@ -1237,7 +1237,7 @@
   </action>
   <action name="action_mz">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
    </property>
    <property name="text">
@@ -1252,7 +1252,7 @@
   </action>
   <action name="action_my">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
    </property>
    <property name="text">
@@ -1267,7 +1267,7 @@
   </action>
   <action name="action_mx">
    <property name="icon">
-    <iconset resource="qagate.qrc">
+    <iconset resource="../qagate.qrc">
      <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
    </property>
    <property name="text">
@@ -1315,7 +1315,7 @@
   </action>
  </widget>
  <resources>
-  <include location="qagate.qrc"/>
+  <include location="../qagate.qrc"/>
  </resources>
  <connections/>
  <buttongroups>
