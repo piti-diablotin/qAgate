@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>qconducti_fr.qm</file>
+        <file>qconducti_it.qm</file>
+        <file>qconducti_de.qm</file>
+    </qresource>
+</RCC>
