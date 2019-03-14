@@ -15,6 +15,11 @@ SmearingDialog::~SmearingDialog()
   delete ui;
 }
 
+double SmearingDialog::smearing() const
+{
+ return ui->tsmear->value()/_unit;
+}
+
 void SmearingDialog::on_unit_currentIndexChanged(int index)
 {
   (void) index;

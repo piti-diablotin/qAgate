@@ -34,12 +34,12 @@ SOURCES += \
     commandline.cpp \
     logger.cpp \
     qostreamcatcher.cpp \
-    settings.cpp \
-    abstracttab.cpp \
+    tabs/settings.cpp \
+    tabs/abstracttab.cpp \
     mendeleev.cpp \
     atomicdata.cpp \
-    visuals.cpp \
-    home.cpp \
+    tabs/visuals.cpp \
+    tabs/home.cpp \
     dialogs/dumpdialog.cpp \
     dialogs/writedialog.cpp \
     tools/distanceunitcombo.cpp \
@@ -52,7 +52,7 @@ SOURCES += \
     tools/qplot.cpp \
     tools/qcustomplot.cpp \
     dialogs/plotwindow.cpp \
-    md.cpp \
+    tabs/md.cpp \
     dialogs/atomdialog.cpp \
     dialogs/plandialog.cpp \
     dialogs/pdfdialog.cpp \
@@ -67,12 +67,12 @@ HEADERS += \
     commandline.h \
     logger.h \
     qostreamcatcher.h \
-    settings.h \
-    abstracttab.h \
+    tabs/settings.h \
+    tabs/abstracttab.h \
     mendeleev.h \
     atomicdata.h \
-    visuals.h \
-    home.h \
+    tabs/visuals.h \
+    tabs/home.h \
     dialogs/dumpdialog.h \
     dialogs/writedialog.h \
     tools/distanceunitcombo.h \
@@ -85,7 +85,7 @@ HEADERS += \
     tools/qplot.h \
     tools/qcustomplot.h \
     dialogs/plotwindow.h \
-    md.h \
+    tabs/md.h \
     dialogs/atomdialog.h \
     dialogs/plandialog.h \
     dialogs/pdfdialog.h \
@@ -99,11 +99,11 @@ FORMS += \
     view.ui \
     commandline.ui \
     logger.ui \
-    settings.ui \
+    tabs/settings.ui \
     mendeleev.ui \
     atomicdata.ui \
-    visuals.ui \
-    home.ui \
+    tabs/visuals.ui \
+    tabs/home.ui \
     dialogs/dumpdialog.ui \
     dialogs/writedialog.ui \
     dialogs/spgdialog.ui \
@@ -112,7 +112,7 @@ FORMS += \
     dialogs/movedialog.ui \
     dialogs/typatdialog.ui \
     dialogs/plotwindow.ui \
-    md.ui \
+    tabs/md.ui \
     dialogs/atomdialog.ui \
     dialogs/plandialog.ui \
     dialogs/pdfdialog.ui \

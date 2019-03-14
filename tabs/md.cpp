@@ -275,5 +275,6 @@ void MD::on_pdos_clicked()
   if (_plot.isHidden()) _plot.show();
   SmearingDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  emit(sendCommand(_plotCommand+" pdos"));
+  QString data = "tsmear "+QString::number(dialog.smearing());
+  emit(sendCommand(_plotCommand+" pdos "+ data));
 }

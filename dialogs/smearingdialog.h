@@ -15,6 +15,7 @@ class SmearingDialog : public QDialog
 public:
   explicit SmearingDialog(QWidget *parent = 0);
   ~SmearingDialog();
+  double smearing() const;
 
 private slots:
   void on_unit_currentIndexChanged(int index);
