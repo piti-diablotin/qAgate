@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QString>
+#include "tools/qplot.h"
 
 namespace Ui {
   class qAgate;
@@ -29,6 +30,7 @@ protected slots:
   void syncWithUserInput();
   void updateTab();
   void setNeeds(bool need);
+  void setPlot(QPlot* plot);
 
 signals:
   void emitCommand(QString);

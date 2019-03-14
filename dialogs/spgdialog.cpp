@@ -9,7 +9,6 @@ SpgDialog::SpgDialog(QWidget *parent) :
   _rejected(false)
 {
   ui->setupUi(this);
-  this->setWindowTitle(tr("Set spacegroup precision"));
   ui->precision->setValidator(&_validator);
 }
 

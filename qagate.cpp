@@ -79,6 +79,9 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->home,SIGNAL(needAngle(bool)),this,SLOT(setNeeds(bool)));
   connect(ui->home,SIGNAL(needDistance(bool)),this,SLOT(setNeeds(bool)));
 
+  // MD
+  connect(ui->md,SIGNAL(plotChanged(QPlot*)),this,SLOT(setPlot(QPlot*)));
+
   // Self
   connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
   this->updateTab();
@@ -86,6 +89,7 @@ qAgate::qAgate(QWidget *parent) :
 
 qAgate::~qAgate()
 {
+  ui->view->canvas()->setGraph(nullptr);
   delete ui;
 }
 
@@ -245,6 +249,11 @@ void qAgate::setNeeds(bool need)
   if (signal=="needAngle") _homeNeedsAngle = need;
   else if (signal=="needDistance") _homeNeedsDistance = need;
   this->updateNeeds();
+}
+
+void qAgate::setPlot(QPlot *plot)
+{
+ ui->view->canvas()->setGraph(plot);
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)

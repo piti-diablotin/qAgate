@@ -7,7 +7,6 @@ ShiftDialog::ShiftDialog(QWidget *parent) :
   _rejected(false)
 {
   ui->setupUi(this);
-  this->setWindowTitle(tr("Shift origin"));
 }
 
 ShiftDialog::~ShiftDialog()

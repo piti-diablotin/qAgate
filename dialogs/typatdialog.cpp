@@ -8,7 +8,6 @@ TypatDialog::TypatDialog(QWidget *parent) :
   _rejected(false)
 {
   ui->setupUi(this);
-  this->setWindowTitle(tr("Change type"));
 }
 
 TypatDialog::~TypatDialog()

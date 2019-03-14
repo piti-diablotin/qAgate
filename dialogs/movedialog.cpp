@@ -8,7 +8,6 @@ MoveDialog::MoveDialog(QWidget *parent) :
   _rejected(false)
 {
   ui->setupUi(this);
-  this->setWindowTitle(tr("Move atom"));
 }
 
 MoveDialog::~MoveDialog()

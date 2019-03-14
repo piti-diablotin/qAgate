@@ -74,4 +74,27 @@
         <file>icons/typat.svg</file>
         <file>icons/shift.svg</file>
     </qresource>
+    <qresource prefix="/MD">
+        <file>icons/save.svg</file>
+        <file>icons/zoom-1.svg</file>
+        <file>icons/pressure.svg</file>
+        <file>icons/thermometer.svg</file>
+        <file>icons/entropy.svg</file>
+        <file>icons/energy.svg</file>
+        <file>icons/kinetic.svg</file>
+        <file>icons/stress.svg</file>
+        <file>icons/volume.svg</file>
+        <file>icons/thermodynamics.svg</file>
+        <file>icons/angles.svg</file>
+        <file>icons/acell.svg</file>
+        <file>icons/angle.svg</file>
+        <file>icons/rule.svg</file>
+        <file>icons/gyration.svg</file>
+        <file>icons/pdos.svg</file>
+        <file>icons/positions.svg</file>
+        <file>icons/vacf.svg</file>
+        <file>icons/msd.svg</file>
+        <file>icons/pdf.svg</file>
+        <file>icons/md.svg</file>
+    </qresource>
 </RCC>

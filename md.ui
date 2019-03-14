@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MD</class>
+ <widget class="QWidget" name="MD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>127</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="plotSelection">
+     <property name="title">
+      <string>Plot selection</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="left">
+           <property name="toolTip">
+            <string>Select left plot pannel</string>
+           </property>
+           <property name="statusTip">
+            <string>Select left plot pannel</string>
+           </property>
+           <property name="whatsThis">
+            <string>Select left plot pannel</string>
+           </property>
+           <property name="text">
+            <string>&amp;Left</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="right">
+           <property name="toolTip">
+            <string>Select right plot pannel</string>
+           </property>
+           <property name="statusTip">
+            <string>Select right plot pannel</string>
+           </property>
+           <property name="whatsThis">
+            <string>Select right plot pannel</string>
+           </property>
+           <property name="text">
+            <string>&amp;Right</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="graphCombo">
+        <property name="toolTip">
+         <string>Select graph</string>
+        </property>
+        <property name="statusTip">
+         <string>Select graph</string>
+        </property>
+        <property name="whatsThis">
+         <string>Select graph</string>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="plot">
+        <property name="toolTip">
+         <string>Select option</string>
+        </property>
+        <property name="statusTip">
+         <string>Select option</string>
+        </property>
+        <property name="whatsThis">
+         <string>Select option</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Plot</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="geometry">
+     <property name="title">
+      <string>Geometry</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="lattice">
+        <property name="toolTip">
+         <string>Lattice parameters</string>
+        </property>
+        <property name="statusTip">
+         <string>Lattice parameters</string>
+        </property>
+        <property name="whatsThis">
+         <string>Lattice parameters</string>
+        </property>
+        <property name="text">
+         <string>d</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/acell.svg</normaloff>:/MD/icons/acell.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="angle">
+        <property name="toolTip">
+         <string>Cell angles</string>
+        </property>
+        <property name="statusTip">
+         <string>Cell angles</string>
+        </property>
+        <property name="whatsThis">
+         <string>Cell angles</string>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/angles.svg</normaloff>:/MD/icons/angles.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="angles">
+        <property name="toolTip">
+         <string>Angle between 3 atoms</string>
+        </property>
+        <property name="statusTip">
+         <string>Angle between 3 atoms</string>
+        </property>
+        <property name="whatsThis">
+         <string>Angle between 3 atoms</string>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/angle.svg</normaloff>:/MD/icons/angle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="distance">
+        <property name="toolTip">
+         <string>Distance between 2 atoms</string>
+        </property>
+        <property name="statusTip">
+         <string>Distance between 2 atoms</string>
+        </property>
+        <property name="whatsThis">
+         <string>Distance between 2 atoms</string>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/rule.svg</normaloff>:/MD/icons/rule.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="volume">
+        <property name="toolTip">
+         <string>Volume</string>
+        </property>
+        <property name="statusTip">
+         <string>Volume</string>
+        </property>
+        <property name="whatsThis">
+         <string>Volume</string>
+        </property>
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/volume.svg</normaloff>:/MD/icons/volume.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="thermodynamics">
+     <property name="title">
+      <string>Thermodynamics</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="pressure">
+        <property name="toolTip">
+         <string>Pressure</string>
+        </property>
+        <property name="statusTip">
+         <string>Pressure</string>
+        </property>
+        <property name="whatsThis">
+         <string>Pressure</string>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/pressure.svg</normaloff>:/MD/icons/pressure.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="kinetic">
+        <property name="toolTip">
+         <string>Kinetic energy</string>
+        </property>
+        <property name="statusTip">
+         <string>Kinetic energy</string>
+        </property>
+        <property name="whatsThis">
+         <string>Kinetic energy</string>
+        </property>
+        <property name="text">
+         <string>K</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/kinetic.svg</normaloff>:/MD/icons/kinetic.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="entropy">
+        <property name="toolTip">
+         <string>Electronic entropy</string>
+        </property>
+        <property name="statusTip">
+         <string>Electronic entropy</string>
+        </property>
+        <property name="whatsThis">
+         <string>Electronic entropy</string>
+        </property>
+        <property name="text">
+         <string>S</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/entropy.svg</normaloff>:/MD/icons/entropy.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QToolButton" name="thermo">
+        <property name="toolTip">
+         <string>Thermodynamical functions</string>
+        </property>
+        <property name="statusTip">
+         <string>Thermodynamical functions</string>
+        </property>
+        <property name="whatsThis">
+         <string>Thermodynamical functions</string>
+        </property>
+        <property name="text">
+         <string>thermo</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/thermodynamics.svg</normaloff>:/MD/icons/thermodynamics.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="energy">
+        <property name="toolTip">
+         <string>Electronic total energy</string>
+        </property>
+        <property name="statusTip">
+         <string>Electronic total energy</string>
+        </property>
+        <property name="whatsThis">
+         <string>Electronic total energy</string>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/energy.svg</normaloff>:/MD/icons/energy.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="stress">
+        <property name="toolTip">
+         <string>Stress tensor</string>
+        </property>
+        <property name="statusTip">
+         <string>Stress tensor</string>
+        </property>
+        <property name="whatsThis">
+         <string>Stress tensor</string>
+        </property>
+        <property name="text">
+         <string>S</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/stress.svg</normaloff>:/MD/icons/stress.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="temperature">
+        <property name="toolTip">
+         <string>Temperature</string>
+        </property>
+        <property name="statusTip">
+         <string>Temperature</string>
+        </property>
+        <property name="whatsThis">
+         <string>Temperature</string>
+        </property>
+        <property name="text">
+         <string>T</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/thermometer.svg</normaloff>:/MD/icons/thermometer.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="statistics">
+     <property name="title">
+      <string>Statistics</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="pdos">
+        <property name="toolTip">
+         <string>Phonon density of states</string>
+        </property>
+        <property name="statusTip">
+         <string>Phonon density of states</string>
+        </property>
+        <property name="whatsThis">
+         <string>Phonon density of states</string>
+        </property>
+        <property name="text">
+         <string>PDOS</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/pdos.svg</normaloff>:/MD/icons/pdos.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="vacf">
+        <property name="toolTip">
+         <string>Velocity auto-correlation function</string>
+        </property>
+        <property name="statusTip">
+         <string>Velocity auto-correlation function</string>
+        </property>
+        <property name="whatsThis">
+         <string>Velocity auto-correlation function</string>
+        </property>
+        <property name="text">
+         <string>VACF</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/vacf.svg</normaloff>:/MD/icons/vacf.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="msd">
+        <property name="toolTip">
+         <string>Mean square displacement</string>
+        </property>
+        <property name="statusTip">
+         <string>Mean square displacement</string>
+        </property>
+        <property name="whatsThis">
+         <string>Mean square displacement</string>
+        </property>
+        <property name="text">
+         <string>MSD</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/msd.svg</normaloff>:/MD/icons/msd.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="gyration">
+        <property name="toolTip">
+         <string>Gyration tensor</string>
+        </property>
+        <property name="statusTip">
+         <string>Gyration tensor</string>
+        </property>
+        <property name="whatsThis">
+         <string>Gyration tensor</string>
+        </property>
+        <property name="text">
+         <string>gy</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/gyration.svg</normaloff>:/MD/icons/gyration.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="pdf">
+        <property name="toolTip">
+         <string>Pair distribution function</string>
+        </property>
+        <property name="statusTip">
+         <string>Pair distribution function</string>
+        </property>
+        <property name="whatsThis">
+         <string>Pair distribution function</string>
+        </property>
+        <property name="text">
+         <string>PDF</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/pdf.svg</normaloff>:/MD/icons/pdf.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="positions">
+        <property name="toolTip">
+         <string>Positions in a plan</string>
+        </property>
+        <property name="statusTip">
+         <string>Positions in a plan</string>
+        </property>
+        <property name="whatsThis">
+         <string>Positions in a plan</string>
+        </property>
+        <property name="text">
+         <string>Pos</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qagate.qrc">
+          <normaloff>:/MD/icons/positions.svg</normaloff>:/MD/icons/positions.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>337</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="qagate.qrc"/>
+ </resources>
+ <connections/>
+</ui>

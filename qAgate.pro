@@ -6,7 +6,7 @@
 
 QT       += core gui opengl
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = qAgate
 TEMPLATE = app
@@ -48,7 +48,16 @@ SOURCES += \
     dialogs/supercelldialog.cpp \
     dialogs/shiftdialog.cpp \
     dialogs/movedialog.cpp \
-    dialogs/typatdialog.cpp
+    dialogs/typatdialog.cpp \
+    tools/qplot.cpp \
+    tools/qcustomplot.cpp \
+    dialogs/plotwindow.cpp \
+    md.cpp \
+    dialogs/atomdialog.cpp \
+    dialogs/plandialog.cpp \
+    dialogs/pdfdialog.cpp \
+    tools/energyunitcombo.cpp \
+    dialogs/smearingdialog.cpp
 
 HEADERS += \
     qagate.h \
@@ -72,7 +81,16 @@ HEADERS += \
     dialogs/supercelldialog.h \
     dialogs/shiftdialog.h \
     dialogs/movedialog.h \
-    dialogs/typatdialog.h
+    dialogs/typatdialog.h \
+    tools/qplot.h \
+    tools/qcustomplot.h \
+    dialogs/plotwindow.h \
+    md.h \
+    dialogs/atomdialog.h \
+    dialogs/plandialog.h \
+    dialogs/pdfdialog.h \
+    tools/energyunitcombo.h \
+    dialogs/smearingdialog.h
 
 FORMS += \
     qagate.ui \
@@ -92,17 +110,24 @@ FORMS += \
     dialogs/supercelldialog.ui \
     dialogs/shiftdialog.ui \
     dialogs/movedialog.ui \
-    dialogs/typatdialog.ui
+    dialogs/typatdialog.ui \
+    dialogs/plotwindow.ui \
+    md.ui \
+    dialogs/atomdialog.ui \
+    dialogs/plandialog.ui \
+    dialogs/pdfdialog.ui \
+    dialogs/smearingdialog.ui
 
 RESOURCES += \
     qagate.qrc
 
+TRANSLATIONS += qagate_fr.ts
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../usr/lib/release/ -lagate
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../usr/lib/debug/ -lagate
-else:unix: LIBS += -L$$PWD/../../../../usr/lib/ -lagate
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../usr/lib/release/ -lagate -lsymspg
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../usr/lib/debug/ -lagate -lsymspg
+else:unix: LIBS += -L$$PWD/../../../../usr/lib/ -lagate -lsymspg
 
-INCLUDEPATH += $$PWD/../../../../usr/include/agate
-DEPENDPATH += $$PWD/../../../../usr/include/agate
+INCLUDEPATH += /usr/include/agate
+DEPENDPATH += /usr/include/agate
 
 INCLUDEPATH += /usr/include/freetype2/

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Shift origin</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -51,7 +51,7 @@
       <item row="1" column="1">
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>y+</string>
+         <string notr="true">y+</string>
         </property>
        </widget>
       </item>
@@ -80,7 +80,7 @@
       <item row="0" column="1">
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>x+</string>
+         <string notr="true">x+</string>
         </property>
        </widget>
       </item>
@@ -122,7 +122,7 @@
       <item row="2" column="1">
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>z+</string>
+         <string notr="true">z+</string>
         </property>
        </widget>
       </item>

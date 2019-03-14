@@ -9,7 +9,6 @@ DumpDialog::DumpDialog(QWidget *parent) :
 {
   ui->setupUi(this);
   this->setModal(true);
-  this->setWindowTitle(tr("Export options"));
 }
 
 DumpDialog::~DumpDialog()

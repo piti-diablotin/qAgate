@@ -9,7 +9,6 @@ SupercellDialog::SupercellDialog(QWidget *parent) :
   _rejected(false)
 {
   ui->setupUi(this);
-  this->setWindowTitle(tr("Set supercel matrix"));
   connect(ui->xx,SIGNAL(textChanged(QString)),this,SLOT(validate(QString)));
   connect(ui->xy,SIGNAL(textChanged(QString)),this,SLOT(validate(QString)));
   connect(ui->xz,SIGNAL(textChanged(QString)),this,SLOT(validate(QString)));

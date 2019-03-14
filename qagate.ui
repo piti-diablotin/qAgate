@@ -75,6 +75,9 @@
           <property name="currentIndex">
            <number>0</number>
           </property>
+          <property name="tabsClosable">
+           <bool>false</bool>
+          </property>
           <widget class="Home" name="home">
            <attribute name="icon">
             <iconset resource="qagate.qrc">
@@ -82,6 +85,15 @@
            </attribute>
            <attribute name="title">
             <string>&amp;Home</string>
+           </attribute>
+          </widget>
+          <widget class="MD" name="md">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/MD/icons/md.svg</normaloff>:/MD/icons/md.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>&amp;MD</string>
            </attribute>
           </widget>
           <widget class="Visuals" name="visuals">
@@ -241,6 +253,12 @@
    <class>Home</class>
    <extends>QWidget</extends>
    <header>home.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MD</class>
+   <extends>QWidget</extends>
+   <header>md.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

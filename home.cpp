@@ -95,16 +95,14 @@ void Home::on_update_clicked()
 
 void Home::on_dumpHist_clicked()
 {
-  _dumpDialog.exec();
-  if (_dumpDialog.filename().isEmpty()) return;
+  if (_dumpDialog.exec() != QDialog::Accepted|| _dumpDialog.filename().isEmpty()) return;
    emit(sendCommand(":dumphist "+_dumpDialog.filename()+" step "
                     +QString::number(_dumpDialog.step())));
 }
 
 void Home::on_dumpXyz_clicked()
 {
-  _dumpDialog.exec();
-  if (_dumpDialog.filename().isEmpty()) return;
+  if (_dumpDialog.exec()!=QDialog::Accepted || _dumpDialog.filename().isEmpty()) return;
    emit(sendCommand(":dumpxyz "+_dumpDialog.filename()+" step "
                     +QString::number(_dumpDialog.step())));
   _writeDialog.setDirectory(_dumpDialog.directory());
@@ -112,8 +110,7 @@ void Home::on_dumpXyz_clicked()
 
 void Home::on_saveAbinit_clicked()
 {
-  _writeDialog.exec();
-  if (_writeDialog.filename().isEmpty()) return;
+  if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
    emit(sendCommand(":write dtset "+QString::number(_writeDialog.precision())
                     +" "+_writeDialog.filename()+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
@@ -121,8 +118,7 @@ void Home::on_saveAbinit_clicked()
 
 void Home::on_savePoscar_clicked()
 {
-  _writeDialog.exec();
-  if (_writeDialog.filename().isEmpty()) return;
+  if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
    emit(sendCommand(":write POSCAR "+QString::number(_writeDialog.precision())
                     +" "+_writeDialog.filename()+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
@@ -130,8 +126,7 @@ void Home::on_savePoscar_clicked()
 
 void Home::on_saveCif_clicked()
 {
-  _writeDialog.exec();
-  if (_writeDialog.filename().isEmpty()) return;
+  if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
    emit(sendCommand(":write cif "+QString::number(_writeDialog.precision())
                     +" "+_writeDialog.filename()+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
@@ -213,7 +208,7 @@ void Home::on_angleAtom3_valueChanged(int arg1)
 
 void Home::on_spg_clicked()
 {
-  _spgDialog.exec();
+  if (_spgDialog.exec() != QDialog::Accepted) return;
   double precision = _spgDialog.precision();
   if (precision < 0) return;
   emit(sendCommand(":spg "+QString::number(precision,'g',8)));
@@ -242,7 +237,7 @@ void Home::on_centoid_clicked()
 void Home::on_supercell_clicked()
 {
   SupercellDialog dialog(this);
-  dialog.exec();
+  if (dialog.exec() != QDialog::Accepted) return;
   QVector<int> mat = dialog.matrix();
   if (!mat.isEmpty())
     {
@@ -256,7 +251,7 @@ void Home::on_move_clicked()
 {
     MoveDialog dialog(this);
     dialog.configure(_natom);
-    dialog.exec();
+    if (dialog.exec() != QDialog::Accepted) return;
     int iatom;
     double x, y ,z;
     dialog.result(iatom,x,y,z);
@@ -271,7 +266,7 @@ void Home::on_move_clicked()
 void Home::on_shift_clicked()
 {
     ShiftDialog dialog(this);
-    dialog.exec();
+    if (dialog.exec() != QDialog::Accepted) return;
     double x, y ,z;
     dialog.result(x,y,z);
     if (std::abs(x)<1e-6 && std::abs(y)<1e-8 && std::abs(z)<1e-8) return;
@@ -287,7 +282,7 @@ void Home::on_typat_clicked()
 {
     TypatDialog dialog(this);
     dialog.configure(_natom,_znucl);
-    dialog.exec();
+    if (dialog.exec() != QDialog::Accepted) return;
     int iatom, znucl;
     dialog.result(iatom,znucl);
     emit(sendCommand(":typat "+QString::number(iatom)+ " " +QString::number(znucl)));
