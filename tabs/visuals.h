@@ -22,6 +22,7 @@ protected:
 private:
   Ui::Visuals *ui;
   QVector<int> _znuclOrder;
+  QColor _octaColor;
 
 signals:
   void switchAngles();
@@ -65,6 +66,8 @@ private slots:
   void on_octaDel_activated(int index);
 
   void on_atoms_clicked(bool checked);
+
+  void on_octaColor_clicked();
 
 public slots:
   void updateAngles(View* view);
