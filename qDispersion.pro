@@ -1,16 +1,15 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-01-22T15:17:17
+# Project created by QtCreator 2019-03-15T09:27:11
 #
 #-------------------------------------------------
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = qConducti
+TARGET = qDispersion
 TEMPLATE = app
-CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -25,26 +24,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        qConducti/main.cpp \
-        qConducti/qconducti.cpp \
-        tools/qcustomplot.cpp \
-        tools/qplot.cpp \
-        qostreamcatcher.cpp
+        qDispersion/main.cpp \
+        qDispersion/qdispersion.cpp
 
 HEADERS += \
-        qConducti/qconducti.h \
-        tools/qcustomplot.h \
-        tools/qplot.h \
-        qostreamcatcher.h
+        qDispersion/qdispersion.h
 
 FORMS += \
-        qConducti/qconducti.ui
-
-TRANSLATIONS += qqConducti_fr.ts qconducti_it.ts qconducti_de.ts
-
-INCLUDEPATH += /usr/include/agate
-
-RESOURCES += \
-    qConducti/translations.qrc
-
-unix|win32: LIBS += -lagate -lsymspg
+        qDispersion/qdispersion.ui

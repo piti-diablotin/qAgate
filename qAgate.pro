@@ -58,7 +58,7 @@ SOURCES += \
     dialogs/pdfdialog.cpp \
     tools/energyunitcombo.cpp \
     dialogs/smearingdialog.cpp \
-    conducti/qconducti.cpp \
+    qConducti/qconducti.cpp \
     tabs/tools.cpp
 
 HEADERS += \
@@ -93,7 +93,7 @@ HEADERS += \
     dialogs/pdfdialog.h \
     tools/energyunitcombo.h \
     dialogs/smearingdialog.h \
-    conducti/qconducti.h \
+    qConducti/qconducti.h \
     tabs/tools.h
 
 FORMS += \
@@ -121,7 +121,7 @@ FORMS += \
     dialogs/plandialog.ui \
     dialogs/pdfdialog.ui \
     dialogs/smearingdialog.ui \
-    conducti/qconducti.ui \
+    qConducti/qconducti.ui \
     tabs/tools.ui
 
 RESOURCES += \
