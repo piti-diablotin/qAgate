@@ -25,34 +25,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        qconducti.cpp \
-        ../tools/qcustomplot.cpp \
-    ../tools/qplot.cpp \
-    ../qostreamcatcher.cpp
+        conducti/main.cpp \
+        conducti/qconducti.cpp \
+        tools/qcustomplot.cpp \
+        tools/qplot.cpp \
+        qostreamcatcher.cpp
 
 HEADERS += \
-        qconducti.h \
-        ../tools/qcustomplot.h \
-    ../tools/qplot.h \
-    ../qostreamcatcher.h
+        conducti/qconducti.h \
+        tools/qcustomplot.h \
+        tools/qplot.h \
+        qostreamcatcher.h
 
 FORMS += \
-        qconducti.ui
+        conducti/qconducti.ui
 
 TRANSLATIONS += qconducti_fr.ts qconducti_it.ts qconducti_de.ts
 
-#win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../abiout/build/src/.libs/release/ -lagate
-#else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../abiout/build/src/.libs/debug/ -lagate
-#else:unix: LIBS += -L$$PWD/../abiout/build/src/.libs/ -lagate
-#
-#INCLUDEPATH += $$PWD/../abiout/build/src/.libs
-#INCLUDEPATH += $$PWD/../abiout/include
 INCLUDEPATH += /usr/include/agate
-#DEPENDPATH += $$PWD/../abiout/build/src/.libs
-
 
 RESOURCES += \
-    translations.qrc
+    conducti/translations.qrc
 
-unix|win32: LIBS += -lagate
+unix|win32: LIBS += -lagate -lsymspg

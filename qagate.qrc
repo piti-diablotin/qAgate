@@ -100,4 +100,9 @@
     <qresource prefix="/tools">
         <file>icons/tools.svg</file>
     </qresource>
+    <qresource prefix="/translations">
+        <file>qagate_de.qm</file>
+        <file>qagate_it.qm</file>
+        <file>qagate_fr.qm</file>
+    </qresource>
 </RCC>

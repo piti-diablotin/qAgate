@@ -22,6 +22,10 @@ int main(int argc, char *argv[])
   QGLFormat::setDefaultFormat(glf);
 #endif
   Exception::setVerbosity(5);
+  QString locale = QLocale::system().name().section('_', 0, 0);
+  QTranslator translator;
+  translator.load(QString(":/translations/qagate_")+ locale);
+  a.installTranslator(&translator);
   qAgate w;
   w.show();
 

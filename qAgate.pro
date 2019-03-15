@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = qAgate
 TEMPLATE = app
-CONFIG += c++11
+CONFIG += c++11 lrelease embed_translations
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -127,13 +127,13 @@ FORMS += \
 RESOURCES += \
     qagate.qrc
 
-TRANSLATIONS += qagate_fr.ts
+TRANSLATIONS += \
+  qagate_fr.ts \
+  qagate_it.ts \
+  qagate_de.ts
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../usr/lib/release/ -lagate -lsymspg
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../usr/lib/debug/ -lagate -lsymspg
-else:unix: LIBS += -L$$PWD/../../../../usr/lib/ -lagate -lsymspg
+LIBS += -lagate -lsymspg
 
-INCLUDEPATH += /usr/include/agate
-DEPENDPATH += /usr/include/agate
-
-INCLUDEPATH += /usr/include/freetype2/
+INCLUDEPATH += \
+    /usr/include/agate\
+    /usr/include/freetype2/
