@@ -70,6 +70,11 @@
          </property>
          <item>
           <widget class="QRadioButton" name="left">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="toolTip">
             <string>Select left plot pannel</string>
            </property>
@@ -89,6 +94,11 @@
          </item>
          <item>
           <widget class="QRadioButton" name="right">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="toolTip">
             <string>Select right plot pannel</string>
            </property>
@@ -108,6 +118,11 @@
       </item>
       <item>
        <widget class="QComboBox" name="graphCombo">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Select graph</string>
         </property>
@@ -124,6 +139,11 @@
       </item>
       <item>
        <widget class="QComboBox" name="plot">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Select option</string>
         </property>
