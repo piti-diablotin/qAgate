@@ -37,7 +37,7 @@ MD::~MD()
 void MD::updateStatus(View *view)
 {
   this->setGraph();
-  if (_plot.isHidden()) _plot.show();
+  //if (_plot.isHidden()) _plot.show();
   bool something = (view->getCanvas() != nullptr && view->getCanvas()->histdata() != nullptr);
   ui->gyration->setEnabled(something);
   bool isMD=false;

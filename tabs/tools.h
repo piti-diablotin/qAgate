@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "abstracttab.h"
-#include "conducti/qconducti.h"
+#include "qConducti/qconducti.h"
 
 namespace Ui {
   class Tools;
