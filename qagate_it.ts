@@ -415,278 +415,278 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="74"/>
-        <location filename="tabs/md.ui" line="77"/>
-        <location filename="tabs/md.ui" line="80"/>
+        <location filename="tabs/md.ui" line="79"/>
+        <location filename="tabs/md.ui" line="82"/>
+        <location filename="tabs/md.ui" line="85"/>
         <source>Select left plot pannel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="83"/>
+        <location filename="tabs/md.ui" line="88"/>
         <source>&amp;Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="93"/>
-        <location filename="tabs/md.ui" line="96"/>
-        <location filename="tabs/md.ui" line="99"/>
+        <location filename="tabs/md.ui" line="103"/>
+        <location filename="tabs/md.ui" line="106"/>
+        <location filename="tabs/md.ui" line="109"/>
         <source>Select right plot pannel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="102"/>
+        <location filename="tabs/md.ui" line="112"/>
         <source>&amp;Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="112"/>
-        <location filename="tabs/md.ui" line="115"/>
-        <location filename="tabs/md.ui" line="118"/>
+        <location filename="tabs/md.ui" line="127"/>
+        <location filename="tabs/md.ui" line="130"/>
+        <location filename="tabs/md.ui" line="133"/>
         <source>Select graph</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="128"/>
-        <location filename="tabs/md.ui" line="131"/>
-        <location filename="tabs/md.ui" line="134"/>
+        <location filename="tabs/md.ui" line="148"/>
+        <location filename="tabs/md.ui" line="151"/>
+        <location filename="tabs/md.ui" line="154"/>
         <source>Select option</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="138"/>
+        <location filename="tabs/md.ui" line="158"/>
         <source>Plot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="143"/>
+        <location filename="tabs/md.ui" line="163"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="148"/>
+        <location filename="tabs/md.ui" line="168"/>
         <source>Data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="159"/>
+        <location filename="tabs/md.ui" line="179"/>
         <source>Geometry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="180"/>
-        <location filename="tabs/md.ui" line="183"/>
-        <location filename="tabs/md.ui" line="186"/>
+        <location filename="tabs/md.ui" line="200"/>
+        <location filename="tabs/md.ui" line="203"/>
+        <location filename="tabs/md.ui" line="206"/>
         <source>Lattice parameters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="189"/>
+        <location filename="tabs/md.ui" line="209"/>
         <source>d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="209"/>
-        <location filename="tabs/md.ui" line="212"/>
-        <location filename="tabs/md.ui" line="215"/>
+        <location filename="tabs/md.ui" line="229"/>
+        <location filename="tabs/md.ui" line="232"/>
+        <location filename="tabs/md.ui" line="235"/>
         <source>Cell angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="218"/>
-        <location filename="tabs/md.ui" line="247"/>
+        <location filename="tabs/md.ui" line="238"/>
+        <location filename="tabs/md.ui" line="267"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="238"/>
-        <location filename="tabs/md.ui" line="241"/>
-        <location filename="tabs/md.ui" line="244"/>
+        <location filename="tabs/md.ui" line="258"/>
+        <location filename="tabs/md.ui" line="261"/>
+        <location filename="tabs/md.ui" line="264"/>
         <source>Angle between 3 atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="267"/>
-        <location filename="tabs/md.ui" line="270"/>
-        <location filename="tabs/md.ui" line="273"/>
+        <location filename="tabs/md.ui" line="287"/>
+        <location filename="tabs/md.ui" line="290"/>
+        <location filename="tabs/md.ui" line="293"/>
         <source>Distance between 2 atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="276"/>
+        <location filename="tabs/md.ui" line="296"/>
         <source>D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="296"/>
-        <location filename="tabs/md.ui" line="299"/>
-        <location filename="tabs/md.ui" line="302"/>
+        <location filename="tabs/md.ui" line="316"/>
+        <location filename="tabs/md.ui" line="319"/>
+        <location filename="tabs/md.ui" line="322"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="305"/>
+        <location filename="tabs/md.ui" line="325"/>
         <source>V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="328"/>
+        <location filename="tabs/md.ui" line="348"/>
         <source>Thermodynamics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="349"/>
-        <location filename="tabs/md.ui" line="352"/>
-        <location filename="tabs/md.ui" line="355"/>
+        <location filename="tabs/md.ui" line="369"/>
+        <location filename="tabs/md.ui" line="372"/>
+        <location filename="tabs/md.ui" line="375"/>
         <source>Pressure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="358"/>
+        <location filename="tabs/md.ui" line="378"/>
         <source>P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="378"/>
-        <location filename="tabs/md.ui" line="381"/>
-        <location filename="tabs/md.ui" line="384"/>
+        <location filename="tabs/md.ui" line="398"/>
+        <location filename="tabs/md.ui" line="401"/>
+        <location filename="tabs/md.ui" line="404"/>
         <source>Kinetic energy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="387"/>
+        <location filename="tabs/md.ui" line="407"/>
         <source>K</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="407"/>
-        <location filename="tabs/md.ui" line="410"/>
-        <location filename="tabs/md.ui" line="413"/>
+        <location filename="tabs/md.ui" line="427"/>
+        <location filename="tabs/md.ui" line="430"/>
+        <location filename="tabs/md.ui" line="433"/>
         <source>Electronic entropy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="416"/>
-        <location filename="tabs/md.ui" line="503"/>
+        <location filename="tabs/md.ui" line="436"/>
+        <location filename="tabs/md.ui" line="523"/>
         <source>S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="436"/>
-        <location filename="tabs/md.ui" line="439"/>
-        <location filename="tabs/md.ui" line="442"/>
+        <location filename="tabs/md.ui" line="456"/>
+        <location filename="tabs/md.ui" line="459"/>
+        <location filename="tabs/md.ui" line="462"/>
         <source>Thermodynamical functions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="445"/>
+        <location filename="tabs/md.ui" line="465"/>
         <source>thermo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="465"/>
-        <location filename="tabs/md.ui" line="468"/>
-        <location filename="tabs/md.ui" line="471"/>
+        <location filename="tabs/md.ui" line="485"/>
+        <location filename="tabs/md.ui" line="488"/>
+        <location filename="tabs/md.ui" line="491"/>
         <source>Electronic total energy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="474"/>
+        <location filename="tabs/md.ui" line="494"/>
         <source>E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="494"/>
-        <location filename="tabs/md.ui" line="497"/>
-        <location filename="tabs/md.ui" line="500"/>
+        <location filename="tabs/md.ui" line="514"/>
+        <location filename="tabs/md.ui" line="517"/>
+        <location filename="tabs/md.ui" line="520"/>
         <source>Stress tensor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="523"/>
-        <location filename="tabs/md.ui" line="526"/>
-        <location filename="tabs/md.ui" line="529"/>
+        <location filename="tabs/md.ui" line="543"/>
+        <location filename="tabs/md.ui" line="546"/>
+        <location filename="tabs/md.ui" line="549"/>
         <source>Temperature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="532"/>
+        <location filename="tabs/md.ui" line="552"/>
         <source>T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="555"/>
+        <location filename="tabs/md.ui" line="575"/>
         <source>Statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="576"/>
-        <location filename="tabs/md.ui" line="579"/>
-        <location filename="tabs/md.ui" line="582"/>
+        <location filename="tabs/md.ui" line="596"/>
+        <location filename="tabs/md.ui" line="599"/>
+        <location filename="tabs/md.ui" line="602"/>
         <source>Phonon density of states</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="585"/>
+        <location filename="tabs/md.ui" line="605"/>
         <source>PDOS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="605"/>
-        <location filename="tabs/md.ui" line="608"/>
-        <location filename="tabs/md.ui" line="611"/>
+        <location filename="tabs/md.ui" line="625"/>
+        <location filename="tabs/md.ui" line="628"/>
+        <location filename="tabs/md.ui" line="631"/>
         <source>Velocity auto-correlation function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="614"/>
+        <location filename="tabs/md.ui" line="634"/>
         <source>VACF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="634"/>
-        <location filename="tabs/md.ui" line="637"/>
-        <location filename="tabs/md.ui" line="640"/>
+        <location filename="tabs/md.ui" line="654"/>
+        <location filename="tabs/md.ui" line="657"/>
+        <location filename="tabs/md.ui" line="660"/>
         <source>Mean square displacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="643"/>
+        <location filename="tabs/md.ui" line="663"/>
         <source>MSD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="663"/>
-        <location filename="tabs/md.ui" line="666"/>
-        <location filename="tabs/md.ui" line="669"/>
+        <location filename="tabs/md.ui" line="683"/>
+        <location filename="tabs/md.ui" line="686"/>
+        <location filename="tabs/md.ui" line="689"/>
         <source>Gyration tensor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="672"/>
+        <location filename="tabs/md.ui" line="692"/>
         <source>gy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="692"/>
-        <location filename="tabs/md.ui" line="695"/>
-        <location filename="tabs/md.ui" line="698"/>
+        <location filename="tabs/md.ui" line="712"/>
+        <location filename="tabs/md.ui" line="715"/>
+        <location filename="tabs/md.ui" line="718"/>
         <source>Pair distribution function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="701"/>
+        <location filename="tabs/md.ui" line="721"/>
         <source>PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="721"/>
-        <location filename="tabs/md.ui" line="724"/>
-        <location filename="tabs/md.ui" line="727"/>
+        <location filename="tabs/md.ui" line="741"/>
+        <location filename="tabs/md.ui" line="744"/>
+        <location filename="tabs/md.ui" line="747"/>
         <source>Positions in a plan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/md.ui" line="730"/>
+        <location filename="tabs/md.ui" line="750"/>
         <source>Pos</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1159,202 +1159,202 @@
 <context>
     <name>QConducti</name>
     <message>
-        <location filename="conducti/qconducti.ui" line="17"/>
+        <location filename="qConducti/qconducti.ui" line="17"/>
         <source>qConducti</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="77"/>
+        <location filename="qConducti/qconducti.ui" line="77"/>
         <source>Filename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="124"/>
+        <location filename="qConducti/qconducti.ui" line="124"/>
         <source>Fermi energy:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="137"/>
+        <location filename="qConducti/qconducti.ui" line="137"/>
         <source>Emax-Efermi:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="160"/>
+        <location filename="qConducti/qconducti.ui" line="160"/>
         <source>Units</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="166"/>
+        <location filename="qConducti/qconducti.ui" line="166"/>
         <source>Energy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="173"/>
-        <location filename="conducti/qconducti.cpp" line="304"/>
+        <location filename="qConducti/qconducti.ui" line="173"/>
+        <location filename="qConducti/qconducti.cpp" line="304"/>
         <source>Conductivity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="181"/>
-        <location filename="conducti/qconducti.ui" line="301"/>
-        <location filename="conducti/qconducti.ui" line="346"/>
-        <location filename="conducti/qconducti.ui" line="547"/>
+        <location filename="qConducti/qconducti.ui" line="181"/>
+        <location filename="qConducti/qconducti.ui" line="301"/>
+        <location filename="qConducti/qconducti.ui" line="346"/>
+        <location filename="qConducti/qconducti.ui" line="547"/>
         <source>Ha</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="186"/>
-        <location filename="conducti/qconducti.ui" line="306"/>
-        <location filename="conducti/qconducti.ui" line="351"/>
-        <location filename="conducti/qconducti.ui" line="552"/>
+        <location filename="qConducti/qconducti.ui" line="186"/>
+        <location filename="qConducti/qconducti.ui" line="306"/>
+        <location filename="qConducti/qconducti.ui" line="351"/>
+        <location filename="qConducti/qconducti.ui" line="552"/>
         <source>eV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="195"/>
+        <location filename="qConducti/qconducti.ui" line="195"/>
         <source>au</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="200"/>
+        <location filename="qConducti/qconducti.ui" line="200"/>
         <source>Ohm-1.cm-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="217"/>
+        <location filename="qConducti/qconducti.ui" line="217"/>
         <source>Calculation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="248"/>
+        <location filename="qConducti/qconducti.ui" line="248"/>
         <source>Number of frequencies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="280"/>
+        <location filename="qConducti/qconducti.ui" line="280"/>
         <source>Smearing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="287"/>
+        <location filename="qConducti/qconducti.ui" line="287"/>
         <source>Frequency range</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="381"/>
-        <location filename="conducti/qconducti.ui" line="590"/>
+        <location filename="qConducti/qconducti.ui" line="381"/>
+        <location filename="qConducti/qconducti.ui" line="590"/>
         <source>Hold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="391"/>
+        <location filename="qConducti/qconducti.ui" line="391"/>
         <source>Spins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="401"/>
+        <location filename="qConducti/qconducti.ui" line="401"/>
         <source>Selection rule</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="416"/>
-        <location filename="conducti/qconducti.ui" line="680"/>
+        <location filename="qConducti/qconducti.ui" line="416"/>
+        <location filename="qConducti/qconducti.ui" line="680"/>
         <source>From min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="448"/>
-        <location filename="conducti/qconducti.ui" line="507"/>
-        <location filename="conducti/qconducti.ui" line="626"/>
-        <location filename="conducti/qconducti.ui" line="646"/>
+        <location filename="qConducti/qconducti.ui" line="448"/>
+        <location filename="qConducti/qconducti.ui" line="507"/>
+        <location filename="qConducti/qconducti.ui" line="626"/>
+        <location filename="qConducti/qconducti.ui" line="646"/>
         <source>max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="481"/>
-        <location filename="conducti/qconducti.ui" line="616"/>
+        <location filename="qConducti/qconducti.ui" line="481"/>
+        <location filename="qConducti/qconducti.ui" line="616"/>
         <source>To min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="533"/>
+        <location filename="qConducti/qconducti.ui" line="533"/>
         <source>Unit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="563"/>
+        <location filename="qConducti/qconducti.ui" line="563"/>
         <source>&amp;Band</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="570"/>
+        <location filename="qConducti/qconducti.ui" line="570"/>
         <source>Energ&amp;y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.ui" line="577"/>
+        <location filename="qConducti/qconducti.ui" line="577"/>
         <source>Active</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="23"/>
+        <location filename="qConducti/qconducti.cpp" line="23"/>
         <source>No file loaded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="42"/>
+        <location filename="qConducti/qconducti.cpp" line="42"/>
         <source>&amp;Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="43"/>
+        <location filename="qConducti/qconducti.cpp" line="43"/>
         <source>&amp;Apply</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="44"/>
+        <location filename="qConducti/qconducti.cpp" line="44"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="45"/>
+        <location filename="qConducti/qconducti.cpp" line="45"/>
         <source>&amp;Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="77"/>
+        <location filename="qConducti/qconducti.cpp" line="77"/>
         <source>Loading file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="106"/>
+        <location filename="qConducti/qconducti.cpp" line="106"/>
         <source>Ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="109"/>
-        <location filename="conducti/qconducti.cpp" line="394"/>
+        <location filename="qConducti/qconducti.cpp" line="109"/>
+        <location filename="qConducti/qconducti.cpp" line="394"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="154"/>
+        <location filename="qConducti/qconducti.cpp" line="154"/>
         <source>Base name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="168"/>
+        <location filename="qConducti/qconducti.cpp" line="168"/>
         <source>Optic file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="303"/>
+        <location filename="qConducti/qconducti.cpp" line="303"/>
         <source>Frequency</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conducti/qconducti.cpp" line="305"/>
-        <location filename="conducti/qconducti.cpp" line="542"/>
+        <location filename="qConducti/qconducti.cpp" line="305"/>
+        <location filename="qConducti/qconducti.cpp" line="542"/>
         <source>Histogram</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1897,7 +1897,7 @@
         <location filename="tabs/visuals.ui" line="99"/>
         <location filename="tabs/visuals.ui" line="102"/>
         <location filename="tabs/visuals.ui" line="105"/>
-        <location filename="tabs/visuals.ui" line="1202"/>
+        <location filename="tabs/visuals.ui" line="1246"/>
         <source>Add translation along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1916,7 +1916,7 @@
         <location filename="tabs/visuals.ui" line="122"/>
         <location filename="tabs/visuals.ui" line="125"/>
         <location filename="tabs/visuals.ui" line="128"/>
-        <location filename="tabs/visuals.ui" line="1262"/>
+        <location filename="tabs/visuals.ui" line="1306"/>
         <source>Remove translation along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1924,7 +1924,7 @@
         <location filename="tabs/visuals.ui" line="145"/>
         <location filename="tabs/visuals.ui" line="148"/>
         <location filename="tabs/visuals.ui" line="151"/>
-        <location filename="tabs/visuals.ui" line="1217"/>
+        <location filename="tabs/visuals.ui" line="1261"/>
         <source>Add translation along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1932,7 +1932,7 @@
         <location filename="tabs/visuals.ui" line="175"/>
         <location filename="tabs/visuals.ui" line="178"/>
         <location filename="tabs/visuals.ui" line="181"/>
-        <location filename="tabs/visuals.ui" line="1232"/>
+        <location filename="tabs/visuals.ui" line="1276"/>
         <source>Add translation along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1940,7 +1940,7 @@
         <location filename="tabs/visuals.ui" line="198"/>
         <location filename="tabs/visuals.ui" line="201"/>
         <location filename="tabs/visuals.ui" line="204"/>
-        <location filename="tabs/visuals.ui" line="1277"/>
+        <location filename="tabs/visuals.ui" line="1321"/>
         <source>Remove translation along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1948,7 +1948,7 @@
         <location filename="tabs/visuals.ui" line="221"/>
         <location filename="tabs/visuals.ui" line="224"/>
         <location filename="tabs/visuals.ui" line="227"/>
-        <location filename="tabs/visuals.ui" line="1247"/>
+        <location filename="tabs/visuals.ui" line="1291"/>
         <source>Remove translation along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1956,7 +1956,7 @@
         <location filename="tabs/visuals.ui" line="324"/>
         <location filename="tabs/visuals.ui" line="327"/>
         <location filename="tabs/visuals.ui" line="330"/>
-        <location filename="tabs/visuals.ui" line="1310"/>
+        <location filename="tabs/visuals.ui" line="1354"/>
         <source>Set view along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1964,7 +1964,7 @@
         <location filename="tabs/visuals.ui" line="349"/>
         <location filename="tabs/visuals.ui" line="352"/>
         <location filename="tabs/visuals.ui" line="355"/>
-        <location filename="tabs/visuals.ui" line="1288"/>
+        <location filename="tabs/visuals.ui" line="1332"/>
         <source>Set view along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1972,7 +1972,7 @@
         <location filename="tabs/visuals.ui" line="374"/>
         <location filename="tabs/visuals.ui" line="377"/>
         <location filename="tabs/visuals.ui" line="380"/>
-        <location filename="tabs/visuals.ui" line="1299"/>
+        <location filename="tabs/visuals.ui" line="1343"/>
         <source>Set view along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2011,7 +2011,7 @@
     </message>
     <message>
         <location filename="tabs/visuals.ui" line="596"/>
-        <location filename="tabs/visuals.ui" line="1166"/>
+        <location filename="tabs/visuals.ui" line="1210"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2081,7 +2081,7 @@
     </message>
     <message>
         <location filename="tabs/visuals.ui" line="768"/>
-        <location filename="tabs/visuals.ui" line="984"/>
+        <location filename="tabs/visuals.ui" line="1028"/>
         <source>Atoms</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2094,8 +2094,8 @@
     </message>
     <message>
         <location filename="tabs/visuals.ui" line="795"/>
-        <location filename="tabs/visuals.ui" line="1084"/>
-        <location filename="tabs/visuals.ui" line="1088"/>
+        <location filename="tabs/visuals.ui" line="1128"/>
+        <location filename="tabs/visuals.ui" line="1132"/>
         <source>None</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2117,192 +2117,197 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="870"/>
-        <location filename="tabs/visuals.ui" line="873"/>
-        <location filename="tabs/visuals.ui" line="876"/>
+        <location filename="tabs/visuals.ui" line="904"/>
+        <location filename="tabs/visuals.ui" line="907"/>
+        <location filename="tabs/visuals.ui" line="910"/>
         <source>Add/Remove octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="879"/>
+        <location filename="tabs/visuals.ui" line="913"/>
         <source>Octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="912"/>
-        <location filename="tabs/visuals.ui" line="915"/>
-        <location filename="tabs/visuals.ui" line="918"/>
+        <location filename="tabs/visuals.ui" line="956"/>
+        <location filename="tabs/visuals.ui" line="959"/>
+        <location filename="tabs/visuals.ui" line="962"/>
         <source>Add octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="942"/>
-        <location filename="tabs/visuals.ui" line="945"/>
-        <location filename="tabs/visuals.ui" line="948"/>
+        <location filename="tabs/visuals.ui" line="986"/>
+        <location filename="tabs/visuals.ui" line="989"/>
+        <location filename="tabs/visuals.ui" line="992"/>
         <source>Remove octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="972"/>
-        <location filename="tabs/visuals.ui" line="975"/>
-        <location filename="tabs/visuals.ui" line="978"/>
+        <location filename="tabs/visuals.ui" line="1016"/>
+        <location filename="tabs/visuals.ui" line="1019"/>
+        <location filename="tabs/visuals.ui" line="1022"/>
         <source>Draw supplementary atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1054"/>
-        <location filename="tabs/visuals.ui" line="1057"/>
-        <location filename="tabs/visuals.ui" line="1060"/>
-        <location filename="tabs/visuals.ui" line="1075"/>
-        <location filename="tabs/visuals.ui" line="1078"/>
-        <location filename="tabs/visuals.ui" line="1081"/>
+        <location filename="tabs/visuals.ui" line="1098"/>
+        <location filename="tabs/visuals.ui" line="1101"/>
+        <location filename="tabs/visuals.ui" line="1104"/>
+        <location filename="tabs/visuals.ui" line="1119"/>
+        <location filename="tabs/visuals.ui" line="1122"/>
+        <location filename="tabs/visuals.ui" line="1125"/>
         <source>Spin direction filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1063"/>
+        <location filename="tabs/visuals.ui" line="1107"/>
         <source>Spin direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1093"/>
-        <location filename="tabs/visuals.ui" line="1285"/>
+        <location filename="tabs/visuals.ui" line="1137"/>
+        <location filename="tabs/visuals.ui" line="1329"/>
         <source>x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1098"/>
-        <location filename="tabs/visuals.ui" line="1296"/>
+        <location filename="tabs/visuals.ui" line="1142"/>
+        <location filename="tabs/visuals.ui" line="1340"/>
         <source>y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1103"/>
-        <location filename="tabs/visuals.ui" line="1307"/>
+        <location filename="tabs/visuals.ui" line="1147"/>
+        <location filename="tabs/visuals.ui" line="1351"/>
         <source>z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1108"/>
+        <location filename="tabs/visuals.ui" line="1152"/>
         <source>xy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1113"/>
+        <location filename="tabs/visuals.ui" line="1157"/>
         <source>xz</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1118"/>
+        <location filename="tabs/visuals.ui" line="1162"/>
         <source>yz</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1123"/>
+        <location filename="tabs/visuals.ui" line="1167"/>
         <source>xyz</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1157"/>
+        <location filename="tabs/visuals.ui" line="1201"/>
         <source>Angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1160"/>
-        <location filename="tabs/visuals.ui" line="1163"/>
+        <location filename="tabs/visuals.ui" line="1204"/>
+        <location filename="tabs/visuals.ui" line="1207"/>
         <source>Show/Hide angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1178"/>
+        <location filename="tabs/visuals.ui" line="1222"/>
         <source>Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1181"/>
-        <location filename="tabs/visuals.ui" line="1184"/>
-        <location filename="tabs/visuals.ui" line="1187"/>
+        <location filename="tabs/visuals.ui" line="1225"/>
+        <location filename="tabs/visuals.ui" line="1228"/>
+        <location filename="tabs/visuals.ui" line="1231"/>
         <source>Show/Hide time info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1190"/>
+        <location filename="tabs/visuals.ui" line="1234"/>
         <source>T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1199"/>
+        <location filename="tabs/visuals.ui" line="1243"/>
         <source>+x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1205"/>
+        <location filename="tabs/visuals.ui" line="1249"/>
         <source>+, X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1214"/>
+        <location filename="tabs/visuals.ui" line="1258"/>
         <source>+y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1220"/>
+        <location filename="tabs/visuals.ui" line="1264"/>
         <source>+, Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1229"/>
+        <location filename="tabs/visuals.ui" line="1273"/>
         <source>+z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1235"/>
+        <location filename="tabs/visuals.ui" line="1279"/>
         <source>+, Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1244"/>
+        <location filename="tabs/visuals.ui" line="1288"/>
         <source>-z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1250"/>
+        <location filename="tabs/visuals.ui" line="1294"/>
         <source>-, Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1259"/>
+        <location filename="tabs/visuals.ui" line="1303"/>
         <source>-y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1265"/>
+        <location filename="tabs/visuals.ui" line="1309"/>
         <source>-, Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1274"/>
+        <location filename="tabs/visuals.ui" line="1318"/>
         <source>-x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1280"/>
+        <location filename="tabs/visuals.ui" line="1324"/>
         <source>-, X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1291"/>
+        <location filename="tabs/visuals.ui" line="1335"/>
         <source>X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1302"/>
+        <location filename="tabs/visuals.ui" line="1346"/>
         <source>Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="tabs/visuals.ui" line="1313"/>
+        <location filename="tabs/visuals.ui" line="1357"/>
         <source>Z</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="tabs/visuals.cpp" line="275"/>
+        <source>Pick a base color</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
