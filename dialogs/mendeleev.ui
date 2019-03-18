@@ -644,7 +644,7 @@
   <customwidget>
    <class>atomicData</class>
    <extends>QWidget</extends>
-   <header>atomicdata.h</header>
+   <header>tools/atomicdata.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

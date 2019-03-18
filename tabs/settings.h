@@ -2,9 +2,9 @@
 #define SETTINGS_H
 
 #include <QWidget>
-#include "view.h"
-#include "abstracttab.h"
-#include "mendeleev.h"
+#include "gui/view.h"
+#include "tabs/abstracttab.h"
+#include "dialogs/mendeleev.h"
 
 namespace Ui {
   class Settings;

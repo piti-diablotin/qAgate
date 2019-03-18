@@ -10,8 +10,8 @@
 #include <QVector>
 #include "conducti/conducti.hpp"
 #include "base/unitconverter.hpp"
-#include "../tools/qplot.h"
-#include "../qostreamcatcher.h"
+#include "tools/qplot.h"
+#include "tools/qostreamcatcher.h"
 
 namespace Ui {
   class QConducti;

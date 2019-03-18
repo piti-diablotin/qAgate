@@ -38,18 +38,18 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-    main.cpp \
-    qagate.cpp \
-    timeline.cpp \
-    mediaplayer.cpp \
-    view.cpp \
-    commandline.cpp \
-    logger.cpp \
-    qostreamcatcher.cpp \
+    qAgate/main.cpp \
+    qAgate/qagate.cpp \
+    gui/timeline.cpp \
+    gui/mediaplayer.cpp \
+    gui/view.cpp \
+    gui/commandline.cpp \
+    gui/logger.cpp \
+    tools/qostreamcatcher.cpp \
     tabs/settings.cpp \
     tabs/abstracttab.cpp \
-    mendeleev.cpp \
-    atomicdata.cpp \
+    dialogs/mendeleev.cpp \
+    tools/atomicdata.cpp \
     tabs/visuals.cpp \
     tabs/home.cpp \
     dialogs/dumpdialog.cpp \
@@ -74,17 +74,17 @@ SOURCES += \
     tabs/tools.cpp
 
 HEADERS += \
-    qagate.h \
-    timeline.h \
-    mediaplayer.h \
-    view.h \
-    commandline.h \
-    logger.h \
-    qostreamcatcher.h \
+    qAgate/qagate.h \
+    gui/timeline.h \
+    gui/mediaplayer.h \
+    gui/view.h \
+    gui/commandline.h \
+    gui/logger.h \
+    tools/qostreamcatcher.h \
     tabs/settings.h \
     tabs/abstracttab.h \
-    mendeleev.h \
-    atomicdata.h \
+    dialogs/mendeleev.h \
+    tools/atomicdata.h \
     tabs/visuals.h \
     tabs/home.h \
     dialogs/dumpdialog.h \
@@ -109,15 +109,15 @@ HEADERS += \
     tabs/tools.h
 
 FORMS += \
-    qagate.ui \
-    timeline.ui \
-    mediaplayer.ui \
-    view.ui \
-    commandline.ui \
-    logger.ui \
+    qAgate/qagate.ui \
+    gui/timeline.ui \
+    gui/mediaplayer.ui \
+    gui/view.ui \
+    gui/commandline.ui \
+    gui/logger.ui \
     tabs/settings.ui \
-    mendeleev.ui \
-    atomicdata.ui \
+    dialogs/mendeleev.ui \
+    tools/atomicdata.ui \
     tabs/visuals.ui \
     tabs/home.ui \
     dialogs/dumpdialog.ui \
@@ -137,12 +137,12 @@ FORMS += \
     tabs/tools.ui
 
 RESOURCES += \
-    qagate.qrc
+    qAgate/qagate.qrc
 
 TRANSLATIONS += \
-  qagate_fr.ts \
-  qagate_it.ts \
-  qagate_de.ts
+  qAgate/qagate_fr.ts \
+  qAgate/qagate_it.ts \
+  qAgate/qagate_de.ts
 
 LIBS += -L$$PREFIX_AGATE/ -lagate -lsymspg
 

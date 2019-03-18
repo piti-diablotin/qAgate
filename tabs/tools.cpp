@@ -21,7 +21,7 @@ void Tools::updateStatus(View *view)
     _file = QString::fromStdString(view->getCanvas()->info());
 }
 
-void Tools::on_toolButton_clicked()
+void Tools::on_conducti_clicked()
 {
   if (_conducti.isHidden() && !_file.isEmpty())
     _conducti.openFile(_file);

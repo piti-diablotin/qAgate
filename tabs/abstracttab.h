@@ -2,7 +2,7 @@
 #define ABSTRACTTAB_H
 
 #include <QWidget>
-#include "view.h"
+#include "gui/view.h"
 
 class AbstractTab : public QWidget
 {

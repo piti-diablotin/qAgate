@@ -29,18 +29,21 @@ SOURCES += \
         qConducti/qconducti.cpp \
         tools/qcustomplot.cpp \
         tools/qplot.cpp \
-        qostreamcatcher.cpp
+        tools/qostreamcatcher.cpp
 
 HEADERS += \
         qConducti/qconducti.h \
         tools/qcustomplot.h \
         tools/qplot.h \
-        qostreamcatcher.h
+        tools/qostreamcatcher.h
 
 FORMS += \
         qConducti/qconducti.ui
 
-TRANSLATIONS += qqConducti_fr.ts qconducti_it.ts qconducti_de.ts
+TRANSLATIONS += \
+        qConducti/qconducti_fr.ts \
+        qConducti/qconducti_it.ts \
+        qConducti/qconducti_de.ts
 
 INCLUDEPATH += /usr/include/agate
 

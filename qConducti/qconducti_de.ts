@@ -5,9 +5,10 @@
     <name>QConducti</name>
     <message>
         <location filename="qconducti.ui" line="17"/>
-        <source>QConducti</source>
+        <source>qConducti</source>
+        <oldsource>QConducti</oldsource>
         <translatorcomment>I guess there is nothing to translate here...</translatorcomment>
-        <translation>QConducti</translation>
+        <translation>qConducti</translation>
     </message>
     <message>
         <location filename="qconducti.ui" line="77"/>

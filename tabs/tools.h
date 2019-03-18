@@ -21,7 +21,7 @@ protected:
   virtual void updateStatus(View* view);
 
 private slots:
-  void on_toolButton_clicked();
+  void on_conducti_clicked();
 
 private:
   Ui::Tools *ui;

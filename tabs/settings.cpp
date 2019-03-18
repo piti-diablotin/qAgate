@@ -2,7 +2,7 @@
 #include "ui_settings.h"
 #include <QFileDialog>
 #include "canvas/canvaspos.hpp"
-#include "mendeleev.h"
+#include "dialogs/mendeleev.h"
 
 Settings::Settings(QWidget *parent) :
   AbstractTab(parent),

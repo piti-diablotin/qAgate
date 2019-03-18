@@ -73,14 +73,14 @@
            </sizepolicy>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <property name="tabsClosable">
            <bool>false</bool>
           </property>
           <widget class="Home" name="home">
            <attribute name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset>
              <normaloff>:/home/icons/home.svg</normaloff>:/home/icons/home.svg</iconset>
            </attribute>
            <attribute name="title">
@@ -89,7 +89,7 @@
           </widget>
           <widget class="MD" name="md">
            <attribute name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset>
              <normaloff>:/MD/icons/md.svg</normaloff>:/MD/icons/md.svg</iconset>
            </attribute>
            <attribute name="title">
@@ -104,7 +104,7 @@
             </sizepolicy>
            </property>
            <attribute name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset>
              <normaloff>:/visuals/icons/eye.svg</normaloff>:/visuals/icons/eye.svg</iconset>
            </attribute>
            <attribute name="title">
@@ -119,7 +119,7 @@
             </sizepolicy>
            </property>
            <attribute name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset>
              <normaloff>:/settings/icons/settings.svg</normaloff>:/settings/icons/settings.svg</iconset>
            </attribute>
            <attribute name="title">
@@ -128,7 +128,7 @@
           </widget>
           <widget class="Tools" name="tools">
            <attribute name="icon">
-            <iconset resource="qagate.qrc">
+            <iconset>
              <normaloff>:/tools/icons/tools.svg</normaloff>:/tools/icons/tools.svg</iconset>
            </attribute>
            <attribute name="title">
@@ -226,24 +226,24 @@
   <customwidget>
    <class>TimeLine</class>
    <extends>QWidget</extends>
-   <header>timeline.h</header>
+   <header>gui/timeline.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>MediaPlayer</class>
    <extends>QWidget</extends>
-   <header>mediaplayer.h</header>
+   <header>gui/mediaplayer.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>View</class>
    <extends>QOpenGLWidget</extends>
-   <header>view.h</header>
+   <header>gui/view.h</header>
   </customwidget>
   <customwidget>
    <class>Logger</class>
    <extends>QWidget</extends>
-   <header>logger.h</header>
+   <header>gui/logger.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
@@ -277,8 +277,6 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="qagate.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

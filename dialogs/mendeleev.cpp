@@ -1,7 +1,7 @@
 #include "mendeleev.h"
 #include "ui_mendeleev.h"
 #include "base/mendeleev.hpp"
-#include "atomicdata.h"
+#include "tools/atomicdata.h"
 #include <QDebug>
 #include <QPalette>
 #include <QColorDialog>

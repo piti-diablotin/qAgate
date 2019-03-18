@@ -5,8 +5,9 @@
     <name>QConducti</name>
     <message>
         <location filename="qconducti.ui" line="17"/>
-        <source>QConducti</source>
-        <translation>QConduti</translation>
+        <source>qConducti</source>
+        <oldsource>QConducti</oldsource>
+        <translation>qConduti</translation>
     </message>
     <message>
         <location filename="qconducti.ui" line="77"/>
@@ -16,12 +17,12 @@
     <message>
         <location filename="qconducti.ui" line="124"/>
         <source>Fermi energy:</source>
-        <translation>Energia di Fermi</translation>
+        <translation>Energia di Fermi:</translation>
     </message>
     <message>
         <location filename="qconducti.ui" line="137"/>
         <source>Emax-Efermi:</source>
-        <translation>Emax-Efermi</translation>
+        <translation>Emax-Efermi:</translation>
     </message>
     <message>
         <location filename="qconducti.ui" line="160"/>

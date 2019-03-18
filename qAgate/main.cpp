@@ -12,7 +12,7 @@ Agate::mendeleev Agate::Mendeleev;
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
   QSurfaceFormat glf = QSurfaceFormat::defaultFormat();
   glf.setSamples(8);
   QSurfaceFormat::setDefaultFormat(glf);

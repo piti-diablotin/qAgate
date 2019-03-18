@@ -244,7 +244,7 @@ background-color: rgba(0,0,0,0);
   <customwidget>
    <class>CommandLine</class>
    <extends>QLineEdit</extends>
-   <header>commandline.h</header>
+   <header>gui/commandline.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

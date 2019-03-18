@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include <QStringList>
-#include "atomicdata.h"
+#include "tools/atomicdata.h"
 #include "base/unitconverter.hpp"
 
 namespace Ui {

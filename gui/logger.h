@@ -2,7 +2,7 @@
 #define LOGGER_H
 
 #include <QWidget>
-#include "qostreamcatcher.h"
+#include "tools/qostreamcatcher.h"
 
 namespace Ui {
   class Logger;
