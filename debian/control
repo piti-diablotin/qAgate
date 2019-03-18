@@ -1,0 +1,15 @@
+Source: qagate
+Section: science
+Priority: optional
+Maintainer: Jordan Bieder <jordan.bieder@uliege.be>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, abiout, libfreetype6-dev, libboost-dev, qtbase5-dev, qt5-qmake, qt5-default, libqt5opengl5-dev
+Standards-Version: 3.9.4
+Homepage: https://github.com/piti-diablotin/qAgate
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/hello.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/hello.git
+
+Package: qagate
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, abiout
+Description: New frontend for agate written in Qt.
+ A fully new and intuitive GUI for agate post process tool.

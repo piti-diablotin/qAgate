@@ -9,8 +9,20 @@ QT       += core gui opengl
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = qAgate
+VERSION = 1.0.0
 TEMPLATE = app
-CONFIG += c++11 lrelease embed_translations
+CONFIG += c++11
+isEmpty(PREFIX) {
+ PREFIX = /usr/
+}
+isEmpty(PREFIX_AGATE) {
+ PREFIX = /usr/
+}
+isEmpty(PREFIX_FREETYPE) {
+ PREFIX = /usr/
+}
+target.path = $$PREFIX/bin
+INSTALLS += target
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -132,8 +144,8 @@ TRANSLATIONS += \
   qagate_it.ts \
   qagate_de.ts
 
-LIBS += -lagate -lsymspg
+LIBS += -L$$PREFIX_AGATE/ -lagate -lsymspg
 
 INCLUDEPATH += \
-    /usr/include/agate\
-    /usr/include/freetype2/
+    $$PREFIX_AGATE/include/agate\
+    $$PREFIX_FREETYPE/include/freetype2/
