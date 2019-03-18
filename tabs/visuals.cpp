@@ -275,6 +275,9 @@ void Visuals::on_octaColor_clicked()
   QColor newColor = QColorDialog::getColor(_octaColor,this,tr("Pick a base color"),QColorDialog::ShowAlphaChannel|QColorDialog::DontUseNativeDialog);
   if (!newColor.isValid()) return;
   _octaColor = newColor;
+  QPalette pal = ui->octaColor->palette();
+  pal.setColor(QPalette::Button,_octaColor);
+  ui->octaColor->setPalette(pal);
   QString color = QString::number(newColor.red())
       + " " + QString::number(newColor.green())
       + " " + QString::number(newColor.blue())

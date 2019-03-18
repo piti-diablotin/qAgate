@@ -5,6 +5,7 @@
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
 #include <QSurface>
 #endif
+#include <clocale>
 
 Agate::mendeleev Agate::Mendeleev;
 
@@ -26,6 +27,9 @@ int main(int argc, char *argv[])
   QTranslator translator;
   translator.load(QString(":/translations/qagate_")+ locale);
   a.installTranslator(&translator);
+  // Need to correctly read DDB files and probably numbers elsewhere
+  setlocale(LC_NUMERIC,"C");
+  //char* loc = setlocale(LC_ALL,"C");
   qAgate w;
   w.show();
 
