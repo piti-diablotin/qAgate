@@ -25,6 +25,7 @@ private slots:
 
 private:
   Ui::Tools *ui;
+  QString _file;
   QConducti _conducti;
 };
 

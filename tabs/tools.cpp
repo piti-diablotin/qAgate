@@ -3,6 +3,7 @@
 
 Tools::Tools(QWidget *parent) :
   AbstractTab(parent),
+  _file(),
   ui(new Ui::Tools)
 {
   ui->setupUi(this);
@@ -15,11 +16,13 @@ Tools::~Tools()
 
 void Tools::updateStatus(View *view)
 {
-  if (view->getCanvas() != nullptr && _conducti.isHidden())
-    _conducti.openFile(QString::fromStdString(view->getCanvas()->info()));
+  if (view->getCanvas() != nullptr )
+    _file = QString::fromStdString(view->getCanvas()->info();
 }
 
 void Tools::on_toolButton_clicked()
 {
-    _conducti.show();
+  if (_conducti.isHidden())
+    _conducti.openFile(_file_);
+  _conducti.show();
 }
