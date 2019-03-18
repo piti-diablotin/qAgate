@@ -16,10 +16,10 @@ isEmpty(PREFIX) {
  PREFIX = /usr/
 }
 isEmpty(PREFIX_AGATE) {
- PREFIX = /usr/
+ PREFIX_AGATE = /usr/
 }
 isEmpty(PREFIX_FREETYPE) {
- PREFIX = /usr/
+ PREFIX_FREETYPE = /usr/
 }
 target.path = $$PREFIX/bin
 INSTALLS += target
