@@ -99,11 +99,11 @@
     </qresource>
     <qresource prefix="/tools">
         <file>../icons/tools.svg</file>
-        <file>../qConducti/logo.svg</file>
+        <file>../qconducti/logo.svg</file>
     </qresource>
     <qresource prefix="/translations">
-        <file>../qAgate/qagate_de.qm</file>
-        <file>../qAgate/qagate_it.qm</file>
-        <file>../qAgate/qagate_fr.qm</file>
+        <file>../qagate/qagate_de.qm</file>
+        <file>../qagate/qagate_it.qm</file>
+        <file>../qagate/qagate_fr.qm</file>
     </qresource>
 </RCC>

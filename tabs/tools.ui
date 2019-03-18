@@ -35,8 +35,8 @@
       <string notr="true">Conducti</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate.qrc">
-       <normaloff>:/tools/qConducti/logo.svg</normaloff>:/tools/qConducti/logo.svg</iconset>
+      <iconset resource="../qagate/qagate.qrc">
+       <normaloff>:/tools/qconducti/logo.svg</normaloff>:/tools/qconducti/logo.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -65,7 +65,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../qagate.qrc"/>
+  <include location="../qagate/qagate.qrc"/>
  </resources>
  <connections/>
 </ui>

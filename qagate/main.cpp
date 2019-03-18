@@ -2,7 +2,7 @@
 #include "base/exception.hpp"
 #include "base/mendeleev.hpp"
 #include <QApplication>
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
 #include <QSurface>
 #endif
 #include <clocale>

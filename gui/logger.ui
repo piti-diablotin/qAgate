@@ -165,7 +165,7 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/logger/icons/trash.svg</normaloff>:/logger/icons/trash.svg</iconset>
         </property>
         <property name="shortcut">
@@ -191,7 +191,7 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="qagate.qrc">
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/logger/icons/copy.svg</normaloff>:/logger/icons/copy.svg</iconset>
         </property>
         <property name="shortcut">
@@ -293,7 +293,7 @@ background: url(:/logger/icons/alert-circle.svg) no-repeat;
   </layout>
  </widget>
  <resources>
-  <include location="qagate.qrc"/>
+  <include location="../qagate/qagate.qrc"/>
  </resources>
  <connections/>
 </ui>

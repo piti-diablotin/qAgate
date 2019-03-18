@@ -53,7 +53,7 @@
       <string>Test</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/play.svg</normaloff>
        <disabledoff>:/mplayer/icons/play.svg</disabledoff>
        <disabledon>:/mplayer/icons/play.svg</disabledon>
@@ -97,7 +97,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/skip-back.svg</normaloff>:/mplayer/icons/skip-back.svg</iconset>
      </property>
      <property name="shortcut">
@@ -126,7 +126,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/skip-forward.svg</normaloff>:/mplayer/icons/skip-forward.svg</iconset>
      </property>
      <property name="shortcut">
@@ -171,7 +171,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/rewind.svg</normaloff>:/mplayer/icons/rewind.svg</iconset>
      </property>
      <property name="shortcut">
@@ -197,7 +197,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/fast-forward.svg</normaloff>:/mplayer/icons/fast-forward.svg</iconset>
      </property>
      <property name="shortcut">
@@ -239,7 +239,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/rotate-cw.svg</normaloff>:/mplayer/icons/rotate-cw.svg</iconset>
      </property>
      <property name="shortcut">
@@ -268,7 +268,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/image.svg</normaloff>:/mplayer/icons/image.svg</iconset>
      </property>
      <property name="shortcut">
@@ -294,7 +294,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/video.svg</normaloff>
        <selectedoff>:/mplayer/icons/video-off.svg</selectedoff>
        <selectedon>:/mplayer/icons/video-off.svg</selectedon>:/mplayer/icons/video.svg</iconset>
@@ -341,7 +341,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/zoom-out.svg</normaloff>:/mplayer/icons/zoom-out.svg</iconset>
      </property>
      <property name="shortcut">
@@ -370,7 +370,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/zoom-in.svg</normaloff>:/mplayer/icons/zoom-in.svg</iconset>
      </property>
      <property name="shortcut">
@@ -415,7 +415,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/file.svg</normaloff>:/mplayer/icons/file.svg</iconset>
      </property>
      <property name="shortcut">
@@ -444,7 +444,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="qagate.qrc">
+      <iconset resource="../qagate/qagate.qrc">
        <normaloff>:/mplayer/icons/file-plus.svg</normaloff>:/mplayer/icons/file-plus.svg</iconset>
      </property>
      <property name="shortcut">
@@ -458,7 +458,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="qagate.qrc"/>
+  <include location="../qagate/qagate.qrc"/>
  </resources>
  <connections/>
 </ui>

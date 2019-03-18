@@ -38,8 +38,8 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-    qAgate/main.cpp \
-    qAgate/qagate.cpp \
+    qagate/main.cpp \
+    qagate/qagate.cpp \
     gui/timeline.cpp \
     gui/mediaplayer.cpp \
     gui/view.cpp \
@@ -70,11 +70,11 @@ SOURCES += \
     dialogs/pdfdialog.cpp \
     tools/energyunitcombo.cpp \
     dialogs/smearingdialog.cpp \
-    qConducti/qconducti.cpp \
+    qconducti/qconducti.cpp \
     tabs/tools.cpp
 
 HEADERS += \
-    qAgate/qagate.h \
+    qagate/qagate.h \
     gui/timeline.h \
     gui/mediaplayer.h \
     gui/view.h \
@@ -105,11 +105,11 @@ HEADERS += \
     dialogs/pdfdialog.h \
     tools/energyunitcombo.h \
     dialogs/smearingdialog.h \
-    qConducti/qconducti.h \
+    qconducti/qconducti.h \
     tabs/tools.h
 
 FORMS += \
-    qAgate/qagate.ui \
+    qagate/qagate.ui \
     gui/timeline.ui \
     gui/mediaplayer.ui \
     gui/view.ui \
@@ -133,16 +133,16 @@ FORMS += \
     dialogs/plandialog.ui \
     dialogs/pdfdialog.ui \
     dialogs/smearingdialog.ui \
-    qConducti/qconducti.ui \
+    qconducti/qconducti.ui \
     tabs/tools.ui
 
 RESOURCES += \
-    qAgate/qagate.qrc
+    qagate/qagate.qrc
 
 TRANSLATIONS += \
-  qAgate/qagate_fr.ts \
-  qAgate/qagate_it.ts \
-  qAgate/qagate_de.ts
+  qagate/qagate_fr.ts \
+  qagate/qagate_it.ts \
+  qagate/qagate_de.ts
 
 LIBS += -L$$PREFIX_AGATE/ -lagate -lsymspg
 

@@ -25,29 +25,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        qConducti/main.cpp \
-        qConducti/qconducti.cpp \
+        qconducti/main.cpp \
+        qconducti/qconducti.cpp \
         tools/qcustomplot.cpp \
         tools/qplot.cpp \
         tools/qostreamcatcher.cpp
 
 HEADERS += \
-        qConducti/qconducti.h \
+        qconducti/qconducti.h \
         tools/qcustomplot.h \
         tools/qplot.h \
         tools/qostreamcatcher.h
 
 FORMS += \
-        qConducti/qconducti.ui
+        qconducti/qconducti.ui
 
 TRANSLATIONS += \
-        qConducti/qconducti_fr.ts \
-        qConducti/qconducti_it.ts \
-        qConducti/qconducti_de.ts
+        qconducti/qconducti_fr.ts \
+        qconducti/qconducti_it.ts \
+        qconducti/qconducti_de.ts
 
 INCLUDEPATH += /usr/include/agate
 
 RESOURCES += \
-    qConducti/translations.qrc
+    qconducti/translations.qrc
 
 unix|win32: LIBS += -lagate -lsymspg
