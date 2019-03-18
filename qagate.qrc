@@ -99,6 +99,7 @@
     </qresource>
     <qresource prefix="/tools">
         <file>icons/tools.svg</file>
+        <file>qConducti/logo.svg</file>
     </qresource>
     <qresource prefix="/translations">
         <file>qagate_de.qm</file>

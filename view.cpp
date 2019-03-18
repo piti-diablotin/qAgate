@@ -397,7 +397,7 @@ unsigned View::getDisplay() const
   return 0;
 }
 
-const Canvas *View::getCanvas()
+const Canvas *View::getCanvas() const
 {
   return _canvas.get();
 }

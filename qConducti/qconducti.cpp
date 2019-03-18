@@ -71,7 +71,7 @@ void QConducti::dropEvent(QDropEvent *dropEvent)
   this->openFile(fileName);
 }
 
-void QConducti::openFile(QString &fileName)
+void QConducti::openFile(const QString &fileName)
 {
   try {
     ui->statusBar->showMessage(tr("Loading file ")+fileName);

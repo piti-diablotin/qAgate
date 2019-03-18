@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="currentColor"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   class="feather feather-zap"
+   version="1.1"
+   id="svg1193"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata1199">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1197">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 12 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="24 : 12 : 1"
+       inkscape:persp3d-origin="12 : 8 : 1"
+       id="perspective1203" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     id="namedview1195"
+     showgrid="false"
+     inkscape:zoom="12.123935"
+     inkscape:cx="-18.184461"
+     inkscape:cy="17.675037"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1193" />
+  <g
+     id="g1242"
+     transform="translate(0.04374158,1.0284258)">
+    <rect
+       transform="matrix(1,0,-0.40620864,0.91378036,0,0)"
+       y="13.754038"
+       x="11.180074"
+       height="9.7340364"
+       width="16.680437"
+       id="rect1219"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#030000;stroke-width:2.09156942;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <g
+       transform="translate(-0.02062037,-0.65985177)"
+       id="g1233">
+      <polygon
+         points="21,10 12,10 13,2 3,14 12,14 11,22 "
+         id="polygon1191"
+         transform="matrix(0.28592359,0,0,0.77795543,8.8502803,-0.59368949)"
+         style="fill:#ffffff;fill-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 10.877278,14.376671 1.089,2.465437 2.089615,-2.319629"
+         id="path1223"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1225"
+       d="M 10.235723,16.797084 C 8.0194411,15.776428 7.9319563,16.91373 7.7569866,17.409478 7.582017,17.905225 6.7363305,18.109356 6.2114216,18.051033"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="csc"
+       inkscape:connector-curvature="0"
+       id="path1227"
+       d="m 11.983954,17.539668 c -1.516403,0.524909 -0.34994,1.866343 0.55407,1.545566 0.90401,-0.320778 1.630977,0.669252 1.339361,1.135837"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1229"
+       d="m 13.560146,16.651276 c 2.099635,-1.63305 2.070474,0.08749 2.18712,0.408262 0.116647,0.320778 0.02916,0.554071 0.583232,0.641556 0.554071,0.08748 0.845687,-0.641556 1.166464,-0.524909 0.320778,0.116646 0.641556,0.583232 0.758202,0.816525"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>

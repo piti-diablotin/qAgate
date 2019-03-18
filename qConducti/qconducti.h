@@ -26,6 +26,7 @@ public:
   ~QConducti();
   virtual void dragEnterEvent(QDragEnterEvent *dragEnterEvent);
   virtual void dropEvent(QDropEvent *dropEvent);
+  void openFile(const QString &filename);
 
 private slots:
   void updateInfo();
@@ -98,7 +99,6 @@ private:
   static const int energyRangeUnit = 3;
   static const int sigmaUnit = 4;
 
-  void openFile(QString &filename);
   void setGraphs();
   void computeAll();
   void setEnergyRange(bool setValue=false);

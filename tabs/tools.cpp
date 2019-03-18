@@ -15,7 +15,8 @@ Tools::~Tools()
 
 void Tools::updateStatus(View *view)
 {
-
+  if (view->getCanvas() != nullptr && _conducti.isHidden())
+    _conducti.openFile(QString::fromStdString(view->getCanvas()->info()));
 }
 
 void Tools::on_toolButton_clicked()
