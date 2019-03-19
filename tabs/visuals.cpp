@@ -73,6 +73,26 @@ void Visuals::updateStatus(View *view)
   const CanvasPos* canvas = dynamic_cast<const CanvasPos*>(view->getCanvas());
   if (canvas!=nullptr)
   {
+    bool x, y ,z, relative= false;
+    canvas->getSpinDirection(x,y,z,relative);
+    if (x&&y&&z)
+      ui->spin->setCurrentIndex(7);
+    else if (!x&&y&&z)
+      ui->spin->setCurrentIndex(6);
+    else if (x&&!y&&z)
+      ui->spin->setCurrentIndex(5);
+    else if (x&&y&&!z)
+      ui->spin->setCurrentIndex(4);
+    else if (!x&&!y&&z)
+      ui->spin->setCurrentIndex(3);
+    else if (!x&&y&&!z)
+      ui->spin->setCurrentIndex(2);
+    else if (x&&!y&&!z)
+      ui->spin->setCurrentIndex(1);
+    else if (!x&&!y&&!z)
+      ui->spin->setCurrentIndex(0);
+    ui->spinRelative->setChecked(relative);
+
     const HistData* hist = canvas->histdata();
     if ((hist)!=nullptr)
     {
@@ -283,4 +303,10 @@ void Visuals::on_octaColor_clicked()
       + " " + QString::number(newColor.blue())
       + " " + QString::number(newColor.alpha());
   emit(sendCommand(":color octa "+color));
+}
+
+void Visuals::on_spinRelative_clicked(bool checked)
+{
+  QString value = checked ? "relative" : "absolute";
+  emit(sendCommand(":spin_length "+value));
 }

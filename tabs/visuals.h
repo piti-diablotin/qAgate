@@ -69,6 +69,8 @@ private slots:
 
   void on_octaColor_clicked();
 
+  void on_spinRelative_clicked(bool checked);
+
 public slots:
   void updateAngles(View* view);
 };

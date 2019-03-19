@@ -691,7 +691,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/md.cpp" line="68"/>
+        <location filename="../tabs/md.cpp" line="70"/>
         <source>New Graph</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1900,7 +1900,7 @@
         <location filename="../tabs/visuals.ui" line="99"/>
         <location filename="../tabs/visuals.ui" line="102"/>
         <location filename="../tabs/visuals.ui" line="105"/>
-        <location filename="../tabs/visuals.ui" line="1246"/>
+        <location filename="../tabs/visuals.ui" line="1261"/>
         <source>Add translation along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1919,7 +1919,7 @@
         <location filename="../tabs/visuals.ui" line="122"/>
         <location filename="../tabs/visuals.ui" line="125"/>
         <location filename="../tabs/visuals.ui" line="128"/>
-        <location filename="../tabs/visuals.ui" line="1306"/>
+        <location filename="../tabs/visuals.ui" line="1321"/>
         <source>Remove translation along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1927,7 +1927,7 @@
         <location filename="../tabs/visuals.ui" line="145"/>
         <location filename="../tabs/visuals.ui" line="148"/>
         <location filename="../tabs/visuals.ui" line="151"/>
-        <location filename="../tabs/visuals.ui" line="1261"/>
+        <location filename="../tabs/visuals.ui" line="1276"/>
         <source>Add translation along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1935,7 +1935,7 @@
         <location filename="../tabs/visuals.ui" line="175"/>
         <location filename="../tabs/visuals.ui" line="178"/>
         <location filename="../tabs/visuals.ui" line="181"/>
-        <location filename="../tabs/visuals.ui" line="1276"/>
+        <location filename="../tabs/visuals.ui" line="1291"/>
         <source>Add translation along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1943,7 +1943,7 @@
         <location filename="../tabs/visuals.ui" line="198"/>
         <location filename="../tabs/visuals.ui" line="201"/>
         <location filename="../tabs/visuals.ui" line="204"/>
-        <location filename="../tabs/visuals.ui" line="1321"/>
+        <location filename="../tabs/visuals.ui" line="1336"/>
         <source>Remove translation along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1951,7 +1951,7 @@
         <location filename="../tabs/visuals.ui" line="221"/>
         <location filename="../tabs/visuals.ui" line="224"/>
         <location filename="../tabs/visuals.ui" line="227"/>
-        <location filename="../tabs/visuals.ui" line="1291"/>
+        <location filename="../tabs/visuals.ui" line="1306"/>
         <source>Remove translation along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1959,7 +1959,7 @@
         <location filename="../tabs/visuals.ui" line="324"/>
         <location filename="../tabs/visuals.ui" line="327"/>
         <location filename="../tabs/visuals.ui" line="330"/>
-        <location filename="../tabs/visuals.ui" line="1354"/>
+        <location filename="../tabs/visuals.ui" line="1369"/>
         <source>Set view along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1967,7 +1967,7 @@
         <location filename="../tabs/visuals.ui" line="349"/>
         <location filename="../tabs/visuals.ui" line="352"/>
         <location filename="../tabs/visuals.ui" line="355"/>
-        <location filename="../tabs/visuals.ui" line="1332"/>
+        <location filename="../tabs/visuals.ui" line="1347"/>
         <source>Set view along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1975,7 +1975,7 @@
         <location filename="../tabs/visuals.ui" line="374"/>
         <location filename="../tabs/visuals.ui" line="377"/>
         <location filename="../tabs/visuals.ui" line="380"/>
-        <location filename="../tabs/visuals.ui" line="1343"/>
+        <location filename="../tabs/visuals.ui" line="1358"/>
         <source>Set view along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2014,7 +2014,7 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="596"/>
-        <location filename="../tabs/visuals.ui" line="1210"/>
+        <location filename="../tabs/visuals.ui" line="1225"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2164,24 +2164,24 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="1107"/>
-        <source>Spin direction</source>
+        <source>Spin only</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="1137"/>
-        <location filename="../tabs/visuals.ui" line="1329"/>
+        <location filename="../tabs/visuals.ui" line="1344"/>
         <source>x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="1142"/>
-        <location filename="../tabs/visuals.ui" line="1340"/>
+        <location filename="../tabs/visuals.ui" line="1355"/>
         <source>y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="1147"/>
-        <location filename="../tabs/visuals.ui" line="1351"/>
+        <location filename="../tabs/visuals.ui" line="1366"/>
         <source>z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2206,110 +2206,115 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1201"/>
+        <location filename="../tabs/visuals.ui" line="1183"/>
+        <source>Relative</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="1216"/>
         <source>Angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1204"/>
-        <location filename="../tabs/visuals.ui" line="1207"/>
+        <location filename="../tabs/visuals.ui" line="1219"/>
+        <location filename="../tabs/visuals.ui" line="1222"/>
         <source>Show/Hide angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1222"/>
+        <location filename="../tabs/visuals.ui" line="1237"/>
         <source>Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1225"/>
-        <location filename="../tabs/visuals.ui" line="1228"/>
-        <location filename="../tabs/visuals.ui" line="1231"/>
+        <location filename="../tabs/visuals.ui" line="1240"/>
+        <location filename="../tabs/visuals.ui" line="1243"/>
+        <location filename="../tabs/visuals.ui" line="1246"/>
         <source>Show/Hide time info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1234"/>
+        <location filename="../tabs/visuals.ui" line="1249"/>
         <source>T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1243"/>
+        <location filename="../tabs/visuals.ui" line="1258"/>
         <source>+x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1249"/>
+        <location filename="../tabs/visuals.ui" line="1264"/>
         <source>+, X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1258"/>
+        <location filename="../tabs/visuals.ui" line="1273"/>
         <source>+y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1264"/>
+        <location filename="../tabs/visuals.ui" line="1279"/>
         <source>+, Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1273"/>
+        <location filename="../tabs/visuals.ui" line="1288"/>
         <source>+z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1279"/>
+        <location filename="../tabs/visuals.ui" line="1294"/>
         <source>+, Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1288"/>
+        <location filename="../tabs/visuals.ui" line="1303"/>
         <source>-z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1294"/>
+        <location filename="../tabs/visuals.ui" line="1309"/>
         <source>-, Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1303"/>
+        <location filename="../tabs/visuals.ui" line="1318"/>
         <source>-y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1309"/>
+        <location filename="../tabs/visuals.ui" line="1324"/>
         <source>-, Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1318"/>
+        <location filename="../tabs/visuals.ui" line="1333"/>
         <source>-x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1324"/>
+        <location filename="../tabs/visuals.ui" line="1339"/>
         <source>-, X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1335"/>
+        <location filename="../tabs/visuals.ui" line="1350"/>
         <source>X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1346"/>
+        <location filename="../tabs/visuals.ui" line="1361"/>
         <source>Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1357"/>
+        <location filename="../tabs/visuals.ui" line="1372"/>
         <source>Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.cpp" line="275"/>
+        <location filename="../tabs/visuals.cpp" line="295"/>
         <source>Pick a base color</source>
         <translation type="unfinished"></translation>
     </message>

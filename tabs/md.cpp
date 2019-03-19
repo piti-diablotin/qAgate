@@ -39,7 +39,8 @@ void MD::updateStatus(View *view)
   this->setGraph();
   //if (_plot.isHidden()) _plot.show();
   bool something = (view->getCanvas() != nullptr && view->getCanvas()->histdata() != nullptr);
-  ui->gyration->setEnabled(something);
+  ui->geometry->setEnabled(something);
+  ui->statistics->setEnabled(something);
   bool isMD=false;
   bool isPIMD=false;
   if (something)
@@ -51,6 +52,7 @@ void MD::updateStatus(View *view)
       _rmax = geometry::getWignerSeitzRadius(hist->getRprimd(0));
       isPIMD=view->getCanvas()->histdata()->nimage()>1;
       isMD=(dynamic_cast<const HistDataMD*>(hist)!=nullptr);
+      ui->msd->setEnabled(hist->ntime()>1);
     }
   ui->gyration->setEnabled(isPIMD);
   ui->thermodynamics->setEnabled(isMD);

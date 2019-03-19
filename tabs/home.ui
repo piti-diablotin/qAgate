@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>879</width>
+    <width>727</width>
     <height>127</height>
    </rect>
   </property>
@@ -88,7 +88,7 @@
          <string>Abinit</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
         </property>
         <property name="iconSize">
@@ -125,7 +125,7 @@
          <string>HIST</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
         </property>
         <property name="iconSize">
@@ -154,7 +154,7 @@
          <string>Open a script file</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
         </property>
         <property name="iconSize">
@@ -194,7 +194,7 @@
          <string>VASP</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/save-poscar.svg</normaloff>:/home/icons/save-poscar.svg</iconset>
         </property>
         <property name="iconSize">
@@ -231,7 +231,7 @@
          <string>XYZ</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
         </property>
         <property name="iconSize">
@@ -274,7 +274,7 @@
          <string>CIF</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/save.svg</normaloff>:/home/icons/save.svg</iconset>
         </property>
         <property name="iconSize">
@@ -306,7 +306,7 @@
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/refresh-cw.svg</normaloff>:/home/icons/refresh-cw.svg</iconset>
         </property>
         <property name="iconSize">
@@ -443,7 +443,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../qagate/qagate.qrc">
                 <normaloff>:/home/icons/periodic.svg</normaloff>:/home/icons/periodic.svg</iconset>
               </property>
               <property name="iconSize">
@@ -472,7 +472,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../qagate/qagate.qrc">
                 <normaloff>:/home/icons/noperiodic.svg</normaloff>:/home/icons/noperiodic.svg</iconset>
               </property>
               <property name="iconSize">
@@ -506,7 +506,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../qagate/qagate.qrc">
                 <normaloff>:/home/icons/shift.svg</normaloff>:/home/icons/shift.svg</iconset>
               </property>
               <property name="iconSize">
@@ -584,7 +584,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/typat.svg</normaloff>:/home/icons/typat.svg</iconset>
            </property>
            <property name="iconSize">
@@ -621,7 +621,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/supercell.svg</normaloff>:/home/icons/supercell.svg</iconset>
            </property>
            <property name="iconSize">
@@ -658,7 +658,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/centroid.svg</normaloff>:/home/icons/centroid.svg</iconset>
            </property>
            <property name="iconSize">
@@ -692,7 +692,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/move.svg</normaloff>:/home/icons/move.svg</iconset>
            </property>
            <property name="iconSize">
@@ -729,7 +729,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/average.svg</normaloff>:/home/icons/average.svg</iconset>
            </property>
            <property name="iconSize">
@@ -956,7 +956,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/rule.svg</normaloff>:/home/icons/rule.svg</iconset>
            </property>
            <property name="iconSize">
@@ -996,7 +996,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/angle.svg</normaloff>:/home/icons/angle.svg</iconset>
            </property>
           </widget>
@@ -1201,7 +1201,7 @@
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>387</width>
+       <width>0</width>
        <height>20</height>
       </size>
      </property>
@@ -1216,6 +1216,8 @@
    <header>tools/distanceunitcombo.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../qagate/qagate.qrc"/>
+ </resources>
  <connections/>
 </ui>
