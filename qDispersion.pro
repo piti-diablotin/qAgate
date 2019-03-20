@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = qDispersion
 TEMPLATE = app
@@ -16,6 +16,7 @@ TEMPLATE = app
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += HAVE_CONFIG_H
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -24,11 +25,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        qDispersion/main.cpp \
-        qDispersion/qdispersion.cpp
+        qdispersion/main.cpp \
+        qdispersion/qdispersion.cpp \
+    tools/energyunitcombo.cpp \
+    tools/unitcombo.cpp \
+    dialogs/mendeleev.cpp \
+    tools/atomicdata.cpp \
+    tools/qcustomplot.cpp \
+    tools/qplot.cpp
 
 HEADERS += \
-        qDispersion/qdispersion.h
+        qdispersion/qdispersion.h \
+    tools/energyunitcombo.h \
+    tools/unitcombo.h \
+    dialogs/mendeleev.h \
+    tools/atomicdata.h \
+    tools/qcustomplot.h \
+    tools/qplot.h
 
 FORMS += \
-        qDispersion/qdispersion.ui
+        qdispersion/qdispersion.ui \
+    dialogs/mendeleev.ui \
+    tools/atomicdata.ui
+
+INCLUDEPATH += /usr/include/agate
+
+unix|win32: LIBS += -lagate -lsymspg
