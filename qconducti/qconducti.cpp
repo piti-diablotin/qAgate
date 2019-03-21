@@ -20,9 +20,6 @@ QConducti::QConducti(QWidget *parent) :
 {
   ui->setupUi(this);
   this->on_selectionBox_stateChanged(Qt::Unchecked);
-  ui->filename->setText(tr("No file loaded"));
-  ui->leftFrame->setDisabled(true);
-  ui->progressBar->setDisabled(true);
   this->updateInfo();
   _units[sigmaUnit] = UnitConverter(UnitConverter::pOhmpcm);
   _units[sigmaUnit].rebase(UnitConverter::au);

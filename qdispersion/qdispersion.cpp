@@ -1,11 +1,13 @@
 #include "qdispersion.h"
 #include "ui_qdispersion.h"
+#include "plot/graph.hpp"
 #include <QDebug>
 
 QDispersion::QDispersion(QWidget *parent) :
   QMainWindow(parent),
   ui(new Ui::QDispersion),
-  _intValidator(1,10000,this)
+  _intValidator(1,10000,this),
+  _eigparser(nullptr)
 {
   ui->setupUi(this);
   ui->ndiv1->setValidator(&_intValidator);
@@ -13,11 +15,60 @@ QDispersion::QDispersion(QWidget *parent) :
   size.setWidth(size.width()-3);
   ui->labelLabel->setMinimumSize(size);
   this->setSpacerSize();
+  ui->leftframe->setDisabled(true);
+  connect(ui->plot,SIGNAL(mouseMove(QMouseEvent*)),this,SLOT(coordStatusBar(QMouseEvent*)));
 }
 
 QDispersion::~QDispersion()
 {
-  delete ui;
+    delete ui;
+}
+
+void QDispersion::dragEnterEvent(QDragEnterEvent *dragEnterEvent)
+{
+  if (dragEnterEvent->mimeData()->hasFormat("text/uri-list"))
+      dragEnterEvent->acceptProposedAction();
+}
+
+void QDispersion::dropEvent(QDropEvent *dropEvent)
+{
+  QList<QUrl> urls = dropEvent->mimeData()->urls();
+  if (urls.isEmpty())
+    return;
+
+  QString fileName = urls.first().toLocalFile();
+  if (fileName.isEmpty())
+    return;
+  this->openFile(fileName);
+}
+
+void QDispersion::openFile(const QString &filename)
+{
+  try {
+    ui->statusBar->showMessage(tr("Loading file ")+filename);
+    ui->leftframe->setDisabled(true);
+    _eigparser.reset(EigParser::getEigParser(filename.toStdString()));
+    size_t pos = filename.toStdString().find_last_of("/\\");
+    ui->filename->setText(QString::fromStdString(filename.toStdString().substr(pos+1)));
+    ui->leftframe->setDisabled(false);
+    ui->statusBar->showMessage(tr("Ready"));
+  }
+  catch ( Exception &e ) {
+    QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+  }
+}
+
+void QDispersion::plot() const
+{
+    QString command;
+}
+
+void QDispersion::coordStatusBar(QMouseEvent *event)
+{
+  double x = ui->plot->xAxis->pixelToCoord(event->pos().x());
+  double y = ui->plot->yAxis->pixelToCoord(event->pos().y());
+  QString info = "kpt="+QString::number(x) + " E=" + QString::number(y);
+  ui->statusBar->showMessage(info);
 }
 
 void QDispersion::on_nsegments_valueChanged(int arg1)
