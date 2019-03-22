@@ -7,7 +7,8 @@ const QColor QPlot::qcolor[] = { Qt::black, Qt::red, Qt::green, Qt::blue, Qt::ma
 
 //
 QPlot::QPlot(QWidget *parent) : QCustomPlot(parent), Graph(),
-  _titleElement(new QCPTextElement(this, QString::fromStdString(_title), QFont("Helvetica", 12, QFont::Bold)))
+  _titleElement(new QCPTextElement(this, QString::fromStdString(_title), QFont("Helvetica", 12, QFont::Bold))),
+  _arrowsItems()
 {
   this->setAutoAddPlottableToLegend(false);
   this->plotLayout()->insertRow(0);
@@ -157,6 +158,10 @@ void QPlot::save(std::string filename){
 
 void QPlot::clean(){
   this->clearPlottables();
+  for ( auto a : _arrowsItems ) {
+    this->removeItem(a);
+  }
+  _arrowsItems.clear();
   this->xAxis->setTicker(QSharedPointer<QCPAxisTicker>(new QCPAxisTicker));
   this->yAxis->setTicker(QSharedPointer<QCPAxisTicker>(new QCPAxisTicker));
 }
@@ -221,6 +226,16 @@ void QPlot::addCustom() {
     this->yAxis->setTicker(ytickers);
     for ( auto t : _ytics ) {
       ytickers->addTick(t.position,translateToUnicode(QString::fromStdString(t.label)));
+    }
+  }
+
+  if ( _arrows.size() > 0 ) {
+    for ( auto a : _arrows ) {
+      QCPItemLine *arrow = new QCPItemLine(this);
+      _arrowsItems.push_back(arrow);
+      arrow->start->setCoords(a.x1,a.y1);
+      arrow->end->setCoords(a.x2,a.y2);
+      arrow->setHead(a.head ? QCPLineEnding::esSpikeArrow : QCPLineEnding::esNone );
     }
   }
 }
