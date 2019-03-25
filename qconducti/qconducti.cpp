@@ -70,6 +70,7 @@ void QConducti::dropEvent(QDropEvent *dropEvent)
 
 void QConducti::openFile(const QString &fileName)
 {
+  this->setCursor(Qt::WaitCursor);
   try {
     ui->statusBar->showMessage(tr("Loading file ")+fileName);
     ui->leftFrame->setDisabled(true);
@@ -105,6 +106,7 @@ void QConducti::openFile(const QString &fileName)
   catch ( Exception &e ) {
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
   }
+  this->setCursor(Qt::ArrowCursor);
 }
 
 void QConducti::on_selectionBox_stateChanged(int arg1)
@@ -190,9 +192,11 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
           _config[3].x.clear();
           _config[3].labels.clear();
         }
+      this->setCursor(Qt::WaitCursor);
       QConducti::computeAll();
       QConducti::setGraphs();
       QConducti::plot();
+      this->setCursor(Qt::ArrowCursor);
     }
   else if ( b == QDialogButtonBox::Close )
     this->close();

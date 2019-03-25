@@ -4,6 +4,7 @@
 #include <QWidget>
 #include "abstracttab.h"
 #include "qconducti/qconducti.h"
+#include "qdispersion/qdispersion.h"
 
 namespace Ui {
   class Tools;
@@ -23,10 +24,13 @@ protected:
 private slots:
   void on_conducti_clicked();
 
+  void on_dispersion_clicked();
+
 private:
   Ui::Tools *ui;
   QString _file;
   QConducti _conducti;
+  QDispersion _dispersion;
 };
 
 #endif // TOOLS_H

@@ -4,4 +4,7 @@
         <file>qdispersion_fr.qm</file>
         <file>qdispersion_it.qm</file>
     </qresource>
+    <qresource prefix="/">
+        <file>../icons/mendeleev.svg</file>
+    </qresource>
 </RCC>

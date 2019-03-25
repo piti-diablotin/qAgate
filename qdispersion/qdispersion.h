@@ -9,6 +9,7 @@
 #include <QDragEnterEvent>
 #include <QDropEvent>
 #include <QAbstractButton>
+#include <QLayoutItem>
 
 namespace Ui {
   class QDispersion;
@@ -46,11 +47,15 @@ private slots:
 
   void on_fermi_valueChanged(double arg1);
 
+  void on_mendeleev_clicked();
+
 private:
   Ui::QDispersion *ui;
+  QList<QLayoutItem*> _magneticMomentum;
   QIntValidator _intValidator;
   QRegExpValidator _atomValidator;
   std::unique_ptr<EigParser> _eigparser;
+  QString _currentDirectory;
 
   void setSpacerSize();
 };

@@ -3,14 +3,17 @@
 #include "plot/graph.hpp"
 #include "io/eigparserelectrons.hpp"
 #include <QDebug>
+#include "dialogs/mendeleev.h"
 
 QDispersion::QDispersion(QWidget *parent) :
   QMainWindow(parent),
   ui(new Ui::QDispersion),
+  _magneticMomentum(),
   _intValidator(1,10000,this),
   //_atomValidator(QRegExp("^((((\\d+)-(\\*|(\\d+ )))|((\\d+)( \\d+)+))+)$"),this),
   _atomValidator(QRegExp("^((\\d+)( \\d+)+)$"),this),
-  _eigparser(nullptr)
+  _eigparser(nullptr),
+  _currentDirectory()
 {
   ui->setupUi(this);
   ui->ndiv1->setValidator(&_intValidator);
@@ -33,7 +36,11 @@ QDispersion::QDispersion(QWidget *parent) :
   ui->p2->hide();
   ui->p3->hide();
   ui->p4->hide();
-  ui->angular->setCurrentIndex(5);
+  ui->angular->setCurrentIndex(5);  auto sizes = ui->splitter->sizes();
+  sizes[0] = ui->leftframe->sizeHint().width();
+  sizes[1] = 10000;
+  ui->splitter->setSizes(sizes);
+  //ui->splitter->refresh();
 }
 
 QDispersion::~QDispersion()
@@ -61,6 +68,7 @@ void QDispersion::dropEvent(QDropEvent *dropEvent)
 
 void QDispersion::openFile(const QString &filename)
 {
+  this->setCursor(Qt::WaitCursor);
   try {
     ui->statusBar->showMessage(tr("Loading file ")+filename);
     ui->leftframe->setDisabled(true);
@@ -100,26 +108,36 @@ void QDispersion::openFile(const QString &filename)
         ui->ndiv1->setText(QString::number(_eigparser->getPath().size()));
       }
     ui->ignore->setMaximum(_eigparser->getNband());
+    bool electronic = (dynamic_cast<EigParserElectrons*>(_eigparser.get())!=nullptr);
+    ui->ignoreWidget->setEnabled(electronic);
+    ui->ignore->setEnabled(electronic);
+    ui->ignore->setValue(0);
     try
     {
       _eigparser->getBandColor(1,1);
       ui->fatbands->setEnabled(true);
-      bool electronic = (dynamic_cast<EigParserElectrons*>(_eigparser.get())!=nullptr);
-      ui->angularLabel->setEnabled(electronic);
-      ui->angular->setEnabled(electronic);
-      ui->magneticLabel->setEnabled(electronic);
-      ui->magneticSerie->setEnabled(electronic);
+      if (ui->fatbands->isChecked())
+        {
+          bool electronic = (dynamic_cast<EigParserElectrons*>(_eigparser.get())!=nullptr);
+          ui->angularLabel->setEnabled(electronic);
+          ui->angular->setEnabled(electronic);
+          ui->magneticLabel->setEnabled(electronic);
+          ui->magneticSerie->setEnabled(electronic);
+        }
     }
     catch (...)
     {
       ui->fatbands->setEnabled(false);
       ui->fatbands->setChecked(false);
     }
+    pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+    _currentDirectory = filename.left(pos+1);
     QDispersion::plot();
   }
   catch ( Exception &e ) {
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
   }
+  this->setCursor(Qt::ArrowCursor);
 }
 
 void QDispersion::plot()
@@ -178,7 +196,7 @@ void QDispersion::plot()
   command += QString::number(ui->fermi->value()*fermiUnit,'g',14);
 
   // ignore
-  command += " ignore "+QString::number(ui->ignore->value());
+  if (ui->ignore->isEnabled()) command += " ignore "+QString::number(ui->ignore->value());
 
   // fatbands
   if (ui->fatbands->isChecked())
@@ -211,7 +229,9 @@ void QDispersion::plot()
   try
   {
     ui->statusBar->showMessage(tr("Plot in progress"));
+    this->setCursor(Qt::WaitCursor);
     Graph::plotBand(*_eigparser.get(),parser,ui->plot,Graph::NONE);
+    this->setCursor(Qt::ArrowCursor);
     ui->statusBar->clearMessage();
   }
   catch (Exception &e)
@@ -325,19 +345,11 @@ void QDispersion::on_buttonBox_clicked(QAbstractButton *button)
   QDialogButtonBox::StandardButton b = ui->buttonBox->standardButton(button);
   if ( b == QDialogButtonBox::Save )
     {
-      /*
-      QString filename = QFileDialog::getSaveFileName(this,tr("Base name"));
-      _config[4].save = Graph::DATA;
-      _config[5].save = Graph::DATA;
-      _config[4].filename = filename.toStdString()+"_sigma";
-      _config[5].filename = filename.toStdString()+"_histogram";
-      Graph::plot(_config[4], nullptr);
-      Graph::plot(_config[5], nullptr);
-      _config[4].save = Graph::PRINT;
-      _config[5].save = Graph::PRINT;
-      Graph::plot(_config[4], ui->sigma);
-      Graph::plot(_config[5], ui->histogram);
-      */
+      QString filename = QFileDialog::getSaveFileName(this,tr("PDF file"),_currentDirectory,"PDF (*.pdf");
+      if (!filename.endsWith(".pdf")) filename == ".pdf";
+      ui->plot->savePdf(filename,0,0,QCP::epNoCosmetic);
+      int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+      _currentDirectory = filename.left(pos+1);
     }
   else if ( b == QDialogButtonBox::Open )
     {
@@ -428,11 +440,27 @@ void QDispersion::on_angular_currentIndexChanged(int index)
 
 void QDispersion::on_fatbands_clicked(bool checked)
 {
-   if (checked)  QDispersion::plot();
+   if (checked)
+     {
+       bool electronic = (dynamic_cast<EigParserElectrons*>(_eigparser.get())!=nullptr);
+       ui->angularLabel->setEnabled(electronic);
+       ui->angular->setEnabled(electronic);
+       ui->magneticLabel->setEnabled(electronic);
+       ui->magneticSerie->setEnabled(electronic);
+       if (!electronic) QDispersion::plot();
+     }
 }
 
 void QDispersion::on_fermi_valueChanged(double arg1)
 {
   (void) arg1;
   QDispersion::plot();
+}
+
+void QDispersion::on_mendeleev_clicked()
+{
+   Mendeleev m(this);
+   m.build();
+   m.exec();
+   if (m.result()!=0) QDispersion::plot();
 }

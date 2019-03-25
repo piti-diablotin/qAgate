@@ -28,3 +28,11 @@ void Tools::on_conducti_clicked()
   _conducti.show();
   _conducti.activateWindow();
 }
+
+void Tools::on_dispersion_clicked()
+{
+  //if (_dispersion.isHidden() && !_file.isEmpty())
+  //  _dispersion.openFile(_file);
+  _dispersion.show();
+  _dispersion.activateWindow();
+}

@@ -71,6 +71,7 @@ SOURCES += \
     tools/energyunitcombo.cpp \
     dialogs/smearingdialog.cpp \
     qconducti/qconducti.cpp \
+    qdispersion/qdispersion.cpp \
     tabs/tools.cpp
 
 HEADERS += \
@@ -106,6 +107,7 @@ HEADERS += \
     tools/energyunitcombo.h \
     dialogs/smearingdialog.h \
     qconducti/qconducti.h \
+    qdispersion/qdispersion.h \
     tabs/tools.h
 
 FORMS += \
@@ -134,10 +136,12 @@ FORMS += \
     dialogs/pdfdialog.ui \
     dialogs/smearingdialog.ui \
     qconducti/qconducti.ui \
+    qdispersion/qdispersion.ui \
     tabs/tools.ui
 
 RESOURCES += \
-    qagate/qagate.qrc
+    qagate/qagate.qrc \
+    qdispersion/translations.qrc
 
 TRANSLATIONS += \
   qagate/qagate_fr.ts \
