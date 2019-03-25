@@ -22,6 +22,15 @@
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="toolTip">
+      <string>qDispersion</string>
+     </property>
+     <property name="statusTip">
+      <string>qDispersion</string>
+     </property>
+     <property name="whatsThis">
+      <string>qDispersion</string>
+     </property>
      <property name="text">
       <string/>
      </property>

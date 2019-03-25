@@ -206,7 +206,7 @@
          <string>Lattice parameters</string>
         </property>
         <property name="text">
-         <string>d</string>
+         <string notr="true">d</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -235,7 +235,7 @@
          <string>Cell angles</string>
         </property>
         <property name="text">
-         <string>A</string>
+         <string notr="true">A</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -264,7 +264,7 @@
          <string>Angle between 3 atoms</string>
         </property>
         <property name="text">
-         <string>A</string>
+         <string notr="true">A</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -293,7 +293,7 @@
          <string>Distance between 2 atoms</string>
         </property>
         <property name="text">
-         <string>D</string>
+         <string notr="true">D</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -322,7 +322,7 @@
          <string>Volume</string>
         </property>
         <property name="text">
-         <string>V</string>
+         <string notr="true">V</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -375,7 +375,7 @@
          <string>Pressure</string>
         </property>
         <property name="text">
-         <string>P</string>
+         <string notr="true">P</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -404,7 +404,7 @@
          <string>Kinetic energy</string>
         </property>
         <property name="text">
-         <string>K</string>
+         <string notr="true">K</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -433,7 +433,7 @@
          <string>Electronic entropy</string>
         </property>
         <property name="text">
-         <string>S</string>
+         <string notr="true">S</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -462,7 +462,7 @@
          <string>Thermodynamical functions</string>
         </property>
         <property name="text">
-         <string>thermo</string>
+         <string notr="true">thermo</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -491,7 +491,7 @@
          <string>Electronic total energy</string>
         </property>
         <property name="text">
-         <string>E</string>
+         <string notr="true">E</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -520,7 +520,7 @@
          <string>Stress tensor</string>
         </property>
         <property name="text">
-         <string>S</string>
+         <string notr="true">S</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -549,7 +549,7 @@
          <string>Temperature</string>
         </property>
         <property name="text">
-         <string>T</string>
+         <string notr="true">T</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -602,7 +602,7 @@
          <string>Phonon density of states</string>
         </property>
         <property name="text">
-         <string>PDOS</string>
+         <string notr="true">PDOS</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -631,7 +631,7 @@
          <string>Velocity auto-correlation function</string>
         </property>
         <property name="text">
-         <string>VACF</string>
+         <string notr="true">VACF</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -660,7 +660,7 @@
          <string>Mean square displacement</string>
         </property>
         <property name="text">
-         <string>MSD</string>
+         <string notr="true">MSD</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -689,7 +689,7 @@
          <string>Gyration tensor</string>
         </property>
         <property name="text">
-         <string>gy</string>
+         <string notr="true">gy</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -718,7 +718,7 @@
          <string>Pair distribution function</string>
         </property>
         <property name="text">
-         <string>PDF</string>
+         <string notr="true">PDF</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -747,7 +747,7 @@
          <string>Positions in a plan</string>
         </property>
         <property name="text">
-         <string>Pos</string>
+         <string notr="true">Pos</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">

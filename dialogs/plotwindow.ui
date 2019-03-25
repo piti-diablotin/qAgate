@@ -51,13 +51,16 @@
           <string>Save left graph</string>
          </property>
          <property name="text">
-          <string/>
+          <string notr="true"/>
          </property>
          <property name="iconSize">
           <size>
            <width>25</width>
            <height>25</height>
           </size>
+         </property>
+         <property name="shortcut">
+          <string notr="true"/>
          </property>
          <property name="autoRaise">
           <bool>true</bool>
@@ -76,13 +79,16 @@
           <string>Restore left view</string>
          </property>
          <property name="text">
-          <string/>
+          <string notr="true"/>
          </property>
          <property name="iconSize">
           <size>
            <width>25</width>
            <height>25</height>
           </size>
+         </property>
+         <property name="shortcut">
+          <string notr="true"/>
          </property>
          <property name="autoRaise">
           <bool>true</bool>
@@ -114,13 +120,16 @@
           <string>Restore right view</string>
          </property>
          <property name="text">
-          <string/>
+          <string notr="true"/>
          </property>
          <property name="iconSize">
           <size>
            <width>25</width>
            <height>25</height>
           </size>
+         </property>
+         <property name="shortcut">
+          <string notr="true"/>
          </property>
          <property name="autoRaise">
           <bool>true</bool>
@@ -139,13 +148,16 @@
           <string>Save right graph</string>
          </property>
          <property name="text">
-          <string/>
+          <string notr="true"/>
          </property>
          <property name="iconSize">
           <size>
            <width>25</width>
            <height>25</height>
           </size>
+         </property>
+         <property name="shortcut">
+          <string notr="true"/>
          </property>
          <property name="autoRaise">
           <bool>true</bool>
@@ -211,13 +223,16 @@
      <normaloff>:/MD/icons/save.svg</normaloff>:/MD/icons/save.svg</iconset>
    </property>
    <property name="text">
-    <string>SaveLeft</string>
+    <string notr="true">SaveLeft</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">SaveLeft</string>
    </property>
    <property name="toolTip">
     <string>Save left graph</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+S</string>
+    <string notr="true">Ctrl+S</string>
    </property>
   </action>
   <action name="actionSaveRight">
@@ -226,13 +241,16 @@
      <normaloff>:/MD/icons/save.svg</normaloff>:/MD/icons/save.svg</iconset>
    </property>
    <property name="text">
-    <string>SaveRight</string>
+    <string notr="true">SaveRight</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">SaveRight</string>
    </property>
    <property name="toolTip">
     <string>Save right graph</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Shift+S</string>
+    <string notr="true">Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="actionRestoreLeft">
@@ -241,13 +259,16 @@
      <normaloff>:/MD/icons/zoom-1.svg</normaloff>:/MD/icons/zoom-1.svg</iconset>
    </property>
    <property name="text">
-    <string>RestoreLeft</string>
+    <string notr="true">RestoreLeft</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">RestoreLeft</string>
    </property>
    <property name="toolTip">
     <string>Restore left view</string>
    </property>
    <property name="shortcut">
-    <string>U</string>
+    <string notr="true">U</string>
    </property>
   </action>
   <action name="actionRestoreRight">
@@ -256,13 +277,16 @@
      <normaloff>:/MD/icons/zoom-1.svg</normaloff>:/MD/icons/zoom-1.svg</iconset>
    </property>
    <property name="text">
-    <string>RestoreRight</string>
+    <string notr="true">RestoreRight</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">RestoreRight</string>
    </property>
    <property name="toolTip">
     <string>Restore right view</string>
    </property>
    <property name="shortcut">
-    <string>Shift+U</string>
+    <string notr="true">Shift+U</string>
    </property>
   </action>
  </widget>

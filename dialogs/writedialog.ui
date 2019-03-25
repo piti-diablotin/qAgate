@@ -35,7 +35,7 @@
       <item>
        <widget class="QLabel" name="filenameLabel">
         <property name="text">
-         <string> File name</string>
+         <string>File name</string>
         </property>
        </widget>
       </item>
