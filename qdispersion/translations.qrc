@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>qdispersion_de.qm</file>
+        <file>qdispersion_fr.qm</file>
+        <file>qdispersion_it.qm</file>
+    </qresource>
+</RCC>

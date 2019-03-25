@@ -14,7 +14,7 @@
    <enum>Qt::NoFocus</enum>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string/>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -43,7 +43,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Z</string>
+      <string notr="true">Z</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

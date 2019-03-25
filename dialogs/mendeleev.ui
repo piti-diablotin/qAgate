@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Mendeleev table - qAgate</string>
+   <string>Mendeleev table</string>
   </property>
   <property name="modal">
    <bool>true</bool>
@@ -481,12 +481,12 @@
         </property>
         <item>
          <property name="text">
-          <string>amu</string>
+          <string notr="true">amu</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>emu</string>
+          <string notr="true">emu</string>
          </property>
         </item>
        </widget>
@@ -558,12 +558,12 @@
        <widget class="QComboBox" name="radiusUnit">
         <item>
          <property name="text">
-          <string>bohr</string>
+          <string notr="true">bohr</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>A</string>
+          <string notr="true">A</string>
          </property>
         </item>
        </widget>
@@ -602,12 +602,12 @@
        <widget class="QComboBox" name="rcovUnit">
         <item>
          <property name="text">
-          <string>bohr</string>
+          <string notr="true">bohr</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>A</string>
+          <string notr="true">A</string>
          </property>
         </item>
        </widget>

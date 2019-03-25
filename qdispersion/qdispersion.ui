@@ -50,7 +50,7 @@
          <number>0</number>
         </property>
         <property name="rightMargin">
-         <number>0</number>
+         <number>8</number>
         </property>
         <property name="bottomMargin">
          <number>0</number>
@@ -91,7 +91,7 @@
            </sizepolicy>
           </property>
           <property name="title">
-           <string>Energy </string>
+           <string>Energy</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
@@ -271,7 +271,7 @@
               <item>
                <widget class="QLabel" name="nsegmentsLabel">
                 <property name="text">
-                 <string>Number of segments </string>
+                 <string>Number of segments</string>
                 </property>
                </widget>
               </item>
@@ -565,63 +565,63 @@
               <item>
                <widget class="QCheckBox" name="m3">
                 <property name="text">
-                 <string>-3</string>
+                 <string notr="true">-3</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="m4">
                 <property name="text">
-                 <string>-4</string>
+                 <string notr="true">-4</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="m2">
                 <property name="text">
-                 <string>-2</string>
+                 <string notr="true">-2</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="m1">
                 <property name="text">
-                 <string>-1</string>
+                 <string notr="true">-1</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="z">
                 <property name="text">
-                 <string>0</string>
+                 <string notr="true">0</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="p1">
                 <property name="text">
-                 <string>1</string>
+                 <string notr="true">1</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="p2">
                 <property name="text">
-                 <string>2</string>
+                 <string notr="true">2</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="p3">
                 <property name="text">
-                 <string>3</string>
+                 <string notr="true">3</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="p4">
                 <property name="text">
-                 <string>4</string>
+                 <string notr="true">4</string>
                 </property>
                </widget>
               </item>

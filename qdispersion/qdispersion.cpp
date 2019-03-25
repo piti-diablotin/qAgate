@@ -205,17 +205,18 @@ void QDispersion::plot()
         }
     }
 
-  qDebug() << command;
-
   ConfigParser parser;
   parser.setSensitive(true);
   parser.setContent(command.toStdString());
   try
   {
+    ui->statusBar->showMessage(tr("Plot in progress"));
     Graph::plotBand(*_eigparser.get(),parser,ui->plot,Graph::NONE);
+    ui->statusBar->clearMessage();
   }
   catch (Exception &e)
   {
+    ui->statusBar->showMessage(QString::fromStdString(e.what()));
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
   }
 }

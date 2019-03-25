@@ -26,8 +26,8 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-        qdispersion/main.cpp \
-        qdispersion/qdispersion.cpp \
+    qdispersion/main.cpp \
+    qdispersion/qdispersion.cpp \
     tools/energyunitcombo.cpp \
     tools/unitcombo.cpp \
     dialogs/mendeleev.cpp \
@@ -36,7 +36,7 @@ SOURCES += \
     tools/qplot.cpp
 
 HEADERS += \
-        qdispersion/qdispersion.h \
+    qdispersion/qdispersion.h \
     tools/energyunitcombo.h \
     tools/unitcombo.h \
     dialogs/mendeleev.h \
@@ -45,10 +45,18 @@ HEADERS += \
     tools/qplot.h
 
 FORMS += \
-        qdispersion/qdispersion.ui \
+    qdispersion/qdispersion.ui \
     dialogs/mendeleev.ui \
     tools/atomicdata.ui
+
+TRANSLATIONS += \
+    qdispersion/qdispersion_fr.ts \
+    qdispersion/qdispersion_it.ts \
+    qdispersion/qdispersion_de.ts
 
 INCLUDEPATH += /usr/include/agate
 
 unix|win32: LIBS += -lagate -lsymspg
+
+RESOURCES += \
+    qdispersion/translations.qrc
