@@ -148,7 +148,7 @@ TRANSLATIONS += \
   qagate/qagate_it.ts \
   qagate/qagate_de.ts
 
-LIBS += -L$$PREFIX_AGATE/ -lagate -lsymspg
+LIBS += -L$$PREFIX_AGATE/lib/ -lagate -lsymspg
 
 INCLUDEPATH += \
     $$PREFIX_AGATE/include/agate\

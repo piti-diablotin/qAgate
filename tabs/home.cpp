@@ -20,6 +20,12 @@ Home::Home(QWidget *parent) :
   ui->setupUi(this);
   ui->choiceWhat->setItemData(0,"");
   ui->choiceWhat->setItemData(1,"all");
+  ui->saveAbinit->setDefaultAction(ui->actionAbinit);
+  ui->dumpHist->setDefaultAction(ui->actionHIST);
+  connect(ui->actionAbinit,SIGNAL(triggered(bool)),this,SLOT(on_saveAbinit_clicked()));
+  connect(ui->actionHIST,SIGNAL(triggered(bool)),this,SLOT(on_dumpHist_clicked()));
+  this->addAction(ui->actionAbinit);
+  this->addAction(ui->actionHIST);
 }
 
 Home::~Home()

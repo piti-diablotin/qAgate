@@ -73,3 +73,18 @@ void WriteDialog::on_buttonBox_rejected()
    ui->precision->setValue(0.001);
    ui->unit->setCurrentIndex(0);
 }
+
+void WriteDialog::on_current_toggled(bool checked)
+{
+   ui->precisionWidget->setDisabled(checked);
+}
+
+void WriteDialog::on_primitive_toggled(bool checked)
+{
+   ui->precisionWidget->setEnabled(checked);
+}
+
+void WriteDialog::on_standard_toggled(bool checked)
+{
+   ui->precisionWidget->setEnabled(checked);
+}

@@ -303,7 +303,7 @@
          <string>Reload the current file</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string notr="true">...</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -1208,6 +1208,42 @@
     </spacer>
    </item>
   </layout>
+  <action name="actionAbinit">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Abinit</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Abinit</string>
+   </property>
+   <property name="toolTip">
+    <string>Write abinit input file</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionHIST">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">HIST</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">HIST</string>
+   </property>
+   <property name="toolTip">
+    <string>Export trajectory to _HIST format</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+S</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>

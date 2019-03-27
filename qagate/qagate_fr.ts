@@ -70,12 +70,13 @@
     <message>
         <location filename="../tabs/home.ui" line="47"/>
         <source>Import/Export</source>
-        <translation>Importation/Exportation</translation>
+        <translation>Import/Export</translation>
     </message>
     <message>
         <location filename="../tabs/home.ui" line="79"/>
         <location filename="../tabs/home.ui" line="82"/>
         <location filename="../tabs/home.ui" line="85"/>
+        <location filename="../tabs/home.ui" line="1223"/>
         <source>Write abinit input file</source>
         <translation>Ecrire un fichier d&apos;entrée pour abinit</translation>
     </message>
@@ -83,6 +84,7 @@
         <location filename="../tabs/home.ui" line="116"/>
         <location filename="../tabs/home.ui" line="119"/>
         <location filename="../tabs/home.ui" line="122"/>
+        <location filename="../tabs/home.ui" line="1241"/>
         <source>Export trajectory to _HIST format</source>
         <translation>Exporter la trajectoire au format _HIST</translation>
     </message>
@@ -120,11 +122,6 @@
         <location filename="../tabs/home.ui" line="303"/>
         <source>Reload the current file</source>
         <translation>Recharger le fichier courant</translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="306"/>
-        <source>...</source>
-        <translation></translation>
     </message>
     <message>
         <location filename="../tabs/home.ui" line="338"/>
@@ -1970,17 +1967,17 @@
         <translation>Standard</translation>
     </message>
     <message>
-        <location filename="../dialogs/writedialog.ui" line="148"/>
+        <location filename="../dialogs/writedialog.ui" line="151"/>
         <source>Precision</source>
         <translation>Précision</translation>
     </message>
     <message>
-        <location filename="../dialogs/writedialog.ui" line="175"/>
+        <location filename="../dialogs/writedialog.ui" line="178"/>
         <source>bohr</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dialogs/writedialog.ui" line="180"/>
+        <location filename="../dialogs/writedialog.ui" line="183"/>
         <source>A</source>
         <translation></translation>
     </message>
