@@ -18,6 +18,9 @@ isEmpty(PREFIX) {
 isEmpty(PREFIX_AGATE) {
  PREFIX_AGATE = /usr/
 }
+isEmpty(PREFIX_SPGLIB) {
+ PREFIX_SPGLIB = /usr/
+}
 isEmpty(PREFIX_FREETYPE) {
  PREFIX_FREETYPE = /usr/
 }
@@ -148,7 +151,7 @@ TRANSLATIONS += \
   qagate/qagate_it.ts \
   qagate/qagate_de.ts
 
-LIBS += -L$$PREFIX_AGATE/lib/ -lagate -lsymspg
+LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg
 
 INCLUDEPATH += \
     $$PREFIX_AGATE/include/agate\
