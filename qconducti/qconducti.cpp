@@ -139,7 +139,7 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
   QDialogButtonBox::StandardButton b = ui->buttonBox->standardButton(button);
   if ( b == QDialogButtonBox::Save )
     {
-      QString filename = QFileDialog::getSaveFileName(this,tr("Base name"));
+      QString filename = QFileDialog::getSaveFileName(this,tr("Base name"),"","",nullptr,QFileDialog::DontUseNativeDialog);
       _config[4].save = Graph::DATA;
       _config[5].save = Graph::DATA;
       _config[4].filename = filename.toStdString()+"_sigma";
@@ -153,7 +153,7 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
     }
   else if ( b == QDialogButtonBox::Open )
     {
-      QString filename = QFileDialog::getOpenFileName(this,tr("Optic file"));
+      QString filename = QFileDialog::getOpenFileName(this,tr("Optic file"),"","",nullptr,QFileDialog::DontUseNativeDialog);
       if ( !filename.isEmpty() )
         this->openFile(filename);
     }

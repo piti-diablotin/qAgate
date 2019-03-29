@@ -58,7 +58,7 @@ void WriteDialog::setDirectory(QString dir)
 
 void WriteDialog::on_browse_clicked()
 {
-  QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), _lastDirectory);
+  QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), _lastDirectory,"",nullptr,QFileDialog::DontUseNativeDialog);
   if (!fileName.isEmpty())
     {
       ui->filename->setText(fileName);

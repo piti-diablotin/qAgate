@@ -19,7 +19,6 @@ public:
 private:
   Ui::MediaPlayer *ui;
   RepeatMode _repeat;
-  QString _currentFolder;
 
 signals:
   void play();
@@ -34,8 +33,6 @@ signals:
   void snapshot();
   void record();
   void stopRecord();
-  void open(QString);
-  void append(QString);
   void zoomIn();
   void zoomOut();
 
@@ -45,7 +42,6 @@ public slots:
   void setPlay(bool state);
   void setRecord(bool state);
   void setRepeatMode(RepeatMode mode);
-  void setDisabledAppend(bool state);
 
 private slots:
   void on_play_clicked(bool checked);
@@ -58,8 +54,6 @@ private slots:
   void on_slower_clicked();
   void on_faster_clicked();
   void on_snapshot_clicked();
-  void on_open_clicked();
-  void on_append_clicked();
   void on_zoomOut_clicked();
   void on_zoomIn_clicked();
 };

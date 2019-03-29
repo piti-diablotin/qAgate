@@ -198,7 +198,7 @@ void QPlot::autozoom(){
 }
 
 void QPlot::save(){
-  auto name = QFileDialog::getSaveFileName(this, "Save File", "", "PDF (*.pdf)");
+  auto name = QFileDialog::getSaveFileName(this, "Save File", "", "PDF (*.pdf)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !name.isEmpty() ) {
     if ( !name.endsWith(".pdf",Qt::CaseInsensitive) )
       name.append(".pdf");

@@ -13,8 +13,6 @@
         <file>../icons/fast-forward.svg</file>
         <file>../icons/rewind.svg</file>
         <file>../icons/rotate-cw.svg</file>
-        <file>../icons/file.svg</file>
-        <file>../icons/file-plus.svg</file>
     </qresource>
     <qresource prefix="/logger">
         <file>../icons/alert-triangle.svg</file>
@@ -73,6 +71,8 @@
         <file>../icons/move.svg</file>
         <file>../icons/typat.svg</file>
         <file>../icons/shift.svg</file>
+        <file>../icons/file.svg</file>
+        <file>../icons/file-plus.svg</file>
     </qresource>
     <qresource prefix="/MD">
         <file>../icons/save.svg</file>

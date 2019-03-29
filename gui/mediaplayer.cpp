@@ -1,12 +1,10 @@
 #include "mediaplayer.h"
 #include "ui_mediaplayer.h"
-#include <QFileDialog>
 
 MediaPlayer::MediaPlayer(QWidget *parent) :
   QWidget(parent),
   ui(new Ui::MediaPlayer),
-  _repeat(None),
-  _currentFolder(".")
+  _repeat(None)
 {
   ui->setupUi(this);
   this->setDisabledMovie(true);
@@ -74,11 +72,6 @@ void MediaPlayer::setRepeatMode(MediaPlayer::RepeatMode mode)
       break;
     }
   _repeat = mode;
-}
-
-void MediaPlayer::setDisabledAppend(bool state)
-{
-  ui->append->setDisabled(state);
 }
 
 void MediaPlayer::on_play_clicked(bool checked)
@@ -184,47 +177,6 @@ void MediaPlayer::on_faster_clicked()
 void MediaPlayer::on_snapshot_clicked()
 {
    emit(snapshot());
-}
-
-void MediaPlayer::on_open_clicked()
-{
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)");
-  if ( !fileNames.empty() )
-    {
-      QString file1 = fileNames.first();
-      if (file1.isEmpty())
-        return;
-      emit(open(file1));
-      int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
-      _currentFolder = file1.left(pos+1);
-
-      for ( auto file = fileNames.begin()+1 ; file != fileNames.end() ; ++file )
-        {
-          if ( !file->isEmpty() )
-            {
-              emit(append(*file));
-            }
-        }
-    }
-}
-
-void MediaPlayer::on_append_clicked()
-{
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)");
-
-  if ( !fileNames.empty() )
-    {
-      for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
-        {
-          if ( !file->isEmpty() )
-            {
-              emit(append(*file));
-              int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
-              _currentFolder = file->left(pos+1);
-            }
-        }
-    }
-
 }
 
 void MediaPlayer::on_zoomOut_clicked()

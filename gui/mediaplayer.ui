@@ -53,7 +53,7 @@
       <string notr="true"/>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/play.svg</normaloff>
        <disabledoff>:/mplayer/icons/play.svg</disabledoff>
        <disabledon>:/mplayer/icons/play.svg</disabledon>
@@ -97,7 +97,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/skip-back.svg</normaloff>:/mplayer/icons/skip-back.svg</iconset>
      </property>
      <property name="shortcut">
@@ -126,7 +126,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/skip-forward.svg</normaloff>:/mplayer/icons/skip-forward.svg</iconset>
      </property>
      <property name="shortcut">
@@ -171,7 +171,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/rewind.svg</normaloff>:/mplayer/icons/rewind.svg</iconset>
      </property>
      <property name="shortcut">
@@ -197,7 +197,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/fast-forward.svg</normaloff>:/mplayer/icons/fast-forward.svg</iconset>
      </property>
      <property name="shortcut">
@@ -239,7 +239,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/rotate-cw.svg</normaloff>:/mplayer/icons/rotate-cw.svg</iconset>
      </property>
      <property name="shortcut">
@@ -268,7 +268,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/image.svg</normaloff>:/mplayer/icons/image.svg</iconset>
      </property>
      <property name="shortcut">
@@ -294,7 +294,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/video.svg</normaloff>
        <selectedoff>:/mplayer/icons/video-off.svg</selectedoff>
        <selectedon>:/mplayer/icons/video-off.svg</selectedon>:/mplayer/icons/video.svg</iconset>
@@ -341,7 +341,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/zoom-out.svg</normaloff>:/mplayer/icons/zoom-out.svg</iconset>
      </property>
      <property name="shortcut">
@@ -370,7 +370,7 @@
       <string notr="true">...</string>
      </property>
      <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
+      <iconset>
        <normaloff>:/mplayer/icons/zoom-in.svg</normaloff>:/mplayer/icons/zoom-in.svg</iconset>
      </property>
      <property name="shortcut">
@@ -400,65 +400,8 @@
      </property>
     </spacer>
    </item>
-   <item>
-    <widget class="QToolButton" name="open">
-     <property name="toolTip">
-      <string>Open a new file</string>
-     </property>
-     <property name="statusTip">
-      <string>Open a new file</string>
-     </property>
-     <property name="whatsThis">
-      <string>Open a new file</string>
-     </property>
-     <property name="text">
-      <string notr="true">...</string>
-     </property>
-     <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
-       <normaloff>:/mplayer/icons/file.svg</normaloff>:/mplayer/icons/file.svg</iconset>
-     </property>
-     <property name="shortcut">
-      <string notr="true">Ctrl+O</string>
-     </property>
-     <property name="autoRaise">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QToolButton" name="append">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="toolTip">
-      <string>Append a new file</string>
-     </property>
-     <property name="statusTip">
-      <string>Append a new file</string>
-     </property>
-     <property name="whatsThis">
-      <string>Append a new file to the current visualization</string>
-     </property>
-     <property name="text">
-      <string notr="true">...</string>
-     </property>
-     <property name="icon">
-      <iconset resource="../qagate/qagate.qrc">
-       <normaloff>:/mplayer/icons/file-plus.svg</normaloff>:/mplayer/icons/file-plus.svg</iconset>
-     </property>
-     <property name="shortcut">
-      <string notr="true">Ctrl+Shift+A</string>
-     </property>
-     <property name="autoRaise">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
- <resources>
-  <include location="../qagate/qagate.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

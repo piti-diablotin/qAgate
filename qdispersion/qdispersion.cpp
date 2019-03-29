@@ -345,7 +345,7 @@ void QDispersion::on_buttonBox_clicked(QAbstractButton *button)
   QDialogButtonBox::StandardButton b = ui->buttonBox->standardButton(button);
   if ( b == QDialogButtonBox::Save )
     {
-      QString filename = QFileDialog::getSaveFileName(this,tr("PDF file"),_currentDirectory,"PDF (*.pdf");
+      QString filename = QFileDialog::getSaveFileName(this,tr("PDF file"),_currentDirectory,"PDF (*.pdf)",nullptr,QFileDialog::DontUseNativeDialog);
       if (!filename.endsWith(".pdf")) filename == ".pdf";
       ui->plot->savePdf(filename,0,0,QCP::epNoCosmetic);
       int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
@@ -353,7 +353,7 @@ void QDispersion::on_buttonBox_clicked(QAbstractButton *button)
     }
   else if ( b == QDialogButtonBox::Open )
     {
-      QString filename = QFileDialog::getOpenFileName(this,tr("Dispersion file"));
+      QString filename = QFileDialog::getOpenFileName(this,tr("Dispersion file"),"","",nullptr,QFileDialog::DontUseNativeDialog);
       if ( !filename.isEmpty() )
         this->openFile(filename);
     }

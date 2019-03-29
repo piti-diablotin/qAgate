@@ -75,6 +75,10 @@ private slots:
 
   void on_typat_clicked();
 
+  void on_open_triggered();
+
+  void on_append_triggered();
+
 private:
   Ui::Home *ui;
   DumpDialog _dumpDialog;
@@ -84,6 +88,7 @@ private:
   double _distance;
   UnitConverter _distanceUnit;
   QVector<int> _znucl;
+  QString _currentFolder;
 
 signals:
   void needDistance(bool);
