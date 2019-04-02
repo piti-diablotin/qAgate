@@ -20,7 +20,6 @@ qAgate::qAgate(QWidget *parent) :
       tab->plugActions(this);
       connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
     }
-
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(pause()),this,SLOT(manageSignal()));
