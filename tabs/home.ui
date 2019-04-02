@@ -344,7 +344,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/file.svg</normaloff>:/home/icons/file.svg</iconset>
+          <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
         </property>
         <property name="shortcut">
          <string notr="true">Ctrl+O</string>
@@ -367,7 +367,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
+          <normaloff>:/home/icons/folder-script.svg</normaloff>:/home/icons/folder-script.svg</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -399,7 +399,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/file-plus.svg</normaloff>:/home/icons/file-plus.svg</iconset>
+          <normaloff>:/home/icons/folder-plus.svg</normaloff>:/home/icons/folder-plus.svg</iconset>
         </property>
         <property name="shortcut">
          <string notr="true">Ctrl+Shift+A</string>
@@ -1336,7 +1336,7 @@
   <action name="actionOpen">
    <property name="icon">
     <iconset resource="../qagate/qagate.qrc">
-     <normaloff>:/home/icons/file.svg</normaloff>:/home/icons/file.svg</iconset>
+     <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -1351,7 +1351,7 @@
   <action name="actionAppend">
    <property name="icon">
     <iconset resource="../qagate/qagate.qrc">
-     <normaloff>:/home/icons/file-plus.svg</normaloff>:/home/icons/file-plus.svg</iconset>
+     <normaloff>:/home/icons/folder-plus.svg</normaloff>:/home/icons/folder-plus.svg</iconset>
    </property>
    <property name="text">
     <string>Append</string>
