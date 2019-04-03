@@ -346,7 +346,7 @@ void QDispersion::on_buttonBox_clicked(QAbstractButton *button)
   if ( b == QDialogButtonBox::Save )
     {
       QString filename = QFileDialog::getSaveFileName(this,tr("PDF file"),_currentDirectory,"PDF (*.pdf)",nullptr,QFileDialog::DontUseNativeDialog);
-      if (!filename.endsWith(".pdf")) filename == ".pdf";
+      if (!filename.endsWith(".pdf")) filename += ".pdf";
       ui->plot->savePdf(filename,0,0,QCP::epNoCosmetic);
       int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
       _currentDirectory = filename.left(pos+1);
