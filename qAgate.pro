@@ -75,7 +75,8 @@ SOURCES += \
     dialogs/smearingdialog.cpp \
     qconducti/qconducti.cpp \
     qdispersion/qdispersion.cpp \
-    tabs/tools.cpp
+    tabs/tools.cpp \
+    dialogs/remotedialog.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -111,7 +112,8 @@ HEADERS += \
     dialogs/smearingdialog.h \
     qconducti/qconducti.h \
     qdispersion/qdispersion.h \
-    tabs/tools.h
+    tabs/tools.h \
+    dialogs/remotedialog.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -140,7 +142,8 @@ FORMS += \
     dialogs/smearingdialog.ui \
     qconducti/qconducti.ui \
     qdispersion/qdispersion.ui \
-    tabs/tools.ui
+    tabs/tools.ui \
+    dialogs/remotedialog.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

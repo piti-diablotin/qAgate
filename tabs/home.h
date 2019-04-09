@@ -6,6 +6,7 @@
 #include "dialogs/dumpdialog.h"
 #include "dialogs/writedialog.h"
 #include "dialogs/spgdialog.h"
+#include "dialogs/remotedialog.h"
 
 namespace Ui {
   class Home;
@@ -79,6 +80,8 @@ private slots:
 
   void on_append_triggered();
 
+  void on_actionCloud_triggered();
+
 private:
   Ui::Home *ui;
   DumpDialog _dumpDialog;
@@ -89,6 +92,7 @@ private:
   UnitConverter _distanceUnit;
   QVector<int> _znucl;
   QString _currentFolder;
+  RemoteDialog _remoteDialog;
 
 signals:
   void needDistance(bool);

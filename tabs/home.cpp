@@ -17,7 +17,8 @@ Home::Home(QWidget *parent) :
   _natom(0),
   _distance(0),
   _distanceUnit(UnitConverter::bohr),
-  _currentFolder(".")
+  _currentFolder("."),
+  _remoteDialog(this)
 {
   ui->setupUi(this);
   ui->choiceWhat->setItemData(0,"");
@@ -27,12 +28,18 @@ Home::Home(QWidget *parent) :
   ui->open->setDefaultAction(ui->actionOpen);
   ui->append->setDefaultAction(ui->actionAppend);
   ui->actionAppend->setDisabled(true);
+  ui->cloud->setDefaultAction(ui->actionCloud);
   connect(ui->actionAbinit,SIGNAL(triggered(bool)),this,SLOT(on_saveAbinit_clicked()));
   connect(ui->actionHIST,SIGNAL(triggered(bool)),this,SLOT(on_dumpHist_clicked()));
+  connect(&_remoteDialog,SIGNAL(sendCommand(QString,bool)),this,SIGNAL(sendCommand(QString,bool)));
   this->addAction(ui->actionAbinit);
   this->addAction(ui->actionHIST);
   this->addAction(ui->actionOpen);
   this->addAction(ui->actionAppend);
+  this->addAction(ui->actionCloud);
+#ifndef HAVE_SSH
+  ui->cloud->setDisabled(true);
+#endif
 }
 
 Home::~Home()
@@ -341,4 +348,10 @@ void Home::on_append_triggered()
         }
     }
 
+}
+
+void Home::on_actionCloud_triggered()
+{
+  _remoteDialog.removeAppend(!ui->append->isEnabled());
+  _remoteDialog.exec();
 }

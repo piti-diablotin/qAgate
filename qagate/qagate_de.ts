@@ -76,7 +76,7 @@
         <location filename="../tabs/home.ui" line="79"/>
         <location filename="../tabs/home.ui" line="82"/>
         <location filename="../tabs/home.ui" line="85"/>
-        <location filename="../tabs/home.ui" line="1223"/>
+        <location filename="../tabs/home.ui" line="1312"/>
         <source>Write abinit input file</source>
         <translation type="unfinished"></translation>
     </message>
@@ -84,196 +84,244 @@
         <location filename="../tabs/home.ui" line="116"/>
         <location filename="../tabs/home.ui" line="119"/>
         <location filename="../tabs/home.ui" line="122"/>
-        <location filename="../tabs/home.ui" line="1241"/>
+        <location filename="../tabs/home.ui" line="1330"/>
         <source>Export trajectory to _HIST format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="148"/>
-        <location filename="../tabs/home.ui" line="151"/>
-        <location filename="../tabs/home.ui" line="154"/>
+        <location filename="../tabs/home.ui" line="360"/>
+        <location filename="../tabs/home.ui" line="363"/>
+        <location filename="../tabs/home.ui" line="366"/>
         <source>Open a script file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="185"/>
-        <location filename="../tabs/home.ui" line="188"/>
-        <location filename="../tabs/home.ui" line="191"/>
+        <location filename="../tabs/home.ui" line="159"/>
+        <location filename="../tabs/home.ui" line="162"/>
+        <location filename="../tabs/home.ui" line="165"/>
         <source>Write VASP POSCAR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="222"/>
-        <location filename="../tabs/home.ui" line="225"/>
-        <location filename="../tabs/home.ui" line="228"/>
+        <location filename="../tabs/home.ui" line="196"/>
+        <location filename="../tabs/home.ui" line="199"/>
+        <location filename="../tabs/home.ui" line="202"/>
         <source>Export trajectory to XYZ format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="265"/>
-        <location filename="../tabs/home.ui" line="268"/>
-        <location filename="../tabs/home.ui" line="271"/>
+        <location filename="../tabs/home.ui" line="239"/>
+        <location filename="../tabs/home.ui" line="242"/>
+        <location filename="../tabs/home.ui" line="245"/>
         <source>Write CIF file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="297"/>
-        <location filename="../tabs/home.ui" line="300"/>
-        <location filename="../tabs/home.ui" line="303"/>
+        <location filename="../tabs/home.ui" line="289"/>
+        <location filename="../tabs/home.ui" line="292"/>
+        <location filename="../tabs/home.ui" line="295"/>
         <source>Reload the current file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="338"/>
+        <location filename="../tabs/home.ui" line="334"/>
+        <location filename="../tabs/home.ui" line="337"/>
+        <location filename="../tabs/home.ui" line="340"/>
+        <source>Open a new file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="389"/>
+        <location filename="../tabs/home.ui" line="392"/>
+        <source>Append a new file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="395"/>
+        <source>Append a new file to the current visualization</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="427"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="392"/>
+        <location filename="../tabs/home.ui" line="481"/>
         <source>For this time step</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="397"/>
+        <location filename="../tabs/home.ui" line="486"/>
         <source>For all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="434"/>
-        <location filename="../tabs/home.ui" line="437"/>
-        <location filename="../tabs/home.ui" line="440"/>
+        <location filename="../tabs/home.ui" line="523"/>
+        <location filename="../tabs/home.ui" line="526"/>
+        <location filename="../tabs/home.ui" line="529"/>
         <source>Set atoms inside the cell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="463"/>
-        <location filename="../tabs/home.ui" line="466"/>
-        <location filename="../tabs/home.ui" line="469"/>
+        <location filename="../tabs/home.ui" line="552"/>
+        <location filename="../tabs/home.ui" line="555"/>
+        <location filename="../tabs/home.ui" line="558"/>
         <source>Set continuous trajectory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="497"/>
-        <location filename="../tabs/home.ui" line="500"/>
-        <location filename="../tabs/home.ui" line="503"/>
+        <location filename="../tabs/home.ui" line="586"/>
+        <location filename="../tabs/home.ui" line="589"/>
+        <location filename="../tabs/home.ui" line="592"/>
         <source>Shift origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="575"/>
-        <location filename="../tabs/home.ui" line="578"/>
-        <location filename="../tabs/home.ui" line="581"/>
+        <location filename="../tabs/home.ui" line="664"/>
+        <location filename="../tabs/home.ui" line="667"/>
+        <location filename="../tabs/home.ui" line="670"/>
         <source>Change atom type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="612"/>
-        <location filename="../tabs/home.ui" line="615"/>
-        <location filename="../tabs/home.ui" line="618"/>
+        <location filename="../tabs/home.ui" line="701"/>
+        <location filename="../tabs/home.ui" line="704"/>
+        <location filename="../tabs/home.ui" line="707"/>
         <source>Make supercell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="649"/>
+        <location filename="../tabs/home.ui" line="738"/>
         <source>Centroid</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="652"/>
-        <location filename="../tabs/home.ui" line="655"/>
+        <location filename="../tabs/home.ui" line="741"/>
+        <location filename="../tabs/home.ui" line="744"/>
         <source>Compute centroid</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="683"/>
-        <location filename="../tabs/home.ui" line="686"/>
-        <location filename="../tabs/home.ui" line="689"/>
+        <location filename="../tabs/home.ui" line="772"/>
+        <location filename="../tabs/home.ui" line="775"/>
+        <location filename="../tabs/home.ui" line="778"/>
         <source>Move atom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="720"/>
-        <location filename="../tabs/home.ui" line="723"/>
-        <location filename="../tabs/home.ui" line="726"/>
+        <location filename="../tabs/home.ui" line="809"/>
+        <location filename="../tabs/home.ui" line="812"/>
+        <location filename="../tabs/home.ui" line="815"/>
         <source>Average structure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="764"/>
+        <location filename="../tabs/home.ui" line="853"/>
         <source>Explore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="820"/>
-        <location filename="../tabs/home.ui" line="823"/>
-        <location filename="../tabs/home.ui" line="826"/>
+        <location filename="../tabs/home.ui" line="909"/>
+        <location filename="../tabs/home.ui" line="912"/>
+        <location filename="../tabs/home.ui" line="915"/>
         <source>Unit for this distance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="850"/>
-        <location filename="../tabs/home.ui" line="853"/>
-        <location filename="../tabs/home.ui" line="856"/>
-        <location filename="../tabs/home.ui" line="1054"/>
-        <location filename="../tabs/home.ui" line="1057"/>
-        <location filename="../tabs/home.ui" line="1060"/>
+        <location filename="../tabs/home.ui" line="939"/>
+        <location filename="../tabs/home.ui" line="942"/>
+        <location filename="../tabs/home.ui" line="945"/>
+        <location filename="../tabs/home.ui" line="1143"/>
+        <location filename="../tabs/home.ui" line="1146"/>
+        <location filename="../tabs/home.ui" line="1149"/>
         <source>Atom 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="908"/>
-        <location filename="../tabs/home.ui" line="911"/>
-        <location filename="../tabs/home.ui" line="914"/>
-        <location filename="../tabs/home.ui" line="1021"/>
-        <location filename="../tabs/home.ui" line="1024"/>
-        <location filename="../tabs/home.ui" line="1027"/>
+        <location filename="../tabs/home.ui" line="997"/>
+        <location filename="../tabs/home.ui" line="1000"/>
+        <location filename="../tabs/home.ui" line="1003"/>
+        <location filename="../tabs/home.ui" line="1110"/>
+        <location filename="../tabs/home.ui" line="1113"/>
+        <location filename="../tabs/home.ui" line="1116"/>
         <source>Atom 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="947"/>
-        <location filename="../tabs/home.ui" line="953"/>
+        <location filename="../tabs/home.ui" line="1036"/>
+        <location filename="../tabs/home.ui" line="1042"/>
         <source>Distance measurement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="950"/>
+        <location filename="../tabs/home.ui" line="1039"/>
         <source>Distance between 2 atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="987"/>
-        <location filename="../tabs/home.ui" line="993"/>
+        <location filename="../tabs/home.ui" line="1076"/>
+        <location filename="../tabs/home.ui" line="1082"/>
         <source>Angle measurement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="990"/>
+        <location filename="../tabs/home.ui" line="1079"/>
         <source>Angle between 3 atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1087"/>
-        <location filename="../tabs/home.ui" line="1090"/>
-        <location filename="../tabs/home.ui" line="1093"/>
+        <location filename="../tabs/home.ui" line="1176"/>
+        <location filename="../tabs/home.ui" line="1179"/>
+        <location filename="../tabs/home.ui" line="1182"/>
         <source>Atom 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1155"/>
-        <location filename="../tabs/home.ui" line="1158"/>
-        <location filename="../tabs/home.ui" line="1161"/>
+        <location filename="../tabs/home.ui" line="1244"/>
+        <location filename="../tabs/home.ui" line="1247"/>
+        <location filename="../tabs/home.ui" line="1250"/>
         <source>Space group of current time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1164"/>
+        <location filename="../tabs/home.ui" line="1253"/>
         <source>Space Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1174"/>
+        <location filename="../tabs/home.ui" line="1263"/>
         <source>Thermo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1342"/>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1345"/>
+        <source>Open new file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1348"/>
+        <source>Ctrl+O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1357"/>
+        <source>Append</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1360"/>
+        <source>Append a new file to the current one</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1363"/>
+        <source>Ctrl+Shift+A</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -288,7 +336,7 @@
     </message>
     <message>
         <location filename="../gui/logger.ui" line="114"/>
-        <location filename="../gui/logger.cpp" line="102"/>
+        <location filename="../gui/logger.cpp" line="113"/>
         <source>Console</source>
         <translation type="unfinished"></translation>
     </message>
@@ -323,14 +371,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="61"/>
-        <location filename="../gui/logger.cpp" line="77"/>
-        <location filename="../gui/logger.cpp" line="93"/>
+        <location filename="../gui/logger.cpp" line="154"/>
         <source>Console*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="125"/>
+        <location filename="../gui/logger.cpp" line="136"/>
         <source>Content copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -557,14 +603,14 @@
     <message>
         <location filename="../gui/mediaplayer.ui" line="44"/>
         <location filename="../gui/mediaplayer.ui" line="47"/>
-        <location filename="../gui/mediaplayer.cpp" line="108"/>
-        <location filename="../gui/mediaplayer.cpp" line="110"/>
+        <location filename="../gui/mediaplayer.cpp" line="101"/>
+        <location filename="../gui/mediaplayer.cpp" line="103"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../gui/mediaplayer.ui" line="50"/>
-        <location filename="../gui/mediaplayer.cpp" line="109"/>
+        <location filename="../gui/mediaplayer.cpp" line="102"/>
         <source>Play the movie</source>
         <translation type="unfinished"></translation>
     </message>
@@ -660,31 +706,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.ui" line="406"/>
-        <location filename="../gui/mediaplayer.ui" line="409"/>
-        <location filename="../gui/mediaplayer.ui" line="412"/>
-        <source>Open a new file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/mediaplayer.ui" line="435"/>
-        <location filename="../gui/mediaplayer.ui" line="438"/>
-        <source>Append a new file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/mediaplayer.ui" line="441"/>
-        <source>Append a new file to the current visualization</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/mediaplayer.cpp" line="101"/>
-        <location filename="../gui/mediaplayer.cpp" line="103"/>
+        <location filename="../gui/mediaplayer.cpp" line="94"/>
+        <location filename="../gui/mediaplayer.cpp" line="96"/>
         <source>Pause</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="102"/>
+        <location filename="../gui/mediaplayer.cpp" line="95"/>
         <source>Pause the movie</source>
         <translation type="unfinished"></translation>
     </message>
@@ -889,7 +917,7 @@
     </message>
     <message>
         <location filename="../qconducti/qconducti.ui" line="176"/>
-        <location filename="../qconducti/qconducti.cpp" line="305"/>
+        <location filename="../qconducti/qconducti.cpp" line="294"/>
         <source>Conductivity</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1001,59 +1029,59 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="39"/>
+        <location filename="../qconducti/qconducti.cpp" line="31"/>
         <source>&amp;Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="40"/>
+        <location filename="../qconducti/qconducti.cpp" line="32"/>
         <source>&amp;Apply</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="41"/>
+        <location filename="../qconducti/qconducti.cpp" line="33"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="42"/>
+        <location filename="../qconducti/qconducti.cpp" line="34"/>
         <source>&amp;Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="75"/>
+        <location filename="../qconducti/qconducti.cpp" line="64"/>
         <source>Loading file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="104"/>
+        <location filename="../qconducti/qconducti.cpp" line="93"/>
         <source>Ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="107"/>
-        <location filename="../qconducti/qconducti.cpp" line="395"/>
+        <location filename="../qconducti/qconducti.cpp" line="96"/>
+        <location filename="../qconducti/qconducti.cpp" line="393"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="153"/>
+        <location filename="../qconducti/qconducti.cpp" line="142"/>
         <source>Base name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="167"/>
+        <location filename="../qconducti/qconducti.cpp" line="156"/>
         <source>Optic file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="304"/>
+        <location filename="../qconducti/qconducti.cpp" line="293"/>
         <source>Frequency</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.cpp" line="306"/>
-        <location filename="../qconducti/qconducti.cpp" line="543"/>
+        <location filename="../qconducti/qconducti.cpp" line="295"/>
+        <location filename="../qconducti/qconducti.cpp" line="541"/>
         <source>Histogram</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1280,7 +1308,7 @@
         <location filename="../tabs/settings.ui" line="453"/>
         <location filename="../tabs/settings.ui" line="456"/>
         <location filename="../tabs/settings.ui" line="459"/>
-        <location filename="../tabs/settings.cpp" line="135"/>
+        <location filename="../tabs/settings.cpp" line="134"/>
         <source>Background color</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1288,7 +1316,7 @@
         <location filename="../tabs/settings.ui" line="485"/>
         <location filename="../tabs/settings.ui" line="488"/>
         <location filename="../tabs/settings.ui" line="491"/>
-        <location filename="../tabs/settings.cpp" line="216"/>
+        <location filename="../tabs/settings.cpp" line="215"/>
         <source>Spin up color</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1296,7 +1324,7 @@
         <location filename="../tabs/settings.ui" line="517"/>
         <location filename="../tabs/settings.ui" line="520"/>
         <location filename="../tabs/settings.ui" line="523"/>
-        <location filename="../tabs/settings.cpp" line="227"/>
+        <location filename="../tabs/settings.cpp" line="226"/>
         <source>Spin down color</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1467,7 +1495,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/settings.cpp" line="146"/>
+        <location filename="../tabs/settings.cpp" line="145"/>
         <source>Foreground color</source>
         <translation type="unfinished"></translation>
     </message>

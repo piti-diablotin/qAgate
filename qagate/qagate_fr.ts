@@ -76,7 +76,7 @@
         <location filename="../tabs/home.ui" line="79"/>
         <location filename="../tabs/home.ui" line="82"/>
         <location filename="../tabs/home.ui" line="85"/>
-        <location filename="../tabs/home.ui" line="1223"/>
+        <location filename="../tabs/home.ui" line="1312"/>
         <source>Write abinit input file</source>
         <translation>Ecrire un fichier d&apos;entrée pour abinit</translation>
     </message>
@@ -84,197 +84,245 @@
         <location filename="../tabs/home.ui" line="116"/>
         <location filename="../tabs/home.ui" line="119"/>
         <location filename="../tabs/home.ui" line="122"/>
-        <location filename="../tabs/home.ui" line="1241"/>
+        <location filename="../tabs/home.ui" line="1330"/>
         <source>Export trajectory to _HIST format</source>
         <translation>Exporter la trajectoire au format _HIST</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="148"/>
-        <location filename="../tabs/home.ui" line="151"/>
-        <location filename="../tabs/home.ui" line="154"/>
+        <location filename="../tabs/home.ui" line="360"/>
+        <location filename="../tabs/home.ui" line="363"/>
+        <location filename="../tabs/home.ui" line="366"/>
         <source>Open a script file</source>
         <translation>Ouvrir un fichier script</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="185"/>
-        <location filename="../tabs/home.ui" line="188"/>
-        <location filename="../tabs/home.ui" line="191"/>
+        <location filename="../tabs/home.ui" line="159"/>
+        <location filename="../tabs/home.ui" line="162"/>
+        <location filename="../tabs/home.ui" line="165"/>
         <source>Write VASP POSCAR</source>
         <translation>Ecrire un fichier POSCAR pour VASP</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="222"/>
-        <location filename="../tabs/home.ui" line="225"/>
-        <location filename="../tabs/home.ui" line="228"/>
+        <location filename="../tabs/home.ui" line="196"/>
+        <location filename="../tabs/home.ui" line="199"/>
+        <location filename="../tabs/home.ui" line="202"/>
         <source>Export trajectory to XYZ format</source>
         <translation>Exporter la trajectoire au format XYZ</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="265"/>
-        <location filename="../tabs/home.ui" line="268"/>
-        <location filename="../tabs/home.ui" line="271"/>
+        <location filename="../tabs/home.ui" line="239"/>
+        <location filename="../tabs/home.ui" line="242"/>
+        <location filename="../tabs/home.ui" line="245"/>
         <source>Write CIF file</source>
         <translation>Ecrire une fichier CIF</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="297"/>
-        <location filename="../tabs/home.ui" line="300"/>
-        <location filename="../tabs/home.ui" line="303"/>
+        <location filename="../tabs/home.ui" line="289"/>
+        <location filename="../tabs/home.ui" line="292"/>
+        <location filename="../tabs/home.ui" line="295"/>
         <source>Reload the current file</source>
         <translation>Recharger le fichier courant</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="338"/>
+        <location filename="../tabs/home.ui" line="334"/>
+        <location filename="../tabs/home.ui" line="337"/>
+        <location filename="../tabs/home.ui" line="340"/>
+        <source>Open a new file</source>
+        <translation type="unfinished">Ouvrir un nouveau fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="389"/>
+        <location filename="../tabs/home.ui" line="392"/>
+        <source>Append a new file</source>
+        <translation type="unfinished">Rajouter à la suite un nouveau fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="395"/>
+        <source>Append a new file to the current visualization</source>
+        <translation type="unfinished">Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="427"/>
         <source>Edit</source>
         <translation>Edition</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="392"/>
+        <location filename="../tabs/home.ui" line="481"/>
         <source>For this time step</source>
         <translation>Pour ce pas de temps</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="397"/>
+        <location filename="../tabs/home.ui" line="486"/>
         <source>For all</source>
         <translation>Pour tous</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="434"/>
-        <location filename="../tabs/home.ui" line="437"/>
-        <location filename="../tabs/home.ui" line="440"/>
+        <location filename="../tabs/home.ui" line="523"/>
+        <location filename="../tabs/home.ui" line="526"/>
+        <location filename="../tabs/home.ui" line="529"/>
         <source>Set atoms inside the cell</source>
         <translation>Mettre les atomes à l&apos;intérieur de la cellule</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="463"/>
-        <location filename="../tabs/home.ui" line="466"/>
-        <location filename="../tabs/home.ui" line="469"/>
+        <location filename="../tabs/home.ui" line="552"/>
+        <location filename="../tabs/home.ui" line="555"/>
+        <location filename="../tabs/home.ui" line="558"/>
         <source>Set continuous trajectory</source>
         <translation>Construire une trajectoire continue</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="497"/>
-        <location filename="../tabs/home.ui" line="500"/>
-        <location filename="../tabs/home.ui" line="503"/>
+        <location filename="../tabs/home.ui" line="586"/>
+        <location filename="../tabs/home.ui" line="589"/>
+        <location filename="../tabs/home.ui" line="592"/>
         <source>Shift origin</source>
         <translation>Déplacer l&apos;origine</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="575"/>
-        <location filename="../tabs/home.ui" line="578"/>
-        <location filename="../tabs/home.ui" line="581"/>
+        <location filename="../tabs/home.ui" line="664"/>
+        <location filename="../tabs/home.ui" line="667"/>
+        <location filename="../tabs/home.ui" line="670"/>
         <source>Change atom type</source>
         <translation>Changer le type d&apos;atome</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="612"/>
-        <location filename="../tabs/home.ui" line="615"/>
-        <location filename="../tabs/home.ui" line="618"/>
+        <location filename="../tabs/home.ui" line="701"/>
+        <location filename="../tabs/home.ui" line="704"/>
+        <location filename="../tabs/home.ui" line="707"/>
         <source>Make supercell</source>
         <translation>Faire une supercellule</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="649"/>
+        <location filename="../tabs/home.ui" line="738"/>
         <source>Centroid</source>
         <translation>Centroïde</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="652"/>
-        <location filename="../tabs/home.ui" line="655"/>
+        <location filename="../tabs/home.ui" line="741"/>
+        <location filename="../tabs/home.ui" line="744"/>
         <source>Compute centroid</source>
         <translation>Calculer le centroïde</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="683"/>
-        <location filename="../tabs/home.ui" line="686"/>
-        <location filename="../tabs/home.ui" line="689"/>
+        <location filename="../tabs/home.ui" line="772"/>
+        <location filename="../tabs/home.ui" line="775"/>
+        <location filename="../tabs/home.ui" line="778"/>
         <source>Move atom</source>
         <translation>Déplacer l&apos;atome</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="720"/>
-        <location filename="../tabs/home.ui" line="723"/>
-        <location filename="../tabs/home.ui" line="726"/>
+        <location filename="../tabs/home.ui" line="809"/>
+        <location filename="../tabs/home.ui" line="812"/>
+        <location filename="../tabs/home.ui" line="815"/>
         <source>Average structure</source>
         <translation>Structure moyenne</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="764"/>
+        <location filename="../tabs/home.ui" line="853"/>
         <source>Explore</source>
         <translation>Exploration</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="820"/>
-        <location filename="../tabs/home.ui" line="823"/>
-        <location filename="../tabs/home.ui" line="826"/>
+        <location filename="../tabs/home.ui" line="909"/>
+        <location filename="../tabs/home.ui" line="912"/>
+        <location filename="../tabs/home.ui" line="915"/>
         <source>Unit for this distance</source>
         <translation>Unité pour cette distance</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="850"/>
-        <location filename="../tabs/home.ui" line="853"/>
-        <location filename="../tabs/home.ui" line="856"/>
-        <location filename="../tabs/home.ui" line="1054"/>
-        <location filename="../tabs/home.ui" line="1057"/>
-        <location filename="../tabs/home.ui" line="1060"/>
+        <location filename="../tabs/home.ui" line="939"/>
+        <location filename="../tabs/home.ui" line="942"/>
+        <location filename="../tabs/home.ui" line="945"/>
+        <location filename="../tabs/home.ui" line="1143"/>
+        <location filename="../tabs/home.ui" line="1146"/>
+        <location filename="../tabs/home.ui" line="1149"/>
         <source>Atom 2</source>
         <translation>Atome 2</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="908"/>
-        <location filename="../tabs/home.ui" line="911"/>
-        <location filename="../tabs/home.ui" line="914"/>
-        <location filename="../tabs/home.ui" line="1021"/>
-        <location filename="../tabs/home.ui" line="1024"/>
-        <location filename="../tabs/home.ui" line="1027"/>
+        <location filename="../tabs/home.ui" line="997"/>
+        <location filename="../tabs/home.ui" line="1000"/>
+        <location filename="../tabs/home.ui" line="1003"/>
+        <location filename="../tabs/home.ui" line="1110"/>
+        <location filename="../tabs/home.ui" line="1113"/>
+        <location filename="../tabs/home.ui" line="1116"/>
         <source>Atom 1</source>
         <translation>Atome 1</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="947"/>
-        <location filename="../tabs/home.ui" line="953"/>
+        <location filename="../tabs/home.ui" line="1036"/>
+        <location filename="../tabs/home.ui" line="1042"/>
         <source>Distance measurement</source>
         <translation>Mesure de distance</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="950"/>
+        <location filename="../tabs/home.ui" line="1039"/>
         <source>Distance between 2 atoms</source>
         <translation>Distance entre 2 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="987"/>
-        <location filename="../tabs/home.ui" line="993"/>
+        <location filename="../tabs/home.ui" line="1076"/>
+        <location filename="../tabs/home.ui" line="1082"/>
         <source>Angle measurement</source>
         <translation>Mesure d&apos;angle</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="990"/>
+        <location filename="../tabs/home.ui" line="1079"/>
         <source>Angle between 3 atoms</source>
         <translation>Angle entre 3 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1087"/>
-        <location filename="../tabs/home.ui" line="1090"/>
-        <location filename="../tabs/home.ui" line="1093"/>
+        <location filename="../tabs/home.ui" line="1176"/>
+        <location filename="../tabs/home.ui" line="1179"/>
+        <location filename="../tabs/home.ui" line="1182"/>
         <source>Atom 3</source>
         <translation>Atome 3</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1155"/>
-        <location filename="../tabs/home.ui" line="1158"/>
-        <location filename="../tabs/home.ui" line="1161"/>
+        <location filename="../tabs/home.ui" line="1244"/>
+        <location filename="../tabs/home.ui" line="1247"/>
+        <location filename="../tabs/home.ui" line="1250"/>
         <source>Space group of current time</source>
         <translation>Groupe d&apos;espace du pas de temps actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1164"/>
+        <location filename="../tabs/home.ui" line="1253"/>
         <source>Space Group</source>
         <translation>Groupe d&apos;espace</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1174"/>
+        <location filename="../tabs/home.ui" line="1263"/>
         <source>Thermo</source>
         <translation>Thermo</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1342"/>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1345"/>
+        <source>Open new file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1348"/>
+        <source>Ctrl+O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1357"/>
+        <source>Append</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1360"/>
+        <source>Append a new file to the current one</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1363"/>
+        <source>Ctrl+Shift+A</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -288,7 +336,7 @@
     </message>
     <message>
         <location filename="../gui/logger.ui" line="114"/>
-        <location filename="../gui/logger.cpp" line="102"/>
+        <location filename="../gui/logger.cpp" line="113"/>
         <source>Console</source>
         <translation>Console</translation>
     </message>
@@ -323,14 +371,12 @@
         <translation>Copier le contenu dans le presse-papier</translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="61"/>
-        <location filename="../gui/logger.cpp" line="77"/>
-        <location filename="../gui/logger.cpp" line="93"/>
+        <location filename="../gui/logger.cpp" line="154"/>
         <source>Console*</source>
         <translation>Console*</translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="125"/>
+        <location filename="../gui/logger.cpp" line="136"/>
         <source>Content copied to clipboard</source>
         <translation>Contenu copier dans le presse-papier</translation>
     </message>
@@ -557,14 +603,14 @@
     <message>
         <location filename="../gui/mediaplayer.ui" line="44"/>
         <location filename="../gui/mediaplayer.ui" line="47"/>
-        <location filename="../gui/mediaplayer.cpp" line="108"/>
-        <location filename="../gui/mediaplayer.cpp" line="110"/>
+        <location filename="../gui/mediaplayer.cpp" line="101"/>
+        <location filename="../gui/mediaplayer.cpp" line="103"/>
         <source>Play</source>
         <translation>Jouer</translation>
     </message>
     <message>
         <location filename="../gui/mediaplayer.ui" line="50"/>
-        <location filename="../gui/mediaplayer.cpp" line="109"/>
+        <location filename="../gui/mediaplayer.cpp" line="102"/>
         <source>Play the movie</source>
         <translation>Jouer l&apos;animation</translation>
     </message>
@@ -660,31 +706,25 @@
         <translation>Zoomer</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.ui" line="406"/>
-        <location filename="../gui/mediaplayer.ui" line="409"/>
-        <location filename="../gui/mediaplayer.ui" line="412"/>
         <source>Open a new file</source>
-        <translation>Ouvrir un nouveau fichier</translation>
+        <translation type="vanished">Ouvrir un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.ui" line="435"/>
-        <location filename="../gui/mediaplayer.ui" line="438"/>
         <source>Append a new file</source>
-        <translation>Rajouter à la suite un nouveau fichier</translation>
+        <translation type="vanished">Rajouter à la suite un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.ui" line="441"/>
         <source>Append a new file to the current visualization</source>
-        <translation>Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
+        <translation type="vanished">Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="101"/>
-        <location filename="../gui/mediaplayer.cpp" line="103"/>
+        <location filename="../gui/mediaplayer.cpp" line="94"/>
+        <location filename="../gui/mediaplayer.cpp" line="96"/>
         <source>Pause</source>
         <translation>Pause</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="102"/>
+        <location filename="../gui/mediaplayer.cpp" line="95"/>
         <source>Pause the movie</source>
         <translation>Mettre l&apos;animation en pause</translation>
     </message>
@@ -863,204 +903,203 @@
 <context>
     <name>QConducti</name>
     <message>
-        <location filename="qconducti.ui" line="17"/>
+        <location filename="../qconducti/qconducti.ui" line="17"/>
         <source>qConducti</source>
         <oldsource>QConducti</oldsource>
         <translation>qConducti</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="77"/>
         <source>Filename</source>
-        <translation>Nom du fichier</translation>
+        <translation type="vanished">Nom du fichier</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="124"/>
+        <location filename="../qconducti/qconducti.ui" line="127"/>
         <source>Fermi energy:</source>
         <translation>Energie de Fermi :</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="137"/>
+        <location filename="../qconducti/qconducti.ui" line="140"/>
         <source>Emax-Efermi:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="160"/>
+        <location filename="../qconducti/qconducti.ui" line="163"/>
         <source>Units</source>
         <translation>Unités</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="166"/>
+        <location filename="../qconducti/qconducti.ui" line="169"/>
         <source>Energy</source>
         <translation>Energie</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="173"/>
-        <location filename="qconducti.cpp" line="304"/>
+        <location filename="../qconducti/qconducti.ui" line="176"/>
+        <location filename="../qconducti/qconducti.cpp" line="294"/>
         <source>Conductivity</source>
         <translation>Conductivité</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="181"/>
-        <location filename="qconducti.ui" line="301"/>
-        <location filename="qconducti.ui" line="346"/>
-        <location filename="qconducti.ui" line="547"/>
+        <location filename="../qconducti/qconducti.ui" line="184"/>
+        <location filename="../qconducti/qconducti.ui" line="304"/>
+        <location filename="../qconducti/qconducti.ui" line="349"/>
+        <location filename="../qconducti/qconducti.ui" line="550"/>
         <source>Ha</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="186"/>
-        <location filename="qconducti.ui" line="306"/>
-        <location filename="qconducti.ui" line="351"/>
-        <location filename="qconducti.ui" line="552"/>
+        <location filename="../qconducti/qconducti.ui" line="189"/>
+        <location filename="../qconducti/qconducti.ui" line="309"/>
+        <location filename="../qconducti/qconducti.ui" line="354"/>
+        <location filename="../qconducti/qconducti.ui" line="555"/>
         <source>eV</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="195"/>
+        <location filename="../qconducti/qconducti.ui" line="198"/>
         <source>au</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="200"/>
+        <location filename="../qconducti/qconducti.ui" line="203"/>
         <source>Ohm-1.cm-1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="217"/>
+        <location filename="../qconducti/qconducti.ui" line="220"/>
         <source>Calculation</source>
         <translation>Calcul</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="248"/>
+        <location filename="../qconducti/qconducti.ui" line="251"/>
         <source>Number of frequencies</source>
         <translation>Nombre de fréquences</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="280"/>
+        <location filename="../qconducti/qconducti.ui" line="283"/>
         <source>Smearing</source>
         <translatorcomment>Largeur de des gaussiennes pour le calcul</translatorcomment>
         <translation>Etalement</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="287"/>
+        <location filename="../qconducti/qconducti.ui" line="290"/>
         <source>Frequency range</source>
         <translation>Domaine fréquenciel</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="381"/>
-        <location filename="qconducti.ui" line="590"/>
+        <location filename="../qconducti/qconducti.ui" line="384"/>
+        <location filename="../qconducti/qconducti.ui" line="593"/>
         <source>Hold</source>
         <translation>Se souvenir</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="391"/>
+        <location filename="../qconducti/qconducti.ui" line="394"/>
         <source>Spins</source>
         <translation>Spins</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="401"/>
+        <location filename="../qconducti/qconducti.ui" line="404"/>
         <source>Selection rule</source>
         <translation>Règle de sélection</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="416"/>
-        <location filename="qconducti.ui" line="680"/>
+        <location filename="../qconducti/qconducti.ui" line="419"/>
+        <location filename="../qconducti/qconducti.ui" line="683"/>
         <source>From min</source>
         <translation>Depuis min</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="448"/>
-        <location filename="qconducti.ui" line="507"/>
-        <location filename="qconducti.ui" line="626"/>
-        <location filename="qconducti.ui" line="646"/>
+        <location filename="../qconducti/qconducti.ui" line="451"/>
+        <location filename="../qconducti/qconducti.ui" line="510"/>
+        <location filename="../qconducti/qconducti.ui" line="629"/>
+        <location filename="../qconducti/qconducti.ui" line="649"/>
         <source>max</source>
         <translation>max</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="481"/>
-        <location filename="qconducti.ui" line="616"/>
+        <location filename="../qconducti/qconducti.ui" line="484"/>
+        <location filename="../qconducti/qconducti.ui" line="619"/>
         <source>To min</source>
         <translation>Vers min</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="533"/>
+        <location filename="../qconducti/qconducti.ui" line="536"/>
         <source>Unit</source>
         <translation>Unité</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="563"/>
+        <location filename="../qconducti/qconducti.ui" line="566"/>
         <source>&amp;Band</source>
         <translation>&amp;Bandes</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="570"/>
+        <location filename="../qconducti/qconducti.ui" line="573"/>
         <source>Energ&amp;y</source>
         <translation>Ene&amp;rgie</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="577"/>
+        <location filename="../qconducti/qconducti.ui" line="580"/>
         <source>Active</source>
         <translation>Active</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="23"/>
+        <location filename="../qconducti/qconducti.ui" line="80"/>
         <source>No file loaded</source>
         <translation>Aucun fichier</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="42"/>
+        <location filename="../qconducti/qconducti.cpp" line="31"/>
         <source>&amp;Save</source>
         <translation>Enregi&amp;strer</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="43"/>
+        <location filename="../qconducti/qconducti.cpp" line="32"/>
         <source>&amp;Apply</source>
         <translation>&amp;Appliquer</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="44"/>
+        <location filename="../qconducti/qconducti.cpp" line="33"/>
         <source>&amp;Close</source>
         <translation>&amp;Fermer</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="45"/>
+        <location filename="../qconducti/qconducti.cpp" line="34"/>
         <source>&amp;Open</source>
         <translation>&amp;Ouvrir</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="77"/>
+        <location filename="../qconducti/qconducti.cpp" line="64"/>
         <source>Loading file </source>
         <translation>Chargement du fichier </translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="106"/>
+        <location filename="../qconducti/qconducti.cpp" line="93"/>
         <source>Ready</source>
         <translation>Prêt</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="109"/>
-        <location filename="qconducti.cpp" line="394"/>
+        <location filename="../qconducti/qconducti.cpp" line="96"/>
+        <location filename="../qconducti/qconducti.cpp" line="393"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="154"/>
+        <location filename="../qconducti/qconducti.cpp" line="142"/>
         <source>Base name</source>
         <translation>Racine pour le nom</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="168"/>
+        <location filename="../qconducti/qconducti.cpp" line="156"/>
         <source>Optic file</source>
         <translation>Fichier d&apos;optique</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="303"/>
+        <location filename="../qconducti/qconducti.cpp" line="293"/>
         <source>Frequency</source>
         <translation>Fréquences</translation>
     </message>
     <message>
-        <location filename="qconducti.cpp" line="305"/>
-        <location filename="qconducti.cpp" line="542"/>
+        <location filename="../qconducti/qconducti.cpp" line="295"/>
+        <location filename="../qconducti/qconducti.cpp" line="541"/>
         <source>Histogram</source>
         <translation>Histogramme</translation>
     </message>
@@ -1068,135 +1107,135 @@
 <context>
     <name>QDispersion</name>
     <message>
-        <location filename="qdispersion.ui" line="75"/>
+        <location filename="../qdispersion/qdispersion.ui" line="75"/>
         <source>No file loaded</source>
         <translation>Auncun fichier</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="94"/>
+        <location filename="../qdispersion/qdispersion.ui" line="94"/>
         <source>Energy</source>
         <oldsource>Energy </oldsource>
         <translation>Energie</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="118"/>
+        <location filename="../qdispersion/qdispersion.ui" line="118"/>
         <source>Energy origin</source>
         <translation>Origine des énergies</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="175"/>
+        <location filename="../qdispersion/qdispersion.ui" line="175"/>
         <source>Energy unit</source>
         <translation>Unité des énergies</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="216"/>
+        <location filename="../qdispersion/qdispersion.ui" line="216"/>
         <source>Ignore</source>
         <translation>Ignore</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="230"/>
+        <location filename="../qdispersion/qdispersion.ui" line="230"/>
         <source>bands</source>
         <translation>bandes</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="256"/>
+        <location filename="../qdispersion/qdispersion.ui" line="256"/>
         <source>Legend</source>
         <translation>Légende</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="277"/>
+        <location filename="../qdispersion/qdispersion.ui" line="277"/>
         <source>Number of segments</source>
         <oldsource>Number of segments </oldsource>
         <translation>Nombre de segments</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="331"/>
+        <location filename="../qdispersion/qdispersion.ui" line="331"/>
         <source>Number of points</source>
         <translation>Nombres de points</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="419"/>
+        <location filename="../qdispersion/qdispersion.ui" line="419"/>
         <source>Labels</source>
         <translation>Etiquettes</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="489"/>
+        <location filename="../qdispersion/qdispersion.ui" line="489"/>
         <source>Fat&amp;bands</source>
         <translation>Fat&amp;bands</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="501"/>
+        <location filename="../qdispersion/qdispersion.ui" line="501"/>
         <source>Atoms</source>
         <translation>Atomes</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="511"/>
+        <location filename="../qdispersion/qdispersion.ui" line="511"/>
         <source>Orbital angular momentum</source>
         <translation>Moment orbital angulaire</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="544"/>
+        <location filename="../qdispersion/qdispersion.ui" line="544"/>
         <source>all</source>
         <translation>Tous</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="552"/>
+        <location filename="../qdispersion/qdispersion.ui" line="552"/>
         <source>Magnetic quantum number</source>
         <translation>Nombre quantique magnétique</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="699"/>
+        <location filename="../qdispersion/qdispersion.ui" line="699"/>
         <source>Colours</source>
         <translation>Couleurs</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="26"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="26"/>
         <source>&amp;Save</source>
         <translation>Enregi&amp;strer</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="27"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="27"/>
         <source>&amp;Apply</source>
         <translation>&amp;Appliquer</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="28"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="28"/>
         <source>&amp;Close</source>
         <translation>&amp;Fermer</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="29"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="29"/>
         <source>&amp;Open</source>
         <translation>&amp;Ouvrir</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="73"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="73"/>
         <source>Loading file </source>
         <translation>Chargement du fichier </translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="79"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="79"/>
         <source>Ready</source>
         <translation>Prêt</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="138"/>
-        <location filename="qdispersion.cpp" line="240"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="138"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="240"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="231"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="231"/>
         <source>Plot in progress</source>
         <translation>Traçage en cours</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="348"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="348"/>
         <source>PDF file</source>
         <translation>Fichier PDF</translation>
     </message>
     <message>
-        <location filename="qdispersion.cpp" line="356"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="356"/>
         <source>Dispersion file</source>
         <translation>Fichier de dispersion</translation>
     </message>
@@ -1289,7 +1328,7 @@
         <location filename="../tabs/settings.ui" line="453"/>
         <location filename="../tabs/settings.ui" line="456"/>
         <location filename="../tabs/settings.ui" line="459"/>
-        <location filename="../tabs/settings.cpp" line="135"/>
+        <location filename="../tabs/settings.cpp" line="134"/>
         <source>Background color</source>
         <translation>Couleur d&apos;arrière plan</translation>
     </message>
@@ -1297,7 +1336,7 @@
         <location filename="../tabs/settings.ui" line="485"/>
         <location filename="../tabs/settings.ui" line="488"/>
         <location filename="../tabs/settings.ui" line="491"/>
-        <location filename="../tabs/settings.cpp" line="216"/>
+        <location filename="../tabs/settings.cpp" line="215"/>
         <source>Spin up color</source>
         <translation>Couleur des spins up</translation>
     </message>
@@ -1305,7 +1344,7 @@
         <location filename="../tabs/settings.ui" line="517"/>
         <location filename="../tabs/settings.ui" line="520"/>
         <location filename="../tabs/settings.ui" line="523"/>
-        <location filename="../tabs/settings.cpp" line="227"/>
+        <location filename="../tabs/settings.cpp" line="226"/>
         <source>Spin down color</source>
         <translation>Couleur des spins down</translation>
     </message>
@@ -1476,7 +1515,7 @@
         <translation>Propriétés du tableau de Mendeleev</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.cpp" line="146"/>
+        <location filename="../tabs/settings.cpp" line="145"/>
         <source>Foreground color</source>
         <translation>Couleur de premier plan</translation>
     </message>

@@ -55,6 +55,7 @@
     </qresource>
     <qresource prefix="/home">
         <file>../icons/save-abinit.svg</file>
+        <file>../icons/download-cloud.svg</file>
         <file>../icons/save-poscar.svg</file>
         <file>../icons/folder.svg</file>
         <file>../icons/folder-plus.svg</file>
