@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>727</width>
+    <width>754</width>
     <height>127</height>
    </rect>
   </property>
@@ -322,6 +322,15 @@
       </item>
       <item row="0" column="4">
        <widget class="QToolButton" name="cloud">
+        <property name="toolTip">
+         <string>Get a file from a remote server</string>
+        </property>
+        <property name="statusTip">
+         <string>Get a file from a remote server</string>
+        </property>
+        <property name="whatsThis">
+         <string>Get a file from a remote server</string>
+        </property>
         <property name="text">
          <string notr="true"/>
         </property>
@@ -1331,10 +1340,10 @@
     <string>Open</string>
    </property>
    <property name="toolTip">
-    <string>Open new file</string>
+    <string>Open a new file</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+O</string>
+    <string notr="true">Ctrl+O</string>
    </property>
   </action>
   <action name="actionAppend">
@@ -1349,7 +1358,7 @@
     <string>Append a new file to the current one</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Shift+A</string>
+    <string notr="true">Ctrl+Shift+A</string>
    </property>
   </action>
   <action name="actionCloud">
@@ -1364,7 +1373,7 @@
     <string>Import from cluster</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Shift+O</string>
+    <string notr="true">Ctrl+Shift+O</string>
    </property>
   </action>
  </widget>

@@ -73,256 +73,263 @@
         <translation>Import/Export</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="79"/>
-        <location filename="../tabs/home.ui" line="82"/>
-        <location filename="../tabs/home.ui" line="85"/>
-        <location filename="../tabs/home.ui" line="1312"/>
+        <location filename="../tabs/home.ui" line="196"/>
+        <location filename="../tabs/home.ui" line="199"/>
+        <location filename="../tabs/home.ui" line="202"/>
+        <location filename="../tabs/home.ui" line="1310"/>
         <source>Write abinit input file</source>
         <translation>Ecrire un fichier d&apos;entrée pour abinit</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="73"/>
+        <location filename="../tabs/home.ui" line="76"/>
+        <location filename="../tabs/home.ui" line="79"/>
+        <location filename="../tabs/home.ui" line="1328"/>
+        <source>Export trajectory to _HIST format</source>
+        <translation>Exporter la trajectoire au format _HIST</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="358"/>
+        <location filename="../tabs/home.ui" line="361"/>
+        <location filename="../tabs/home.ui" line="364"/>
+        <source>Open a script file</source>
+        <translation>Ouvrir un fichier script</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="265"/>
+        <location filename="../tabs/home.ui" line="268"/>
+        <location filename="../tabs/home.ui" line="271"/>
+        <source>Write VASP POSCAR</source>
+        <translation>Ecrire un fichier POSCAR pour VASP</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="153"/>
+        <location filename="../tabs/home.ui" line="156"/>
+        <location filename="../tabs/home.ui" line="159"/>
+        <source>Export trajectory to XYZ format</source>
+        <translation>Exporter la trajectoire au format XYZ</translation>
     </message>
     <message>
         <location filename="../tabs/home.ui" line="116"/>
         <location filename="../tabs/home.ui" line="119"/>
         <location filename="../tabs/home.ui" line="122"/>
-        <location filename="../tabs/home.ui" line="1330"/>
-        <source>Export trajectory to _HIST format</source>
-        <translation>Exporter la trajectoire au format _HIST</translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="360"/>
-        <location filename="../tabs/home.ui" line="363"/>
-        <location filename="../tabs/home.ui" line="366"/>
-        <source>Open a script file</source>
-        <translation>Ouvrir un fichier script</translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="159"/>
-        <location filename="../tabs/home.ui" line="162"/>
-        <location filename="../tabs/home.ui" line="165"/>
-        <source>Write VASP POSCAR</source>
-        <translation>Ecrire un fichier POSCAR pour VASP</translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="196"/>
-        <location filename="../tabs/home.ui" line="199"/>
-        <location filename="../tabs/home.ui" line="202"/>
-        <source>Export trajectory to XYZ format</source>
-        <translation>Exporter la trajectoire au format XYZ</translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="239"/>
-        <location filename="../tabs/home.ui" line="242"/>
-        <location filename="../tabs/home.ui" line="245"/>
         <source>Write CIF file</source>
         <translation>Ecrire une fichier CIF</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="289"/>
-        <location filename="../tabs/home.ui" line="292"/>
-        <location filename="../tabs/home.ui" line="295"/>
+        <location filename="../tabs/home.ui" line="384"/>
+        <location filename="../tabs/home.ui" line="387"/>
+        <location filename="../tabs/home.ui" line="390"/>
         <source>Reload the current file</source>
         <translation>Recharger le fichier courant</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="334"/>
-        <location filename="../tabs/home.ui" line="337"/>
-        <location filename="../tabs/home.ui" line="340"/>
+        <location filename="../tabs/home.ui" line="228"/>
+        <location filename="../tabs/home.ui" line="231"/>
+        <location filename="../tabs/home.ui" line="234"/>
+        <location filename="../tabs/home.ui" line="1343"/>
         <source>Open a new file</source>
-        <translation type="unfinished">Ouvrir un nouveau fichier</translation>
+        <translation>Ouvrir un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="389"/>
-        <location filename="../tabs/home.ui" line="392"/>
+        <location filename="../tabs/home.ui" line="300"/>
+        <location filename="../tabs/home.ui" line="303"/>
         <source>Append a new file</source>
-        <translation type="unfinished">Rajouter à la suite un nouveau fichier</translation>
+        <translation>Rajouter à la suite un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="395"/>
+        <location filename="../tabs/home.ui" line="306"/>
         <source>Append a new file to the current visualization</source>
-        <translation type="unfinished">Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
+        <translation>Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="427"/>
+        <location filename="../tabs/home.ui" line="326"/>
+        <location filename="../tabs/home.ui" line="329"/>
+        <location filename="../tabs/home.ui" line="332"/>
+        <source>Get a file from a remote server</source>
+        <translation>Obtenir un fichier depuis un server distant</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="425"/>
         <source>Edit</source>
         <translation>Edition</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="481"/>
+        <location filename="../tabs/home.ui" line="479"/>
         <source>For this time step</source>
         <translation>Pour ce pas de temps</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="486"/>
+        <location filename="../tabs/home.ui" line="484"/>
         <source>For all</source>
         <translation>Pour tous</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="523"/>
-        <location filename="../tabs/home.ui" line="526"/>
-        <location filename="../tabs/home.ui" line="529"/>
+        <location filename="../tabs/home.ui" line="521"/>
+        <location filename="../tabs/home.ui" line="524"/>
+        <location filename="../tabs/home.ui" line="527"/>
         <source>Set atoms inside the cell</source>
         <translation>Mettre les atomes à l&apos;intérieur de la cellule</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="552"/>
-        <location filename="../tabs/home.ui" line="555"/>
-        <location filename="../tabs/home.ui" line="558"/>
+        <location filename="../tabs/home.ui" line="550"/>
+        <location filename="../tabs/home.ui" line="553"/>
+        <location filename="../tabs/home.ui" line="556"/>
         <source>Set continuous trajectory</source>
         <translation>Construire une trajectoire continue</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="586"/>
-        <location filename="../tabs/home.ui" line="589"/>
-        <location filename="../tabs/home.ui" line="592"/>
+        <location filename="../tabs/home.ui" line="584"/>
+        <location filename="../tabs/home.ui" line="587"/>
+        <location filename="../tabs/home.ui" line="590"/>
         <source>Shift origin</source>
         <translation>Déplacer l&apos;origine</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="664"/>
-        <location filename="../tabs/home.ui" line="667"/>
-        <location filename="../tabs/home.ui" line="670"/>
+        <location filename="../tabs/home.ui" line="662"/>
+        <location filename="../tabs/home.ui" line="665"/>
+        <location filename="../tabs/home.ui" line="668"/>
         <source>Change atom type</source>
         <translation>Changer le type d&apos;atome</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="701"/>
-        <location filename="../tabs/home.ui" line="704"/>
-        <location filename="../tabs/home.ui" line="707"/>
+        <location filename="../tabs/home.ui" line="699"/>
+        <location filename="../tabs/home.ui" line="702"/>
+        <location filename="../tabs/home.ui" line="705"/>
         <source>Make supercell</source>
         <translation>Faire une supercellule</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="738"/>
+        <location filename="../tabs/home.ui" line="736"/>
         <source>Centroid</source>
         <translation>Centroïde</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="741"/>
-        <location filename="../tabs/home.ui" line="744"/>
+        <location filename="../tabs/home.ui" line="739"/>
+        <location filename="../tabs/home.ui" line="742"/>
         <source>Compute centroid</source>
         <translation>Calculer le centroïde</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="772"/>
-        <location filename="../tabs/home.ui" line="775"/>
-        <location filename="../tabs/home.ui" line="778"/>
+        <location filename="../tabs/home.ui" line="770"/>
+        <location filename="../tabs/home.ui" line="773"/>
+        <location filename="../tabs/home.ui" line="776"/>
         <source>Move atom</source>
         <translation>Déplacer l&apos;atome</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="809"/>
-        <location filename="../tabs/home.ui" line="812"/>
-        <location filename="../tabs/home.ui" line="815"/>
+        <location filename="../tabs/home.ui" line="807"/>
+        <location filename="../tabs/home.ui" line="810"/>
+        <location filename="../tabs/home.ui" line="813"/>
         <source>Average structure</source>
         <translation>Structure moyenne</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="853"/>
+        <location filename="../tabs/home.ui" line="851"/>
         <source>Explore</source>
         <translation>Exploration</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="909"/>
-        <location filename="../tabs/home.ui" line="912"/>
-        <location filename="../tabs/home.ui" line="915"/>
+        <location filename="../tabs/home.ui" line="907"/>
+        <location filename="../tabs/home.ui" line="910"/>
+        <location filename="../tabs/home.ui" line="913"/>
         <source>Unit for this distance</source>
         <translation>Unité pour cette distance</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="939"/>
-        <location filename="../tabs/home.ui" line="942"/>
-        <location filename="../tabs/home.ui" line="945"/>
-        <location filename="../tabs/home.ui" line="1143"/>
-        <location filename="../tabs/home.ui" line="1146"/>
-        <location filename="../tabs/home.ui" line="1149"/>
+        <location filename="../tabs/home.ui" line="937"/>
+        <location filename="../tabs/home.ui" line="940"/>
+        <location filename="../tabs/home.ui" line="943"/>
+        <location filename="../tabs/home.ui" line="1141"/>
+        <location filename="../tabs/home.ui" line="1144"/>
+        <location filename="../tabs/home.ui" line="1147"/>
         <source>Atom 2</source>
         <translation>Atome 2</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="997"/>
-        <location filename="../tabs/home.ui" line="1000"/>
-        <location filename="../tabs/home.ui" line="1003"/>
-        <location filename="../tabs/home.ui" line="1110"/>
-        <location filename="../tabs/home.ui" line="1113"/>
-        <location filename="../tabs/home.ui" line="1116"/>
+        <location filename="../tabs/home.ui" line="995"/>
+        <location filename="../tabs/home.ui" line="998"/>
+        <location filename="../tabs/home.ui" line="1001"/>
+        <location filename="../tabs/home.ui" line="1108"/>
+        <location filename="../tabs/home.ui" line="1111"/>
+        <location filename="../tabs/home.ui" line="1114"/>
         <source>Atom 1</source>
         <translation>Atome 1</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1036"/>
-        <location filename="../tabs/home.ui" line="1042"/>
+        <location filename="../tabs/home.ui" line="1034"/>
+        <location filename="../tabs/home.ui" line="1040"/>
         <source>Distance measurement</source>
         <translation>Mesure de distance</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1039"/>
+        <location filename="../tabs/home.ui" line="1037"/>
         <source>Distance between 2 atoms</source>
         <translation>Distance entre 2 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1076"/>
-        <location filename="../tabs/home.ui" line="1082"/>
+        <location filename="../tabs/home.ui" line="1074"/>
+        <location filename="../tabs/home.ui" line="1080"/>
         <source>Angle measurement</source>
         <translation>Mesure d&apos;angle</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1079"/>
+        <location filename="../tabs/home.ui" line="1077"/>
         <source>Angle between 3 atoms</source>
         <translation>Angle entre 3 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1176"/>
-        <location filename="../tabs/home.ui" line="1179"/>
-        <location filename="../tabs/home.ui" line="1182"/>
+        <location filename="../tabs/home.ui" line="1174"/>
+        <location filename="../tabs/home.ui" line="1177"/>
+        <location filename="../tabs/home.ui" line="1180"/>
         <source>Atom 3</source>
         <translation>Atome 3</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1244"/>
-        <location filename="../tabs/home.ui" line="1247"/>
-        <location filename="../tabs/home.ui" line="1250"/>
+        <location filename="../tabs/home.ui" line="1242"/>
+        <location filename="../tabs/home.ui" line="1245"/>
+        <location filename="../tabs/home.ui" line="1248"/>
         <source>Space group of current time</source>
         <translation>Groupe d&apos;espace du pas de temps actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1253"/>
+        <location filename="../tabs/home.ui" line="1251"/>
         <source>Space Group</source>
         <translation>Groupe d&apos;espace</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1263"/>
+        <location filename="../tabs/home.ui" line="1261"/>
         <source>Thermo</source>
         <translation>Thermo</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1342"/>
+        <location filename="../tabs/home.ui" line="1340"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1345"/>
         <source>Open new file</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Ouvrir un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1348"/>
-        <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="1357"/>
+        <location filename="../tabs/home.ui" line="1355"/>
         <source>Append</source>
-        <translation type="unfinished"></translation>
+        <translation>Rajouter</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1360"/>
+        <location filename="../tabs/home.ui" line="1358"/>
         <source>Append a new file to the current one</source>
-        <translation type="unfinished"></translation>
+        <translation>Rajouter un nouveau fichier à la suite de l&apos;actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1363"/>
-        <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <location filename="../tabs/home.ui" line="1370"/>
+        <source>Cloud</source>
+        <translation>Server</translation>
+    </message>
+    <message>
+        <location filename="../tabs/home.ui" line="1373"/>
+        <source>Import from cluster</source>
+        <translation>Importer depuis un server</translation>
     </message>
 </context>
 <context>
@@ -1238,6 +1245,162 @@
         <location filename="../qdispersion/qdispersion.cpp" line="356"/>
         <source>Dispersion file</source>
         <translation>Fichier de dispersion</translation>
+    </message>
+</context>
+<context>
+    <name>RemoteDialog</name>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="14"/>
+        <source>Get remote file</source>
+        <translation>Obtenir un fichier distant</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="26"/>
+        <source>Hostname</source>
+        <translation>Nom d&apos;hôte</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="36"/>
+        <source>Username</source>
+        <translation>Nom d&apos;utilisateur</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="46"/>
+        <source>Password</source>
+        <translation>Mot de passe</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="60"/>
+        <source>Protocol</source>
+        <translation>Protocole</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="81"/>
+        <source>Port</source>
+        <translation>Port</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="91"/>
+        <source>Remote file</source>
+        <translation>Fichier distant</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="101"/>
+        <source>Local folder</source>
+        <translation>Répertoire local</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="126"/>
+        <source>Browse</source>
+        <translation>Parcourir</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="145"/>
+        <source>&amp;Test</source>
+        <translation>&amp;Test</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="158"/>
+        <source>&amp;Download</source>
+        <translation>Téléchar&amp;ger</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="175"/>
+        <source>&amp;Open</source>
+        <translation>&amp;Ouvrir</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.ui" line="192"/>
+        <source>&amp;Append</source>
+        <translation>&amp;Rajouter</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="51"/>
+        <source>Select directory</source>
+        <translation>Sélection un répertoire</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="63"/>
+        <location filename="../dialogs/remotedialog.cpp" line="88"/>
+        <location filename="../dialogs/remotedialog.cpp" line="141"/>
+        <source>Warning</source>
+        <translation>Attention</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="63"/>
+        <location filename="../dialogs/remotedialog.cpp" line="141"/>
+        <source>You need to specify a remote file</source>
+        <translation>Vous devez spécifier un fichier distant</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="72"/>
+        <source>All good! File is </source>
+        <translation>Parfait! Le fichier fait </translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="79"/>
+        <source>Unable to get size of file</source>
+        <translation>Impossible d&apos;obtenir la taille du fichier</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="88"/>
+        <source>You need to specify a hostname</source>
+        <translation>Vous devez spécifier un nom d&apos;hôte</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="96"/>
+        <source>Connecting</source>
+        <translation>Connexion en cours</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="103"/>
+        <source>Unable to contact host</source>
+        <translation>Impossible de contacter l&apos;hôte</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="119"/>
+        <source>Aborted</source>
+        <translation>Annulation</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="124"/>
+        <source>Access guaranted</source>
+        <translation>Accès autorisé</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="129"/>
+        <source>Access denied</source>
+        <translation>Accès refusé</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="131"/>
+        <source>Unknow error</source>
+        <translation>Erreur inconnue</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="151"/>
+        <source>Error</source>
+        <translation>Erreur</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="151"/>
+        <source>Unable to create file </source>
+        <translation>Impossible de créer le fichier </translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="167"/>
+        <source>Closing file!</source>
+        <translation>Fermeture du fichier!</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="169"/>
+        <source>Done!</source>
+        <translation>Fait!</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/remotedialog.cpp" line="176"/>
+        <source>Unable to get file</source>
+        <translation>Impossible d&apos;obtenir le fichier</translation>
     </message>
 </context>
 <context>
