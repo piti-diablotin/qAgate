@@ -187,11 +187,20 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="toolTip">
+         <string>Mendeleev table</string>
+        </property>
+        <property name="statusTip">
+         <string>Mendeleev table</string>
+        </property>
+        <property name="whatsThis">
+         <string>Mendeleev table</string>
+        </property>
         <property name="text">
-         <string/>
+         <string notr="true"/>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/settings/icons/mendeleev.svg</normaloff>:/settings/icons/mendeleev.svg</iconset>
         </property>
         <property name="iconSize">
@@ -199,6 +208,9 @@
           <width>40</width>
           <height>20</height>
          </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -276,7 +288,7 @@
             <string>Dispaly width</string>
            </property>
            <property name="suffix">
-            <string>px</string>
+            <string notr="true">px</string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -357,7 +369,7 @@
             <bool>true</bool>
            </property>
            <property name="suffix">
-            <string>px</string>
+            <string notr="true">px</string>
            </property>
            <property name="maximum">
             <number>100</number>
@@ -379,10 +391,10 @@
             <string>Font color</string>
            </property>
            <property name="text">
-            <string>A</string>
+            <string notr="true">A</string>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/foreground.svg</normaloff>:/settings/icons/foreground.svg</iconset>
            </property>
            <property name="iconSize">
@@ -390,6 +402,9 @@
              <width>17</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -419,7 +434,7 @@
             <string>Display height</string>
            </property>
            <property name="suffix">
-            <string>px</string>
+            <string notr="true">px</string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -444,10 +459,10 @@
             <string>Background color</string>
            </property>
            <property name="text">
-            <string/>
+            <string notr="true"/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/background.svg</normaloff>:/settings/icons/background.svg</iconset>
            </property>
            <property name="iconSize">
@@ -455,6 +470,9 @@
              <width>17</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -473,10 +491,10 @@
             <string>Spin up color</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/arrow-up.svg</normaloff>:/settings/icons/arrow-up.svg</iconset>
            </property>
            <property name="iconSize">
@@ -484,6 +502,9 @@
              <width>17</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -502,10 +523,10 @@
             <string>Spin down color</string>
            </property>
            <property name="text">
-            <string/>
+            <string notr="true"/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/arrow-down.svg</normaloff>:/settings/icons/arrow-down.svg</iconset>
            </property>
            <property name="iconSize">
@@ -513,6 +534,9 @@
              <width>17</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -595,10 +619,10 @@
             <string>Switch light</string>
            </property>
            <property name="text">
-            <string/>
+            <string notr="true"/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/sun.svg</normaloff>:/settings/icons/sun.svg</iconset>
            </property>
            <property name="iconSize">
@@ -608,7 +632,7 @@
             </size>
            </property>
            <property name="shortcut">
-            <string>L</string>
+            <string notr="true">L</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -633,10 +657,10 @@
             <string>Switch filling</string>
            </property>
            <property name="text">
-            <string/>
+            <string notr="true"/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/mesh.svg</normaloff>:/settings/icons/mesh.svg</iconset>
            </property>
            <property name="iconSize">
@@ -646,7 +670,7 @@
             </size>
            </property>
            <property name="shortcut">
-            <string>O</string>
+            <string notr="true">O</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -671,10 +695,10 @@
             <string>Switch perspective</string>
            </property>
            <property name="text">
-            <string/>
+            <string notr="true"/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/perspective.svg</normaloff>:/settings/icons/perspective.svg</iconset>
            </property>
            <property name="iconSize">
@@ -684,7 +708,7 @@
             </size>
            </property>
            <property name="shortcut">
-            <string>P</string>
+            <string notr="true">P</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -709,10 +733,10 @@
             <string>Switch anti-aliasing</string>
            </property>
            <property name="text">
-            <string/>
+            <string notr="true"/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/anti-aliasing.svg</normaloff>:/settings/icons/anti-aliasing.svg</iconset>
            </property>
            <property name="iconSize">
@@ -722,7 +746,7 @@
             </size>
            </property>
            <property name="shortcut">
-            <string>Shift+A</string>
+            <string notr="true">Shift+A</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -955,17 +979,17 @@
         </property>
         <item>
          <property name="text">
-          <string>jpeg</string>
+          <string notr="true">jpeg</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>png</string>
+          <string notr="true">png</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>ppm</string>
+          <string notr="true">ppm</string>
          </property>
         </item>
        </widget>
@@ -999,7 +1023,7 @@
          </font>
         </property>
         <property name="toolTip">
-         <string>Suffix for numerotation </string>
+         <string>Suffix for numerotation</string>
         </property>
         <property name="statusTip">
          <string>Suffix for numerotation _000xx or _xx</string>
@@ -1030,12 +1054,12 @@
         </property>
         <item>
          <property name="text">
-          <string extracomment="To allow use of imagemagick convert tool to create a GIF">convert</string>
+          <string notr="true" extracomment="To allow use of imagemagick convert tool to create a GIF">convert</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string extracomment="To create a beamer animation with the animate package">animate</string>
+          <string notr="true" extracomment="To create a beamer animation with the animate package">animate</string>
          </property>
         </item>
        </widget>
@@ -1110,7 +1134,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="../qagate/qagate.qrc">
      <normaloff>:/settings/icons/mesh.svg</normaloff>:/settings/icons/mesh.svg</iconset>
    </property>
    <property name="text">
@@ -1123,7 +1147,7 @@
     <string>Switch filling of objects</string>
    </property>
    <property name="shortcut">
-    <string>O</string>
+    <string notr="true">O</string>
    </property>
   </action>
   <action name="actionLight">
@@ -1131,7 +1155,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="../qagate/qagate.qrc">
      <normaloff>:/settings/icons/sun.svg</normaloff>:/settings/icons/sun.svg</iconset>
    </property>
    <property name="text">
@@ -1144,7 +1168,7 @@
     <string>Switch on/off light</string>
    </property>
    <property name="shortcut">
-    <string>L</string>
+    <string notr="true">L</string>
    </property>
   </action>
   <action name="actionPerspective">
@@ -1152,7 +1176,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="../qagate/qagate.qrc">
      <normaloff>:/settings/icons/perspective.svg</normaloff>:/settings/icons/perspective.svg</iconset>
    </property>
    <property name="text">
@@ -1165,7 +1189,7 @@
     <string>Switch on/off perspective</string>
    </property>
    <property name="shortcut">
-    <string>P</string>
+    <string notr="true">P</string>
    </property>
   </action>
   <action name="actionAA">
@@ -1173,7 +1197,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="../qagate/qagate.qrc">
      <normaloff>:/settings/icons/aliasing.svg</normaloff>:/settings/icons/aliasing.svg</iconset>
    </property>
    <property name="text">
@@ -1186,12 +1210,12 @@
     <string>Switch on/off antialiasing (if available)</string>
    </property>
    <property name="shortcut">
-    <string>Shift+A</string>
+    <string notr="true">Shift+A</string>
    </property>
   </action>
   <action name="actionMendeleev">
    <property name="icon">
-    <iconset>
+    <iconset resource="../qagate/qagate.qrc">
      <normaloff>:/settings/icons/mendeleev.svg</normaloff>:/settings/icons/mendeleev.svg</iconset>
    </property>
    <property name="text">
@@ -1207,7 +1231,7 @@
     <string>Periodic table properties</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+P</string>
+    <string notr="true">Ctrl+P</string>
    </property>
    <property name="autoRepeat">
     <bool>false</bool>
@@ -1221,6 +1245,8 @@
    <header>tools/distanceunitcombo.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../qagate/qagate.qrc"/>
+ </resources>
  <connections/>
 </ui>

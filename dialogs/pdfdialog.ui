@@ -98,7 +98,7 @@
       <item row="3" column="2">
        <widget class="QLabel" name="points">
         <property name="text">
-         <string>0</string>
+         <string notr="true">0</string>
         </property>
        </widget>
       </item>
@@ -131,7 +131,7 @@
       <item row="1" column="1">
        <widget class="QLabel" name="label">
         <property name="toolTip">
-         <string>Maximum radius </string>
+         <string>Maximum radius</string>
         </property>
         <property name="statusTip">
          <string>Maximum radius used to find neighbours</string>

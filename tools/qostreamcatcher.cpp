@@ -12,12 +12,15 @@ QOstreamCatcher::QOstreamCatcher(QWidget* parent): QWidget(parent), streambuf(),
 
 int QOstreamCatcher::sync()
 {
+  //qDebug()<<"synchro";
   emit synchronized();
-  return streambuf::sync();
+  //return streambuf::sync();
+  return 0;
 }
 
 basic_streambuf<char>::int_type QOstreamCatcher::overflow(basic_streambuf<char>::int_type v)
 {
+  //qDebug()<<"overflow";
   if ( pbase() == NULL ) {
       // save one char for next overflow:
       setp( buffer, buffer + bufferSize - 1 );
@@ -44,6 +47,7 @@ basic_streambuf<char>::int_type QOstreamCatcher::overflow(basic_streambuf<char>:
 
 streamsize QOstreamCatcher::xsputn(const char* p, streamsize n)
 {
+  //qDebug()<<"xsputn";
   for (int c = 0; c < n; ++c)
     _data << p[c];
   setp( buffer, buffer + bufferSize - 1 );

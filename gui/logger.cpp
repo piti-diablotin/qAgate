@@ -5,6 +5,7 @@
 #include "base/exception.hpp"
 #include "base/utils.hpp"
 #include <QClipboard>
+#include <QDebug>
 
 Logger::Logger(QWidget *parent) :
   QWidget(parent),
@@ -13,7 +14,8 @@ Logger::Logger(QWidget *parent) :
   _cout(this),
   _clog(this),
   _cerr(this),
-  _oldStreambuf()
+  _oldStreambuf(),
+  _synchro{-1}
 {
   ui->setupUi(this);
   ui->logger->hide();
@@ -53,12 +55,17 @@ void Logger::cout_handle()
   QMetaMethod metaMethod = sender()->metaObject()->method(senderSignalIndex());
   auto signal = metaMethod.name();
   QString text = _cout.readAll();
-  if (signal == "synchronized") text += "\n";
-  ui->logger->insertPlainText(text);
-  ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
-  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
-  if (ui->more->isChecked()) return;
-  ui->console->setText(tr("Console*"));
+  if (signal == "synchronized")
+    {
+      if (_synchro[0] == 1) return; // We are already synchronized
+      _synchro[0] = 1;
+      text += "\n";
+    }
+  else
+    {
+      _synchro[0] = 0;
+    }
+  Logger::finishSynchro(text);
 }
 
 void Logger::clog_handle()
@@ -66,15 +73,17 @@ void Logger::clog_handle()
   QMetaMethod metaMethod = sender()->metaObject()->method(senderSignalIndex());
   auto signal = metaMethod.name();
   QString text = _clog.readAll();
-  if (signal == "synchronized") text += "\n";
-  ui->logger->insertPlainText(text);
-  ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
-  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
-  if (ui->more->isChecked()) return;
-  if (text.contains("Warning")) ui->warning->show();
-  if (text.contains("Error")) ui->error->show();
-  if (text.contains("Comment")) ui->info->show();
-  ui->console->setText(tr("Console*"));
+  if (signal == "synchronized")
+    {
+      if (_synchro[1] == 1) return; // We are already synchronized
+      _synchro[1] = 1;
+      text += "\n";
+    }
+  else
+    {
+      _synchro[1] = 0;
+    }
+  Logger::finishSynchro(text);
 }
 
 void Logger::cerr_handle()
@@ -82,15 +91,17 @@ void Logger::cerr_handle()
   QMetaMethod metaMethod = sender()->metaObject()->method(senderSignalIndex());
   auto signal = metaMethod.name();
   QString text = _cerr.readAll();
-  //if (signal == "synchronized" && !text.endsWith('\n')) text += "\n";
-  ui->logger->insertPlainText(text);
-  ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
-  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
-  if (ui->more->isChecked()) return;
-  if (text.contains("Warning")) ui->warning->show();
-  if (text.contains("Error")) ui->error->show();
-  if (text.contains("Comment")) ui->info->show();
-  ui->console->setText(tr("Console*"));
+  if (signal == "synchronized")
+    {
+      if (_synchro[2] == 2) return; // We are already synchronized
+      else if (_synchro[2] == 1) text += "\n";
+      ++_synchro[2];
+    }
+  else
+    {
+      _synchro[2] = 0;
+    }
+  Logger::finishSynchro(text);
 }
 
 void Logger::on_more_toggled(bool checked)
@@ -129,4 +140,16 @@ void Logger::mousePressEvent(QMouseEvent *mouseEvent)
 {
   if (mouseEvent->button() == Qt::LeftButton)
     ui->more->toggle();
+}
+
+void Logger::finishSynchro(const QString &text)
+{
+  ui->logger->insertPlainText(text);
+  //ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
+  ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
+  if (ui->more->isChecked()) return;
+  if (text.contains("Warning")) ui->warning->show();
+  if (text.contains("Error")) ui->error->show();
+  if (text.contains("Comment")) ui->info->show();
+  ui->console->setText(tr("Console*"));
 }

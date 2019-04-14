@@ -1,6 +1,5 @@
 #include "settings.h"
 #include "ui_settings.h"
-#include <QFileDialog>
 #include "canvas/canvaspos.hpp"
 #include "dialogs/mendeleev.h"
 

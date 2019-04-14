@@ -2,6 +2,7 @@
 #include "ui_home.h"
 #include "dialogs/dumpdialog.h"
 #include <QLocale>
+#include <QFileDialog>
 #include "dialogs/supercelldialog.h"
 #include "dialogs/movedialog.h"
 #include "dialogs/shiftdialog.h"
@@ -15,11 +16,30 @@ Home::Home(QWidget *parent) :
   _spgDialog(this),
   _natom(0),
   _distance(0),
-  _distanceUnit(UnitConverter::bohr)
+  _distanceUnit(UnitConverter::bohr),
+  _currentFolder("."),
+  _remoteDialog(this)
 {
   ui->setupUi(this);
   ui->choiceWhat->setItemData(0,"");
   ui->choiceWhat->setItemData(1,"all");
+  ui->saveAbinit->setDefaultAction(ui->actionAbinit);
+  ui->dumpHist->setDefaultAction(ui->actionHIST);
+  ui->open->setDefaultAction(ui->actionOpen);
+  ui->append->setDefaultAction(ui->actionAppend);
+  ui->actionAppend->setDisabled(true);
+  ui->cloud->setDefaultAction(ui->actionCloud);
+  connect(ui->actionAbinit,SIGNAL(triggered(bool)),this,SLOT(on_saveAbinit_clicked()));
+  connect(ui->actionHIST,SIGNAL(triggered(bool)),this,SLOT(on_dumpHist_clicked()));
+  connect(&_remoteDialog,SIGNAL(sendCommand(QString,bool)),this,SIGNAL(sendCommand(QString,bool)));
+  this->addAction(ui->actionAbinit);
+  this->addAction(ui->actionHIST);
+  this->addAction(ui->actionOpen);
+  this->addAction(ui->actionAppend);
+  this->addAction(ui->actionCloud);
+#ifndef HAVE_SSH
+  ui->cloud->setDisabled(true);
+#endif
 }
 
 Home::~Home()
@@ -56,6 +76,7 @@ void Home::getDistanceAtoms(int &atom1, int &atom2)
 void Home::updateStatus(View *view)
 {
   bool something = (view->getCanvas() != nullptr && view->getCanvas()->histdata() != nullptr);
+  ui->actionAppend->setEnabled(something);
   ui->dumpHist->setEnabled(something);
   ui->dumpXyz->setEnabled(something);
   ui->saveAbinit->setEnabled(something);
@@ -134,7 +155,7 @@ void Home::on_saveCif_clicked()
 
 void Home::on_load_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_writeDialog.directory(),"");
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_writeDialog.directory(),"",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
     {
       for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
@@ -286,4 +307,51 @@ void Home::on_typat_clicked()
     int iatom, znucl;
     dialog.result(iatom,znucl);
     emit(sendCommand(":typat "+QString::number(iatom)+ " " +QString::number(znucl)));
+}
+
+void Home::on_open_triggered()
+{
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  if ( !fileNames.empty() )
+    {
+      QString file1 = fileNames.first();
+      if (file1.isEmpty())
+        return;
+      emit(sendCommand(":open "+file1));
+      int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
+      _currentFolder = file1.left(pos+1);
+
+      for ( auto file = fileNames.begin()+1 ; file != fileNames.end() ; ++file )
+        {
+          if ( !file->isEmpty() )
+            {
+              emit(sendCommand("+append "+*file));
+            }
+        }
+    }
+}
+
+void Home::on_append_triggered()
+{
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+
+  if ( !fileNames.empty() )
+    {
+      for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
+        {
+          if ( !file->isEmpty() )
+            {
+              emit(sendCommand(":append "+*file));
+              int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
+              _currentFolder = file->left(pos+1);
+            }
+        }
+    }
+
+}
+
+void Home::on_actionCloud_triggered()
+{
+  _remoteDialog.removeAppend(!ui->append->isEnabled());
+  _remoteDialog.exec();
 }

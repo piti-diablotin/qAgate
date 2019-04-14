@@ -20,7 +20,6 @@ qAgate::qAgate(QWidget *parent) :
       tab->plugActions(this);
       connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
     }
-
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(pause()),this,SLOT(manageSignal()));
@@ -34,8 +33,6 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->mediaPlayer,SIGNAL(snapshot()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(record()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(stopRecord()),this,SLOT(manageSignal()));
-  connect(ui->mediaPlayer,SIGNAL(open(QString)),this,SLOT(manageSignal(QString)));
-  connect(ui->mediaPlayer,SIGNAL(append(QString)),this,SLOT(manageSignal(QString)));
   connect(ui->mediaPlayer,SIGNAL(zoomIn()),ui->view,SLOT(zoomIn()));
   connect(ui->mediaPlayer,SIGNAL(zoomOut()),ui->view,SLOT(zoomOut()));
 
@@ -191,7 +188,7 @@ void qAgate::manageSignal(QString filename)
     }
   else if (signal=="fileOpened")
     {
-      ui->mediaPlayer->setDisabledAppend(false);
+      //ui->mediaPlayer->setDisabledAppend(false);
       this->setWindowTitle(filename+" - qAgate");
       ui->timeLine->setEnabled(true);
       this->updateTab();

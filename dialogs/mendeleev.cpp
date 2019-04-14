@@ -13,7 +13,9 @@ Mendeleev::Mendeleev(QWidget *parent) :
   _activeElement(nullptr),
   _massUnit(UnitConverter::amu),
   _radiusUnit(UnitConverter::bohr),
-  _rcovUnit(UnitConverter::bohr)
+  _rcovUnit(UnitConverter::bohr),
+  _modifications(),
+  _nModifs(0)
 {
   ui->setupUi(this);
 }
@@ -32,6 +34,7 @@ QStringList Mendeleev::modifications() const
 void Mendeleev::build()
 {
   _modifications.clear();
+  _nModifs = 0;
   auto children = ui->elements->children();
   ui->legend->setColor(Qt::lightGray);
   for ( auto child = children.begin(); child != children.end(); ++child)
@@ -61,6 +64,11 @@ void Mendeleev::build()
   this->editElement(ui->H);
 }
 
+int Mendeleev::result() const
+{
+  return _nModifs;
+}
+
 void Mendeleev::editElement(atomicData* elt)
 {
   _selfSet = true;
@@ -80,6 +88,7 @@ void Mendeleev::on_mass_valueChanged(double arg1)
   if (_selfSet) return;
   //_modifications.push_back(":amu "+_activeElement->name()+" "+QString::number(arg1/_massUnit));
   Agate::Mendeleev.mass[_activeElement->z()] = arg1/_massUnit;
+  ++_nModifs;
   _activeElement->setMass(arg1/_massUnit);
 }
 
@@ -116,6 +125,7 @@ void Mendeleev::on_color_clicked()
   Agate::Mendeleev.color[_activeElement->z()][0] = newColor.red()/255.f;
   Agate::Mendeleev.color[_activeElement->z()][1] = newColor.green()/255.f;
   Agate::Mendeleev.color[_activeElement->z()][2] = newColor.blue()/255.f;
+  ++_nModifs;
 }
 
 void Mendeleev::on_radius_valueChanged(double arg1)
@@ -123,6 +133,7 @@ void Mendeleev::on_radius_valueChanged(double arg1)
   if (_selfSet) return;
   //_modifications.push_back(":radius "+_activeElement->name()+" "+QString::number(arg1/_radiusUnit));
   Agate::Mendeleev.radius[_activeElement->z()] = arg1/_radiusUnit;
+  ++_nModifs;
   _activeElement->setRadius(arg1/_radiusUnit);
 }
 
@@ -145,6 +156,7 @@ void Mendeleev::on_rcov_valueChanged(double arg1)
   if (_selfSet) return;
   //_modifications.push_back(":rcov "+_activeElement->name()+" "+QString::number(arg1/_rcovUnit));
   Agate::Mendeleev.rcov[_activeElement->z()] = arg1/_rcovUnit;
+  ++_nModifs;
   _activeElement->setRcov(arg1/_rcovUnit);
 }
 

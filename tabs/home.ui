@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>727</width>
+    <width>754</width>
     <height>127</height>
    </rect>
   </property>
@@ -62,50 +62,7 @@
       <property name="spacing">
        <number>2</number>
       </property>
-      <item row="0" column="0">
-       <widget class="QToolButton" name="saveAbinit">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Write abinit input file</string>
-        </property>
-        <property name="statusTip">
-         <string>Write abinit input file</string>
-        </property>
-        <property name="whatsThis">
-         <string>Write abinit input file</string>
-        </property>
-        <property name="text">
-         <string>Abinit</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
-        <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextBesideIcon</enum>
-        </property>
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
+      <item row="0" column="2">
        <widget class="QToolButton" name="dumpHist">
         <property name="font">
          <font>
@@ -122,113 +79,7 @@
          <string>Export trajectory to _HIST format</string>
         </property>
         <property name="text">
-         <string>HIST</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
-        <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextBesideIcon</enum>
-        </property>
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QToolButton" name="load">
-        <property name="toolTip">
-         <string>Open a script file</string>
-        </property>
-        <property name="statusTip">
-         <string>Open a script file</string>
-        </property>
-        <property name="whatsThis">
-         <string>Open a script file</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QToolButton" name="savePoscar">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Write VASP POSCAR</string>
-        </property>
-        <property name="statusTip">
-         <string>Write VASP POSCAR</string>
-        </property>
-        <property name="whatsThis">
-         <string>Write VASP POSCAR</string>
-        </property>
-        <property name="text">
-         <string>VASP</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/save-poscar.svg</normaloff>:/home/icons/save-poscar.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
-        <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextBesideIcon</enum>
-        </property>
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QToolButton" name="dumpXyz">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Export trajectory to XYZ format</string>
-        </property>
-        <property name="statusTip">
-         <string>Export trajectory to XYZ format</string>
-        </property>
-        <property name="whatsThis">
-         <string>Export trajectory to XYZ format</string>
-        </property>
-        <property name="text">
-         <string>XYZ</string>
+         <string notr="true">HIST</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -271,7 +122,7 @@
          <string>Write CIF file</string>
         </property>
         <property name="text">
-         <string>CIF</string>
+         <string notr="true">CIF</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -292,6 +143,242 @@
        </widget>
       </item>
       <item row="1" column="2">
+       <widget class="QToolButton" name="dumpXyz">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Export trajectory to XYZ format</string>
+        </property>
+        <property name="statusTip">
+         <string>Export trajectory to XYZ format</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export trajectory to XYZ format</string>
+        </property>
+        <property name="text">
+         <string notr="true">XYZ</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="saveAbinit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Write abinit input file</string>
+        </property>
+        <property name="statusTip">
+         <string>Write abinit input file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Write abinit input file</string>
+        </property>
+        <property name="text">
+         <string notr="true">Abinit</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QToolButton" name="open">
+        <property name="toolTip">
+         <string>Open a new file</string>
+        </property>
+        <property name="statusTip">
+         <string>Open a new file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Open a new file</string>
+        </property>
+        <property name="text">
+         <string notr="true">...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string notr="true">Ctrl+O</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="savePoscar">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Write VASP POSCAR</string>
+        </property>
+        <property name="statusTip">
+         <string>Write VASP POSCAR</string>
+        </property>
+        <property name="whatsThis">
+         <string>Write VASP POSCAR</string>
+        </property>
+        <property name="text">
+         <string notr="true">VASP</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/save-poscar.svg</normaloff>:/home/icons/save-poscar.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QToolButton" name="append">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Append a new file</string>
+        </property>
+        <property name="statusTip">
+         <string>Append a new file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Append a new file to the current visualization</string>
+        </property>
+        <property name="text">
+         <string notr="true">...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/folder-plus.svg</normaloff>:/home/icons/folder-plus.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string notr="true">Ctrl+Shift+A</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QToolButton" name="cloud">
+        <property name="toolTip">
+         <string>Get a file from a remote server</string>
+        </property>
+        <property name="statusTip">
+         <string>Get a file from a remote server</string>
+        </property>
+        <property name="whatsThis">
+         <string>Get a file from a remote server</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/download-cloud.svg</normaloff>:/home/icons/download-cloud.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true">Ctrl+Shift+O</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QToolButton" name="load">
+        <property name="toolTip">
+         <string>Open a script file</string>
+        </property>
+        <property name="statusTip">
+         <string>Open a script file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Open a script file</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/folder-script.svg</normaloff>:/home/icons/folder-script.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
        <widget class="QToolButton" name="update">
         <property name="toolTip">
          <string>Reload the current file</string>
@@ -303,7 +390,7 @@
          <string>Reload the current file</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string notr="true">...</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -856,7 +943,7 @@
             <string>Atom 2</string>
            </property>
            <property name="prefix">
-            <string>Atom </string>
+            <string notr="true">Atom </string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -881,7 +968,7 @@
             </size>
            </property>
            <property name="text">
-            <string>0</string>
+            <string notr="true">0</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -914,7 +1001,7 @@
             <string>Atom 1</string>
            </property>
            <property name="prefix">
-            <string>Atom </string>
+            <string notr="true">Atom </string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -1027,7 +1114,7 @@
             <string>Atom 1</string>
            </property>
            <property name="prefix">
-            <string>Atom </string>
+            <string notr="true">Atom </string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -1060,7 +1147,7 @@
             <string>Atom 2</string>
            </property>
            <property name="prefix">
-            <string>Atom </string>
+            <string notr="true">Atom </string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -1093,7 +1180,7 @@
             <string>Atom 3</string>
            </property>
            <property name="prefix">
-            <string>Atom </string>
+            <string notr="true">Atom </string>
            </property>
            <property name="minimum">
             <number>1</number>
@@ -1118,7 +1205,7 @@
             </size>
            </property>
            <property name="text">
-            <string>0°</string>
+            <string notr="true">0°</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -1208,6 +1295,87 @@
     </spacer>
    </item>
   </layout>
+  <action name="actionAbinit">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Abinit</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Abinit</string>
+   </property>
+   <property name="toolTip">
+    <string>Write abinit input file</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionHIST">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">HIST</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">HIST</string>
+   </property>
+   <property name="toolTip">
+    <string>Export trajectory to _HIST format</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open a new file</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAppend">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/folder-plus.svg</normaloff>:/home/icons/folder-plus.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Append</string>
+   </property>
+   <property name="toolTip">
+    <string>Append a new file to the current one</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionCloud">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/home/icons/download-cloud.svg</normaloff>:/home/icons/download-cloud.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cloud</string>
+   </property>
+   <property name="toolTip">
+    <string>Import from cluster</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+O</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>

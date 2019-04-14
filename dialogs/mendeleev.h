@@ -19,6 +19,7 @@ public:
   ~Mendeleev();
   QStringList modifications() const;
   void build();
+  int result() const;
 
 public slots:
   void editElement(atomicData* elt);
@@ -47,6 +48,7 @@ private:
   UnitConverter _radiusUnit;
   UnitConverter _rcovUnit;
   QStringList _modifications;
+  int _nModifs;
 };
 
 #endif // MENDELEEV_H

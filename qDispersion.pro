@@ -11,6 +11,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 TARGET = qDispersion
 TEMPLATE = app
 CONFIG += c++11
+isEmpty(PREFIX) {
+ PREFIX = /usr/
+}
+isEmpty(PREFIX_AGATE) {
+ PREFIX_AGATE = /usr/
+}
+isEmpty(PREFIX_SPGLIB) {
+ PREFIX_SPGLIB = /usr/
+}
+target.path = $$PREFIX/bin
+INSTALLS += target
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -26,8 +37,8 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-        qdispersion/main.cpp \
-        qdispersion/qdispersion.cpp \
+    qdispersion/main.cpp \
+    qdispersion/qdispersion.cpp \
     tools/energyunitcombo.cpp \
     tools/unitcombo.cpp \
     dialogs/mendeleev.cpp \
@@ -36,7 +47,7 @@ SOURCES += \
     tools/qplot.cpp
 
 HEADERS += \
-        qdispersion/qdispersion.h \
+    qdispersion/qdispersion.h \
     tools/energyunitcombo.h \
     tools/unitcombo.h \
     dialogs/mendeleev.h \
@@ -45,10 +56,18 @@ HEADERS += \
     tools/qplot.h
 
 FORMS += \
-        qdispersion/qdispersion.ui \
+    qdispersion/qdispersion.ui \
     dialogs/mendeleev.ui \
     tools/atomicdata.ui
 
-INCLUDEPATH += /usr/include/agate
+TRANSLATIONS += \
+    qdispersion/qdispersion_fr.ts \
+    qdispersion/qdispersion_it.ts \
+    qdispersion/qdispersion_de.ts
 
-unix|win32: LIBS += -lagate -lsymspg
+INCLUDEPATH += $$PREFIX_AGATE/include/agate
+
+RESOURCES += \
+    qdispersion/translations.qrc
+
+unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg

@@ -13,8 +13,6 @@
         <file>../icons/fast-forward.svg</file>
         <file>../icons/rewind.svg</file>
         <file>../icons/rotate-cw.svg</file>
-        <file>../icons/file.svg</file>
-        <file>../icons/file-plus.svg</file>
     </qresource>
     <qresource prefix="/logger">
         <file>../icons/alert-triangle.svg</file>
@@ -57,8 +55,11 @@
     </qresource>
     <qresource prefix="/home">
         <file>../icons/save-abinit.svg</file>
+        <file>../icons/download-cloud.svg</file>
         <file>../icons/save-poscar.svg</file>
         <file>../icons/folder.svg</file>
+        <file>../icons/folder-plus.svg</file>
+        <file>../icons/folder-script.svg</file>
         <file>../icons/save.svg</file>
         <file>../icons/refresh-cw.svg</file>
         <file>../icons/upload.svg</file>
@@ -100,10 +101,11 @@
     <qresource prefix="/tools">
         <file>../icons/tools.svg</file>
         <file>../qconducti/logo.svg</file>
+        <file>../qdispersion/logo.svg</file>
     </qresource>
     <qresource prefix="/translations">
-        <file>../qagate/qagate_de.qm</file>
-        <file>../qagate/qagate_it.qm</file>
-        <file>../qagate/qagate_fr.qm</file>
+        <file>qagate_de.qm</file>
+        <file>qagate_it.qm</file>
+        <file>qagate_fr.qm</file>
     </qresource>
 </RCC>

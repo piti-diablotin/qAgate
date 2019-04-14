@@ -15,9 +15,44 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
+    <widget class="QToolButton" name="dispersion">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>qDispersion</string>
+     </property>
+     <property name="statusTip">
+      <string>qDispersion</string>
+     </property>
+     <property name="whatsThis">
+      <string>qDispersion</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../qagate/qagate.qrc">
+       <normaloff>:/tools/qdispersion/logo.svg</normaloff>:/tools/qdispersion/logo.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QToolButton" name="conducti">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>

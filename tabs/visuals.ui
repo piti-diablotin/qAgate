@@ -105,11 +105,14 @@
             <string>Add translation along x</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -128,11 +131,14 @@
             <string>Remove translation along y</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -151,11 +157,14 @@
             <string>Add translation along y</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -181,11 +190,14 @@
             <string>Add translation along z</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -204,11 +216,14 @@
             <string>Remove translation along x</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -227,11 +242,14 @@
             <string>Remove translation along z</string>
            </property>
            <property name="text">
-            <string>...</string>
+            <string notr="true">...</string>
            </property>
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -338,6 +356,9 @@
              <height>17</height>
             </size>
            </property>
+           <property name="shortcut">
+            <string notr="true"/>
+           </property>
            <property name="autoRaise">
             <bool>true</bool>
            </property>
@@ -362,6 +383,9 @@
              <width>17</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="shortcut">
+            <string notr="true"/>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -388,6 +412,9 @@
              <height>17</height>
             </size>
            </property>
+           <property name="shortcut">
+            <string notr="true"/>
+           </property>
            <property name="autoRaise">
             <bool>true</bool>
            </property>
@@ -401,7 +428,10 @@
             </font>
            </property>
            <property name="suffix">
-            <string>°</string>
+            <string notr="true">°</string>
+           </property>
+           <property name="prefix">
+            <string notr="true"/>
            </property>
            <property name="minimum">
             <number>-180</number>
@@ -419,7 +449,10 @@
             </font>
            </property>
            <property name="suffix">
-            <string>°</string>
+            <string notr="true">°</string>
+           </property>
+           <property name="prefix">
+            <string notr="true"/>
            </property>
            <property name="minimum">
             <number>-180</number>
@@ -437,7 +470,10 @@
             </font>
            </property>
            <property name="suffix">
-            <string>°</string>
+            <string notr="true">°</string>
+           </property>
+           <property name="prefix">
+            <string notr="true"/>
            </property>
            <property name="minimum">
             <number>-90</number>
@@ -504,7 +540,7 @@
          <string>Show/Hide axis</string>
         </property>
         <property name="text">
-         <string/>
+         <string notr="true"/>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -515,6 +551,9 @@
           <width>17</width>
           <height>17</height>
          </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -539,7 +578,7 @@
          <string>Toggle time step</string>
         </property>
         <property name="text">
-         <string/>
+         <string notr="true"/>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -550,6 +589,9 @@
           <width>17</width>
           <height>17</height>
          </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -580,7 +622,7 @@
          <string>Toggle angles</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string notr="true">...</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
@@ -593,7 +635,7 @@
          </size>
         </property>
         <property name="shortcut">
-         <string>A</string>
+         <string notr="true">A</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -1134,37 +1176,37 @@
            </item>
            <item>
             <property name="text">
-             <string>x</string>
+             <string notr="true">x</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>y</string>
+             <string notr="true">y</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>z</string>
+             <string notr="true">z</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>xy</string>
+             <string notr="true">xy</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>xz</string>
+             <string notr="true">xz</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>yz</string>
+             <string notr="true">yz</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>xyz</string>
+             <string notr="true">xyz</string>
             </property>
            </item>
           </widget>
@@ -1222,7 +1264,7 @@
     <string>Show/Hide angles</string>
    </property>
    <property name="shortcut">
-    <string>A</string>
+    <string notr="true">A</string>
    </property>
   </action>
   <action name="actionTime">
@@ -1246,7 +1288,7 @@
     <string>Show/Hide time info</string>
    </property>
    <property name="shortcut">
-    <string>T</string>
+    <string notr="true">T</string>
    </property>
   </action>
   <action name="action_px">
@@ -1255,13 +1297,16 @@
      <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
    </property>
    <property name="text">
-    <string>+x</string>
+    <string notr="true">+x</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">+x</string>
    </property>
    <property name="toolTip">
     <string>Add translation along x</string>
    </property>
    <property name="shortcut">
-    <string>+, X</string>
+    <string notr="true">+, X</string>
    </property>
   </action>
   <action name="action_py">
@@ -1270,13 +1315,16 @@
      <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
    </property>
    <property name="text">
-    <string>+y</string>
+    <string notr="true">+y</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">+y</string>
    </property>
    <property name="toolTip">
     <string>Add translation along y</string>
    </property>
    <property name="shortcut">
-    <string>+, Y</string>
+    <string notr="true">+, Y</string>
    </property>
   </action>
   <action name="action_pz">
@@ -1285,13 +1333,16 @@
      <normaloff>:/visuals/icons/plus-square.svg</normaloff>:/visuals/icons/plus-square.svg</iconset>
    </property>
    <property name="text">
-    <string>+z</string>
+    <string notr="true">+z</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">+z</string>
    </property>
    <property name="toolTip">
     <string>Add translation along z</string>
    </property>
    <property name="shortcut">
-    <string>+, Z</string>
+    <string notr="true">+, Z</string>
    </property>
   </action>
   <action name="action_mz">
@@ -1300,13 +1351,16 @@
      <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
    </property>
    <property name="text">
-    <string>-z</string>
+    <string notr="true">-z</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">-z</string>
    </property>
    <property name="toolTip">
     <string>Remove translation along z</string>
    </property>
    <property name="shortcut">
-    <string>-, Z</string>
+    <string notr="true">-, Z</string>
    </property>
   </action>
   <action name="action_my">
@@ -1315,13 +1369,16 @@
      <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
    </property>
    <property name="text">
-    <string>-y</string>
+    <string notr="true">-y</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">-y</string>
    </property>
    <property name="toolTip">
     <string>Remove translation along y</string>
    </property>
    <property name="shortcut">
-    <string>-, Y</string>
+    <string notr="true">-, Y</string>
    </property>
   </action>
   <action name="action_mx">
@@ -1330,46 +1387,58 @@
      <normaloff>:/visuals/icons/minus-square.svg</normaloff>:/visuals/icons/minus-square.svg</iconset>
    </property>
    <property name="text">
-    <string>-x</string>
+    <string notr="true">-x</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">-x</string>
    </property>
    <property name="toolTip">
     <string>Remove translation along x</string>
    </property>
    <property name="shortcut">
-    <string>-, X</string>
+    <string notr="true">-, X</string>
    </property>
   </action>
   <action name="actionX">
    <property name="text">
-    <string>x</string>
+    <string notr="true">x</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">x</string>
    </property>
    <property name="toolTip">
     <string>Set view along x</string>
    </property>
    <property name="shortcut">
-    <string>X</string>
+    <string notr="true">X</string>
    </property>
   </action>
   <action name="actionY">
    <property name="text">
-    <string>y</string>
+    <string notr="true">y</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">y</string>
    </property>
    <property name="toolTip">
     <string>Set view along y</string>
    </property>
    <property name="shortcut">
-    <string>Y</string>
+    <string notr="true">Y</string>
    </property>
   </action>
   <action name="actionZ">
    <property name="text">
-    <string>z</string>
+    <string notr="true">z</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">z</string>
    </property>
    <property name="toolTip">
     <string>Set view along z</string>
    </property>
    <property name="shortcut">
-    <string>Z</string>
+    <string notr="true">Z</string>
    </property>
   </action>
  </widget>

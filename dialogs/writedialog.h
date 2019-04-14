@@ -25,6 +25,12 @@ private slots:
 
   void on_buttonBox_rejected();
 
+  void on_current_toggled(bool checked);
+
+  void on_primitive_toggled(bool checked);
+
+  void on_standard_toggled(bool checked);
+
 private:
   Ui::WriteDialog *ui;
   QString _lastDirectory;

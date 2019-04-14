@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string notr="true"/>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="leftMargin">
@@ -92,10 +92,10 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
 }</string>
         </property>
         <property name="text">
-         <string/>
+         <string notr="true"/>
         </property>
         <property name="shortcut">
-         <string>Ctrl+Shift+L</string>
+         <string notr="true">Ctrl+Shift+L</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -169,7 +169,7 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
           <normaloff>:/logger/icons/trash.svg</normaloff>:/logger/icons/trash.svg</iconset>
         </property>
         <property name="shortcut">
-         <string>Ctrl+Alt+C</string>
+         <string notr="true">Ctrl+Alt+C</string>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -195,7 +195,7 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
           <normaloff>:/logger/icons/copy.svg</normaloff>:/logger/icons/copy.svg</iconset>
         </property>
         <property name="shortcut">
-         <string>Ctrl+Shift+C</string>
+         <string notr="true">Ctrl+Shift+C</string>
         </property>
         <property name="autoRaise">
          <bool>true</bool>

@@ -11,6 +11,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 TARGET = qConducti
 TEMPLATE = app
 CONFIG += c++11
+isEmpty(PREFIX) {
+ PREFIX = /usr/
+}
+isEmpty(PREFIX_AGATE) {
+ PREFIX_AGATE = /usr/
+}
+isEmpty(PREFIX_SPGLIB) {
+ PREFIX_SPGLIB = /usr/
+}
+target.path = $$PREFIX/bin
+INSTALLS += target
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -46,9 +57,9 @@ TRANSLATIONS += \
         qconducti/qconducti_it.ts \
         qconducti/qconducti_de.ts
 
-INCLUDEPATH += /usr/include/agate
+INCLUDEPATH += $$PREFIX_AGATE/include/agate
 
 RESOURCES += \
     qconducti/translations.qrc
 
-unix|win32: LIBS += -lagate -lsymspg
+unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg

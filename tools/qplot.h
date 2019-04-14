@@ -11,6 +11,7 @@ class QPlot : public QCustomPlot, public Graph {
 
   private :
     QCPTextElement *_titleElement;
+    QVector<QCPItemLine*> _arrowsItems;
 
   protected :
     //static const QColor qcolor[] = {{ Qt::black, Qt::red, Qt::green, Qt::blue, Qt::magenta, Qt::cyan, Qt::darkRed, Qt::darkGreen, Qt::darkYellow }};

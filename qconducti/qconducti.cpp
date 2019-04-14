@@ -26,14 +26,6 @@ QConducti::QConducti(QWidget *parent) :
   _units[sigmaUnit] = UnitConverter::au;
   QConducti::setGraphs();
   QConducti::plot();
-  _oldStreambuf[0] = std::cout.rdbuf();
-  _oldStreambuf[1] = std::clog.rdbuf();
-  _oldStreambuf[2] = std::cerr.rdbuf();
-  std::clog.rdbuf(&_sstream);
-  _sstream.setObjectName("sstream");
-  connect(&_sstream,SIGNAL(overflowed()),this,SLOT(sstream_overflowed()));
-  connect(&_sstream,SIGNAL(synchronized()),this,SLOT(sstream_synchronized()));
-  connect(&_sstream,SIGNAL(xsputned()),this,SLOT(sstream_xsputned()));
   connect(ui->sigma,SIGNAL(mouseMove(QMouseEvent*)),this,SLOT(coordSigmaStatusBar(QMouseEvent*)));
   connect(ui->histogram,SIGNAL(mouseMove(QMouseEvent*)),this,SLOT(coordHistogramStatusBar(QMouseEvent*)));
   ui->buttonBox->button(QDialogButtonBox::Save)->setText(tr("&Save"));
@@ -44,9 +36,6 @@ QConducti::QConducti(QWidget *parent) :
 
 QConducti::~QConducti()
 {
-  std::cout.rdbuf(_oldStreambuf[0]);
-  std::clog.rdbuf(_oldStreambuf[1]);
-  std::cerr.rdbuf(_oldStreambuf[2]);
   delete ui;
 }
 
@@ -70,6 +59,7 @@ void QConducti::dropEvent(QDropEvent *dropEvent)
 
 void QConducti::openFile(const QString &fileName)
 {
+  this->setCursor(Qt::WaitCursor);
   try {
     ui->statusBar->showMessage(tr("Loading file ")+fileName);
     ui->leftFrame->setDisabled(true);
@@ -105,6 +95,7 @@ void QConducti::openFile(const QString &fileName)
   catch ( Exception &e ) {
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
   }
+  this->setCursor(Qt::ArrowCursor);
 }
 
 void QConducti::on_selectionBox_stateChanged(int arg1)
@@ -148,7 +139,7 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
   QDialogButtonBox::StandardButton b = ui->buttonBox->standardButton(button);
   if ( b == QDialogButtonBox::Save )
     {
-      QString filename = QFileDialog::getSaveFileName(this,tr("Base name"));
+      QString filename = QFileDialog::getSaveFileName(this,tr("Base name"),"","",nullptr,QFileDialog::DontUseNativeDialog);
       _config[4].save = Graph::DATA;
       _config[5].save = Graph::DATA;
       _config[4].filename = filename.toStdString()+"_sigma";
@@ -162,7 +153,7 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
     }
   else if ( b == QDialogButtonBox::Open )
     {
-      QString filename = QFileDialog::getOpenFileName(this,tr("Optic file"));
+      QString filename = QFileDialog::getOpenFileName(this,tr("Optic file"),"","",nullptr,QFileDialog::DontUseNativeDialog);
       if ( !filename.isEmpty() )
         this->openFile(filename);
     }
@@ -190,9 +181,11 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
           _config[3].x.clear();
           _config[3].labels.clear();
         }
+      this->setCursor(Qt::WaitCursor);
       QConducti::computeAll();
       QConducti::setGraphs();
       QConducti::plot();
+      this->setCursor(Qt::ArrowCursor);
     }
   else if ( b == QDialogButtonBox::Close )
     this->close();
@@ -340,7 +333,16 @@ void QConducti::computeAll()
   _conducti.setSmearing(ui->smearing->value()/_units[smearingUnit]);
   _conducti.setOmegaRange(ui->omin->value()/_units[omegaUnit],ui->omax->value()/_units[omegaUnit]);
   _conducti.setUnits(_units[energyUnit].str(),_units[sigmaUnit].str());
+
+  _oldStreambuf[1] = std::clog.rdbuf();
+  std::clog.rdbuf(&_sstream);
+  connect(&_sstream,SIGNAL(overflowed()),this,SLOT(sstream_overflowed()));
+  connect(&_sstream,SIGNAL(synchronized()),this,SLOT(sstream_synchronized()));
+  connect(&_sstream,SIGNAL(xsputned()),this,SLOT(sstream_xsputned()));
   _conducti.traceTensor(_abiopt);
+  disconnect(&_sstream);
+  std::clog.rdbuf(_oldStreambuf[1]);
+
   _conducti.getResultSigma(_config[0],ui->spinBox->isChecked());
   _conducti.getResultHistogram(_config[1]);
   for ( auto it = _config[0].y.begin(); it != _config[0].y.end(); ++it )

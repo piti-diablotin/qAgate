@@ -36,6 +36,9 @@ private:
   QOstreamCatcher _clog;
   QOstreamCatcher _cerr;
   std::streambuf * _oldStreambuf[3];
+  int _synchro[3];
+
+  void finishSynchro(const QString &text);
 
  signals:
   void debugMode(bool debug);

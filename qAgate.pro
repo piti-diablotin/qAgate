@@ -18,6 +18,9 @@ isEmpty(PREFIX) {
 isEmpty(PREFIX_AGATE) {
  PREFIX_AGATE = /usr/
 }
+isEmpty(PREFIX_SPGLIB) {
+ PREFIX_SPGLIB = /usr/
+}
 isEmpty(PREFIX_FREETYPE) {
  PREFIX_FREETYPE = /usr/
 }
@@ -71,7 +74,9 @@ SOURCES += \
     tools/energyunitcombo.cpp \
     dialogs/smearingdialog.cpp \
     qconducti/qconducti.cpp \
-    tabs/tools.cpp
+    qdispersion/qdispersion.cpp \
+    tabs/tools.cpp \
+    dialogs/remotedialog.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -106,7 +111,9 @@ HEADERS += \
     tools/energyunitcombo.h \
     dialogs/smearingdialog.h \
     qconducti/qconducti.h \
-    tabs/tools.h
+    qdispersion/qdispersion.h \
+    tabs/tools.h \
+    dialogs/remotedialog.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -134,17 +141,20 @@ FORMS += \
     dialogs/pdfdialog.ui \
     dialogs/smearingdialog.ui \
     qconducti/qconducti.ui \
-    tabs/tools.ui
+    qdispersion/qdispersion.ui \
+    tabs/tools.ui \
+    dialogs/remotedialog.ui
 
 RESOURCES += \
-    qagate/qagate.qrc
+    qagate/qagate.qrc \
+    qdispersion/translations.qrc
 
 TRANSLATIONS += \
   qagate/qagate_fr.ts \
   qagate/qagate_it.ts \
   qagate/qagate_de.ts
 
-LIBS += -L$$PREFIX_AGATE/ -lagate -lsymspg
+LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg
 
 INCLUDEPATH += \
     $$PREFIX_AGATE/include/agate\
