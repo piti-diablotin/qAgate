@@ -673,7 +673,7 @@
                  <string notr="true"/>
                 </property>
                 <property name="icon">
-                 <iconset resource="translations.qrc">
+                 <iconset>
                   <normaloff>:/icons/mendeleev.svg</normaloff>:/icons/mendeleev.svg</iconset>
                 </property>
                 <property name="iconSize">
