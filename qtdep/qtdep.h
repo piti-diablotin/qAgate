@@ -15,6 +15,9 @@ public:
     explicit qTdep(QWidget *parent = 0);
     ~qTdep();
 
+private slots:
+  void updateFilename(const QString &filename);
+
 private:
     Ui::qTdep *ui;
 };

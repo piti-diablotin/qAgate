@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>939</width>
-    <height>573</height>
+    <width>794</width>
+    <height>548</height>
    </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
   </property>
   <property name="windowTitle">
    <string>qTdep</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QSplitter" name="splitter">
@@ -40,15 +46,15 @@
         <item>
          <widget class="QToolBox" name="toolBox">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
-          <widget class="QWidget" name="page">
+          <widget class="qTdepSupercell" name="supercell">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>441</width>
-             <height>352</height>
+             <width>325</width>
+             <height>327</height>
             </rect>
            </property>
            <attribute name="label">
@@ -56,11 +62,27 @@
            </attribute>
           </widget>
           <widget class="qTdepUnitcell" name="unitcell">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>325</width>
+             <height>327</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>Unit cell</string>
            </attribute>
           </widget>
           <widget class="QWidget" name="page_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>325</width>
+             <height>327</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>Options</string>
            </attribute>
@@ -112,6 +134,12 @@
    <class>qTdepUnitcell</class>
    <extends>QWidget</extends>
    <header>qtdep/qtdepunitcell.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>qTdepSupercell</class>
+   <extends>QWidget</extends>
+   <header>qtdep/qtdepsupercell.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

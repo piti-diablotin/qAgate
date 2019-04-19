@@ -46,7 +46,11 @@ SOURCES += \
     tools/qcustomplot.cpp \
     tools/qplot.cpp \
     tools/unitcombo.cpp \
-    qtdep/qtdepunitcell.cpp
+    qtdep/qtdepunitcell.cpp \
+    tools/typatitemdelegate.cpp \
+    tools/doubleitemdelegate.cpp \
+    qtdep/qtdepsupercell.cpp \
+    qtdep/qtdepoptions.cpp
 
 HEADERS += \
         qtdep/qtdep.h \
@@ -57,13 +61,19 @@ HEADERS += \
     tools/qcustomplot.h \
     tools/qplot.h \
     tools/unitcombo.h \
-    qtdep/qtdepunitcell.h
+    qtdep/qtdepunitcell.h \
+    tools/typatitemdelegate.h \
+    tools/doubleitemdelegate.h \
+    qtdep/qtdepsupercell.h \
+    qtdep/qtdepoptions.h
 
 FORMS += \
         qtdep/qtdep.ui \
     dialogs/mendeleev.ui \
     tools/atomicdata.ui \
-    qtdep/qtdepunitcell.ui
+    qtdep/qtdepunitcell.ui \
+    qtdep/qtdepsupercell.ui \
+    qtdep/qtdepoptions.ui
 TRANSLATIONS += \
         qtdep/qtdep_fr.ts \
         qtdep/qtdep_it.ts \
