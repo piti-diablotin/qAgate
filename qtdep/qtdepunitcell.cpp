@@ -108,12 +108,21 @@ void qTdepUnitcell::dtsetToView(const Dtset &dtset)
       list << Type << x << y << z;
       _atomModel.appendRow(list);
     }
-  _atomModel.setHeaderData(0,Qt::Horizontal,tr("Type"));
+  _atomModel.setHeaderData(0,Qt::Horizontal,tr(" Type "));
   _atomModel.setHeaderData(1,Qt::Horizontal,tr("x (red.)"));
   _atomModel.setHeaderData(2,Qt::Horizontal,tr("y (red.)"));
   _atomModel.setHeaderData(3,Qt::Horizontal,tr("z (red.)"));
   _typatDelegate.setTypat(dtset.znucl());
   ui->tableView->resizeColumnToContents(0);
+  ui->tableView->resizeColumnToContents(1);
+  ui->tableView->resizeColumnToContents(2);
+  int c1 = ui->tableView->columnWidth(1);
+  int c2 = ui->tableView->columnWidth(2);
+  int c3 = ui->tableView->columnWidth(3);
+  c3 = (c1+c2+c3)/3;
+  ui->tableView->setColumnWidth(1,c3);
+  ui->tableView->setColumnWidth(2,c3);
+  ui->tableView->setColumnWidth(3,c3);
   auto acell = dtset.acell();
   ui->acellA->setText(QString::number(acell[0],'g',15));
   ui->acellB->setText(QString::number(acell[1],'g',15));
@@ -135,7 +144,7 @@ Dtset qTdepUnitcell::viewToDtset()
 {
   int natom = _atomModel.rowCount();
   if (natom == 0) throw EXCEPTION(tr("Unit cell seems to be empty").toStdString(), ERRDIV);
-  QComboBox *cb = qobject_cast<QComboBox *>(_typatDelegate.createEditor(this,QStyleOptionViewItem(),QModelIndex()));
+  QComboBox *cb = qobject_cast<QComboBox *>(_typatDelegate.createEditor(nullptr,QStyleOptionViewItem(),QModelIndex()));
   int ntypat = cb->count();
   QVector<int> znucl(ntypat);
   for (int t = 0; t < ntypat; ++t)
@@ -153,6 +162,7 @@ Dtset qTdepUnitcell::viewToDtset()
       xred[iatom*3+1] = _atomModel.item(iatom,2)->data(Qt::EditRole).toString();
       xred[iatom*3+2] = _atomModel.item(iatom,3)->data(Qt::EditRole).toString();
     }
+  delete cb;
   QString dtsetStr;
   dtsetStr = " natom "+QString::number(natom);
   dtsetStr += " ntypat "+QString::number(ntypat);

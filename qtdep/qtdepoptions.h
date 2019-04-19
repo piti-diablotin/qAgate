@@ -15,6 +15,11 @@ public:
   explicit qTdepOptions(QWidget *parent = 0);
   ~qTdepOptions();
 
+private slots:
+    void setRcut(double rcut);
+
+    void on_order_currentIndexChanged(int index);
+
 private:
   Ui::qTdepOptions *ui;
 };

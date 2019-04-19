@@ -157,7 +157,7 @@ void QConducti::on_buttonBox_clicked(QAbstractButton *button)
       if ( !filename.isEmpty() )
         this->openFile(filename);
     }
-  else if  (b ==QDialogButtonBox::Apply )
+  else if  (b == QDialogButtonBox::Apply )
     {
       if ( !ui->holdSigma->isChecked() )
         {

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>473</width>
+    <width>400</width>
     <height>480</height>
    </rect>
   </property>
@@ -76,7 +76,7 @@
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>0</width>
            <height>20</height>
           </size>
          </property>
@@ -86,6 +86,9 @@
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="rcut3Label">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="text">
         <string>radius cutoff for order 3</string>
        </property>
@@ -94,10 +97,18 @@
      <item row="2" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QLineEdit" name="rcut3"/>
+        <widget class="QLineEdit" name="rcut3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="DistanceUnitCombo" name="rcut3Unit"/>
+        <widget class="DistanceUnitCombo" name="rcut3Unit">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
        <item>
         <spacer name="horizontalSpacer_3">
@@ -106,7 +117,7 @@
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>0</width>
            <height>20</height>
           </size>
          </property>
@@ -124,7 +135,11 @@
      <item row="3" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLineEdit" name="dosdeltae"/>
+        <widget class="QLineEdit" name="dosdeltae">
+         <property name="text">
+          <string>4.5e-6</string>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="EnergyUnitCombo" name="dosdeltaeUnit"/>
@@ -136,7 +151,7 @@
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>0</width>
            <height>20</height>
           </size>
          </property>
@@ -167,6 +182,9 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="text">
+          <string>2 2 2</string>
+         </property>
         </widget>
        </item>
        <item>
@@ -176,7 +194,7 @@
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>0</width>
            <height>20</height>
           </size>
          </property>

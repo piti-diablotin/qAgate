@@ -5,6 +5,7 @@
 #include "base/utils.hpp"
 #include "io/dtset.hpp"
 #include <QDebug>
+#include "base/geometry.hpp"
 
 qTdepSupercell::qTdepSupercell(QWidget *parent) :
   QWidget(parent),
@@ -47,7 +48,6 @@ void qTdepSupercell::openFile(const QString &filename)
     if (_supercell==nullptr) throw EXCEPTION(tr("Unable to have an MD trajectory").toStdString(),ERRDIV);
     this->histToView();
     size_t pos = _supercell->filename().find_last_of("/\\");
-    qDebug() << pos;
     emit(openedFile(QString::fromStdString(_supercell->filename().substr(pos+1))));
   }
   catch(Exception &e)
@@ -69,6 +69,7 @@ void qTdepSupercell::histToView()
   first.standardizeCell(true,0.01);
   this->updateMultiplicity(first);
   emit(supercellChanged(first));
+  emit(rcutHint(geometry::getWignerSeitzRadius(first.rprim())));
 }
 
 void qTdepSupercell::updateTemperature()

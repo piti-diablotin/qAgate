@@ -32,6 +32,7 @@ private slots:
 signals:
   void openedFile(const QString &);
   void supercellChanged(const Dtset& unitcell);
+  void rcutHint(double rcut);
 
 private:
   Ui::qTdepSupercell *ui;

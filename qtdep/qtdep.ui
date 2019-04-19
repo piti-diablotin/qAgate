@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>794</width>
-    <height>548</height>
+    <width>1000</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -21,101 +21,117 @@
     <bool>false</bool>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
-     <widget class="QSplitter" name="splitter">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
-      <widget class="QWidget" name="widget" native="true">
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QLabel" name="filename">
-          <property name="font">
-           <font>
-            <pointsize>16</pointsize>
-           </font>
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="filename">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>No file loaded</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolBox" name="toolBox">
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="qTdepSupercell" name="supercell">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>382</width>
+            <height>421</height>
+           </rect>
           </property>
-          <property name="text">
-           <string>No file loaded</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
+          <attribute name="label">
+           <string>Supercell</string>
+          </attribute>
          </widget>
-        </item>
-        <item>
-         <widget class="QToolBox" name="toolBox">
-          <property name="currentIndex">
-           <number>0</number>
+         <widget class="qTdepUnitcell" name="unitcell">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>382</width>
+            <height>421</height>
+           </rect>
           </property>
-          <widget class="qTdepSupercell" name="supercell">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>325</width>
-             <height>327</height>
-            </rect>
-           </property>
-           <attribute name="label">
-            <string>Supercell</string>
-           </attribute>
-          </widget>
-          <widget class="qTdepUnitcell" name="unitcell">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>325</width>
-             <height>327</height>
-            </rect>
-           </property>
-           <attribute name="label">
-            <string>Unit cell</string>
-           </attribute>
-          </widget>
-          <widget class="QWidget" name="page_2">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>325</width>
-             <height>327</height>
-            </rect>
-           </property>
-           <attribute name="label">
-            <string>Options</string>
-           </attribute>
-          </widget>
+          <attribute name="label">
+           <string>Unit cell</string>
+          </attribute>
          </widget>
-        </item>
-        <item>
-         <widget class="QWidget" name="header" native="true">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+         <widget class="qTdepOptions" name="options">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>382</width>
+            <height>421</height>
+           </rect>
           </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+          <attribute name="label">
+           <string>Options</string>
+          </attribute>
          </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="widget_2" native="true">
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QPlot" name="widget_3" native="true"/>
-        </item>
-        <item>
-         <widget class="QDialogButtonBox" name="buttonBox">
-          <property name="standardButtons">
-           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPlot" name="widget_3" native="true"/>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox">
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Apply|QDialogButtonBox::Close|QDialogButtonBox::Open|QDialogButtonBox::Save</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
    </layout>
@@ -140,6 +156,12 @@
    <class>qTdepSupercell</class>
    <extends>QWidget</extends>
    <header>qtdep/qtdepsupercell.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>qTdepOptions</class>
+   <extends>QWidget</extends>
+   <header>qtdep/qtdepoptions.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

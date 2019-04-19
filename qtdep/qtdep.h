@@ -2,6 +2,7 @@
 #define QTDEP_H
 
 #include <QMainWindow>
+#include <QAbstractButton>
 
 namespace Ui {
 class qTdep;
@@ -18,8 +19,11 @@ public:
 private slots:
   void updateFilename(const QString &filename);
 
+  void on_buttonBox_clicked(QAbstractButton *button);
+
 private:
     Ui::qTdep *ui;
+    QString _currentDirectory;
 };
 
 #endif // QTDEP_H
