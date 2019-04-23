@@ -2,8 +2,10 @@
 #include "base/exception.hpp"
 #include "base/mendeleev.hpp"
 #include <QApplication>
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
-#include <QSurface>
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+#include <QSurfaceFormat>
+#else
+#include <QGLFormat>
 #endif
 #include <clocale>
 
@@ -12,7 +14,7 @@ Agate::mendeleev Agate::Mendeleev;
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
   QSurfaceFormat glf = QSurfaceFormat::defaultFormat();
   glf.setSamples(8);
   QSurfaceFormat::setDefaultFormat(glf);
