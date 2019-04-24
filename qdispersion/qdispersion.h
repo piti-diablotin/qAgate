@@ -28,7 +28,9 @@ public:
   void plot();
 
 private slots:
+
   void coordStatusBar(QMouseEvent *event);
+
   void on_nsegments_valueChanged(int arg1);
 
   void on_fermi_editingFinished();

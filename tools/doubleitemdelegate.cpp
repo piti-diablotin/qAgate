@@ -15,6 +15,7 @@ DoubleItemDelegate::~DoubleItemDelegate()
 
 QWidget *DoubleItemDelegate::createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
+  (void) option;
   QLineEdit *line = new QLineEdit(parent);
   QString text = index.data(Qt::EditRole).toString();
   line->setText(text);

@@ -79,17 +79,23 @@ void qTdepUnitcell::dropEvent(QDropEvent *dropEvent)
 
 void qTdepUnitcell::openFile(const QString &filename)
 {
-  Dtset dtset;
   try
   {
-    dtset.readFromFile(filename.toStdString());
+    this->setCursor(Qt::WaitCursor);
+    emit(showMessage(tr("Loading file ")+filename));
+    HistData *hist = HistData::getHist(filename.toStdString(),true);
+    Dtset dtset(*hist,0);
+    delete hist;
     this->dtsetToView(dtset);
     emit(unitcellChanged(dtset));
+    emit(showMessage(filename+tr(" opened")));
   }
   catch(Exception &e)
   {
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+    emit(showMessage(tr("Error")));
   }
+  this->setCursor(Qt::ArrowCursor);
 }
 
 void qTdepUnitcell::dtsetToView(const Dtset &dtset)
@@ -216,6 +222,11 @@ Dtset qTdepUnitcell::viewToDtset()
   Dtset test;
   test.readConfig(parser);
   return test;
+}
+
+void qTdepUnitcell::setTdep(Tdep &tdep)
+{
+  tdep.unitcell(this->viewToDtset());
 }
 
 void qTdepUnitcell::updateSpg()

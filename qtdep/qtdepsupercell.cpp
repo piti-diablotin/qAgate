@@ -44,16 +44,21 @@ void qTdepSupercell::openFile(const QString &filename)
 {
   try
   {
+    this->setCursor(Qt::WaitCursor);
+    emit(showMessage(tr("Loading file ")+filename));
     _supercell = dynamic_cast<HistDataMD*>(HistData::getHist(filename.toStdString(),true));
     if (_supercell==nullptr) throw EXCEPTION(tr("Unable to have an MD trajectory").toStdString(),ERRDIV);
     this->histToView();
     size_t pos = _supercell->filename().find_last_of("/\\");
     emit(openedFile(QString::fromStdString(_supercell->filename().substr(pos+1))));
+    emit(showMessage(filename+tr(" opened")));
   }
   catch(Exception &e)
   {
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+    emit(showMessage(tr("Error")));
   }
+  this->setCursor(Qt::ArrowCursor);
 }
 
 void qTdepSupercell::histToView()
@@ -69,7 +74,16 @@ void qTdepSupercell::histToView()
   first.standardizeCell(true,0.01);
   this->updateMultiplicity(first);
   emit(supercellChanged(first));
-  emit(rcutHint(geometry::getWignerSeitzRadius(first.rprim())));
+  emit(rcutHint(geometry::getWignerSeitzRadius(_supercell->getRprimd(0))));
+}
+
+void qTdepSupercell::setTdep(Tdep &tdep)
+{
+  tdep.supercell(_supercell);
+  tdep.tbegin(ui->tbegin->value());
+  tdep.tend(ui->tend->value());
+  tdep.step(ui->step->value());
+  tdep.temperature(ui->temperature->value());
 }
 
 void qTdepSupercell::updateTemperature()

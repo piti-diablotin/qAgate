@@ -102,6 +102,7 @@
         <file>../icons/tools.svg</file>
         <file>../qconducti/logo.svg</file>
         <file>../qdispersion/logo.svg</file>
+        <file>../qtdep/logo.svg</file>
     </qresource>
     <qresource prefix="/translations">
         <file>qagate_de.qm</file>

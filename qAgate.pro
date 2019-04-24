@@ -76,7 +76,13 @@ SOURCES += \
     qconducti/qconducti.cpp \
     qdispersion/qdispersion.cpp \
     tabs/tools.cpp \
-    dialogs/remotedialog.cpp
+    dialogs/remotedialog.cpp \
+    qtdep/qtdepunitcell.cpp \
+    qtdep/qtdepsupercell.cpp \
+    qtdep/qtdepoptions.cpp \
+    qtdep/qtdep.cpp \
+    tools/typatitemdelegate.cpp \
+    tools/doubleitemdelegate.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -113,7 +119,13 @@ HEADERS += \
     qconducti/qconducti.h \
     qdispersion/qdispersion.h \
     tabs/tools.h \
-    dialogs/remotedialog.h
+    dialogs/remotedialog.h \
+    qtdep/qtdepunitcell.h \
+    qtdep/qtdepsupercell.h \
+    qtdep/qtdepoptions.h \
+    qtdep/qtdep.h \
+    tools/typatitemdelegate.h \
+    tools/doubleitemdelegate.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -143,7 +155,11 @@ FORMS += \
     qconducti/qconducti.ui \
     qdispersion/qdispersion.ui \
     tabs/tools.ui \
-    dialogs/remotedialog.ui
+    dialogs/remotedialog.ui \
+    qtdep/qtdepunitcell.ui \
+    qtdep/qtdepsupercell.ui \
+    qtdep/qtdepoptions.ui \
+    qtdep/qtdep.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

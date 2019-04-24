@@ -18,6 +18,15 @@
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
       <widget class="QLabel" name="orderLabel">
+       <property name="toolTip">
+        <string>Taylor expansion order of the energy</string>
+       </property>
+       <property name="statusTip">
+        <string>Taylor expansion order of the energy</string>
+       </property>
+       <property name="whatsThis">
+        <string>Taylor expansion order of the energy</string>
+       </property>
        <property name="text">
         <string>Order expansion</string>
        </property>
@@ -56,6 +65,15 @@
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="rcut2Label">
+       <property name="toolTip">
+        <string>Cutoff radius for the second order terms</string>
+       </property>
+       <property name="statusTip">
+        <string>Cutoff radius for the second order terms</string>
+       </property>
+       <property name="whatsThis">
+        <string>Cutoff radius for the second order terms</string>
+       </property>
        <property name="text">
         <string>radius cutoff for order 2</string>
        </property>
@@ -127,6 +145,15 @@
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="dosdeltaeLabel">
+       <property name="toolTip">
+        <string>Energy smearing for calculating the phonons density of states</string>
+       </property>
+       <property name="statusTip">
+        <string>Energy smearing for calculating the phonons density of states</string>
+       </property>
+       <property name="whatsThis">
+        <string>Energy smearing for calculating the phonons density of states</string>
+       </property>
        <property name="text">
         <string>DOS smearing</string>
        </property>
@@ -161,6 +188,15 @@
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="ngqpt2Label">
+       <property name="toolTip">
+        <string>Q-point grid for the phonon density of states</string>
+       </property>
+       <property name="statusTip">
+        <string>Q-point grid for the phonon density of states</string>
+       </property>
+       <property name="whatsThis">
+        <string>Q-point grid for the phonon density of states</string>
+       </property>
        <property name="text">
         <string>DOS q-point grid</string>
        </property>
@@ -206,12 +242,108 @@
    </item>
    <item>
     <widget class="QCheckBox" name="idealPos">
+     <property name="toolTip">
+      <string>Use ideal or average positions as reference</string>
+     </property>
+     <property name="statusTip">
+      <string>Use ideal or average positions as reference</string>
+     </property>
+     <property name="whatsThis">
+      <string>Use ideal or average positions as reference</string>
+     </property>
      <property name="text">
       <string>Use ideal positions instead of average positions</string>
      </property>
      <property name="checked">
       <bool>true</bool>
      </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="debug">
+     <property name="toolTip">
+      <string>Toogle debug mode</string>
+     </property>
+     <property name="statusTip">
+      <string>Toogle debug mode</string>
+     </property>
+     <property name="whatsThis">
+      <string>Toogle debug mode</string>
+     </property>
+     <property name="text">
+      <string>Mode debug</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QFormLayout" name="formLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="energyLabel">
+        <property name="toolTip">
+         <string>Unit for frequencies on the graph</string>
+        </property>
+        <property name="statusTip">
+         <string>Unit for frequencies on the graph</string>
+        </property>
+        <property name="whatsThis">
+         <string>Unit for frequencies on the graph</string>
+        </property>
+        <property name="text">
+         <string>Energy unit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="EnergyUnitCombo" name="energyUnit">
+          <property name="toolTip">
+           <string>Unit for frequencies on the graph</string>
+          </property>
+          <property name="statusTip">
+           <string>Unit for frequencies on the graph</string>
+          </property>
+          <property name="whatsThis">
+           <string>Unit for frequencies on the graph</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </widget>
    </item>
    <item>

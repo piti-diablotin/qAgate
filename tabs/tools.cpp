@@ -36,3 +36,14 @@ void Tools::on_dispersion_clicked()
   _dispersion.show();
   _dispersion.activateWindow();
 }
+
+void Tools::on_toolButton_clicked()
+{
+  if (_tdep.isHidden() && !_file.isEmpty())
+    {
+      _tdep.setSupercellWidget();
+      _tdep.openFile(_file);
+    }
+  _tdep.show();
+  _tdep.activateWindow();
+}

@@ -180,6 +180,15 @@
       </item>
       <item row="4" column="0">
        <widget class="QLabel" name="sgpLabel">
+        <property name="toolTip">
+         <string>Space groupe of unitcell</string>
+        </property>
+        <property name="statusTip">
+         <string>Space groupe of unitcell</string>
+        </property>
+        <property name="whatsThis">
+         <string>Space groupe of unitcell</string>
+        </property>
         <property name="text">
          <string>Space group:</string>
         </property>
@@ -208,6 +217,15 @@
      </property>
      <property name="acceptDrops">
       <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>Description of the structure</string>
+     </property>
+     <property name="statusTip">
+      <string>Description of the structure</string>
+     </property>
+     <property name="whatsThis">
+      <string>Description of the structure</string>
      </property>
      <property name="title">
       <string>Atomic description</string>

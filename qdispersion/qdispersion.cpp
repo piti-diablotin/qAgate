@@ -231,7 +231,6 @@ void QDispersion::plot()
     ui->statusBar->showMessage(tr("Plot in progress"));
     this->setCursor(Qt::WaitCursor);
     Graph::plotBand(*_eigparser.get(),parser,ui->plot,Graph::NONE);
-    this->setCursor(Qt::ArrowCursor);
     ui->statusBar->clearMessage();
   }
   catch (Exception &e)
@@ -239,6 +238,7 @@ void QDispersion::plot()
     ui->statusBar->showMessage(QString::fromStdString(e.what()));
     QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
   }
+  this->setCursor(Qt::ArrowCursor);
 }
 
 void QDispersion::coordStatusBar(QMouseEvent *event)

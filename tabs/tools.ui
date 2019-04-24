@@ -85,6 +85,32 @@
     </widget>
    </item>
    <item>
+    <widget class="QToolButton" name="toolButton">
+     <property name="toolTip">
+      <string notr="true">qTdep</string>
+     </property>
+     <property name="statusTip">
+      <string notr="true">qTdep</string>
+     </property>
+     <property name="whatsThis">
+      <string notr="true">qTdep</string>
+     </property>
+     <property name="text">
+      <string notr="true">TDEP</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../qagate/qagate.qrc">
+       <normaloff>:/tools/qtdep/logo.svg</normaloff>:/tools/qtdep/logo.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
     <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>

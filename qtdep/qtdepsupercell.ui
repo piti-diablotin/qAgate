@@ -25,6 +25,15 @@
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="tbeginLabel">
+        <property name="toolTip">
+         <string>First time to use</string>
+        </property>
+        <property name="statusTip">
+         <string>First time to use (starts at 0)</string>
+        </property>
+        <property name="whatsThis">
+         <string>First time to use</string>
+        </property>
         <property name="text">
          <string>First time:</string>
         </property>
@@ -32,6 +41,15 @@
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="tendLabel">
+        <property name="toolTip">
+         <string>Last time to use</string>
+        </property>
+        <property name="statusTip">
+         <string>Last time to use</string>
+        </property>
+        <property name="whatsThis">
+         <string>Last time to use</string>
+        </property>
         <property name="text">
          <string>Last time</string>
         </property>
@@ -39,6 +57,15 @@
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="stepLabel">
+        <property name="toolTip">
+         <string>Step to select time steps</string>
+        </property>
+        <property name="statusTip">
+         <string>Step to select time steps used in the calculation</string>
+        </property>
+        <property name="whatsThis">
+         <string>Step to select time steps used in the calculation</string>
+        </property>
         <property name="text">
          <string>Step</string>
         </property>
@@ -46,6 +73,15 @@
       </item>
       <item row="3" column="0">
        <widget class="QLabel" name="temperatureLabel">
+        <property name="toolTip">
+         <string>MD temperature</string>
+        </property>
+        <property name="statusTip">
+         <string>MD temperature</string>
+        </property>
+        <property name="whatsThis">
+         <string>MD temperature</string>
+        </property>
         <property name="text">
          <string>Temperature</string>
         </property>
@@ -153,6 +189,15 @@
    </item>
    <item>
     <widget class="QGroupBox" name="groupBox_2">
+     <property name="toolTip">
+      <string>Multiplicity of the supercell</string>
+     </property>
+     <property name="statusTip">
+      <string>Multiplicity of the supercell with respect to the unitcell</string>
+     </property>
+     <property name="whatsThis">
+      <string>Multiplicity of the supercell</string>
+     </property>
      <property name="title">
       <string>Multiplicity</string>
      </property>

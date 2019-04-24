@@ -7,6 +7,7 @@
 #include <QDragEnterEvent>
 #include "io/dtset.hpp"
 #include "tools/typatitemdelegate.h"
+#include "bind/tdep.hpp"
 
 namespace Ui {
   class qTdepUnitcell;
@@ -25,6 +26,7 @@ public:
 
   void openFile(const QString &filename);
   Dtset viewToDtset();
+  void setTdep(Tdep &tdep);
 
 private slots:
   void dtsetToView(const Dtset& dtset);
@@ -32,6 +34,7 @@ private slots:
 
 signals:
   void unitcellChanged(const Dtset&);
+  void showMessage(const QString);
 
 private:
   Ui::qTdepUnitcell *ui;

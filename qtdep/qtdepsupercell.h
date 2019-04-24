@@ -6,6 +6,7 @@
 #include <QDragEnterEvent>
 #include "hist/histdatamd.hpp"
 #include "io/dtset.hpp"
+#include "bind/tdep.hpp"
 
 namespace Ui {
   class qTdepSupercell;
@@ -23,6 +24,7 @@ public:
 
   void openFile(const QString &filename);
   void histToView();
+  void setTdep(Tdep &tdep);
 
 
 private slots:
@@ -33,6 +35,7 @@ signals:
   void openedFile(const QString &);
   void supercellChanged(const Dtset& unitcell);
   void rcutHint(double rcut);
+  void showMessage(const QString);
 
 private:
   Ui::qTdepSupercell *ui;

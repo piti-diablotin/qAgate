@@ -14,11 +14,31 @@ qTdepOptions::qTdepOptions(QWidget *parent) :
   ui->dosdeltae->setValidator(dv);
   QRegExpValidator *rev = new QRegExpValidator(QRegExp("^\\d+ \\d+ \\d+$"),this);
   ui->ngqpt2->setValidator(rev);
+  ui->energyUnit->setCurrentIndex(4);
 }
 
 qTdepOptions::~qTdepOptions()
 {
-    delete ui;
+  delete ui;
+}
+
+void qTdepOptions::setTdep(Tdep &tdep)
+{
+  tdep.order(ui->order->currentText().toUInt());
+  tdep.rcut(ui->rcut2->text().toDouble());
+  if (ui->order->currentText().toUInt()==3)
+    tdep.rcut3(ui->rcut3->text().toDouble());
+  tdep.mode(ui->debug->isChecked() ? Tdep::Debug : Tdep::Normal);
+  tdep.idealPositions(ui->idealPos->isChecked());
+  QStringList ngqpt2str = ui->ngqpt2->text().split(" ");
+  int ngqpt2[3];
+  ngqpt2[0] = ngqpt2str.at(0).toDouble();
+  ngqpt2[1] = ngqpt2str.at(1).toDouble();
+  ngqpt2[2] = ngqpt2str.at(2).toDouble();
+  auto dosUnit = UnitConverter::getFromString(ui->dosdeltaeUnit->currentData().toString().toStdString());
+  dosUnit = UnitConverter::Ha;
+  tdep.dosParameters(ngqpt2,ui->dosdeltae->text().toDouble()*dosUnit);
+
 }
 
 void qTdepOptions::setRcut(double rcut)
@@ -33,4 +53,9 @@ void qTdepOptions::on_order_currentIndexChanged(int index)
     ui->rcut3->setEnabled(order3);
     ui->rcut3Label->setEnabled(order3);
     ui->rcut3Unit->setEnabled(order3);
+}
+
+void qTdepOptions::on_energyUnit_currentIndexChanged(int index)
+{
+   emit(energyUnitChanged(UnitConverter::getUnit(ui->energyUnit->itemData(index).toString().toStdString())));
 }
