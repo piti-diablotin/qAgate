@@ -1,10 +1,10 @@
 # qAgate
-qAgate is the new Qt interface for [agate]{https://github.com/piti-diablotin/abiout}.
+qAgate is the new Qt interface for [agate](https://github.com/piti-diablotin/abiout).
 It includes all the features of Agate with a new user friendly look.
 It also includes sommes "external" tools to help some users with fast analysis.
 
 # Installation
-First you need to install [agate]{https://github.com/piti-diablotin/abiout}.
+First you need to install [agate](https://github.com/piti-diablotin/abiout).
 Then you can choose to install qAgate with the following PPA for ubuntu or to compile it yourself.
 No matter how you installed agate, make sure to be up to date with both agate and qAgate while the API of agate is not fully finished.
 
@@ -40,6 +40,7 @@ No matter how you installed agate, make sure to be up to date with both agate an
   ```
   That's it.
   You can now run it with `qAgate`
+  
   *Tips*: If agate, spglib or freetype are installed in a custom repository you can specify this directory with the environement variable
   `PREFIX_AGATE PREFIX_SPGLIB PREFIX_FREETYPE`.
   You can set the installation prefix with the variable `PREFIX`
