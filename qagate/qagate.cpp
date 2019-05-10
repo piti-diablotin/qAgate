@@ -5,6 +5,7 @@
 #include <QDebug>
 #include <QMap>
 #include "tabs/abstracttab.h"
+#include <QMessageBox>
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
@@ -88,6 +89,52 @@ qAgate::~qAgate()
 {
   ui->view->canvas()->setGraph(nullptr);
   delete ui;
+}
+
+void qAgate::initInput(int argc, const char **argv)
+{
+  std::vector<std::string> filename;
+  for ( int i = 0 ; i < argc ; ++i ) {
+    std::ifstream file(argv[i],std::ios::in);
+
+    if ( file.good() && (i == 0 || (i > 0 && strcmp(argv[i-1],"-c") != 0 && strcmp(argv[i-1],"--config")) != 0) ) {
+      filename.push_back(std::string(argv[i]));
+    }
+
+    file.close();
+  }
+  try {
+    if ( filename.size() > 0 && ui->view != nullptr) {
+      try {
+        emit(emitCommand(QString::fromStdString(":open "+filename[0])));
+      }
+      catch ( Exception &e ) {
+        if ( e.getReturnValue() == ERRDIV || e.getReturnValue() == ERRABT  )
+          throw e;
+      }
+
+      for ( unsigned file = 1; file < filename.size() ; ++file ) {
+        try {
+         emit(emitCommand(QString::fromStdString(":append "+filename[file]),false)); // Do not pop inputChar
+        }
+        catch ( Exception &e ) {
+          e.ADD("Ignoring file "+filename[file], ERRWAR);
+          QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+        }
+      }
+
+    }
+
+  }
+  catch (Exception& e) {
+    e.ADD("Updating canvas failed",ERRDIV);
+    std::clog << e.fullWhat() << std::endl;
+  }
+}
+
+void qAgate::setParameters(const string &config)
+{
+  ui->view->setParameters(config);
 }
 
 void qAgate::updateNeeds()

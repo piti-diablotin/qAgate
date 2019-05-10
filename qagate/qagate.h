@@ -16,6 +16,8 @@ class qAgate : public QMainWindow
 public:
   explicit qAgate(QWidget *parent = 0);
   ~qAgate();
+  void initInput(int argc, const char** argv);
+  void setParameters(const std::string &config);
 
 private:
   Ui::qAgate *ui;
@@ -33,7 +35,7 @@ protected slots:
   void setPlot(QPlot* plot);
 
 signals:
-  void emitCommand(QString);
+  void emitCommand(QString,bool pop=true);
 private slots:
   void on_tabWidget_tabBarClicked(int index);
   void on_tabWidget_currentChanged(int index);
