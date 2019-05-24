@@ -15,23 +15,9 @@
 #endif
 #include <clocale>
 
-#ifdef HAVE_FFTW3_THREADS
-#include "fftw3.h"
-#endif
-
 #include "io/parser.hpp"
 #include <csignal>
 #include "window/window.hpp"
-
-#if defined(HAVE_SPGLIB) && defined(HAVE_SPGLIB_VERSION)
-#  ifdef __cplusplus
-extern "C"{
-#  endif
-#  include "spglib/spglib.h"
-#  ifdef __cplusplus
-}
-#  endif
-#endif
 
 Agate::mendeleev Agate::Mendeleev;
 
@@ -54,10 +40,6 @@ int main(int argc, char *argv[])
   parser.setOption("config",'c',"","Configuration file to configure the animation.");
   parser.setOption("version",'v',"Print the version number");
   parser.setOption("help",'h',"Print this message");
-
-#ifdef HAVE_FFTW3_THREADS
-  fftw_init_threads();
-#endif
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
   QSurfaceFormat glf = QSurfaceFormat::defaultFormat();
@@ -148,10 +130,6 @@ int main(int argc, char *argv[])
       }
   }
 
-#ifdef HAVE_FFTW3_THREADS
-  fftw_cleanup_threads();
-#endif
-
   return rvalue;
 }
 
@@ -189,12 +167,6 @@ void handle_signal (int para)
 
 void Version()
 {
-  std::cout << PACKAGE_NAME << " version " << PACKAGE_VERSION << std::endl;
-  utils::dumpConfig(std::clog);
+  utils::Version();
   std::cout << "Using Qt version " << qVersion() << std::endl;
-#if defined(HAVE_SPGLIB) && defined(HAVE_SPGLIB_VERSION)
-  std::clog << "Using spglib version " << spg_get_major_version() << "."
-            << spg_get_minor_version() << "."
-            << spg_get_micro_version() << std::endl;
-#endif
 }

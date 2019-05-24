@@ -20,7 +20,7 @@ Settings::Settings(QWidget *parent) :
   ui->actionAA->setChecked(true);
   ui->actionFilling->setChecked(true);
   ui->actionLight->setChecked(true);
-  ui->actionPerspective->setChecked(true);
+  ui->actionPerspective->setChecked(false);
 
   this->addAction(ui->actionAA);
   this->addAction(ui->actionFilling);

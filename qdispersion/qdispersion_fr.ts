@@ -155,7 +155,7 @@
     </message>
     <message>
         <location filename="qdispersion.cpp" line="138"/>
-        <location filename="qdispersion.cpp" line="240"/>
+        <location filename="qdispersion.cpp" line="239"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
