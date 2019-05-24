@@ -81,7 +81,7 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->md,SIGNAL(plotChanged(QPlot*)),this,SLOT(setPlot(QPlot*)));
 
   // Self
-  connect(this,SIGNAL(emitCommand(QString)),ui->view,SLOT(processCommand(QString)));
+  connect(this,SIGNAL(emitCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
   this->updateTab();
 }
 
@@ -94,41 +94,48 @@ qAgate::~qAgate()
 void qAgate::initInput(int argc, const char **argv)
 {
   std::vector<std::string> filename;
-  for ( int i = 0 ; i < argc ; ++i ) {
-    std::ifstream file(argv[i],std::ios::in);
+  for ( int i = 0 ; i < argc ; ++i )
+    {
+      std::ifstream file(argv[i],std::ios::in);
 
-    if ( file.good() && (i == 0 || (i > 0 && strcmp(argv[i-1],"-c") != 0 && strcmp(argv[i-1],"--config")) != 0) ) {
-      filename.push_back(std::string(argv[i]));
+      if ( file.good() && (i == 0 || (i > 0 && strcmp(argv[i-1],"-c") != 0 && strcmp(argv[i-1],"--config")) != 0) )
+        {
+          filename.push_back(std::string(argv[i]));
+        }
+
+      file.close();
     }
-
-    file.close();
-  }
-  try {
-    if ( filename.size() > 0 && ui->view != nullptr) {
-      try {
-        emit(emitCommand(QString::fromStdString(":open "+filename[0])));
-      }
-      catch ( Exception &e ) {
-        if ( e.getReturnValue() == ERRDIV || e.getReturnValue() == ERRABT  )
-          throw e;
-      }
-
-      for ( unsigned file = 1; file < filename.size() ; ++file ) {
-        try {
-         emit(emitCommand(QString::fromStdString(":append "+filename[file]),false)); // Do not pop inputChar
+  try
+  {
+    if ( filename.size() > 0 && ui->view != nullptr)
+      {
+        try
+        {
+          emit(emitCommand(QString::fromStdString(":open "+filename[0]),false));
         }
         catch ( Exception &e ) {
-          e.ADD("Ignoring file "+filename[file], ERRWAR);
-          QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+          if ( e.getReturnValue() == ERRDIV || e.getReturnValue() == ERRABT  )
+            throw e;
         }
+
+        for ( unsigned file = 1; file < filename.size() ; ++file )
+          {
+            try
+            {
+              emit(emitCommand(QString::fromStdString(":append "+filename[file]),false)); // Do not pop inputChar
+            }
+            catch ( Exception &e )
+            {
+              e.ADD(tr("Ignoring file ").toStdString()+filename[file], ERRWAR);
+              QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+            }
+          }
       }
-
-    }
-
   }
-  catch (Exception& e) {
-    e.ADD("Updating canvas failed",ERRDIV);
-    std::clog << e.fullWhat() << std::endl;
+  catch (Exception& e)
+  {
+    e.ADD(tr("Updating canvas failed").toStdString(),ERRDIV);
+    QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
   }
 }
 

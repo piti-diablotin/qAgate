@@ -78,16 +78,18 @@ int main(int argc, char *argv[])
   setlocale(LC_NUMERIC,"C");
   //char* loc = setlocale(LC_ALL,"C");
 
-  qAgate w;
   int rvalue;
-  try {
+  try
+  {
     parser.parse();
-    if ( parser.getOption<bool>("version") ) {
-      throw EXCEPTION("",10);
-    }
-    if ( parser.getOption<bool>("help") ) {
-      throw EXCEPTION("",0);
-    }
+    if ( parser.getOption<bool>("version") )
+      {
+        throw EXCEPTION("",10);
+      }
+    if ( parser.getOption<bool>("help") )
+      {
+        throw EXCEPTION("",0);
+      }
 
     signal(SIGABRT,handle_signal);
     signal(SIGFPE,handle_signal);
@@ -100,8 +102,11 @@ int main(int argc, char *argv[])
     signal(SIGQUIT,handle_signal);
 #endif
 
+    qAgate w;
+    //w.setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     std::string config;
-    if ( parser.isSetOption("config") ) {
+    if ( parser.isSetOption("config") )
+      {
         config = parser.getOption<std::string>("config");
         w.setParameters(config);
       }
@@ -110,31 +115,37 @@ int main(int argc, char *argv[])
     w.show();
     rvalue = a.exec();
   }
-  catch ( Exception& e ) {
+  catch ( Exception& e )
+  {
     rvalue = e.getReturnValue();
-    if ( rvalue == ERRDIV ) {
-      std::cerr << e.fullWhat() << std::endl;
-      if ( rvalue == Parser::ERARG || rvalue == Parser::EROPT ) {
-        std::cerr << parser;
+    if ( rvalue == ERRDIV )
+      {
+        std::cerr << e.fullWhat() << std::endl;
+        if ( rvalue == Parser::ERARG || rvalue == Parser::EROPT ) {
+            std::cerr << parser;
+            rvalue = 0;
+          }
+#if defined(WIN32) || defined(_WIN32)
+        system("Pause");
+#endif
+      }
+    else if ( rvalue == ERRWAR || rvalue == ERRCOM )
+      {
+        std::clog << e.fullWhat() << std::endl;
+#if defined(WIN32) || defined(_WIN32)
+        system("Pause");
+#endif
+      }
+    else if ( rvalue == 10 ) // ask for version number
+      {
+        Version();
         rvalue = 0;
       }
-#if defined(WIN32) || defined(_WIN32)
-      system("Pause");
-#endif
-    }
-    else if ( rvalue == ERRWAR || rvalue == ERRCOM ) {
-      std::clog << e.fullWhat() << std::endl;
-#if defined(WIN32) || defined(_WIN32)
-      system("Pause");
-#endif
-    }
-    else if ( rvalue == 10 ) { // ask for version number
-      rvalue = 0;
-    }
-    else {
-      std::cout << parser;
-      Window::help();
-    }
+    else
+      {
+        std::cout << parser;
+        Window::help();
+      }
   }
 
 #ifdef HAVE_FFTW3_THREADS
@@ -144,8 +155,10 @@ int main(int argc, char *argv[])
   return rvalue;
 }
 
-void handle_signal (int para) {
-  switch(para) {
+void handle_signal (int para)
+{
+  switch(para)
+    {
     case SIGABRT :
       std::cerr << "Abord signal received." << std::endl;
       break;
@@ -169,18 +182,19 @@ void handle_signal (int para) {
     default :
       std::cerr << "Unknown signal received." << std::endl;
       break;
-  }
+    }
   std::cerr << "Window has been asked to close." << std::endl;
   exit(-1);
 };
 
-void Version(){
+void Version()
+{
   std::cout << PACKAGE_NAME << " version " << PACKAGE_VERSION << std::endl;
   utils::dumpConfig(std::clog);
   std::cout << "Using Qt version " << qVersion() << std::endl;
 #if defined(HAVE_SPGLIB) && defined(HAVE_SPGLIB_VERSION)
   std::clog << "Using spglib version " << spg_get_major_version() << "."
-    << spg_get_minor_version() << "."
-    << spg_get_micro_version() << std::endl;
+            << spg_get_minor_version() << "."
+            << spg_get_micro_version() << std::endl;
 #endif
 }
