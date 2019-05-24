@@ -325,7 +325,7 @@ void Home::on_open_triggered()
         {
           if ( !file->isEmpty() )
             {
-              emit(sendCommand("+append "+*file));
+              emit(sendCommand(":append "+*file));
             }
         }
     }
