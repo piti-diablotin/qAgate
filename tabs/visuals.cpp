@@ -63,6 +63,7 @@ void Visuals::updateStatus(View *view)
   ui->atom->setChecked(display & CanvasPos::DISP_ATOM);
   ui->bond->setChecked(display & CanvasPos::DISP_BOND);
   ui->border->setChecked(display & CanvasPos::DISP_BORDER);
+  ui->incircle->setChecked(display & CanvasPos::DISP_INCIRCLE);
   if (display & CanvasPos::DISP_ID)
     ui->id->setChecked(true);
   else if (display & CanvasPos::DISP_ZNUCL)
