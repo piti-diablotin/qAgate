@@ -64,17 +64,17 @@ void View::resizeGL(int width, int height)
 void View::paintGL()
 {
   if ( !_updateFromTimer ) _optioni["initBuffer"] = 0;
-    Window::loopStep();
-    _updateFromTimer = false;
-    if ( _optionb["updated"] )
-      {
-        if (_canvas->ntime() > 1)
-          _canvas->isPaused() ?
-                ui->upperLeft->setText("Speed:x"+QString::number(_optionf["speed"])+", Paused"):
-            ui->upperLeft->setText("Speed:x"+QString::number(_optionf["speed"]));
+  Window::loopStep();
+  _updateFromTimer = false;
+  if ( _optionb["updated"] )
+  {
+    if (_canvas->ntime() > 1)
+      _canvas->isPaused() ?
+            ui->upperLeft->setText("Speed:x"+QString::number(_optionf["speed"])+", Paused"):
+        ui->upperLeft->setText("Speed:x"+QString::number(_optionf["speed"]));
 
-        emit(updated());
-      }
+    emit(updated());
+  }
 }
 
 /*
@@ -142,28 +142,28 @@ bool View::userInput(std::stringstream &info)
 {
   bool newAction = Window::userInput(info);
   if (_mode == mode_process) {
-      ui->commandLine->setReadOnly(true);
-      ui->commandLine->setText(QString::fromStdString(_command));
-      emit(commandProcessed());
-      ui->commandLine->setStyleSheet(
-            "#commandLine { color:rgb("+QString::number(_render._color[0])+","
-          + QString::number(_render._color[1])+","
-          + QString::number(_render._color[2])+"); background-color:rgba("+QString::number(_background[0])+","
-          + QString::number(_background[1])+","
-          + QString::number(_background[2])+",0); }");
-      ui->infoLine->setStyleSheet(
-            "#infoLine { color:rgb("+QString::number(_render._color[0])+","
-          + QString::number(_render._color[1])+","
-          + QString::number(_render._color[2])+"); }");
-      ui->upperLeft->setStyleSheet(
-            "#upperLeft { color:rgb("+QString::number(_render._color[0])+","
-          + QString::number(_render._color[1])+","
-          + QString::number(_render._color[2])+"); }");
-      ui->commandFocus->setStyleSheet(
-            "#commandFocus { background-color:rgba("+QString::number(_background[0])+","
-          + QString::number(_background[1])+","
-          + QString::number(_background[2])+",0); }");
-    }
+    ui->commandLine->setReadOnly(true);
+    ui->commandLine->setText(QString::fromStdString(_command));
+    emit(commandProcessed());
+    ui->commandLine->setStyleSheet(
+          "#commandLine { color:rgb("+QString::number(_render._color[0])+","
+        + QString::number(_render._color[1])+","
+        + QString::number(_render._color[2])+"); background-color:rgba("+QString::number(_background[0])+","
+        + QString::number(_background[1])+","
+        + QString::number(_background[2])+",0); }");
+    ui->infoLine->setStyleSheet(
+          "#infoLine { color:rgb("+QString::number(_render._color[0])+","
+        + QString::number(_render._color[1])+","
+        + QString::number(_render._color[2])+"); }");
+    ui->upperLeft->setStyleSheet(
+          "#upperLeft { color:rgb("+QString::number(_render._color[0])+","
+        + QString::number(_render._color[1])+","
+        + QString::number(_render._color[2])+"); }");
+    ui->commandFocus->setStyleSheet(
+          "#commandFocus { background-color:rgba("+QString::number(_background[0])+","
+        + QString::number(_background[1])+","
+        + QString::number(_background[2])+",0); }");
+  }
   if (newAction && _modeMouse != mode_mouse && _fromCommandLine) emit(userInput());
   if (newAction && _modeMouse == mode_mouse) emit(mouseInput());
   _fromCommandLine = false;
@@ -174,13 +174,13 @@ bool View::userInput(std::stringstream &info)
 void View::timeOut()
 {
   if (_optioni["shouldExit"] == 1)
-    {
-      emit(closeMe());
-    }
+  {
+    emit(closeMe());
+  }
   else if (_optioni["shouldExist"] == 2)
-    {
-      emit(closeAll());
-    }
+  {
+    emit(closeAll());
+  }
   _updateFromTimer = true;
   this->update();
 }
@@ -190,7 +190,7 @@ void View::backInHistory()
   if ( (_commandStackNo-1) < _commandStack.size()) { // _commandStackNo is unsigend so if <0 it is apriori >> _commandStack.size()
     auto tmp = _commandStack[--_commandStackNo];
     ui->commandLine->setText(QString::fromStdString(tmp.substr(0,tmp.size()-1)));
-    }
+  }
 }
 
 void View::forwardInHistory()
@@ -198,7 +198,7 @@ void View::forwardInHistory()
   if ( (_commandStackNo+1) < _commandStack.size() ) {
     auto tmp = _commandStack[++_commandStackNo];
     ui->commandLine->setText(QString::fromStdString(tmp.substr(0,tmp.size()-1)));
-    }
+  }
 }
 
 void View::zoomIn()
@@ -219,14 +219,14 @@ void View::processCommand(QString command, bool pop)
     _inputChar.push((unsigned int)command[i].toLatin1());
   if (command.startsWith(':')) _inputChar.push((unsigned int)'\n');
   if (_debug)
-    {
-      std::clog << command.toStdString() << std::endl;
-    }
+  {
+    std::clog << command.toStdString() << std::endl;
+  }
 }
 
 void View::mousePressEvent( QMouseEvent *mouseEvent ) {
   switch( mouseEvent->button() )
-    {
+  {
     case Qt::LeftButton:
       _inputKeys[_mouseButtonLeft] = true;
       this->setCursor(QCursor(Qt::ClosedHandCursor));
@@ -242,12 +242,12 @@ void View::mousePressEvent( QMouseEvent *mouseEvent ) {
     case Qt::NoButton:
     default:
       break;
-    }
+  }
 }
 
 void View::mouseReleaseEvent( QMouseEvent *mouseEvent ) {
   switch( mouseEvent->button() )
-    {
+  {
     case Qt::LeftButton:
       _inputKeys[_mouseButtonLeft] = false;
       break;
@@ -260,7 +260,7 @@ void View::mouseReleaseEvent( QMouseEvent *mouseEvent ) {
       //case Qt::NoButton:
     default:
       break;
-    }
+  }
   this->setCursor(QCursor(Qt::OpenHandCursor));
 }
 
@@ -303,13 +303,13 @@ void View::dropEvent(QDropEvent *dropEvent)
   */
 
   for (auto url = urls.begin()+1; url != urls.end(); ++url)
+  {
+    QString fileName = url->toLocalFile();
+    if (!fileName.isEmpty())
     {
-      QString fileName = url->toLocalFile();
-      if (!fileName.isEmpty())
-        {
-          QString command = ":append "+fileName;
-          this->processCommand(command);
-          /*
+      QString command = ":append "+fileName;
+      this->processCommand(command);
+      /*
           try
           {
             _canvas->appendFile(fileName.toStdString());
@@ -320,8 +320,8 @@ void View::dropEvent(QDropEvent *dropEvent)
             QMessageBox::warning(this,tr("Warning"),QString::fromStdString(e.fullWhat()));
           }
           */
-        }
     }
+  }
 }
 
 void View::setTitle(const std::string &title)
@@ -406,9 +406,9 @@ double View::getAngle(int atom1, int atom2, int atom3) const
 {
   try {
     if (_canvas->histdata()!=nullptr)
-      {
-        return _canvas->histdata()->getAngle(atom1,atom2,atom3,_canvas->itime());
-      }
+    {
+      return _canvas->histdata()->getAngle(atom1,atom2,atom3,_canvas->itime());
+    }
     else
       return 0;
   }
@@ -423,9 +423,9 @@ double View::getDistance(int atom1, int atom2) const
 {
   try {
     if (_canvas->histdata()!=nullptr)
-      {
-        return _canvas->histdata()->getDistance(atom1,atom2,_canvas->itime());
-      }
+    {
+      return _canvas->histdata()->getDistance(atom1,atom2,_canvas->itime());
+    }
     else
       return 0;
   }
@@ -466,4 +466,9 @@ void View::start() { _timer->start();}
 void View::setDebugMode(bool debug)
 {
   _debug = debug;
+}
+
+void View::setFromCommandLine(bool fromCommandLine)
+{
+  _fromCommandLine = fromCommandLine;
 }

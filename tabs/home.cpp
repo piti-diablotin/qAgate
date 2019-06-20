@@ -17,7 +17,6 @@ Home::Home(QWidget *parent) :
   _natom(0),
   _distance(0),
   _distanceUnit(UnitConverter::bohr),
-  _currentFolder("."),
   _remoteDialog(this)
 {
   ui->setupUi(this);

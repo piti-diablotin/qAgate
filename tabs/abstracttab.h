@@ -12,6 +12,8 @@ private:
 
 protected:
   bool _autoUpdate;
+  static QString _currentFolder;
+
   virtual void updateStatus(View* view)=0;
 
 public:

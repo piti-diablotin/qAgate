@@ -85,7 +85,8 @@ SOURCES += \
     qtdep/qtdepoptions.cpp \
     qtdep/qtdep.cpp \
     tools/typatitemdelegate.cpp \
-    tools/doubleitemdelegate.cpp
+    tools/doubleitemdelegate.cpp \
+    tabs/localmode.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -128,7 +129,8 @@ HEADERS += \
     qtdep/qtdepoptions.h \
     qtdep/qtdep.h \
     tools/typatitemdelegate.h \
-    tools/doubleitemdelegate.h
+    tools/doubleitemdelegate.h \
+    tabs/localmode.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -162,7 +164,8 @@ FORMS += \
     qtdep/qtdepunitcell.ui \
     qtdep/qtdepsupercell.ui \
     qtdep/qtdepoptions.ui \
-    qtdep/qtdep.ui
+    qtdep/qtdep.ui \
+    tabs/localmode.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

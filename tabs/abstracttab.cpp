@@ -18,3 +18,5 @@ void AbstractTab::plugActions(QWidget* widget)
 {
   widget->addActions(this->actions());
 }
+
+QString AbstractTab::_currentFolder = ".";

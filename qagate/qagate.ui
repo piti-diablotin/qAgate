@@ -135,6 +135,15 @@
             <string>&amp;Tools</string>
            </attribute>
           </widget>
+          <widget class="LocalMode" name="local">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/local/icons/local.svg</normaloff>:/local/icons/local.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Local</string>
+           </attribute>
+          </widget>
          </widget>
         </item>
         <item>
@@ -274,6 +283,12 @@
    <class>Tools</class>
    <extends>QWidget</extends>
    <header>tabs/tools.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LocalMode</class>
+   <extends>QWidget</extends>
+   <header>tabs/localmode.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

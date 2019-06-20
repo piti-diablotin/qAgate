@@ -91,7 +91,6 @@ private:
   double _distance;
   UnitConverter _distanceUnit;
   QVector<int> _znucl;
-  QString _currentFolder;
   RemoteDialog _remoteDialog;
 
 signals:

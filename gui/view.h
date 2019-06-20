@@ -50,6 +50,8 @@ public:
   double getAngle(int atom1, int atom2, int atom3) const;
   double getDistance(int atom1, int atom2) const;
 
+  void setFromCommandLine(bool fromCommandLine);
+
 protected:
   virtual bool getChar(unsigned key);
   virtual bool getCharPress(unsigned key);

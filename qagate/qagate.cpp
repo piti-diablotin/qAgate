@@ -6,6 +6,8 @@
 #include <QMap>
 #include "tabs/abstracttab.h"
 #include <QMessageBox>
+#include "canvas/canvaslocal.hpp"
+#include "canvas/canvasphonons.hpp"
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
@@ -16,11 +18,11 @@ qAgate::qAgate(QWidget *parent) :
 {
   ui->setupUi(this);
   for (int index = 0; index < ui->tabWidget->count(); ++index)
-    {
-      AbstractTab* tab = dynamic_cast<AbstractTab*>(ui->tabWidget->widget(index));
-      tab->plugActions(this);
-      connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
-    }
+  {
+    AbstractTab* tab = dynamic_cast<AbstractTab*>(ui->tabWidget->widget(index));
+    tab->plugActions(this);
+    connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
+  }
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(pause()),this,SLOT(manageSignal()));
@@ -95,42 +97,42 @@ void qAgate::initInput(int argc, const char **argv)
 {
   std::vector<std::string> filename;
   for ( int i = 0 ; i < argc ; ++i )
+  {
+    std::ifstream file(argv[i],std::ios::in);
+
+    if ( file.good() && (i == 0 || (i > 0 && strcmp(argv[i-1],"-c") != 0 && strcmp(argv[i-1],"--config")) != 0) )
     {
-      std::ifstream file(argv[i],std::ios::in);
-
-      if ( file.good() && (i == 0 || (i > 0 && strcmp(argv[i-1],"-c") != 0 && strcmp(argv[i-1],"--config")) != 0) )
-        {
-          filename.push_back(std::string(argv[i]));
-        }
-
-      file.close();
+      filename.push_back(std::string(argv[i]));
     }
+
+    file.close();
+  }
   try
   {
     if ( filename.size() > 0 && ui->view != nullptr)
+    {
+      try
+      {
+        emit(emitCommand(QString::fromStdString(":open "+filename[0]),false));
+      }
+      catch ( Exception &e ) {
+        if ( e.getReturnValue() == ERRDIV || e.getReturnValue() == ERRABT  )
+          throw e;
+      }
+
+      for ( unsigned file = 1; file < filename.size() ; ++file )
       {
         try
         {
-          emit(emitCommand(QString::fromStdString(":open "+filename[0]),false));
+          emit(emitCommand(QString::fromStdString(":append "+filename[file]),false)); // Do not pop inputChar
         }
-        catch ( Exception &e ) {
-          if ( e.getReturnValue() == ERRDIV || e.getReturnValue() == ERRABT  )
-            throw e;
+        catch ( Exception &e )
+        {
+          e.ADD(tr("Ignoring file ").toStdString()+filename[file], ERRWAR);
+          QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
         }
-
-        for ( unsigned file = 1; file < filename.size() ; ++file )
-          {
-            try
-            {
-              emit(emitCommand(QString::fromStdString(":append "+filename[file]),false)); // Do not pop inputChar
-            }
-            catch ( Exception &e )
-            {
-              e.ADD(tr("Ignoring file ").toStdString()+filename[file], ERRWAR);
-              QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
-            }
-          }
       }
+    }
   }
   catch (Exception& e)
   {
@@ -147,20 +149,20 @@ void qAgate::setParameters(const string &config)
 void qAgate::updateNeeds()
 {
   if (ui->tabWidget->currentWidget() == ui->home )
+  {
+    if (_homeNeedsAngle)
     {
-      if (_homeNeedsAngle)
-        {
-          int atom1, atom2, atom3;
-          ui->home->getAngleAtoms(atom1,atom2,atom3);
-          ui->home->setAngle(ui->view->getAngle(atom1,atom2,atom3));
-        }
-      if (_homeNeedsDistance)
-        {
-          int atom1, atom2;
-          ui->home->getDistanceAtoms(atom1,atom2);
-          ui->home->setDistance(ui->view->getDistance(atom1,atom2));
-        }
+      int atom1, atom2, atom3;
+      ui->home->getAngleAtoms(atom1,atom2,atom3);
+      ui->home->setAngle(ui->view->getAngle(atom1,atom2,atom3));
     }
+    if (_homeNeedsDistance)
+    {
+      int atom1, atom2;
+      ui->home->getDistanceAtoms(atom1,atom2);
+      ui->home->setDistance(ui->view->getDistance(atom1,atom2));
+    }
+  }
 }
 
 void qAgate::manageSignal()
@@ -201,29 +203,29 @@ void qAgate::manageSignal()
     {"alongZ","z"},
   };
   if (mapping.contains(signal))
-    {
-      command = mapping[signal];
-      if ( signal.contains("timeBeginChanged")) command+=QString::number(ui->timeLine->timeBegin());
-      else if ( signal.contains("timeEndChanged")) command+=QString::number(ui->timeLine->timeEnd());
-      else if ( signal.contains("timeChanged")) command+=QString::number(ui->timeLine->time());
-      emit(emitCommand(command));
-    }
+  {
+    command = mapping[signal];
+    if ( signal.contains("timeBeginChanged")) command+=QString::number(ui->timeLine->timeBegin());
+    else if ( signal.contains("timeEndChanged")) command+=QString::number(ui->timeLine->timeEnd());
+    else if ( signal.contains("timeChanged")) command+=QString::number(ui->timeLine->time());
+    emit(emitCommand(command));
+  }
   if (signal == "updated")
+  {
+    auto canvas = ui->view->canvas();
+    ui->mediaPlayer->setPlay(!canvas->isPaused());
+    int max = ui->timeLine->timeTotal();
+    if (max!=canvas->ntime())
     {
-      auto canvas = ui->view->canvas();
-      ui->mediaPlayer->setPlay(!canvas->isPaused());
-      int max = ui->timeLine->timeTotal();
-      if (max!=canvas->ntime())
-        {
-          int ntime = canvas->ntime();
-          ui->mediaPlayer->setDisabledMovie(ntime<2);
-          ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),ntime);
-        }
-      else {
-          ui->timeLine->setTime(canvas->itime());
-          this->updateNeeds();
-        }
+      int ntime = canvas->ntime();
+      ui->mediaPlayer->setDisabledMovie(ntime<2);
+      ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),ntime);
     }
+    else {
+      ui->timeLine->setTime(canvas->itime());
+      this->updateNeeds();
+    }
+  }
 }
 
 void qAgate::manageSignal(QString filename)
@@ -236,21 +238,21 @@ void qAgate::manageSignal(QString filename)
     {"append", ":append"},
   };
   if (mapping.contains(signal))
-    {
-      command = mapping[signal]+" "+filename;
-      emit(emitCommand(command));
-    }
+  {
+    command = mapping[signal]+" "+filename;
+    emit(emitCommand(command));
+  }
   else if (signal=="fileOpened")
-    {
-      //ui->mediaPlayer->setDisabledAppend(false);
-      this->setWindowTitle(filename+" - qAgate");
-      ui->timeLine->setEnabled(true);
-      this->updateTab();
-    }
+  {
+    //ui->mediaPlayer->setDisabledAppend(false);
+    this->setWindowTitle(filename+" - qAgate");
+    ui->timeLine->setEnabled(true);
+    this->updateTab();
+  }
   else if (signal == "sendCommand")
-    {
-      emit(emitCommand(filename));
-    }
+  {
+    emit(emitCommand(filename));
+  }
 
 }
 
@@ -259,31 +261,31 @@ void qAgate::syncWithUserInput()
   QMetaMethod metaMethod = sender()->metaObject()->method(senderSignalIndex());
   auto signal = metaMethod.name();
   if ( signal == "userInput")
-    {
-      this->updateTab();
-      if (ui->view->canvas() == nullptr) return;
-      auto canvas = ui->view->canvas();
-      MediaPlayer::RepeatMode repeat;
-      switch ( canvas->nLoop() ) {
-        case -2 :
-          repeat = MediaPlayer::Palindrome;
-          break;
-        case -1 :
-          repeat = MediaPlayer::Repeat;
-          break;
-        default :
-          repeat = MediaPlayer::None;
-        }
-      ui->mediaPlayer->setRepeatMode(repeat);
+  {
+    this->updateTab();
+    if (ui->view->canvas() == nullptr) return;
+    auto canvas = ui->view->canvas();
+    MediaPlayer::RepeatMode repeat;
+    switch ( canvas->nLoop() ) {
+      case -2 :
+        repeat = MediaPlayer::Palindrome;
+        break;
+      case -1 :
+        repeat = MediaPlayer::Repeat;
+        break;
+      default :
+        repeat = MediaPlayer::None;
+    }
+    ui->mediaPlayer->setRepeatMode(repeat);
 
-      int ntime = std::max(canvas->ntime(),1);
-      ui->mediaPlayer->setDisabledMovie(ntime<2);
-      ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
-    }
+    int ntime = std::max(canvas->ntime(),1);
+    ui->mediaPlayer->setDisabledMovie(ntime<2);
+    ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+  }
   else if (signal == "mouseInput")
-    {
-      ui->visuals->updateAngles(ui->view);
-    }
+  {
+    ui->visuals->updateAngles(ui->view);
+  }
 }
 
 void qAgate::updateTab()
@@ -304,38 +306,48 @@ void qAgate::setNeeds(bool need)
 
 void qAgate::setPlot(QPlot *plot)
 {
- ui->view->canvas()->setGraph(plot);
+  ui->view->canvas()->setGraph(plot);
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)
 {
   if (index == ui->tabWidget->currentIndex())
+  {
+    _tabHiden ?
+          ui->tabWidget->currentWidget()->show()
+        : ui->tabWidget->currentWidget()->hide();
+    _tabHiden = !_tabHiden;
+    if (_tabHiden)
     {
-      _tabHiden ?
-            ui->tabWidget->currentWidget()->show()
-          : ui->tabWidget->currentWidget()->hide();
-      _tabHiden = !_tabHiden;
-      if (_tabHiden)
-        {
-          for (int i = 0; i < ui->tabWidget->count(); ++i)
-            ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
-        }
-      else
-        {
-          for (int i = 0; i < ui->tabWidget->count(); ++i)
-            ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-        }
+      for (int i = 0; i < ui->tabWidget->count(); ++i)
+        ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
     }
+    else
+    {
+      for (int i = 0; i < ui->tabWidget->count(); ++i)
+        ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+    }
+  }
 }
 
 void qAgate::on_tabWidget_currentChanged(int index)
 {
   if (_tabHiden)
-    {
-      for (int i = 0; i < ui->tabWidget->count(); ++i)
-        ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-      _tabHiden = !_tabHiden;
-    }
+  {
+    for (int i = 0; i < ui->tabWidget->count(); ++i)
+      ui->tabWidget->widget(i)->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+    _tabHiden = !_tabHiden;
+  }
   ui->tabWidget->widget(index)->show();
+  if (ui->tabWidget->currentWidget() == ui->local)
+  {
+    ui->view->setFromCommandLine(true);
+    emit(emitCommand(":mode local"));
+  }
+  else {
+    if(dynamic_cast<CanvasLocal*>(ui->view->canvas())
+       ||dynamic_cast<CanvasPhonons*>(ui->view->canvas()))
+      emit(emitCommand(":mode positions"));
+  }
   this->updateTab();
 }
