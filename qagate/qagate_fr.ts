@@ -333,6 +333,121 @@
     </message>
 </context>
 <context>
+    <name>LocalMode</name>
+    <message>
+        <location filename="../tabs/localmode.ui" line="41"/>
+        <source>Physics</source>
+        <translation>Physique</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="67"/>
+        <location filename="../tabs/localmode.ui" line="70"/>
+        <location filename="../tabs/localmode.ui" line="73"/>
+        <source>Remove octahedra</source>
+        <translation>Supprimer un octahèdre</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="97"/>
+        <location filename="../tabs/localmode.ui" line="100"/>
+        <location filename="../tabs/localmode.ui" line="103"/>
+        <source>Add/Remove octahedra</source>
+        <translation>Ajouter/Supprimer des octahèdres</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="106"/>
+        <source>Octahedra</source>
+        <translation>Octahèdres</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="121"/>
+        <location filename="../tabs/localmode.ui" line="124"/>
+        <location filename="../tabs/localmode.ui" line="127"/>
+        <source>Add octahedra</source>
+        <translation>Ajouter un octahèdre</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="162"/>
+        <source>Options</source>
+        <translation>Options</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="183"/>
+        <source>&amp;Rotations</source>
+        <translation>&amp;Rotations</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="206"/>
+        <source>&amp;Cartesian</source>
+        <translation>&amp;Cartésien</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="216"/>
+        <source>Basis:</source>
+        <translation>Base:</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="230"/>
+        <source>&amp;Lengths</source>
+        <translation>&amp;Longueures</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="240"/>
+        <source>Relati&amp;ve</source>
+        <translation>Relqti&amp;ve</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="250"/>
+        <source>Display:</source>
+        <translation>Affichage:</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="260"/>
+        <source>Colors</source>
+        <translation>Couleurs</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="281"/>
+        <source>Clockwise rotations</source>
+        <translation>Rotations horaires</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="288"/>
+        <source>Anticlockwise rotations</source>
+        <translation>Rotations anti-horaires</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="325"/>
+        <source>Export</source>
+        <translation>Exportation</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="331"/>
+        <source>Rotations</source>
+        <translation>Rotations</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="342"/>
+        <source>Lengths</source>
+        <translation>Longueures</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.cpp" line="119"/>
+        <source>Pick a color for Clockwise rotations</source>
+        <translation>Choisir une couleur pour les rotations horaires</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.cpp" line="133"/>
+        <source>Pick a color for anticlockwise rotations</source>
+        <translation>Choisir une couleur pour les rotations anti-horaires</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.cpp" line="147"/>
+        <location filename="../tabs/localmode.cpp" line="156"/>
+        <source>Save File</source>
+        <translation>Enregistrer fichier</translation>
+    </message>
+</context>
+<context>
     <name>Logger</name>
     <message>
         <location filename="../gui/logger.ui" line="74"/>
@@ -1227,7 +1342,7 @@
     </message>
     <message>
         <location filename="../qdispersion/qdispersion.cpp" line="138"/>
-        <location filename="../qdispersion/qdispersion.cpp" line="240"/>
+        <location filename="../qdispersion/qdispersion.cpp" line="239"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
@@ -1858,7 +1973,7 @@
         <location filename="../tabs/visuals.ui" line="99"/>
         <location filename="../tabs/visuals.ui" line="102"/>
         <location filename="../tabs/visuals.ui" line="105"/>
-        <location filename="../tabs/visuals.ui" line="1306"/>
+        <location filename="../tabs/visuals.ui" line="1321"/>
         <source>Add translation along x</source>
         <translation>Ajouter une translation
  suivant x</translation>
@@ -1867,7 +1982,7 @@
         <location filename="../tabs/visuals.ui" line="125"/>
         <location filename="../tabs/visuals.ui" line="128"/>
         <location filename="../tabs/visuals.ui" line="131"/>
-        <location filename="../tabs/visuals.ui" line="1378"/>
+        <location filename="../tabs/visuals.ui" line="1393"/>
         <source>Remove translation along y</source>
         <translation>Réduire la translation suivant y</translation>
     </message>
@@ -1875,7 +1990,7 @@
         <location filename="../tabs/visuals.ui" line="151"/>
         <location filename="../tabs/visuals.ui" line="154"/>
         <location filename="../tabs/visuals.ui" line="157"/>
-        <location filename="../tabs/visuals.ui" line="1324"/>
+        <location filename="../tabs/visuals.ui" line="1339"/>
         <source>Add translation along y</source>
         <translation>Réduire la translation suivant y</translation>
     </message>
@@ -1883,7 +1998,7 @@
         <location filename="../tabs/visuals.ui" line="184"/>
         <location filename="../tabs/visuals.ui" line="187"/>
         <location filename="../tabs/visuals.ui" line="190"/>
-        <location filename="../tabs/visuals.ui" line="1342"/>
+        <location filename="../tabs/visuals.ui" line="1357"/>
         <source>Add translation along z</source>
         <translation>Ajouter une translation suivant z</translation>
     </message>
@@ -1891,7 +2006,7 @@
         <location filename="../tabs/visuals.ui" line="210"/>
         <location filename="../tabs/visuals.ui" line="213"/>
         <location filename="../tabs/visuals.ui" line="216"/>
-        <location filename="../tabs/visuals.ui" line="1396"/>
+        <location filename="../tabs/visuals.ui" line="1411"/>
         <source>Remove translation along x</source>
         <translation>Réduire la translation suivant x</translation>
     </message>
@@ -1899,7 +2014,7 @@
         <location filename="../tabs/visuals.ui" line="236"/>
         <location filename="../tabs/visuals.ui" line="239"/>
         <location filename="../tabs/visuals.ui" line="242"/>
-        <location filename="../tabs/visuals.ui" line="1360"/>
+        <location filename="../tabs/visuals.ui" line="1375"/>
         <source>Remove translation along z</source>
         <translation>Réduire la translation suivant z</translation>
     </message>
@@ -1907,7 +2022,7 @@
         <location filename="../tabs/visuals.ui" line="342"/>
         <location filename="../tabs/visuals.ui" line="345"/>
         <location filename="../tabs/visuals.ui" line="348"/>
-        <location filename="../tabs/visuals.ui" line="1438"/>
+        <location filename="../tabs/visuals.ui" line="1453"/>
         <source>Set view along z</source>
         <translation>Regarder le long de z</translation>
     </message>
@@ -1915,7 +2030,7 @@
         <location filename="../tabs/visuals.ui" line="370"/>
         <location filename="../tabs/visuals.ui" line="373"/>
         <location filename="../tabs/visuals.ui" line="376"/>
-        <location filename="../tabs/visuals.ui" line="1410"/>
+        <location filename="../tabs/visuals.ui" line="1425"/>
         <source>Set view along x</source>
         <translation>Regarder le long de x</translation>
     </message>
@@ -1923,7 +2038,7 @@
         <location filename="../tabs/visuals.ui" line="398"/>
         <location filename="../tabs/visuals.ui" line="401"/>
         <location filename="../tabs/visuals.ui" line="404"/>
-        <location filename="../tabs/visuals.ui" line="1424"/>
+        <location filename="../tabs/visuals.ui" line="1439"/>
         <source>Set view along y</source>
         <translation>Regarder le long de y</translation>
     </message>
@@ -2019,7 +2134,7 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="810"/>
-        <location filename="../tabs/visuals.ui" line="1070"/>
+        <location filename="../tabs/visuals.ui" line="1085"/>
         <source>Atoms</source>
         <translation>Atomes</translation>
     </message>
@@ -2032,8 +2147,8 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="837"/>
-        <location filename="../tabs/visuals.ui" line="1170"/>
-        <location filename="../tabs/visuals.ui" line="1174"/>
+        <location filename="../tabs/visuals.ui" line="1185"/>
+        <location filename="../tabs/visuals.ui" line="1189"/>
         <source>None</source>
         <translation>Rien</translation>
     </message>
@@ -2050,88 +2165,93 @@
         <translation>Bordures</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="886"/>
+        <location filename="../tabs/visuals.ui" line="882"/>
+        <source>Incircle</source>
+        <translation>Cercle inscrit</translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="901"/>
         <source>Physics</source>
         <translation>Physique</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="946"/>
-        <location filename="../tabs/visuals.ui" line="949"/>
-        <location filename="../tabs/visuals.ui" line="952"/>
+        <location filename="../tabs/visuals.ui" line="961"/>
+        <location filename="../tabs/visuals.ui" line="964"/>
+        <location filename="../tabs/visuals.ui" line="967"/>
         <source>Add/Remove octahedra</source>
         <translation>Ajouter/Supprimer des octahèdres</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="955"/>
+        <location filename="../tabs/visuals.ui" line="970"/>
         <source>Octahedra</source>
         <translation>Octahèdres</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="998"/>
-        <location filename="../tabs/visuals.ui" line="1001"/>
-        <location filename="../tabs/visuals.ui" line="1004"/>
+        <location filename="../tabs/visuals.ui" line="1013"/>
+        <location filename="../tabs/visuals.ui" line="1016"/>
+        <location filename="../tabs/visuals.ui" line="1019"/>
         <source>Add octahedra</source>
         <translation>Ajouter un octahèdre</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1028"/>
-        <location filename="../tabs/visuals.ui" line="1031"/>
-        <location filename="../tabs/visuals.ui" line="1034"/>
+        <location filename="../tabs/visuals.ui" line="1043"/>
+        <location filename="../tabs/visuals.ui" line="1046"/>
+        <location filename="../tabs/visuals.ui" line="1049"/>
         <source>Remove octahedra</source>
         <translation>Supprimer un octahèdre</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1058"/>
-        <location filename="../tabs/visuals.ui" line="1061"/>
-        <location filename="../tabs/visuals.ui" line="1064"/>
+        <location filename="../tabs/visuals.ui" line="1073"/>
+        <location filename="../tabs/visuals.ui" line="1076"/>
+        <location filename="../tabs/visuals.ui" line="1079"/>
         <source>Draw supplementary atoms</source>
         <translation>Dessiner les atomes supplémentaires</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1140"/>
-        <location filename="../tabs/visuals.ui" line="1143"/>
-        <location filename="../tabs/visuals.ui" line="1146"/>
+        <location filename="../tabs/visuals.ui" line="1155"/>
+        <location filename="../tabs/visuals.ui" line="1158"/>
         <location filename="../tabs/visuals.ui" line="1161"/>
-        <location filename="../tabs/visuals.ui" line="1164"/>
-        <location filename="../tabs/visuals.ui" line="1167"/>
+        <location filename="../tabs/visuals.ui" line="1176"/>
+        <location filename="../tabs/visuals.ui" line="1179"/>
+        <location filename="../tabs/visuals.ui" line="1182"/>
         <source>Spin direction filter</source>
         <translation>Filtre de la direction des spins</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1149"/>
+        <location filename="../tabs/visuals.ui" line="1164"/>
         <source>Spin only</source>
         <translation>Spin selon</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1225"/>
+        <location filename="../tabs/visuals.ui" line="1240"/>
         <source>Relative</source>
         <translation>Relatif</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1258"/>
+        <location filename="../tabs/visuals.ui" line="1273"/>
         <source>Angles</source>
         <translation>Angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1261"/>
-        <location filename="../tabs/visuals.ui" line="1264"/>
+        <location filename="../tabs/visuals.ui" line="1276"/>
+        <location filename="../tabs/visuals.ui" line="1279"/>
         <source>Show/Hide angles</source>
         <translation>Montrer/Cacher les angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1279"/>
+        <location filename="../tabs/visuals.ui" line="1294"/>
         <source>Time</source>
         <translation>Temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1282"/>
-        <location filename="../tabs/visuals.ui" line="1285"/>
-        <location filename="../tabs/visuals.ui" line="1288"/>
+        <location filename="../tabs/visuals.ui" line="1297"/>
+        <location filename="../tabs/visuals.ui" line="1300"/>
+        <location filename="../tabs/visuals.ui" line="1303"/>
         <source>Show/Hide time info</source>
         <translation>Montrer/Cacher l&apos;information du temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.cpp" line="295"/>
+        <location filename="../tabs/visuals.cpp" line="296"/>
         <source>Pick a base color</source>
         <translation>Choisir une couleur</translation>
     </message>
@@ -2243,6 +2363,483 @@
         <location filename="qagate.ui" line="135"/>
         <source>&amp;Tools</source>
         <translation>&amp;Outils</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="144"/>
+        <source>Local</source>
+        <translation>Local</translation>
+    </message>
+    <message>
+        <location filename="qagate.cpp" line="131"/>
+        <source>Ignoring file </source>
+        <translation>Fichier ignoré </translation>
+    </message>
+    <message>
+        <location filename="qagate.cpp" line="132"/>
+        <location filename="qagate.cpp" line="140"/>
+        <source>Error</source>
+        <translation>Erreur</translation>
+    </message>
+    <message>
+        <location filename="qagate.cpp" line="139"/>
+        <source>Updating canvas failed</source>
+        <translation>Echec de l&apos;actualisation du canvas</translation>
+    </message>
+</context>
+<context>
+    <name>qTdep</name>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="17"/>
+        <source>qTdep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="59"/>
+        <source>No file loaded</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="87"/>
+        <location filename="../qtdep/qtdep.ui" line="90"/>
+        <location filename="../qtdep/qtdep.ui" line="93"/>
+        <source>Supercell and MD parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="96"/>
+        <source>Supercell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="109"/>
+        <location filename="../qtdep/qtdep.ui" line="112"/>
+        <location filename="../qtdep/qtdep.ui" line="115"/>
+        <source>Define the unitcell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="118"/>
+        <source>Unit cell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="131"/>
+        <location filename="../qtdep/qtdep.ui" line="134"/>
+        <location filename="../qtdep/qtdep.ui" line="137"/>
+        <source>Options for TDEP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.ui" line="140"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="41"/>
+        <location filename="../qtdep/qtdep.cpp" line="130"/>
+        <source>Opening file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="41"/>
+        <location filename="../qtdep/qtdep.cpp" line="130"/>
+        <source>You need to select Supercell or Unit cell to open a file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="73"/>
+        <source>Running TDEP...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="76"/>
+        <source>Succeeded</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="83"/>
+        <source>Error</source>
+        <translation type="unfinished">Erreur</translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="84"/>
+        <source>Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="119"/>
+        <source>PDF file</source>
+        <translation type="unfinished">Fichier PDF</translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="133"/>
+        <source>Open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>qTdepOptions</name>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished">Formulaire</translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="22"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="25"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="28"/>
+        <source>Taylor expansion order of the energy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="31"/>
+        <source>Order expansion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="69"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="72"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="75"/>
+        <source>Cutoff radius for the second order terms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="78"/>
+        <source>radius cutoff for order 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="111"/>
+        <source>radius cutoff for order 3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="149"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="152"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="155"/>
+        <source>Energy smearing for calculating the phonons density of states</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="158"/>
+        <source>DOS smearing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="167"/>
+        <source>4.5e-6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="192"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="195"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="198"/>
+        <source>Q-point grid for the phonon density of states</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="201"/>
+        <source>DOS q-point grid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="222"/>
+        <source>2 2 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="246"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="249"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="252"/>
+        <source>Use ideal or average positions as reference</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="255"/>
+        <source>Use ideal positions instead of average positions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="265"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="268"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="271"/>
+        <source>Toogle debug mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="274"/>
+        <source>Mode debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="303"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="306"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="309"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="321"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="324"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="327"/>
+        <source>Unit for frequencies on the graph</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepoptions.ui" line="312"/>
+        <source>Energy unit</source>
+        <translation type="unfinished">Unité des énergies</translation>
+    </message>
+</context>
+<context>
+    <name>qTdepSupercell</name>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="23"/>
+        <source>Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="29"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="35"/>
+        <source>First time to use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="32"/>
+        <source>First time to use (starts at 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="38"/>
+        <source>First time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="45"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="48"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="51"/>
+        <source>Last time to use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="54"/>
+        <source>Last time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="61"/>
+        <source>Step to select time steps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="64"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="67"/>
+        <source>Step to select time steps used in the calculation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="70"/>
+        <source>Step</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="77"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="80"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="83"/>
+        <source>MD temperature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="86"/>
+        <source>Temperature</source>
+        <translation type="unfinished">Température</translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="193"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="199"/>
+        <source>Multiplicity of the supercell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="196"/>
+        <source>Multiplicity of the supercell with respect to the unitcell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.ui" line="202"/>
+        <source>Multiplicity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="48"/>
+        <source>Loading file </source>
+        <translation type="unfinished">Chargement du fichier </translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="50"/>
+        <source>Unable to have an MD trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="54"/>
+        <source> opened</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="58"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="59"/>
+        <source>Error</source>
+        <translation type="unfinished">Erreur</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qtdep/qtdepsupercell.cpp" line="71"/>
+        <source>Trajectory (%n step(s))</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+</context>
+<context>
+    <name>qTdepUnitcell</name>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="32"/>
+        <source>Lattice</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="44"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="47"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="50"/>
+        <source>Cell lattice vector scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="53"/>
+        <source>Lattice scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="63"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="66"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="69"/>
+        <source>Lattice vector a</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="72"/>
+        <source>a</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="82"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="85"/>
+        <source>Lattice vector b</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="88"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="101"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="104"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="107"/>
+        <source>Lattice vector c</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="91"/>
+        <source>b</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="110"/>
+        <source>c</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="184"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="187"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="190"/>
+        <source>Space groupe of unitcell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="193"/>
+        <source>Space group:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="222"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="225"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="228"/>
+        <source>Description of the structure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.ui" line="231"/>
+        <source>Atomic description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="85"/>
+        <source>Loading file </source>
+        <translation type="unfinished">Chargement du fichier </translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="91"/>
+        <source> opened</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="95"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="96"/>
+        <source>Error</source>
+        <translation type="unfinished">Erreur</translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="117"/>
+        <source> Type </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="118"/>
+        <source>x (red.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="119"/>
+        <source>y (red.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="120"/>
+        <source>z (red.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="152"/>
+        <source>Unit cell seems to be empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="165"/>
+        <source>Unable to fin atom typ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="187"/>
+        <source>All lattice scaling factor must be given</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="193"/>
+        <source>Please provide the 3 components of vector a</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="199"/>
+        <source>Please provide the 3 components of vector b</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="205"/>
+        <source>Please provide the 3 components of vector c</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
