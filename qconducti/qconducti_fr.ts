@@ -14,105 +14,105 @@
         <translation type="vanished">Nom du fichier</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="127"/>
+        <location filename="qconducti.ui" line="131"/>
         <source>Fermi energy:</source>
         <translation>Energie de Fermi :</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="140"/>
+        <location filename="qconducti.ui" line="144"/>
         <source>Emax-Efermi:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="163"/>
+        <location filename="qconducti.ui" line="167"/>
         <source>Units</source>
         <translation>Unités</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="169"/>
+        <location filename="qconducti.ui" line="173"/>
         <source>Energy</source>
         <translation>Energie</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="176"/>
+        <location filename="qconducti.ui" line="180"/>
         <location filename="qconducti.cpp" line="294"/>
         <source>Conductivity</source>
         <translation>Conductivité</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="184"/>
-        <location filename="qconducti.ui" line="304"/>
-        <location filename="qconducti.ui" line="349"/>
-        <location filename="qconducti.ui" line="550"/>
+        <location filename="qconducti.ui" line="188"/>
+        <location filename="qconducti.ui" line="308"/>
+        <location filename="qconducti.ui" line="353"/>
+        <location filename="qconducti.ui" line="554"/>
         <source>Ha</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="189"/>
-        <location filename="qconducti.ui" line="309"/>
-        <location filename="qconducti.ui" line="354"/>
-        <location filename="qconducti.ui" line="555"/>
+        <location filename="qconducti.ui" line="193"/>
+        <location filename="qconducti.ui" line="313"/>
+        <location filename="qconducti.ui" line="358"/>
+        <location filename="qconducti.ui" line="559"/>
         <source>eV</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="198"/>
+        <location filename="qconducti.ui" line="202"/>
         <source>au</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="203"/>
+        <location filename="qconducti.ui" line="207"/>
         <source>Ohm-1.cm-1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="220"/>
+        <location filename="qconducti.ui" line="224"/>
         <source>Calculation</source>
         <translation>Calcul</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="251"/>
+        <location filename="qconducti.ui" line="255"/>
         <source>Number of frequencies</source>
         <translation>Nombre de fréquences</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="283"/>
+        <location filename="qconducti.ui" line="287"/>
         <source>Smearing</source>
         <translatorcomment>Largeur de des gaussiennes pour le calcul</translatorcomment>
         <translation>Etalement</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="290"/>
+        <location filename="qconducti.ui" line="294"/>
         <source>Frequency range</source>
         <translation>Domaine fréquenciel</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="384"/>
-        <location filename="qconducti.ui" line="593"/>
+        <location filename="qconducti.ui" line="388"/>
+        <location filename="qconducti.ui" line="597"/>
         <source>Hold</source>
         <translation>Se souvenir</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="394"/>
+        <location filename="qconducti.ui" line="398"/>
         <source>Spins</source>
         <translation>Spins</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="404"/>
+        <location filename="qconducti.ui" line="408"/>
         <source>Selection rule</source>
         <translation>Règle de sélection</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="419"/>
-        <location filename="qconducti.ui" line="683"/>
+        <location filename="qconducti.ui" line="423"/>
+        <location filename="qconducti.ui" line="687"/>
         <source>From min</source>
         <translation>Depuis min</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="451"/>
-        <location filename="qconducti.ui" line="510"/>
-        <location filename="qconducti.ui" line="629"/>
-        <location filename="qconducti.ui" line="649"/>
+        <location filename="qconducti.ui" line="455"/>
+        <location filename="qconducti.ui" line="514"/>
+        <location filename="qconducti.ui" line="633"/>
+        <location filename="qconducti.ui" line="653"/>
         <source>max</source>
         <translation>max</translation>
     </message>
@@ -121,8 +121,8 @@
         <translation type="vanished">Depuis max</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="484"/>
-        <location filename="qconducti.ui" line="619"/>
+        <location filename="qconducti.ui" line="488"/>
+        <location filename="qconducti.ui" line="623"/>
         <source>To min</source>
         <translation>Vers min</translation>
     </message>
@@ -131,27 +131,27 @@
         <translation type="vanished">Vers max</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="536"/>
+        <location filename="qconducti.ui" line="540"/>
         <source>Unit</source>
         <translation>Unité</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="566"/>
+        <location filename="qconducti.ui" line="570"/>
         <source>&amp;Band</source>
         <translation>&amp;Bandes</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="573"/>
+        <location filename="qconducti.ui" line="577"/>
         <source>Energ&amp;y</source>
         <translation>Ene&amp;rgie</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="580"/>
+        <location filename="qconducti.ui" line="584"/>
         <source>Active</source>
         <translation>Active</translation>
     </message>
     <message>
-        <location filename="qconducti.ui" line="80"/>
+        <location filename="qconducti.ui" line="84"/>
         <source>No file loaded</source>
         <translation>Aucun fichier</translation>
     </message>

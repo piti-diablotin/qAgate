@@ -17,9 +17,6 @@ isEmpty(PREFIX) {
 isEmpty(PREFIX_AGATE) {
  PREFIX_AGATE = /usr/
 }
-isEmpty(PREFIX_SPGLIB) {
- PREFIX_SPGLIB = /usr/
-}
 target.path = $$PREFIX/bin
 INSTALLS += target
 
@@ -37,7 +34,7 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-        qtdep/main.cpp \
+        qtdep/main_qtdep.cpp \
         qtdep/qtdep.cpp \
     dialogs/mendeleev.cpp \
     tools/atomicdata.cpp \
@@ -84,4 +81,4 @@ INCLUDEPATH += $$PREFIX_AGATE/include/agate
 RESOURCES += \
     qtdep/qtdep.qrc
 
-unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg
+unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate

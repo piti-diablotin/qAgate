@@ -44,7 +44,7 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-    qagate/main.cpp \
+    qagate/main_qagate.cpp \
     qagate/qagate.cpp \
     gui/timeline.cpp \
     gui/mediaplayer.cpp \
@@ -172,14 +172,16 @@ FORMS += \
 
 RESOURCES += \
     qagate/qagate.qrc \
-    qdispersion/translations.qrc
+    qdispersion/qdispersion.qrc \
+    qconducti/qconducti.qrc \
+    qtdep/qtdep.qrc
 
 TRANSLATIONS += \
   qagate/qagate_fr.ts \
   qagate/qagate_it.ts \
   qagate/qagate_de.ts
 
-LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate
+LIBS += -L$$PREFIX_AGATE/lib/ -lagate
 
 
 INCLUDEPATH += \

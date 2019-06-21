@@ -17,9 +17,7 @@ isEmpty(PREFIX) {
 isEmpty(PREFIX_AGATE) {
  PREFIX_AGATE = /usr/
 }
-isEmpty(PREFIX_SPGLIB) {
- PREFIX_SPGLIB = /usr/
-}
+
 target.path = $$PREFIX/bin
 INSTALLS += target
 
@@ -37,7 +35,7 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-        qconducti/main.cpp \
+        qconducti/main_qconducti.cpp \
         qconducti/qconducti.cpp \
         tools/qcustomplot.cpp \
         tools/qplot.cpp \
@@ -60,6 +58,6 @@ TRANSLATIONS += \
 INCLUDEPATH += $$PREFIX_AGATE/include/agate
 
 RESOURCES += \
-    qconducti/translations.qrc
+    qconducti/qconducti.qrc
 
-unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg
+unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate 

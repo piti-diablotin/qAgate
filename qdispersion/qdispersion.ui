@@ -22,6 +22,10 @@
   <property name="windowTitle">
    <string notr="true">qDispersion</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="translations.qrc">
+    <normaloff>:/logo.svg</normaloff>:/logo.svg</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -673,7 +677,7 @@
                  <string notr="true"/>
                 </property>
                 <property name="icon">
-                 <iconset>
+                 <iconset resource="translations.qrc">
                   <normaloff>:/icons/mendeleev.svg</normaloff>:/icons/mendeleev.svg</iconset>
                 </property>
                 <property name="iconSize">

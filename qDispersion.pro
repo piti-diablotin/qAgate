@@ -17,9 +17,6 @@ isEmpty(PREFIX) {
 isEmpty(PREFIX_AGATE) {
  PREFIX_AGATE = /usr/
 }
-isEmpty(PREFIX_SPGLIB) {
- PREFIX_SPGLIB = /usr/
-}
 target.path = $$PREFIX/bin
 INSTALLS += target
 
@@ -37,7 +34,7 @@ DEFINES += HAVE_CONFIG_H
 
 
 SOURCES += \
-    qdispersion/main.cpp \
+    qdispersion/main_qdispersion.cpp \
     qdispersion/qdispersion.cpp \
     tools/energyunitcombo.cpp \
     tools/unitcombo.cpp \
@@ -68,6 +65,6 @@ TRANSLATIONS += \
 INCLUDEPATH += $$PREFIX_AGATE/include/agate
 
 RESOURCES += \
-    qdispersion/translations.qrc
+    qdispersion/qdispersion.qrc
 
-unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -L$$PREFIX_SPGLIB/lib -lagate -lsymspg
+unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate

@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>qTdep</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="qtdep.qrc">
+    <normaloff>:/logo.svg</normaloff>:/logo.svg</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <property name="acceptDrops">
     <bool>false</bool>
@@ -192,6 +196,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="qtdep.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it_IT">
+<TS version="2.1" language="es_ES">
 <context>
     <name>Mendeleev</name>
     <message>
@@ -42,84 +42,82 @@
 <context>
     <name>QDispersion</name>
     <message>
-        <location filename="qdispersion.ui" line="79"/>
+        <location filename="qdispersion.ui" line="75"/>
         <source>No file loaded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="98"/>
+        <location filename="qdispersion.ui" line="94"/>
         <source>Energy</source>
-        <oldsource>Energy </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="122"/>
+        <location filename="qdispersion.ui" line="118"/>
         <source>Energy origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="179"/>
+        <location filename="qdispersion.ui" line="175"/>
         <source>Energy unit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="220"/>
+        <location filename="qdispersion.ui" line="216"/>
         <source>Ignore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="234"/>
+        <location filename="qdispersion.ui" line="230"/>
         <source>bands</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="260"/>
+        <location filename="qdispersion.ui" line="256"/>
         <source>Legend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="281"/>
+        <location filename="qdispersion.ui" line="277"/>
         <source>Number of segments</source>
-        <oldsource>Number of segments </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="335"/>
+        <location filename="qdispersion.ui" line="331"/>
         <source>Number of points</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="423"/>
+        <location filename="qdispersion.ui" line="419"/>
         <source>Labels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="493"/>
+        <location filename="qdispersion.ui" line="489"/>
         <source>Fat&amp;bands</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="505"/>
+        <location filename="qdispersion.ui" line="501"/>
         <source>Atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="515"/>
+        <location filename="qdispersion.ui" line="511"/>
         <source>Orbital angular momentum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="548"/>
+        <location filename="qdispersion.ui" line="544"/>
         <source>all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="556"/>
+        <location filename="qdispersion.ui" line="552"/>
         <source>Magnetic quantum number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="703"/>
+        <location filename="qdispersion.ui" line="699"/>
         <source>Colours</source>
         <translation type="unfinished"></translation>
     </message>

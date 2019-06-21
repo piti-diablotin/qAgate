@@ -42,84 +42,84 @@
 <context>
     <name>QDispersion</name>
     <message>
-        <location filename="qdispersion.ui" line="75"/>
+        <location filename="qdispersion.ui" line="79"/>
         <source>No file loaded</source>
         <translation>Auncun fichier</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="94"/>
+        <location filename="qdispersion.ui" line="98"/>
         <source>Energy</source>
         <oldsource>Energy </oldsource>
         <translation>Energie</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="118"/>
+        <location filename="qdispersion.ui" line="122"/>
         <source>Energy origin</source>
         <translation>Origine des énergies</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="175"/>
+        <location filename="qdispersion.ui" line="179"/>
         <source>Energy unit</source>
         <translation>Unité des énergies</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="216"/>
+        <location filename="qdispersion.ui" line="220"/>
         <source>Ignore</source>
         <translation>Ignore</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="230"/>
+        <location filename="qdispersion.ui" line="234"/>
         <source>bands</source>
         <translation>bandes</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="256"/>
+        <location filename="qdispersion.ui" line="260"/>
         <source>Legend</source>
         <translation>Légende</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="277"/>
+        <location filename="qdispersion.ui" line="281"/>
         <source>Number of segments</source>
         <oldsource>Number of segments </oldsource>
         <translation>Nombre de segments</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="331"/>
+        <location filename="qdispersion.ui" line="335"/>
         <source>Number of points</source>
         <translation>Nombres de points</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="419"/>
+        <location filename="qdispersion.ui" line="423"/>
         <source>Labels</source>
         <translation>Etiquettes</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="489"/>
+        <location filename="qdispersion.ui" line="493"/>
         <source>Fat&amp;bands</source>
         <translation>Fat&amp;bands</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="501"/>
+        <location filename="qdispersion.ui" line="505"/>
         <source>Atoms</source>
         <translation>Atomes</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="511"/>
+        <location filename="qdispersion.ui" line="515"/>
         <source>Orbital angular momentum</source>
         <translation>Moment orbital angulaire</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="544"/>
+        <location filename="qdispersion.ui" line="548"/>
         <source>all</source>
         <translation>Tous</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="552"/>
+        <location filename="qdispersion.ui" line="556"/>
         <source>Magnetic quantum number</source>
         <translation>Nombre quantique magnétique</translation>
     </message>
     <message>
-        <location filename="qdispersion.ui" line="699"/>
+        <location filename="qdispersion.ui" line="703"/>
         <source>Colours</source>
         <translation>Couleurs</translation>
     </message>
