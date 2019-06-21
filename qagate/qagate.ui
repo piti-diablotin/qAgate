@@ -67,10 +67,16 @@
         <item>
          <widget class="QTabWidget" name="tabWidget">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>150</height>
+           </size>
           </property>
           <property name="currentIndex">
            <number>0</number>
@@ -142,6 +148,15 @@
            </attribute>
            <attribute name="title">
             <string>Local</string>
+           </attribute>
+          </widget>
+          <widget class="DensityMode" name="density">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/density/icons/density.svg</normaloff>:/density/icons/density.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Density</string>
            </attribute>
           </widget>
          </widget>
@@ -289,6 +304,12 @@
    <class>LocalMode</class>
    <extends>QWidget</extends>
    <header>tabs/localmode.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DensityMode</class>
+   <extends>QWidget</extends>
+   <header>tabs/densitymode.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

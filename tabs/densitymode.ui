@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DensityMode</class>
+ <widget class="QWidget" name="DensityMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>127</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Density</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Component</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="1" column="1">
+       <widget class="QRadioButton" name="diff">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Up-Down</string>
+        </property>
+        <property name="statusTip">
+         <string>Up-Down</string>
+        </property>
+        <property name="whatsThis">
+         <string>Up-Down</string>
+        </property>
+        <property name="text">
+         <string>Difference</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QRadioButton" name="z">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Projection on z</string>
+        </property>
+        <property name="statusTip">
+         <string>Projection on z</string>
+        </property>
+        <property name="whatsThis">
+         <string>Projection on z</string>
+        </property>
+        <property name="text">
+         <string notr="true">&amp;z</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="x">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Projection on x</string>
+        </property>
+        <property name="statusTip">
+         <string>Projection on x</string>
+        </property>
+        <property name="whatsThis">
+         <string>Projection on x</string>
+        </property>
+        <property name="text">
+         <string notr="true">&amp;x</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="down">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Channel down only</string>
+        </property>
+        <property name="statusTip">
+         <string>Channel down only</string>
+        </property>
+        <property name="whatsThis">
+         <string>Channel down only</string>
+        </property>
+        <property name="text">
+         <string>Down</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="sum">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Up+Down</string>
+        </property>
+        <property name="statusTip">
+         <string>Up+Down</string>
+        </property>
+        <property name="whatsThis">
+         <string>Up+Down</string>
+        </property>
+        <property name="text">
+         <string>Su&amp;m</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QRadioButton" name="y">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Projection on y</string>
+        </property>
+        <property name="statusTip">
+         <string>Projection on y</string>
+        </property>
+        <property name="whatsThis">
+         <string>Projection on y</string>
+        </property>
+        <property name="text">
+         <string notr="true">&amp;y</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="up">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Channel up only</string>
+        </property>
+        <property name="statusTip">
+         <string>Channel up only</string>
+        </property>
+        <property name="whatsThis">
+         <string>Channel up only</string>
+        </property>
+        <property name="text">
+         <string>Up</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">dispdenGroup</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Options</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QLabel" name="scaleFuncLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Scaling function</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="function">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Scaling function to apply to values</string>
+        </property>
+        <property name="statusTip">
+         <string>Scaling function to apply to values</string>
+        </property>
+        <property name="whatsThis">
+         <string>Scaling function to apply to values</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string>Linear</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Logarithm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Square root</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="normal">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Normal of the plan</string>
+        </property>
+        <property name="statusTip">
+         <string>Normal of the plan</string>
+        </property>
+        <property name="whatsThis">
+         <string>Normal of the plan</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string notr="true">a</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">b</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">c</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="normalLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="scaleFactLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Scaling factor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="factor">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Scaling factor to apply</string>
+        </property>
+        <property name="statusTip">
+         <string>Scaling factor to apply</string>
+        </property>
+        <property name="whatsThis">
+         <string>Scaling factor to apply</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Colors</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="colorZero">
+        <property name="toolTip">
+         <string>Color for zero</string>
+        </property>
+        <property name="statusTip">
+         <string>Color for zero</string>
+        </property>
+        <property name="whatsThis">
+         <string>Color for zero</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Minimum</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QToolButton" name="colorMax">
+        <property name="toolTip">
+         <string>Color for up (positive) component</string>
+        </property>
+        <property name="statusTip">
+         <string>Color for up (positive) component</string>
+        </property>
+        <property name="whatsThis">
+         <string>Color for up (positive) component</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Zero</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Maximum</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="colorMin">
+        <property name="toolTip">
+         <string>Color for down (negative) component</string>
+        </property>
+        <property name="statusTip">
+         <string>Color for down (negative) component</string>
+        </property>
+        <property name="whatsThis">
+         <string>Color for down (negative) component</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="dispdenGroup"/>
+ </buttongroups>
+</ui>

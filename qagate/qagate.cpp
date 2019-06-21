@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include "canvas/canvaslocal.hpp"
 #include "canvas/canvasphonons.hpp"
+#include "canvas/canvasdensity.hpp"
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
@@ -344,9 +345,15 @@ void qAgate::on_tabWidget_currentChanged(int index)
     ui->view->setFromCommandLine(true);
     emit(emitCommand(":mode local"));
   }
+  else if (ui->tabWidget->currentWidget() == ui->density)
+  {
+    ui->view->setFromCommandLine(true);
+    emit(emitCommand(":mode density"));
+  }
   else {
     if(dynamic_cast<CanvasLocal*>(ui->view->canvas())
-       ||dynamic_cast<CanvasPhonons*>(ui->view->canvas()))
+       ||dynamic_cast<CanvasPhonons*>(ui->view->canvas())
+       ||dynamic_cast<CanvasDensity*>(ui->view->canvas()))
       emit(emitCommand(":mode positions"));
   }
   this->updateTab();

@@ -1238,6 +1238,11 @@
            <property name="enabled">
             <bool>true</bool>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="toolTip">
             <string>Space group of current time</string>
            </property>
@@ -1256,6 +1261,11 @@
           <widget class="QToolButton" name="thermo">
            <property name="enabled">
             <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Thermo</string>

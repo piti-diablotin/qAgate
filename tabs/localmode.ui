@@ -179,6 +179,15 @@
       </property>
       <item row="2" column="0">
        <widget class="QRadioButton" name="rotation">
+        <property name="toolTip">
+         <string>Display rotations</string>
+        </property>
+        <property name="statusTip">
+         <string>Display rotations</string>
+        </property>
+        <property name="whatsThis">
+         <string>Display rotations</string>
+        </property>
         <property name="text">
          <string>&amp;Rotations</string>
         </property>
@@ -202,6 +211,15 @@
       </item>
       <item row="2" column="2">
        <widget class="QRadioButton" name="cart">
+        <property name="toolTip">
+         <string>Use cartesian axis as reference</string>
+        </property>
+        <property name="statusTip">
+         <string>Use cartesian axis as reference</string>
+        </property>
+        <property name="whatsThis">
+         <string>Use cartesian axis as reference</string>
+        </property>
         <property name="text">
          <string>&amp;Cartesian</string>
         </property>
@@ -226,6 +244,15 @@
       </item>
       <item row="3" column="0">
        <widget class="QRadioButton" name="length">
+        <property name="toolTip">
+         <string>Display lengths</string>
+        </property>
+        <property name="statusTip">
+         <string>Display lengths</string>
+        </property>
+        <property name="whatsThis">
+         <string>Display lengths</string>
+        </property>
         <property name="text">
          <string>&amp;Lengths</string>
         </property>
@@ -236,6 +263,15 @@
       </item>
       <item row="3" column="2">
        <widget class="QRadioButton" name="rel">
+        <property name="toolTip">
+         <string>Use first step as reference</string>
+        </property>
+        <property name="statusTip">
+         <string>Use first step as reference</string>
+        </property>
+        <property name="whatsThis">
+         <string>Use first step as reference</string>
+        </property>
         <property name="text">
          <string>Relati&amp;ve</string>
         </property>
@@ -291,6 +327,15 @@
       </item>
       <item row="0" column="1">
        <widget class="QToolButton" name="colorPlus">
+        <property name="toolTip">
+         <string>Change color</string>
+        </property>
+        <property name="statusTip">
+         <string>Change color</string>
+        </property>
+        <property name="whatsThis">
+         <string>Change color</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -298,6 +343,15 @@
       </item>
       <item row="1" column="1">
        <widget class="QToolButton" name="colorMinus">
+        <property name="toolTip">
+         <string>Change color</string>
+        </property>
+        <property name="statusTip">
+         <string>Change color</string>
+        </property>
+        <property name="whatsThis">
+         <string>Change color</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -327,6 +381,15 @@
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QPushButton" name="exportRotations">
+        <property name="toolTip">
+         <string>Export rotations to file</string>
+        </property>
+        <property name="statusTip">
+         <string>Export rotations to file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export rotations to file</string>
+        </property>
         <property name="text">
          <string>Rotations</string>
         </property>
@@ -338,6 +401,15 @@
       </item>
       <item>
        <widget class="QPushButton" name="exportLengths">
+        <property name="toolTip">
+         <string>Export lengths to file</string>
+        </property>
+        <property name="statusTip">
+         <string>Export lengths to file</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export lengths to file</string>
+        </property>
         <property name="text">
          <string>Lengths</string>
         </property>

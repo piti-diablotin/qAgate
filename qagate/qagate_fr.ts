@@ -33,6 +33,200 @@
     </message>
 </context>
 <context>
+    <name>DensityMode</name>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="14"/>
+        <source>Density</source>
+        <translation>Densité</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="32"/>
+        <source>Component</source>
+        <translation>Composante</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="58"/>
+        <location filename="../tabs/densitymode.ui" line="61"/>
+        <location filename="../tabs/densitymode.ui" line="64"/>
+        <source>Up-Down</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="67"/>
+        <source>Difference</source>
+        <translation>Différence</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="82"/>
+        <location filename="../tabs/densitymode.ui" line="85"/>
+        <location filename="../tabs/densitymode.ui" line="88"/>
+        <source>Projection on z</source>
+        <translation>Projection selon z</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="106"/>
+        <location filename="../tabs/densitymode.ui" line="109"/>
+        <location filename="../tabs/densitymode.ui" line="112"/>
+        <source>Projection on x</source>
+        <translation>Projection selon x</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="130"/>
+        <location filename="../tabs/densitymode.ui" line="133"/>
+        <location filename="../tabs/densitymode.ui" line="136"/>
+        <source>Channel down only</source>
+        <translation>Seulement le canal down</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="139"/>
+        <source>Down</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="154"/>
+        <location filename="../tabs/densitymode.ui" line="157"/>
+        <location filename="../tabs/densitymode.ui" line="160"/>
+        <source>Up+Down</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="163"/>
+        <source>Su&amp;m</source>
+        <translation>Somme</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="178"/>
+        <location filename="../tabs/densitymode.ui" line="181"/>
+        <location filename="../tabs/densitymode.ui" line="184"/>
+        <source>Projection on y</source>
+        <translation>Projection selon y</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="202"/>
+        <location filename="../tabs/densitymode.ui" line="205"/>
+        <location filename="../tabs/densitymode.ui" line="208"/>
+        <source>Channel up only</source>
+        <translation>Seulement le canal up</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="211"/>
+        <source>Up</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="230"/>
+        <source>Options</source>
+        <translation>Options</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="253"/>
+        <source>Scaling function</source>
+        <translation>Fonction d&apos;échelle</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="265"/>
+        <location filename="../tabs/densitymode.ui" line="268"/>
+        <location filename="../tabs/densitymode.ui" line="271"/>
+        <source>Scaling function to apply to values</source>
+        <translation>Fonction de mise à l&apos;échelle à appliquer aux valeurs</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="278"/>
+        <source>Linear</source>
+        <translation>Linéaire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="283"/>
+        <source>Logarithm</source>
+        <translation>Logarithme</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="288"/>
+        <source>Square root</source>
+        <translation>Racine carrée</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="301"/>
+        <location filename="../tabs/densitymode.ui" line="304"/>
+        <location filename="../tabs/densitymode.ui" line="307"/>
+        <source>Normal of the plan</source>
+        <translation>Normale au plan</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="337"/>
+        <source>Normal</source>
+        <translation>Normale</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="349"/>
+        <source>Scaling factor</source>
+        <translation>Facteur d&apos;échelle</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="361"/>
+        <location filename="../tabs/densitymode.ui" line="364"/>
+        <location filename="../tabs/densitymode.ui" line="367"/>
+        <source>Scaling factor to apply</source>
+        <translation>Facteur de mise à l&apos;échelle à appliquer</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="377"/>
+        <source>Colors</source>
+        <translation>Couleurs</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="395"/>
+        <location filename="../tabs/densitymode.ui" line="398"/>
+        <location filename="../tabs/densitymode.ui" line="401"/>
+        <source>Color for zero</source>
+        <translation>Couleur pour zéro</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="416"/>
+        <source>Minimum</source>
+        <translation>Minimum</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="423"/>
+        <location filename="../tabs/densitymode.ui" line="426"/>
+        <location filename="../tabs/densitymode.ui" line="429"/>
+        <source>Color for up (positive) component</source>
+        <translation>Couleur pour la composante up (positive)</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="444"/>
+        <source>Zero</source>
+        <translation>Zéro</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="456"/>
+        <source>Maximum</source>
+        <translation>Maximum</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.ui" line="463"/>
+        <location filename="../tabs/densitymode.ui" line="466"/>
+        <location filename="../tabs/densitymode.ui" line="469"/>
+        <source>Color for down (negative) component</source>
+        <translation>Couleur pour la composante down (négative)</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.cpp" line="114"/>
+        <source>Pick a color for minimum value (negative)</source>
+        <translation>Choisir une couleur pour la valeur minimal (négative)</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.cpp" line="128"/>
+        <source>Pick a color for zero value</source>
+        <translation>Choisir une couleur pour la valeur zéro</translation>
+    </message>
+    <message>
+        <location filename="../tabs/densitymode.cpp" line="142"/>
+        <source>Pick a color for maximal value (positive)</source>
+        <translation>Choisir une couleur pour la valeur maximale (positive)</translation>
+    </message>
+</context>
+<context>
     <name>DumpDialog</name>
     <message>
         <location filename="../dialogs/dumpdialog.ui" line="14"/>
@@ -76,7 +270,7 @@
         <location filename="../tabs/home.ui" line="196"/>
         <location filename="../tabs/home.ui" line="199"/>
         <location filename="../tabs/home.ui" line="202"/>
-        <location filename="../tabs/home.ui" line="1310"/>
+        <location filename="../tabs/home.ui" line="1320"/>
         <source>Write abinit input file</source>
         <translation>Ecrire un fichier d&apos;entrée pour abinit</translation>
     </message>
@@ -84,7 +278,7 @@
         <location filename="../tabs/home.ui" line="73"/>
         <location filename="../tabs/home.ui" line="76"/>
         <location filename="../tabs/home.ui" line="79"/>
-        <location filename="../tabs/home.ui" line="1328"/>
+        <location filename="../tabs/home.ui" line="1338"/>
         <source>Export trajectory to _HIST format</source>
         <translation>Exporter la trajectoire au format _HIST</translation>
     </message>
@@ -127,7 +321,7 @@
         <location filename="../tabs/home.ui" line="228"/>
         <location filename="../tabs/home.ui" line="231"/>
         <location filename="../tabs/home.ui" line="234"/>
-        <location filename="../tabs/home.ui" line="1343"/>
+        <location filename="../tabs/home.ui" line="1353"/>
         <source>Open a new file</source>
         <translation>Ouvrir un nouveau fichier</translation>
     </message>
@@ -286,48 +480,44 @@
         <translation>Atome 3</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1242"/>
-        <location filename="../tabs/home.ui" line="1245"/>
-        <location filename="../tabs/home.ui" line="1248"/>
+        <location filename="../tabs/home.ui" line="1247"/>
+        <location filename="../tabs/home.ui" line="1250"/>
+        <location filename="../tabs/home.ui" line="1253"/>
         <source>Space group of current time</source>
         <translation>Groupe d&apos;espace du pas de temps actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1251"/>
+        <location filename="../tabs/home.ui" line="1256"/>
         <source>Space Group</source>
         <translation>Groupe d&apos;espace</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1261"/>
+        <location filename="../tabs/home.ui" line="1271"/>
         <source>Thermo</source>
         <translation>Thermo</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1340"/>
+        <location filename="../tabs/home.ui" line="1350"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
     </message>
     <message>
-        <source>Open new file</source>
-        <translation type="obsolete">Ouvrir un nouveau fichier</translation>
-    </message>
-    <message>
-        <location filename="../tabs/home.ui" line="1355"/>
+        <location filename="../tabs/home.ui" line="1365"/>
         <source>Append</source>
         <translation>Rajouter</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1358"/>
+        <location filename="../tabs/home.ui" line="1368"/>
         <source>Append a new file to the current one</source>
         <translation>Rajouter un nouveau fichier à la suite de l&apos;actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1370"/>
+        <location filename="../tabs/home.ui" line="1380"/>
         <source>Cloud</source>
         <translation>Server</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1373"/>
+        <location filename="../tabs/home.ui" line="1383"/>
         <source>Import from cluster</source>
         <translation>Importer depuis un server</translation>
     </message>
@@ -372,61 +562,113 @@
     </message>
     <message>
         <location filename="../tabs/localmode.ui" line="183"/>
+        <location filename="../tabs/localmode.ui" line="186"/>
+        <location filename="../tabs/localmode.ui" line="189"/>
+        <source>Display rotations</source>
+        <translation>Montrer les rotations</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="192"/>
         <source>&amp;Rotations</source>
         <translation>&amp;Rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="206"/>
+        <location filename="../tabs/localmode.ui" line="215"/>
+        <location filename="../tabs/localmode.ui" line="218"/>
+        <location filename="../tabs/localmode.ui" line="221"/>
+        <source>Use cartesian axis as reference</source>
+        <translation>Utiliser les axes cartésien comm référence</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="224"/>
         <source>&amp;Cartesian</source>
         <translation>&amp;Cartésien</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="216"/>
+        <location filename="../tabs/localmode.ui" line="234"/>
         <source>Basis:</source>
         <translation>Base:</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="230"/>
+        <location filename="../tabs/localmode.ui" line="248"/>
+        <location filename="../tabs/localmode.ui" line="251"/>
+        <location filename="../tabs/localmode.ui" line="254"/>
+        <source>Display lengths</source>
+        <translation>Montrer les distances</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="257"/>
         <source>&amp;Lengths</source>
         <translation>&amp;Longueures</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="240"/>
-        <source>Relati&amp;ve</source>
-        <translation>Relqti&amp;ve</translation>
+        <location filename="../tabs/localmode.ui" line="267"/>
+        <location filename="../tabs/localmode.ui" line="270"/>
+        <location filename="../tabs/localmode.ui" line="273"/>
+        <source>Use first step as reference</source>
+        <translation>Utiliser le premier pqs comme référence</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="250"/>
+        <location filename="../tabs/localmode.ui" line="276"/>
+        <source>Relati&amp;ve</source>
+        <translation>Relati&amp;ve</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="286"/>
         <source>Display:</source>
         <translation>Affichage:</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="260"/>
+        <location filename="../tabs/localmode.ui" line="296"/>
         <source>Colors</source>
         <translation>Couleurs</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="281"/>
+        <location filename="../tabs/localmode.ui" line="317"/>
         <source>Clockwise rotations</source>
         <translation>Rotations horaires</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="288"/>
+        <location filename="../tabs/localmode.ui" line="324"/>
         <source>Anticlockwise rotations</source>
         <translation>Rotations anti-horaires</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="325"/>
+        <location filename="../tabs/localmode.ui" line="331"/>
+        <location filename="../tabs/localmode.ui" line="334"/>
+        <location filename="../tabs/localmode.ui" line="337"/>
+        <location filename="../tabs/localmode.ui" line="347"/>
+        <location filename="../tabs/localmode.ui" line="350"/>
+        <location filename="../tabs/localmode.ui" line="353"/>
+        <source>Change color</source>
+        <translation>Changer de couleur</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="379"/>
         <source>Export</source>
         <translation>Exportation</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="331"/>
+        <location filename="../tabs/localmode.ui" line="385"/>
+        <location filename="../tabs/localmode.ui" line="388"/>
+        <location filename="../tabs/localmode.ui" line="391"/>
+        <source>Export rotations to file</source>
+        <translation>Exporter les rotations dans un fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="394"/>
         <source>Rotations</source>
         <translation>Rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="342"/>
+        <location filename="../tabs/localmode.ui" line="405"/>
+        <location filename="../tabs/localmode.ui" line="408"/>
+        <location filename="../tabs/localmode.ui" line="411"/>
+        <source>Export lengths to file</source>
+        <translation>Exporter les distances dans un fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="414"/>
         <source>Lengths</source>
         <translation>Longueures</translation>
     </message>
@@ -828,18 +1070,6 @@
         <translation>Zoomer</translation>
     </message>
     <message>
-        <source>Open a new file</source>
-        <translation type="vanished">Ouvrir un nouveau fichier</translation>
-    </message>
-    <message>
-        <source>Append a new file</source>
-        <translation type="vanished">Rajouter à la suite un nouveau fichier</translation>
-    </message>
-    <message>
-        <source>Append a new file to the current visualization</source>
-        <translation type="vanished">Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
-    </message>
-    <message>
         <location filename="../gui/mediaplayer.cpp" line="94"/>
         <location filename="../gui/mediaplayer.cpp" line="96"/>
         <source>Pause</source>
@@ -1029,10 +1259,6 @@
         <source>qConducti</source>
         <oldsource>QConducti</oldsource>
         <translation>qConducti</translation>
-    </message>
-    <message>
-        <source>Filename</source>
-        <translation type="vanished">Nom du fichier</translation>
     </message>
     <message>
         <location filename="../qconducti/qconducti.ui" line="127"/>
@@ -2340,48 +2566,53 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="87"/>
+        <location filename="qagate.ui" line="93"/>
         <source>&amp;Home</source>
         <translation>&amp;Accueil</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="96"/>
+        <location filename="qagate.ui" line="102"/>
         <source>&amp;MD</source>
         <translation>D&amp;M</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="111"/>
+        <location filename="qagate.ui" line="117"/>
         <source>&amp;Visuals</source>
         <translation>&amp;Visuel</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="126"/>
+        <location filename="qagate.ui" line="132"/>
         <source>&amp;Settings</source>
         <translation>&amp;Paramètres</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="135"/>
+        <location filename="qagate.ui" line="141"/>
         <source>&amp;Tools</source>
         <translation>&amp;Outils</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="144"/>
+        <location filename="qagate.ui" line="150"/>
         <source>Local</source>
         <translation>Local</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="131"/>
+        <location filename="qagate.ui" line="159"/>
+        <source>Density</source>
+        <translation>Densité</translation>
+    </message>
+    <message>
+        <location filename="qagate.cpp" line="132"/>
         <source>Ignoring file </source>
         <translation>Fichier ignoré </translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="132"/>
-        <location filename="qagate.cpp" line="140"/>
+        <location filename="qagate.cpp" line="133"/>
+        <location filename="qagate.cpp" line="141"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="139"/>
+        <location filename="qagate.cpp" line="140"/>
         <source>Updating canvas failed</source>
         <translation>Echec de l&apos;actualisation du canvas</translation>
     </message>
@@ -2432,7 +2663,7 @@
     <message>
         <location filename="../qtdep/qtdep.ui" line="140"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Options</translation>
     </message>
     <message>
         <location filename="../qtdep/qtdep.cpp" line="41"/>

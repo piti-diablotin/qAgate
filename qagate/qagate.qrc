@@ -112,4 +112,7 @@
     <qresource prefix="/local">
         <file>../icons/local.svg</file>
     </qresource>
+    <qresource prefix="/density">
+        <file>../icons/density.svg</file>
+    </qresource>
 </RCC>
