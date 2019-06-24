@@ -1,0 +1,29 @@
+<svg class="feather feather-fast-forward" width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient906">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <radialGradient id="radialGradient908" cx="8.2819" cy="13.239" r="2.1725" gradientTransform="matrix(1 0 0 3.5876 0 -34.259)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient906"/>
+  <radialGradient id="radialGradient910" cx="7.1383" cy="12.257" r="2.1725" gradientTransform="matrix(1 0 0 3.5876 0 -31.716)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient906"/>
+  <radialGradient id="radialGradient1222" cx="8.2819" cy="13.239" r="3.1723" gradientTransform="matrix(1 0 0 2.7721 0 -23.461)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient906"/>
+  <radialGradient id="radialGradient1224" cx="7.1383" cy="12.257" r="3.1723" gradientTransform="matrix(1 0 0 2.7721 0 -21.72)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient906"/>
+  <filter id="filter1362" x="-.048" y="-.17221" width="1.096" height="1.3444" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.31177161"/>
+  </filter>
+  <filter id="filter1366" x="-.17221" y="-.048" width="1.3444" height="1.096" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.31177161"/>
+  </filter>
+ </defs>
+ <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9994">
+  <rect x="2" y="2" width="20" height="20" fill="#e9e9e9" stroke="#000" style="paint-order:fill markers stroke"/>
+  <g transform="matrix(.93747 0 0 .93747 5.3081 .50977)" fill="url(#radialGradient910)" filter="url(#filter1366)" opacity=".96" stroke="url(#radialGradient1224)">
+   <path d="m9.3076 8.0442a2.1725 3.3973 0 0 1-2.2709 3.2092 2.1725 3.3973 0 0 1-2.0693-3.5268 2.1725 3.3973 0 0 1 2.2397-3.2624 2.1725 3.3973 0 0 1 2.1031 3.4776" opacity="1" style="paint-order:fill markers stroke"/>
+   <path d="m9.3076 16.838a2.1725 3.3973 0 0 1-2.2709 3.2092 2.1725 3.3973 0 0 1-2.0693-3.5268 2.1725 3.3973 0 0 1 2.2397-3.2624 2.1725 3.3973 0 0 1 2.1031 3.4776" opacity="1" style="paint-order:fill markers stroke"/>
+  </g>
+  <g transform="matrix(0 .93747 -.93747 0 24.411 4.236)" fill="url(#radialGradient908)" filter="url(#filter1362)" opacity=".96" stroke="url(#radialGradient1222)">
+   <path d="m10.451 9.0268a2.1725 3.3973 0 0 1-2.2709 3.2092 2.1725 3.3973 0 0 1-2.0693-3.5268 2.1725 3.3973 0 0 1 2.2397-3.2624 2.1725 3.3973 0 0 1 2.1031 3.4776" opacity="1" style="paint-order:fill markers stroke"/>
+   <path d="m10.451 17.821a2.1725 3.3973 0 0 1-2.2709 3.2092 2.1725 3.3973 0 0 1-2.0693-3.5268 2.1725 3.3973 0 0 1 2.2397-3.2624 2.1725 3.3973 0 0 1 2.1031 3.4776" opacity="1" style="paint-order:fill markers stroke"/>
+  </g>
+ </g>
+</svg>
