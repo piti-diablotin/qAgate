@@ -17,7 +17,6 @@ View::View(QWidget *parent) :
   _inputKeys({false}),
   _wheelDelta(0),
   _cmdValidator(QRegExp("^:.*$"),this),
-  _debug(false),
   _fromCommandLine(false)
 {
   ui->setupUi(this);
@@ -47,6 +46,8 @@ View::~View()
 
 void View::initializeGL()
 {
+  this->makeCurrent();
+  initializeOpenGLFunctions();
   Window::beginGl();
   _arrow.reset(new TriArrow(true));
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
@@ -218,7 +219,7 @@ void View::processCommand(QString command, bool pop)
   for ( int i = 0 ; i < command.size() ; ++i )
     _inputChar.push((unsigned int)command[i].toLatin1());
   if (command.startsWith(':')) _inputChar.push((unsigned int)'\n');
-  if (_debug)
+  if (_optionb["debug"])
   {
     std::clog << command.toStdString() << std::endl;
   }
@@ -465,10 +466,45 @@ void View::start() { _timer->start();}
 
 void View::setDebugMode(bool debug)
 {
-  _debug = debug;
+  _optionb["debug"] = debug;
 }
 
 void View::setFromCommandLine(bool fromCommandLine)
 {
   _fromCommandLine = fromCommandLine;
+}
+
+void View::snapshot()
+{
+  QImage snapshot = this->grabFramebuffer();
+  QString filename = QString::fromStdString(_title);
+  std::stringstream sstr;
+  switch (_imageSuffixMode)
+  {
+    case convert :
+      sstr.fill('0');
+      sstr << "_" << std::setw(5) << _suffix++;
+      break;
+    case animate :
+      sstr << "_" << _suffix++;
+      break;
+  }
+  filename += QString::fromStdString(sstr.str());
+  std::string format;
+  switch (_image.getFormat())
+  {
+    case ImageSaver::png :
+      format = "PNG";
+      filename += ".png";
+      break;
+    case ImageSaver::jpeg :
+      format = "JPG";
+      filename += ".jpg";
+      break;
+    case ImageSaver::ppm :
+      format = "PPM";
+      filename += ".ppm";
+  }
+  if (snapshot.save(filename,format.c_str(),_image.getQuality()))
+    std::clog << "Snapshot saved to " << filename.toStdString() << std::endl;
 }

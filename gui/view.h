@@ -51,6 +51,7 @@ public:
   double getDistance(int atom1, int atom2) const;
 
   void setFromCommandLine(bool fromCommandLine);
+  virtual void snapshot();
 
 protected:
   virtual bool getChar(unsigned key);
@@ -101,7 +102,6 @@ private:
   std::array<bool,_maxKeys> _inputKeys;
   double _wheelDelta;
   QRegExpValidator _cmdValidator;
-  bool _debug;
   bool _fromCommandLine;
 };
 
