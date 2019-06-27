@@ -476,7 +476,11 @@ void View::setFromCommandLine(bool fromCommandLine)
 
 void View::snapshot()
 {
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
   QImage snapshot = this->grabFramebuffer();
+#else
+  QImage snapshot = this->grabFrameBuffer(false);
+#endif
   QString filename = QString::fromStdString(_title);
   std::stringstream sstr;
   switch (_imageSuffixMode)
