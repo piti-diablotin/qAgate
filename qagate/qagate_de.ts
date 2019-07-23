@@ -1089,27 +1089,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="410"/>
+        <location filename="../dialogs/mendeleev.ui" line="413"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="451"/>
+        <location filename="../dialogs/mendeleev.ui" line="454"/>
         <source>Mass:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="513"/>
+        <location filename="../dialogs/mendeleev.ui" line="516"/>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="537"/>
+        <location filename="../dialogs/mendeleev.ui" line="540"/>
         <source>Atomic radius:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="581"/>
+        <location filename="../dialogs/mendeleev.ui" line="584"/>
         <source>Covalent radius:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1176,6 +1176,33 @@
     <message>
         <location filename="../dialogs/pdfdialog.ui" line="140"/>
         <source>Maximum radius  used to find neighbours</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PhononsMode</name>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="26"/>
+        <source>Import/Export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="32"/>
+        <location filename="../tabs/phononsmode.ui" line="39"/>
+        <location filename="../tabs/phononsmode.ui" line="46"/>
+        <location filename="../tabs/phononsmode.ui" line="53"/>
+        <location filename="../tabs/phononsmode.ui" line="81"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="69"/>
+        <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1260,135 +1287,135 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="127"/>
+        <location filename="../qconducti/qconducti.ui" line="131"/>
         <source>Fermi energy:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="140"/>
+        <location filename="../qconducti/qconducti.ui" line="144"/>
         <source>Emax-Efermi:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="163"/>
+        <location filename="../qconducti/qconducti.ui" line="167"/>
         <source>Units</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="169"/>
+        <location filename="../qconducti/qconducti.ui" line="173"/>
         <source>Energy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="176"/>
+        <location filename="../qconducti/qconducti.ui" line="180"/>
         <location filename="../qconducti/qconducti.cpp" line="294"/>
         <source>Conductivity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="184"/>
-        <location filename="../qconducti/qconducti.ui" line="304"/>
-        <location filename="../qconducti/qconducti.ui" line="349"/>
-        <location filename="../qconducti/qconducti.ui" line="550"/>
+        <location filename="../qconducti/qconducti.ui" line="188"/>
+        <location filename="../qconducti/qconducti.ui" line="308"/>
+        <location filename="../qconducti/qconducti.ui" line="353"/>
+        <location filename="../qconducti/qconducti.ui" line="554"/>
         <source>Ha</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="189"/>
-        <location filename="../qconducti/qconducti.ui" line="309"/>
-        <location filename="../qconducti/qconducti.ui" line="354"/>
-        <location filename="../qconducti/qconducti.ui" line="555"/>
+        <location filename="../qconducti/qconducti.ui" line="193"/>
+        <location filename="../qconducti/qconducti.ui" line="313"/>
+        <location filename="../qconducti/qconducti.ui" line="358"/>
+        <location filename="../qconducti/qconducti.ui" line="559"/>
         <source>eV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="198"/>
+        <location filename="../qconducti/qconducti.ui" line="202"/>
         <source>au</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="203"/>
+        <location filename="../qconducti/qconducti.ui" line="207"/>
         <source>Ohm-1.cm-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="220"/>
+        <location filename="../qconducti/qconducti.ui" line="224"/>
         <source>Calculation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="251"/>
+        <location filename="../qconducti/qconducti.ui" line="255"/>
         <source>Number of frequencies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="283"/>
+        <location filename="../qconducti/qconducti.ui" line="287"/>
         <source>Smearing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="290"/>
+        <location filename="../qconducti/qconducti.ui" line="294"/>
         <source>Frequency range</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="384"/>
-        <location filename="../qconducti/qconducti.ui" line="593"/>
+        <location filename="../qconducti/qconducti.ui" line="388"/>
+        <location filename="../qconducti/qconducti.ui" line="597"/>
         <source>Hold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="394"/>
+        <location filename="../qconducti/qconducti.ui" line="398"/>
         <source>Spins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="404"/>
+        <location filename="../qconducti/qconducti.ui" line="408"/>
         <source>Selection rule</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="419"/>
-        <location filename="../qconducti/qconducti.ui" line="683"/>
+        <location filename="../qconducti/qconducti.ui" line="423"/>
+        <location filename="../qconducti/qconducti.ui" line="687"/>
         <source>From min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="451"/>
-        <location filename="../qconducti/qconducti.ui" line="510"/>
-        <location filename="../qconducti/qconducti.ui" line="629"/>
-        <location filename="../qconducti/qconducti.ui" line="649"/>
+        <location filename="../qconducti/qconducti.ui" line="455"/>
+        <location filename="../qconducti/qconducti.ui" line="514"/>
+        <location filename="../qconducti/qconducti.ui" line="633"/>
+        <location filename="../qconducti/qconducti.ui" line="653"/>
         <source>max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="484"/>
-        <location filename="../qconducti/qconducti.ui" line="619"/>
+        <location filename="../qconducti/qconducti.ui" line="488"/>
+        <location filename="../qconducti/qconducti.ui" line="623"/>
         <source>To min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="536"/>
+        <location filename="../qconducti/qconducti.ui" line="540"/>
         <source>Unit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="566"/>
+        <location filename="../qconducti/qconducti.ui" line="570"/>
         <source>&amp;Band</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="573"/>
+        <location filename="../qconducti/qconducti.ui" line="577"/>
         <source>Energ&amp;y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="580"/>
+        <location filename="../qconducti/qconducti.ui" line="584"/>
         <source>Active</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="80"/>
+        <location filename="../qconducti/qconducti.ui" line="84"/>
         <source>No file loaded</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1453,82 +1480,82 @@
 <context>
     <name>QDispersion</name>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="75"/>
+        <location filename="../qdispersion/qdispersion.ui" line="79"/>
         <source>No file loaded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="94"/>
+        <location filename="../qdispersion/qdispersion.ui" line="98"/>
         <source>Energy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="118"/>
+        <location filename="../qdispersion/qdispersion.ui" line="122"/>
         <source>Energy origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="175"/>
+        <location filename="../qdispersion/qdispersion.ui" line="179"/>
         <source>Energy unit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="216"/>
+        <location filename="../qdispersion/qdispersion.ui" line="220"/>
         <source>Ignore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="230"/>
+        <location filename="../qdispersion/qdispersion.ui" line="234"/>
         <source>bands</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="256"/>
+        <location filename="../qdispersion/qdispersion.ui" line="260"/>
         <source>Legend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="277"/>
+        <location filename="../qdispersion/qdispersion.ui" line="281"/>
         <source>Number of segments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="331"/>
+        <location filename="../qdispersion/qdispersion.ui" line="335"/>
         <source>Number of points</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="419"/>
+        <location filename="../qdispersion/qdispersion.ui" line="423"/>
         <source>Labels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="489"/>
+        <location filename="../qdispersion/qdispersion.ui" line="493"/>
         <source>Fat&amp;bands</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="501"/>
+        <location filename="../qdispersion/qdispersion.ui" line="505"/>
         <source>Atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="511"/>
+        <location filename="../qdispersion/qdispersion.ui" line="515"/>
         <source>Orbital angular momentum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="544"/>
+        <location filename="../qdispersion/qdispersion.ui" line="548"/>
         <source>all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="552"/>
+        <location filename="../qdispersion/qdispersion.ui" line="556"/>
         <source>Magnetic quantum number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="699"/>
+        <location filename="../qdispersion/qdispersion.ui" line="703"/>
         <source>Colours</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2596,6 +2623,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="qagate.ui" line="164"/>
+        <source>Phonons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="qagate.cpp" line="132"/>
         <source>Ignoring file </source>
         <translation type="unfinished"></translation>
@@ -2620,43 +2652,43 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="59"/>
+        <location filename="../qtdep/qtdep.ui" line="63"/>
         <source>No file loaded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="87"/>
-        <location filename="../qtdep/qtdep.ui" line="90"/>
-        <location filename="../qtdep/qtdep.ui" line="93"/>
+        <location filename="../qtdep/qtdep.ui" line="91"/>
+        <location filename="../qtdep/qtdep.ui" line="94"/>
+        <location filename="../qtdep/qtdep.ui" line="97"/>
         <source>Supercell and MD parameters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="96"/>
+        <location filename="../qtdep/qtdep.ui" line="100"/>
         <source>Supercell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="109"/>
-        <location filename="../qtdep/qtdep.ui" line="112"/>
-        <location filename="../qtdep/qtdep.ui" line="115"/>
+        <location filename="../qtdep/qtdep.ui" line="113"/>
+        <location filename="../qtdep/qtdep.ui" line="116"/>
+        <location filename="../qtdep/qtdep.ui" line="119"/>
         <source>Define the unitcell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="118"/>
+        <location filename="../qtdep/qtdep.ui" line="122"/>
         <source>Unit cell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="131"/>
-        <location filename="../qtdep/qtdep.ui" line="134"/>
-        <location filename="../qtdep/qtdep.ui" line="137"/>
+        <location filename="../qtdep/qtdep.ui" line="135"/>
+        <location filename="../qtdep/qtdep.ui" line="138"/>
+        <location filename="../qtdep/qtdep.ui" line="141"/>
         <source>Options for TDEP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.ui" line="140"/>
+        <location filename="../qtdep/qtdep.ui" line="144"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>

@@ -92,7 +92,7 @@
     <message>
         <location filename="../tabs/densitymode.ui" line="163"/>
         <source>Su&amp;m</source>
-        <translation>Somme</translation>
+        <translation>S&amp;omme</translation>
     </message>
     <message>
         <location filename="../tabs/densitymode.ui" line="178"/>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../tabs/localmode.ui" line="379"/>
         <source>Export</source>
-        <translation>Exportation</translation>
+        <translation>Export</translation>
     </message>
     <message>
         <location filename="../tabs/localmode.ui" line="385"/>
@@ -755,7 +755,7 @@
     <message>
         <location filename="../tabs/md.ui" line="35"/>
         <source>Plot selection</source>
-        <translation>Selection du graph</translation>
+        <translation>Sélection du graph</translation>
     </message>
     <message>
         <location filename="../tabs/md.ui" line="79"/>
@@ -1089,27 +1089,27 @@
         <translation>Tableau de Mendeleev</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="410"/>
+        <location filename="../dialogs/mendeleev.ui" line="413"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="451"/>
+        <location filename="../dialogs/mendeleev.ui" line="454"/>
         <source>Mass:</source>
         <translation>Masse:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="513"/>
+        <location filename="../dialogs/mendeleev.ui" line="516"/>
         <source>Color:</source>
         <translation>Couleur:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="537"/>
+        <location filename="../dialogs/mendeleev.ui" line="540"/>
         <source>Atomic radius:</source>
         <translation>Rayon atomique:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="581"/>
+        <location filename="../dialogs/mendeleev.ui" line="584"/>
         <source>Covalent radius:</source>
         <translation>Rayon de covalence:</translation>
     </message>
@@ -1177,6 +1177,33 @@
         <location filename="../dialogs/pdfdialog.ui" line="140"/>
         <source>Maximum radius  used to find neighbours</source>
         <translation>Rayon maximum utilisé pour trouver les voisins</translation>
+    </message>
+</context>
+<context>
+    <name>PhononsMode</name>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished">Formulaire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="26"/>
+        <source>Import/Export</source>
+        <translation type="unfinished">Import/Export</translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="32"/>
+        <location filename="../tabs/phononsmode.ui" line="39"/>
+        <location filename="../tabs/phononsmode.ui" line="46"/>
+        <location filename="../tabs/phononsmode.ui" line="53"/>
+        <location filename="../tabs/phononsmode.ui" line="81"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="69"/>
+        <source>Options</source>
+        <translation type="unfinished">Options</translation>
     </message>
 </context>
 <context>
@@ -1261,136 +1288,136 @@
         <translation>qConducti</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="127"/>
+        <location filename="../qconducti/qconducti.ui" line="131"/>
         <source>Fermi energy:</source>
         <translation>Energie de Fermi :</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="140"/>
+        <location filename="../qconducti/qconducti.ui" line="144"/>
         <source>Emax-Efermi:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="163"/>
+        <location filename="../qconducti/qconducti.ui" line="167"/>
         <source>Units</source>
         <translation>Unités</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="169"/>
+        <location filename="../qconducti/qconducti.ui" line="173"/>
         <source>Energy</source>
         <translation>Energie</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="176"/>
+        <location filename="../qconducti/qconducti.ui" line="180"/>
         <location filename="../qconducti/qconducti.cpp" line="294"/>
         <source>Conductivity</source>
         <translation>Conductivité</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="184"/>
-        <location filename="../qconducti/qconducti.ui" line="304"/>
-        <location filename="../qconducti/qconducti.ui" line="349"/>
-        <location filename="../qconducti/qconducti.ui" line="550"/>
+        <location filename="../qconducti/qconducti.ui" line="188"/>
+        <location filename="../qconducti/qconducti.ui" line="308"/>
+        <location filename="../qconducti/qconducti.ui" line="353"/>
+        <location filename="../qconducti/qconducti.ui" line="554"/>
         <source>Ha</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="189"/>
-        <location filename="../qconducti/qconducti.ui" line="309"/>
-        <location filename="../qconducti/qconducti.ui" line="354"/>
-        <location filename="../qconducti/qconducti.ui" line="555"/>
+        <location filename="../qconducti/qconducti.ui" line="193"/>
+        <location filename="../qconducti/qconducti.ui" line="313"/>
+        <location filename="../qconducti/qconducti.ui" line="358"/>
+        <location filename="../qconducti/qconducti.ui" line="559"/>
         <source>eV</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="198"/>
+        <location filename="../qconducti/qconducti.ui" line="202"/>
         <source>au</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="203"/>
+        <location filename="../qconducti/qconducti.ui" line="207"/>
         <source>Ohm-1.cm-1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="220"/>
+        <location filename="../qconducti/qconducti.ui" line="224"/>
         <source>Calculation</source>
         <translation>Calcul</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="251"/>
+        <location filename="../qconducti/qconducti.ui" line="255"/>
         <source>Number of frequencies</source>
         <translation>Nombre de fréquences</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="283"/>
+        <location filename="../qconducti/qconducti.ui" line="287"/>
         <source>Smearing</source>
         <translatorcomment>Largeur de des gaussiennes pour le calcul</translatorcomment>
         <translation>Etalement</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="290"/>
+        <location filename="../qconducti/qconducti.ui" line="294"/>
         <source>Frequency range</source>
         <translation>Domaine fréquenciel</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="384"/>
-        <location filename="../qconducti/qconducti.ui" line="593"/>
+        <location filename="../qconducti/qconducti.ui" line="388"/>
+        <location filename="../qconducti/qconducti.ui" line="597"/>
         <source>Hold</source>
         <translation>Se souvenir</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="394"/>
+        <location filename="../qconducti/qconducti.ui" line="398"/>
         <source>Spins</source>
         <translation>Spins</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="404"/>
+        <location filename="../qconducti/qconducti.ui" line="408"/>
         <source>Selection rule</source>
         <translation>Règle de sélection</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="419"/>
-        <location filename="../qconducti/qconducti.ui" line="683"/>
+        <location filename="../qconducti/qconducti.ui" line="423"/>
+        <location filename="../qconducti/qconducti.ui" line="687"/>
         <source>From min</source>
         <translation>Depuis min</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="451"/>
-        <location filename="../qconducti/qconducti.ui" line="510"/>
-        <location filename="../qconducti/qconducti.ui" line="629"/>
-        <location filename="../qconducti/qconducti.ui" line="649"/>
+        <location filename="../qconducti/qconducti.ui" line="455"/>
+        <location filename="../qconducti/qconducti.ui" line="514"/>
+        <location filename="../qconducti/qconducti.ui" line="633"/>
+        <location filename="../qconducti/qconducti.ui" line="653"/>
         <source>max</source>
         <translation>max</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="484"/>
-        <location filename="../qconducti/qconducti.ui" line="619"/>
+        <location filename="../qconducti/qconducti.ui" line="488"/>
+        <location filename="../qconducti/qconducti.ui" line="623"/>
         <source>To min</source>
         <translation>Vers min</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="536"/>
+        <location filename="../qconducti/qconducti.ui" line="540"/>
         <source>Unit</source>
         <translation>Unité</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="566"/>
+        <location filename="../qconducti/qconducti.ui" line="570"/>
         <source>&amp;Band</source>
         <translation>&amp;Bandes</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="573"/>
+        <location filename="../qconducti/qconducti.ui" line="577"/>
         <source>Energ&amp;y</source>
         <translation>Ene&amp;rgie</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="580"/>
+        <location filename="../qconducti/qconducti.ui" line="584"/>
         <source>Active</source>
         <translation>Active</translation>
     </message>
     <message>
-        <location filename="../qconducti/qconducti.ui" line="80"/>
+        <location filename="../qconducti/qconducti.ui" line="84"/>
         <source>No file loaded</source>
         <translation>Aucun fichier</translation>
     </message>
@@ -1455,84 +1482,84 @@
 <context>
     <name>QDispersion</name>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="75"/>
+        <location filename="../qdispersion/qdispersion.ui" line="79"/>
         <source>No file loaded</source>
         <translation>Auncun fichier</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="94"/>
+        <location filename="../qdispersion/qdispersion.ui" line="98"/>
         <source>Energy</source>
         <oldsource>Energy </oldsource>
         <translation>Energie</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="118"/>
+        <location filename="../qdispersion/qdispersion.ui" line="122"/>
         <source>Energy origin</source>
         <translation>Origine des énergies</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="175"/>
+        <location filename="../qdispersion/qdispersion.ui" line="179"/>
         <source>Energy unit</source>
         <translation>Unité des énergies</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="216"/>
+        <location filename="../qdispersion/qdispersion.ui" line="220"/>
         <source>Ignore</source>
         <translation>Ignore</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="230"/>
+        <location filename="../qdispersion/qdispersion.ui" line="234"/>
         <source>bands</source>
         <translation>bandes</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="256"/>
+        <location filename="../qdispersion/qdispersion.ui" line="260"/>
         <source>Legend</source>
         <translation>Légende</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="277"/>
+        <location filename="../qdispersion/qdispersion.ui" line="281"/>
         <source>Number of segments</source>
         <oldsource>Number of segments </oldsource>
         <translation>Nombre de segments</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="331"/>
+        <location filename="../qdispersion/qdispersion.ui" line="335"/>
         <source>Number of points</source>
         <translation>Nombres de points</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="419"/>
+        <location filename="../qdispersion/qdispersion.ui" line="423"/>
         <source>Labels</source>
         <translation>Etiquettes</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="489"/>
+        <location filename="../qdispersion/qdispersion.ui" line="493"/>
         <source>Fat&amp;bands</source>
         <translation>Fat&amp;bands</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="501"/>
+        <location filename="../qdispersion/qdispersion.ui" line="505"/>
         <source>Atoms</source>
         <translation>Atomes</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="511"/>
+        <location filename="../qdispersion/qdispersion.ui" line="515"/>
         <source>Orbital angular momentum</source>
         <translation>Moment orbital angulaire</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="544"/>
+        <location filename="../qdispersion/qdispersion.ui" line="548"/>
         <source>all</source>
         <translation>Tous</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="552"/>
+        <location filename="../qdispersion/qdispersion.ui" line="556"/>
         <source>Magnetic quantum number</source>
         <translation>Nombre quantique magnétique</translation>
     </message>
     <message>
-        <location filename="../qdispersion/qdispersion.ui" line="699"/>
+        <location filename="../qdispersion/qdispersion.ui" line="703"/>
         <source>Colours</source>
         <translation>Couleurs</translation>
     </message>
@@ -2601,6 +2628,11 @@
         <translation>Densité</translation>
     </message>
     <message>
+        <location filename="qagate.ui" line="164"/>
+        <source>Phonons</source>
+        <translation>Phonons</translation>
+    </message>
+    <message>
         <location filename="qagate.cpp" line="132"/>
         <source>Ignoring file </source>
         <translation>Fichier ignoré </translation>
@@ -2620,90 +2652,90 @@
 <context>
     <name>qTdep</name>
     <message>
-        <location filename="qtdep.ui" line="17"/>
+        <location filename="../qtdep/qtdep.ui" line="17"/>
         <source>qTdep</source>
         <translation>qTdep</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="63"/>
+        <location filename="../qtdep/qtdep.ui" line="63"/>
         <source>No file loaded</source>
         <translation>Aucun fichier</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="91"/>
-        <location filename="qtdep.ui" line="94"/>
-        <location filename="qtdep.ui" line="97"/>
+        <location filename="../qtdep/qtdep.ui" line="91"/>
+        <location filename="../qtdep/qtdep.ui" line="94"/>
+        <location filename="../qtdep/qtdep.ui" line="97"/>
         <source>Supercell and MD parameters</source>
         <translation>Paramètres de la supercellule et DM</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="100"/>
+        <location filename="../qtdep/qtdep.ui" line="100"/>
         <source>Supercell</source>
         <translation>Supercellule</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="113"/>
-        <location filename="qtdep.ui" line="116"/>
-        <location filename="qtdep.ui" line="119"/>
+        <location filename="../qtdep/qtdep.ui" line="113"/>
+        <location filename="../qtdep/qtdep.ui" line="116"/>
+        <location filename="../qtdep/qtdep.ui" line="119"/>
         <source>Define the unitcell</source>
         <translation>Définir la cellule unité</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="122"/>
+        <location filename="../qtdep/qtdep.ui" line="122"/>
         <source>Unit cell</source>
         <translation>Cellule unité</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="135"/>
-        <location filename="qtdep.ui" line="138"/>
-        <location filename="qtdep.ui" line="141"/>
+        <location filename="../qtdep/qtdep.ui" line="135"/>
+        <location filename="../qtdep/qtdep.ui" line="138"/>
+        <location filename="../qtdep/qtdep.ui" line="141"/>
         <source>Options for TDEP</source>
         <translation>Oprtions pour TDEP</translation>
     </message>
     <message>
-        <location filename="qtdep.ui" line="144"/>
+        <location filename="../qtdep/qtdep.ui" line="144"/>
         <source>Options</source>
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="41"/>
-        <location filename="qtdep.cpp" line="130"/>
+        <location filename="../qtdep/qtdep.cpp" line="41"/>
+        <location filename="../qtdep/qtdep.cpp" line="130"/>
         <source>Opening file</source>
         <translation>Ouverture du fichier</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="41"/>
-        <location filename="qtdep.cpp" line="130"/>
+        <location filename="../qtdep/qtdep.cpp" line="41"/>
+        <location filename="../qtdep/qtdep.cpp" line="130"/>
         <source>You need to select Supercell or Unit cell to open a file</source>
         <translation>Vous devez sélectionner Supercellule or Cellule Unité pour ouvrir un fichier</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="73"/>
+        <location filename="../qtdep/qtdep.cpp" line="73"/>
         <source>Running TDEP...</source>
         <translation>Lancement de TDEP...</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="76"/>
+        <location filename="../qtdep/qtdep.cpp" line="76"/>
         <source>Succeeded</source>
         <translation>Réussi</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="83"/>
+        <location filename="../qtdep/qtdep.cpp" line="83"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="84"/>
+        <location filename="../qtdep/qtdep.cpp" line="84"/>
         <source>Failed</source>
         <translation>Echec</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="119"/>
+        <location filename="../qtdep/qtdep.cpp" line="119"/>
         <source>PDF file</source>
         <translation>Fichier PDF</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="133"/>
+        <location filename="../qtdep/qtdep.cpp" line="133"/>
         <source>Open file</source>
         <translation>Ouvrir un fichier</translation>
     </message>
@@ -2711,109 +2743,109 @@
 <context>
     <name>qTdepOptions</name>
     <message>
-        <location filename="qtdepoptions.ui" line="14"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="14"/>
         <source>Form</source>
         <translation>Formulaire</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="22"/>
-        <location filename="qtdepoptions.ui" line="25"/>
-        <location filename="qtdepoptions.ui" line="28"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="22"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="25"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="28"/>
         <source>Taylor expansion order of the energy</source>
         <translation>Ordre du développement de Taylor de l&apos;énergie</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="31"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="31"/>
         <source>Order expansion</source>
         <translation>Ordre du développement</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="69"/>
-        <location filename="qtdepoptions.ui" line="72"/>
-        <location filename="qtdepoptions.ui" line="75"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="69"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="72"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="75"/>
         <source>Cutoff radius for the second order terms</source>
         <translation>Rayon de coupure des termes du second ordre</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="78"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="78"/>
         <source>radius cutoff for order 2</source>
         <translation>Rayon de coupure de l&apos;ordre 2</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="111"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="111"/>
         <source>radius cutoff for order 3</source>
         <translation>Rayon de coupure de l&apos;ordre 3</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="149"/>
-        <location filename="qtdepoptions.ui" line="152"/>
-        <location filename="qtdepoptions.ui" line="155"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="149"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="152"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="155"/>
         <source>Energy smearing for calculating the phonons density of states</source>
         <translation>Etalement de l&apos;énergie pour le calcul de la densité d&apos;états de phonons</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="158"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="158"/>
         <source>DOS smearing</source>
         <translation>Etalement de la DOS</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="167"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="167"/>
         <source>4.5e-6</source>
         <translation>4.5e-6</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="192"/>
-        <location filename="qtdepoptions.ui" line="195"/>
-        <location filename="qtdepoptions.ui" line="198"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="192"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="195"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="198"/>
         <source>Q-point grid for the phonon density of states</source>
         <translation>Grille de point Q pour la densité d&apos;états de phonons</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="201"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="201"/>
         <source>DOS q-point grid</source>
         <translation>Grille de points Q pour la DOS</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="222"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="222"/>
         <source>2 2 2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="246"/>
-        <location filename="qtdepoptions.ui" line="249"/>
-        <location filename="qtdepoptions.ui" line="252"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="246"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="249"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="252"/>
         <source>Use ideal or average positions as reference</source>
         <translation>Utiliser les positions idéales ou moyennes comme référence</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="255"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="255"/>
         <source>Use ideal positions instead of average positions</source>
         <translation>Utiliser les position idéales à la place des moyennes</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="265"/>
-        <location filename="qtdepoptions.ui" line="268"/>
-        <location filename="qtdepoptions.ui" line="271"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="265"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="268"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="271"/>
         <source>Toogle debug mode</source>
         <translation>Passer en mode débug</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="274"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="274"/>
         <source>Mode debug</source>
         <translation>Mode débug</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="303"/>
-        <location filename="qtdepoptions.ui" line="306"/>
-        <location filename="qtdepoptions.ui" line="309"/>
-        <location filename="qtdepoptions.ui" line="321"/>
-        <location filename="qtdepoptions.ui" line="324"/>
-        <location filename="qtdepoptions.ui" line="327"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="303"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="306"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="309"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="321"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="324"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="327"/>
         <source>Unit for frequencies on the graph</source>
         <translation>Unité pour les fréquences du graph</translation>
     </message>
     <message>
-        <location filename="qtdepoptions.ui" line="312"/>
+        <location filename="../qtdep/qtdepoptions.ui" line="312"/>
         <source>Energy unit</source>
         <translation>Unité des énergies</translation>
     </message>
@@ -2821,254 +2853,254 @@
 <context>
     <name>qTdepSupercell</name>
     <message>
-        <location filename="qtdepsupercell.ui" line="23"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="23"/>
         <source>Trajectory</source>
         <translation>Trajectoire</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="29"/>
-        <location filename="qtdepsupercell.ui" line="35"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="29"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="35"/>
         <source>First time to use</source>
         <translation>Premier pas à utiliser</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="32"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="32"/>
         <source>First time to use (starts at 0)</source>
         <translation>Premier pas à utiliser (commence à 0)</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="38"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="38"/>
         <source>First time:</source>
         <translation>Premier pas:</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="45"/>
-        <location filename="qtdepsupercell.ui" line="48"/>
-        <location filename="qtdepsupercell.ui" line="51"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="45"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="48"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="51"/>
         <source>Last time to use</source>
         <translation>Dernier pas à utiliser</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="54"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="54"/>
         <source>Last time</source>
         <translation>Dernier pas</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="61"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="61"/>
         <source>Step to select time steps</source>
         <translation>Incrément pour sélectionner les pas de temps</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="64"/>
-        <location filename="qtdepsupercell.ui" line="67"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="64"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="67"/>
         <source>Step to select time steps used in the calculation</source>
         <translation>Incrément pour sélectrionner les pas de temps dans le calcul</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="70"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="70"/>
         <source>Step</source>
         <translation>Incrément</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="77"/>
-        <location filename="qtdepsupercell.ui" line="80"/>
-        <location filename="qtdepsupercell.ui" line="83"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="77"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="80"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="83"/>
         <source>MD temperature</source>
         <translation>Température DM</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="86"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="86"/>
         <source>Temperature</source>
         <translation>Température</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="193"/>
-        <location filename="qtdepsupercell.ui" line="199"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="193"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="199"/>
         <source>Multiplicity of the supercell</source>
         <translation>Multiplicité de la supercellule</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="196"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="196"/>
         <source>Multiplicity of the supercell with respect to the unitcell</source>
         <translation>Multiplicité de la supercellule par rapport à la cellule unité</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.ui" line="202"/>
+        <location filename="../qtdep/qtdepsupercell.ui" line="202"/>
         <source>Multiplicity</source>
         <translation>Multiplicité</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.cpp" line="48"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="48"/>
         <source>Loading file </source>
         <translation>Chargement du fichier </translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.cpp" line="50"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="50"/>
         <source>Unable to have an MD trajectory</source>
         <translation>Impossible d&apos;avoir une trajectoire de DM</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.cpp" line="54"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="54"/>
         <source> opened</source>
         <translation> ouvert</translation>
     </message>
     <message>
-        <location filename="qtdepsupercell.cpp" line="58"/>
-        <location filename="qtdepsupercell.cpp" line="59"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="58"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="59"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message numerus="yes">
-        <location filename="qtdepsupercell.cpp" line="71"/>
+        <location filename="../qtdep/qtdepsupercell.cpp" line="71"/>
         <source>Trajectory (%n step(s))</source>
         <translation>
             <numerusform>Trajectoire (%n pas)</numerusform>
-            <numerusform></numerusform>
+            <numerusform>Trajectoire (%n pas)</numerusform>
         </translation>
     </message>
 </context>
 <context>
     <name>qTdepUnitcell</name>
     <message>
-        <location filename="qtdepunitcell.ui" line="32"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="32"/>
         <source>Lattice</source>
         <translation>Cellule unité</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="44"/>
-        <location filename="qtdepunitcell.ui" line="47"/>
-        <location filename="qtdepunitcell.ui" line="50"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="44"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="47"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="50"/>
         <source>Cell lattice vector scaling</source>
         <translation>Taille des vecteurs du réseau</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="53"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="53"/>
         <source>Lattice scaling</source>
         <translation>Taille des vecteurs</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="63"/>
-        <location filename="qtdepunitcell.ui" line="66"/>
-        <location filename="qtdepunitcell.ui" line="69"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="63"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="66"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="69"/>
         <source>Lattice vector a</source>
         <translation>Vector du réseau a</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="72"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="72"/>
         <source>a</source>
         <translation>a</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="82"/>
-        <location filename="qtdepunitcell.ui" line="85"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="82"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="85"/>
         <source>Lattice vector b</source>
         <translation>Vector du réseau b</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="88"/>
-        <location filename="qtdepunitcell.ui" line="101"/>
-        <location filename="qtdepunitcell.ui" line="104"/>
-        <location filename="qtdepunitcell.ui" line="107"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="88"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="101"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="104"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="107"/>
         <source>Lattice vector c</source>
         <translation>Vector du réseau c</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="91"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="91"/>
         <source>b</source>
         <translation>b</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="110"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="110"/>
         <source>c</source>
         <translation>c</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="184"/>
-        <location filename="qtdepunitcell.ui" line="187"/>
-        <location filename="qtdepunitcell.ui" line="190"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="184"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="187"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="190"/>
         <source>Space groupe of unitcell</source>
         <translation>Groupe d&apos;espace de la cellule unité</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="193"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="193"/>
         <source>Space group:</source>
         <translation>Groupe d&apos;espace:</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="222"/>
-        <location filename="qtdepunitcell.ui" line="225"/>
-        <location filename="qtdepunitcell.ui" line="228"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="222"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="225"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="228"/>
         <source>Description of the structure</source>
         <translation>Description de la structure</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.ui" line="231"/>
+        <location filename="../qtdep/qtdepunitcell.ui" line="231"/>
         <source>Atomic description</source>
         <translation>Description des atomes</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="85"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="85"/>
         <source>Loading file </source>
         <translation>Chargement du fichier </translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="91"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="91"/>
         <source> opened</source>
         <translation> ouvert</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="95"/>
-        <location filename="qtdepunitcell.cpp" line="96"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="95"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="96"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="117"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="117"/>
         <source> Type </source>
         <translation> Type </translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="118"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="118"/>
         <source>x (red.)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="119"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="119"/>
         <source>y (red.)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="120"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="120"/>
         <source>z (red.)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="152"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="152"/>
         <source>Unit cell seems to be empty</source>
         <translation>La cellule unité semble être vide</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="165"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="165"/>
         <source>Unable to fin atom typ</source>
         <translation>Impossible de trouver le type d&apos;atome</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="187"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="187"/>
         <source>All lattice scaling factor must be given</source>
         <translation>Toutes les dimensions des vecteurs doivent être données</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="193"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="193"/>
         <source>Please provide the 3 components of vector a</source>
         <translation>Merci de fournir les 3 composantes du vecteur a</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="199"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="199"/>
         <source>Please provide the 3 components of vector b</source>
         <translation>Merci de fournir les 3 composantes du vecteur b</translation>
     </message>
     <message>
-        <location filename="qtdepunitcell.cpp" line="205"/>
+        <location filename="../qtdep/qtdepunitcell.cpp" line="205"/>
         <source>Please provide the 3 components of vector c</source>
         <translation>Merci de fournir les 3 composantes du vecteur c</translation>
     </message>
