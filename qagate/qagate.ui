@@ -79,7 +79,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>7</number>
           </property>
           <property name="tabsClosable">
            <bool>false</bool>
@@ -157,6 +157,11 @@
            </attribute>
            <attribute name="title">
             <string>Density</string>
+           </attribute>
+          </widget>
+          <widget class="PhononsMode" name="phonons">
+           <attribute name="title">
+            <string>Phonons</string>
            </attribute>
           </widget>
          </widget>
@@ -310,6 +315,12 @@
    <class>DensityMode</class>
    <extends>QWidget</extends>
    <header>tabs/densitymode.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PhononsMode</class>
+   <extends>QWidget</extends>
+   <header>tabs/phononsmode.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

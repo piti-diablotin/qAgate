@@ -87,7 +87,8 @@ SOURCES += \
     tools/typatitemdelegate.cpp \
     tools/doubleitemdelegate.cpp \
     tabs/localmode.cpp \
-    tabs/densitymode.cpp
+    tabs/densitymode.cpp \
+    tabs/phononsmode.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -132,7 +133,8 @@ HEADERS += \
     tools/typatitemdelegate.h \
     tools/doubleitemdelegate.h \
     tabs/localmode.h \
-    tabs/densitymode.h
+    tabs/densitymode.h \
+    tabs/phononsmode.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -168,7 +170,8 @@ FORMS += \
     qtdep/qtdepoptions.ui \
     qtdep/qtdep.ui \
     tabs/localmode.ui \
-    tabs/densitymode.ui
+    tabs/densitymode.ui \
+    tabs/phononsmode.ui
 
 RESOURCES += \
     qagate/qagate.qrc \
