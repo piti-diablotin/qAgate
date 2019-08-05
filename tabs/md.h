@@ -3,7 +3,6 @@
 
 #include <QWidget>
 #include "abstracttab.h"
-#include "dialogs/plotwindow.h"
 
 namespace Ui {
   class MD;
@@ -83,7 +82,6 @@ private:
   int _natom;
   double _rmax;
   double _smearing;
-  PlotWindow _plot;
   QString _plotCommand;
   int _currentLeft;
   int _currentRight;

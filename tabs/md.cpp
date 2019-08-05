@@ -13,17 +13,25 @@ MD::MD(QWidget *parent) :
   _natom(0),
   _rmax(0),
   _smearing(100),
-  _plot(this),
   _plotCommand(":plot "),
   _currentLeft(0),
   _currentRight(0)
 {
   ui->setupUi(this);
-  connect(&_plot, SIGNAL(newTab(PlotWindow::PlotPosition,int,QString)),this,SLOT(selectCombo(PlotWindow::PlotPosition,int,QString)));
-  connect(&_plot, SIGNAL(removedTab(PlotWindow::PlotPosition,int)),this,SLOT(removeCombo(PlotWindow::PlotPosition,int)));
-  QPlot* plot = nullptr;
-  _plot.getPlot(PlotWindow::Right,-1,&plot);
-  _plot.getPlot(PlotWindow::Left,-1,&plot);
+  bool buildPlotter = false;
+  if (_plot == nullptr )
+  {
+    buildPlotter = true;
+    _plot = new PlotWindow(this);
+  }
+  connect(_plot, SIGNAL(newTab(PlotWindow::PlotPosition,int,QString)),this,SLOT(selectCombo(PlotWindow::PlotPosition,int,QString)));
+  connect(_plot, SIGNAL(removedTab(PlotWindow::PlotPosition,int)),this,SLOT(removeCombo(PlotWindow::PlotPosition,int)));
+  if (buildPlotter)
+  {
+    QPlot* plot = nullptr;
+    _plot->getPlot(PlotWindow::Right,-1,&plot);
+    _plot->getPlot(PlotWindow::Left,-1,&plot);
+  }
   ui->plot->setItemData(0,":plot ");
   ui->plot->setItemData(1,":print ");
   ui->plot->setItemData(2,":data ");
@@ -37,7 +45,7 @@ MD::~MD()
 void MD::updateStatus(View *view)
 {
   this->setGraph();
-  //if (_plot.isHidden()) _plot.show();
+  //if (_plot->isHidden()) _plot->show();
   bool something = (view->getCanvas() != nullptr && view->getCanvas()->histdata() != nullptr);
   ui->geometry->setEnabled(something);
   ui->statistics->setEnabled(something);
@@ -65,7 +73,7 @@ void MD::setCombo()
   _autoUpdate = true;
   PlotWindow::PlotPosition pos;
   pos = (ui->left->isChecked()) ? PlotWindow::Left : PlotWindow::Right;
-  auto names = _plot.getPlots(pos);
+  auto names = _plot->getPlots(pos);
   ui->graphCombo->clear();
   ui->graphCombo->insertItem(0,tr("New Graph"),-1);
   for (int i=0; i<names.size(); ++i)
@@ -111,7 +119,7 @@ void MD::setGraph()
   int index = ui->graphCombo->currentData().toInt();
   PlotWindow::PlotPosition pos = (ui->left->isChecked()) ? PlotWindow::Left : PlotWindow::Right;
   QPlot* plot = nullptr;
-  _plot.getPlot(pos,index,&plot);
+  _plot->getPlot(pos,index,&plot);
   if (index!=-1) emit(plotChanged(plot));
 }
 
@@ -143,7 +151,7 @@ void MD::on_graphCombo_currentIndexChanged(int index)
 
 void MD::on_angle_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" angle"));
 }
 
@@ -154,19 +162,19 @@ void MD::on_plot_activated(int index)
 
 void MD::on_lattice_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" acell"));
 }
 
 void MD::on_gyration_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" gyration"));
 }
 
 void MD::on_distance_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   AtomDialog dialog(2,_natom,this);
   if (dialog.exec()==QDialog::Accepted)
     {
@@ -182,7 +190,7 @@ void MD::on_distance_clicked()
 
 void MD::on_angles_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   AtomDialog dialog(3,_natom,this);
   if (dialog.exec()==QDialog::Accepted)
     {
@@ -198,49 +206,49 @@ void MD::on_angles_clicked()
 
 void MD::on_volume_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" V"));
 }
 
 void MD::on_temperature_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" T"));
 }
 
 void MD::on_pressure_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" P"));
 }
 
 void MD::on_entropy_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" entropy"));
 }
 
 void MD::on_energy_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" etotal"));
 }
 
 void MD::on_kinetic_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" ekin"));
 }
 
 void MD::on_stress_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" stress"));
 }
 
 void MD::on_thermo_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" thermo"));
 }
 
@@ -248,7 +256,7 @@ void MD::on_positions_clicked()
 {
   PlanDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" positions "+dialog.plan()+" "+dialog.coordinates()));
 }
 
@@ -256,25 +264,25 @@ void MD::on_pdf_clicked()
 {
   PdfDialog dialog(_rmax,_rmax/1000,this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" g(r) "+QString::number(dialog.Rmax())+ " "+ QString::number(dialog.dR())));
 }
 
 void MD::on_msd_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" msd"));
 }
 
 void MD::on_vacf_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+" vacf"));
 }
 
 void MD::on_pdos_clicked()
 {
-  if (_plot.isHidden()) _plot.show();
+  if (_plot->isHidden()) _plot->show();
   SmearingDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
   QString data = "tsmear "+QString::number(dialog.smearing());
