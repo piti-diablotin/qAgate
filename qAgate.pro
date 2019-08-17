@@ -88,7 +88,8 @@ SOURCES += \
     tools/doubleitemdelegate.cpp \
     tabs/localmode.cpp \
     tabs/densitymode.cpp \
-    tabs/phononsmode.cpp
+    tabs/phononsmode.cpp \
+    dialogs/analyzedialog.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -134,7 +135,8 @@ HEADERS += \
     tools/doubleitemdelegate.h \
     tabs/localmode.h \
     tabs/densitymode.h \
-    tabs/phononsmode.h
+    tabs/phononsmode.h \
+    dialogs/analyzedialog.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -171,7 +173,8 @@ FORMS += \
     qtdep/qtdep.ui \
     tabs/localmode.ui \
     tabs/densitymode.ui \
-    tabs/phononsmode.ui
+    tabs/phononsmode.ui \
+    dialogs/analyzedialog.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

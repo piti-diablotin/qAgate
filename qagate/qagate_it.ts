@@ -521,6 +521,11 @@
         <source>Import from cluster</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../tabs/home.cpp" line="157"/>
+        <source>Open File</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LocalMode</name>
@@ -706,36 +711,41 @@
     </message>
     <message>
         <location filename="../gui/logger.ui" line="140"/>
+        <source>Autoscroll</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/logger.ui" line="147"/>
         <source>Debug mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.ui" line="143"/>
-        <location filename="../gui/logger.ui" line="146"/>
+        <location filename="../gui/logger.ui" line="150"/>
+        <location filename="../gui/logger.ui" line="153"/>
         <source>Select to increase debug information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.ui" line="149"/>
+        <location filename="../gui/logger.ui" line="156"/>
         <source>Debug</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.ui" line="156"/>
-        <location filename="../gui/logger.ui" line="159"/>
-        <location filename="../gui/logger.ui" line="162"/>
+        <location filename="../gui/logger.ui" line="163"/>
+        <location filename="../gui/logger.ui" line="166"/>
+        <location filename="../gui/logger.ui" line="169"/>
         <source>Clear console</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.ui" line="182"/>
-        <location filename="../gui/logger.ui" line="185"/>
-        <location filename="../gui/logger.ui" line="188"/>
+        <location filename="../gui/logger.ui" line="189"/>
+        <location filename="../gui/logger.ui" line="192"/>
+        <location filename="../gui/logger.ui" line="195"/>
         <source>Copy content to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="154"/>
+        <location filename="../gui/logger.cpp" line="155"/>
         <source>Console*</source>
         <translation type="unfinished"></translation>
     </message>
@@ -952,7 +962,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/md.cpp" line="70"/>
+        <location filename="../tabs/md.cpp" line="78"/>
         <source>New Graph</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1187,22 +1197,74 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="26"/>
+        <location filename="../tabs/phononsmode.ui" line="35"/>
         <source>Import/Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="32"/>
-        <location filename="../tabs/phononsmode.ui" line="39"/>
-        <location filename="../tabs/phononsmode.ui" line="46"/>
-        <location filename="../tabs/phononsmode.ui" line="53"/>
-        <location filename="../tabs/phononsmode.ui" line="81"/>
+        <location filename="../tabs/phononsmode.ui" line="56"/>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="100"/>
+        <source>DDB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="120"/>
+        <source>Append</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="171"/>
         <source>...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="69"/>
+        <location filename="../tabs/phononsmode.ui" line="195"/>
+        <location filename="../tabs/phononsmode.ui" line="336"/>
+        <source>Amplitude:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="226"/>
+        <source>Time steps:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="262"/>
+        <source>Modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="321"/>
+        <source>q-points:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="381"/>
+        <source>Unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="413"/>
+        <source>Modes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="428"/>
+        <source>all</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="150"/>
         <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.cpp" line="296"/>
+        <source>Write DDB to File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2628,18 +2690,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="132"/>
+        <location filename="qagate.cpp" line="135"/>
         <source>Ignoring file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="133"/>
-        <location filename="qagate.cpp" line="141"/>
+        <location filename="qagate.cpp" line="136"/>
+        <location filename="qagate.cpp" line="144"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="140"/>
+        <location filename="qagate.cpp" line="143"/>
         <source>Updating canvas failed</source>
         <translation type="unfinished"></translation>
     </message>

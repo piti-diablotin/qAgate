@@ -309,7 +309,7 @@ void View::dropEvent(QDropEvent *dropEvent)
     if (!fileName.isEmpty())
     {
       QString command = ":append "+fileName;
-      this->processCommand(command);
+      this->processCommand(command,false);
       /*
           try
           {

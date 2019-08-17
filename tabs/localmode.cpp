@@ -19,6 +19,7 @@ void LocalMode::updateStatus(View *view)
 {
   // Octahedra
   const CanvasLocal* canvas = dynamic_cast<const CanvasLocal*>(view->getCanvas());
+  this->setEnabled(canvas!=nullptr);
   if (canvas!=nullptr)
   {
     const HistData* hist = canvas->histdata();

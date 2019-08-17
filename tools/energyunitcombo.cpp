@@ -14,3 +14,8 @@ EnergyUnitCombo::EnergyUnitCombo(QWidget *parent) :
 EnergyUnitCombo::~EnergyUnitCombo()
 {
 }
+
+UnitConverter EnergyUnitCombo::currentUnit()
+{
+ return UnitConverter::getFromString(this->currentData(Qt::UserRole).toString().toStdString());
+}

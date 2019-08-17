@@ -74,9 +74,6 @@ public slots:
 
   void setGraph();
 
-signals:
-  void plotChanged(QPlot* plot);
-
 private:
   Ui::MD *ui;
   int _natom;

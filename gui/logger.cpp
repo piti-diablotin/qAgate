@@ -145,7 +145,8 @@ void Logger::mousePressEvent(QMouseEvent *mouseEvent)
 void Logger::finishSynchro(const QString &text)
 {
   ui->logger->insertPlainText(text);
-  //ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
+  if (ui->autoscroll->isChecked())
+    ui->logger->moveCursor(QTextCursor::End,QTextCursor::MoveAnchor);
   ui->trash->setIcon(QIcon(":/logger/icons/trash-2.svg"));
   if (ui->more->isChecked()) return;
   if (text.contains("Warning")) ui->warning->show();

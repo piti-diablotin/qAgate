@@ -20,6 +20,7 @@ DensityMode::~DensityMode()
 void DensityMode::updateStatus(View *view)
 {
   const CanvasDensity* canvas = dynamic_cast<const CanvasDensity*>(view->getCanvas());
+  this->setEnabled(canvas!=nullptr);
   if (canvas!=nullptr)
   {
     _autoUpdate = true;

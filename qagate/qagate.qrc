@@ -115,4 +115,9 @@
     <qresource prefix="/density">
         <file>../icons/density.svg</file>
     </qresource>
+    <qresource prefix="/phonons">
+        <file>../icons/delete.svg</file>
+        <file>../icons/qpt.svg</file>
+        <file>../icons/projection.svg</file>
+    </qresource>
 </RCC>

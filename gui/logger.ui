@@ -135,6 +135,13 @@ background: url(:/logger/icons/chevrons-down.svg) no-repeat;
        </spacer>
       </item>
       <item>
+       <widget class="QCheckBox" name="autoscroll">
+        <property name="text">
+         <string>Autoscroll</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QCheckBox" name="debug">
         <property name="toolTip">
          <string>Debug mode</string>
@@ -287,6 +294,9 @@ background: url(:/logger/icons/alert-circle.svg) no-repeat;
      </property>
      <property name="readOnly">
       <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
      </property>
     </widget>
    </item>

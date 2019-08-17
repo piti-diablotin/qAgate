@@ -15,7 +15,7 @@ class EnergyUnitCombo : public unitCombo
 public:
   explicit EnergyUnitCombo(QWidget *parent = 0);
   ~EnergyUnitCombo();
-
+  UnitConverter currentUnit();
 };
 
 #endif // ENERGYUNITCOMBO_H
