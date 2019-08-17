@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>qAgate</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="qagate.qrc">
+    <normaloff>:/qagate.svg</normaloff>:/qagate.svg</iconset>
+  </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
   </property>
@@ -79,7 +83,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>6</number>
+           <number>0</number>
           </property>
           <property name="tabsClosable">
            <bool>false</bool>
@@ -151,6 +155,10 @@
            </attribute>
           </widget>
           <widget class="PhononsMode" name="phonons">
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/phonons/icons/phonons.svg</normaloff>:/phonons/icons/phonons.svg</iconset>
+           </attribute>
            <attribute name="title">
             <string>Phonons</string>
            </attribute>

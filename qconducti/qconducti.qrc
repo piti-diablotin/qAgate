@@ -3,6 +3,6 @@
         <file>qconducti_fr.qm</file>
         <file>qconducti_it.qm</file>
         <file>qconducti_de.qm</file>
-        <file>logo.svg</file>
+        <file>qconducti.svg</file>
     </qresource>
 </RCC>

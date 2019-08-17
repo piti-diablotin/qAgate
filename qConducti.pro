@@ -61,3 +61,17 @@ RESOURCES += \
     qconducti/qconducti.qrc
 
 unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate 
+
+DISTFILES += \
+    qconducti/qconducti.svg \
+    qconducti/qconducti.desktop
+
+logo.files = qconducti/qconducti.svg
+logo.path = /usr/share/qAgate/images/
+
+desktop.files= qconducti/qconducti.desktop
+desktop.path = /usr/share/applications/
+
+ICON = qagate/qconducti.svg
+
+unix:INSTALLS += logo desktop

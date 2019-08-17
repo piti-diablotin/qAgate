@@ -6,6 +6,6 @@
     </qresource>
     <qresource prefix="/">
         <file>../icons/mendeleev.svg</file>
-        <file>logo.svg</file>
+        <file>qdispersion.svg</file>
     </qresource>
 </RCC>

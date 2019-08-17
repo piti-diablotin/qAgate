@@ -193,3 +193,17 @@ LIBS += -L$$PREFIX_AGATE/lib/ -lagate
 INCLUDEPATH += \
     $$PREFIX_AGATE/include/agate\
     $$PREFIX_FREETYPE/include/freetype2/
+
+DISTFILES += \
+    qagate/qagate.svg \
+    qagate/qagate.desktop
+
+logo.files = qagate/qagate.svg
+logo.path = /usr/share/qAgate/images/
+
+desktop.files= qagate/qagate.desktop
+desktop.path = /usr/share/applications/
+
+ICON = qagate/qagate.svg
+
+unix:INSTALLS += logo desktop

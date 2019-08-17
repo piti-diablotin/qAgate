@@ -17,8 +17,8 @@
    <string>qConducti</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="translations.qrc">
-    <normaloff>:/translations/logo.svg</normaloff>:/translations/logo.svg</iconset>
+   <iconset resource="qconducti.qrc">
+    <normaloff>:/translations/qconducti.svg</normaloff>:/translations/qconducti.svg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -820,7 +820,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="translations.qrc"/>
+  <include location="qconducti.qrc"/>
  </resources>
  <connections/>
 </ui>
