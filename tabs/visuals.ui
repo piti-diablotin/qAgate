@@ -1161,7 +1161,7 @@
             <string>Spin direction filter</string>
            </property>
            <property name="text">
-            <string>Spin only</string>
+            <string>Arrows only</string>
            </property>
           </widget>
          </item>
@@ -1462,11 +1462,11 @@
  </resources>
  <connections/>
  <buttongroups>
+  <buttongroup name="displayGroup"/>
   <buttongroup name="optionsGroup">
    <property name="exclusive">
     <bool>false</bool>
    </property>
   </buttongroup>
-  <buttongroup name="displayGroup"/>
  </buttongroups>
 </ui>

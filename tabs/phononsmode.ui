@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>717</width>
+    <width>772</width>
     <height>134</height>
    </rect>
   </property>
@@ -182,6 +182,12 @@
    </item>
    <item>
     <widget class="QGroupBox" name="options">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="title">
       <string>Options</string>
      </property>
@@ -233,19 +239,6 @@
            <bool>true</bool>
           </property>
          </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
         </item>
         <item>
          <widget class="QToolButton" name="qpt">
@@ -405,7 +398,7 @@
    <item>
     <widget class="QGroupBox" name="selector">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -429,7 +422,176 @@
       <property name="spacing">
        <number>2</number>
       </property>
-      <item row="2" column="0" rowspan="2">
+      <item row="1" column="3" colspan="2">
+       <widget class="EnergyUnitCombo" name="unit">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="statusTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="whatsThis">
+         <string>Unit for the energies</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="amplitudeIndivLabel">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="statusTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="whatsThis">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="text">
+         <string>Amplitude:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="QLineEdit" name="amplitudeIndiv">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="statusTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="whatsThis">
+         <string>Amplitude of the selected mode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="unitLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="statusTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="whatsThis">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="text">
+         <string>Unit:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" rowspan="2">
+       <widget class="QListView" name="modes">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>152</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>List all the modes for the selected q-point</string>
+        </property>
+        <property name="statusTip">
+         <string>List all the modes for the selected q-point</string>
+        </property>
+        <property name="whatsThis">
+         <string>List all the modes for the selected q-point</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="modesLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>List all the modes for the selected q-point</string>
+          </property>
+          <property name="statusTip">
+           <string>List all the modes for the selected q-point</string>
+          </property>
+          <property name="whatsThis">
+           <string>List all the modes for the selected q-point</string>
+          </property>
+          <property name="text">
+           <string>Modes:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="all">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>all</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" rowspan="2">
        <widget class="QListView" name="qpts">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -470,169 +632,6 @@
          <enum>QAbstractItemView::ScrollPerItem</enum>
         </property>
        </widget>
-      </item>
-      <item row="3" column="3">
-       <widget class="QLabel" name="amplitudeIndivLabel">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Amplitude of the selected mode</string>
-        </property>
-        <property name="statusTip">
-         <string>Amplitude of the selected mode</string>
-        </property>
-        <property name="whatsThis">
-         <string>Amplitude of the selected mode</string>
-        </property>
-        <property name="text">
-         <string>Amplitude:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2" rowspan="2">
-       <widget class="QListView" name="modes">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>152</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>List all the modes for the selected q-point</string>
-        </property>
-        <property name="statusTip">
-         <string>List all the modes for the selected q-point</string>
-        </property>
-        <property name="whatsThis">
-         <string>List all the modes for the selected q-point</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="4" colspan="2">
-       <widget class="QLineEdit" name="amplitudeIndiv">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Amplitude of the selected mode</string>
-        </property>
-        <property name="statusTip">
-         <string>Amplitude of the selected mode</string>
-        </property>
-        <property name="whatsThis">
-         <string>Amplitude of the selected mode</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="3">
-       <widget class="QLabel" name="unitLabel">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Unit for the energies</string>
-        </property>
-        <property name="statusTip">
-         <string>Unit for the energies</string>
-        </property>
-        <property name="whatsThis">
-         <string>Unit for the energies</string>
-        </property>
-        <property name="text">
-         <string>Unit:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="4" colspan="2">
-       <widget class="EnergyUnitCombo" name="unit">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Unit for the energies</string>
-        </property>
-        <property name="statusTip">
-         <string>Unit for the energies</string>
-        </property>
-        <property name="whatsThis">
-         <string>Unit for the energies</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <layout class="QGridLayout" name="gridLayout_3">
-        <property name="spacing">
-         <number>2</number>
-        </property>
-        <item row="0" column="0">
-         <widget class="QLabel" name="modesLabel">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="toolTip">
-           <string>List all the modes for the selected q-point</string>
-          </property>
-          <property name="statusTip">
-           <string>List all the modes for the selected q-point</string>
-          </property>
-          <property name="whatsThis">
-           <string>List all the modes for the selected q-point</string>
-          </property>
-          <property name="text">
-           <string>Modes:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QCheckBox" name="all">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>all</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
       </item>
       <item row="0" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_5">

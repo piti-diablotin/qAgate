@@ -21,6 +21,7 @@ PhononsMode::PhononsMode(QWidget *parent) :
   ui->qpts->setModel(&_qptModel);
   ui->modes->setModel(&_modesModel);
   ui->amplitudeIndiv->setValidator(new QDoubleValidator);
+  ui->unit->setCurrentIndex(4);
   connect(&_qptModel,SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)),this,SLOT(addRemoveQpt(QModelIndex,QModelIndex,QVector<int>)));
   connect(&_modesModel,SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)),this,SLOT(addRemoveMode(QModelIndex,QModelIndex,QVector<int>)));
   if (_plot == nullptr )
@@ -139,11 +140,10 @@ void PhononsMode::partialUpdate(const CanvasPhonons *canvas)
 
 void PhononsMode::on_qpts_activated(const QModelIndex &index)
 {
-  (void) index;
   _autoUpdate = true;
-  _currentQptModes = index;
-  if (index.data(Qt::CheckStateRole).toBool())
+  if (index.data(Qt::CheckStateRole).toBool() && index != _currentQptModes)
     emit(sendCommand(QString(":qpt ")+index.data().toString(),false));
+  _currentQptModes = index;
   emit(needPartialUpdate());
   ui->amplitudeIndiv->setDisabled(true);
   ui->amplitudeIndivLabel->setDisabled(true);
@@ -192,6 +192,7 @@ void PhononsMode::addRemoveQpt(const QModelIndex &topLeft, const QModelIndex &bo
   if (topLeft.data(Qt::CheckStateRole).toBool()) {
     emit(sendCommand(":add "+qpt));
     ui->qpts->setCurrentIndex(topLeft);
+    _currentQptModes = topLeft;
   }
   else
   {
@@ -275,6 +276,7 @@ void PhononsMode::on_all_clicked(bool checked)
 
 void PhononsMode::on_amplitude_valueChanged(double arg1)
 {
+  if (_autoUpdate) return;
   emit(sendCommand(QString(":amplitude %1").arg(arg1)));
 }
 
