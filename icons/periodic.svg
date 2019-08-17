@@ -1,117 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="24"
-   height="24"
-   viewBox="0 0 24 24"
-   fill="none"
-   stroke="currentColor"
-   stroke-width="2"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   class="feather feather-box"
-   version="1.1"
-   id="svg1002"
-   sodipodi:docname="periodic.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <metadata
-     id="metadata1008">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1006" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     id="namedview1004"
-     showgrid="false"
-     inkscape:zoom="11.448363"
-     inkscape:cx="-5.6115102"
-     inkscape:cy="5.9599222"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1002" />
-  <g
-     id="g838"
-     style="stroke:#8d8d8d;stroke-opacity:1">
-    <path
-       style="fill:#fdfdfd;stroke:#8d8d8d;stroke-opacity:1;fill-opacity:1"
-       id="path996"
-       d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" />
-    <polyline
-       id="polyline998"
-       points="2.32 6.16 12 11 21.68 6.16"
-       style="stroke:#8d8d8d;stroke-opacity:1" />
-    <line
-       id="line1000"
-       y2="11"
-       x2="12"
-       y1="22.76"
-       x1="12"
-       style="stroke:#8d8d8d;stroke-opacity:1" />
-  </g>
-  <g
-     id="g869"
-     transform="matrix(1.1963364,0,0,1.1963364,-2.3560368,-2.3560368)">
-    <g
-       id="g843">
-      <polyline
-         points="20 10 14 10 14 4"
-         id="polyline1641"
-         style="fill:none;stroke:#000000;stroke-opacity:1" />
-      <g
-         id="g827">
-        <line
-           style="fill:none;stroke:#000000;stroke-opacity:1"
-           id="line1643"
-           y2="3"
-           x2="21"
-           y1="10"
-           x1="14" />
-      </g>
-    </g>
-    <g
-       id="g858">
-      <polyline
-         points="4 14 10 14 10 20"
-         id="polyline1639"
-         style="fill:none;stroke:#080808;stroke-opacity:1" />
-      <g
-         id="g830">
-        <g
-           id="g833">
-          <line
-             x1="3"
-             y1="21"
-             x2="10"
-             y2="14"
-             id="line1645"
-             style="fill:none;stroke:#000000;stroke-opacity:1" />
-        </g>
-      </g>
-    </g>
-  </g>
+<svg class="feather feather-box" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <g stroke="#8d8d8d">
+  <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" fill="#fdfdfd"/>
+  <polyline points="2.32 6.16 12 11 21.68 6.16"/>
+  <line x1="12" x2="12" y1="22.76" y2="11"/>
+ </g>
+ <g transform="matrix(1.1963 0 0 1.1963 -2.356 -2.356)">
+  <polyline points="20 10 14 10 14 4" fill="none" stroke="#000"/>
+  <line x1="14" x2="21" y1="10" y2="3" fill="none" stroke="#000"/>
+  <polyline points="4 14 10 14 10 20" fill="none" stroke="#080808"/>
+  <line x1="3" x2="10" y1="21" y2="14" fill="none" stroke="#000"/>
+ </g>
 </svg>
