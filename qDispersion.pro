@@ -68,3 +68,17 @@ RESOURCES += \
     qdispersion/qdispersion.qrc
 
 unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate
+
+DISTFILES += \
+    qdispersion/qdispersion.svg \
+    qdispersion/qdispersion.desktop
+
+logo.files = qdispersion/qdispersion.svg
+logo.path = /usr/share/qAgate/images/
+
+desktop.files= qdispersion/qdispersion.desktop
+desktop.path = /usr/share/applications/
+
+ICON = qdispersion/qdispersion.svg
+
+unix:INSTALLS += logo desktop

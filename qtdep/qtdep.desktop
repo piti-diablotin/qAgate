@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=qTdep
+Comment=Help tool to extract tempearture dependent phonons
+Exec=qTdep
+Icon=/usr/share/qAgate/images/qtdep.svg
+Terminal=false
+Type=Application
+Categories=Utility;sciences;

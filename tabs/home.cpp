@@ -61,9 +61,9 @@ void Home::setAngle(const double angle)
 
 void Home::getAngleAtoms(int &atom1, int &atom2, int &atom3)
 {
- atom1 = ui->angleAtom1->value();
- atom2 = ui->angleAtom2->value();
- atom3 = ui->angleAtom3->value();
+  atom1 = ui->angleAtom1->value();
+  atom2 = ui->angleAtom2->value();
+  atom3 = ui->angleAtom3->value();
 }
 
 void Home::getDistanceAtoms(int &atom1, int &atom2)
@@ -86,9 +86,9 @@ void Home::updateStatus(View *view)
   ui->edit->setEnabled(something);
   ui->explore->setEnabled(something);
   if (something)
-    {
-      ui->centoid->setEnabled(view->getCanvas()->histdata()->nimage()>1);
-    }
+  {
+    ui->centoid->setEnabled(view->getCanvas()->histdata()->nimage()>1);
+  }
   /*
   ui->distanceCheckBox->setEnabled(something);
   ui->angleCheckBox->setEnabled(something);
@@ -103,66 +103,66 @@ void Home::updateStatus(View *view)
   ui->angleAtom3->setRange(1,_natom);
 
   if (something)
-    {
-      _znucl = QVector<int>::fromStdVector(view->getCanvas()->histdata()->znucl());
-    }
+  {
+    _znucl = QVector<int>::fromStdVector(view->getCanvas()->histdata()->znucl());
+  }
 }
 
 void Home::on_update_clicked()
 {
-   emit(sendCommand(":update"));
+  emit(sendCommand(":update"));
 }
 
 void Home::on_dumpHist_clicked()
 {
   if (_dumpDialog.exec() != QDialog::Accepted|| _dumpDialog.filename().isEmpty()) return;
-   emit(sendCommand(":dumphist "+_dumpDialog.filename()+" step "
-                    +QString::number(_dumpDialog.step())));
+  emit(sendCommand(":dumphist "+_dumpDialog.filename()+" step "
+                   +QString::number(_dumpDialog.step())));
 }
 
 void Home::on_dumpXyz_clicked()
 {
   if (_dumpDialog.exec()!=QDialog::Accepted || _dumpDialog.filename().isEmpty()) return;
-   emit(sendCommand(":dumpxyz "+_dumpDialog.filename()+" step "
-                    +QString::number(_dumpDialog.step())));
+  emit(sendCommand(":dumpxyz "+_dumpDialog.filename()+" step "
+                   +QString::number(_dumpDialog.step())));
   _writeDialog.setDirectory(_dumpDialog.directory());
 }
 
 void Home::on_saveAbinit_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
-   emit(sendCommand(":write dtset "+QString::number(_writeDialog.precision())
-                    +" "+_writeDialog.filename()+" "+_writeDialog.option()));
+  emit(sendCommand(":write dtset "+QString::number(_writeDialog.precision())
+                   +" "+_writeDialog.filename()+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
 void Home::on_savePoscar_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
-   emit(sendCommand(":write POSCAR "+QString::number(_writeDialog.precision())
-                    +" "+_writeDialog.filename()+" "+_writeDialog.option()));
+  emit(sendCommand(":write POSCAR "+QString::number(_writeDialog.precision())
+                   +" "+_writeDialog.filename()+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
 void Home::on_saveCif_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
-   emit(sendCommand(":write cif "+QString::number(_writeDialog.precision())
-                    +" "+_writeDialog.filename()+" "+_writeDialog.option()));
+  emit(sendCommand(":write cif "+QString::number(_writeDialog.precision())
+                   +" "+_writeDialog.filename()+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
 void Home::on_load_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_writeDialog.directory(),"",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,tr("Open File"),_writeDialog.directory(),"",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
-    {
-      for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
-        emit(sendCommand(":load "+*file));
-      auto dir = fileNames.begin()->section("/",0,-2);
-      _writeDialog.setDirectory(dir);
-      _dumpDialog.setDirectory(dir);
-    }
+  {
+    for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
+      emit(sendCommand(":load "+*file));
+    auto dir = fileNames.begin()->section("/",0,-2);
+    _writeDialog.setDirectory(dir);
+    _dumpDialog.setDirectory(dir);
+  }
 }
 
 void Home::on_distanceCheckBox_clicked(bool checked)
@@ -236,22 +236,22 @@ void Home::on_spg_clicked()
 
 void Home::on_periodic_clicked()
 {
-   emit(sendCommand(":periodic 1 "+ui->choiceWhat->currentData().toString()));
+  emit(sendCommand(":periodic 1 "+ui->choiceWhat->currentData().toString()));
 }
 
 void Home::on_deperiodic_clicked()
 {
-   emit(sendCommand(":periodic 0 "+ui->choiceWhat->currentData().toString()));
+  emit(sendCommand(":periodic 0 "+ui->choiceWhat->currentData().toString()));
 }
 
 void Home::on_average_clicked()
 {
-   emit(sendCommand(":average"));
+  emit(sendCommand(":average"));
 }
 
 void Home::on_centoid_clicked()
 {
-   emit(sendCommand(":centroid"));
+  emit(sendCommand(":centroid"));
 }
 
 void Home::on_supercell_clicked()
@@ -260,92 +260,94 @@ void Home::on_supercell_clicked()
   if (dialog.exec() != QDialog::Accepted) return;
   QVector<int> mat = dialog.matrix();
   if (!mat.isEmpty())
-    {
-      emit(sendCommand(":supercell "+QString::number(mat[0])
-                       + " " + QString::number(mat[4])
-                       + " " + QString::number(mat[8])));
-    }
+  {
+    emit(sendCommand(":supercell "+QString::number(mat[0])
+        + " " + QString::number(mat[4])
+        + " " + QString::number(mat[8])));
+  }
 }
 
 void Home::on_move_clicked()
 {
-    MoveDialog dialog(this);
-    dialog.configure(_natom);
-    if (dialog.exec() != QDialog::Accepted) return;
-    int iatom;
-    double x, y ,z;
-    dialog.result(iatom,x,y,z);
-    if (iatom==0) return;
-    emit(sendCommand(":move "+QString::number(iatom)
-                     +" " + QString::number(x)
-                     +" " + QString::number(y)
-                     +" " + QString::number(z)
-                     ));
+  MoveDialog dialog(this);
+  dialog.configure(_natom);
+  if (dialog.exec() != QDialog::Accepted) return;
+  int iatom;
+  double x, y ,z;
+  dialog.result(iatom,x,y,z);
+  if (iatom==0) return;
+  emit(sendCommand(":move "+QString::number(iatom)
+                   +" " + QString::number(x)
+                   +" " + QString::number(y)
+                   +" " + QString::number(z)
+                   ));
 }
 
 void Home::on_shift_clicked()
 {
-    ShiftDialog dialog(this);
-    if (dialog.exec() != QDialog::Accepted) return;
-    double x, y ,z;
-    dialog.result(x,y,z);
-    if (std::abs(x)<1e-6 && std::abs(y)<1e-8 && std::abs(z)<1e-8) return;
-    emit(sendCommand(":shift "
-                     + QString::number(x)
-                     +" " + QString::number(y)
-                     +" " + QString::number(z)
-                     +ui->choiceWhat->currentData().toString()
-                     ));
+  ShiftDialog dialog(this);
+  if (dialog.exec() != QDialog::Accepted) return;
+  double x, y ,z;
+  dialog.result(x,y,z);
+  if (std::abs(x)<1e-6 && std::abs(y)<1e-8 && std::abs(z)<1e-8) return;
+  emit(sendCommand(":shift "
+                   + QString::number(x)
+                   +" " + QString::number(y)
+                   +" " + QString::number(z)
+                   +ui->choiceWhat->currentData().toString()
+                   ));
 }
 
 void Home::on_typat_clicked()
 {
-    TypatDialog dialog(this);
-    dialog.configure(_natom,_znucl);
-    if (dialog.exec() != QDialog::Accepted) return;
-    int iatom, znucl;
-    dialog.result(iatom,znucl);
-    emit(sendCommand(":typat "+QString::number(iatom)+ " " +QString::number(znucl)));
+  TypatDialog dialog(this);
+  dialog.configure(_natom,_znucl);
+  if (dialog.exec() != QDialog::Accepted) return;
+  int iatom, znucl;
+  dialog.result(iatom,znucl);
+  emit(sendCommand(":typat "+QString::number(iatom)+ " " +QString::number(znucl)));
 }
 
 void Home::on_open_triggered()
 {
   auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
-    {
-      QString file1 = fileNames.first();
-      if (file1.isEmpty())
-        return;
-      emit(sendCommand(":open "+file1));
-      int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
-      _currentFolder = file1.left(pos+1);
+  {
+    QString file1 = fileNames.first();
+    if (file1.isEmpty())
+      return;
+    emit(sendCommand(":open "+file1,true));
+    int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
+    _currentFolder = file1.left(pos+1);
 
-      for ( auto file = fileNames.begin()+1 ; file != fileNames.end() ; ++file )
-        {
-          if ( !file->isEmpty() )
-            {
-              emit(sendCommand(":append "+*file));
-            }
-        }
+    for ( auto file = fileNames.begin()+1 ; file != fileNames.end() ; ++file )
+    {
+      if ( !file->isEmpty() )
+      {
+        emit(sendCommand(":append "+*file,false));
+      }
     }
+  }
 }
 
 void Home::on_append_triggered()
 {
   auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
 
+  bool pop = true;
   if ( !fileNames.empty() )
+  {
+    for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
     {
-      for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
-        {
-          if ( !file->isEmpty() )
-            {
-              emit(sendCommand(":append "+*file));
-              int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
-              _currentFolder = file->left(pos+1);
-            }
-        }
+      if ( !file->isEmpty() )
+      {
+        emit(sendCommand(":append "+*file,pop));
+        pop = false;
+        int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
+        _currentFolder = file->left(pos+1);
+      }
     }
+  }
 
 }
 

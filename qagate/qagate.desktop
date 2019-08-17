@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=qAgate
+Comment=Visualize and analyze DFT/MD calculations
+Exec=qAgate
+Icon=/usr/share/qAgate/images/qagate.svg
+Terminal=false
+Type=Application
+Categories=Utility;sciences;

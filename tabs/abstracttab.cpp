@@ -20,3 +20,4 @@ void AbstractTab::plugActions(QWidget* widget)
 }
 
 QString AbstractTab::_currentFolder = ".";
+PlotWindow* AbstractTab::_plot = nullptr;

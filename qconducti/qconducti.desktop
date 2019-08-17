@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=qConducti
+Comment=Help tool to quickly extract optical conductivity
+Exec=qConducti
+Icon=/usr/share/qAgate/images/qconducti.svg
+Terminal=false
+Type=Application
+Categories=Utility;sciences;

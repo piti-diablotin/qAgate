@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PhononsMode</class>
+ <widget class="QWidget" name="PhononsMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>134</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Import/Export</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="open">
+        <property name="toolTip">
+         <string>Open a structure</string>
+        </property>
+        <property name="statusTip">
+         <string>Open a structure</string>
+        </property>
+        <property name="whatsThis">
+         <string>Open a structure</string>
+        </property>
+        <property name="text">
+         <string>Open</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/folder.svg</normaloff>:/home/icons/folder.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="dynamt">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Export current qpt dynamical matrix</string>
+        </property>
+        <property name="statusTip">
+         <string>Export current qpt dynamical matrix</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export current qpt dynamical matrix</string>
+        </property>
+        <property name="text">
+         <string notr="true">D(q)</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="ddb">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Export to DDB format</string>
+        </property>
+        <property name="statusTip">
+         <string>Export to DDB format</string>
+        </property>
+        <property name="whatsThis">
+         <string>Export to DDB format</string>
+        </property>
+        <property name="text">
+         <string>DDB</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="append">
+        <property name="toolTip">
+         <string>Appoend displacements or DDB</string>
+        </property>
+        <property name="statusTip">
+         <string>Appoend displacements or DDB</string>
+        </property>
+        <property name="whatsThis">
+         <string>Appoend displacements or DDB</string>
+        </property>
+        <property name="text">
+         <string>Append</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/home/icons/folder-plus.svg</normaloff>:/home/icons/folder-plus.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="options">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Options</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QToolButton" name="reset">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Reset</string>
+          </property>
+          <property name="statusTip">
+           <string>Reset (Remove all condensed modes)</string>
+          </property>
+          <property name="whatsThis">
+           <string>Reset (Remove all condensed modes)</string>
+          </property>
+          <property name="text">
+           <string>Reset</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qagate/qagate.qrc">
+            <normaloff>:/phonons/icons/delete.svg</normaloff>:/phonons/icons/delete.svg</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="qpt">
+          <property name="toolTip">
+           <string>Find qpt in supercell</string>
+          </property>
+          <property name="statusTip">
+           <string>Find qpt in supercell</string>
+          </property>
+          <property name="whatsThis">
+           <string>Find qpt in supercell</string>
+          </property>
+          <property name="text">
+           <string notr="true">q?</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qagate/qagate.qrc">
+            <normaloff>:/phonons/icons/qpt.svg</normaloff>:/phonons/icons/qpt.svg</iconset>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="analyze">
+          <property name="toolTip">
+           <string>Analyze a trajectory to find condensed modes</string>
+          </property>
+          <property name="statusTip">
+           <string>Analyze a trajectory to find condensed modes (those that are in the q-points and modes list)</string>
+          </property>
+          <property name="whatsThis">
+           <string>Analyze a trajectory to find condensed modes</string>
+          </property>
+          <property name="text">
+           <string>Projection</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qagate/qagate.qrc">
+            <normaloff>:/phonons/icons/projection.svg</normaloff>:/phonons/icons/projection.svg</iconset>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="amplitudeLabel">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Default amplitude to add modes</string>
+          </property>
+          <property name="statusTip">
+           <string>Default amplitude to add modes</string>
+          </property>
+          <property name="whatsThis">
+           <string>Default amplitude to add modes</string>
+          </property>
+          <property name="text">
+           <string>Amplitude:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="amplitude">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Default amplitude to add modes</string>
+          </property>
+          <property name="statusTip">
+           <string>Default amplitude to add modes</string>
+          </property>
+          <property name="whatsThis">
+           <string>Default amplitude to add modes</string>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="ntimeLabel">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Number of steps for the animation</string>
+          </property>
+          <property name="statusTip">
+           <string>Number of steps for the animation</string>
+          </property>
+          <property name="whatsThis">
+           <string>Number of steps for the animation</string>
+          </property>
+          <property name="text">
+           <string>Time steps:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="ntime">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Number of steps for the animation</string>
+          </property>
+          <property name="statusTip">
+           <string>Number of steps for the animation</string>
+          </property>
+          <property name="whatsThis">
+           <string>Number of steps for the animation</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="selector">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Modes</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="1" column="3" colspan="2">
+       <widget class="EnergyUnitCombo" name="unit">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="statusTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="whatsThis">
+         <string>Unit for the energies</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="amplitudeIndivLabel">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="statusTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="whatsThis">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="text">
+         <string>Amplitude:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="QLineEdit" name="amplitudeIndiv">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="statusTip">
+         <string>Amplitude of the selected mode</string>
+        </property>
+        <property name="whatsThis">
+         <string>Amplitude of the selected mode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="unitLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="statusTip">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="whatsThis">
+         <string>Unit for the energies</string>
+        </property>
+        <property name="text">
+         <string>Unit:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" rowspan="2">
+       <widget class="QListView" name="modes">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>152</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>List all the modes for the selected q-point</string>
+        </property>
+        <property name="statusTip">
+         <string>List all the modes for the selected q-point</string>
+        </property>
+        <property name="whatsThis">
+         <string>List all the modes for the selected q-point</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="modesLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>List all the modes for the selected q-point</string>
+          </property>
+          <property name="statusTip">
+           <string>List all the modes for the selected q-point</string>
+          </property>
+          <property name="whatsThis">
+           <string>List all the modes for the selected q-point</string>
+          </property>
+          <property name="text">
+           <string>Modes:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="all">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>all</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" rowspan="2">
+       <widget class="QListView" name="qpts">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>List of all available q-points</string>
+        </property>
+        <property name="statusTip">
+         <string>List of all available q-points</string>
+        </property>
+        <property name="whatsThis">
+         <string>List of all available q-points</string>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="showDropIndicator" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerItem</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="qptLabel">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>List of all available q-points</string>
+          </property>
+          <property name="statusTip">
+           <string>List of all available q-points (use the append button to add more)</string>
+          </property>
+          <property name="whatsThis">
+           <string>List of all available q-points</string>
+          </property>
+          <property name="text">
+           <string>q-points:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="qptSelected">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Selected q-point</string>
+          </property>
+          <property name="statusTip">
+           <string>Selected q-point</string>
+          </property>
+          <property name="whatsThis">
+           <string>Selected q-point</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>EnergyUnitCombo</class>
+   <extends>QComboBox</extends>
+   <header>tools/energyunitcombo.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../qagate/qagate.qrc"/>
+ </resources>
+ <connections/>
+</ui>

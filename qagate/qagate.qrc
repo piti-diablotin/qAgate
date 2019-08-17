@@ -100,9 +100,9 @@
     </qresource>
     <qresource prefix="/tools">
         <file>../icons/tools.svg</file>
-        <file>../qconducti/logo.svg</file>
-        <file>../qdispersion/logo.svg</file>
-        <file>../qtdep/logo.svg</file>
+        <file>../qconducti/qconducti.svg</file>
+        <file>../qdispersion/qdispersion.svg</file>
+        <file>../qtdep/qtdep.svg</file>
     </qresource>
     <qresource prefix="/translations">
         <file>qagate_de.qm</file>
@@ -114,5 +114,14 @@
     </qresource>
     <qresource prefix="/density">
         <file>../icons/density.svg</file>
+    </qresource>
+    <qresource prefix="/phonons">
+        <file>../icons/delete.svg</file>
+        <file>../icons/qpt.svg</file>
+        <file>../icons/projection.svg</file>
+        <file>../icons/phonons.svg</file>
+    </qresource>
+    <qresource prefix="/">
+      <file>qagate.svg</file>
     </qresource>
 </RCC>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=qDispersion
+Comment=Help tool to plot band structures (electrons and phonons)
+Exec=qDispersion
+Icon=/usr/share/qAgate/images/qdispersion.svg
+Terminal=false
+Type=Application
+Categories=Utility;sciences;

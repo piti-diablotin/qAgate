@@ -1,0 +1,16 @@
+<svg class="feather feather-thermometer" width="24" height="24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <text x="-0.37058929" y="6.2734785" fill="#000000" font-family="OpenSymbol" font-size="21.333px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-0.37058929" y="25.209391"/></text>
+ <text x="3.4588335" y="13.129381" fill="#000000" font-family="OpenSymbol" font-size="14.667px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="3.4588335" y="26.14782"/></text>
+ <path d="m1.7912 2.1352h19.95" fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1px"/>
+ <g transform="matrix(.82287 0 0 .84843 2.9406 .73876)" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1px">
+  <path d="m11.303 4.7294-6.2383 4.2 6.053 4.8794 5.8677-4.7559z"/>
+  <path d="m17.356 10.721-5.6206 4.6941v4.2l5.6206-4.8794z"/>
+  <path d="m4.6632 10.707 5.6206 4.6941v4.2l-5.6206-4.8794z"/>
+ </g>
+ <rect x="6.0375" y="22.514" width="11.925" height=".93079" stroke="#000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="1.1112" style="paint-order:fill markers stroke"/>
+ <g fill="none" stroke="#000" stroke-linejoin="miter">
+  <path d="m9.014 21.097h5.972" stroke-linecap="round" stroke-width="1.1675"/>
+  <path d="m12.477 20.356 6.053-5.1882" stroke-dasharray="1.24724412,0.62362206" stroke-linecap="butt" stroke-width=".62362"/>
+  <path d="m11.427 20.294-6.053-5.1882" stroke-dasharray="1.24724412, 0.62362206" stroke-linecap="butt" stroke-width=".62362"/>
+ </g>
+</svg>

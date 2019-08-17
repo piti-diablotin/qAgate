@@ -87,7 +87,9 @@ SOURCES += \
     tools/typatitemdelegate.cpp \
     tools/doubleitemdelegate.cpp \
     tabs/localmode.cpp \
-    tabs/densitymode.cpp
+    tabs/densitymode.cpp \
+    tabs/phononsmode.cpp \
+    dialogs/analyzedialog.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -132,7 +134,9 @@ HEADERS += \
     tools/typatitemdelegate.h \
     tools/doubleitemdelegate.h \
     tabs/localmode.h \
-    tabs/densitymode.h
+    tabs/densitymode.h \
+    tabs/phononsmode.h \
+    dialogs/analyzedialog.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -168,7 +172,9 @@ FORMS += \
     qtdep/qtdepoptions.ui \
     qtdep/qtdep.ui \
     tabs/localmode.ui \
-    tabs/densitymode.ui
+    tabs/densitymode.ui \
+    tabs/phononsmode.ui \
+    dialogs/analyzedialog.ui
 
 RESOURCES += \
     qagate/qagate.qrc \
@@ -187,3 +193,17 @@ LIBS += -L$$PREFIX_AGATE/lib/ -lagate
 INCLUDEPATH += \
     $$PREFIX_AGATE/include/agate\
     $$PREFIX_FREETYPE/include/freetype2/
+
+DISTFILES += \
+    qagate/qagate.svg \
+    qagate/qagate.desktop
+
+logo.files = qagate/qagate.svg
+logo.path = /usr/share/qAgate/images/
+
+desktop.files= qagate/qagate.desktop
+desktop.path = /usr/share/applications/
+
+ICON = qagate/qagate.svg
+
+unix:INSTALLS += logo desktop

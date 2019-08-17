@@ -23,8 +23,8 @@
    <string notr="true">qDispersion</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="translations.qrc">
-    <normaloff>:/logo.svg</normaloff>:/logo.svg</iconset>
+   <iconset resource="../qagate/qagate.qrc">
+    <normaloff>:/tools/qdispersion/qdispersion.svg</normaloff>:/tools/qdispersion/qdispersion.svg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -677,7 +677,7 @@
                  <string notr="true"/>
                 </property>
                 <property name="icon">
-                 <iconset resource="translations.qrc">
+                 <iconset resource="qdispersion.qrc">
                   <normaloff>:/icons/mendeleev.svg</normaloff>:/icons/mendeleev.svg</iconset>
                 </property>
                 <property name="iconSize">
@@ -782,7 +782,8 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="translations.qrc"/>
+  <include location="qdispersion.qrc"/>
+  <include location="../qagate/qagate.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -15,7 +15,8 @@ qAgate::qAgate(QWidget *parent) :
   ui(new Ui::qAgate),
   _tabHiden(false),
   _homeNeedsDistance(false),
-  _homeNeedsAngle(false)
+  _homeNeedsAngle(false),
+  _canvasButtons(new QButtonGroup(this))
 {
   ui->setupUi(this);
   for (int index = 0; index < ui->tabWidget->count(); ++index)
@@ -23,7 +24,29 @@ qAgate::qAgate(QWidget *parent) :
     AbstractTab* tab = dynamic_cast<AbstractTab*>(ui->tabWidget->widget(index));
     tab->plugActions(this);
     connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
+    connect(tab,SIGNAL(plotChanged(QPlot*)),this,SLOT(setPlot(QPlot*)));
   }
+
+  int indexPhonons = ui->tabWidget->indexOf(ui->phonons);
+  int indexLocal = ui->tabWidget->indexOf(ui->local);
+  int indexDensite = ui->tabWidget->indexOf(ui->density);
+  int indexPositions = ui->tabWidget->indexOf(ui->md);
+  QRadioButton* boxPhonons = new QRadioButton(this); boxPhonons->setObjectName("mode phonons");
+  QRadioButton* boxLocal = new QRadioButton(this); boxLocal->setObjectName("mode local");
+  QRadioButton* boxDensite = new QRadioButton(this); boxDensite->setObjectName("mode density");
+  QRadioButton* boxPositions = new QRadioButton(this); boxPositions->setObjectName("mode positions");
+  boxPositions->setChecked(true);
+  QTabBar* tabBar = ui->tabWidget->tabBar();
+  tabBar->setTabButton(indexPhonons,QTabBar::RightSide,boxPhonons);
+  tabBar->setTabButton(indexLocal,QTabBar::RightSide,boxLocal);
+  tabBar->setTabButton(indexDensite,QTabBar::RightSide,boxDensite);
+  tabBar->setTabButton(indexPositions,QTabBar::RightSide,boxPositions);
+  _canvasButtons->addButton(boxPhonons,0);
+  _canvasButtons->addButton(boxLocal,1);
+  _canvasButtons->addButton(boxDensite,2);
+  _canvasButtons->addButton(boxPositions,3);
+  connect(_canvasButtons,SIGNAL(buttonClicked(QAbstractButton*)),this,SLOT(updateCanvas(QAbstractButton*)));
+
   // MediaPlayer
   connect(ui->mediaPlayer,SIGNAL(play()),this,SLOT(manageSignal()));
   connect(ui->mediaPlayer,SIGNAL(pause()),this,SLOT(manageSignal()));
@@ -80,8 +103,9 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->home,SIGNAL(needAngle(bool)),this,SLOT(setNeeds(bool)));
   connect(ui->home,SIGNAL(needDistance(bool)),this,SLOT(setNeeds(bool)));
 
-  // MD
-  connect(ui->md,SIGNAL(plotChanged(QPlot*)),this,SLOT(setPlot(QPlot*)));
+  // Phonons
+  connect(ui->phonons,SIGNAL(needPartialUpdate(void)),this,SLOT(setNeeds()));
+  connect(ui->phonons,SIGNAL(needFullUpdate(void)),this,SLOT(setNeeds()));
 
   // Self
   connect(this,SIGNAL(emitCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
@@ -282,6 +306,12 @@ void qAgate::syncWithUserInput()
     int ntime = std::max(canvas->ntime(),1);
     ui->mediaPlayer->setDisabledMovie(ntime<2);
     ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),canvas->ntime());
+    _canvasButtons->blockSignals(true);
+    if (dynamic_cast<CanvasPhonons*>(canvas)) _canvasButtons->button(0)->setChecked(true);
+    else if (dynamic_cast<CanvasLocal*>(canvas)) _canvasButtons->button(1)->setChecked(true);
+    else if (dynamic_cast<CanvasDensity*>(canvas)) _canvasButtons->button(2)->setChecked(true);
+    else if (dynamic_cast<CanvasPos*>(canvas)) _canvasButtons->button(3)->setChecked(true);
+    _canvasButtons->blockSignals(false);
   }
   else if (signal == "mouseInput")
   {
@@ -302,12 +332,27 @@ void qAgate::setNeeds(bool need)
   auto signal = metaMethod.name();
   if (signal=="needAngle") _homeNeedsAngle = need;
   else if (signal=="needDistance") _homeNeedsDistance = need;
+  else if (signal=="needPartialUpdate" && sender() == ui->phonons ) {
+    ui->phonons->partialUpdate(dynamic_cast<CanvasPhonons*>(ui->view->canvas()));
+    return;
+  }
+  else if (signal=="needFullUpdate" && sender() == ui->phonons ) {
+    qDebug() <<  "Fulle";
+    ui->view->setFromCommandLine(true);
+    return;
+  }
   this->updateNeeds();
 }
 
 void qAgate::setPlot(QPlot *plot)
 {
   ui->view->canvas()->setGraph(plot);
+}
+
+void qAgate::updateCanvas(QAbstractButton *button)
+{
+  ui->view->setFromCommandLine(true);
+  emit(emitCommand(":"+button->objectName()));
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)
@@ -340,6 +385,7 @@ void qAgate::on_tabWidget_currentChanged(int index)
     _tabHiden = !_tabHiden;
   }
   ui->tabWidget->widget(index)->show();
+  /*
   if (ui->tabWidget->currentWidget() == ui->local)
   {
     ui->view->setFromCommandLine(true);
@@ -350,11 +396,18 @@ void qAgate::on_tabWidget_currentChanged(int index)
     ui->view->setFromCommandLine(true);
     emit(emitCommand(":mode density"));
   }
+  else if (ui->tabWidget->currentWidget() == ui->phonons)
+  {
+    ui->view->setFromCommandLine(true);
+    qDebug() << "node phonons";
+    emit(emitCommand(":mode phonons"));
+  }
   else {
     if(dynamic_cast<CanvasLocal*>(ui->view->canvas())
        ||dynamic_cast<CanvasPhonons*>(ui->view->canvas())
        ||dynamic_cast<CanvasDensity*>(ui->view->canvas()))
       emit(emitCommand(":mode positions"));
   }
+  */
   this->updateTab();
 }

@@ -1,0 +1,21 @@
+<svg class="feather feather-thermometer" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <text x="-0.37058929" y="6.2734785" fill="#000000" font-family="OpenSymbol" font-size="21.333px" letter-spacing="0px" stroke="none" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-0.37058929" y="25.209391"/></text>
+ <text x="3.4588335" y="13.129381" fill="#000000" font-family="OpenSymbol" font-size="14.667px" letter-spacing="0px" stroke="none" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="3.4588335" y="26.14782"/></text>
+ <g transform="translate(-.10342 10.324)">
+  <g transform="translate(-.090476 -11.701)">
+   <path d="m0.15661 7.1333 1.5419 0.043674 1.0762-1.2352v2.1766l1.8392-2.1109v2.0495l1.7835-2.047v2.0675l0.96594-1.1087h1.2221" fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".81404px"/>
+   <circle cx="12.075" cy="7.0301" r="2.5478"/>
+   <path d="m15.565 7.177h1.7603l1.0762-1.2352v2.1766l1.8392-2.1109v2.0495l1.7835-2.047v2.0675l0.96594-1.1087h1.2221" fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".81404px"/>
+  </g>
+  <g transform="translate(-.090476 -10.079)">
+   <path d="m0.18749 18.897h1.5419l1.0762-1.2352v2.1766l1.8392-2.1109v2.0495l1.7835-2.047v2.0675l0.96594-1.1087h1.2221" fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".81404px"/>
+   <circle cx="12.106" cy="18.75" r="2.5478"/>
+   <path d="m15.596 18.897h1.7603l1.0762-1.2352v2.1766l1.8392-2.1109v2.0495l1.7835-2.047v2.0675l0.96594-1.1087h1.2221" fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".81404px"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".81404px">
+   <path d="m12.193-7.0177v-1.7603l-1.2352-1.0762h2.1766"/>
+   <path d="m12.008 6.3235v-1.7603l-1.2352-1.0762h2.1766l-2.1109-1.8392h2.0495l-2.047-1.7835h2.0675l-1.1087-0.96594v-1.2221"/>
+   <path d="m11.088 13.206h2.0675l-1.1087-0.96594v-1.2221"/>
+  </g>
+ </g>
+</svg>

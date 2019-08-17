@@ -36,7 +36,7 @@
      </property>
      <property name="icon">
       <iconset resource="../qagate/qagate.qrc">
-       <normaloff>:/tools/qdispersion/logo.svg</normaloff>:/tools/qdispersion/logo.svg</iconset>
+       <normaloff>:/tools/qdispersion/qdispersion.svg</normaloff>:/tools/qdispersion/qdispersion.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -71,7 +71,7 @@
      </property>
      <property name="icon">
       <iconset resource="../qagate/qagate.qrc">
-       <normaloff>:/tools/qconducti/logo.svg</normaloff>:/tools/qconducti/logo.svg</iconset>
+       <normaloff>:/tools/qconducti/qconducti.svg</normaloff>:/tools/qconducti/qconducti.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -100,13 +100,16 @@
      </property>
      <property name="icon">
       <iconset resource="../qagate/qagate.qrc">
-       <normaloff>:/tools/qtdep/logo.svg</normaloff>:/tools/qtdep/logo.svg</iconset>
+       <normaloff>:/tools/qtdep/qtdep.svg</normaloff>:/tools/qtdep/qtdep.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>50</width>
        <height>50</height>
       </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
      </property>
     </widget>
    </item>

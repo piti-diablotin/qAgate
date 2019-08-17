@@ -3,7 +3,6 @@
 
 #include <QWidget>
 #include "abstracttab.h"
-#include "dialogs/plotwindow.h"
 
 namespace Ui {
   class MD;
@@ -75,15 +74,11 @@ public slots:
 
   void setGraph();
 
-signals:
-  void plotChanged(QPlot* plot);
-
 private:
   Ui::MD *ui;
   int _natom;
   double _rmax;
   double _smearing;
-  PlotWindow _plot;
   QString _plotCommand;
   int _currentLeft;
   int _currentRight;

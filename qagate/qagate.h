@@ -24,6 +24,7 @@ private:
   bool _tabHiden;
   bool _homeNeedsDistance;
   bool _homeNeedsAngle;
+  QButtonGroup* _canvasButtons;
   void updateNeeds();
 
 protected slots:
@@ -31,8 +32,9 @@ protected slots:
   void manageSignal(QString filename);
   void syncWithUserInput();
   void updateTab();
-  void setNeeds(bool need);
+  void setNeeds(bool need=true);
   void setPlot(QPlot* plot);
+  void updateCanvas(QAbstractButton* button);
 
 signals:
   void emitCommand(QString,bool pop=true);

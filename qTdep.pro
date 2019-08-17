@@ -82,3 +82,17 @@ RESOURCES += \
     qtdep/qtdep.qrc
 
 unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate
+
+DISTFILES += \
+    qtdep/qtdep.svg \
+    qtdep/qtdep.desktop
+
+logo.files = qtdep/qtdep.svg
+logo.path = /usr/share/qAgate/images/
+
+desktop.files= qtdep/qtdep.desktop
+desktop.path = /usr/share/applications/
+
+ICON = qtdep/qtdep.svg
+
+unix:INSTALLS += logo desktop

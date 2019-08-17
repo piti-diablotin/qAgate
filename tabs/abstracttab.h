@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "gui/view.h"
+#include "dialogs/plotwindow.h"
 
 class AbstractTab : public QWidget
 {
@@ -13,6 +14,7 @@ private:
 protected:
   bool _autoUpdate;
   static QString _currentFolder;
+  static PlotWindow* _plot;
 
   virtual void updateStatus(View* view)=0;
 
@@ -23,6 +25,7 @@ public:
 
 signals:
   void sendCommand(QString command,bool=true);
+  void plotChanged(QPlot* plot);
 };
 
 #endif // ABSTRACTTAB_H

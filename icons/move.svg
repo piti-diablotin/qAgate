@@ -1,105 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="24"
-   height="24"
-   viewBox="0 0 24 24"
-   fill="none"
-   stroke="currentColor"
-   stroke-width="2"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   class="feather feather-box"
-   version="1.1"
-   id="svg1002"
-   sodipodi:docname="move.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <metadata
-     id="metadata1008">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1006">
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4792"
-       id="radialGradient4465-2-4"
-       cx="7.2517834"
-       cy="10.312897"
-       fx="7.2517834"
-       fy="10.312897"
-       r="3.8444211"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.602014,-0.56688967,0.66728797,4.2399453,-20.851454,-32.145985)" />
-    <linearGradient
-       id="linearGradient4792"
-       inkscape:collect="always">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1"
-         offset="0"
-         id="stop4788" />
-      <stop
-         style="stop-color:#b3b3b3;stop-opacity:1"
-         offset="1"
-         id="stop4790" />
-    </linearGradient>
-  </defs>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     id="namedview1004"
-     showgrid="false"
-     inkscape:zoom="33.41797"
-     inkscape:cx="10.291654"
-     inkscape:cy="12.007055"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1002" />
-  <circle
-     style="opacity:1;fill:url(#radialGradient4465-2-4);fill-opacity:1;fill-rule:nonzero;stroke:#4b4b4b;stroke-width:2.97901988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="path4405-13-9"
-     cx="9.049387"
-     cy="11.6642"
-     r="7.1095695"
-     transform="rotate(2.1800827)" />
-  <g
-     id="g2654"
-     transform="rotate(45,5.7551488,20.836019)">
-    <polyline
-       id="polyline1623"
-       points="15 3 21 3 21 9"
-       transform="matrix(1.1967456,0,0,1.1967456,-13.581738,-1.0450063)"
-       style="stroke:#0d0600;stroke-opacity:1" />
-    <line
-       id="line1627"
-       y2="10.92245"
-       x2="3.1726995"
-       y1="2.5452304"
-       x1="11.549918"
-       style="stroke:#0d0600;stroke-width:2.39349127;stroke-opacity:1" />
-  </g>
+<svg class="feather feather-box" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="radialGradient4465-2-4" cx="7.2518" cy="10.313" r="3.8444" gradientTransform="matrix(3.602 -.56689 .66729 4.2399 -20.851 -32.146)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#b3b3b3" offset="1"/>
+  </radialGradient>
+ </defs>
+ <circle transform="rotate(2.1801)" cx="9.0494" cy="11.664" r="7.1096" fill="url(#radialGradient4465-2-4)" stroke="#4b4b4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.979" style="paint-order:fill markers stroke"/>
+ <g transform="rotate(45 5.7551 20.836)" stroke="#0d0600">
+  <polyline transform="matrix(1.1967 0 0 1.1967 -13.582 -1.045)" points="15 3 21 3 21 9"/>
+  <line x1="11.55" x2="3.1727" y1="2.5452" y2="10.922" stroke-width="2.3935"/>
+ </g>
 </svg>
