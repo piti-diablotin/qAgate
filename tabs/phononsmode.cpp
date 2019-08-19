@@ -140,6 +140,7 @@ void PhononsMode::partialUpdate(const CanvasPhonons *canvas)
 
 void PhononsMode::on_qpts_activated(const QModelIndex &index)
 {
+  ui->qptSelected->setText(index.data().toString());
   _autoUpdate = true;
   if (index.data(Qt::CheckStateRole).toBool() && index != _currentQptModes)
     emit(sendCommand(QString(":qpt ")+index.data().toString(),false));
@@ -236,7 +237,6 @@ void PhononsMode::addRemoveMode(const QModelIndex &topLeft, const QModelIndex &b
 void PhononsMode::on_qpts_clicked(const QModelIndex &index)
 {
   this->on_qpts_activated(index);
-  ui->qptSelected->setText(index.data().toString());
 }
 
 void PhononsMode::on_modes_clicked(const QModelIndex &index)
