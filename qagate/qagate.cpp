@@ -337,7 +337,6 @@ void qAgate::setNeeds(bool need)
     return;
   }
   else if (signal=="needFullUpdate" && sender() == ui->phonons ) {
-    qDebug() <<  "Fulle";
     ui->view->setFromCommandLine(true);
     return;
   }
