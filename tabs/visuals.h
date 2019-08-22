@@ -59,7 +59,7 @@ private slots:
 
   void on_optionsGroup_buttonClicked(QAbstractButton* button);
 
-  void on_spin_currentTextChanged(const QString &arg1);
+  void on_spin_currentIndexChanged(int index);
 
   void on_octaAdd_activated(int index);
 

@@ -44,6 +44,9 @@ Visuals::Visuals(QWidget *parent) :
   _octaColor.setRgbF(0.5,0.5,0.5,0.8);
   pal.setColor(QPalette::Button,_octaColor);
   ui->octaColor->setPalette(pal);
+  ui->spin->setItemData(0,"none",Qt::UserRole);
+  for (int i = 1 ; i < 8 ; ++i)
+    ui->spin->setItemData(i,ui->spin->itemData(i,Qt::DisplayRole),Qt::UserRole);
 }
 
 Visuals::~Visuals()
@@ -241,12 +244,12 @@ void Visuals::on_optionsGroup_buttonClicked(QAbstractButton *button)
   emit(sendCommand((button->isChecked()?":show ":":hide ")+button->objectName()));
 }
 
-void Visuals::on_spin_currentTextChanged(const QString &arg1)
+void Visuals::on_spin_currentIndexChanged(int index)
 {
   if (!_autoUpdate)
     {
-      QString direction = arg1;
-      (direction == "None") ? direction = "" : direction = " "+direction;
+      QString direction = ui->spin->itemData(index,Qt::UserRole).toString();
+      (direction == "none") ? direction = "" : direction = " "+direction;
       emit(sendCommand(":spin"+direction));
     }
 }
