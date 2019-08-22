@@ -17,6 +17,10 @@ qTdep::qTdep(QWidget *parent) :
   connect(ui->supercell,SIGNAL(rcutHint(double)),ui->options,SLOT(setRcut(double)));
   connect(ui->options,SIGNAL(energyUnitChanged(UnitConverter::Unit)),this,SLOT(setEnergyUnit(UnitConverter::Unit)));
   connect(ui->plot,SIGNAL(mouseMove(QMouseEvent*)),this,SLOT(coordStatusBar(QMouseEvent*)));
+  ui->buttonBox->button(QDialogButtonBox::Save)->setText(tr("&Save"));
+  ui->buttonBox->button(QDialogButtonBox::Apply)->setText(tr("&Apply"));
+  ui->buttonBox->button(QDialogButtonBox::Close)->setText(tr("&Close"));
+  ui->buttonBox->button(QDialogButtonBox::Open)->setText(tr("&Open"));
 
 }
 

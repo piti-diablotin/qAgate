@@ -11,10 +11,6 @@
         <translation>qConducti</translation>
     </message>
     <message>
-        <source>Filename</source>
-        <translation type="vanished">Dateiname</translation>
-    </message>
-    <message>
         <location filename="qconducti.ui" line="131"/>
         <source>Fermi energy:</source>
         <translation>Fermi-Energie:</translation>

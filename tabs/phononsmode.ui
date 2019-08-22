@@ -144,13 +144,13 @@
       <item row="1" column="0">
        <widget class="QToolButton" name="append">
         <property name="toolTip">
-         <string>Appoend displacements or DDB</string>
+         <string>Append displacements or DDB</string>
         </property>
         <property name="statusTip">
-         <string>Appoend displacements or DDB</string>
+         <string>Append displacements or DDB</string>
         </property>
         <property name="whatsThis">
-         <string>Appoend displacements or DDB</string>
+         <string>Append displacements or DDB</string>
         </property>
         <property name="text">
          <string>Append</string>

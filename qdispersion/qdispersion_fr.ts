@@ -9,27 +9,27 @@
         <translation>Tableau de Mendeleev</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="410"/>
+        <location filename="../dialogs/mendeleev.ui" line="413"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="451"/>
+        <location filename="../dialogs/mendeleev.ui" line="454"/>
         <source>Mass:</source>
         <translation>Masse:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="513"/>
+        <location filename="../dialogs/mendeleev.ui" line="516"/>
         <source>Color:</source>
         <translation>Couleur:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="537"/>
+        <location filename="../dialogs/mendeleev.ui" line="540"/>
         <source>Atomic radius:</source>
         <translation>Rayon atomique:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="581"/>
+        <location filename="../dialogs/mendeleev.ui" line="584"/>
         <source>Covalent radius:</source>
         <translation>Rayon de covalence:</translation>
     </message>
@@ -177,14 +177,6 @@
 </context>
 <context>
     <name>atomicData</name>
-    <message>
-        <source>Form</source>
-        <translation type="obsolete">Fomulaire</translation>
-    </message>
-    <message>
-        <source>Z</source>
-        <translation type="obsolete">Z</translation>
-    </message>
     <message>
         <location filename="../tools/atomicdata.ui" line="61"/>
         <source>Name</source>

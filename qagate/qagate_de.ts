@@ -2,6 +2,39 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de_DE">
 <context>
+    <name>AnalyzeDialog</name>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="14"/>
+        <source>Option for the projection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="22"/>
+        <source>File:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="32"/>
+        <source>Browse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="41"/>
+        <source>No renormali&amp;zation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="54"/>
+        <source>Normalized for each &amp;q-point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="64"/>
+        <source>Normalized for t&amp;he whole distortion</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AtomDialog</name>
     <message>
         <location filename="../dialogs/atomdialog.ui" line="14"/>
@@ -211,17 +244,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/densitymode.cpp" line="114"/>
+        <location filename="../tabs/densitymode.cpp" line="115"/>
         <source>Pick a color for minimum value (negative)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/densitymode.cpp" line="128"/>
+        <location filename="../tabs/densitymode.cpp" line="129"/>
         <source>Pick a color for zero value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/densitymode.cpp" line="142"/>
+        <location filename="../tabs/densitymode.cpp" line="143"/>
         <source>Pick a color for maximal value (positive)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -678,18 +711,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.cpp" line="119"/>
+        <location filename="../tabs/localmode.cpp" line="120"/>
         <source>Pick a color for Clockwise rotations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.cpp" line="133"/>
+        <location filename="../tabs/localmode.cpp" line="134"/>
         <source>Pick a color for anticlockwise rotations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.cpp" line="147"/>
-        <location filename="../tabs/localmode.cpp" line="156"/>
+        <location filename="../tabs/localmode.cpp" line="148"/>
+        <location filename="../tabs/localmode.cpp" line="157"/>
         <source>Save File</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1192,78 +1225,207 @@
 <context>
     <name>PhononsMode</name>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../tabs/phononsmode.ui" line="35"/>
         <source>Import/Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabs/phononsmode.ui" line="56"/>
+        <location filename="../tabs/phononsmode.ui" line="59"/>
+        <location filename="../tabs/phononsmode.ui" line="62"/>
+        <source>Open a structure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="65"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="100"/>
+        <location filename="../tabs/phononsmode.ui" line="84"/>
+        <location filename="../tabs/phononsmode.ui" line="87"/>
+        <location filename="../tabs/phononsmode.ui" line="90"/>
+        <source>Export current qpt dynamical matrix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="118"/>
+        <location filename="../tabs/phononsmode.ui" line="121"/>
+        <location filename="../tabs/phononsmode.ui" line="124"/>
+        <source>Export to DDB format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="127"/>
         <source>DDB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="120"/>
+        <location filename="../tabs/phononsmode.ui" line="156"/>
         <source>Append</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="171"/>
-        <source>...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/phononsmode.ui" line="195"/>
-        <location filename="../tabs/phononsmode.ui" line="336"/>
+        <location filename="../tabs/phononsmode.ui" line="313"/>
+        <location filename="../tabs/phononsmode.ui" line="463"/>
         <source>Amplitude:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="226"/>
+        <location filename="../tabs/phononsmode.ui" line="362"/>
         <source>Time steps:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="262"/>
+        <location filename="../tabs/phononsmode.ui" line="407"/>
         <source>Modes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="321"/>
+        <location filename="../tabs/phononsmode.ui" line="614"/>
+        <location filename="../tabs/phononsmode.ui" line="617"/>
+        <location filename="../tabs/phononsmode.ui" line="620"/>
+        <location filename="../tabs/phononsmode.ui" line="646"/>
+        <location filename="../tabs/phononsmode.ui" line="652"/>
+        <source>List of all available q-points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="649"/>
+        <source>List of all available q-points (use the append button to add more)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="655"/>
         <source>q-points:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="381"/>
+        <location filename="../tabs/phononsmode.ui" line="505"/>
         <source>Unit:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="413"/>
+        <location filename="../tabs/phononsmode.ui" line="147"/>
+        <location filename="../tabs/phononsmode.ui" line="150"/>
+        <location filename="../tabs/phononsmode.ui" line="153"/>
+        <source>Append displacements or DDB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="220"/>
+        <location filename="../tabs/phononsmode.ui" line="229"/>
+        <source>Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="223"/>
+        <location filename="../tabs/phononsmode.ui" line="226"/>
+        <source>Reset (Remove all condensed modes)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="246"/>
+        <location filename="../tabs/phononsmode.ui" line="249"/>
+        <location filename="../tabs/phononsmode.ui" line="252"/>
+        <source>Find qpt in supercell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="269"/>
+        <location filename="../tabs/phononsmode.ui" line="275"/>
+        <source>Analyze a trajectory to find condensed modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="272"/>
+        <source>Analyze a trajectory to find condensed modes (those that are in the q-points and modes list)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="278"/>
+        <source>Projection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="304"/>
+        <location filename="../tabs/phononsmode.ui" line="307"/>
+        <location filename="../tabs/phononsmode.ui" line="310"/>
+        <location filename="../tabs/phononsmode.ui" line="325"/>
+        <location filename="../tabs/phononsmode.ui" line="328"/>
+        <location filename="../tabs/phononsmode.ui" line="331"/>
+        <source>Default amplitude to add modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="353"/>
+        <location filename="../tabs/phononsmode.ui" line="356"/>
+        <location filename="../tabs/phononsmode.ui" line="359"/>
+        <location filename="../tabs/phononsmode.ui" line="374"/>
+        <location filename="../tabs/phononsmode.ui" line="377"/>
+        <location filename="../tabs/phononsmode.ui" line="380"/>
+        <source>Number of steps for the animation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="433"/>
+        <location filename="../tabs/phononsmode.ui" line="436"/>
+        <location filename="../tabs/phononsmode.ui" line="439"/>
+        <location filename="../tabs/phononsmode.ui" line="496"/>
+        <location filename="../tabs/phononsmode.ui" line="499"/>
+        <location filename="../tabs/phononsmode.ui" line="502"/>
+        <source>Unit for the energies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="454"/>
+        <location filename="../tabs/phononsmode.ui" line="457"/>
+        <location filename="../tabs/phononsmode.ui" line="460"/>
+        <location filename="../tabs/phononsmode.ui" line="478"/>
+        <location filename="../tabs/phononsmode.ui" line="481"/>
+        <location filename="../tabs/phononsmode.ui" line="484"/>
+        <source>Amplitude of the selected mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="529"/>
+        <location filename="../tabs/phononsmode.ui" line="532"/>
+        <location filename="../tabs/phononsmode.ui" line="535"/>
+        <location filename="../tabs/phononsmode.ui" line="558"/>
+        <location filename="../tabs/phononsmode.ui" line="561"/>
+        <location filename="../tabs/phononsmode.ui" line="564"/>
+        <source>List all the modes for the selected q-point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="567"/>
         <source>Modes:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="428"/>
+        <location filename="../tabs/phononsmode.ui" line="588"/>
         <source>all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.ui" line="150"/>
+        <location filename="../tabs/phononsmode.ui" line="667"/>
+        <location filename="../tabs/phononsmode.ui" line="670"/>
+        <location filename="../tabs/phononsmode.ui" line="673"/>
+        <source>Selected q-point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.ui" line="192"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.cpp" line="296"/>
+        <location filename="../tabs/phononsmode.cpp" line="246"/>
+        <source>Amplitude (%1):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.cpp" line="308"/>
         <source>Write DDB to File</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2529,7 +2691,7 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="1164"/>
-        <source>Spin only</source>
+        <source>Arrows only</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2650,58 +2812,58 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="93"/>
+        <location filename="qagate.ui" line="97"/>
         <source>&amp;Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="102"/>
+        <location filename="qagate.ui" line="136"/>
         <source>&amp;MD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="117"/>
+        <location filename="qagate.ui" line="112"/>
         <source>&amp;Visuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="132"/>
+        <location filename="qagate.ui" line="127"/>
         <source>&amp;Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="141"/>
+        <location filename="qagate.ui" line="172"/>
         <source>&amp;Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="150"/>
+        <location filename="qagate.ui" line="145"/>
         <source>Local</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="159"/>
+        <location filename="qagate.ui" line="154"/>
         <source>Density</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="164"/>
+        <location filename="qagate.ui" line="163"/>
         <source>Phonons</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="135"/>
+        <location filename="qagate.cpp" line="156"/>
         <source>Ignoring file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="136"/>
-        <location filename="qagate.cpp" line="144"/>
+        <location filename="qagate.cpp" line="157"/>
+        <location filename="qagate.cpp" line="165"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="143"/>
+        <location filename="qagate.cpp" line="164"/>
         <source>Updating canvas failed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2755,44 +2917,64 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="41"/>
-        <location filename="../qtdep/qtdep.cpp" line="130"/>
+        <location filename="../qtdep/qtdep.cpp" line="20"/>
+        <source>&amp;Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="21"/>
+        <source>&amp;Apply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="22"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="23"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qtdep/qtdep.cpp" line="45"/>
+        <location filename="../qtdep/qtdep.cpp" line="134"/>
         <source>Opening file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="41"/>
-        <location filename="../qtdep/qtdep.cpp" line="130"/>
+        <location filename="../qtdep/qtdep.cpp" line="45"/>
+        <location filename="../qtdep/qtdep.cpp" line="134"/>
         <source>You need to select Supercell or Unit cell to open a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="73"/>
+        <location filename="../qtdep/qtdep.cpp" line="77"/>
         <source>Running TDEP...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="76"/>
+        <location filename="../qtdep/qtdep.cpp" line="80"/>
         <source>Succeeded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="83"/>
+        <location filename="../qtdep/qtdep.cpp" line="87"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="84"/>
+        <location filename="../qtdep/qtdep.cpp" line="88"/>
         <source>Failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="119"/>
+        <location filename="../qtdep/qtdep.cpp" line="123"/>
         <source>PDF file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qtdep/qtdep.cpp" line="133"/>
+        <location filename="../qtdep/qtdep.cpp" line="137"/>
         <source>Open file</source>
         <translation type="unfinished"></translation>
     </message>

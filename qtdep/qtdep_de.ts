@@ -9,27 +9,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="410"/>
+        <location filename="../dialogs/mendeleev.ui" line="413"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="451"/>
+        <location filename="../dialogs/mendeleev.ui" line="454"/>
         <source>Mass:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="513"/>
+        <location filename="../dialogs/mendeleev.ui" line="516"/>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="537"/>
+        <location filename="../dialogs/mendeleev.ui" line="540"/>
         <source>Atomic radius:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="581"/>
+        <location filename="../dialogs/mendeleev.ui" line="584"/>
         <source>Covalent radius:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -111,44 +111,64 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="41"/>
-        <location filename="qtdep.cpp" line="130"/>
+        <location filename="qtdep.cpp" line="20"/>
+        <source>&amp;Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="21"/>
+        <source>&amp;Apply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="22"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="23"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="45"/>
+        <location filename="qtdep.cpp" line="134"/>
         <source>Opening file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="41"/>
-        <location filename="qtdep.cpp" line="130"/>
+        <location filename="qtdep.cpp" line="45"/>
+        <location filename="qtdep.cpp" line="134"/>
         <source>You need to select Supercell or Unit cell to open a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="73"/>
+        <location filename="qtdep.cpp" line="77"/>
         <source>Running TDEP...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="76"/>
+        <location filename="qtdep.cpp" line="80"/>
         <source>Succeeded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="83"/>
+        <location filename="qtdep.cpp" line="87"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="84"/>
+        <location filename="qtdep.cpp" line="88"/>
         <source>Failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="119"/>
+        <location filename="qtdep.cpp" line="123"/>
         <source>PDF file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="133"/>
+        <location filename="qtdep.cpp" line="137"/>
         <source>Open file</source>
         <translation type="unfinished"></translation>
     </message>

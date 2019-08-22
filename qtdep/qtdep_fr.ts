@@ -9,27 +9,27 @@
         <translation>Tableau de Mendeleev</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="410"/>
+        <location filename="../dialogs/mendeleev.ui" line="413"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="451"/>
+        <location filename="../dialogs/mendeleev.ui" line="454"/>
         <source>Mass:</source>
         <translation>Masse:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="513"/>
+        <location filename="../dialogs/mendeleev.ui" line="516"/>
         <source>Color:</source>
         <translation>Couleur:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="537"/>
+        <location filename="../dialogs/mendeleev.ui" line="540"/>
         <source>Atomic radius:</source>
         <translation>Rayon atomique:</translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="581"/>
+        <location filename="../dialogs/mendeleev.ui" line="584"/>
         <source>Covalent radius:</source>
         <translation>Rayon de covalence:</translation>
     </message>
@@ -111,44 +111,64 @@
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="41"/>
-        <location filename="qtdep.cpp" line="130"/>
+        <location filename="qtdep.cpp" line="20"/>
+        <source>&amp;Save</source>
+        <translation>Enregi&amp;strer</translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="21"/>
+        <source>&amp;Apply</source>
+        <translation>&amp;Appliquer</translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="22"/>
+        <source>&amp;Close</source>
+        <translation>&amp;Fermer</translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="23"/>
+        <source>&amp;Open</source>
+        <translation>&amp;Ouvrir</translation>
+    </message>
+    <message>
+        <location filename="qtdep.cpp" line="45"/>
+        <location filename="qtdep.cpp" line="134"/>
         <source>Opening file</source>
         <translation>Ouverture du fichier</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="41"/>
-        <location filename="qtdep.cpp" line="130"/>
+        <location filename="qtdep.cpp" line="45"/>
+        <location filename="qtdep.cpp" line="134"/>
         <source>You need to select Supercell or Unit cell to open a file</source>
         <translation>Vous devez sélectionner Supercellule or Cellule Unité pour ouvrir un fichier</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="73"/>
+        <location filename="qtdep.cpp" line="77"/>
         <source>Running TDEP...</source>
         <translation>Lancement de TDEP...</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="76"/>
+        <location filename="qtdep.cpp" line="80"/>
         <source>Succeeded</source>
         <translation>Réussi</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="83"/>
+        <location filename="qtdep.cpp" line="87"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="84"/>
+        <location filename="qtdep.cpp" line="88"/>
         <source>Failed</source>
         <translation>Echec</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="119"/>
+        <location filename="qtdep.cpp" line="123"/>
         <source>PDF file</source>
         <translation>Fichier PDF</translation>
     </message>
     <message>
-        <location filename="qtdep.cpp" line="133"/>
+        <location filename="qtdep.cpp" line="137"/>
         <source>Open file</source>
         <translation>Ouvrir un fichier</translation>
     </message>

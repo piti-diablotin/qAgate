@@ -10,10 +10,6 @@
         <translation>qConducti</translation>
     </message>
     <message>
-        <source>Filename</source>
-        <translation type="vanished">Nom du fichier</translation>
-    </message>
-    <message>
         <location filename="qconducti.ui" line="131"/>
         <source>Fermi energy:</source>
         <translation>Energie de Fermi :</translation>
@@ -117,18 +113,10 @@
         <translation>max</translation>
     </message>
     <message>
-        <source>From max</source>
-        <translation type="vanished">Depuis max</translation>
-    </message>
-    <message>
         <location filename="qconducti.ui" line="488"/>
         <location filename="qconducti.ui" line="623"/>
         <source>To min</source>
         <translation>Vers min</translation>
-    </message>
-    <message>
-        <source>To max</source>
-        <translation type="vanished">Vers max</translation>
     </message>
     <message>
         <location filename="qconducti.ui" line="540"/>

@@ -17,8 +17,8 @@
    <string>qTdep</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../qagate/qagate.qrc">
-    <normaloff>:/tools/qtdep/qtdep.svg</normaloff>:/tools/qtdep/qtdep.svg</iconset>
+   <iconset resource="qtdep.qrc">
+    <normaloff>:/qtdep.svg</normaloff>:/qtdep.svg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="acceptDrops">
@@ -84,7 +84,7 @@
             <x>0</x>
             <y>0</y>
             <width>382</width>
-            <height>437</height>
+            <height>421</height>
            </rect>
           </property>
           <property name="toolTip">
@@ -106,7 +106,7 @@
             <x>0</x>
             <y>0</y>
             <width>382</width>
-            <height>437</height>
+            <height>421</height>
            </rect>
           </property>
           <property name="toolTip">
@@ -128,7 +128,7 @@
             <x>0</x>
             <y>0</y>
             <width>382</width>
-            <height>437</height>
+            <height>421</height>
            </rect>
           </property>
           <property name="toolTip">
@@ -197,7 +197,8 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../qagate/qagate.qrc"/>
+  <include location="qtdep.qrc"/>
+  <include location="qtdep.qrc"/>
  </resources>
  <connections/>
 </ui>

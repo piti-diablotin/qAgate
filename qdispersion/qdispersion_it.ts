@@ -9,27 +9,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="410"/>
+        <location filename="../dialogs/mendeleev.ui" line="413"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="451"/>
+        <location filename="../dialogs/mendeleev.ui" line="454"/>
         <source>Mass:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="513"/>
+        <location filename="../dialogs/mendeleev.ui" line="516"/>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="537"/>
+        <location filename="../dialogs/mendeleev.ui" line="540"/>
         <source>Atomic radius:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.ui" line="581"/>
+        <location filename="../dialogs/mendeleev.ui" line="584"/>
         <source>Covalent radius:</source>
         <translation type="unfinished"></translation>
     </message>
