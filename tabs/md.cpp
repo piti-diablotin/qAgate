@@ -51,6 +51,8 @@ void MD::updateStatus(View *view)
   ui->statistics->setEnabled(something);
   bool isMD=false;
   bool isPIMD=false;
+  bool hasEtotal=false;
+  bool hasStress=false;
   if (something)
     {
       auto canvas = view->getCanvas();
@@ -60,10 +62,19 @@ void MD::updateStatus(View *view)
       _rmax = geometry::getWignerSeitzRadius(hist->getRprimd(0));
       isPIMD=view->getCanvas()->histdata()->nimage()>1;
       isMD=(dynamic_cast<const HistDataMD*>(hist)!=nullptr);
+      hasEtotal=hist->hasEtotal();
+      hasStress=hist->hasStress();
       ui->msd->setEnabled(hist->ntime()>1);
     }
   ui->gyration->setEnabled(isPIMD);
-  ui->thermodynamics->setEnabled(isMD);
+  //ui->thermodynamics->setEnabled(isMD||hasEtotal);
+  ui->energy->setEnabled(hasEtotal);
+  ui->stress->setEnabled(hasStress);
+  ui->temperature->setEnabled(isMD);
+  ui->pressure->setEnabled(isMD);
+  ui->kinetic->setEnabled(isMD);
+  ui->entropy->setEnabled(isMD);
+  ui->thermo->setEnabled(isMD);
   ui->vacf->setEnabled(isMD);
   ui->pdos->setEnabled(isMD);
 }

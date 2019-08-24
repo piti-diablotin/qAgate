@@ -126,6 +126,7 @@ void Logger::on_debug_toggled(bool checked)
 
 void Logger::on_trash_clicked()
 {
+  ui->console->setText(tr("Console"));
   ui->logger->clear();
   ui->trash->setIcon(QIcon(":/logger/icons/trash.svg"));
 }
