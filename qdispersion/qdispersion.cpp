@@ -190,13 +190,16 @@ void QDispersion::plot()
   if (hasNlabels==hasNdiv+1 && hasNdiv>0) command+=commandTmp;
 
   // fermi
-  command += " fermi ";
-  UnitConverter fermiUnit = UnitConverter::getFromString(ui->fermiUnit->currentData().toString().toStdString());
-  fermiUnit = UnitConverter::Ha;
-  command += QString::number(ui->fermi->value()*fermiUnit,'g',14);
+  if (std::abs(ui->fermi->value())>1e-7)
+  {
+    command += " fermi ";
+    UnitConverter fermiUnit = UnitConverter::getFromString(ui->fermiUnit->currentData().toString().toStdString());
+    fermiUnit = UnitConverter::Ha;
+    command += QString::number(ui->fermi->value()*fermiUnit,'g',14);
+  }
 
   // ignore
-  if (ui->ignore->isEnabled()) command += " ignore "+QString::number(ui->ignore->value());
+  if (ui->ignore->isEnabled() && ui->ignore->value() > 0) command += " ignore "+QString::number(ui->ignore->value());
 
   // fatbands
   if (ui->fatbands->isChecked())
@@ -226,6 +229,7 @@ void QDispersion::plot()
   ConfigParser parser;
   parser.setSensitive(true);
   parser.setContent(command.toStdString());
+  ui->command->setText(":plot band"+command);
   try
   {
     ui->statusBar->showMessage(tr("Plot in progress"));
