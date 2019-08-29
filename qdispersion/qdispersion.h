@@ -25,7 +25,7 @@ public:
   virtual void dragEnterEvent(QDragEnterEvent *dragEnterEvent);
   virtual void dropEvent(QDropEvent *dropEvent);
   void openFile(const QString &filename);
-  void plot();
+  void plot(bool commandOnly=false);
 
 private slots:
 
@@ -51,7 +51,13 @@ private slots:
 
   void on_mendeleev_clicked();
 
-private:
+  void on_plotCommand_clicked(bool checked);
+
+  void on_saveCommand_clicked(bool checked);
+
+  void on_dataCommand_clicked(bool checked);
+
+  private:
   Ui::QDispersion *ui;
   QList<QLayoutItem*> _magneticMomentum;
   QIntValidator _intValidator;

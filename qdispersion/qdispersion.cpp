@@ -140,9 +140,13 @@ void QDispersion::openFile(const QString &filename)
   this->setCursor(Qt::ArrowCursor);
 }
 
-void QDispersion::plot()
+void QDispersion::plot(bool commandOnly)
 {
-  QString command(" ");
+  QString command(":plot ");
+  Graph::GraphSave save = Graph::NONE;
+  if (ui->saveCommand->isChecked()) {command = ":save "; save = Graph::PRINT;}
+  else if (ui->dataCommand->isChecked()) {command = ":data "; save = Graph::DATA;}
+  command += "band ";
 
   // Unit
   UnitConverter eunit = UnitConverter::getFromString(ui->energyUnit->currentData().toString().toStdString());
@@ -226,23 +230,26 @@ void QDispersion::plot()
         }
     }
 
-  ConfigParser parser;
-  parser.setSensitive(true);
-  parser.setContent(command.toStdString());
-  ui->command->setText(":plot band"+command);
-  try
+  ui->command->setText(command);
+  if (!commandOnly)
   {
-    ui->statusBar->showMessage(tr("Plot in progress"));
-    this->setCursor(Qt::WaitCursor);
-    Graph::plotBand(*_eigparser.get(),parser,ui->plot,Graph::NONE);
-    ui->statusBar->clearMessage();
+    ConfigParser parser;
+    parser.setSensitive(true);
+    parser.setContent(command.toStdString());
+    try
+    {
+      ui->statusBar->showMessage(tr("Plot in progress"));
+      this->setCursor(Qt::WaitCursor);
+      Graph::plotBand(*_eigparser.get(),parser,ui->plot,save);
+      ui->statusBar->clearMessage();
+    }
+    catch (Exception &e)
+    {
+      ui->statusBar->showMessage(QString::fromStdString(e.what()));
+      QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+    }
+    this->setCursor(Qt::ArrowCursor);
   }
-  catch (Exception &e)
-  {
-    ui->statusBar->showMessage(QString::fromStdString(e.what()));
-    QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
-  }
-  this->setCursor(Qt::ArrowCursor);
 }
 
 void QDispersion::coordStatusBar(QMouseEvent *event)
@@ -467,4 +474,19 @@ void QDispersion::on_mendeleev_clicked()
    m.build();
    m.exec();
    if (m.result()!=0) QDispersion::plot();
+}
+
+void QDispersion::on_plotCommand_clicked(bool checked)
+{
+  this->plot(checked);
+}
+
+void QDispersion::on_saveCommand_clicked(bool checked)
+{
+  this->plot(checked);
+}
+
+void QDispersion::on_dataCommand_clicked(bool checked)
+{
+  this->plot(checked);
 }
