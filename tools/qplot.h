@@ -96,6 +96,7 @@ class QPlot : public QCustomPlot, public Graph {
 
     signals:
       void newCoordinates(double x, double y);
+      void beforePlot();
 
 };
 

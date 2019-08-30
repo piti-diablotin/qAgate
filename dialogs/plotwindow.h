@@ -16,6 +16,7 @@ public:
   explicit PlotWindow(QWidget *parent = 0);
   ~PlotWindow();
   enum PlotPosition {Left, Right};
+  QPlot *currentPlot(PlotPosition pos);
 
 public slots:
   void getPlot(PlotPosition pos, int index, QPlot** plot);
@@ -43,6 +44,8 @@ private slots:
   void on_actionRestoreLeft_triggered();
 
   void on_actionRestoreRight_triggered();
+
+  void rise();
 
 private:
   Ui::PlotWindow *ui;

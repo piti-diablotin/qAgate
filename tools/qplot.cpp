@@ -31,6 +31,7 @@ QPlot::~QPlot() {
 }
 
 void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<double>> &y, const std::list<std::string> &labels, const std::vector<short> &colors){
+  emit(beforePlot());
   this->clean();
   auto label = labels.begin();
   auto yp = y.begin();
@@ -73,6 +74,7 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
 }
 
 void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<double>> &y, const std::list<std::vector<unsigned>> &c, const std::list<std::string> &labels) {
+  emit(beforePlot());
   this->clean();
   this->show();
   auto label = labels.begin();
@@ -112,6 +114,7 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
 }
 
 void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<double> > > &xy, const std::list<std::string> &labels, const std::vector<short> &colors) {
+  emit(beforePlot());
   this->clean();
   this->show();
   auto label = labels.begin();

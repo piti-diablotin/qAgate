@@ -72,6 +72,6 @@ logo.path = /usr/share/qAgate/images/
 desktop.files= qconducti/qconducti.desktop
 desktop.path = /usr/share/applications/
 
-ICON = qagate/qconducti.svg
+ICON = qconducti/qconducti.svg
 
 unix:INSTALLS += logo desktop

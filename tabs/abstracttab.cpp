@@ -1,6 +1,11 @@
 #include "abstracttab.h"
 #include <QDebug>
 
+QPlot *AbstractTab::plot(PlotWindow::PlotPosition pos)
+{
+  return _plot->currentPlot(pos);
+}
+
 AbstractTab::AbstractTab(QWidget* parent) : QWidget(parent),
   _autoUpdate(false)
 {

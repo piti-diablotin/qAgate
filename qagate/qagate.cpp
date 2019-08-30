@@ -109,7 +109,10 @@ qAgate::qAgate(QWidget *parent) :
 
   // Self
   connect(this,SIGNAL(emitCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
+
   this->updateTab();
+  this->setPlot(AbstractTab::plot());
+
 }
 
 qAgate::~qAgate()

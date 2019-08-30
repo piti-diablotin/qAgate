@@ -23,6 +23,8 @@ public:
   void update(View* view);
   virtual void plugActions(QWidget* widget);
 
+  static QPlot *plot(PlotWindow::PlotPosition pos = PlotWindow::Left);
+
 signals:
   void sendCommand(QString command,bool=true);
   void plotChanged(QPlot* plot);

@@ -36,7 +36,14 @@ void Mendeleev::build()
   _modifications.clear();
   _nModifs = 0;
   auto children = ui->elements->children();
-  ui->legend->setColor(Qt::lightGray);
+  ui->legend->setColor(
+                     QColor(
+                       255*Agate::Mendeleev.color[0][0],
+                       255*Agate::Mendeleev.color[0][1],
+                       255*Agate::Mendeleev.color[0][2]
+                     )
+        );
+  connect(dynamic_cast<atomicData*>(ui->legend),SIGNAL(editElement(atomicData*)),this,SLOT(editElement(atomicData*)));
   for ( auto child = children.begin(); child != children.end(); ++child)
     {
       try
@@ -80,6 +87,11 @@ void Mendeleev::editElement(atomicData* elt)
   QPalette pal = ui->color->palette();
   pal.setColor(QPalette::Button,elt->color());
   ui->color->setPalette(pal);
+  bool enableAll = (elt != ui->legend);
+  ui->mass->setEnabled(enableAll);
+  ui->radius->setEnabled(enableAll);
+  ui->rcov->setEnabled(enableAll);
+  ui->name->setEnabled(enableAll);
   _selfSet = false;
 }
 

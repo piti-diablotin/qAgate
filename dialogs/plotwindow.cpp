@@ -17,6 +17,20 @@ PlotWindow::~PlotWindow()
   delete ui;
 }
 
+QPlot *PlotWindow::currentPlot(PlotPosition pos)
+{
+  QTabWidget* tabWidget = nullptr;
+  switch (pos) {
+    case Left:
+      tabWidget = ui->left;
+      break;
+    case Right:
+      tabWidget = ui->right;
+      break;
+  }
+  return dynamic_cast<QPlot*>(tabWidget->currentWidget());
+}
+
 void PlotWindow::getPlot(PlotWindow::PlotPosition pos, int index, QPlot** plot)
 {
   QTabWidget* tabWidget = nullptr;
@@ -35,6 +49,7 @@ void PlotWindow::getPlot(PlotWindow::PlotPosition pos, int index, QPlot** plot)
       *plot = new QPlot(this);
       tabWidget->insertTab(nTab,*plot,name);
       connect(*plot,SIGNAL(newCoordinates(double,double)),this,SLOT(updateStatusBar(double, double)));
+      connect(*plot,SIGNAL(beforePlot()),this,SLOT(rise()));
       emit(newTab(pos,nTab,name));
     }
   else
@@ -112,4 +127,9 @@ void PlotWindow::on_actionRestoreLeft_triggered()
 void PlotWindow::on_actionRestoreRight_triggered()
 {
   dynamic_cast<QPlot*>(ui->right->currentWidget())->autozoom();
+}
+
+void PlotWindow::rise()
+{
+  if (this->isHidden()) this->show();
 }
