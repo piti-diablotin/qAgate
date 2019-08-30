@@ -1,6 +1,7 @@
 #include "qdispersion.h"
 #include "ui_qdispersion.h"
 #include "plot/graph.hpp"
+#include "plot/gnuplot.hpp"
 #include "io/eigparserelectrons.hpp"
 #include <QDebug>
 #include "dialogs/mendeleev.h"
@@ -241,6 +242,11 @@ void QDispersion::plot(bool commandOnly)
       ui->statusBar->showMessage(tr("Plot in progress"));
       this->setCursor(Qt::WaitCursor);
       Graph::plotBand(*_eigparser.get(),parser,ui->plot,save);
+      if (save == Graph::PRINT)
+      {
+        Gnuplot gplt;
+        Graph::plotBand(*_eigparser.get(),parser,&gplt,save);
+      }
       ui->statusBar->clearMessage();
     }
     catch (Exception &e)
@@ -256,7 +262,7 @@ void QDispersion::coordStatusBar(QMouseEvent *event)
 {
   double x = ui->plot->xAxis->pixelToCoord(event->pos().x());
   double y = ui->plot->yAxis->pixelToCoord(event->pos().y());
-  QString info = "kpt="+QString::number(x) + " E=" + QString::number(y);
+  QString info = "kpt="+QString::number(x) + " E=" + QString::number(y) + QString::fromStdString(ui->energyUnit->currentUnit().str());
   ui->statusBar->showMessage(info);
 }
 

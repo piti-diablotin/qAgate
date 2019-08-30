@@ -1,0 +1,12 @@
+<svg class="feather feather-thermometer" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <g fill="#000000" letter-spacing="0px" stroke="none" word-spacing="0px">
+  <text x="-0.37058929" y="6.2734785" font-family="OpenSymbol" font-size="21.333px" style="line-height:1.25" xml:space="preserve"><tspan x="-0.37058929" y="25.209391"/></text>
+  <text x="3.4588335" y="13.129381" font-family="OpenSymbol" font-size="14.667px" style="line-height:1.25" xml:space="preserve"><tspan x="3.4588335" y="26.14782"/></text>
+  <g font-family="Ubuntu" font-weight="500" stroke="none">
+   <text x="9.5426741" y="2.6602328" font-size="21.333px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="9.5426741" y="22.5534"/></text>
+   <text x="13.094156" y="15.044093" font-size="21.333px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="13.094156" y="15.044093" font-family="OpenSymbol" font-size="21.333px" font-weight="normal" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">θ</tspan></text>
+   <text transform="scale(.99995 1)" x="5.8223414" y="20.547041" font-size="17px" stroke-width="1.5937" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="5.8223414" y="20.547041" font-family="OpenSymbol" font-size="17px" font-weight="normal" stroke-width="1.5937" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">φ</tspan></text>
+   <text x="0.5481661" y="9.6801739" font-size="16.066px" stroke-width="1.5062" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="0.5481661" y="9.6801739" font-family="OpenSymbol" font-size="16.066px" font-weight="normal" stroke-width="1.5062" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">ψ</tspan></text>
+  </g>
+ </g>
+</svg>

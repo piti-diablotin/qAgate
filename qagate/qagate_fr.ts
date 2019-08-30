@@ -2743,7 +2743,7 @@
     <message>
         <location filename="../dialogs/writedialog.ui" line="38"/>
         <source>File name</source>
-        <translation>Nome de fichier</translation>
+        <translation type="unfinished">Nom de fichier</translation>
     </message>
     <message>
         <location filename="../dialogs/writedialog.ui" line="52"/>

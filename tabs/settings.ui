@@ -397,12 +397,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/foreground.svg</normaloff>:/settings/icons/foreground.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="shortcut">
             <string notr="true"/>
            </property>
@@ -465,12 +459,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/background.svg</normaloff>:/settings/icons/background.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="shortcut">
             <string notr="true"/>
            </property>
@@ -497,12 +485,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/arrow-up.svg</normaloff>:/settings/icons/arrow-up.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="shortcut">
             <string notr="true"/>
            </property>
@@ -528,12 +510,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/arrow-down.svg</normaloff>:/settings/icons/arrow-down.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
            <property name="shortcut">
             <string notr="true"/>
@@ -625,12 +601,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/sun.svg</normaloff>:/settings/icons/sun.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="shortcut">
             <string notr="true">L</string>
            </property>
@@ -662,12 +632,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/mesh.svg</normaloff>:/settings/icons/mesh.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
            <property name="shortcut">
             <string notr="true">O</string>
@@ -701,12 +665,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/perspective.svg</normaloff>:/settings/icons/perspective.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="shortcut">
             <string notr="true">P</string>
            </property>
@@ -738,12 +696,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/settings/icons/anti-aliasing.svg</normaloff>:/settings/icons/anti-aliasing.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
            <property name="shortcut">
             <string notr="true">Shift+A</string>

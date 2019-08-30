@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>701</width>
+    <width>705</width>
     <height>127</height>
    </rect>
   </property>
@@ -89,7 +89,7 @@
          <item row="0" column="1">
           <widget class="QLabel" name="xLabel">
            <property name="text">
-            <string notr="true">x</string>
+            <string notr="true">a</string>
            </property>
           </widget>
          </item>
@@ -174,7 +174,7 @@
          <item row="1" column="1">
           <widget class="QLabel" name="yLabel">
            <property name="text">
-            <string notr="true">y</string>
+            <string notr="true">b</string>
            </property>
           </widget>
          </item>
@@ -259,7 +259,7 @@
          <item row="2" column="1">
           <widget class="QLabel" name="zLabel">
            <property name="text">
-            <string notr="true">z</string>
+            <string notr="true">c</string>
            </property>
           </widget>
          </item>
@@ -546,12 +546,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/visuals/icons/axis.svg</normaloff>:/visuals/icons/axis.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
         <property name="shortcut">
          <string notr="true"/>
         </property>
@@ -583,12 +577,6 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/visuals/icons/time.svg</normaloff>:/visuals/icons/time.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
         </property>
         <property name="shortcut">
          <string notr="true"/>
@@ -626,13 +614,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/visuals/icons/angles.svg</normaloff>:/visuals/icons/angles.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
+          <normaloff>:/visuals/icons/camangles.svg</normaloff>:/visuals/icons/camangles.svg</iconset>
         </property>
         <property name="shortcut">
          <string notr="true">A</string>
@@ -1267,7 +1249,7 @@
    </property>
    <property name="icon">
     <iconset resource="../qagate/qagate.qrc">
-     <normaloff>:/visuals/icons/angles.svg</normaloff>:/visuals/icons/angles.svg</iconset>
+     <normaloff>:/visuals/icons/camangles.svg</normaloff>:/visuals/icons/camangles.svg</iconset>
    </property>
    <property name="text">
     <string>Angles</string>
@@ -1462,11 +1444,11 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="displayGroup"/>
   <buttongroup name="optionsGroup">
    <property name="exclusive">
     <bool>false</bool>
    </property>
   </buttongroup>
+  <buttongroup name="displayGroup"/>
  </buttongroups>
 </ui>

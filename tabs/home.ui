@@ -85,12 +85,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
         </property>
@@ -128,12 +122,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/save.svg</normaloff>:/home/icons/save.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
         </property>
@@ -164,12 +152,6 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
         </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -207,12 +189,6 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/save-abinit.svg</normaloff>:/home/icons/save-abinit.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
         </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -277,12 +253,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/save-poscar.svg</normaloff>:/home/icons/save-poscar.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
         </property>
@@ -338,12 +308,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/download-cloud.svg</normaloff>:/home/icons/download-cloud.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
         <property name="shortcut">
          <string notr="true">Ctrl+Shift+O</string>
         </property>
@@ -367,12 +331,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/folder-script.svg</normaloff>:/home/icons/folder-script.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -395,12 +353,6 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/home/icons/refresh-cw.svg</normaloff>:/home/icons/refresh-cw.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>17</width>
-          <height>17</height>
-         </size>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -533,12 +485,6 @@
                <iconset resource="../qagate/qagate.qrc">
                 <normaloff>:/home/icons/periodic.svg</normaloff>:/home/icons/periodic.svg</iconset>
               </property>
-              <property name="iconSize">
-               <size>
-                <width>17</width>
-                <height>17</height>
-               </size>
-              </property>
               <property name="autoRaise">
                <bool>true</bool>
               </property>
@@ -561,12 +507,6 @@
               <property name="icon">
                <iconset resource="../qagate/qagate.qrc">
                 <normaloff>:/home/icons/noperiodic.svg</normaloff>:/home/icons/noperiodic.svg</iconset>
-              </property>
-              <property name="iconSize">
-               <size>
-                <width>17</width>
-                <height>17</height>
-               </size>
               </property>
               <property name="autoRaise">
                <bool>true</bool>
@@ -595,12 +535,6 @@
               <property name="icon">
                <iconset resource="../qagate/qagate.qrc">
                 <normaloff>:/home/icons/shift.svg</normaloff>:/home/icons/shift.svg</iconset>
-              </property>
-              <property name="iconSize">
-               <size>
-                <width>17</width>
-                <height>17</height>
-               </size>
               </property>
               <property name="autoRaise">
                <bool>true</bool>
@@ -674,12 +608,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/typat.svg</normaloff>:/home/icons/typat.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="autoRaise">
             <bool>true</bool>
            </property>
@@ -710,12 +638,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/supercell.svg</normaloff>:/home/icons/supercell.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -748,12 +670,6 @@
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/centroid.svg</normaloff>:/home/icons/centroid.svg</iconset>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
-           </property>
            <property name="autoRaise">
             <bool>true</bool>
            </property>
@@ -781,12 +697,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/move.svg</normaloff>:/home/icons/move.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -818,12 +728,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/average.svg</normaloff>:/home/icons/average.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -1045,12 +949,6 @@
            <property name="icon">
             <iconset resource="../qagate/qagate.qrc">
              <normaloff>:/home/icons/rule.svg</normaloff>:/home/icons/rule.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>17</width>
-             <height>17</height>
-            </size>
            </property>
           </widget>
          </item>

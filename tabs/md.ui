@@ -196,6 +196,12 @@
       </property>
       <item row="0" column="1">
        <widget class="QToolButton" name="lattice">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Lattice parameters</string>
         </property>
@@ -212,12 +218,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/acell.svg</normaloff>:/MD/icons/acell.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -225,6 +225,12 @@
       </item>
       <item row="0" column="0">
        <widget class="QToolButton" name="angle">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Cell angles</string>
         </property>
@@ -241,12 +247,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/angles.svg</normaloff>:/MD/icons/angles.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -254,6 +254,12 @@
       </item>
       <item row="1" column="1">
        <widget class="QToolButton" name="angles">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Angle between 3 atoms</string>
         </property>
@@ -270,12 +276,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/angle.svg</normaloff>:/MD/icons/angle.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -283,6 +283,12 @@
       </item>
       <item row="1" column="0">
        <widget class="QToolButton" name="distance">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Distance between 2 atoms</string>
         </property>
@@ -299,12 +305,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/rule.svg</normaloff>:/MD/icons/rule.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -312,6 +312,12 @@
       </item>
       <item row="0" column="2">
        <widget class="QToolButton" name="volume">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Volume</string>
         </property>
@@ -327,12 +333,6 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/volume.svg</normaloff>:/MD/icons/volume.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -365,6 +365,12 @@
       </property>
       <item row="0" column="1">
        <widget class="QToolButton" name="pressure">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Pressure</string>
         </property>
@@ -381,12 +387,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/pressure.svg</normaloff>:/MD/icons/pressure.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -394,6 +394,12 @@
       </item>
       <item row="1" column="1">
        <widget class="QToolButton" name="kinetic">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Kinetic energy</string>
         </property>
@@ -410,12 +416,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/kinetic.svg</normaloff>:/MD/icons/kinetic.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -423,6 +423,12 @@
       </item>
       <item row="1" column="2">
        <widget class="QToolButton" name="entropy">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Electronic entropy</string>
         </property>
@@ -439,12 +445,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/entropy.svg</normaloff>:/MD/icons/entropy.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -452,6 +452,12 @@
       </item>
       <item row="1" column="3">
        <widget class="QToolButton" name="thermo">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Thermodynamical functions</string>
         </property>
@@ -468,12 +474,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/thermodynamics.svg</normaloff>:/MD/icons/thermodynamics.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -481,6 +481,12 @@
       </item>
       <item row="1" column="0">
        <widget class="QToolButton" name="energy">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Electronic total energy</string>
         </property>
@@ -497,12 +503,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/energy.svg</normaloff>:/MD/icons/energy.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -510,6 +510,12 @@
       </item>
       <item row="0" column="2">
        <widget class="QToolButton" name="stress">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Stress tensor</string>
         </property>
@@ -526,12 +532,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/stress.svg</normaloff>:/MD/icons/stress.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -539,6 +539,12 @@
       </item>
       <item row="0" column="0">
        <widget class="QToolButton" name="temperature">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Temperature</string>
         </property>
@@ -555,12 +561,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/thermometer.svg</normaloff>:/MD/icons/thermometer.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -571,6 +571,12 @@
    </item>
    <item>
     <widget class="QGroupBox" name="statistics">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="title">
       <string>Statistics</string>
      </property>
@@ -592,6 +598,12 @@
       </property>
       <item row="1" column="1">
        <widget class="QToolButton" name="pdos">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Phonon density of states</string>
         </property>
@@ -608,12 +620,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/pdos.svg</normaloff>:/MD/icons/pdos.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -621,6 +627,12 @@
       </item>
       <item row="1" column="0">
        <widget class="QToolButton" name="vacf">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Velocity auto-correlation function</string>
         </property>
@@ -637,12 +649,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/vacf.svg</normaloff>:/MD/icons/vacf.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -650,6 +656,12 @@
       </item>
       <item row="0" column="2">
        <widget class="QToolButton" name="msd">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Mean square displacement</string>
         </property>
@@ -666,12 +678,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/msd.svg</normaloff>:/MD/icons/msd.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -679,6 +685,12 @@
       </item>
       <item row="1" column="2">
        <widget class="QToolButton" name="gyration">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Gyration tensor</string>
         </property>
@@ -695,12 +707,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/gyration.svg</normaloff>:/MD/icons/gyration.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -708,6 +714,12 @@
       </item>
       <item row="0" column="1">
        <widget class="QToolButton" name="pdf">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Pair distribution function</string>
         </property>
@@ -724,12 +736,6 @@
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/pdf.svg</normaloff>:/MD/icons/pdf.svg</iconset>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
-        </property>
         <property name="autoRaise">
          <bool>true</bool>
         </property>
@@ -737,6 +743,12 @@
       </item>
       <item row="0" column="0">
        <widget class="QToolButton" name="positions">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="toolTip">
          <string>Positions in a plan</string>
         </property>
@@ -752,12 +764,6 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/positions.svg</normaloff>:/MD/icons/positions.svg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>25</width>
-          <height>25</height>
-         </size>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
