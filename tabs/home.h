@@ -30,11 +30,11 @@ protected:
 private slots:
   void on_update_clicked();
 
-  void on_dumpHist_clicked();
+  void on_dumpHist_triggered();
 
   void on_dumpXyz_clicked();
 
-  void on_saveAbinit_clicked();
+  void on_saveAbinit_triggered();
 
   void on_savePoscar_clicked();
 
@@ -81,6 +81,8 @@ private slots:
   void on_append_triggered();
 
   void on_actionCloud_triggered();
+
+  void on_dumpDtset_clicked();
 
 private:
   Ui::Home *ui;

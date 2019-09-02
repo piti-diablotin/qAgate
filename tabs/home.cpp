@@ -28,8 +28,8 @@ Home::Home(QWidget *parent) :
   ui->append->setDefaultAction(ui->actionAppend);
   ui->actionAppend->setDisabled(true);
   ui->cloud->setDefaultAction(ui->actionCloud);
-  connect(ui->actionAbinit,SIGNAL(triggered(bool)),this,SLOT(on_saveAbinit_clicked()));
-  connect(ui->actionHIST,SIGNAL(triggered(bool)),this,SLOT(on_dumpHist_clicked()));
+  //connect(ui->actionAbinit,SIGNAL(triggered(bool)),this,SLOT(on_saveAbinit_clicked()));
+  //connect(ui->actionHIST,SIGNAL(triggered(bool)),this,SLOT(on_dumpHist_clicked()));
   connect(&_remoteDialog,SIGNAL(sendCommand(QString,bool)),this,SIGNAL(sendCommand(QString,bool)));
   this->addAction(ui->actionAbinit);
   this->addAction(ui->actionHIST);
@@ -113,7 +113,7 @@ void Home::on_update_clicked()
   emit(sendCommand(":update"));
 }
 
-void Home::on_dumpHist_clicked()
+void Home::on_dumpHist_triggered()
 {
   if (_dumpDialog.exec() != QDialog::Accepted|| _dumpDialog.filename().isEmpty()) return;
   emit(sendCommand(":dumphist "+_dumpDialog.filename()+" step "
@@ -128,7 +128,7 @@ void Home::on_dumpXyz_clicked()
   _writeDialog.setDirectory(_dumpDialog.directory());
 }
 
-void Home::on_saveAbinit_clicked()
+void Home::on_saveAbinit_triggered()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
   emit(sendCommand(":write dtset "+QString::number(_writeDialog.precision())
@@ -355,4 +355,12 @@ void Home::on_actionCloud_triggered()
 {
   _remoteDialog.removeAppend(!ui->append->isEnabled());
   _remoteDialog.exec();
+}
+
+void Home::on_dumpDtset_clicked()
+{
+  if (_dumpDialog.exec()!=QDialog::Accepted || _dumpDialog.filename().isEmpty()) return;
+  emit(sendCommand(":dumpdtset "+_dumpDialog.filename()+" step "
+                   +QString::number(_dumpDialog.step())));
+  _writeDialog.setDirectory(_dumpDialog.directory());
 }
