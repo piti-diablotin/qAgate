@@ -71,6 +71,8 @@ private slots:
 
   void on_spinRelative_clicked(bool checked);
 
+  void on_axisABC_clicked();
+
 public slots:
   void updateAngles(View* view);
 };

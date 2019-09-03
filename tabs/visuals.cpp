@@ -59,7 +59,10 @@ void Visuals::updateStatus(View *view)
  (void) view;
   try
   {
-    ui->axis->setChecked(view->option<bool>("axis"));
+    bool axis = view->option<bool>("axis");
+    bool axisCart = view->option<bool>("axisCart");
+    ui->axis->setChecked(axis&&axisCart);
+    ui->axisABC->setChecked(axis&&(!axisCart));
   }
   catch(...){;}
   unsigned display = view->getDisplay();
@@ -149,7 +152,9 @@ void Visuals::updateStatus(View *view)
 
 void Visuals::on_axis_clicked()
 {
-  emit(sendCommand(":axis"));
+  bool checked = ui->axis->isChecked();
+  if (checked) ui->axisABC->setChecked(false);
+  emit(sendCommand(checked ? ":axis cartesian" : ":axis"));
 }
 
 void Visuals::on_actionTime_triggered()
@@ -313,4 +318,11 @@ void Visuals::on_spinRelative_clicked(bool checked)
 {
   QString value = checked ? "relative" : "absolute";
   emit(sendCommand(":spin_length "+value));
+}
+
+void Visuals::on_axisABC_clicked()
+{
+  bool checked = ui->axisABC->isChecked();
+  if (checked) ui->axis->setChecked(false);
+  emit(sendCommand(checked ? ":axis lattice" : ":axis"));
 }

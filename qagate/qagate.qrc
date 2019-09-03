@@ -35,7 +35,6 @@
         <file>../icons/background.svg</file>
         <file>../icons/foreground.svg</file>
         <file>../icons/time.svg</file>
-        <file>../icons/axis.svg</file>
         <file>../icons/mendeleev.svg</file>
         <file>../icons/arrow-down.svg</file>
         <file>../icons/arrow-up.svg</file>
@@ -47,6 +46,7 @@
         <file>../icons/camangles.svg</file>
         <file>../icons/angles.svg</file>
         <file>../icons/axis.svg</file>
+        <file>../icons/axisABC.svg</file>
         <file>../icons/time.svg</file>
         <file>../icons/psi.svg</file>
         <file>../icons/phi.svg</file>
