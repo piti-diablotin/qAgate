@@ -34,7 +34,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/mendeleev.cpp" line="112"/>
+        <location filename="../dialogs/mendeleev.cpp" line="124"/>
         <source>Pick a color</source>
         <translation type="unfinished"></translation>
     </message>

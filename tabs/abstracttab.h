@@ -28,6 +28,8 @@ public:
 signals:
   void sendCommand(QString command,bool=true);
   void plotChanged(QPlot* plot);
+  void needCommandLine();
+
 };
 
 #endif // ABSTRACTTAB_H

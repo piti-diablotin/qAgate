@@ -25,6 +25,7 @@ qAgate::qAgate(QWidget *parent) :
     tab->plugActions(this);
     connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
     connect(tab,SIGNAL(plotChanged(QPlot*)),this,SLOT(setPlot(QPlot*)));
+    connect(tab,SIGNAL(needCommandLine()),this,SLOT(setNeeds()));
   }
 
   int indexPhonons = ui->tabWidget->indexOf(ui->phonons);
@@ -105,7 +106,6 @@ qAgate::qAgate(QWidget *parent) :
 
   // Phonons
   connect(ui->phonons,SIGNAL(needPartialUpdate(void)),this,SLOT(setNeeds()));
-  connect(ui->phonons,SIGNAL(needFullUpdate(void)),this,SLOT(setNeeds()));
 
   // Self
   connect(this,SIGNAL(emitCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
@@ -339,7 +339,7 @@ void qAgate::setNeeds(bool need)
     ui->phonons->partialUpdate(dynamic_cast<CanvasPhonons*>(ui->view->canvas()));
     return;
   }
-  else if (signal=="needFullUpdate" && sender() == ui->phonons ) {
+  else if (signal=="needCommandLine") {
     ui->view->setFromCommandLine(true);
     return;
   }

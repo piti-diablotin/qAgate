@@ -157,8 +157,9 @@ void Home::on_load_clicked()
   auto fileNames = QFileDialog::getOpenFileNames(this,tr("Open File"),_writeDialog.directory(),"",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
   {
+    emit(needCommandLine());
     for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
-      emit(sendCommand(":load "+*file));
+      emit(sendCommand(":load "+*file,false));
     auto dir = fileNames.begin()->section("/",0,-2);
     _writeDialog.setDirectory(dir);
     _dumpDialog.setDirectory(dir);

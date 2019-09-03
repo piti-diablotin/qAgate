@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string notr="true">Home</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <property name="spacing">
@@ -367,13 +367,13 @@
          </font>
         </property>
         <property name="toolTip">
-         <string>Export trajectory to Abinti input format</string>
+         <string>Export trajectory to Abinit input format</string>
         </property>
         <property name="statusTip">
-         <string>Export trajectory to Abinti input format</string>
+         <string>Export trajectory to Abinit input format</string>
         </property>
         <property name="whatsThis">
-         <string>Export trajectory to Abinti input format</string>
+         <string>Export trajectory to Abinit input format</string>
         </property>
         <property name="text">
          <string notr="true">Dtset</string>

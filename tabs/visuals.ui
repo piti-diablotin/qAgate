@@ -652,10 +652,10 @@
          <string>Show/Hide lattice axis</string>
         </property>
         <property name="whatsThis">
-         <string>Show/Hide lattice axis </string>
+         <string>Show/Hide lattice axis</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string notr="true">...</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">

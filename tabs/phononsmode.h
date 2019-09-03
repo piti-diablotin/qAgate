@@ -69,7 +69,6 @@ private:
 
 signals:
   void needPartialUpdate();
-  void needFullUpdate();
 };
 
 #endif // PHONONSMODE_H

@@ -328,7 +328,7 @@ void PhononsMode::on_dynamt_clicked()
 
 void PhononsMode::on_open_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT *_PHBST.nc);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
   {
     QString file1 = fileNames.first();
@@ -345,13 +345,13 @@ void PhononsMode::on_open_clicked()
         emit(sendCommand(":append "+*file,false));
       }
     }
-    emit(needFullUpdate());
+    emit(needCommandLine());
   }
 }
 
 void PhononsMode::on_append_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT *_PHBST.nc);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
 
   bool pop = true;
   if ( !fileNames.empty() )
@@ -366,7 +366,7 @@ void PhononsMode::on_append_clicked()
         _currentFolder = file->left(pos+1);
       }
     }
-    emit(needFullUpdate());
+    emit(needCommandLine());
   }
 }
 
