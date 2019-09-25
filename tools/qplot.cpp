@@ -30,7 +30,7 @@ QPlot::~QPlot() {
   ;
 }
 
-void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<double>> &y, const std::list<std::string> &labels, const std::vector<short> &colors){
+void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<double>> &y, const std::list<std::string> &labels, const std::vector<unsigned> &colors){
   emit(beforePlot());
   this->clean();
   auto label = labels.begin();
@@ -40,8 +40,8 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
   for ( unsigned p = 0 ; p < y.size() ; ++p) {
     this->addGraph();
     auto graph = this->graph(p);
-    if ( p < colors.size() ) {
-      graph->setPen(QPen(qcolor[colors[p] < 8 ? colors[p] : autocolor++]));
+    if ( p < colors.size() && colors[p] != static_cast<unsigned>(-1) ) {
+      graph->setPen(QPen(QColor(QRgb(colors[p]))));
     }
     else {
       graph->setPen(QPen(qcolor[autocolor++]));
@@ -113,7 +113,7 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
   this->replot();
 }
 
-void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<double> > > &xy, const std::list<std::string> &labels, const std::vector<short> &colors) {
+void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<double> > > &xy, const std::list<std::string> &labels, const std::vector<unsigned> &colors) {
   emit(beforePlot());
   this->clean();
   this->show();
@@ -123,8 +123,8 @@ void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<dou
   bool addedLabel = false;
   for ( unsigned p = 0 ; p < xy.size() ; ++p) {
     QCPCurve *newCurve = new QCPCurve(this->xAxis, this->yAxis);
-    if ( p < colors.size() ) {
-      newCurve->setPen(QPen(qcolor[colors[p] < 8 ? colors[p] : autocolor++]));
+    if ( p < colors.size() && colors[p] != static_cast<unsigned>(-1)) {
+      newCurve->setPen(QPen(QColor(QRgb(colors[p]))));
     }
     else {
       newCurve->setPen(QPen(qcolor[autocolor++]));

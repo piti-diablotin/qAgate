@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDos</class>
+ <widget class="QMainWindow" name="QDos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">qDOS</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="Left">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item row="1" column="0">
+          <widget class="QLabel" name="prefixLabel">
+           <property name="text">
+            <string>Prefix</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="prefix">
+           <property name="toolTip">
+            <string>Prefix to find files</string>
+           </property>
+           <property name="statusTip">
+            <string>Prefix to find files : prefix_DOS* will be used</string>
+           </property>
+           <property name="whatsThis">
+            <string>Prefix to find files : prefix_DOS* will be used</string>
+           </property>
+           <property name="text">
+            <string>NiOo</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="pawLabel">
+           <property name="text">
+            <string>PAW</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="folder">
+           <property name="toolTip">
+            <string>Folder to explore</string>
+           </property>
+           <property name="statusTip">
+            <string>Folder to explore</string>
+           </property>
+           <property name="whatsThis">
+            <string>Folder to explore</string>
+           </property>
+           <property name="text">
+            <string>/home/jordan/Téléchargements/nio_dos/nio_dos_fm/</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="3">
+          <widget class="QLineEdit" name="command">
+           <property name="toolTip">
+            <string>Command to use with agate</string>
+           </property>
+           <property name="statusTip">
+            <string>Command to use with agate</string>
+           </property>
+           <property name="whatsThis">
+            <string>Command to use with agate</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Agate command </string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="spinLabel">
+           <property name="text">
+            <string>Spin</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="folderLabel">
+           <property name="text">
+            <string>Folder</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="spin">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="toolTip">
+            <string>Spin component(s) to plot</string>
+           </property>
+           <property name="statusTip">
+            <string>Spin component(s) to plot</string>
+           </property>
+           <property name="whatsThis">
+            <string>Spin component(s) to plot</string>
+           </property>
+           <item>
+            <property name="text">
+             <string notr="true">1 and 2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">2</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="paw">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="toolTip">
+            <string>Paw component to plot</string>
+           </property>
+           <property name="statusTip">
+            <string>Paw component to plot</string>
+           </property>
+           <property name="whatsThis">
+            <string>Paw component to plot</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>On-site all electron</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>On-site pseudo contribution</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Plane-waves contribution</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="browse">
+           <property name="toolTip">
+            <string>Open file manager</string>
+           </property>
+           <property name="statusTip">
+            <string>Open file manager</string>
+           </property>
+           <property name="whatsThis">
+            <string>Open file manager</string>
+           </property>
+           <property name="text">
+            <string>Browse</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="load">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Load</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QToolButton" name="add">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Add a new projection</string>
+             </property>
+             <property name="statusTip">
+              <string>Add a new projection</string>
+             </property>
+             <property name="whatsThis">
+              <string>Add a new projection</string>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+             <property name="icon">
+              <iconset resource="qdos.qrc">
+               <normaloff>:/icons/plus.svg</normaloff>:/icons/plus.svg</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="remove">
+             <property name="toolTip">
+              <string>Remove selected projections</string>
+             </property>
+             <property name="statusTip">
+              <string>Remove selected projections</string>
+             </property>
+             <property name="whatsThis">
+              <string>Remove selected projections</string>
+             </property>
+             <property name="text">
+              <string>Remove</string>
+             </property>
+             <property name="icon">
+              <iconset resource="qdos.qrc">
+               <normaloff>:/icons/minus.svg</normaloff>:/icons/minus.svg</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0" colspan="3">
+          <widget class="QTableView" name="toDraw">
+           <property name="toolTip">
+            <string>List of projections</string>
+           </property>
+           <property name="statusTip">
+            <string>List of projections</string>
+           </property>
+           <property name="whatsThis">
+            <string>List of projections</string>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::DoubleClicked</set>
+           </property>
+           <property name="showDropIndicator" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <property name="cornerButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QCheckBox" name="updown">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>UpDown</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Right">
+      <item>
+       <widget class="QPlot" name="plot" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="2">
+         <widget class="QLabel" name="sepE">
+          <property name="text">
+           <string>:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="ymax">
+          <property name="toolTip">
+           <string>Maximal DOS</string>
+          </property>
+          <property name="statusTip">
+           <string>Maximal DOS</string>
+          </property>
+          <property name="whatsThis">
+           <string>Maximal DOS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="xmax">
+          <property name="toolTip">
+           <string>Maximal energy</string>
+          </property>
+          <property name="statusTip">
+           <string>Maximal energy</string>
+          </property>
+          <property name="whatsThis">
+           <string>Maximal energy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="unitLabel">
+          <property name="text">
+           <string>Unit</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="xmin">
+          <property name="toolTip">
+           <string>Minimal energy</string>
+          </property>
+          <property name="statusTip">
+           <string>Minimal energy</string>
+          </property>
+          <property name="whatsThis">
+           <string>Minimal energy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="unitDisplay">
+          <property name="text">
+           <string>Unit</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="dosRange">
+          <property name="text">
+           <string>DOS range</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="ymin">
+          <property name="toolTip">
+           <string>Minimal DOS</string>
+          </property>
+          <property name="statusTip">
+           <string>Minimal DOS</string>
+          </property>
+          <property name="whatsThis">
+           <string>Minimal DOS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="sepDos">
+          <property name="text">
+           <string>:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="erangeLabel">
+          <property name="text">
+           <string>Energy range</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="EnergyUnitCombo" name="unit">
+          <property name="toolTip">
+           <string>Unit for energy</string>
+          </property>
+          <property name="statusTip">
+           <string>Unit for energy</string>
+          </property>
+          <property name="whatsThis">
+           <string>Unit for energy</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QDialogButtonBox" name="buttonBox">
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Apply|QDialogButtonBox::Close|QDialogButtonBox::Reset|QDialogButtonBox::Save</set>
+        </property>
+        <property name="centerButtons">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="qdos.qrc">
+     <normaloff>:/icons/plus.svg</normaloff>:/icons/plus.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="toolTip">
+    <string>Add a new DOS</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="qdos.qrc">
+     <normaloff>:/icons/minus.svg</normaloff>:/icons/minus.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove selected DOS</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>EnergyUnitCombo</class>
+   <extends>QComboBox</extends>
+   <header>tools/energyunitcombo.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QPlot</class>
+   <extends>QWidget</extends>
+   <header>tools/qplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="qdos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -46,7 +46,7 @@ class QPlot : public QCustomPlot, public Graph {
      * @param y A vector with several y quantites to plot
      * @param labels The labels corresponding to the y quantities.
      */
-    virtual void plot(const std::vector<double> &x, const std::list<std::vector<double>> &y, const std::list<std::string> &labels, const std::vector<short> &colors);
+    virtual void plot(const std::vector<double> &x, const std::list<std::vector<double>> &y, const std::list<std::string> &labels, const std::vector<unsigned> &colors);
 
     /** 
      * Plot several quantities on the screen
@@ -62,7 +62,7 @@ class QPlot : public QCustomPlot, public Graph {
      * @param xy A list of (x,y) pairs to plot
      * @param labels The labels corresponding to the y quantities.
      */
-    virtual void plot(const std::list< std::pair< std::vector<double>,std::vector<double> > > &xy, const std::list<std::string> &labels, const std::vector<short> &colors);
+    virtual void plot(const std::list< std::pair< std::vector<double>,std::vector<double> > > &xy, const std::list<std::string> &labels, const std::vector<unsigned> &colors);
 
     /**
      * Save the graph

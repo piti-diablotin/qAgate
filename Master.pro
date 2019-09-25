@@ -6,4 +6,5 @@ SUBDIRS = \
   qAgate.pro \
   qConducti.pro \
   qDispersion.pro \
-  qTdep.pro
+  qTdep.pro \
+  qDOS.pro
