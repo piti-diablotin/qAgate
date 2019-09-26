@@ -6,6 +6,7 @@
 #include "qconducti/qconducti.h"
 #include "qdispersion/qdispersion.h"
 #include "qtdep/qtdep.h"
+#include "qdos/qdos.h"
 
 namespace Ui {
   class Tools;
@@ -27,7 +28,9 @@ private slots:
 
   void on_dispersion_clicked();
 
-  void on_toolButton_clicked();
+  void on_tdep_clicked();
+
+  void on_dos_clicked();
 
 private:
   Ui::Tools *ui;
@@ -35,6 +38,7 @@ private:
   QConducti _conducti;
   QDispersion _dispersion;
   qTdep _tdep;
+  QDos _dos;
 };
 
 #endif // TOOLS_H

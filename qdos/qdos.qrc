@@ -1,7 +1,7 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
+<RCC>
     <qresource prefix="/">
         <file>../icons/plus.svg</file>
         <file>../icons/minus.svg</file>
+        <file>qdos.svg</file>
     </qresource>
 </RCC>

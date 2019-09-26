@@ -50,6 +50,35 @@
     </widget>
    </item>
    <item>
+    <widget class="QToolButton" name="dos">
+     <property name="toolTip">
+      <string>qDos</string>
+     </property>
+     <property name="statusTip">
+      <string>qDos</string>
+     </property>
+     <property name="whatsThis">
+      <string>qDOS</string>
+     </property>
+     <property name="text">
+      <string notr="true">qDOS</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../qdos/qdos.qrc">
+       <normaloff>:/qdos.svg</normaloff>:/qdos.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QToolButton" name="conducti">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -85,7 +114,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QToolButton" name="toolButton">
+    <widget class="QToolButton" name="tdep">
      <property name="toolTip">
       <string notr="true">qTdep</string>
      </property>
@@ -129,6 +158,7 @@
   </layout>
  </widget>
  <resources>
+  <include location="../qdos/qdos.qrc"/>
   <include location="../qagate/qagate.qrc"/>
  </resources>
  <connections/>

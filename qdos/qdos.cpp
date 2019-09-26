@@ -92,6 +92,7 @@ QString QDos::currentFolder() const
 void QDos::setCurrentFolder(const QString &currentFolder)
 {
   _currentFolder = currentFolder;
+  ui->folder->setText(_currentFolder);
 }
 
 void QDos::coordStatusBar(QMouseEvent *event)

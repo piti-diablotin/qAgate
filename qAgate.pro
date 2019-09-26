@@ -89,7 +89,9 @@ SOURCES += \
     tabs/localmode.cpp \
     tabs/densitymode.cpp \
     tabs/phononsmode.cpp \
-    dialogs/analyzedialog.cpp
+    dialogs/analyzedialog.cpp \
+    qdos/adddos.cpp \
+    qdos/qdos.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -136,7 +138,9 @@ HEADERS += \
     tabs/localmode.h \
     tabs/densitymode.h \
     tabs/phononsmode.h \
-    dialogs/analyzedialog.h
+    dialogs/analyzedialog.h \
+    qdos/adddos.h \
+    qdos/qdos.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -174,13 +178,16 @@ FORMS += \
     tabs/localmode.ui \
     tabs/densitymode.ui \
     tabs/phononsmode.ui \
-    dialogs/analyzedialog.ui
+    dialogs/analyzedialog.ui \
+    qdos/adddos.ui \
+    qdos/qdos.ui
 
 RESOURCES += \
     qagate/qagate.qrc \
     qdispersion/qdispersion.qrc \
     qconducti/qconducti.qrc \
-    qtdep/qtdep.qrc
+    qtdep/qtdep.qrc \
+    qdos/qdos.qrc
 
 TRANSLATIONS += \
   qagate/qagate_fr.ts \

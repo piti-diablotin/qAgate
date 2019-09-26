@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string notr="true">qDOS</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="qdos.qrc">
+    <normaloff>:/qdos.svg</normaloff>:/qdos.svg</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -63,7 +67,7 @@
             <string>Prefix to find files : prefix_DOS* will be used</string>
            </property>
            <property name="text">
-            <string>NiOo</string>
+            <string/>
            </property>
           </widget>
          </item>
@@ -86,7 +90,10 @@
             <string>Folder to explore</string>
            </property>
            <property name="text">
-            <string>/home/jordan/Téléchargements/nio_dos/nio_dos_fm/</string>
+            <string notr="true"/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
            </property>
           </widget>
          </item>

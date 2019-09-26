@@ -5,7 +5,10 @@ Tools::Tools(QWidget *parent) :
   AbstractTab(parent),
   ui(new Ui::Tools),
   _file(),
-  _conducti(this)
+  _conducti(this),
+  _dispersion(this),
+  _tdep(this),
+  _dos(this)
 {
   ui->setupUi(this);
 }
@@ -37,7 +40,7 @@ void Tools::on_dispersion_clicked()
   _dispersion.activateWindow();
 }
 
-void Tools::on_toolButton_clicked()
+void Tools::on_tdep_clicked()
 {
   if (_tdep.isHidden() && !_file.isEmpty())
     {
@@ -46,4 +49,14 @@ void Tools::on_toolButton_clicked()
     }
   _tdep.show();
   _tdep.activateWindow();
+}
+
+void Tools::on_dos_clicked()
+{
+  if (_dos.isHidden())
+    {
+      _dos.setCurrentFolder(_currentFolder);
+    }
+  _dos.show();
+  _dos.activateWindow();
 }
