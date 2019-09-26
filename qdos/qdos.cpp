@@ -122,6 +122,7 @@ void QDos::on_load_clicked()
   _plotCurves.setHeaderData(2,Qt::Horizontal,tr("Magnetic moment"));
   _plotCurves.setHeaderData(3,Qt::Horizontal,tr("Color"));
   _plotCurves.setHeaderData(4,Qt::Horizontal,tr("Label"));
+  this->plot();
 }
 
 void QDos::on_actionAdd_triggered()
