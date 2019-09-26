@@ -40,7 +40,8 @@ SOURCES += \
     tools/qcustomplot.cpp \
     tools/qplot.cpp \
     tools/unitcombo.cpp \
-    qdos/adddos.cpp
+    qdos/adddos.cpp \
+    tools/coloritemdelegate.cpp
 
 HEADERS += \
         qdos/qdos.h \
@@ -48,7 +49,8 @@ HEADERS += \
     tools/qcustomplot.h \
     tools/qplot.h \
     tools/unitcombo.h \
-    qdos/adddos.h
+    qdos/adddos.h \
+    tools/coloritemdelegate.h
 
 FORMS += \
         qdos/qdos.ui \

@@ -294,6 +294,9 @@
            <property name="cornerButtonEnabled">
             <bool>false</bool>
            </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
           </widget>
          </item>
          <item row="2" column="2">

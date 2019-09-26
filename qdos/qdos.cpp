@@ -2,6 +2,7 @@
 #include "ui_qdos.h"
 #include <QDoubleValidator>
 #include "qdos/adddos.h"
+#include "tools/coloritemdelegate.h"
 
 QDos::QDos(QWidget *parent) :
   QMainWindow(parent),
@@ -37,6 +38,7 @@ QDos::QDos(QWidget *parent) :
   _energyUnit = ui->unit->currentUnit();
   connect(ui->plot->xAxis,SIGNAL(rangeChanged(QCPRange)),this,SLOT(adjustXRange(QCPRange)));
   connect(ui->plot->yAxis,SIGNAL(rangeChanged(QCPRange)),this,SLOT(adjustYRange(QCPRange)));
+  ui->toDraw->setItemDelegateForColumn(3,new ColorItemDelegate(this));
 }
 
 QDos::~QDos()
@@ -105,9 +107,18 @@ void QDos::coordStatusBar(QMouseEvent *event)
 
 void QDos::on_load_clicked()
 {
-  std::string prefix = ui->folder->text().toStdString()+"/"+ui->prefix->text().toStdString();
-  _db.clear();
-  _db.buildFromPrefix(prefix);
+  try
+  {
+    std::string prefix = ui->folder->text().toStdString()+"/"+ui->prefix->text().toStdString();
+    _db.clear();
+    _db.buildFromPrefix(prefix);
+  }
+  catch (Exception &e)
+  {
+    ui->statusBar->showMessage(QString::fromStdString(e.what()));
+    QMessageBox::critical(this,tr("Error"),QString::fromStdString(e.fullWhat()));
+    return;
+  }
   _plotCurves.clear();
   if (_db.list().size() > 0)
   {

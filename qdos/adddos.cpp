@@ -138,7 +138,7 @@ QList<QStandardItem*> AddDos::item()
   selection->setFlags(Qt::ItemIsUserCheckable|Qt::ItemIsEnabled|Qt::ItemIsSelectable);
   projection->setFlags(Qt::ItemIsEnabled|Qt::ItemIsSelectable);
   magnetic->setFlags(Qt::ItemIsEnabled|Qt::ItemIsSelectable);
-  color->setFlags(Qt::ItemIsEnabled|Qt::ItemIsSelectable);
+  color->setFlags(Qt::ItemIsEnabled|Qt::ItemIsSelectable|Qt::ItemIsEditable);
 
   selection->setData(ui->atom->currentText(),Qt::DisplayRole);
   selection->setData(ui->atom->currentData(Qt::UserRole),Qt::UserRole);
