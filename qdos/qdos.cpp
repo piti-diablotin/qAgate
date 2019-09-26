@@ -171,10 +171,14 @@ void QDos::on_actionRemove_triggered()
     if (select->hasSelection())
     {
       QModelIndexList modelIndexList = select->selectedRows();
+      for (int i = modelIndexList.size()-1; i>=0; --i)
+        _plotCurves.removeRow(modelIndexList[i].row());
+      /*
       for (auto it = modelIndexList.rbegin(); it != modelIndexList.rend(); ++it)
       {
         _plotCurves.removeRow(it->row());
       }
+      */
     }
     this->updateAgateCommand();
 }
