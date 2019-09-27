@@ -91,7 +91,8 @@ SOURCES += \
     tabs/phononsmode.cpp \
     dialogs/analyzedialog.cpp \
     qdos/adddos.cpp \
-    qdos/qdos.cpp
+    qdos/qdos.cpp \
+    tools/coloritemdelegate.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -140,7 +141,8 @@ HEADERS += \
     tabs/phononsmode.h \
     dialogs/analyzedialog.h \
     qdos/adddos.h \
-    qdos/qdos.h
+    qdos/qdos.h \
+    tools/coloritemdelegate.h
 
 FORMS += \
     qagate/qagate.ui \
