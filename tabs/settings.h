@@ -60,6 +60,8 @@ private slots:
   void updateMendeleev();
   void on_up_clicked();
   void on_down_clicked();
+  void on_perspectiveAngle_valueChanged(int arg1);
+  void on_perspective_toggled(bool checked);
 };
 
 #endif // SETTINGS_H
