@@ -829,13 +829,7 @@
       </item>
       <item>
        <widget class="QWidget" name="widget_4" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
          <property name="spacing">
           <number>2</number>
          </property>
@@ -852,17 +846,41 @@
           <number>0</number>
          </property>
          <item>
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
+          <widget class="QLabel" name="perspectiveAngleLabel">
+           <property name="enabled">
+            <bool>false</bool>
            </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>19</height>
-            </size>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
-          </spacer>
+           <property name="text">
+            <string>Perspective</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="perspectiveAngle">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="toolTip">
+            <string>Angle for the perspective projection</string>
+           </property>
+           <property name="statusTip">
+            <string>Angle for the perspective projection</string>
+           </property>
+           <property name="whatsThis">
+            <string>Angle for the perspective projection</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>90</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>

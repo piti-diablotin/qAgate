@@ -48,9 +48,11 @@ void Settings::updateStatus(View* view)
   ui->quality->setValue(quality);
 // OpenGL
   ui->ndiv->setValue(view->canvas()->ndiv());
+  ui->perspectiveAngle->setValue(static_cast<int>(view->option<float>("perspective")));
 //display
   ui->width->setValue(view->width());
   ui->height->setValue(view->height());
+
   try
   {
     ui->size->setValue(view->option<int>("fontSize"));
@@ -229,4 +231,15 @@ void Settings::on_down_clicked()
       + " " + QString::number(color.green())
       + " " + QString::number(color.blue());
   emit(sendCommand(command));
+}
+
+void Settings::on_perspectiveAngle_valueChanged(int arg1)
+{
+  if (!_autoUpdate) emit(sendCommand(QString(":perspective %0").arg(arg1)));
+}
+
+void Settings::on_perspective_toggled(bool checked)
+{
+   ui->perspectiveAngle->setEnabled(checked);
+   ui->perspectiveAngleLabel->setEnabled(checked);
 }
