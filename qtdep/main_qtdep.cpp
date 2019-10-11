@@ -1,5 +1,6 @@
 #include "qtdep.h"
 #include <QApplication>
+#include <QTranslator>
 #include "base/mendeleev.hpp"
 
 Agate::mendeleev Agate::Mendeleev;
