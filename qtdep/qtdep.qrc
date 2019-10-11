@@ -2,4 +2,9 @@
     <qresource prefix="/">
         <file>qtdep.svg</file>
     </qresource>
+    <qresource prefix="/translations">
+        <file>qtdep_de.qm</file>
+        <file>qtdep_fr.qm</file>
+        <file>qtdep_it.qm</file>
+    </qresource>
 </RCC>

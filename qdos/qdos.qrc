@@ -4,4 +4,9 @@
         <file>../icons/minus.svg</file>
         <file>qdos.svg</file>
     </qresource>
+    <qresource prefix="/translations">
+        <file>qdos_de.qm</file>
+        <file>qdos_fr.qm</file>
+        <file>qdos_it.qm</file>
+    </qresource>
 </RCC>

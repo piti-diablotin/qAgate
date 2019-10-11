@@ -61,6 +61,11 @@ INCLUDEPATH += $$PREFIX_AGATE/include/agate
 RESOURCES += \
     qdos/qdos.qrc
 
+TRANSLATIONS += \
+  qdos/qdos_fr.ts \
+  qdos/qdos_it.ts \
+  qdos/qdos_de.ts
+
 unix|win32: LIBS += -L$$PREFIX_AGATE/lib/ -lagate
 
 DISTFILES += \

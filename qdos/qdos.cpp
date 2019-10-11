@@ -207,9 +207,9 @@ void QDos::updateAgateCommand()
     command += " paw="+ui->paw->currentData().toString();
   command += " eunit="+QString::fromStdString(ui->unit->currentUnit().str());
   if (!ui->xmin->text().isEmpty() && !ui->xmax->text().isEmpty())
-    command += " xrange="+ui->xmin->text()+":"+ui->xmax->text();
+    command += " xrange="+QString::number(ui->xmin->text().toDouble())+":"+QString::number(ui->xmax->text().toDouble());
   if (!ui->ymin->text().isEmpty() && !ui->ymax->text().isEmpty())
-    command += " yrange="+ui->ymin->text()+":"+ui->ymax->text();
+    command += " yrange="+QString::number(ui->ymin->text().toDouble())+":"+QString::number(ui->ymax->text().toDouble());
 
   int nrows = _plotCurves.rowCount();
   if (nrows>0)
