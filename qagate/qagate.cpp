@@ -9,6 +9,7 @@
 #include "canvas/canvaslocal.hpp"
 #include "canvas/canvasphonons.hpp"
 #include "canvas/canvasdensity.hpp"
+#include "tabs/multibinit.h"
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
@@ -112,6 +113,8 @@ qAgate::qAgate(QWidget *parent) :
 
   this->updateTab();
   this->setPlot(AbstractTab::plot());
+
+  this->addAction(ui->actionSecret);
 
 }
 
@@ -387,29 +390,13 @@ void qAgate::on_tabWidget_currentChanged(int index)
     _tabHiden = !_tabHiden;
   }
   ui->tabWidget->widget(index)->show();
-  /*
-  if (ui->tabWidget->currentWidget() == ui->local)
-  {
-    ui->view->setFromCommandLine(true);
-    emit(emitCommand(":mode local"));
-  }
-  else if (ui->tabWidget->currentWidget() == ui->density)
-  {
-    ui->view->setFromCommandLine(true);
-    emit(emitCommand(":mode density"));
-  }
-  else if (ui->tabWidget->currentWidget() == ui->phonons)
-  {
-    ui->view->setFromCommandLine(true);
-    qDebug() << "node phonons";
-    emit(emitCommand(":mode phonons"));
-  }
-  else {
-    if(dynamic_cast<CanvasLocal*>(ui->view->canvas())
-       ||dynamic_cast<CanvasPhonons*>(ui->view->canvas())
-       ||dynamic_cast<CanvasDensity*>(ui->view->canvas()))
-      emit(emitCommand(":mode positions"));
-  }
-  */
   this->updateTab();
+}
+
+void qAgate::on_actionSecret_triggered()
+{
+  if (ui->tabWidget->count()==9) return;
+  QWidget *multibinit = new Multibinit(this);
+  ui->tabWidget->insertTab(8,multibinit,"Multibinit");
+  connect(multibinit,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
 }

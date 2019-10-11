@@ -92,7 +92,8 @@ SOURCES += \
     dialogs/analyzedialog.cpp \
     qdos/adddos.cpp \
     qdos/qdos.cpp \
-    tools/coloritemdelegate.cpp
+    tools/coloritemdelegate.cpp \
+    tabs/multibinit.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -142,7 +143,8 @@ HEADERS += \
     dialogs/analyzedialog.h \
     qdos/adddos.h \
     qdos/qdos.h \
-    tools/coloritemdelegate.h
+    tools/coloritemdelegate.h \
+    tabs/multibinit.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -182,7 +184,8 @@ FORMS += \
     tabs/phononsmode.ui \
     dialogs/analyzedialog.ui \
     qdos/adddos.ui \
-    qdos/qdos.ui
+    qdos/qdos.ui \
+    tabs/multibinit.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

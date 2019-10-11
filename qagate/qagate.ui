@@ -257,6 +257,14 @@
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSecret">
+   <property name="text">
+    <string>Secret</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+J</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>

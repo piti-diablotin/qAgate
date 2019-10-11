@@ -41,6 +41,7 @@ signals:
 private slots:
   void on_tabWidget_tabBarClicked(int index);
   void on_tabWidget_currentChanged(int index);
+  void on_actionSecret_triggered();
 };
 
 #endif // QAGATE_H
