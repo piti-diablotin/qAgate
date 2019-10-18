@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=qDos
+Name=qDOS
 Comment=Help tool to plot electronic DOS
 Exec=qDos
 Icon=/usr/share/qAgate/images/qdos.svg
