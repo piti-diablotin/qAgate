@@ -83,7 +83,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+          <normaloff>:/home/icons/download.svg</normaloff>:/home/icons/download.svg</iconset>
         </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -151,7 +151,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+          <normaloff>:/home/icons/download.svg</normaloff>:/home/icons/download.svg</iconset>
         </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -380,7 +380,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+          <normaloff>:/home/icons/download.svg</normaloff>:/home/icons/download.svg</iconset>
         </property>
         <property name="toolButtonStyle">
          <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -1255,7 +1255,7 @@
   <action name="actionHIST">
    <property name="icon">
     <iconset resource="../qagate/qagate.qrc">
-     <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+     <normaloff>:/home/icons/download.svg</normaloff>:/home/icons/download.svg</iconset>
    </property>
    <property name="text">
     <string notr="true">HIST</string>
@@ -1267,7 +1267,7 @@
     <string>Export trajectory to _HIST format</string>
    </property>
    <property name="shortcut">
-    <string notr="true">Ctrl+Shift+S</string>
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="actionOpen">

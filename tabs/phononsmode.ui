@@ -94,7 +94,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+          <normaloff>:/home/icons/download.svg</normaloff>:/home/icons/download.svg</iconset>
         </property>
         <property name="shortcut">
          <string notr="true"/>
@@ -128,7 +128,7 @@
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/home/icons/upload.svg</normaloff>:/home/icons/upload.svg</iconset>
+          <normaloff>:/home/icons/download.svg</normaloff>:/home/icons/download.svg</iconset>
         </property>
         <property name="shortcut">
          <string notr="true"/>

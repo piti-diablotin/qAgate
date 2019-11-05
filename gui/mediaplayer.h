@@ -56,6 +56,7 @@ private slots:
   void on_snapshot_clicked();
   void on_zoomOut_clicked();
   void on_zoomIn_clicked();
+  void on_toolButton_clicked();
 };
 
 #endif // MEDIAPLAYER_H

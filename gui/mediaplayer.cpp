@@ -1,5 +1,6 @@
 #include "mediaplayer.h"
 #include "ui_mediaplayer.h"
+#include "dialogs/about.h"
 
 MediaPlayer::MediaPlayer(QWidget *parent) :
   QWidget(parent),
@@ -187,4 +188,10 @@ void MediaPlayer::on_zoomOut_clicked()
 void MediaPlayer::on_zoomIn_clicked()
 {
   emit(zoomIn());
+}
+
+void MediaPlayer::on_toolButton_clicked()
+{
+  About about(this);
+  about.exec();
 }

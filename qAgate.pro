@@ -36,6 +36,7 @@ INSTALLS += target
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNING
 DEFINES += HAVE_CONFIG_H
+DEFINES += QAGATE_VERSION=\\\"$${VERSION}\\\"
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -93,7 +94,8 @@ SOURCES += \
     qdos/adddos.cpp \
     qdos/qdos.cpp \
     tools/coloritemdelegate.cpp \
-    tabs/multibinit.cpp
+    tabs/multibinit.cpp \
+    dialogs/about.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -144,7 +146,8 @@ HEADERS += \
     qdos/adddos.h \
     qdos/qdos.h \
     tools/coloritemdelegate.h \
-    tabs/multibinit.h
+    tabs/multibinit.h \
+    dialogs/about.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -185,7 +188,8 @@ FORMS += \
     dialogs/analyzedialog.ui \
     qdos/adddos.ui \
     qdos/qdos.ui \
-    tabs/multibinit.ui
+    tabs/multibinit.ui \
+    dialogs/about.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

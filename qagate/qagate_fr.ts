@@ -2,55 +2,135 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="fr_FR">
 <context>
+    <name>About</name>
+    <message>
+        <location filename="../dialogs/about.ui" line="20"/>
+        <location filename="../dialogs/about.ui" line="35"/>
+        <source>About</source>
+        <translation>A propos</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="48"/>
+        <source>Credits</source>
+        <translation>Crédits</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="61"/>
+        <source>Licence</source>
+        <translation>Licence</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="150"/>
+        <source>qAgate</source>
+        <translation>qAgate</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="179"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;A tool to visualize and analyze outputs of several DFT codes.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;abiout&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Un outil pour visualiser et analyser les fichiers de sorties de plusieurs codes DFT&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;abiout&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Site web&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="211"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Feather&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://github.com/feathericons/feather/blob/master/LICENSE&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;(MIT Licence)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Feather&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://github.com/feathericons/feather/blob/master/LICENSE&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;(Licence MIT)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="221"/>
+        <source>Translated by</source>
+        <translation>Traduit par</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="234"/>
+        <source>Icons</source>
+        <translation>Icones</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="247"/>
+        <location filename="../dialogs/about.ui" line="257"/>
+        <source>Jordan Bieder</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="267"/>
+        <source>Created by</source>
+        <translation>Créé par</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="280"/>
+        <source>Marcus Schmitt</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="290"/>
+        <source>Fabio Ricci</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="319"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GNU GENERAL PUBLIC LICENSE&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version 3, 29 June 2007&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (C) 2007 Free Software Foundation, Inc. &amp;lt;http://fsf.org/&amp;gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Everyone is permitted to copy and distribute verbatim copies&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;of this license document, but changing it is not allowed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.cpp" line="22"/>
+        <source>no</source>
+        <translation>non</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.cpp" line="25"/>
+        <source>&amp;Close</source>
+        <translation>&amp;Fermer</translation>
+    </message>
+</context>
+<context>
     <name>AddDos</name>
     <message>
-        <location filename="adddos.ui" line="14"/>
+        <location filename="../qdos/adddos.ui" line="14"/>
         <source>Select a DOS</source>
         <translation>Selectionner une DOS</translation>
     </message>
     <message>
-        <location filename="adddos.ui" line="20"/>
+        <location filename="../qdos/adddos.ui" line="20"/>
         <source>Atom</source>
         <translation>Atome</translation>
     </message>
     <message>
-        <location filename="adddos.ui" line="30"/>
-        <location filename="adddos.cpp" line="44"/>
+        <location filename="../qdos/adddos.ui" line="30"/>
+        <location filename="../qdos/adddos.cpp" line="44"/>
         <source>Projection</source>
         <translation>Projection</translation>
     </message>
     <message>
-        <location filename="adddos.ui" line="47"/>
+        <location filename="../qdos/adddos.ui" line="47"/>
         <source>Color</source>
         <translation>Couleur</translation>
     </message>
     <message>
-        <location filename="adddos.ui" line="61"/>
+        <location filename="../qdos/adddos.ui" line="61"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
     <message>
-        <location filename="adddos.ui" line="94"/>
+        <location filename="../qdos/adddos.ui" line="94"/>
         <source>Magnetic moment</source>
         <translation>Moment magnétique</translation>
     </message>
     <message>
-        <location filename="adddos.cpp" line="65"/>
+        <location filename="../qdos/adddos.cpp" line="65"/>
         <source>Angular moment</source>
         <translation>Moment angulaire</translation>
     </message>
     <message>
-        <location filename="adddos.cpp" line="98"/>
+        <location filename="../qdos/adddos.cpp" line="98"/>
         <source>Total</source>
         <translation>Total</translation>
     </message>
     <message>
-        <location filename="adddos.cpp" line="98"/>
+        <location filename="../qdos/adddos.cpp" line="98"/>
         <source>Atom %0</source>
         <translation>Atome %0</translation>
     </message>
     <message>
-        <location filename="adddos.cpp" line="117"/>
+        <location filename="../qdos/adddos.cpp" line="117"/>
         <source>Pick a color</source>
         <translation>Choisir une couleur</translation>
     </message>
@@ -598,6 +678,11 @@
         <translation>Thermo</translation>
     </message>
     <message>
+        <location filename="../tabs/home.ui" line="1270"/>
+        <source>Ctrl+Shift+S</source>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="../tabs/home.ui" line="1279"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
@@ -1079,14 +1164,14 @@
     <message>
         <location filename="../gui/mediaplayer.ui" line="44"/>
         <location filename="../gui/mediaplayer.ui" line="47"/>
-        <location filename="../gui/mediaplayer.cpp" line="101"/>
-        <location filename="../gui/mediaplayer.cpp" line="103"/>
+        <location filename="../gui/mediaplayer.cpp" line="102"/>
+        <location filename="../gui/mediaplayer.cpp" line="104"/>
         <source>Play</source>
         <translation>Jouer</translation>
     </message>
     <message>
         <location filename="../gui/mediaplayer.ui" line="50"/>
-        <location filename="../gui/mediaplayer.cpp" line="102"/>
+        <location filename="../gui/mediaplayer.cpp" line="103"/>
         <source>Play the movie</source>
         <translation>Jouer l&apos;animation</translation>
     </message>
@@ -1182,13 +1267,13 @@
         <translation>Zoomer</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="94"/>
-        <location filename="../gui/mediaplayer.cpp" line="96"/>
+        <location filename="../gui/mediaplayer.cpp" line="95"/>
+        <location filename="../gui/mediaplayer.cpp" line="97"/>
         <source>Pause</source>
         <translation>Pause</translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="95"/>
+        <location filename="../gui/mediaplayer.cpp" line="96"/>
         <source>Pause the movie</source>
         <translation>Mettre l&apos;animation en pause</translation>
     </message>
@@ -1254,6 +1339,120 @@
         <location filename="../dialogs/movedialog.ui" line="169"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;New &lt;span style=&quot; font-weight:600;&quot;&gt;REDUCED&lt;/span&gt; position&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Nouveau position en &lt;span style=&quot; font-weight:600;&quot;&gt;REDUIT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Multibinit</name>
+    <message>
+        <source>Form</source>
+        <translation type="obsolete">Formulaire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="41"/>
+        <source>Random structures</source>
+        <translation>Structures aléatoires</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="77"/>
+        <source>Random seed</source>
+        <translation>Graine aléatoire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="82"/>
+        <source>User defined seed</source>
+        <translation>Graine donnée par l&apos;utilisateur</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="87"/>
+        <source>Time based seed</source>
+        <translation>Graine basée sur l&apos;heure</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="92"/>
+        <source>None</source>
+        <translation>Aucune</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="108"/>
+        <source>0</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="120"/>
+        <source>Supercell</source>
+        <translation>Supercellule</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="132"/>
+        <source>Quantity</source>
+        <translation>Quantité</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="147"/>
+        <source>Seed</source>
+        <translation>Graine</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="208"/>
+        <source>Temperature</source>
+        <translation>Température</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="244"/>
+        <source>Amplitude</source>
+        <translation>Amplitude</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="259"/>
+        <source>1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="293"/>
+        <source>Generate</source>
+        <translation>Générer</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="324"/>
+        <source>Ignore</source>
+        <translation>Ignorer</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="329"/>
+        <source>Constant</source>
+        <translation>Constants</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="334"/>
+        <source>Absolute</source>
+        <translation>Absolus</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="347"/>
+        <source>Instable modes</source>
+        <translation>Modes instables</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="71"/>
+        <location filename="../tabs/multibinit.cpp" line="81"/>
+        <location filename="../tabs/multibinit.cpp" line="90"/>
+        <source>Missing data</source>
+        <translation>Données manquantes</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="71"/>
+        <source>You need to give the size of the supercell as X X X</source>
+        <translation>Vous devez donner la tailler de la supercellule X X X</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="81"/>
+        <source>You need to give the seed</source>
+        <translation>Vous devez renseigner la graine</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="90"/>
+        <source>You need to give the amplitude for instable modes</source>
+        <translation>Vous devez donner l&apos;amplitudes des modes instables</translation>
     </message>
 </context>
 <context>
@@ -1936,282 +2135,282 @@
 <context>
     <name>QDos</name>
     <message>
-        <location filename="qdos.ui" line="54"/>
+        <location filename="../qdos/qdos.ui" line="54"/>
         <source>Prefix</source>
         <translation>Préfix</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="61"/>
+        <location filename="../qdos/qdos.ui" line="61"/>
         <source>Prefix to find files</source>
         <translation>Préfix pour trouver les fichiers</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="64"/>
-        <location filename="qdos.ui" line="67"/>
+        <location filename="../qdos/qdos.ui" line="64"/>
+        <location filename="../qdos/qdos.ui" line="67"/>
         <source>Prefix to find files : prefix_DOS* will be used</source>
         <translation>Préfix pour trouver les fichiers : préfix_DOS* sera utilisé</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="77"/>
+        <location filename="../qdos/qdos.ui" line="77"/>
         <source>PAW</source>
         <translation>PAW</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="84"/>
-        <location filename="qdos.ui" line="87"/>
-        <location filename="qdos.ui" line="90"/>
+        <location filename="../qdos/qdos.ui" line="84"/>
+        <location filename="../qdos/qdos.ui" line="87"/>
+        <location filename="../qdos/qdos.ui" line="90"/>
         <source>Folder to explore</source>
         <translation>Répertoire à explorer</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="103"/>
-        <location filename="qdos.ui" line="106"/>
-        <location filename="qdos.ui" line="109"/>
+        <location filename="../qdos/qdos.ui" line="103"/>
+        <location filename="../qdos/qdos.ui" line="106"/>
+        <location filename="../qdos/qdos.ui" line="109"/>
         <source>Command to use with agate</source>
         <translation>Commande pour Agate</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="115"/>
+        <location filename="../qdos/qdos.ui" line="115"/>
         <source>Agate command </source>
         <translation>Command pour Agate </translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="122"/>
+        <location filename="../qdos/qdos.ui" line="122"/>
         <source>Spin</source>
         <translation>Spin</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="129"/>
+        <location filename="../qdos/qdos.ui" line="129"/>
         <source>Folder</source>
         <translation>Répertoire</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="139"/>
-        <location filename="qdos.ui" line="142"/>
-        <location filename="qdos.ui" line="145"/>
+        <location filename="../qdos/qdos.ui" line="139"/>
+        <location filename="../qdos/qdos.ui" line="142"/>
+        <location filename="../qdos/qdos.ui" line="145"/>
         <source>Spin component(s) to plot</source>
         <translation>Composante(s) de spin à tracer</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="170"/>
-        <location filename="qdos.ui" line="173"/>
-        <location filename="qdos.ui" line="176"/>
+        <location filename="../qdos/qdos.ui" line="170"/>
+        <location filename="../qdos/qdos.ui" line="173"/>
+        <location filename="../qdos/qdos.ui" line="176"/>
         <source>Paw component to plot</source>
         <translation>Composante PAW à tracer</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="180"/>
+        <location filename="../qdos/qdos.ui" line="180"/>
         <source>On-site all electron</source>
         <translation>Tous électrons on-site</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="185"/>
+        <location filename="../qdos/qdos.ui" line="185"/>
         <source>On-site pseudo contribution</source>
         <translation>Contribution pseudo on-site</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="190"/>
+        <location filename="../qdos/qdos.ui" line="190"/>
         <source>Plane-waves contribution</source>
         <translation>Contribution ondes planes</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="198"/>
-        <location filename="qdos.ui" line="201"/>
-        <location filename="qdos.ui" line="204"/>
+        <location filename="../qdos/qdos.ui" line="198"/>
+        <location filename="../qdos/qdos.ui" line="201"/>
+        <location filename="../qdos/qdos.ui" line="204"/>
         <source>Open file manager</source>
         <translation>Ouvrir le gestionnaire de fichiers</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="207"/>
+        <location filename="../qdos/qdos.ui" line="207"/>
         <source>Browse</source>
         <translation>Parcourir</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="217"/>
+        <location filename="../qdos/qdos.ui" line="217"/>
         <source>Load</source>
         <translation>Charger</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="229"/>
-        <location filename="qdos.ui" line="232"/>
-        <location filename="qdos.ui" line="235"/>
+        <location filename="../qdos/qdos.ui" line="229"/>
+        <location filename="../qdos/qdos.ui" line="232"/>
+        <location filename="../qdos/qdos.ui" line="235"/>
         <source>Add a new projection</source>
         <translation>Ajouter une nouvelle projection</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="238"/>
-        <location filename="qdos.ui" line="474"/>
+        <location filename="../qdos/qdos.ui" line="238"/>
+        <location filename="../qdos/qdos.ui" line="474"/>
         <source>Add</source>
         <translation>Ajouter</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="252"/>
-        <location filename="qdos.ui" line="255"/>
-        <location filename="qdos.ui" line="258"/>
+        <location filename="../qdos/qdos.ui" line="252"/>
+        <location filename="../qdos/qdos.ui" line="255"/>
+        <location filename="../qdos/qdos.ui" line="258"/>
         <source>Remove selected projections</source>
         <translation>Supprimer les projections sélectoinnées</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="261"/>
-        <location filename="qdos.ui" line="489"/>
+        <location filename="../qdos/qdos.ui" line="261"/>
+        <location filename="../qdos/qdos.ui" line="489"/>
         <source>Remove</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="277"/>
-        <location filename="qdos.ui" line="280"/>
-        <location filename="qdos.ui" line="283"/>
+        <location filename="../qdos/qdos.ui" line="277"/>
+        <location filename="../qdos/qdos.ui" line="280"/>
+        <location filename="../qdos/qdos.ui" line="283"/>
         <source>List of projections</source>
         <translation>Liste des projections</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="308"/>
+        <location filename="../qdos/qdos.ui" line="308"/>
         <source>UpDown</source>
         <translation>UpDown</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="334"/>
-        <location filename="qdos.ui" line="414"/>
+        <location filename="../qdos/qdos.ui" line="334"/>
+        <location filename="../qdos/qdos.ui" line="414"/>
         <source>:</source>
         <translation>:</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="341"/>
-        <location filename="qdos.ui" line="344"/>
-        <location filename="qdos.ui" line="347"/>
+        <location filename="../qdos/qdos.ui" line="341"/>
+        <location filename="../qdos/qdos.ui" line="344"/>
+        <location filename="../qdos/qdos.ui" line="347"/>
         <source>Maximal DOS</source>
         <translation>DOS maximale</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="354"/>
-        <location filename="qdos.ui" line="357"/>
-        <location filename="qdos.ui" line="360"/>
+        <location filename="../qdos/qdos.ui" line="354"/>
+        <location filename="../qdos/qdos.ui" line="357"/>
+        <location filename="../qdos/qdos.ui" line="360"/>
         <source>Maximal energy</source>
         <translation>Energie maximale</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="367"/>
-        <location filename="qdos.ui" line="387"/>
+        <location filename="../qdos/qdos.ui" line="367"/>
+        <location filename="../qdos/qdos.ui" line="387"/>
         <source>Unit</source>
         <translation>Unité</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="374"/>
-        <location filename="qdos.ui" line="377"/>
-        <location filename="qdos.ui" line="380"/>
+        <location filename="../qdos/qdos.ui" line="374"/>
+        <location filename="../qdos/qdos.ui" line="377"/>
+        <location filename="../qdos/qdos.ui" line="380"/>
         <source>Minimal energy</source>
         <translation>Energie minimale</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="394"/>
+        <location filename="../qdos/qdos.ui" line="394"/>
         <source>DOS range</source>
         <translation>Plage de la DOS</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="401"/>
-        <location filename="qdos.ui" line="404"/>
-        <location filename="qdos.ui" line="407"/>
+        <location filename="../qdos/qdos.ui" line="401"/>
+        <location filename="../qdos/qdos.ui" line="404"/>
+        <location filename="../qdos/qdos.ui" line="407"/>
         <source>Minimal DOS</source>
         <translation>DOS minimale</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="421"/>
+        <location filename="../qdos/qdos.ui" line="421"/>
         <source>Energy range</source>
         <translation>Plage d&apos;énergie</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="441"/>
-        <location filename="qdos.ui" line="444"/>
-        <location filename="qdos.ui" line="447"/>
+        <location filename="../qdos/qdos.ui" line="441"/>
+        <location filename="../qdos/qdos.ui" line="444"/>
+        <location filename="../qdos/qdos.ui" line="447"/>
         <source>Unit for energy</source>
         <translation>Unité pour l&apos;énergie</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="477"/>
+        <location filename="../qdos/qdos.ui" line="477"/>
         <source>Add a new DOS</source>
         <translation>Ajouter une nouvelle DOS</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="480"/>
+        <location filename="../qdos/qdos.ui" line="480"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="492"/>
+        <location filename="../qdos/qdos.ui" line="492"/>
         <source>Remove selected DOS</source>
         <translation>Supprimer les DOS sélectoinnées</translation>
     </message>
     <message>
-        <location filename="qdos.ui" line="495"/>
+        <location filename="../qdos/qdos.ui" line="495"/>
         <source>Ctrl+K</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="34"/>
+        <location filename="../qdos/qdos.cpp" line="34"/>
         <source>&amp;Save</source>
         <translation>Enre&amp;gistrer</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="35"/>
+        <location filename="../qdos/qdos.cpp" line="35"/>
         <source>&amp;Apply</source>
         <translation>Appli&amp;quer</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="36"/>
+        <location filename="../qdos/qdos.cpp" line="36"/>
         <source>&amp;Close</source>
         <translation>&amp;Fermer</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="37"/>
+        <location filename="../qdos/qdos.cpp" line="37"/>
         <source>&amp;Reset</source>
         <translation>&amp;Réinitialiser</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="119"/>
-        <location filename="qdos.cpp" line="278"/>
+        <location filename="../qdos/qdos.cpp" line="119"/>
+        <location filename="../qdos/qdos.cpp" line="278"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="131"/>
-        <location filename="qdos.cpp" line="147"/>
+        <location filename="../qdos/qdos.cpp" line="131"/>
+        <location filename="../qdos/qdos.cpp" line="147"/>
         <source>Selection</source>
         <translation>Sélection</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="132"/>
+        <location filename="../qdos/qdos.cpp" line="132"/>
         <source>Projection</source>
         <translation>Projection</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="133"/>
+        <location filename="../qdos/qdos.cpp" line="133"/>
         <source>Magnetic moment</source>
         <translation>Moment magnétique</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="134"/>
-        <location filename="qdos.cpp" line="150"/>
+        <location filename="../qdos/qdos.cpp" line="134"/>
+        <location filename="../qdos/qdos.cpp" line="150"/>
         <source>Color</source>
         <translation>Couleur</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="135"/>
-        <location filename="qdos.cpp" line="151"/>
+        <location filename="../qdos/qdos.cpp" line="135"/>
+        <location filename="../qdos/qdos.cpp" line="151"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="149"/>
+        <location filename="../qdos/qdos.cpp" line="149"/>
         <source>m</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="161"/>
+        <location filename="../qdos/qdos.cpp" line="161"/>
         <source>PDF file</source>
         <translation>Fichier PDF</translation>
     </message>
     <message>
-        <location filename="qdos.cpp" line="268"/>
+        <location filename="../qdos/qdos.cpp" line="268"/>
         <source>Plot in progress</source>
         <translation>Traçage en cours</translation>
     </message>
@@ -2537,7 +2736,7 @@
         <location filename="../tabs/settings.ui" line="872"/>
         <location filename="../tabs/settings.ui" line="875"/>
         <source>Angle for the perspective projection</source>
-        <translation type="unfinished"></translation>
+        <translation>Angle pour la perspective</translation>
     </message>
     <message>
         <location filename="../tabs/settings.ui" line="913"/>
@@ -2775,7 +2974,7 @@
         <location filename="../tabs/tools.ui" line="55"/>
         <location filename="../tabs/tools.ui" line="58"/>
         <source>qDos</source>
-        <translation type="unfinished"></translation>
+        <translation>qDos</translation>
     </message>
     <message>
         <location filename="../tabs/tools.ui" line="61"/>
@@ -3234,6 +3433,16 @@
         <translation>D&amp;M</translation>
     </message>
     <message>
+        <location filename="qagate.ui" line="262"/>
+        <source>Secret</source>
+        <translation>Secret</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="265"/>
+        <source>Ctrl+Alt+J</source>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="qagate.ui" line="112"/>
         <source>&amp;Visuals</source>
         <translation>&amp;Visuel</translation>
@@ -3264,18 +3473,18 @@
         <translation>Phonons</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="159"/>
+        <location filename="qagate.cpp" line="162"/>
         <source>Ignoring file </source>
         <translation>Fichier ignoré </translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="160"/>
-        <location filename="qagate.cpp" line="168"/>
+        <location filename="qagate.cpp" line="163"/>
+        <location filename="qagate.cpp" line="171"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="167"/>
+        <location filename="qagate.cpp" line="170"/>
         <source>Updating canvas failed</source>
         <translation>Echec de l&apos;actualisation du canvas</translation>
     </message>

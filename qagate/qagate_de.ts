@@ -2,6 +2,86 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de_DE">
 <context>
+    <name>About</name>
+    <message>
+        <location filename="../dialogs/about.ui" line="20"/>
+        <location filename="../dialogs/about.ui" line="35"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="48"/>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="61"/>
+        <source>Licence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="150"/>
+        <source>qAgate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="179"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;A tool to visualize and analyze outputs of several DFT codes.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;abiout&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="211"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Feather&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://github.com/feathericons/feather/blob/master/LICENSE&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;(MIT Licence)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="221"/>
+        <source>Translated by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="234"/>
+        <source>Icons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="247"/>
+        <location filename="../dialogs/about.ui" line="257"/>
+        <source>Jordan Bieder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="267"/>
+        <source>Created by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="280"/>
+        <source>Marcus Schmitt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="290"/>
+        <source>Fabio Ricci</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="319"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GNU GENERAL PUBLIC LICENSE&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version 3, 29 June 2007&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (C) 2007 Free Software Foundation, Inc. &amp;lt;http://fsf.org/&amp;gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Everyone is permitted to copy and distribute verbatim copies&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;of this license document, but changing it is not allowed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.cpp" line="22"/>
+        <source>no</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.cpp" line="25"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AddDos</name>
     <message>
         <location filename="../qdos/adddos.ui" line="14"/>
@@ -594,6 +674,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../tabs/home.ui" line="1270"/>
+        <source>Ctrl+Shift+S</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../tabs/home.ui" line="1279"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
@@ -1075,14 +1160,14 @@
     <message>
         <location filename="../gui/mediaplayer.ui" line="44"/>
         <location filename="../gui/mediaplayer.ui" line="47"/>
-        <location filename="../gui/mediaplayer.cpp" line="101"/>
-        <location filename="../gui/mediaplayer.cpp" line="103"/>
+        <location filename="../gui/mediaplayer.cpp" line="102"/>
+        <location filename="../gui/mediaplayer.cpp" line="104"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../gui/mediaplayer.ui" line="50"/>
-        <location filename="../gui/mediaplayer.cpp" line="102"/>
+        <location filename="../gui/mediaplayer.cpp" line="103"/>
         <source>Play the movie</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1178,13 +1263,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="94"/>
-        <location filename="../gui/mediaplayer.cpp" line="96"/>
+        <location filename="../gui/mediaplayer.cpp" line="95"/>
+        <location filename="../gui/mediaplayer.cpp" line="97"/>
         <source>Pause</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/mediaplayer.cpp" line="95"/>
+        <location filename="../gui/mediaplayer.cpp" line="96"/>
         <source>Pause the movie</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1249,6 +1334,116 @@
     <message>
         <location filename="../dialogs/movedialog.ui" line="169"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;New &lt;span style=&quot; font-weight:600;&quot;&gt;REDUCED&lt;/span&gt; position&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Multibinit</name>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="41"/>
+        <source>Random structures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="77"/>
+        <source>Random seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="82"/>
+        <source>User defined seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="87"/>
+        <source>Time based seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="92"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="108"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="120"/>
+        <source>Supercell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="132"/>
+        <source>Quantity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="147"/>
+        <source>Seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="208"/>
+        <source>Temperature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="244"/>
+        <source>Amplitude</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="259"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="293"/>
+        <source>Generate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="324"/>
+        <source>Ignore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="329"/>
+        <source>Constant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="334"/>
+        <source>Absolute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.ui" line="347"/>
+        <source>Instable modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="71"/>
+        <location filename="../tabs/multibinit.cpp" line="81"/>
+        <location filename="../tabs/multibinit.cpp" line="90"/>
+        <source>Missing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="71"/>
+        <source>You need to give the size of the supercell as X X X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="81"/>
+        <source>You need to give the seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinit.cpp" line="90"/>
+        <source>You need to give the amplitude for instable modes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3221,6 +3416,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="qagate.ui" line="262"/>
+        <source>Secret</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="265"/>
+        <source>Ctrl+Alt+J</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="qagate.ui" line="112"/>
         <source>&amp;Visuals</source>
         <translation type="unfinished"></translation>
@@ -3251,18 +3456,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="159"/>
+        <location filename="qagate.cpp" line="162"/>
         <source>Ignoring file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="160"/>
-        <location filename="qagate.cpp" line="168"/>
+        <location filename="qagate.cpp" line="163"/>
+        <location filename="qagate.cpp" line="171"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="167"/>
+        <location filename="qagate.cpp" line="170"/>
         <source>Updating canvas failed</source>
         <translation type="unfinished"></translation>
     </message>

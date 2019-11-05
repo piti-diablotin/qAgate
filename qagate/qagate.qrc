@@ -13,6 +13,7 @@
         <file>../icons/fast-forward.svg</file>
         <file>../icons/rewind.svg</file>
         <file>../icons/rotate-cw.svg</file>
+        <file>../icons/help-circle.svg</file>
     </qresource>
     <qresource prefix="/logger">
         <file>../icons/alert-triangle.svg</file>
@@ -63,6 +64,7 @@
         <file>../icons/folder-script.svg</file>
         <file>../icons/save.svg</file>
         <file>../icons/refresh-cw.svg</file>
+        <file>../icons/download.svg</file>
         <file>../icons/upload.svg</file>
         <file>../icons/home.svg</file>
         <file>../icons/rule.svg</file>
