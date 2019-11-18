@@ -199,16 +199,25 @@ void Visuals::on_action_mx_triggered()
 
 void Visuals::on_actionX_triggered()
 {
+  ui->psi->setValue(0);
+  ui->theta->setValue(0);
+  ui->phi->setValue(0);
   emit(alongX());
 }
 
 void Visuals::on_actionY_triggered()
 {
+  ui->psi->setValue(0);
+  ui->theta->setValue(0);
+  ui->phi->setValue(90);
   emit(alongY());
 }
 
 void Visuals::on_actionZ_triggered()
 {
+  ui->psi->setValue(-90);
+  ui->theta->setValue(0);
+  ui->phi->setValue(90);
   emit(alongZ());
 }
 
@@ -218,9 +227,9 @@ void Visuals::updateAngles(View *view)
   auto theta = view->option<float>("camtheta");
   auto phi = view->option<float>("camphi");
   _autoUpdate = true;
-  ui->psi->setValue((int)(psi/phys::pi*180));
-  ui->theta->setValue((int)(theta/phys::pi*180));
-  ui->phi->setValue((int)(phi/phys::pi*180));
+  ui->psi->setValue((int)std::round(psi/phys::pi*180));
+  ui->theta->setValue((int)std::round(theta/phys::pi*180));
+  ui->phi->setValue((int)std::round(phi/phys::pi*180));
   _autoUpdate = false;
 }
 
