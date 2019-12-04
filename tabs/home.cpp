@@ -82,6 +82,7 @@ void Home::updateStatus(View *view)
   ui->savePoscar->setEnabled(something);
   ui->saveCif->setEnabled(something);
   ui->update->setEnabled(something);
+  ui->dumpDtset->setEnabled(something);
 
   ui->edit->setEnabled(something);
   ui->explore->setEnabled(something);

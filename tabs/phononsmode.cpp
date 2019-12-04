@@ -194,6 +194,7 @@ void PhononsMode::addRemoveQpt(const QModelIndex &topLeft, const QModelIndex &bo
     emit(sendCommand(":add "+qpt));
     ui->qpts->setCurrentIndex(topLeft);
     _currentQptModes = topLeft;
+    ui->qptSelected->setText(topLeft.data().toString());
   }
   else
   {
