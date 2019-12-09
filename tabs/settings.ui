@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>710</width>
-    <height>123</height>
+    <height>129</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -864,6 +864,11 @@
           <widget class="QSpinBox" name="perspectiveAngle">
            <property name="enabled">
             <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="toolTip">
             <string>Angle for the perspective projection</string>
