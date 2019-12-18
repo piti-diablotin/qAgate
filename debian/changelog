@@ -1,3 +1,29 @@
+qagate (1.1.0-1) bionic; urgency=medium
+
+  * Add interpolation tool
+  * Add randomization of a trajectory
+  * Add about box
+  * Add secret tab for generating random structures from eigen displacements
+  * Add perspective angle option
+  * Add logo and everything to update the package
+  * Option to display or not the cell box
+  * Changer version to 1.1.0
+  * Change abiout to agate for credits
+  * Update to switch axis lattice/cartesian
+  * Update the translations
+  * Set all icons to the same time ?
+  * Fix issue with timeline
+  * Fix font size
+  * Fix bug: dumpDtset was not desactivated
+  * Fix bug: Qpt was not displayed when checked in phonons mode
+  * Fix angles bug
+  * Fix .desktop for qDOS
+  * Fix for Qt < 5.6
+  * Fix a translation
+  * Fix stress for HistDataMD
+
+ -- Jordan Bieder <jordan.bieder@uliege.be>  Sun, 17 Mar 2019 12:32:01 +0100
+
 qagate (1.0.0-1) bionic; urgency=medium
 
   * Initial release
