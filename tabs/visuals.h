@@ -73,7 +73,9 @@ private slots:
 
   void on_axisABC_clicked();
 
-public slots:
+  void on_cell_clicked(bool checked);
+
+  public slots:
   void updateAngles(View* view);
 };
 

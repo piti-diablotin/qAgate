@@ -9,7 +9,7 @@ QT       += core gui opengl
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = qAgate
-VERSION = 1.0.0
+VERSION = 1.1.0
 TEMPLATE = app
 CONFIG += c++11
 isEmpty(PREFIX) {
@@ -94,8 +94,8 @@ SOURCES += \
     qdos/adddos.cpp \
     qdos/qdos.cpp \
     tools/coloritemdelegate.cpp \
-    tabs/multibinit.cpp \
-    dialogs/about.cpp
+    dialogs/about.cpp \
+    tabs/multibinittab.cpp
 
 HEADERS += \
     qagate/qagate.h \
@@ -146,8 +146,8 @@ HEADERS += \
     qdos/adddos.h \
     qdos/qdos.h \
     tools/coloritemdelegate.h \
-    tabs/multibinit.h \
-    dialogs/about.h
+    dialogs/about.h \
+    tabs/multibinittab.h
 
 FORMS += \
     qagate/qagate.ui \
@@ -188,8 +188,8 @@ FORMS += \
     dialogs/analyzedialog.ui \
     qdos/adddos.ui \
     qdos/qdos.ui \
-    tabs/multibinit.ui \
-    dialogs/about.ui
+    dialogs/about.ui \
+    tabs/multibinittab.ui
 
 RESOURCES += \
     qagate/qagate.qrc \

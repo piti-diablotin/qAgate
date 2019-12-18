@@ -560,38 +560,6 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
-       <widget class="QToolButton" name="axis">
-        <property name="toolTip">
-         <string>Show/Hide axis</string>
-        </property>
-        <property name="statusTip">
-         <string>Show/Hide axis</string>
-        </property>
-        <property name="whatsThis">
-         <string>Show/Hide axis</string>
-        </property>
-        <property name="text">
-         <string notr="true"/>
-        </property>
-        <property name="icon">
-         <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/visuals/icons/axis.svg</normaloff>:/visuals/icons/axis.svg</iconset>
-        </property>
-        <property name="shortcut">
-         <string notr="true"/>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-        <property name="checked">
-         <bool>false</bool>
-        </property>
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="0">
        <widget class="QToolButton" name="angles">
         <property name="sizePolicy">
@@ -643,7 +611,68 @@
         </property>
        </spacer>
       </item>
-      <item row="1" column="2">
+      <item row="0" column="2">
+       <widget class="QToolButton" name="cell">
+        <property name="toolTip">
+         <string>Show the cell box</string>
+        </property>
+        <property name="statusTip">
+         <string>Show the cell box</string>
+        </property>
+        <property name="whatsThis">
+         <string>Show the cell box</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/visuals/icons/cell.svg</normaloff>:/visuals/icons/cell.svg</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="axis">
+        <property name="toolTip">
+         <string>Show/Hide axis</string>
+        </property>
+        <property name="statusTip">
+         <string>Show/Hide axis</string>
+        </property>
+        <property name="whatsThis">
+         <string>Show/Hide axis</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/visuals/icons/axis.svg</normaloff>:/visuals/icons/axis.svg</iconset>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
        <widget class="QToolButton" name="axisABC">
         <property name="toolTip">
          <string>Show/Hide lattice axis</string>
@@ -1473,11 +1502,11 @@
  </resources>
  <connections/>
  <buttongroups>
+  <buttongroup name="displayGroup"/>
   <buttongroup name="optionsGroup">
    <property name="exclusive">
     <bool>false</bool>
    </property>
   </buttongroup>
-  <buttongroup name="displayGroup"/>
  </buttongroups>
 </ui>

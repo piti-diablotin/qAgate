@@ -289,6 +289,12 @@ background: url(:/logger/icons/alert-circle.svg) no-repeat;
      <property name="acceptDrops">
       <bool>false</bool>
      </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
      <property name="undoRedoEnabled">
       <bool>false</bool>
      </property>
@@ -296,7 +302,7 @@ background: url(:/logger/icons/alert-circle.svg) no-repeat;
       <bool>true</bool>
      </property>
      <property name="textInteractionFlags">
-      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+      <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
      </property>
     </widget>
    </item>

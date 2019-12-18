@@ -65,6 +65,7 @@ void MD::updateStatus(View *view)
       hasEtotal=hist->hasEtotal();
       hasStress=hist->hasStress();
       ui->msd->setEnabled(hist->ntime()>1);
+      ui->interpolation->setEnabled(hist->ntime()>1);
     }
   ui->gyration->setEnabled(isPIMD);
   //ui->thermodynamics->setEnabled(isMD||hasEtotal);
@@ -298,4 +299,9 @@ void MD::on_pdos_clicked()
   if (dialog.exec()!=QDialog::Accepted) return;
   QString data = "tsmear "+QString::number(dialog.smearing());
   emit(sendCommand(_plotCommand+" pdos "+ data));
+}
+
+void MD::on_interpolate_clicked()
+{
+  emit(sendCommand(QString(":interpolate npoints=%0 amplitude=%1").arg(ui->npoints->text(),QString::number(ui->amplitude->value()))));
 }

@@ -5,16 +5,16 @@
 #include "tabs/abstracttab.h"
 
 namespace Ui {
-  class Multibinit;
+  class MultibinitTab;
 }
 
-class Multibinit : public AbstractTab
+class MultibinitTab : public AbstractTab
 {
     Q_OBJECT
 
   public:
-    explicit Multibinit(QWidget *parent = 0);
-    ~Multibinit();
+    explicit MultibinitTab(QWidget *parent = 0);
+    ~MultibinitTab();
 
 protected:
   virtual void updateStatus(View* view);
@@ -26,8 +26,14 @@ protected:
 
     void on_generate_clicked();
 
+    void on_randomHist_clicked(bool checked);
+
+    void on_trajHist_clicked(bool checked);
+
+    void on_browse_clicked();
+
   private:
-    Ui::Multibinit *ui;
+    Ui::MultibinitTab *ui;
 };
 
 #endif // MULTIBINIT_H

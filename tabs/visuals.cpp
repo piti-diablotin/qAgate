@@ -70,6 +70,7 @@ void Visuals::updateStatus(View *view)
   ui->bond->setChecked(display & CanvasPos::DISP_BOND);
   ui->border->setChecked(display & CanvasPos::DISP_BORDER);
   ui->incircle->setChecked(display & CanvasPos::DISP_INCIRCLE);
+  ui->cell->setChecked(display & CanvasPos::DISP_CELL);
   if (display & CanvasPos::DISP_ID)
     ui->id->setChecked(true);
   else if (display & CanvasPos::DISP_ZNUCL)
@@ -334,4 +335,9 @@ void Visuals::on_axisABC_clicked()
   bool checked = ui->axisABC->isChecked();
   if (checked) ui->axis->setChecked(false);
   emit(sendCommand(checked ? ":axis lattice" : ":axis"));
+}
+
+void Visuals::on_cell_clicked(bool checked)
+{
+  emit(sendCommand(checked?":show cell":":hide cell"));
 }

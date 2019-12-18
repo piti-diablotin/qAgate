@@ -25,48 +25,52 @@
         <translation>qAgate</translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="179"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;A tool to visualize and analyze outputs of several DFT codes.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;abiout&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Un outil pour visualiser et analyser les fichiers de sorties de plusieurs codes DFT&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;abiout&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Site web&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Un outil pour visualiser et analyser les fichiers de sorties de plusieurs codes DFT&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;abiout&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Site web&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="211"/>
+        <location filename="../dialogs/about.ui" line="179"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;A tool to visualize and analyze outputs of several DFT codes.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION of &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION of &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION of &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;agate&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Un outil pour visualiser les fichiers de sortie de différents code DFT&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version SPGLIB_VERSION de &lt;a href=&quot;https://atztogo.github.io/spglib/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;spglib&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;Version QT_VERSION de &lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Version ABIOUT_VERSION de &lt;a href=&quot;https://github.com/piti-diablotin/abiout&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;agate&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/piti-diablotin/qAgate&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015-2019 Jordan Bieder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about.ui" line="214"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Feather&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://github.com/feathericons/feather/blob/master/LICENSE&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;(MIT Licence)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Feather&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://github.com/feathericons/feather/blob/master/LICENSE&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;(Licence MIT)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="221"/>
+        <location filename="../dialogs/about.ui" line="224"/>
         <source>Translated by</source>
         <translation>Traduit par</translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="234"/>
+        <location filename="../dialogs/about.ui" line="237"/>
         <source>Icons</source>
         <translation>Icones</translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="247"/>
-        <location filename="../dialogs/about.ui" line="257"/>
+        <location filename="../dialogs/about.ui" line="250"/>
+        <location filename="../dialogs/about.ui" line="260"/>
         <source>Jordan Bieder</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="267"/>
+        <location filename="../dialogs/about.ui" line="270"/>
         <source>Created by</source>
         <translation>Créé par</translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="280"/>
+        <location filename="../dialogs/about.ui" line="283"/>
         <source>Marcus Schmitt</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="290"/>
+        <location filename="../dialogs/about.ui" line="293"/>
         <source>Fabio Ricci</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dialogs/about.ui" line="319"/>
+        <location filename="../dialogs/about.ui" line="322"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GNU GENERAL PUBLIC LICENSE&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Version 3, 29 June 2007&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (C) 2007 Free Software Foundation, Inc. &amp;lt;http://fsf.org/&amp;gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Everyone is permitted to copy and distribute verbatim copies&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;of this license document, but changing it is not allowed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
@@ -708,7 +712,7 @@
         <translation>Importer depuis un server</translation>
     </message>
     <message>
-        <location filename="../tabs/home.cpp" line="157"/>
+        <location filename="../tabs/home.cpp" line="158"/>
         <source>Open File</source>
         <translation>Ouvrir fichier</translation>
     </message>
@@ -1149,7 +1153,27 @@
         <translation>Positions dans le plan</translation>
     </message>
     <message>
-        <location filename="../tabs/md.cpp" line="89"/>
+        <location filename="../tabs/md.ui" line="785"/>
+        <source>Interpolation</source>
+        <translation>Interpolation</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="828"/>
+        <source>Number of points per segments</source>
+        <translation>Nombre de points par segments</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="864"/>
+        <source>Amplitude</source>
+        <translation>Amplitude</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="914"/>
+        <source>Interpolate</source>
+        <translation>Interpoler</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.cpp" line="90"/>
         <source>New Graph</source>
         <translation>Nouveau</translation>
     </message>
@@ -1348,109 +1372,219 @@
         <translation type="obsolete">Formulaire</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="41"/>
         <source>Random structures</source>
-        <translation>Structures aléatoires</translation>
+        <translation type="vanished">Structures aléatoires</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="77"/>
         <source>Random seed</source>
-        <translation>Graine aléatoire</translation>
+        <translation type="vanished">Graine aléatoire</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="82"/>
         <source>User defined seed</source>
-        <translation>Graine donnée par l&apos;utilisateur</translation>
+        <translation type="vanished">Graine donnée par l&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="87"/>
         <source>Time based seed</source>
-        <translation>Graine basée sur l&apos;heure</translation>
+        <translation type="vanished">Graine basée sur l&apos;heure</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="92"/>
         <source>None</source>
-        <translation>Aucune</translation>
+        <translation type="vanished">Aucune</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="108"/>
-        <source>0</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinit.ui" line="120"/>
         <source>Supercell</source>
-        <translation>Supercellule</translation>
+        <translation type="vanished">Supercellule</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="132"/>
+        <source>Quantity</source>
+        <translation type="vanished">Quantité</translation>
+    </message>
+    <message>
+        <source>Seed</source>
+        <translation type="vanished">Graine</translation>
+    </message>
+    <message>
+        <source>Temperature</source>
+        <translation type="vanished">Température</translation>
+    </message>
+    <message>
+        <source>Amplitude</source>
+        <translation type="vanished">Amplitude</translation>
+    </message>
+    <message>
+        <source>Generate</source>
+        <translation type="vanished">Générer</translation>
+    </message>
+    <message>
+        <source>Ignore</source>
+        <translation type="vanished">Ignorer</translation>
+    </message>
+    <message>
+        <source>Constant</source>
+        <translation type="vanished">Constants</translation>
+    </message>
+    <message>
+        <source>Absolute</source>
+        <translation type="vanished">Absolus</translation>
+    </message>
+    <message>
+        <source>Instable modes</source>
+        <translation type="vanished">Modes instables</translation>
+    </message>
+    <message>
+        <source>Missing data</source>
+        <translation type="vanished">Données manquantes</translation>
+    </message>
+    <message>
+        <source>You need to give the size of the supercell as X X X</source>
+        <translation type="vanished">Vous devez donner la tailler de la supercellule X X X</translation>
+    </message>
+    <message>
+        <source>You need to give the seed</source>
+        <translation type="vanished">Vous devez renseigner la graine</translation>
+    </message>
+    <message>
+        <source>You need to give the amplitude for instable modes</source>
+        <translation type="vanished">Vous devez donner l&apos;amplitudes des modes instables</translation>
+    </message>
+</context>
+<context>
+    <name>MultibinitTab</name>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="41"/>
+        <source>Input</source>
+        <translation>Entrée</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="64"/>
         <source>Quantity</source>
         <translation>Quantité</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="147"/>
-        <source>Seed</source>
-        <translation>Graine</translation>
+        <location filename="../tabs/multibinittab.ui" line="79"/>
+        <source>Browse</source>
+        <translation>Parcourir</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="208"/>
+        <location filename="../tabs/multibinittab.ui" line="91"/>
+        <source>Trajector&amp;y</source>
+        <translation>Trajectoire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="106"/>
+        <source>Supercell</source>
+        <translation>Supercellule</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="154"/>
+        <source>&amp;Random</source>
+        <translation>Aléatoire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="178"/>
+        <source>Trajectory file</source>
+        <translation>Fichier de trajectoire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="188"/>
+        <source>Random structures</source>
+        <translation>Structures aléatoires</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="248"/>
         <source>Temperature</source>
         <translation>Température</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="244"/>
+        <location filename="../tabs/multibinittab.ui" line="263"/>
         <source>Amplitude</source>
         <translation>Amplitude</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="259"/>
+        <location filename="../tabs/multibinittab.ui" line="278"/>
         <source>1</source>
-        <translation></translation>
+        <translation>1</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="293"/>
+        <location filename="../tabs/multibinittab.ui" line="305"/>
         <source>Generate</source>
         <translation>Générer</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="324"/>
+        <location filename="../tabs/multibinittab.ui" line="336"/>
         <source>Ignore</source>
         <translation>Ignorer</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="329"/>
+        <location filename="../tabs/multibinittab.ui" line="341"/>
         <source>Constant</source>
         <translation>Constants</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="334"/>
+        <location filename="../tabs/multibinittab.ui" line="346"/>
         <source>Absolute</source>
         <translation>Absolus</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.ui" line="347"/>
+        <location filename="../tabs/multibinittab.ui" line="359"/>
         <source>Instable modes</source>
         <translation>Modes instables</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.cpp" line="71"/>
-        <location filename="../tabs/multibinit.cpp" line="81"/>
-        <location filename="../tabs/multibinit.cpp" line="90"/>
+        <location filename="../tabs/multibinittab.ui" line="374"/>
+        <source>Seed</source>
+        <translation>Graine</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="389"/>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="411"/>
+        <source>Random seed</source>
+        <translation>Graine aléatoire</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="416"/>
+        <source>User defined seed</source>
+        <translation>Graine donnée par l&apos;utilisateur</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="421"/>
+        <source>Time based seed</source>
+        <translation>Graine basée sur l&apos;heure</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="426"/>
+        <source>None</source>
+        <translation>Aucune</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.cpp" line="75"/>
+        <location filename="../tabs/multibinittab.cpp" line="84"/>
+        <location filename="../tabs/multibinittab.cpp" line="94"/>
+        <location filename="../tabs/multibinittab.cpp" line="103"/>
         <source>Missing data</source>
         <translation>Données manquantes</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.cpp" line="71"/>
+        <location filename="../tabs/multibinittab.cpp" line="75"/>
         <source>You need to give the size of the supercell as X X X</source>
         <translation>Vous devez donner la tailler de la supercellule X X X</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.cpp" line="81"/>
+        <location filename="../tabs/multibinittab.cpp" line="84"/>
+        <source>You need to provide a file</source>
+        <translation>Vous devez fournir un fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.cpp" line="94"/>
         <source>You need to give the seed</source>
         <translation>Vous devez renseigner la graine</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinit.cpp" line="90"/>
+        <location filename="../tabs/multibinittab.cpp" line="103"/>
         <source>You need to give the amplitude for instable modes</source>
         <translation>Vous devez donner l&apos;amplitudes des modes instables</translation>
     </message>
@@ -1688,12 +1822,12 @@
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.cpp" line="246"/>
+        <location filename="../tabs/phononsmode.cpp" line="247"/>
         <source>Amplitude (%1):</source>
         <translation>Amplitude (%1):</translation>
     </message>
     <message>
-        <location filename="../tabs/phononsmode.cpp" line="308"/>
+        <location filename="../tabs/phononsmode.cpp" line="309"/>
         <source>Write DDB to File</source>
         <translation>Ecrire la DDB dans un fichier</translation>
     </message>
@@ -2732,124 +2866,124 @@
         <translation>Divisions</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="869"/>
-        <location filename="../tabs/settings.ui" line="872"/>
-        <location filename="../tabs/settings.ui" line="875"/>
+        <location filename="../tabs/settings.ui" line="874"/>
+        <location filename="../tabs/settings.ui" line="877"/>
+        <location filename="../tabs/settings.ui" line="880"/>
         <source>Angle for the perspective projection</source>
         <translation>Angle pour la perspective</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="913"/>
+        <location filename="../tabs/settings.ui" line="918"/>
         <source>Images</source>
         <translation>Images</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="942"/>
-        <location filename="../tabs/settings.ui" line="945"/>
-        <location filename="../tabs/settings.ui" line="948"/>
-        <location filename="../tabs/settings.ui" line="975"/>
-        <location filename="../tabs/settings.ui" line="978"/>
-        <location filename="../tabs/settings.ui" line="981"/>
+        <location filename="../tabs/settings.ui" line="947"/>
+        <location filename="../tabs/settings.ui" line="950"/>
+        <location filename="../tabs/settings.ui" line="953"/>
+        <location filename="../tabs/settings.ui" line="980"/>
+        <location filename="../tabs/settings.ui" line="983"/>
+        <location filename="../tabs/settings.ui" line="986"/>
         <source>Image export format</source>
         <translation>Formation d&apos;exportation des images</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="984"/>
+        <location filename="../tabs/settings.ui" line="989"/>
         <source>Format</source>
         <translation>Format</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="999"/>
-        <location filename="../tabs/settings.ui" line="1002"/>
-        <location filename="../tabs/settings.ui" line="1020"/>
-        <location filename="../tabs/settings.ui" line="1023"/>
+        <location filename="../tabs/settings.ui" line="1004"/>
+        <location filename="../tabs/settings.ui" line="1007"/>
+        <location filename="../tabs/settings.ui" line="1025"/>
+        <location filename="../tabs/settings.ui" line="1028"/>
         <source>Suffix for numerotation _000xx or _xx</source>
         <translation>Suffix pour la numérotation _000xx ou _xx</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1005"/>
+        <location filename="../tabs/settings.ui" line="1010"/>
         <source>Suffix</source>
         <translation>Suffix</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="996"/>
-        <location filename="../tabs/settings.ui" line="1017"/>
+        <location filename="../tabs/settings.ui" line="1001"/>
+        <location filename="../tabs/settings.ui" line="1022"/>
         <source>Suffix for numerotation</source>
         <translation>Suffix pour la numérotation</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1045"/>
-        <location filename="../tabs/settings.ui" line="1048"/>
-        <location filename="../tabs/settings.ui" line="1051"/>
-        <location filename="../tabs/settings.ui" line="1066"/>
-        <location filename="../tabs/settings.ui" line="1069"/>
-        <location filename="../tabs/settings.ui" line="1072"/>
+        <location filename="../tabs/settings.ui" line="1050"/>
+        <location filename="../tabs/settings.ui" line="1053"/>
+        <location filename="../tabs/settings.ui" line="1056"/>
+        <location filename="../tabs/settings.ui" line="1071"/>
+        <location filename="../tabs/settings.ui" line="1074"/>
+        <location filename="../tabs/settings.ui" line="1077"/>
         <source>Quality of the saved image</source>
         <translation>Qualité de l&apos;image</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1054"/>
+        <location filename="../tabs/settings.ui" line="1059"/>
         <source>Quality</source>
         <translation>Qualité</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1111"/>
+        <location filename="../tabs/settings.ui" line="1116"/>
         <source>Filling</source>
         <translation>Remplissage</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1114"/>
-        <location filename="../tabs/settings.ui" line="1117"/>
+        <location filename="../tabs/settings.ui" line="1119"/>
+        <location filename="../tabs/settings.ui" line="1122"/>
         <source>Switch filling of objects</source>
         <translation>Changer le remplissage des objets</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1132"/>
+        <location filename="../tabs/settings.ui" line="1137"/>
         <source>Light</source>
         <translation>Lumière</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1135"/>
-        <location filename="../tabs/settings.ui" line="1138"/>
+        <location filename="../tabs/settings.ui" line="1140"/>
+        <location filename="../tabs/settings.ui" line="1143"/>
         <source>Switch on/off light</source>
         <translation>Allumer/éteindre la lumière</translation>
     </message>
     <message>
         <location filename="../tabs/settings.ui" line="859"/>
-        <location filename="../tabs/settings.ui" line="1153"/>
+        <location filename="../tabs/settings.ui" line="1158"/>
         <source>Perspective</source>
         <translation>Perspective</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1156"/>
-        <location filename="../tabs/settings.ui" line="1159"/>
+        <location filename="../tabs/settings.ui" line="1161"/>
+        <location filename="../tabs/settings.ui" line="1164"/>
         <source>Switch on/off perspective</source>
         <translation>Changer la perspective</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1174"/>
+        <location filename="../tabs/settings.ui" line="1179"/>
         <source>AA</source>
         <translation>Anti-crénelage</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1177"/>
+        <location filename="../tabs/settings.ui" line="1182"/>
         <source>Switch on/off antialiasing</source>
         <translation>(dés)Activer l&apos;anti-crénélage</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1180"/>
+        <location filename="../tabs/settings.ui" line="1185"/>
         <source>Switch on/off antialiasing (if available)</source>
         <translation>(dés)Activer l&apos;anti-crénélage (si disponible)</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1192"/>
+        <location filename="../tabs/settings.ui" line="1197"/>
         <source>Mendeleev</source>
         <translation>Mendeleev</translation>
     </message>
     <message>
-        <location filename="../tabs/settings.ui" line="1195"/>
-        <location filename="../tabs/settings.ui" line="1198"/>
-        <location filename="../tabs/settings.ui" line="1201"/>
+        <location filename="../tabs/settings.ui" line="1200"/>
+        <location filename="../tabs/settings.ui" line="1203"/>
+        <location filename="../tabs/settings.ui" line="1206"/>
         <source>Periodic table properties</source>
         <translation>Propriétés du tableau de Mendeleev</translation>
     </message>
@@ -2979,7 +3113,7 @@
     <message>
         <location filename="../tabs/tools.ui" line="61"/>
         <source>qDOS</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../tabs/tools.ui" line="90"/>
@@ -3045,7 +3179,7 @@
         <location filename="../tabs/visuals.ui" line="99"/>
         <location filename="../tabs/visuals.ui" line="102"/>
         <location filename="../tabs/visuals.ui" line="105"/>
-        <location filename="../tabs/visuals.ui" line="1332"/>
+        <location filename="../tabs/visuals.ui" line="1361"/>
         <source>Add translation along x</source>
         <translation>Ajouter une translation
  suivant x</translation>
@@ -3054,7 +3188,7 @@
         <location filename="../tabs/visuals.ui" line="125"/>
         <location filename="../tabs/visuals.ui" line="128"/>
         <location filename="../tabs/visuals.ui" line="131"/>
-        <location filename="../tabs/visuals.ui" line="1404"/>
+        <location filename="../tabs/visuals.ui" line="1433"/>
         <source>Remove translation along y</source>
         <translation>Réduire la translation suivant y</translation>
     </message>
@@ -3062,7 +3196,7 @@
         <location filename="../tabs/visuals.ui" line="151"/>
         <location filename="../tabs/visuals.ui" line="154"/>
         <location filename="../tabs/visuals.ui" line="157"/>
-        <location filename="../tabs/visuals.ui" line="1350"/>
+        <location filename="../tabs/visuals.ui" line="1379"/>
         <source>Add translation along y</source>
         <translation>Réduire la translation suivant y</translation>
     </message>
@@ -3070,7 +3204,7 @@
         <location filename="../tabs/visuals.ui" line="184"/>
         <location filename="../tabs/visuals.ui" line="187"/>
         <location filename="../tabs/visuals.ui" line="190"/>
-        <location filename="../tabs/visuals.ui" line="1368"/>
+        <location filename="../tabs/visuals.ui" line="1397"/>
         <source>Add translation along z</source>
         <translation>Ajouter une translation suivant z</translation>
     </message>
@@ -3078,7 +3212,7 @@
         <location filename="../tabs/visuals.ui" line="210"/>
         <location filename="../tabs/visuals.ui" line="213"/>
         <location filename="../tabs/visuals.ui" line="216"/>
-        <location filename="../tabs/visuals.ui" line="1422"/>
+        <location filename="../tabs/visuals.ui" line="1451"/>
         <source>Remove translation along x</source>
         <translation>Réduire la translation suivant x</translation>
     </message>
@@ -3086,7 +3220,7 @@
         <location filename="../tabs/visuals.ui" line="236"/>
         <location filename="../tabs/visuals.ui" line="239"/>
         <location filename="../tabs/visuals.ui" line="242"/>
-        <location filename="../tabs/visuals.ui" line="1386"/>
+        <location filename="../tabs/visuals.ui" line="1415"/>
         <source>Remove translation along z</source>
         <translation>Réduire la translation suivant z</translation>
     </message>
@@ -3094,7 +3228,7 @@
         <location filename="../tabs/visuals.ui" line="342"/>
         <location filename="../tabs/visuals.ui" line="345"/>
         <location filename="../tabs/visuals.ui" line="348"/>
-        <location filename="../tabs/visuals.ui" line="1464"/>
+        <location filename="../tabs/visuals.ui" line="1493"/>
         <source>Set view along z</source>
         <translation>Regarder le long de z</translation>
     </message>
@@ -3102,7 +3236,7 @@
         <location filename="../tabs/visuals.ui" line="370"/>
         <location filename="../tabs/visuals.ui" line="373"/>
         <location filename="../tabs/visuals.ui" line="376"/>
-        <location filename="../tabs/visuals.ui" line="1436"/>
+        <location filename="../tabs/visuals.ui" line="1465"/>
         <source>Set view along x</source>
         <translation>Regarder le long de x</translation>
     </message>
@@ -3110,7 +3244,7 @@
         <location filename="../tabs/visuals.ui" line="398"/>
         <location filename="../tabs/visuals.ui" line="401"/>
         <location filename="../tabs/visuals.ui" line="404"/>
-        <location filename="../tabs/visuals.ui" line="1450"/>
+        <location filename="../tabs/visuals.ui" line="1479"/>
         <source>Set view along y</source>
         <translation>Regarder le long de y</translation>
     </message>
@@ -3120,9 +3254,16 @@
         <translation>Scène</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="566"/>
-        <location filename="../tabs/visuals.ui" line="569"/>
-        <location filename="../tabs/visuals.ui" line="572"/>
+        <location filename="../tabs/visuals.ui" line="617"/>
+        <location filename="../tabs/visuals.ui" line="620"/>
+        <location filename="../tabs/visuals.ui" line="623"/>
+        <source>Show the cell box</source>
+        <translation>Montrer la boîte du réseau</translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="646"/>
+        <location filename="../tabs/visuals.ui" line="649"/>
+        <location filename="../tabs/visuals.ui" line="652"/>
         <source>Show/Hide axis</source>
         <translation>Montrer/Cacher les axes</translation>
     </message>
@@ -3134,16 +3275,16 @@
         <translation>Montrer/Cacher le pas temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="604"/>
-        <location filename="../tabs/visuals.ui" line="607"/>
-        <location filename="../tabs/visuals.ui" line="610"/>
+        <location filename="../tabs/visuals.ui" line="572"/>
+        <location filename="../tabs/visuals.ui" line="575"/>
+        <location filename="../tabs/visuals.ui" line="578"/>
         <source>Toggle angles</source>
         <translation>Montrer/Cacher les angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="649"/>
-        <location filename="../tabs/visuals.ui" line="652"/>
-        <location filename="../tabs/visuals.ui" line="655"/>
+        <location filename="../tabs/visuals.ui" line="678"/>
+        <location filename="../tabs/visuals.ui" line="681"/>
+        <location filename="../tabs/visuals.ui" line="684"/>
         <source>Show/Hide lattice axis</source>
         <translation>Montrer/Cacher les axes du réseau</translation>
     </message>
@@ -3152,189 +3293,189 @@
         <translation type="vanished">Montrer/Cacher les axes du réseau </translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="687"/>
+        <location filename="../tabs/visuals.ui" line="716"/>
         <source>Atom / crystal</source>
         <translation>Atome / cristal</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="716"/>
+        <location filename="../tabs/visuals.ui" line="745"/>
         <source>Display id on atoms</source>
         <translation>Montrer l&apos;id sur les atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="719"/>
-        <location filename="../tabs/visuals.ui" line="722"/>
+        <location filename="../tabs/visuals.ui" line="748"/>
+        <location filename="../tabs/visuals.ui" line="751"/>
         <source>Display id of atoms</source>
         <translation>Montrer l&apos;id des atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="725"/>
+        <location filename="../tabs/visuals.ui" line="754"/>
         <source>Id</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="740"/>
-        <location filename="../tabs/visuals.ui" line="743"/>
-        <location filename="../tabs/visuals.ui" line="746"/>
+        <location filename="../tabs/visuals.ui" line="769"/>
+        <location filename="../tabs/visuals.ui" line="772"/>
+        <location filename="../tabs/visuals.ui" line="775"/>
         <source>Display name of atoms</source>
         <translation>Montrer le nom des atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="749"/>
+        <location filename="../tabs/visuals.ui" line="778"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="764"/>
-        <location filename="../tabs/visuals.ui" line="767"/>
-        <location filename="../tabs/visuals.ui" line="770"/>
+        <location filename="../tabs/visuals.ui" line="793"/>
+        <location filename="../tabs/visuals.ui" line="796"/>
+        <location filename="../tabs/visuals.ui" line="799"/>
         <source>Display atomic number of atoms</source>
         <translation>Montrer le numéro atomique des atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="773"/>
+        <location filename="../tabs/visuals.ui" line="802"/>
         <source>Atomic num&amp;ber</source>
         <translation>N&amp;uméro atomique</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="788"/>
-        <location filename="../tabs/visuals.ui" line="791"/>
-        <location filename="../tabs/visuals.ui" line="794"/>
+        <location filename="../tabs/visuals.ui" line="817"/>
+        <location filename="../tabs/visuals.ui" line="820"/>
+        <location filename="../tabs/visuals.ui" line="823"/>
         <source>Display bonds</source>
         <translation>Dessiner les liaisons</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="797"/>
+        <location filename="../tabs/visuals.ui" line="826"/>
         <source>Bonds</source>
         <translation>Liaisons</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="812"/>
-        <location filename="../tabs/visuals.ui" line="815"/>
-        <location filename="../tabs/visuals.ui" line="818"/>
+        <location filename="../tabs/visuals.ui" line="841"/>
+        <location filename="../tabs/visuals.ui" line="844"/>
+        <location filename="../tabs/visuals.ui" line="847"/>
         <source>Display atoms</source>
         <translation>Montrer les atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="821"/>
-        <location filename="../tabs/visuals.ui" line="1096"/>
+        <location filename="../tabs/visuals.ui" line="850"/>
+        <location filename="../tabs/visuals.ui" line="1125"/>
         <source>Atoms</source>
         <translation>Atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="839"/>
-        <location filename="../tabs/visuals.ui" line="842"/>
-        <location filename="../tabs/visuals.ui" line="845"/>
+        <location filename="../tabs/visuals.ui" line="868"/>
+        <location filename="../tabs/visuals.ui" line="871"/>
+        <location filename="../tabs/visuals.ui" line="874"/>
         <source>Display nothing on atoms</source>
         <translation>Ne rien écrire</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="848"/>
-        <location filename="../tabs/visuals.ui" line="1196"/>
-        <location filename="../tabs/visuals.ui" line="1200"/>
+        <location filename="../tabs/visuals.ui" line="877"/>
+        <location filename="../tabs/visuals.ui" line="1225"/>
+        <location filename="../tabs/visuals.ui" line="1229"/>
         <source>None</source>
         <translation>Rien</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="866"/>
-        <location filename="../tabs/visuals.ui" line="869"/>
-        <location filename="../tabs/visuals.ui" line="872"/>
+        <location filename="../tabs/visuals.ui" line="895"/>
+        <location filename="../tabs/visuals.ui" line="898"/>
+        <location filename="../tabs/visuals.ui" line="901"/>
         <source>Display borders</source>
         <translation>Montrer les bords</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="875"/>
+        <location filename="../tabs/visuals.ui" line="904"/>
         <source>Borders</source>
         <translation>Bordures</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="893"/>
+        <location filename="../tabs/visuals.ui" line="922"/>
         <source>Incircle</source>
         <translation>Cercle inscrit</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="912"/>
+        <location filename="../tabs/visuals.ui" line="941"/>
         <source>Physics</source>
         <translation>Physique</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="972"/>
-        <location filename="../tabs/visuals.ui" line="975"/>
-        <location filename="../tabs/visuals.ui" line="978"/>
+        <location filename="../tabs/visuals.ui" line="1001"/>
+        <location filename="../tabs/visuals.ui" line="1004"/>
+        <location filename="../tabs/visuals.ui" line="1007"/>
         <source>Add/Remove octahedra</source>
         <translation>Ajouter/Supprimer des octahèdres</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="981"/>
+        <location filename="../tabs/visuals.ui" line="1010"/>
         <source>Octahedra</source>
         <translation>Octahèdres</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1024"/>
-        <location filename="../tabs/visuals.ui" line="1027"/>
-        <location filename="../tabs/visuals.ui" line="1030"/>
+        <location filename="../tabs/visuals.ui" line="1053"/>
+        <location filename="../tabs/visuals.ui" line="1056"/>
+        <location filename="../tabs/visuals.ui" line="1059"/>
         <source>Add octahedra</source>
         <translation>Ajouter un octahèdre</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1054"/>
-        <location filename="../tabs/visuals.ui" line="1057"/>
-        <location filename="../tabs/visuals.ui" line="1060"/>
+        <location filename="../tabs/visuals.ui" line="1083"/>
+        <location filename="../tabs/visuals.ui" line="1086"/>
+        <location filename="../tabs/visuals.ui" line="1089"/>
         <source>Remove octahedra</source>
         <translation>Supprimer un octahèdre</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1084"/>
-        <location filename="../tabs/visuals.ui" line="1087"/>
-        <location filename="../tabs/visuals.ui" line="1090"/>
+        <location filename="../tabs/visuals.ui" line="1113"/>
+        <location filename="../tabs/visuals.ui" line="1116"/>
+        <location filename="../tabs/visuals.ui" line="1119"/>
         <source>Draw supplementary atoms</source>
         <translation>Dessiner les atomes supplémentaires</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1166"/>
-        <location filename="../tabs/visuals.ui" line="1169"/>
-        <location filename="../tabs/visuals.ui" line="1172"/>
-        <location filename="../tabs/visuals.ui" line="1187"/>
-        <location filename="../tabs/visuals.ui" line="1190"/>
-        <location filename="../tabs/visuals.ui" line="1193"/>
+        <location filename="../tabs/visuals.ui" line="1195"/>
+        <location filename="../tabs/visuals.ui" line="1198"/>
+        <location filename="../tabs/visuals.ui" line="1201"/>
+        <location filename="../tabs/visuals.ui" line="1216"/>
+        <location filename="../tabs/visuals.ui" line="1219"/>
+        <location filename="../tabs/visuals.ui" line="1222"/>
         <source>Spin direction filter</source>
         <translation>Filtre de la direction des spins</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1175"/>
+        <location filename="../tabs/visuals.ui" line="1204"/>
         <source>Arrows only</source>
         <translation>Flèches</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1251"/>
+        <location filename="../tabs/visuals.ui" line="1280"/>
         <source>Relative</source>
         <translation>Relatif</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1284"/>
+        <location filename="../tabs/visuals.ui" line="1313"/>
         <source>Angles</source>
         <translation>Angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1287"/>
-        <location filename="../tabs/visuals.ui" line="1290"/>
+        <location filename="../tabs/visuals.ui" line="1316"/>
+        <location filename="../tabs/visuals.ui" line="1319"/>
         <source>Show/Hide angles</source>
         <translation>Montrer/Cacher les angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1305"/>
+        <location filename="../tabs/visuals.ui" line="1334"/>
         <source>Time</source>
         <translation>Temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1308"/>
-        <location filename="../tabs/visuals.ui" line="1311"/>
-        <location filename="../tabs/visuals.ui" line="1314"/>
+        <location filename="../tabs/visuals.ui" line="1337"/>
+        <location filename="../tabs/visuals.ui" line="1340"/>
+        <location filename="../tabs/visuals.ui" line="1343"/>
         <source>Show/Hide time info</source>
         <translation>Montrer/Cacher l&apos;information du temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.cpp" line="304"/>
+        <location filename="../tabs/visuals.cpp" line="314"/>
         <source>Pick a base color</source>
         <translation>Choisir une couleur</translation>
     </message>

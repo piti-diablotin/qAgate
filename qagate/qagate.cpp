@@ -9,7 +9,7 @@
 #include "canvas/canvaslocal.hpp"
 #include "canvas/canvasphonons.hpp"
 #include "canvas/canvasdensity.hpp"
-#include "tabs/multibinit.h"
+#include "tabs/multibinittab.h"
 
 qAgate::qAgate(QWidget *parent) :
   QMainWindow(parent),
@@ -246,9 +246,9 @@ void qAgate::manageSignal()
     auto canvas = ui->view->canvas();
     ui->mediaPlayer->setPlay(!canvas->isPaused());
     int max = ui->timeLine->timeTotal();
-    if (max!=canvas->ntime())
+    int ntime = canvas->ntime();
+    if (max!=ntime)
     {
-      int ntime = canvas->ntime();
       ui->mediaPlayer->setDisabledMovie(ntime<2);
       ui->timeLine->setTimes(canvas->tbegin(),std::max(canvas->tend(),0),canvas->itime(),ntime);
     }
@@ -396,7 +396,7 @@ void qAgate::on_tabWidget_currentChanged(int index)
 void qAgate::on_actionSecret_triggered()
 {
   if (ui->tabWidget->count()==9) return;
-  QWidget *multibinit = new Multibinit(this);
-  ui->tabWidget->insertTab(8,multibinit,"Multibinit");
+  QWidget *multibinit = new MultibinitTab(this);
+  ui->tabWidget->insertTab(ui->tabWidget->indexOf(ui->phonons)+1,multibinit,"Multibinit");
   connect(multibinit,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
 }
