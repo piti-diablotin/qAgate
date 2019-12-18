@@ -317,11 +317,17 @@ void PhononsMode::on_ddb_clicked()
 
 void PhononsMode::on_dynamt_clicked()
 {
-  //QString qpt = _currentQptModes.data().toString();
+  QString qpt = ui->qptSelected->text();
+  if ( qpt.isEmpty() )
+  {
+    QMessageBox::information(this,tr("Select a qpt"),tr("You need to select a qpt"));
+    return;
+  }
   //auto fileName = QFileDialog::getSaveFileName(this,tr("Write D(%1) to File").arg(qpt),_currentFolder,"",nullptr,QFileDialog::DontUseNativeDialog);
   //if ( !fileName.isEmpty() )
   //{
-  emit(sendCommand(":dynmat "/*+fileName*/));
+  emit(sendCommand(":qpt "+qpt,false));
+  emit(sendCommand(":dynmat "/*+fileName*/,false));
   //  int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
   //  _currentFolder = fileName.left(pos+1);
   //}
