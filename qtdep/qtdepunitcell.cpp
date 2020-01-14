@@ -106,7 +106,7 @@ void qTdepUnitcell::dtsetToView(const Dtset &dtset)
   auto xred = dtset.xred();
   for (unsigned iatom = 0 ; iatom < dtset.natom() ; ++iatom)
     {
-      QStandardItem *Type = new QStandardItem(QString(Agate::mendeleev::name[znucl[typat[iatom]-1]]));
+      QStandardItem *Type = new QStandardItem(QString(Agate::Mendeleev::name[znucl[typat[iatom]-1]]));
       QStandardItem *x = new QStandardItem(QString::number(xred[iatom][0],'g',15));
       QStandardItem *y = new QStandardItem(QString::number(xred[iatom][1],'g',15));
       QStandardItem *z = new QStandardItem(QString::number(xred[iatom][2],'g',15));
@@ -155,7 +155,7 @@ Dtset qTdepUnitcell::viewToDtset()
   QVector<int> znucl(ntypat);
   for (int t = 0; t < ntypat; ++t)
     {
-      znucl[t] = Agate::mendeleev::znucl(cb->itemText(t).toStdString());
+      znucl[t] = Agate::Mendeleev::znucl(cb->itemText(t).toStdString());
     }
   QVector<int> typat(natom);
   QVector<QString> xred(3*natom);

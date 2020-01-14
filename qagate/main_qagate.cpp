@@ -5,7 +5,6 @@
 
 #include "qagate.h"
 #include "base/exception.hpp"
-#include "base/mendeleev.hpp"
 #include "base/utils.hpp"
 #include <QApplication>
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
@@ -18,8 +17,6 @@
 #include "io/parser.hpp"
 #include <csignal>
 #include "window/window.hpp"
-
-Agate::mendeleev Agate::Mendeleev;
 
 /**
  * Simple function to display the name and version of the package and what window manager we use.

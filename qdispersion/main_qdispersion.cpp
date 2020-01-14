@@ -1,11 +1,8 @@
 #include "qdispersion.h"
 #include <QApplication>
-#include "base/mendeleev.hpp"
 #include "base/exception.hpp"
 #include <iostream>
 #include <QTranslator>
-
-Agate::mendeleev Agate::Mendeleev;
 
 int main(int argc, char *argv[])
 {

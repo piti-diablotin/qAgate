@@ -21,7 +21,7 @@ void TypatDialog::configure(int natom, const QVector<int> &znucl)
   ui->typat->clear();
   for(int i=0; i<znucl.size(); ++i)
     {
-      ui->typat->addItem(QString(Agate::mendeleev::name[znucl[i]]),i+1);
+      ui->typat->addItem(QString(Agate::Mendeleev::name[znucl[i]]),i+1);
     }
 }
 

@@ -20,7 +20,7 @@ QWidget *TypatItemDelegate::createEditor(QWidget *parent, const QStyleOptionView
   (void) index;
   QComboBox *cb = new QComboBox(parent);
   for (int t = 0; t < _znucl.size(); ++t)
-    cb->addItem(Agate::mendeleev::name[_znucl[t]],t+1);
+    cb->addItem(Agate::Mendeleev::name[_znucl[t]],t+1);
   return cb;
 }
 

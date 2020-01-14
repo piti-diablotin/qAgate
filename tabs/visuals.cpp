@@ -122,14 +122,14 @@ void Visuals::updateStatus(View *view)
           int newPos = 1;
           for (newPos=1 ; newPos<ui->octaAdd->count(); ++newPos)
             if (ui->octaAdd->itemData(newPos)>data) break;
-          ui->octaAdd->insertItem(newPos,QString(Agate::Mendeleev.name[znucl[i]]),data);
+          ui->octaAdd->insertItem(newPos,QString(MendeTable.name[znucl[i]]),data);
         }
         else
         {
           int newPos = 1;
           for (newPos=1 ; newPos<ui->octaDel->count(); ++newPos)
             if (ui->octaDel->itemData(newPos)>data) break;
-          ui->octaDel->insertItem(newPos,QString(Agate::Mendeleev.name[znucl[i]]),data);
+          ui->octaDel->insertItem(newPos,QString(MendeTable.name[znucl[i]]),data);
         }
       }
     }
