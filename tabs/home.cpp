@@ -159,10 +159,11 @@ void Home::on_load_clicked()
   if ( !fileNames.empty() )
   {
     emit(needCommandLine());
+    auto file1 = fileNames.first();
     for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file ) {
       emit(sendCommand(":load "+file->replace(" ","\\ "),false));
     }
-    auto dir = fileNames.begin()->section("/",0,-2);
+    auto dir = file1.section("/",0,-2);
     _writeDialog.setDirectory(dir);
     _dumpDialog.setDirectory(dir);
   }
