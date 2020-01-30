@@ -32,9 +32,9 @@ void qTdepOptions::setTdep(Tdep &tdep)
   tdep.idealPositions(ui->idealPos->isChecked());
   QStringList ngqpt2str = ui->ngqpt2->text().split(" ");
   int ngqpt2[3];
-  ngqpt2[0] = ngqpt2str.at(0).toDouble();
-  ngqpt2[1] = ngqpt2str.at(1).toDouble();
-  ngqpt2[2] = ngqpt2str.at(2).toDouble();
+  ngqpt2[0] = ngqpt2str.at(0).toInt();
+  ngqpt2[1] = ngqpt2str.at(1).toInt();
+  ngqpt2[2] = ngqpt2str.at(2).toInt();
   auto dosUnit = UnitConverter::getFromString(ui->dosdeltaeUnit->currentData().toString().toStdString());
   dosUnit = UnitConverter::Ha;
   tdep.dosParameters(ngqpt2,ui->dosdeltae->text().toDouble()*dosUnit);

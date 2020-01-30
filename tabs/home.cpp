@@ -96,7 +96,7 @@ void Home::updateStatus(View *view)
   ui->spg->setEnabled(something);
   */
 
-  _natom = something ? view->getCanvas()->histdata()->natom() : 0;
+  _natom = something ? static_cast<int>(view->getCanvas()->histdata()->natom()) : 0;
   ui->distanceAtom1->setRange(1,_natom);
   ui->distanceAtom2->setRange(1,_natom);
   ui->angleAtom1->setRange(1,_natom);
@@ -117,14 +117,14 @@ void Home::on_update_clicked()
 void Home::on_dumpHist_triggered()
 {
   if (_dumpDialog.exec() != QDialog::Accepted|| _dumpDialog.filename().isEmpty()) return;
-  emit(sendCommand(":dumphist "+_dumpDialog.filename()+" step "
+  emit(sendCommand(":dumphist "+_dumpDialog.filename().replace(" ","\\ ")+" step "
                    +QString::number(_dumpDialog.step())));
 }
 
 void Home::on_dumpXyz_clicked()
 {
   if (_dumpDialog.exec()!=QDialog::Accepted || _dumpDialog.filename().isEmpty()) return;
-  emit(sendCommand(":dumpxyz "+_dumpDialog.filename()+" step "
+  emit(sendCommand(":dumpxyz "+_dumpDialog.filename().replace(" ","\\ ")+" step "
                    +QString::number(_dumpDialog.step())));
   _writeDialog.setDirectory(_dumpDialog.directory());
 }
@@ -133,7 +133,7 @@ void Home::on_saveAbinit_triggered()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
   emit(sendCommand(":write dtset "+QString::number(_writeDialog.precision())
-                   +" "+_writeDialog.filename()+" "+_writeDialog.option()));
+                   +" "+_writeDialog.filename().replace(" ","\\ ")+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
@@ -141,7 +141,7 @@ void Home::on_savePoscar_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
   emit(sendCommand(":write POSCAR "+QString::number(_writeDialog.precision())
-                   +" "+_writeDialog.filename()+" "+_writeDialog.option()));
+                   +" "+_writeDialog.filename().replace(" ","\\ ")+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
@@ -149,7 +149,7 @@ void Home::on_saveCif_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
   emit(sendCommand(":write cif "+QString::number(_writeDialog.precision())
-                   +" "+_writeDialog.filename()+" "+_writeDialog.option()));
+                   +" "+_writeDialog.filename().replace(" ","\\ ")+" "+_writeDialog.option()));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
@@ -159,8 +159,9 @@ void Home::on_load_clicked()
   if ( !fileNames.empty() )
   {
     emit(needCommandLine());
-    for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file )
-      emit(sendCommand(":load "+*file,false));
+    for ( auto file = fileNames.begin() ; file != fileNames.end() ; ++file ) {
+      emit(sendCommand(":load "+file->replace(" ","\\ "),false));
+    }
     auto dir = fileNames.begin()->section("/",0,-2);
     _writeDialog.setDirectory(dir);
     _dumpDialog.setDirectory(dir);
@@ -318,7 +319,8 @@ void Home::on_open_triggered()
     QString file1 = fileNames.first();
     if (file1.isEmpty())
       return;
-    emit(sendCommand(":open "+file1,true));
+    auto file2 = file1;
+    emit(sendCommand(":open "+file2.replace(" ","\\ "),true));
     int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
     _currentFolder = file1.left(pos+1);
 
@@ -326,7 +328,7 @@ void Home::on_open_triggered()
     {
       if ( !file->isEmpty() )
       {
-        emit(sendCommand(":append "+*file,false));
+        emit(sendCommand(":append "+file->replace(" ","\\ "),false));
       }
     }
   }
@@ -343,7 +345,8 @@ void Home::on_append_triggered()
     {
       if ( !file->isEmpty() )
       {
-        emit(sendCommand(":append "+*file,pop));
+        auto file2 = *file;
+        emit(sendCommand(":append "+file2.replace(" ","\\ "),pop));
         pop = false;
         int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
         _currentFolder = file->left(pos+1);
@@ -362,7 +365,7 @@ void Home::on_actionCloud_triggered()
 void Home::on_dumpDtset_clicked()
 {
   if (_dumpDialog.exec()!=QDialog::Accepted || _dumpDialog.filename().isEmpty()) return;
-  emit(sendCommand(":dumpdtset "+_dumpDialog.filename()+" step "
+  emit(sendCommand(":dumpdtset "+_dumpDialog.filename().replace(" ","\\ ")+" step "
                    +QString::number(_dumpDialog.step())));
   _writeDialog.setDirectory(_dumpDialog.directory());
 }

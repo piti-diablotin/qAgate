@@ -148,7 +148,7 @@ void QDispersion::plot(bool commandOnly)
   if (ui->saveCommand->isChecked()) {command = ":save "; save = Graph::PRINT;}
   else if (ui->dataCommand->isChecked()) {command = ":data "; save = Graph::DATA;}
   command += "band ";
-  command += QString::fromStdString(_eigparser->getFilename())+" ";
+  command += QString::fromStdString(_eigparser->getFilename()).replace(" ","\\ ")+" ";
 
   // Unit
   UnitConverter eunit = UnitConverter::getFromString(ui->energyUnit->currentData().toString().toStdString());

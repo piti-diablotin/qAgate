@@ -339,9 +339,10 @@ void PhononsMode::on_open_clicked()
   if ( !fileNames.empty() )
   {
     QString file1 = fileNames.first();
+    auto file2 = file1;
     if (file1.isEmpty())
       return;
-    emit(sendCommand(":open "+file1));
+    emit(sendCommand(":open "+file2.replace(" ","\\ ")));
     int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
     _currentFolder = file1.left(pos+1);
 
@@ -349,7 +350,7 @@ void PhononsMode::on_open_clicked()
     {
       if ( !file->isEmpty() )
       {
-        emit(sendCommand(":append "+*file,false));
+        emit(sendCommand(":append "+file->replace(" ","\\ "),false));
       }
     }
     emit(needCommandLine());
@@ -367,7 +368,8 @@ void PhononsMode::on_append_clicked()
     {
       if ( !file->isEmpty() )
       {
-        emit(sendCommand(":append "+*file,pop));
+        auto file2 = *file;
+        emit(sendCommand(":append "+file2.replace(" ","\\ "),pop));
         pop = false;
         int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
         _currentFolder = file->left(pos+1);
@@ -390,7 +392,7 @@ void PhononsMode::on_analyze_clicked()
     QString file = dialog.file();
     QString normalization = dialog.normalization();
     _currentFolder = dialog.currentFolder();
-    emit(sendCommand(":analyze "+file+" "+normalization));
+    emit(sendCommand(":analyze "+file.replace(" ","\\ ")+" "+normalization));
   }
 }
 
@@ -405,6 +407,6 @@ void PhononsMode::on_qpt_clicked()
     _plot->getPlot(PlotWindow::Left,-1,&plot);
     _plot->show();
     emit(plotChanged(plot));
-    emit(sendCommand(":findqpt "+fileName));
+    emit(sendCommand(":findqpt "+fileName.replace(" ","\\ ")));
   }
 }

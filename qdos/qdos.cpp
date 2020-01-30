@@ -198,7 +198,8 @@ void QDos::on_actionRemove_triggered()
 void QDos::updateAgateCommand()
 {
   QString command = ":plot dos ";
-  command += "prefix="+ui->folder->text()+"/"+ui->prefix->text();
+  QString prefix=ui->folder->text()+"/"+ui->prefix->text();
+  command += "prefix="+prefix.replace(" ","\\ ");
   if (ui->spin->isEnabled() && ui->spin->currentIndex()>0)
     command += " spin="+ui->spin->currentData().toString();
   if (ui->updown->isEnabled() && ui->updown->isChecked())

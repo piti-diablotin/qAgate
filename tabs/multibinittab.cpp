@@ -85,7 +85,8 @@ void MultibinitTab::on_generate_clicked()
       return;
     }
     command = ":thermalPop temperature=%0 trajectory=%1 seedType=%2 instable=%3";
-    command = command.arg(ui->temperature->value()).arg(ui->trajFile->text()).arg(ui->seedType->currentData().toString(),ui->instable->currentData().toString());
+    auto filename = ui->trajFile->text().replace(" ","\\ ");
+    command = command.arg(ui->temperature->value()).arg(filename).arg(ui->seedType->currentData().toString(),ui->instable->currentData().toString());
   }
   if (ui->seedType->currentIndex()==1)
   {
