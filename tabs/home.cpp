@@ -132,24 +132,33 @@ void Home::on_dumpXyz_clicked()
 void Home::on_saveAbinit_triggered()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
-  emit(sendCommand(":write dtset "+QString::number(_writeDialog.precision())
-                   +" "+_writeDialog.filename().replace(" ","\\ ")+" "+_writeDialog.option()));
+  emit(sendCommand(QString(":write dtset %0 %1 tolerance=%2")
+                   .arg(_writeDialog.filename().replace(" ","\\ ")
+                        ,_writeDialog.option()
+                        ,QString::number(_writeDialog.precision())
+                        )));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
 void Home::on_savePoscar_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
-  emit(sendCommand(":write POSCAR "+QString::number(_writeDialog.precision())
-                   +" "+_writeDialog.filename().replace(" ","\\ ")+" "+_writeDialog.option()));
+  emit(sendCommand(QString(":write POSCAR %0 %1 tolerance=%2")
+                   .arg(_writeDialog.filename().replace(" ","\\ ")
+                        ,_writeDialog.option()
+                        ,QString::number(_writeDialog.precision())
+                        )));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
 void Home::on_saveCif_clicked()
 {
   if (_writeDialog.exec()!=QDialog::Accepted || _writeDialog.filename().isEmpty()) return;
-  emit(sendCommand(":write cif "+QString::number(_writeDialog.precision())
-                   +" "+_writeDialog.filename().replace(" ","\\ ")+" "+_writeDialog.option()));
+  emit(sendCommand(QString(":write cif %0 %1 tolerance=%2")
+                   .arg(_writeDialog.filename().replace(" ","\\ ")
+                        ,_writeDialog.option()
+                        ,QString::number(_writeDialog.precision())
+                        )));
   _dumpDialog.setDirectory(_writeDialog.directory());
 }
 
