@@ -71,6 +71,7 @@ void Visuals::updateStatus(View *view)
   ui->border->setChecked(display & CanvasPos::DISP_BORDER);
   ui->incircle->setChecked(display & CanvasPos::DISP_INCIRCLE);
   ui->cell->setChecked(display & CanvasPos::DISP_CELL);
+  ui->force->setChecked(display & CanvasPos::DISP_FORCE);
   if (display & CanvasPos::DISP_ID)
     ui->id->setChecked(true);
   else if (display & CanvasPos::DISP_ZNUCL)
@@ -100,6 +101,8 @@ void Visuals::updateStatus(View *view)
     else if (!x&&!y&&!z)
       ui->spin->setCurrentIndex(0);
     ui->spinRelative->setChecked(relative);
+
+    ui->forceFactor->setValue(static_cast<int>(canvas->getForceFactor()));
 
     const HistData* hist = canvas->histdata();
     if ((hist)!=nullptr)
@@ -340,4 +343,15 @@ void Visuals::on_axisABC_clicked()
 void Visuals::on_cell_clicked(bool checked)
 {
   emit(sendCommand(checked?":show cell":":hide cell"));
+}
+
+void Visuals::on_forceFactor_valueChanged(int value)
+{
+  if (!_autoUpdate)
+    emit(sendCommand(QString(":force_scaling %0").arg(value)));
+}
+
+void Visuals::on_force_clicked(bool checked)
+{
+  emit(sendCommand(checked?":show force":":hide force"));
 }
