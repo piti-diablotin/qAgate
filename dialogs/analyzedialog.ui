@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>350</width>
-    <height>178</height>
+    <height>195</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -66,6 +66,16 @@
      <attribute name="buttonGroup">
       <string notr="true">normalization</string>
      </attribute>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="absolute">
+     <property name="text">
+      <string>Absolute value (uncheck for Gamma only)</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
     </widget>
    </item>
    <item>

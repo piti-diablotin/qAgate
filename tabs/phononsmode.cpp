@@ -391,8 +391,9 @@ void PhononsMode::on_analyze_clicked()
     emit(plotChanged(plot));
     QString file = dialog.file();
     QString normalization = dialog.normalization();
+    QString absolute("absolute=%0");
     _currentFolder = dialog.currentFolder();
-    emit(sendCommand(":analyze "+file.replace(" ","\\ ")+" "+normalization));
+    emit(sendCommand(":analyze "+file.replace(" ","\\ ")+" "+normalization+" "+absolute.arg(dialog.absolute()?"1":"0")));
   }
 }
 
