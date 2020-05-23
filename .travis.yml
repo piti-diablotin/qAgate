@@ -1,0 +1,38 @@
+language: cpp
+script: qmake qAgate.pro && make 
+os:
+  - linux
+compiler:
+  - gcc
+  - clang
+addons:
+  apt:
+    update: true
+    sources:
+      - 'ppa:piti-diablotin/abiout'
+    packages: 
+      - abiout
+      - libfreetype6-dev
+      - libboost-dev
+      - qtbase5-dev
+      - qt5-qmake
+      - qt5-default
+      - libqt5opengl5-dev
+      - libssh-dev
+
+jobs:
+  include:
+    - os: linux
+      dist: bionic
+      compiler: clang
+    - os: linux
+      dist: bionic
+      compiler: gcc
+    - os: linux
+      dist: xenial
+      compiler: clang
+    - os: linux
+      dist: xenial
+      compiler: gcc
+
+#after_failure: 
