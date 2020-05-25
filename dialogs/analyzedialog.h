@@ -17,6 +17,7 @@ public:
   ~AnalyzeDialog();
   QString normalization();
   QString file();
+  bool absolute();
 
   QString currentFolder() const;
   void setCurrentFolder(const QString &currentFolder);

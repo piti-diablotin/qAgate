@@ -112,21 +112,6 @@
             <string>&amp;Visuals</string>
            </attribute>
           </widget>
-          <widget class="Settings" name="settings">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <attribute name="icon">
-            <iconset resource="qagate.qrc">
-             <normaloff>:/settings/icons/settings.svg</normaloff>:/settings/icons/settings.svg</iconset>
-           </attribute>
-           <attribute name="title">
-            <string>&amp;Settings</string>
-           </attribute>
-          </widget>
           <widget class="MD" name="md">
            <attribute name="icon">
             <iconset resource="qagate.qrc">
@@ -170,6 +155,21 @@
            </attribute>
            <attribute name="title">
             <string>&amp;Tools</string>
+           </attribute>
+          </widget>
+          <widget class="Settings" name="settings">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <attribute name="icon">
+            <iconset resource="qagate.qrc">
+             <normaloff>:/settings/icons/settings.svg</normaloff>:/settings/icons/settings.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>&amp;Settings</string>
            </attribute>
           </widget>
          </widget>

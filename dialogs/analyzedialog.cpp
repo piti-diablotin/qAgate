@@ -7,6 +7,8 @@ AnalyzeDialog::AnalyzeDialog(QWidget *parent) :
   ui(new Ui::AnalyzeDialog)
 {
   ui->setupUi(this);
+  QString label = ui->absolute->text();
+  ui->absolute->setText(label.replace("Gamma",QChar(0x93,0x03)));
 }
 
 AnalyzeDialog::~AnalyzeDialog()
@@ -31,6 +33,11 @@ QString AnalyzeDialog::normalization()
 QString AnalyzeDialog::file()
 {
   return ui->file->text();
+}
+
+bool AnalyzeDialog::absolute()
+{
+  return ui->absolute->isChecked();
 }
 
 void AnalyzeDialog::on_browse_clicked()

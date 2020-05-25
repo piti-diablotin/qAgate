@@ -799,7 +799,7 @@
          <string>Display atomic number of atoms</string>
         </property>
         <property name="text">
-         <string>Atomic num&amp;ber</string>
+         <string>Z</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">displayGroup</string>
@@ -925,6 +925,56 @@
          <string notr="true">optionsGroup</string>
         </attribute>
        </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QCheckBox" name="force">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Forces</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="forceFactorLabel">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Scaling:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" rowspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QSlider" name="forceFactor">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="minimum">
+           <number>50</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="singleStep">
+           <number>10</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
@@ -1500,13 +1550,46 @@
  <resources>
   <include location="../qagate/qagate.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>force</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>forceFactor</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>force</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>forceFactorLabel</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
  <buttongroups>
-  <buttongroup name="displayGroup"/>
   <buttongroup name="optionsGroup">
    <property name="exclusive">
     <bool>false</bool>
    </property>
   </buttongroup>
+  <buttongroup name="displayGroup"/>
  </buttongroups>
 </ui>

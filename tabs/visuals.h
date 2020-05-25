@@ -75,6 +75,10 @@ private slots:
 
   void on_cell_clicked(bool checked);
 
+  void on_forceFactor_valueChanged(int value);
+
+  void on_force_clicked(bool checked);
+
   public slots:
   void updateAngles(View* view);
 };
