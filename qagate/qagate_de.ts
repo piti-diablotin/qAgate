@@ -167,6 +167,11 @@
         <source>Normalized for t&amp;he whole distortion</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../dialogs/analyzedialog.ui" line="74"/>
+        <source>Absolute value (uncheck for Gamma only)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AtomDialog</name>
@@ -704,7 +709,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/home.cpp" line="158"/>
+        <location filename="../tabs/home.cpp" line="167"/>
         <source>Open File</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1470,10 +1475,25 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../tabs/multibinittab.ui" line="440"/>
+        <source>Pump phonons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="474"/>
+        <source>Time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.ui" line="534"/>
+        <source>Pump</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../tabs/multibinittab.cpp" line="75"/>
         <location filename="../tabs/multibinittab.cpp" line="84"/>
-        <location filename="../tabs/multibinittab.cpp" line="94"/>
-        <location filename="../tabs/multibinittab.cpp" line="103"/>
+        <location filename="../tabs/multibinittab.cpp" line="95"/>
+        <location filename="../tabs/multibinittab.cpp" line="104"/>
         <source>Missing data</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1488,13 +1508,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="94"/>
+        <location filename="../tabs/multibinittab.cpp" line="95"/>
         <source>You need to give the seed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="103"/>
+        <location filename="../tabs/multibinittab.cpp" line="104"/>
         <source>You need to give the amplitude for instable modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.cpp" line="136"/>
+        <source>Open File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.cpp" line="151"/>
+        <source>Save File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1738,6 +1768,16 @@
     <message>
         <location filename="../tabs/phononsmode.cpp" line="309"/>
         <source>Write DDB to File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.cpp" line="323"/>
+        <source>Select a qpt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/phononsmode.cpp" line="323"/>
+        <source>You need to select a qpt</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2406,7 +2446,7 @@
     </message>
     <message>
         <location filename="../qdos/qdos.cpp" line="119"/>
-        <location filename="../qdos/qdos.cpp" line="278"/>
+        <location filename="../qdos/qdos.cpp" line="279"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2449,7 +2489,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qdos/qdos.cpp" line="268"/>
+        <location filename="../qdos/qdos.cpp" line="269"/>
         <source>Plot in progress</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3084,7 +3124,7 @@
         <location filename="../tabs/visuals.ui" line="99"/>
         <location filename="../tabs/visuals.ui" line="102"/>
         <location filename="../tabs/visuals.ui" line="105"/>
-        <location filename="../tabs/visuals.ui" line="1361"/>
+        <location filename="../tabs/visuals.ui" line="1411"/>
         <source>Add translation along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3092,7 +3132,7 @@
         <location filename="../tabs/visuals.ui" line="125"/>
         <location filename="../tabs/visuals.ui" line="128"/>
         <location filename="../tabs/visuals.ui" line="131"/>
-        <location filename="../tabs/visuals.ui" line="1433"/>
+        <location filename="../tabs/visuals.ui" line="1483"/>
         <source>Remove translation along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3100,7 +3140,7 @@
         <location filename="../tabs/visuals.ui" line="151"/>
         <location filename="../tabs/visuals.ui" line="154"/>
         <location filename="../tabs/visuals.ui" line="157"/>
-        <location filename="../tabs/visuals.ui" line="1379"/>
+        <location filename="../tabs/visuals.ui" line="1429"/>
         <source>Add translation along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3108,7 +3148,7 @@
         <location filename="../tabs/visuals.ui" line="184"/>
         <location filename="../tabs/visuals.ui" line="187"/>
         <location filename="../tabs/visuals.ui" line="190"/>
-        <location filename="../tabs/visuals.ui" line="1397"/>
+        <location filename="../tabs/visuals.ui" line="1447"/>
         <source>Add translation along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3116,7 +3156,7 @@
         <location filename="../tabs/visuals.ui" line="210"/>
         <location filename="../tabs/visuals.ui" line="213"/>
         <location filename="../tabs/visuals.ui" line="216"/>
-        <location filename="../tabs/visuals.ui" line="1451"/>
+        <location filename="../tabs/visuals.ui" line="1501"/>
         <source>Remove translation along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3124,7 +3164,7 @@
         <location filename="../tabs/visuals.ui" line="236"/>
         <location filename="../tabs/visuals.ui" line="239"/>
         <location filename="../tabs/visuals.ui" line="242"/>
-        <location filename="../tabs/visuals.ui" line="1415"/>
+        <location filename="../tabs/visuals.ui" line="1465"/>
         <source>Remove translation along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3132,7 +3172,7 @@
         <location filename="../tabs/visuals.ui" line="342"/>
         <location filename="../tabs/visuals.ui" line="345"/>
         <location filename="../tabs/visuals.ui" line="348"/>
-        <location filename="../tabs/visuals.ui" line="1493"/>
+        <location filename="../tabs/visuals.ui" line="1543"/>
         <source>Set view along z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3140,7 +3180,7 @@
         <location filename="../tabs/visuals.ui" line="370"/>
         <location filename="../tabs/visuals.ui" line="373"/>
         <location filename="../tabs/visuals.ui" line="376"/>
-        <location filename="../tabs/visuals.ui" line="1465"/>
+        <location filename="../tabs/visuals.ui" line="1515"/>
         <source>Set view along x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3148,7 +3188,7 @@
         <location filename="../tabs/visuals.ui" line="398"/>
         <location filename="../tabs/visuals.ui" line="401"/>
         <location filename="../tabs/visuals.ui" line="404"/>
-        <location filename="../tabs/visuals.ui" line="1479"/>
+        <location filename="../tabs/visuals.ui" line="1529"/>
         <source>Set view along y</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3234,7 +3274,7 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="802"/>
-        <source>Atomic num&amp;ber</source>
+        <source>Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3258,7 +3298,7 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="850"/>
-        <location filename="../tabs/visuals.ui" line="1125"/>
+        <location filename="../tabs/visuals.ui" line="1175"/>
         <source>Atoms</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3271,8 +3311,8 @@
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="877"/>
-        <location filename="../tabs/visuals.ui" line="1225"/>
-        <location filename="../tabs/visuals.ui" line="1229"/>
+        <location filename="../tabs/visuals.ui" line="1275"/>
+        <location filename="../tabs/visuals.ui" line="1279"/>
         <source>None</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3294,88 +3334,98 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="941"/>
+        <location filename="../tabs/visuals.ui" line="937"/>
+        <source>Forces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="952"/>
+        <source>Scaling:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="991"/>
         <source>Physics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1001"/>
-        <location filename="../tabs/visuals.ui" line="1004"/>
-        <location filename="../tabs/visuals.ui" line="1007"/>
+        <location filename="../tabs/visuals.ui" line="1051"/>
+        <location filename="../tabs/visuals.ui" line="1054"/>
+        <location filename="../tabs/visuals.ui" line="1057"/>
         <source>Add/Remove octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1010"/>
+        <location filename="../tabs/visuals.ui" line="1060"/>
         <source>Octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1053"/>
-        <location filename="../tabs/visuals.ui" line="1056"/>
-        <location filename="../tabs/visuals.ui" line="1059"/>
+        <location filename="../tabs/visuals.ui" line="1103"/>
+        <location filename="../tabs/visuals.ui" line="1106"/>
+        <location filename="../tabs/visuals.ui" line="1109"/>
         <source>Add octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1083"/>
-        <location filename="../tabs/visuals.ui" line="1086"/>
-        <location filename="../tabs/visuals.ui" line="1089"/>
+        <location filename="../tabs/visuals.ui" line="1133"/>
+        <location filename="../tabs/visuals.ui" line="1136"/>
+        <location filename="../tabs/visuals.ui" line="1139"/>
         <source>Remove octahedra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1113"/>
-        <location filename="../tabs/visuals.ui" line="1116"/>
-        <location filename="../tabs/visuals.ui" line="1119"/>
+        <location filename="../tabs/visuals.ui" line="1163"/>
+        <location filename="../tabs/visuals.ui" line="1166"/>
+        <location filename="../tabs/visuals.ui" line="1169"/>
         <source>Draw supplementary atoms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1195"/>
-        <location filename="../tabs/visuals.ui" line="1198"/>
-        <location filename="../tabs/visuals.ui" line="1201"/>
-        <location filename="../tabs/visuals.ui" line="1216"/>
-        <location filename="../tabs/visuals.ui" line="1219"/>
-        <location filename="../tabs/visuals.ui" line="1222"/>
+        <location filename="../tabs/visuals.ui" line="1245"/>
+        <location filename="../tabs/visuals.ui" line="1248"/>
+        <location filename="../tabs/visuals.ui" line="1251"/>
+        <location filename="../tabs/visuals.ui" line="1266"/>
+        <location filename="../tabs/visuals.ui" line="1269"/>
+        <location filename="../tabs/visuals.ui" line="1272"/>
         <source>Spin direction filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1204"/>
+        <location filename="../tabs/visuals.ui" line="1254"/>
         <source>Arrows only</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1280"/>
+        <location filename="../tabs/visuals.ui" line="1330"/>
         <source>Relative</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1313"/>
+        <location filename="../tabs/visuals.ui" line="1363"/>
         <source>Angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1316"/>
-        <location filename="../tabs/visuals.ui" line="1319"/>
+        <location filename="../tabs/visuals.ui" line="1366"/>
+        <location filename="../tabs/visuals.ui" line="1369"/>
         <source>Show/Hide angles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1334"/>
+        <location filename="../tabs/visuals.ui" line="1384"/>
         <source>Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1337"/>
-        <location filename="../tabs/visuals.ui" line="1340"/>
-        <location filename="../tabs/visuals.ui" line="1343"/>
+        <location filename="../tabs/visuals.ui" line="1387"/>
+        <location filename="../tabs/visuals.ui" line="1390"/>
+        <location filename="../tabs/visuals.ui" line="1393"/>
         <source>Show/Hide time info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.cpp" line="314"/>
+        <location filename="../tabs/visuals.cpp" line="317"/>
         <source>Pick a base color</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3469,7 +3519,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="136"/>
+        <location filename="qagate.ui" line="121"/>
         <source>&amp;MD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3489,27 +3539,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="127"/>
+        <location filename="qagate.ui" line="172"/>
         <source>&amp;Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="172"/>
+        <location filename="qagate.ui" line="157"/>
         <source>&amp;Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="145"/>
+        <location filename="qagate.ui" line="130"/>
         <source>Local</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="154"/>
+        <location filename="qagate.ui" line="139"/>
         <source>Density</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="163"/>
+        <location filename="qagate.ui" line="148"/>
         <source>Phonons</source>
         <translation type="unfinished"></translation>
     </message>

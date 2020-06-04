@@ -32,6 +32,8 @@ protected:
 
     void on_browse_clicked();
 
+    void on_pumpButton_clicked();
+
   private:
     Ui::MultibinitTab *ui;
 };

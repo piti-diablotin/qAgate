@@ -117,6 +117,7 @@ void MultibinitTab::on_randomHist_clicked(bool checked)
   ui->quantityLabel->setEnabled(checked);
   ui->trajFile->setDisabled(checked);
   ui->browse->setDisabled(checked);
+  ui->pump->setDisabled(checked);
 }
 
 void MultibinitTab::on_trajHist_clicked(bool checked)
@@ -127,14 +128,30 @@ void MultibinitTab::on_trajHist_clicked(bool checked)
   ui->quantityLabel->setDisabled(checked);
   ui->trajFile->setEnabled(checked);
   ui->browse->setEnabled(checked);
+  ui->pump->setEnabled(checked);
 }
 
 void MultibinitTab::on_browse_clicked()
 {
-  auto fileName = QFileDialog::getOpenFileName(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  QString fileName = QFileDialog::getOpenFileName(this,tr("Open File"),_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileName.isEmpty() )
   {
     ui->trajFile->setText(fileName);
+    int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+    _currentFolder = fileName.left(pos+1);
+    HistData* tmp = HistData::getHist(fileName.toStdString());
+    ui->time->setMaximum(tmp->ntime()-1);
+    ui->time->setSuffix(QString("/%0").arg(tmp->ntime()-1));
+    delete tmp;
+  }
+}
+
+void MultibinitTab::on_pumpButton_clicked()
+{
+  QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), _currentFolder,"",nullptr,QFileDialog::DontUseNativeDialog);
+  if (!fileName.isEmpty())
+  {
+    emit(sendCommand(QString(":pump structure=%0 time=%1 output=%2").arg(ui->trajFile->text(),QString::number(ui->time->value()), fileName.replace(" ","\\ "))));
     int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
     _currentFolder = fileName.left(pos+1);
   }
