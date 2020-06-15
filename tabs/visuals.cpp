@@ -82,8 +82,8 @@ void Visuals::updateStatus(View *view)
   const CanvasPos* canvas = dynamic_cast<const CanvasPos*>(view->getCanvas());
   if (canvas!=nullptr)
   {
-    bool x, y ,z, relative= false;
-    canvas->getSpinDirection(x,y,z,relative);
+    bool x, y ,z, relative= false, centered=true;
+    canvas->getSpinDirection(x,y,z,relative,centered);
     if (x&&y&&z)
       ui->spin->setCurrentIndex(7);
     else if (!x&&y&&z)
@@ -101,6 +101,7 @@ void Visuals::updateStatus(View *view)
     else if (!x&&!y&&!z)
       ui->spin->setCurrentIndex(0);
     ui->spinRelative->setChecked(relative);
+    ui->spinCentered->setChecked(centered);
 
     ui->forceFactor->setValue(static_cast<int>(canvas->getForceFactor()));
 
@@ -354,4 +355,9 @@ void Visuals::on_forceFactor_valueChanged(int value)
 void Visuals::on_force_clicked(bool checked)
 {
   emit(sendCommand(checked?":show force":":hide force"));
+}
+
+void Visuals::on_spinCentered_clicked(bool checked)
+{
+  emit(sendCommand(QString(":spin_origin centered=%0").arg(checked?"1":"0")));
 }

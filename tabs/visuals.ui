@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>705</width>
+    <width>791</width>
     <height>127</height>
    </rect>
   </property>
@@ -799,7 +799,7 @@
          <string>Display atomic number of atoms</string>
         </property>
         <property name="text">
-         <string>Z</string>
+         <string>&amp;Z</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">displayGroup</string>
@@ -1328,6 +1328,33 @@
            </property>
            <property name="text">
             <string>Relative</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="spinCentered">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Center the arrow in the atom</string>
+           </property>
+           <property name="statusTip">
+            <string>Center the arrow in the atom</string>
+           </property>
+           <property name="whatsThis">
+            <string>Center the arrow in the atom</string>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>Centered</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
            </property>
           </widget>
          </item>

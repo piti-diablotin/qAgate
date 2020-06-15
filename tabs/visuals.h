@@ -79,6 +79,8 @@ private slots:
 
   void on_force_clicked(bool checked);
 
+  void on_spinCentered_clicked(bool checked);
+
   public slots:
   void updateAngles(View* view);
 };
