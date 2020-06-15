@@ -125,10 +125,7 @@ bool RemoteDialog::connectSsh(Ssh &ssh)
   }
   catch (Exception &e)
   {
-    if (e.getReturnValue() == SSH_AUTH_DENIED)
-      ui->info->setText(tr("Access denied"));
-    else
-      ui->info->setText(tr("Unknow error"));
+    ui->info->setText(QString::fromStdString(e.what("",true)));
     return false;
   }
   return true;
