@@ -13,13 +13,13 @@ addons:
   apt:
     update: true
     packages: 
+      - libfreetype6-dev
       - libboost-dev
       - qtbase5-dev
       - qt5-qmake
       - qt5-default
       - libqt5opengl5-dev
-      - libfreetype6-dev
-        #- libssh-dev
+      - libssh-dev
 
 jobs:
   include:
