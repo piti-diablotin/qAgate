@@ -1473,7 +1473,7 @@
     <message>
         <location filename="../tabs/multibinittab.ui" line="91"/>
         <source>Trajector&amp;y</source>
-        <translation>Trajectoire</translation>
+        <translation>&amp;Trajectoire</translation>
     </message>
     <message>
         <location filename="../tabs/multibinittab.ui" line="106"/>
@@ -1483,7 +1483,7 @@
     <message>
         <location filename="../tabs/multibinittab.ui" line="154"/>
         <source>&amp;Random</source>
-        <translation>Aléatoire</translation>
+        <translation>&amp;Aléatoire</translation>
     </message>
     <message>
         <location filename="../tabs/multibinittab.ui" line="178"/>
@@ -2664,13 +2664,13 @@
     <message>
         <location filename="../dialogs/remotedialog.cpp" line="63"/>
         <location filename="../dialogs/remotedialog.cpp" line="88"/>
-        <location filename="../dialogs/remotedialog.cpp" line="141"/>
+        <location filename="../dialogs/remotedialog.cpp" line="138"/>
         <source>Warning</source>
         <translation>Attention</translation>
     </message>
     <message>
         <location filename="../dialogs/remotedialog.cpp" line="63"/>
-        <location filename="../dialogs/remotedialog.cpp" line="141"/>
+        <location filename="../dialogs/remotedialog.cpp" line="138"/>
         <source>You need to specify a remote file</source>
         <translation>Vous devez spécifier un fichier distant</translation>
     </message>
@@ -2710,37 +2710,35 @@
         <translation>Accès autorisé</translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="129"/>
         <source>Access denied</source>
-        <translation>Accès refusé</translation>
+        <translation type="vanished">Accès refusé</translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="131"/>
         <source>Unknow error</source>
-        <translation>Erreur inconnue</translation>
+        <translation type="vanished">Erreur inconnue</translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="151"/>
+        <location filename="../dialogs/remotedialog.cpp" line="148"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="151"/>
+        <location filename="../dialogs/remotedialog.cpp" line="148"/>
         <source>Unable to create file </source>
         <translation>Impossible de créer le fichier </translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="167"/>
+        <location filename="../dialogs/remotedialog.cpp" line="164"/>
         <source>Closing file!</source>
         <translation>Fermeture du fichier!</translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="169"/>
+        <location filename="../dialogs/remotedialog.cpp" line="166"/>
         <source>Done!</source>
         <translation>Fait!</translation>
     </message>
     <message>
-        <location filename="../dialogs/remotedialog.cpp" line="176"/>
+        <location filename="../dialogs/remotedialog.cpp" line="173"/>
         <source>Unable to get file</source>
         <translation>Impossible d&apos;obtenir le fichier</translation>
     </message>
@@ -3219,7 +3217,7 @@
         <location filename="../tabs/visuals.ui" line="99"/>
         <location filename="../tabs/visuals.ui" line="102"/>
         <location filename="../tabs/visuals.ui" line="105"/>
-        <location filename="../tabs/visuals.ui" line="1411"/>
+        <location filename="../tabs/visuals.ui" line="1438"/>
         <source>Add translation along x</source>
         <translation>Ajouter une translation
  suivant x</translation>
@@ -3228,7 +3226,7 @@
         <location filename="../tabs/visuals.ui" line="125"/>
         <location filename="../tabs/visuals.ui" line="128"/>
         <location filename="../tabs/visuals.ui" line="131"/>
-        <location filename="../tabs/visuals.ui" line="1483"/>
+        <location filename="../tabs/visuals.ui" line="1510"/>
         <source>Remove translation along y</source>
         <translation>Réduire la translation suivant y</translation>
     </message>
@@ -3236,7 +3234,7 @@
         <location filename="../tabs/visuals.ui" line="151"/>
         <location filename="../tabs/visuals.ui" line="154"/>
         <location filename="../tabs/visuals.ui" line="157"/>
-        <location filename="../tabs/visuals.ui" line="1429"/>
+        <location filename="../tabs/visuals.ui" line="1456"/>
         <source>Add translation along y</source>
         <translation>Réduire la translation suivant y</translation>
     </message>
@@ -3244,7 +3242,7 @@
         <location filename="../tabs/visuals.ui" line="184"/>
         <location filename="../tabs/visuals.ui" line="187"/>
         <location filename="../tabs/visuals.ui" line="190"/>
-        <location filename="../tabs/visuals.ui" line="1447"/>
+        <location filename="../tabs/visuals.ui" line="1474"/>
         <source>Add translation along z</source>
         <translation>Ajouter une translation suivant z</translation>
     </message>
@@ -3252,7 +3250,7 @@
         <location filename="../tabs/visuals.ui" line="210"/>
         <location filename="../tabs/visuals.ui" line="213"/>
         <location filename="../tabs/visuals.ui" line="216"/>
-        <location filename="../tabs/visuals.ui" line="1501"/>
+        <location filename="../tabs/visuals.ui" line="1528"/>
         <source>Remove translation along x</source>
         <translation>Réduire la translation suivant x</translation>
     </message>
@@ -3260,7 +3258,7 @@
         <location filename="../tabs/visuals.ui" line="236"/>
         <location filename="../tabs/visuals.ui" line="239"/>
         <location filename="../tabs/visuals.ui" line="242"/>
-        <location filename="../tabs/visuals.ui" line="1465"/>
+        <location filename="../tabs/visuals.ui" line="1492"/>
         <source>Remove translation along z</source>
         <translation>Réduire la translation suivant z</translation>
     </message>
@@ -3268,7 +3266,7 @@
         <location filename="../tabs/visuals.ui" line="342"/>
         <location filename="../tabs/visuals.ui" line="345"/>
         <location filename="../tabs/visuals.ui" line="348"/>
-        <location filename="../tabs/visuals.ui" line="1543"/>
+        <location filename="../tabs/visuals.ui" line="1570"/>
         <source>Set view along z</source>
         <translation>Regarder le long de z</translation>
     </message>
@@ -3276,7 +3274,7 @@
         <location filename="../tabs/visuals.ui" line="370"/>
         <location filename="../tabs/visuals.ui" line="373"/>
         <location filename="../tabs/visuals.ui" line="376"/>
-        <location filename="../tabs/visuals.ui" line="1515"/>
+        <location filename="../tabs/visuals.ui" line="1542"/>
         <source>Set view along x</source>
         <translation>Regarder le long de x</translation>
     </message>
@@ -3284,7 +3282,7 @@
         <location filename="../tabs/visuals.ui" line="398"/>
         <location filename="../tabs/visuals.ui" line="401"/>
         <location filename="../tabs/visuals.ui" line="404"/>
-        <location filename="../tabs/visuals.ui" line="1529"/>
+        <location filename="../tabs/visuals.ui" line="1556"/>
         <source>Set view along y</source>
         <translation>Regarder le long de y</translation>
     </message>
@@ -3377,9 +3375,13 @@
         <translation type="vanished">N&amp;uméro atomique</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="802"/>
         <source>Z</source>
-        <translation>Z</translation>
+        <translation type="vanished">Z</translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="802"/>
+        <source>&amp;Z</source>
+        <translation>&amp;Z</translation>
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="817"/>
@@ -3498,38 +3500,50 @@
     <message>
         <location filename="../tabs/visuals.ui" line="1254"/>
         <source>Arrows only</source>
-        <translation>Flèches</translation>
+        <translation>Flèche</translation>
     </message>
     <message>
         <location filename="../tabs/visuals.ui" line="1330"/>
         <source>Relative</source>
-        <translation>Relatif</translation>
+        <translation>Relative</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1363"/>
+        <location filename="../tabs/visuals.ui" line="1342"/>
+        <location filename="../tabs/visuals.ui" line="1345"/>
+        <location filename="../tabs/visuals.ui" line="1348"/>
+        <source>Center the arrow in the atom</source>
+        <translation>Centrer la flèche sur l&apos;atome</translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="1354"/>
+        <source>Centered</source>
+        <translation>Centrée</translation>
+    </message>
+    <message>
+        <location filename="../tabs/visuals.ui" line="1390"/>
         <source>Angles</source>
         <translation>Angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1366"/>
-        <location filename="../tabs/visuals.ui" line="1369"/>
+        <location filename="../tabs/visuals.ui" line="1393"/>
+        <location filename="../tabs/visuals.ui" line="1396"/>
         <source>Show/Hide angles</source>
         <translation>Montrer/Cacher les angles</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1384"/>
+        <location filename="../tabs/visuals.ui" line="1411"/>
         <source>Time</source>
         <translation>Temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.ui" line="1387"/>
-        <location filename="../tabs/visuals.ui" line="1390"/>
-        <location filename="../tabs/visuals.ui" line="1393"/>
+        <location filename="../tabs/visuals.ui" line="1414"/>
+        <location filename="../tabs/visuals.ui" line="1417"/>
+        <location filename="../tabs/visuals.ui" line="1420"/>
         <source>Show/Hide time info</source>
         <translation>Montrer/Cacher l&apos;information du temps</translation>
     </message>
     <message>
-        <location filename="../tabs/visuals.cpp" line="317"/>
+        <location filename="../tabs/visuals.cpp" line="318"/>
         <source>Pick a base color</source>
         <translation>Choisir une couleur</translation>
     </message>
