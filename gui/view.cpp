@@ -29,14 +29,13 @@ View::View(QWidget *parent) :
 
   this->setAcceptDrops(true);
   this->setCursor(QCursor(Qt::OpenHandCursor));
-  //this->makeCurrent(); ?
+  //this->makeCurrent();
   _render._doRender = false;
   _mouseButtonLeft = 0;
   _mouseButtonRight = 1;
   _mouseButtonMiddle = 2;
   connect(ui->commandLine,SIGNAL(goBackwards()),this,SLOT(backInHistory()));
   connect(ui->commandLine,SIGNAL(goForwards()),this,SLOT(forwardInHistory()));
-  _canvas.reset(new CanvasPos(true));
 }
 
 View::~View()
@@ -47,8 +46,10 @@ View::~View()
 void View::initializeGL()
 {
   this->makeCurrent();
-  initializeOpenGLFunctions();
   Window::beginGl();
+  _canvas.reset(new CanvasPos(true));
+  emit(needPlot());
+  //initializeOpenGLFunctions();
   _arrow.reset(new TriArrow(true));
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
   this->setUpdateBehavior(QOpenGLWidget::PartialUpdate);

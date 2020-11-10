@@ -77,6 +77,7 @@ qAgate::qAgate(QWidget *parent) :
   connect(ui->view,SIGNAL(userInput()),this,SLOT(syncWithUserInput()));
   connect(ui->view,SIGNAL(mouseInput()),this,SLOT(syncWithUserInput()));
   connect(ui->view,SIGNAL(newSize(int,int)),ui->settings,SLOT(updateDisplaySize(int,int)));
+  connect(ui->view,SIGNAL(needPlot()),this,SLOT(initPlot()));
 
   // logger
   connect(ui->logger,SIGNAL(debugMode(bool)),ui->view,SLOT(setDebugMode(bool)));
@@ -112,7 +113,7 @@ qAgate::qAgate(QWidget *parent) :
   connect(this,SIGNAL(emitCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
 
   this->updateTab();
-  this->setPlot(AbstractTab::plot());
+  //this->setPlot(AbstractTab::plot());
 
   this->addAction(ui->actionSecret);
 
@@ -351,13 +352,19 @@ void qAgate::setNeeds(bool need)
 
 void qAgate::setPlot(QPlot *plot)
 {
-  ui->view->canvas()->setGraph(plot);
+  if (ui->view->canvas()!=nullptr)
+    ui->view->canvas()->setGraph(plot);
 }
 
 void qAgate::updateCanvas(QAbstractButton *button)
 {
   ui->view->setFromCommandLine(true);
   emit(emitCommand(":"+button->objectName()));
+}
+
+void qAgate::initPlot()
+{
+  this->setPlot(AbstractTab::plot());
 }
 
 void qAgate::on_tabWidget_tabBarClicked(int index)

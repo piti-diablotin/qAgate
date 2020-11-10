@@ -20,7 +20,7 @@ namespace Ui {
 }
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
-class View : public QOpenGLWidget, protected QOpenGLFunctions, public Window
+class View : public QOpenGLWidget, public Window
 #else
 class View : public QGLWidget, protected QOpenGLFunctions, public Window
 #endif
@@ -93,6 +93,7 @@ signals:
   void closeMe();
   void closeAll();
   void newSize(int width,int height);
+  void needPlot();
 
 private:
   Ui::View *ui;

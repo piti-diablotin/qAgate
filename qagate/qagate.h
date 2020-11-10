@@ -35,6 +35,7 @@ protected slots:
   void setNeeds(bool need=true);
   void setPlot(QPlot* plot);
   void updateCanvas(QAbstractButton* button);
+  void initPlot();
 
 signals:
   void emitCommand(QString,bool pop=true);
