@@ -199,9 +199,21 @@ RESOURCES += \
     qdos/qdos.qrc
 
 TRANSLATIONS += \
-  qagate/qagate_fr.ts \
-  qagate/qagate_it.ts \
-  qagate/qagate_de.ts
+    qtdep/qtdep_fr.ts \
+    qtdep/qtdep_it.ts \
+    qtdep/qtdep_de.ts \
+    qdos/qdos_fr.ts \
+    qdos/qdos_it.ts \
+    qdos/qdos_de.ts \
+    qdispersion/qdispersion_fr.ts \
+    qdispersion/qdispersion_it.ts \
+    qdispersion/qdispersion_de.ts \
+    qconducti/qconducti_fr.ts \
+    qconducti/qconducti_it.ts \
+    qconducti/qconducti_de.ts \
+    qagate/qagate_fr.ts \
+    qagate/qagate_it.ts \
+    qagate/qagate_de.ts
 
 LIBS += -L$$PREFIX_AGATE/lib/ -lagate
 
@@ -307,6 +319,10 @@ DISTFILES += \
     icons/zoom-1.svg \
     icons/zoom-in.svg \
     icons/zoom-out.svg \
+    qdispersion/qdispersion.svg \
+    qconducti/qconducti.svg \
+    qdos/qdos.svg \
+    qtdep/qtdep.svg \
     qagate/qagate.svg \
     qagate/qagate.desktop
 
