@@ -88,10 +88,10 @@ DISTFILES += \
     qtdep/qtdep.desktop
 
 logo.files = qtdep/qtdep.svg
-logo.path = /usr/share/qAgate/images/
+logo.path = $$PREFIX/share/qAgate/images/
 
 desktop.files= qtdep/qtdep.desktop
-desktop.path = /usr/share/applications/
+desktop.path = $$PREFIX/share/applications/
 
 ICON = qtdep/qtdep.svg
 

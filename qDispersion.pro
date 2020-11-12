@@ -74,10 +74,10 @@ DISTFILES += \
     qdispersion/qdispersion.desktop
 
 logo.files = qdispersion/qdispersion.svg
-logo.path = /usr/share/qAgate/images/
+logo.path = $$PREFIX/share/qAgate/images/
 
 desktop.files= qdispersion/qdispersion.desktop
-desktop.path = /usr/share/applications/
+desktop.path = $$PREFIX/share/applications/
 
 ICON = qdispersion/qdispersion.svg
 

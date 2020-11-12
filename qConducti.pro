@@ -67,10 +67,10 @@ DISTFILES += \
     qconducti/qconducti.desktop
 
 logo.files = qconducti/qconducti.svg
-logo.path = /usr/share/qAgate/images/
+logo.path = $$PREFIX/share/qAgate/images/
 
 desktop.files= qconducti/qconducti.desktop
-desktop.path = /usr/share/applications/
+desktop.path = $$PREFIX/share/applications/
 
 ICON = qconducti/qconducti.svg
 

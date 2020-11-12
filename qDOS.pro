@@ -73,10 +73,10 @@ DISTFILES += \
     qdos/qdos.desktop
 
 logo.files = qdos/qdos.svg
-logo.path = /usr/share/qAgate/images/
+logo.path = $$PREFIX/share/qAgate/images/
 
 desktop.files= qdos/qdos.desktop
-desktop.path = /usr/share/applications/
+desktop.path = $$PREFIX/share/applications/
 
 ICON = qdos/qdos.svg
 
