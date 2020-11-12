@@ -1,12 +1,12 @@
 [![Build Status](https://travis-ci.org/piti-diablotin/qAgate.svg?branch=master)](https://travis-ci.org/piti-diablotin/qAgate)
 
 # qAgate
-qAgate is the new Qt interface for [agate](https://github.com/piti-diablotin/abiout).
+qAgate is the new Qt interface for [agate](https://github.com/piti-diablotin/agate).
 It includes all the features of Agate with a new user friendly look.
 It also includes sommes "external" tools to help some users with fast analysis.
 
 # Installation
-First you need to install [agate](https://github.com/piti-diablotin/abiout).
+First you need to install [agate](https://github.com/piti-diablotin/agate).
 Then you can choose to install qAgate with the following PPA for ubuntu or to compile it yourself.
 No matter how you installed agate, make sure to be up to date with both agate and qAgate while the API of agate is not fully finished.
 
@@ -16,7 +16,7 @@ No matter how you installed agate, make sure to be up to date with both agate an
   ```
   sudo add-apt-repository ppa:piti-diablotin/abiout
   sudo apt-get update
-  sudo apt-get install abiout qagate
+  sudo apt-get install libagate-dev qagate
   ```
   and you are done !
   Simply execute `qAgate` in a terminal.
@@ -28,9 +28,9 @@ No matter how you installed agate, make sure to be up to date with both agate an
   ```
   sudo apt-get install libfreetype6-dev libboost-dev qtbase5-dev qt5-qmake qt5-default libqt5opengl5-dev libssh-dev git
   ```
-  Note that you can install abiout in those dependencies.
+  Note that you can install libagate-dev in those dependencies.
   ```
-  sudo apt install abiout
+  sudo apt install libagate-dev
   ```
   Then you clone this repository and compile
   ```
