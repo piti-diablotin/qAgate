@@ -14,18 +14,23 @@ TEMPLATE = app
 CONFIG += c++11
 isEmpty(PREFIX) {
  PREFIX = /usr/
+ macx:PREFIX = /usr/local
 }
 isEmpty(PREFIX_AGATE) {
  PREFIX_AGATE = /usr/
+ macx:PREFIX_AGATE = /usr/local
 }
 
 isEmpty(PREFIX_FREETYPE) {
  PREFIX_FREETYPE = /usr/
+ macx:PREFIX_FREETYPE = /usr/local
 }
 
 !isEmpty(PREFIX_SSH) {
   INCLUDEPATH += $$PREFIX_SSH/include/
 }
+
+macx:INCLUDEPATH += /usr/local/include
 
 target.path = $$PREFIX/bin
 INSTALLS += target
@@ -316,6 +321,7 @@ logo.path = $$PREFIX/share/qAgate/images/
 desktop.files= qagate/qagate.desktop
 desktop.path = $$PREFIX/share/applications/
 
-ICON = qagate/qagate.svg
+unix:ICON = qagate/qagate.svg
+macx:ICON = qagate/qagate.icns
 
 unix:INSTALLS += logo desktop

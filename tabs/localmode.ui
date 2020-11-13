@@ -179,6 +179,11 @@
       </property>
       <item row="2" column="0">
        <widget class="QRadioButton" name="rotation">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Display rotations</string>
         </property>
@@ -211,6 +216,11 @@
       </item>
       <item row="2" column="2">
        <widget class="QRadioButton" name="cart">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Use cartesian axis as reference</string>
         </property>
@@ -230,6 +240,11 @@
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="basis">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Basis:</string>
         </property>
@@ -244,6 +259,11 @@
       </item>
       <item row="3" column="0">
        <widget class="QRadioButton" name="length">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Display lengths</string>
         </property>
@@ -263,6 +283,11 @@
       </item>
       <item row="3" column="2">
        <widget class="QRadioButton" name="rel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Use first step as reference</string>
         </property>
@@ -282,6 +307,11 @@
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="display">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Display:</string>
         </property>
@@ -313,6 +343,11 @@
       </property>
       <item row="0" column="0">
        <widget class="QLabel" name="clockwiseLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Clockwise rotations</string>
         </property>
@@ -320,6 +355,11 @@
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="anticlockwiseLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Anticlockwise rotations</string>
         </property>
@@ -381,6 +421,11 @@
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QPushButton" name="exportRotations">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Export rotations to file</string>
         </property>
@@ -401,6 +446,11 @@
       </item>
       <item>
        <widget class="QPushButton" name="exportLengths">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="toolTip">
          <string>Export lengths to file</string>
         </property>
@@ -442,7 +492,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="displayGroup"/>
   <buttongroup name="basisGroup"/>
+  <buttongroup name="displayGroup"/>
  </buttongroups>
 </ui>
