@@ -18,20 +18,19 @@ The PPA contains package for all maintained Ubuntu distributions.
 Simply run 
 ```
 sudo add-apt-repository ppa:piti-diablotin/abiout
-sudo apt-get update
-sudo apt-get install libagate-dev qagate
+sudo apt update
+sudo apt install libagate-dev qagate
 ```
 and you are done !
 Simply execute `qAgate` in a terminal.
-Please not the capital *A* which is the difference with the old depreciated qagate !
 
 
 ## From sources
 First you need to install some dependancies (works for all maintained Ubuntu versions)
   ```
-  sudo apt-get install libfreetype6-dev libboost-dev qtbase5-dev qt5-qmake qt5-default libqt5opengl5-dev libssh-dev git
+  sudo apt install libfreetype6-dev libboost-dev qtbase5-dev qt5-qmake qt5-default libqt5opengl5-dev libssh-dev git
   ```
-  Note that you can install libagate-dev in those dependencies.
+  Note that you can install libagate-dev with its dependencies.
   ```
   sudo apt install libagate-dev
   ```
