@@ -450,269 +450,269 @@
         <translation>Import/Export</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="178"/>
-        <location filename="../tabs/home.ui" line="181"/>
-        <location filename="../tabs/home.ui" line="184"/>
-        <location filename="../tabs/home.ui" line="1249"/>
+        <location filename="../tabs/home.ui" line="388"/>
+        <location filename="../tabs/home.ui" line="391"/>
+        <location filename="../tabs/home.ui" line="394"/>
+        <location filename="../tabs/home.ui" line="1267"/>
         <source>Write abinit input file</source>
         <translation>Ecrire un fichier d&apos;entrée pour abinit</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="73"/>
-        <location filename="../tabs/home.ui" line="76"/>
-        <location filename="../tabs/home.ui" line="79"/>
-        <location filename="../tabs/home.ui" line="1267"/>
+        <location filename="../tabs/home.ui" line="153"/>
+        <location filename="../tabs/home.ui" line="156"/>
+        <location filename="../tabs/home.ui" line="159"/>
+        <location filename="../tabs/home.ui" line="1285"/>
         <source>Export trajectory to _HIST format</source>
         <translation>Exporter la trajectoire au format _HIST</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="322"/>
-        <location filename="../tabs/home.ui" line="325"/>
-        <location filename="../tabs/home.ui" line="328"/>
+        <location filename="../tabs/home.ui" line="320"/>
+        <location filename="../tabs/home.ui" line="323"/>
+        <location filename="../tabs/home.ui" line="326"/>
         <source>Open a script file</source>
         <translation>Ouvrir un fichier script</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="241"/>
-        <location filename="../tabs/home.ui" line="244"/>
-        <location filename="../tabs/home.ui" line="247"/>
+        <location filename="../tabs/home.ui" line="351"/>
+        <location filename="../tabs/home.ui" line="354"/>
+        <location filename="../tabs/home.ui" line="357"/>
         <source>Write VASP POSCAR</source>
         <translation>Ecrire un fichier POSCAR pour VASP</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="141"/>
-        <location filename="../tabs/home.ui" line="144"/>
-        <location filename="../tabs/home.ui" line="147"/>
+        <location filename="../tabs/home.ui" line="116"/>
+        <location filename="../tabs/home.ui" line="119"/>
+        <location filename="../tabs/home.ui" line="122"/>
         <source>Export trajectory to XYZ format</source>
         <translation>Exporter la trajectoire au format XYZ</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="110"/>
-        <location filename="../tabs/home.ui" line="113"/>
-        <location filename="../tabs/home.ui" line="116"/>
+        <location filename="../tabs/home.ui" line="265"/>
+        <location filename="../tabs/home.ui" line="268"/>
+        <location filename="../tabs/home.ui" line="271"/>
         <source>Write CIF file</source>
         <translation>Ecrire une fichier CIF</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="342"/>
-        <location filename="../tabs/home.ui" line="345"/>
-        <location filename="../tabs/home.ui" line="348"/>
+        <location filename="../tabs/home.ui" line="231"/>
+        <location filename="../tabs/home.ui" line="234"/>
+        <location filename="../tabs/home.ui" line="237"/>
         <source>Reload the current file</source>
         <translation>Recharger le fichier courant</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="204"/>
-        <location filename="../tabs/home.ui" line="207"/>
-        <location filename="../tabs/home.ui" line="210"/>
-        <location filename="../tabs/home.ui" line="1282"/>
+        <location filename="../tabs/home.ui" line="179"/>
+        <location filename="../tabs/home.ui" line="182"/>
+        <location filename="../tabs/home.ui" line="185"/>
+        <location filename="../tabs/home.ui" line="1300"/>
         <source>Open a new file</source>
         <translation>Ouvrir un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="270"/>
-        <location filename="../tabs/home.ui" line="273"/>
+        <location filename="../tabs/home.ui" line="294"/>
+        <location filename="../tabs/home.ui" line="297"/>
         <source>Append a new file</source>
         <translation>Rajouter à la suite un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="276"/>
+        <location filename="../tabs/home.ui" line="300"/>
         <source>Append a new file to the current visualization</source>
         <translation>Rajouter à la suite de l&apos;animation un nouveau fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="296"/>
-        <location filename="../tabs/home.ui" line="299"/>
-        <location filename="../tabs/home.ui" line="302"/>
+        <location filename="../tabs/home.ui" line="205"/>
+        <location filename="../tabs/home.ui" line="208"/>
+        <location filename="../tabs/home.ui" line="211"/>
         <source>Get a file from a remote server</source>
         <translation>Obtenir un fichier depuis un server distant</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="370"/>
-        <location filename="../tabs/home.ui" line="373"/>
-        <location filename="../tabs/home.ui" line="376"/>
+        <location filename="../tabs/home.ui" line="79"/>
+        <location filename="../tabs/home.ui" line="82"/>
+        <location filename="../tabs/home.ui" line="85"/>
         <source>Export trajectory to Abinit input format</source>
         <translation>Exporter la trajectoire au format d&apos;input d&apos;Abinit</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="408"/>
+        <location filename="../tabs/home.ui" line="426"/>
         <source>Edit</source>
         <translation>Edition</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="462"/>
+        <location filename="../tabs/home.ui" line="480"/>
         <source>For this time step</source>
         <translation>Pour ce pas de temps</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="467"/>
+        <location filename="../tabs/home.ui" line="485"/>
         <source>For all</source>
         <translation>Pour tous</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="504"/>
-        <location filename="../tabs/home.ui" line="507"/>
-        <location filename="../tabs/home.ui" line="510"/>
+        <location filename="../tabs/home.ui" line="522"/>
+        <location filename="../tabs/home.ui" line="525"/>
+        <location filename="../tabs/home.ui" line="528"/>
         <source>Set atoms inside the cell</source>
         <translation>Mettre les atomes à l&apos;intérieur de la cellule</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="527"/>
-        <location filename="../tabs/home.ui" line="530"/>
-        <location filename="../tabs/home.ui" line="533"/>
+        <location filename="../tabs/home.ui" line="545"/>
+        <location filename="../tabs/home.ui" line="548"/>
+        <location filename="../tabs/home.ui" line="551"/>
         <source>Set continuous trajectory</source>
         <translation>Construire une trajectoire continue</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="555"/>
-        <location filename="../tabs/home.ui" line="558"/>
-        <location filename="../tabs/home.ui" line="561"/>
+        <location filename="../tabs/home.ui" line="573"/>
+        <location filename="../tabs/home.ui" line="576"/>
+        <location filename="../tabs/home.ui" line="579"/>
         <source>Shift origin</source>
         <translation>Déplacer l&apos;origine</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="627"/>
-        <location filename="../tabs/home.ui" line="630"/>
-        <location filename="../tabs/home.ui" line="633"/>
+        <location filename="../tabs/home.ui" line="645"/>
+        <location filename="../tabs/home.ui" line="648"/>
+        <location filename="../tabs/home.ui" line="651"/>
         <source>Change atom type</source>
         <translation>Changer le type d&apos;atome</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="658"/>
-        <location filename="../tabs/home.ui" line="661"/>
-        <location filename="../tabs/home.ui" line="664"/>
+        <location filename="../tabs/home.ui" line="704"/>
+        <location filename="../tabs/home.ui" line="707"/>
+        <location filename="../tabs/home.ui" line="710"/>
         <source>Make supercell</source>
         <translation>Faire une supercellule</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="689"/>
+        <location filename="../tabs/home.ui" line="766"/>
         <source>Centroid</source>
         <translation>Centroïde</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="692"/>
-        <location filename="../tabs/home.ui" line="695"/>
+        <location filename="../tabs/home.ui" line="769"/>
+        <location filename="../tabs/home.ui" line="772"/>
         <source>Compute centroid</source>
         <translation>Calculer le centroïde</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="717"/>
-        <location filename="../tabs/home.ui" line="720"/>
-        <location filename="../tabs/home.ui" line="723"/>
+        <location filename="../tabs/home.ui" line="673"/>
+        <location filename="../tabs/home.ui" line="676"/>
+        <location filename="../tabs/home.ui" line="679"/>
         <source>Move atom</source>
         <translation>Déplacer l&apos;atome</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="748"/>
-        <location filename="../tabs/home.ui" line="751"/>
-        <location filename="../tabs/home.ui" line="754"/>
+        <location filename="../tabs/home.ui" line="735"/>
+        <location filename="../tabs/home.ui" line="738"/>
+        <location filename="../tabs/home.ui" line="741"/>
         <source>Average structure</source>
         <translation>Structure moyenne</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="786"/>
+        <location filename="../tabs/home.ui" line="804"/>
         <source>Explore</source>
         <translation>Exploration</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="842"/>
-        <location filename="../tabs/home.ui" line="845"/>
-        <location filename="../tabs/home.ui" line="848"/>
+        <location filename="../tabs/home.ui" line="860"/>
+        <location filename="../tabs/home.ui" line="863"/>
+        <location filename="../tabs/home.ui" line="866"/>
         <source>Unit for this distance</source>
         <translation>Unité pour cette distance</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="872"/>
-        <location filename="../tabs/home.ui" line="875"/>
-        <location filename="../tabs/home.ui" line="878"/>
-        <location filename="../tabs/home.ui" line="1070"/>
-        <location filename="../tabs/home.ui" line="1073"/>
-        <location filename="../tabs/home.ui" line="1076"/>
+        <location filename="../tabs/home.ui" line="890"/>
+        <location filename="../tabs/home.ui" line="893"/>
+        <location filename="../tabs/home.ui" line="896"/>
+        <location filename="../tabs/home.ui" line="1088"/>
+        <location filename="../tabs/home.ui" line="1091"/>
+        <location filename="../tabs/home.ui" line="1094"/>
         <source>Atom 2</source>
         <translation>Atome 2</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="930"/>
-        <location filename="../tabs/home.ui" line="933"/>
-        <location filename="../tabs/home.ui" line="936"/>
-        <location filename="../tabs/home.ui" line="1037"/>
-        <location filename="../tabs/home.ui" line="1040"/>
-        <location filename="../tabs/home.ui" line="1043"/>
+        <location filename="../tabs/home.ui" line="948"/>
+        <location filename="../tabs/home.ui" line="951"/>
+        <location filename="../tabs/home.ui" line="954"/>
+        <location filename="../tabs/home.ui" line="1055"/>
+        <location filename="../tabs/home.ui" line="1058"/>
+        <location filename="../tabs/home.ui" line="1061"/>
         <source>Atom 1</source>
         <translation>Atome 1</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="969"/>
-        <location filename="../tabs/home.ui" line="975"/>
+        <location filename="../tabs/home.ui" line="987"/>
+        <location filename="../tabs/home.ui" line="993"/>
         <source>Distance measurement</source>
         <translation>Mesure de distance</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="972"/>
+        <location filename="../tabs/home.ui" line="990"/>
         <source>Distance between 2 atoms</source>
         <translation>Distance entre 2 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1003"/>
-        <location filename="../tabs/home.ui" line="1009"/>
+        <location filename="../tabs/home.ui" line="1021"/>
+        <location filename="../tabs/home.ui" line="1027"/>
         <source>Angle measurement</source>
         <translation>Mesure d&apos;angle</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1006"/>
+        <location filename="../tabs/home.ui" line="1024"/>
         <source>Angle between 3 atoms</source>
         <translation>Angle entre 3 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1103"/>
-        <location filename="../tabs/home.ui" line="1106"/>
-        <location filename="../tabs/home.ui" line="1109"/>
+        <location filename="../tabs/home.ui" line="1121"/>
+        <location filename="../tabs/home.ui" line="1124"/>
+        <location filename="../tabs/home.ui" line="1127"/>
         <source>Atom 3</source>
         <translation>Atome 3</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1176"/>
-        <location filename="../tabs/home.ui" line="1179"/>
-        <location filename="../tabs/home.ui" line="1182"/>
+        <location filename="../tabs/home.ui" line="1194"/>
+        <location filename="../tabs/home.ui" line="1197"/>
+        <location filename="../tabs/home.ui" line="1200"/>
         <source>Space group of current time</source>
         <translation>Groupe d&apos;espace du pas de temps actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1185"/>
+        <location filename="../tabs/home.ui" line="1203"/>
         <source>Space Group</source>
         <translation>Groupe d&apos;espace</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1200"/>
+        <location filename="../tabs/home.ui" line="1218"/>
         <source>Thermo</source>
         <translation>Thermo</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1270"/>
+        <location filename="../tabs/home.ui" line="1288"/>
         <source>Ctrl+Shift+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1279"/>
+        <location filename="../tabs/home.ui" line="1297"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1294"/>
+        <location filename="../tabs/home.ui" line="1312"/>
         <source>Append</source>
         <translation>Rajouter</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1297"/>
+        <location filename="../tabs/home.ui" line="1315"/>
         <source>Append a new file to the current one</source>
         <translation>Rajouter un nouveau fichier à la suite de l&apos;actuel</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1309"/>
+        <location filename="../tabs/home.ui" line="1327"/>
         <source>Cloud</source>
         <translation>Server</translation>
     </message>
     <message>
-        <location filename="../tabs/home.ui" line="1312"/>
+        <location filename="../tabs/home.ui" line="1330"/>
         <source>Import from cluster</source>
         <translation>Importer depuis un server</translation>
     </message>
@@ -761,114 +761,114 @@
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="183"/>
-        <location filename="../tabs/localmode.ui" line="186"/>
-        <location filename="../tabs/localmode.ui" line="189"/>
+        <location filename="../tabs/localmode.ui" line="188"/>
+        <location filename="../tabs/localmode.ui" line="191"/>
+        <location filename="../tabs/localmode.ui" line="194"/>
         <source>Display rotations</source>
         <translation>Montrer les rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="192"/>
+        <location filename="../tabs/localmode.ui" line="197"/>
         <source>&amp;Rotations</source>
         <translation>&amp;Rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="215"/>
-        <location filename="../tabs/localmode.ui" line="218"/>
-        <location filename="../tabs/localmode.ui" line="221"/>
+        <location filename="../tabs/localmode.ui" line="225"/>
+        <location filename="../tabs/localmode.ui" line="228"/>
+        <location filename="../tabs/localmode.ui" line="231"/>
         <source>Use cartesian axis as reference</source>
         <translation>Utiliser les axes cartésien comm référence</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="224"/>
+        <location filename="../tabs/localmode.ui" line="234"/>
         <source>&amp;Cartesian</source>
         <translation>&amp;Cartésien</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="234"/>
+        <location filename="../tabs/localmode.ui" line="249"/>
         <source>Basis:</source>
         <translation>Base:</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="248"/>
-        <location filename="../tabs/localmode.ui" line="251"/>
-        <location filename="../tabs/localmode.ui" line="254"/>
+        <location filename="../tabs/localmode.ui" line="268"/>
+        <location filename="../tabs/localmode.ui" line="271"/>
+        <location filename="../tabs/localmode.ui" line="274"/>
         <source>Display lengths</source>
         <translation>Montrer les distances</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="257"/>
+        <location filename="../tabs/localmode.ui" line="277"/>
         <source>&amp;Lengths</source>
         <translation>&amp;Longueures</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="267"/>
-        <location filename="../tabs/localmode.ui" line="270"/>
-        <location filename="../tabs/localmode.ui" line="273"/>
+        <location filename="../tabs/localmode.ui" line="292"/>
+        <location filename="../tabs/localmode.ui" line="295"/>
+        <location filename="../tabs/localmode.ui" line="298"/>
         <source>Use first step as reference</source>
         <translation>Utiliser le premier pqs comme référence</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="276"/>
+        <location filename="../tabs/localmode.ui" line="301"/>
         <source>Relati&amp;ve</source>
         <translation>Relati&amp;ve</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="286"/>
+        <location filename="../tabs/localmode.ui" line="316"/>
         <source>Display:</source>
         <translation>Affichage:</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="296"/>
+        <location filename="../tabs/localmode.ui" line="326"/>
         <source>Colors</source>
         <translation>Couleurs</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="317"/>
+        <location filename="../tabs/localmode.ui" line="352"/>
         <source>Clockwise rotations</source>
         <translation>Rotations horaires</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="324"/>
+        <location filename="../tabs/localmode.ui" line="364"/>
         <source>Anticlockwise rotations</source>
         <translation>Rotations anti-horaires</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="331"/>
-        <location filename="../tabs/localmode.ui" line="334"/>
-        <location filename="../tabs/localmode.ui" line="337"/>
-        <location filename="../tabs/localmode.ui" line="347"/>
-        <location filename="../tabs/localmode.ui" line="350"/>
-        <location filename="../tabs/localmode.ui" line="353"/>
+        <location filename="../tabs/localmode.ui" line="371"/>
+        <location filename="../tabs/localmode.ui" line="374"/>
+        <location filename="../tabs/localmode.ui" line="377"/>
+        <location filename="../tabs/localmode.ui" line="387"/>
+        <location filename="../tabs/localmode.ui" line="390"/>
+        <location filename="../tabs/localmode.ui" line="393"/>
         <source>Change color</source>
         <translation>Changer de couleur</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="379"/>
+        <location filename="../tabs/localmode.ui" line="419"/>
         <source>Export</source>
         <translation>Export</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="385"/>
-        <location filename="../tabs/localmode.ui" line="388"/>
-        <location filename="../tabs/localmode.ui" line="391"/>
+        <location filename="../tabs/localmode.ui" line="430"/>
+        <location filename="../tabs/localmode.ui" line="433"/>
+        <location filename="../tabs/localmode.ui" line="436"/>
         <source>Export rotations to file</source>
         <translation>Exporter les rotations dans un fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="394"/>
+        <location filename="../tabs/localmode.ui" line="439"/>
         <source>Rotations</source>
         <translation>Rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="405"/>
-        <location filename="../tabs/localmode.ui" line="408"/>
-        <location filename="../tabs/localmode.ui" line="411"/>
+        <location filename="../tabs/localmode.ui" line="455"/>
+        <location filename="../tabs/localmode.ui" line="458"/>
+        <location filename="../tabs/localmode.ui" line="461"/>
         <source>Export lengths to file</source>
         <translation>Exporter les distances dans un fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="414"/>
+        <location filename="../tabs/localmode.ui" line="464"/>
         <source>Lengths</source>
         <translation>Longueures</translation>
     </message>
@@ -3632,68 +3632,108 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="97"/>
+        <location filename="qagate.ui" line="100"/>
         <source>&amp;Home</source>
         <translation>&amp;Accueil</translation>
     </message>
     <message>
+        <location filename="qagate.ui" line="103"/>
+        <source>Home</source>
+        <translation>Accueil</translation>
+    </message>
+    <message>
         <location filename="qagate.ui" line="121"/>
+        <source>Visuals</source>
+        <translation>Visuel</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="130"/>
         <source>&amp;MD</source>
         <translation>D&amp;M</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="262"/>
+        <location filename="qagate.ui" line="133"/>
+        <source>MD</source>
+        <translation>DM</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="142"/>
+        <source>&amp;Local</source>
+        <translation>&amp;Local</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="154"/>
+        <source>&amp;Density</source>
+        <translation>&amp;Densité</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="166"/>
+        <source>&amp;Phonons</source>
+        <translation>&amp;Phonons</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="181"/>
+        <source>Tools</source>
+        <translation>Outils</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="199"/>
+        <source>Settings</source>
+        <translation>Paramètres</translation>
+    </message>
+    <message>
+        <location filename="qagate.ui" line="289"/>
         <source>Secret</source>
         <translation>Secret</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="265"/>
+        <location filename="qagate.ui" line="292"/>
         <source>Ctrl+Alt+J</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="112"/>
+        <location filename="qagate.ui" line="118"/>
         <source>&amp;Visuals</source>
         <translation>&amp;Visuel</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="172"/>
+        <location filename="qagate.ui" line="196"/>
         <source>&amp;Settings</source>
         <translation>&amp;Paramètres</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="157"/>
+        <location filename="qagate.ui" line="178"/>
         <source>&amp;Tools</source>
         <translation>&amp;Outils</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="130"/>
+        <location filename="qagate.ui" line="145"/>
         <source>Local</source>
         <translation>Local</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="139"/>
+        <location filename="qagate.ui" line="157"/>
         <source>Density</source>
         <translation>Densité</translation>
     </message>
     <message>
-        <location filename="qagate.ui" line="148"/>
+        <location filename="qagate.ui" line="169"/>
         <source>Phonons</source>
         <translation>Phonons</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="162"/>
+        <location filename="qagate.cpp" line="163"/>
         <source>Ignoring file </source>
         <translation>Fichier ignoré </translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="163"/>
-        <location filename="qagate.cpp" line="171"/>
+        <location filename="qagate.cpp" line="164"/>
+        <location filename="qagate.cpp" line="172"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="170"/>
+        <location filename="qagate.cpp" line="171"/>
         <source>Updating canvas failed</source>
         <translation>Echec de l&apos;actualisation du canvas</translation>
     </message>
