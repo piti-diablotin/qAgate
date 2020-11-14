@@ -1,6 +1,7 @@
 qagate (1.1.1-1) focal; urgency=medium
 
   * Change dependcy to libagate-dev 
+  * Add MacOS support
 
  -- Jordan Bieder <jordan.bieder@uliege.be>  Thu, 12 Nov 2020 15:34:16 +0100
 
