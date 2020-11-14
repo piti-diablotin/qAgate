@@ -1,6 +1,6 @@
 language: cpp
 script: 
-  - [ $TRAVIS_OS_NAME = linux ] && qmake qAgate.pro || /usr/local/Cellar/qt/*.*.*/bin/qmake qAgate.pro
+  - if [ $TRAVIS_OS_NAME = linux ]l then qmake qAgate.pro; else /usr/local/Cellar/qt/*.*.*/bin/qmake qAgate.pro; fi
   - make
 os:
   - linux
