@@ -1,5 +1,5 @@
 language: cpp
-script: lrelease qAgate.pro && qmake qAgate.pro && make 
+script: qmake qAgate.pro && make 
 os:
   - linux
 compiler:
