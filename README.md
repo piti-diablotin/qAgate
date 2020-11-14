@@ -43,6 +43,17 @@ No matter how you installed agate, make sure to be up to date with both agate an
   That's it.
   You can now run it with `qAgate`
   
-  *Tips*: If agate, spglib or freetype are installed in a custom repository you can specify this directory with the environement variable
-  `PREFIX_AGATE PREFIX_SPGLIB PREFIX_FREETYPE`.
+  ## MacOS
+  `qAgate` can be compiled with homebrew. Here is an example supposing `agate` has been compiled and installed in `/usr/local`
+  ```
+brew install freetype git libssh qt
+git clone https://github.com/piti-diablotin/qAgate.git
+cd qAagate
+qmake "PREFIX=/usr/local" "PREFIX_AGATE=/usr/local" "PREFIX_FREETYPE=/usr/local" "PREFIX_SSH=/usr/local"
+make
+sudo make install
+```
+  
+  *Tips*: If agate, libssg or freetype are installed in a custom repository you can specify this directory with the environement variable
+  `PREFIX_AGATE PREFIX_SSH PREFIX_FREETYPE`.
   You can set the installation prefix with the variable `PREFIX`
