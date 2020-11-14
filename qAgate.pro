@@ -329,6 +329,7 @@ DISTFILES += \
     qdos/qdos.svg \
     qtdep/qtdep.svg \
     qagate/qagate.svg \
+    qagate/qagate.icns \
     qagate/qagate.desktop
 
 logo.files = qagate/qagate.svg
