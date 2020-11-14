@@ -85,6 +85,9 @@
           <property name="currentIndex">
            <number>0</number>
           </property>
+          <property name="elideMode">
+           <enum>Qt::ElideNone</enum>
+          </property>
           <property name="tabsClosable">
            <bool>false</bool>
           </property>
@@ -95,6 +98,9 @@
            </attribute>
            <attribute name="title">
             <string>&amp;Home</string>
+           </attribute>
+           <attribute name="toolTip">
+            <string>Home</string>
            </attribute>
           </widget>
           <widget class="Visuals" name="visuals">
@@ -111,6 +117,9 @@
            <attribute name="title">
             <string>&amp;Visuals</string>
            </attribute>
+           <attribute name="toolTip">
+            <string>Visuals</string>
+           </attribute>
           </widget>
           <widget class="MD" name="md">
            <attribute name="icon">
@@ -120,6 +129,9 @@
            <attribute name="title">
             <string>&amp;MD</string>
            </attribute>
+           <attribute name="toolTip">
+            <string>MD</string>
+           </attribute>
           </widget>
           <widget class="LocalMode" name="local">
            <attribute name="icon">
@@ -127,6 +139,9 @@
              <normaloff>:/local/icons/local.svg</normaloff>:/local/icons/local.svg</iconset>
            </attribute>
            <attribute name="title">
+            <string>&amp;Local</string>
+           </attribute>
+           <attribute name="toolTip">
             <string>Local</string>
            </attribute>
           </widget>
@@ -136,6 +151,9 @@
              <normaloff>:/density/icons/density.svg</normaloff>:/density/icons/density.svg</iconset>
            </attribute>
            <attribute name="title">
+            <string>&amp;Density</string>
+           </attribute>
+           <attribute name="toolTip">
             <string>Density</string>
            </attribute>
           </widget>
@@ -145,6 +163,9 @@
              <normaloff>:/phonons/icons/phonons.svg</normaloff>:/phonons/icons/phonons.svg</iconset>
            </attribute>
            <attribute name="title">
+            <string>&amp;Phonons</string>
+           </attribute>
+           <attribute name="toolTip">
             <string>Phonons</string>
            </attribute>
           </widget>
@@ -155,6 +176,9 @@
            </attribute>
            <attribute name="title">
             <string>&amp;Tools</string>
+           </attribute>
+           <attribute name="toolTip">
+            <string>Tools</string>
            </attribute>
           </widget>
           <widget class="Settings" name="settings">
@@ -170,6 +194,9 @@
            </attribute>
            <attribute name="title">
             <string>&amp;Settings</string>
+           </attribute>
+           <attribute name="toolTip">
+            <string>Settings</string>
            </attribute>
           </widget>
          </widget>
