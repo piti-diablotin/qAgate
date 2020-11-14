@@ -10,7 +10,7 @@ compiler:
 addons:
   apt:
     sources:
-      - sourceline: ppa:piti-diablotin/abiout
+      - sourceline: 'ppa:piti-diablotin/abiout'
     update: true
     packages: 
       - libagate-dev
