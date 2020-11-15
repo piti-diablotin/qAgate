@@ -22,6 +22,12 @@ Logger::Logger(QWidget *parent) :
   ui->info->hide();
   ui->warning->hide();
   ui->error->hide();
+#ifdef __APPLE__
+  QFont font;
+  font.setFamily(QString::fromUtf8("Monaco"));
+  font.setPointSize(9);
+  ui->logger->setFont(font);
+#endif
   _oldStreambuf[0] = std::cout.rdbuf();
   _oldStreambuf[1] = std::clog.rdbuf();
   _oldStreambuf[2] = std::cerr.rdbuf();
