@@ -3,11 +3,7 @@ script:
   - if [ $TRAVIS_OS_NAME = linux ]; then 
       qmake qAgate.pro; 
     else pwd;
-      ls;
-      cp qAgate.pro qagate.pro;
-      rm Master.pro  qAgate.pro  qConducti.pro  qDispersion.pro  qDOS.pro  qTdep.pro;
-      /usr/local/Cellar/qt/*.*.*/bin/qmake;
-      /usr/local/Cellar/qt/*.*.*/bin/qmake qagate.pro; 
+      /usr/local/Cellar/qt/*.*.*/bin/qmake qAgate.pro; 
     fi
   - make
 os:
@@ -61,14 +57,14 @@ jobs:
     - os: osx
       osx_image: xcode12.2
       compiler: clang
-    - os: osx
-      osx_image: xcode11.3
-      compiler: clang
-    - os: osx
-      osx_image: xcode10.6
-      compiler: clang
-    - os: osx
-      osx_image: xcode9.4
-      compiler: clang
+      #    - os: osx
+      #      osx_image: xcode11.6
+      #      compiler: clang
+      #    - os: osx
+      #      osx_image: xcode10.3
+      #      compiler: clang
+      #    - os: osx
+      #      osx_image: xcode9.4
+      #      compiler: clang
 
 #after_failure: 
