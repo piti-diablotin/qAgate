@@ -4,9 +4,10 @@ script:
       qmake qAgate.pro; 
     else pwd;
       ls;
-      /usr/local/Cellar/qt/*.*.*/bin/qmake qAgate.pro; 
-      /usr/local/Cellar/qt/*.*.*/bin/qmake $PWD/qAgate.pro; 
-      /usr/local/Cellar/qt/*.*.*/bin/qmake ./qAgate.pro; 
+      cp qAgate.pro qagate.pro
+      rm Master.pro  qAgate.pro  qConducti.pro  qDispersion.pro  qDOS.pro  qTdep.pro
+      /usr/local/Cellar/qt/*.*.*/bin/qmake qagate.pro; 
+      /usr/local/Cellar/qt/*.*.*/bin/qmake;
     fi
   - make
 os:
