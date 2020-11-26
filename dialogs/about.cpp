@@ -14,8 +14,8 @@ About::About(QWidget *parent) :
   QIcon logo(":/qagate.svg");
   ui->logo->setPixmap(logo.pixmap(QSize(100,100)));
   ui->version->setText(ui->version->text().replace("QAGATE_VERSION",QAGATE_VERSION));
-  QString about = ui->aboutText->text().replace("QT_VERSION",QT_VERSION_STR);
-  about = about.replace("ABIOUT_VERSION",PACKAGE_VERSION);
+  QString about = ui->aboutText->text().replace("QT_VERSION",qVersion());
+  about = about.replace("ABIOUT_VERSION",QString::fromStdString(utils::agateVersion()));
 #if defined(HAVE_SPGLIB) && defined(HAVE_SPGLIB_VERSION)
   about = about.replace("SPGLIB_VERSION",QString::fromStdString(utils::spglibVersion()));
 #else
