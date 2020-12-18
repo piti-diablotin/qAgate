@@ -3,8 +3,6 @@
 #include "base/exception.hpp"
 #include <QFileDialog>
 
-const QColor QPlot::qcolor[] = { Qt::black, Qt::red, Qt::green, Qt::blue, Qt::magenta, Qt::cyan, Qt::darkRed, Qt::darkGreen, Qt::darkYellow };
-
 //
 QPlot::QPlot(QWidget *parent) : QCustomPlot(parent), Graph(),
   _titleElement(new QCPTextElement(this, QString::fromStdString(_title), QFont("Helvetica", 12, QFont::Bold))),
@@ -35,7 +33,6 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
   this->clean();
   auto label = labels.begin();
   auto yp = y.begin();
-  int autocolor = 1;
   bool addedLabel = false;
   for ( unsigned p = 0 ; p < y.size() ; ++p) {
     this->addGraph();
@@ -44,9 +41,8 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
       graph->setPen(QPen(QColor(QRgb(colors[p]))));
     }
     else {
-      graph->setPen(QPen(qcolor[autocolor++]));
+      graph->setPen(QPen(QColor(QRgb(rgb(HTMLcolor[p%15])))));
     }
-    if ( autocolor >= 8 ) autocolor = 0;
 
 
     if ( p < labels.size() ) {
@@ -119,7 +115,6 @@ void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<dou
   this->show();
   auto label = labels.begin();
   auto xyp = xy.begin();
-  int autocolor = 1;
   bool addedLabel = false;
   for ( unsigned p = 0 ; p < xy.size() ; ++p) {
     QCPCurve *newCurve = new QCPCurve(this->xAxis, this->yAxis);
@@ -127,9 +122,8 @@ void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<dou
       newCurve->setPen(QPen(QColor(QRgb(colors[p]))));
     }
     else {
-      newCurve->setPen(QPen(qcolor[autocolor++]));
+      newCurve->setPen(QPen(QColor(QRgb(rgb(HTMLcolor[p%15])))));
     }
-    if ( autocolor >= 8 ) autocolor = 0;
 
     if ( p < labels.size() ) {
       if ( !label->empty() ) {

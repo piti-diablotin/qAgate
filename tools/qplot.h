@@ -14,8 +14,6 @@ class QPlot : public QCustomPlot, public Graph {
     QVector<QCPItemLine*> _arrowsItems;
 
   protected :
-    //static const QColor qcolor[] = {{ Qt::black, Qt::red, Qt::green, Qt::blue, Qt::magenta, Qt::cyan, Qt::darkRed, Qt::darkGreen, Qt::darkYellow }};
-    static const QColor qcolor[];
 
     /**
      * Add thing to gnuplot like ranges, and tics
