@@ -42,7 +42,7 @@ bool AnalyzeDialog::absolute()
 
 void AnalyzeDialog::on_browse_clicked()
 {
-  auto fileName = QFileDialog::getOpenFileName(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileName = QFileDialog::getOpenFileName(this,"Open File",_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileName.isEmpty() )
   {
     ui->file->setText(fileName);

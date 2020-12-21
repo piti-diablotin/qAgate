@@ -133,7 +133,7 @@ void MultibinitTab::on_trajHist_clicked(bool checked)
 
 void MultibinitTab::on_browse_clicked()
 {
-  QString fileName = QFileDialog::getOpenFileName(this,tr("Open File"),_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  QString fileName = QFileDialog::getOpenFileName(this,tr("Open File"),_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileName.isEmpty() )
   {
     ui->trajFile->setText(fileName);

@@ -38,10 +38,10 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
     this->addGraph();
     auto graph = this->graph(p);
     if ( p < colors.size() && colors[p] != static_cast<unsigned>(-1) ) {
-      graph->setPen(QPen(QColor(QRgb(colors[p]))));
+      graph->setPen(QPen(QColor(QRgb(colors[p])),2));
     }
     else {
-      graph->setPen(QPen(QColor(QRgb(rgb(HTMLcolor[p%15])))));
+      graph->setPen(QPen(QColor(QRgb(rgb(HTMLcolor[p%15]))),2));
     }
 
 
@@ -86,7 +86,7 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
       graph->setLineStyle(QCPGraph::LineStyle::lsNone);
       QCPScatterStyle myScatter;
       myScatter.setShape(QCPScatterStyle::ssDisc);
-      myScatter.setPen(QPen(QColor(0xFF000000|color)));
+      myScatter.setPen(QPen(QColor(0xFF000000|color),2));
       myScatter.setBrush(QColor(0xFF000000|color));
       myScatter.setSize(2);
       graph->setScatterStyle(myScatter);
@@ -119,10 +119,10 @@ void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<dou
   for ( unsigned p = 0 ; p < xy.size() ; ++p) {
     QCPCurve *newCurve = new QCPCurve(this->xAxis, this->yAxis);
     if ( p < colors.size() && colors[p] != static_cast<unsigned>(-1)) {
-      newCurve->setPen(QPen(QColor(QRgb(colors[p]))));
+      newCurve->setPen(QPen(QColor(QRgb(colors[p])),2));
     }
     else {
-      newCurve->setPen(QPen(QColor(QRgb(rgb(HTMLcolor[p%15])))));
+      newCurve->setPen(QPen(QColor(QRgb(rgb(HTMLcolor[p%15]))),2));
     }
 
     if ( p < labels.size() ) {
@@ -149,7 +149,7 @@ void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<dou
   this->replot();
 }
 
-void QPlot::save(std::string filename){
+void QPlot::save(const std::string& filename){
   this->savePdf(QString::fromStdString(filename+".pdf"),0,0,QCP::epNoCosmetic);
 }
 
@@ -163,7 +163,7 @@ void QPlot::clean(){
   this->yAxis->setTicker(QSharedPointer<QCPAxisTicker>(new QCPAxisTicker));
 }
 
-void QPlot::dump(std::ostream& out, std::string& plotname) const {
+void QPlot::dump(std::ostream& out, const std::string& plotname) const {
   (void) out;
   (void) plotname;
 }
@@ -244,7 +244,7 @@ void QPlot::keyPressEvent(QKeyEvent *event) {
 }
 */
 
-QString QPlot::translateToUnicode(QString input) {
+QString QPlot::translateToUnicode(const QString &input) {
   const std::map<QString,QChar> translator = {
     std::pair<QString,QChar>("Alpha"  , QChar(0x91,0x03)),
     std::pair<QString,QChar>("Beta"   , QChar(0x92,0x03)),
@@ -267,6 +267,7 @@ QString QPlot::translateToUnicode(QString input) {
     std::pair<QString,QChar>("Tau"    , QChar(0xA4,0x03)),
     std::pair<QString,QChar>("Upsilon", QChar(0xA5,0x03)),
     std::pair<QString,QChar>("Phi"    , QChar(0xA6,0x03)),
+    std::pair<QString,QChar>("Chi"    , QChar(0xA7,0x03)),
     std::pair<QString,QChar>("Khi"    , QChar(0xA7,0x03)),
     std::pair<QString,QChar>("Psi"    , QChar(0xA8,0x03)),
     std::pair<QString,QChar>("Omega"  , QChar(0xA9,0x03)),
@@ -291,6 +292,7 @@ QString QPlot::translateToUnicode(QString input) {
     std::pair<QString,QChar>("tau"    , QChar(0xC4,0x03)),
     std::pair<QString,QChar>("upsilon", QChar(0xC5,0x03)),
     std::pair<QString,QChar>("phi"    , QChar(0xC6,0x03)),
+    std::pair<QString,QChar>("chi"    , QChar(0xC7,0x03)),
     std::pair<QString,QChar>("khi"    , QChar(0xC7,0x03)),
     std::pair<QString,QChar>("psi"    , QChar(0xC8,0x03)),
     std::pair<QString,QChar>("omega"  , QChar(0xC9,0x03)),

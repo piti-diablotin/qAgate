@@ -13,6 +13,11 @@ class QPlot : public QCustomPlot, public Graph {
     QCPTextElement *_titleElement;
     QVector<QCPItemLine*> _arrowsItems;
 
+    /**
+     * Translate greek letters into unicode
+     */
+    static QString translateToUnicode(const QString&);
+
   protected :
 
     /**
@@ -20,11 +25,6 @@ class QPlot : public QCustomPlot, public Graph {
      *
      */
     void addCustom();
-
-    /**
-     * Translate greek letters into unicode
-     */
-    static QString translateToUnicode(QString);
 
   public :
 
@@ -66,7 +66,7 @@ class QPlot : public QCustomPlot, public Graph {
      * Save the graph
      * @param filename Save to filename
      * */
-    virtual void save(std::string filename);
+    virtual void save(const std::string& filename);
 
     /**
      * Clean everything
@@ -79,7 +79,7 @@ class QPlot : public QCustomPlot, public Graph {
      * @param plotname is the filename for the file that would be created when the graph is created
      * Not the script file that would be executed to creat the graph
      */
-    virtual void dump(std::ostream& out, std::string& plotname) const;
+    virtual void dump(std::ostream& out, const std::string& plotname) const;
 
     virtual void resizeEvent(QResizeEvent * event);
 

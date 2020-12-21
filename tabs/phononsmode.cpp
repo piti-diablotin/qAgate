@@ -335,7 +335,7 @@ void PhononsMode::on_dynamt_clicked()
 
 void PhononsMode::on_open_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT *_PHBST.nc);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT *_PHBST.nc);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
   {
     QString file1 = fileNames.first();
@@ -359,7 +359,7 @@ void PhononsMode::on_open_clicked()
 
 void PhononsMode::on_append_clicked()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT *_PHBST.nc);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.abo *_DDB *_PHBST.nc);;VASP (OUTCAR);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
 
   bool pop = true;
   if ( !fileNames.empty() )
@@ -399,7 +399,7 @@ void PhononsMode::on_analyze_clicked()
 
 void PhononsMode::on_qpt_clicked()
 {
-  auto fileName = QFileDialog::getOpenFileName(this,"Open File",_currentFolder,"Abinit (*.in *.out *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileName = QFileDialog::getOpenFileName(this,"Open File",_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileName.isEmpty() )
   {
     int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
