@@ -1,0 +1,14 @@
+<svg class="feather feather-box" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 -1.8167)">
+  <g transform="matrix(.53216 0 0 .53216 .67378 7.3916)">
+   <path d="m12.89 1.45 8 4a2 2 0 0 1 1.11 1.79v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8v-9.52a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/>
+   <polyline points="2.32 6.16 12 11 21.68 6.16"/>
+   <line x1="12" x2="12" y1="22.76" y2="11"/>
+  </g>
+  <g transform="matrix(1.0551 0 0 .75699 -.6596 4.7029)" stroke="#747474" stroke-dasharray="1.59517339, 1.59517339" stroke-dashoffset="15.952" stroke-width="1.5952">
+   <path d="m12.89 1.45 8 4a2 2 0 0 1 1.11 1.79v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8v-9.52a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/>
+   <polyline points="2.32 6.16 12 11 21.68 6.16"/>
+   <line x1="12" x2="12" y1="22.76" y2="11"/>
+  </g>
+ </g>
+</svg>

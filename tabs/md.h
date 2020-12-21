@@ -72,7 +72,9 @@ private slots:
 
   void on_interpolate_clicked();
 
-  public slots:
+  void on_strain_clicked();
+
+public slots:
 
   void setGraph();
 

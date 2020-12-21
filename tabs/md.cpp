@@ -6,6 +6,8 @@
 #include "dialogs/pdfdialog.h"
 #include "dialogs/smearingdialog.h"
 #include "hist/histdatamd.hpp"
+#include "dialogs/straindialog.h"
+#include "dialogs/stressdialog.h"
 
 MD::MD(QWidget *parent) :
   AbstractTab(parent),
@@ -49,6 +51,8 @@ void MD::updateStatus(View *view)
   bool something = (view->getCanvas() != nullptr && view->getCanvas()->histdata() != nullptr);
   ui->geometry->setEnabled(something);
   ui->statistics->setEnabled(something);
+  ui->thermodynamics->setEnabled(something);
+  ui->interpolation->setEnabled(something);
   bool isMD=false;
   bool isPIMD=false;
   bool hasEtotal=false;
@@ -254,8 +258,10 @@ void MD::on_kinetic_clicked()
 
 void MD::on_stress_clicked()
 {
+  StressDialog dialog(this);
+  if (dialog.exec()!=QDialog::Accepted) return;
   if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" stress"));
+  emit(sendCommand(_plotCommand+QString(" stress only=%0").arg(dialog.only())));
 }
 
 void MD::on_thermo_clicked()
@@ -294,9 +300,9 @@ void MD::on_vacf_clicked()
 
 void MD::on_pdos_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
   SmearingDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
+  if (_plot->isHidden()) _plot->show();
   QString data = "tsmear "+QString::number(dialog.smearing());
   emit(sendCommand(_plotCommand+" pdos "+ data));
 }
@@ -304,4 +310,13 @@ void MD::on_pdos_clicked()
 void MD::on_interpolate_clicked()
 {
   emit(sendCommand(QString(":interpolate npoints=%0 amplitude=%1").arg(ui->npoints->text(),QString::number(ui->amplitude->value()))));
+}
+
+void MD::on_strain_clicked()
+{
+  StrainDialog dialog(this);
+  dialog.setCurrentFolder(_currentFolder);
+  if (dialog.exec()!=QDialog::Accepted) return;
+  if (_plot->isHidden()) _plot->show();
+  emit(sendCommand(_plotCommand+QString(" strain reference=%0 time=%1 only=%2").arg(dialog.reference(),dialog.time(),dialog.only())));
 }

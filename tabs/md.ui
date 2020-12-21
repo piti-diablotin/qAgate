@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>710</width>
+    <width>805</width>
     <height>127</height>
    </rect>
   </property>
@@ -333,6 +333,34 @@
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
           <normaloff>:/MD/icons/volume.svg</normaloff>:/MD/icons/volume.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="strain">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Strain</string>
+        </property>
+        <property name="statusTip">
+         <string>Strain</string>
+        </property>
+        <property name="whatsThis">
+         <string>Strain</string>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/MD/icons/strain.svg</normaloff>:/MD/icons/strain.svg</iconset>
         </property>
         <property name="autoRaise">
          <bool>true</bool>

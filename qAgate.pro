@@ -42,7 +42,8 @@ INSTALLS += target
 DEFINES += QT_DEPRECATED_WARNING
 DEFINES += HAVE_CONFIG_H
 DEFINES += QAGATE_VERSION=\\\"$${VERSION}\\\"
-
+DEFINES += INPUT_FILES_FILTER="\"\\\"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)\\\"\""
+DEFINES += DDB_FILES_FILTER="\"\\\"Abinit (*.abo *_DDB *_PHBST.nc);;VASP (OUTCAR);; YAML (*.yaml);; All (*)\\\"\""
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
@@ -50,6 +51,8 @@ DEFINES += QAGATE_VERSION=\\\"$${VERSION}\\\"
 
 
 SOURCES += \
+    dialogs/stressdialog.cpp \
+    dialogs/straindialog.cpp \
     qagate/main_qagate.cpp \
     qagate/qagate.cpp \
     gui/timeline.cpp \
@@ -103,6 +106,8 @@ SOURCES += \
     tabs/multibinittab.cpp
 
 HEADERS += \
+    dialogs/stressdialog.h \
+    dialogs/straindialog.h \
     qagate/qagate.h \
     gui/timeline.h \
     gui/mediaplayer.h \
@@ -155,6 +160,8 @@ HEADERS += \
     tabs/multibinittab.h
 
 FORMS += \
+    dialogs/stressdialog.ui \
+    dialogs/straindialog.ui \
     qagate/qagate.ui \
     gui/timeline.ui \
     gui/mediaplayer.ui \
@@ -306,6 +313,7 @@ DISTFILES += \
     icons/skip-back.svg \
     icons/skip-forward.svg \
     icons/stress.svg \
+    icons/strain.svg \
     icons/sun.svg \
     icons/supercell.svg \
     icons/thermodynamics.svg \

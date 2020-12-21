@@ -323,7 +323,7 @@ void Home::on_typat_clicked()
 
 void Home::on_open_triggered()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Open File",_currentFolder,INPUT_FILES_FILTER,nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileNames.empty() )
   {
     QString file1 = fileNames.first();
@@ -346,7 +346,7 @@ void Home::on_open_triggered()
 
 void Home::on_append_triggered()
 {
-  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);;XYZ (*.xyz);; YAML (*.yaml);; All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  auto fileNames = QFileDialog::getOpenFileNames(this,"Append File",_currentFolder,INPUT_FILES_FILTER,nullptr,QFileDialog::DontUseNativeDialog);
 
   bool pop = true;
   if ( !fileNames.empty() )

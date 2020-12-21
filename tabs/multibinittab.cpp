@@ -133,16 +133,21 @@ void MultibinitTab::on_trajHist_clicked(bool checked)
 
 void MultibinitTab::on_browse_clicked()
 {
-  QString fileName = QFileDialog::getOpenFileName(this,tr("Open File"),_currentFolder,"Abinit (*.abi *.abo *_OUT.nc *_HIST *_HIST.nc *_DDB *_DEN *_OPT);;VASP (POSCAR OUTCAR);;CIF (*.cif);;XML (*.xml);; YAML(*.yaml);;All (*)",nullptr,QFileDialog::DontUseNativeDialog);
+  QString fileName = QFileDialog::getOpenFileName(this,tr("Open File"),_currentFolder,INPUT_FILES_FILTER,nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileName.isEmpty() )
   {
-    ui->trajFile->setText(fileName);
-    int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
-    _currentFolder = fileName.left(pos+1);
-    HistData* tmp = HistData::getHist(fileName.toStdString());
-    ui->time->setMaximum(tmp->ntime()-1);
-    ui->time->setSuffix(QString("/%0").arg(tmp->ntime()-1));
-    delete tmp;
+    try {
+      int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+      _currentFolder = fileName.left(pos+1);
+      HistData* tmp = HistData::getHist(fileName.toStdString());
+      ui->trajFile->setText(fileName);
+      ui->time->setMaximum(tmp->ntime()-1);
+      ui->time->setSuffix(QString("/%0").arg(tmp->ntime()-1));
+      delete tmp;
+    }
+    catch( Exception &e ) {
+      QMessageBox::critical(this,tr("Bad file"),tr("File is not recognized with a correct format"));
+    }
   }
 }
 
