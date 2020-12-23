@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>805</width>
+    <width>810</width>
     <height>127</height>
    </rect>
   </property>
@@ -802,6 +802,79 @@
     </widget>
    </item>
    <item>
+    <widget class="QGroupBox" name="others">
+     <property name="title">
+      <string>Others</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="polarization">
+        <property name="toolTip">
+         <string>Polarization</string>
+        </property>
+        <property name="statusTip">
+         <string>Polarization</string>
+        </property>
+        <property name="whatsThis">
+         <string>Polarization</string>
+        </property>
+        <property name="text">
+         <string notr="true">P</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/MD/icons/polarization.svg</normaloff>:/MD/icons/polarization.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="rotations">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Rotations</string>
+        </property>
+        <property name="statusTip">
+         <string>Rotations</string>
+        </property>
+        <property name="whatsThis">
+         <string>Rotations</string>
+        </property>
+        <property name="text">
+         <string>R</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/MD/icons/rotations.svg</normaloff>:/MD/icons/rotations.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
     <widget class="QGroupBox" name="interpolation">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
@@ -853,7 +926,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Number of points per segments</string>
+           <string>Points</string>
           </property>
          </widget>
         </item>

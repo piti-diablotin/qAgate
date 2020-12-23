@@ -74,6 +74,10 @@ private slots:
 
   void on_strain_clicked();
 
+  void on_polarization_clicked();
+
+  void on_rotations_clicked();
+
 public slots:
 
   void setGraph();
@@ -83,7 +87,6 @@ private:
   int _natom;
   double _rmax;
   double _smearing;
-  QString _plotCommand;
   int _currentLeft;
   int _currentRight;
 };

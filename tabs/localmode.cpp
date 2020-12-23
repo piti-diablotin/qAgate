@@ -160,3 +160,9 @@ void LocalMode::on_exportLengths_clicked()
     emit(sendCommand(QString(":length ")+fileName));
   }
 }
+
+void LocalMode::on_rotations_clicked()
+{
+  if (_plot->isHidden()) _plot->show();
+  emit(sendCommand(_plotCommand+QString(" rotations")));
+}

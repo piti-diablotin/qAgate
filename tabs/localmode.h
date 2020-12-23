@@ -36,6 +36,8 @@ private slots:
 
   void on_exportLengths_clicked();
 
+  void on_rotations_clicked();
+
 private:
   Ui::LocalMode *ui;
   QVector<int> _znuclOrder;

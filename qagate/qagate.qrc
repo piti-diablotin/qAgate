@@ -89,6 +89,9 @@
         <file>../icons/kinetic.svg</file>
         <file>../icons/stress.svg</file>
         <file>../icons/strain.svg</file>
+        <file>../icons/polarization.svg</file>
+        <file>../icons/xy.svg</file>
+        <file>../icons/rotations.svg</file>
         <file>../icons/volume.svg</file>
         <file>../icons/thermodynamics.svg</file>
         <file>../icons/angles.svg</file>

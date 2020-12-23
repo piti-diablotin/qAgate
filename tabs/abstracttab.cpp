@@ -26,3 +26,4 @@ void AbstractTab::plugActions(QWidget* widget)
 
 QString AbstractTab::_currentFolder = ".";
 PlotWindow* AbstractTab::_plot = nullptr;
+QString AbstractTab::_plotCommand = ":plot ";

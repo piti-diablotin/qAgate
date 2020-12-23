@@ -60,6 +60,7 @@ SOURCES += \
     gui/view.cpp \
     gui/commandline.cpp \
     gui/logger.cpp \
+    dialogs/polarizationdialog.cpp \
     tools/qostreamcatcher.cpp \
     tabs/settings.cpp \
     tabs/abstracttab.cpp \
@@ -114,6 +115,7 @@ HEADERS += \
     gui/view.h \
     gui/commandline.h \
     gui/logger.h \
+    dialogs/polarizationdialog.h \
     tools/qostreamcatcher.h \
     tabs/settings.h \
     tabs/abstracttab.h \
@@ -168,6 +170,7 @@ FORMS += \
     gui/view.ui \
     gui/commandline.ui \
     gui/logger.ui \
+    dialogs/polarizationdialog.ui \
     tabs/settings.ui \
     dialogs/mendeleev.ui \
     tools/atomicdata.ui \

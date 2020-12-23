@@ -8,6 +8,8 @@
 #include "hist/histdatamd.hpp"
 #include "dialogs/straindialog.h"
 #include "dialogs/stressdialog.h"
+#include "dialogs/polarizationdialog.h"
+#include "canvas/canvaslocal.hpp"
 
 MD::MD(QWidget *parent) :
   AbstractTab(parent),
@@ -15,7 +17,6 @@ MD::MD(QWidget *parent) :
   _natom(0),
   _rmax(0),
   _smearing(100),
-  _plotCommand(":plot "),
   _currentLeft(0),
   _currentRight(0)
 {
@@ -53,6 +54,7 @@ void MD::updateStatus(View *view)
   ui->statistics->setEnabled(something);
   ui->thermodynamics->setEnabled(something);
   ui->interpolation->setEnabled(something);
+  ui->others->setEnabled(something);
   bool isMD=false;
   bool isPIMD=false;
   bool hasEtotal=false;
@@ -70,6 +72,7 @@ void MD::updateStatus(View *view)
       hasStress=hist->hasStress();
       ui->msd->setEnabled(hist->ntime()>1);
       ui->interpolation->setEnabled(hist->ntime()>1);
+      ui->rotations->setEnabled(dynamic_cast<const CanvasLocal*>(canvas)!=nullptr);
     }
   ui->gyration->setEnabled(isPIMD);
   //ui->thermodynamics->setEnabled(isMD||hasEtotal);
@@ -319,4 +322,19 @@ void MD::on_strain_clicked()
   if (dialog.exec()!=QDialog::Accepted) return;
   if (_plot->isHidden()) _plot->show();
   emit(sendCommand(_plotCommand+QString(" strain reference=%0 time=%1 only=%2").arg(dialog.reference(),dialog.time(),dialog.only())));
+}
+
+void MD::on_polarization_clicked()
+{
+  PolarizationDialog dialog(this);
+  dialog.setCurrentFolder(_currentFolder);
+  if (dialog.exec()!=QDialog::Accepted) return;
+  if (_plot->isHidden()) _plot->show();
+  emit(sendCommand(_plotCommand+QString(" polarization ddb=%0").arg(dialog.ddb())));
+}
+
+void MD::on_rotations_clicked()
+{
+  if (_plot->isHidden()) _plot->show();
+  emit(sendCommand(_plotCommand+QString(" rotations")));
 }

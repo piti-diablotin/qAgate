@@ -140,7 +140,7 @@
         </item>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="2" column="2">
        <spacer name="verticalSpacer_3">
         <property name="orientation">
          <enum>Qt::Vertical</enum>
@@ -152,6 +152,20 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="2" column="0">
+       <widget class="QToolButton" name="rotations">
+        <property name="text">
+         <string notr="true">R</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/MD/icons/rotations.svg</normaloff>:/MD/icons/rotations.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -492,7 +506,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="basisGroup"/>
   <buttongroup name="displayGroup"/>
+  <buttongroup name="basisGroup"/>
  </buttongroups>
 </ui>

@@ -14,6 +14,7 @@ private:
 protected:
   bool _autoUpdate;
   static QString _currentFolder;
+  static QString _plotCommand;
   static PlotWindow* _plot;
 
   virtual void updateStatus(View* view)=0;
