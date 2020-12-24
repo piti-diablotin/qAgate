@@ -18,6 +18,7 @@ public:
 
 protected:
   virtual void updateStatus(View* view);
+  virtual void plotFunction(const QString& function);
 
 private slots:
   void setCombo();
@@ -78,6 +79,8 @@ private slots:
 
   void on_rotations_clicked();
 
+  void on_xy_toggled(bool checked);
+
 public slots:
 
   void setGraph();
@@ -89,6 +92,8 @@ private:
   double _smearing;
   int _currentLeft;
   int _currentRight;
+  bool _xyMode;
+  QString _xyPlot[2];
 };
 
 #endif // MD_H

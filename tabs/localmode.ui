@@ -155,6 +155,15 @@
       </item>
       <item row="2" column="0">
        <widget class="QToolButton" name="rotations">
+        <property name="toolTip">
+         <string>Plot average rotations</string>
+        </property>
+        <property name="statusTip">
+         <string>Plot average rotations</string>
+        </property>
+        <property name="whatsThis">
+         <string>Plot average rotations</string>
+        </property>
         <property name="text">
          <string notr="true">R</string>
         </property>
@@ -506,7 +515,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="displayGroup"/>
   <buttongroup name="basisGroup"/>
+  <buttongroup name="displayGroup"/>
  </buttongroups>
 </ui>

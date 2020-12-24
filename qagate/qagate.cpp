@@ -27,6 +27,7 @@ qAgate::qAgate(QWidget *parent) :
     connect(tab,SIGNAL(sendCommand(QString,bool)),ui->view,SLOT(processCommand(QString,bool)));
     connect(tab,SIGNAL(plotChanged(QPlot*)),this,SLOT(setPlot(QPlot*)));
     connect(tab,SIGNAL(needCommandLine()),this,SLOT(setNeeds()));
+    connect(tab,SIGNAL(statusMessage(QString,int)),ui->statusBar,SLOT(showMessage(QString,int)));
   }
 
   int indexPhonons = ui->tabWidget->indexOf(ui->phonons);

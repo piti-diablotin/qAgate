@@ -138,37 +138,59 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="plot">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>Select option</string>
-        </property>
-        <property name="statusTip">
-         <string>Select option</string>
-        </property>
-        <property name="whatsThis">
-         <string>Select option</string>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>2</number>
         </property>
         <item>
-         <property name="text">
-          <string>Plot</string>
-         </property>
+         <widget class="QComboBox" name="plot">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Select option</string>
+          </property>
+          <property name="statusTip">
+           <string>Select option</string>
+          </property>
+          <property name="whatsThis">
+           <string>Select option</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Plot</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Data</string>
+           </property>
+          </item>
+         </widget>
         </item>
         <item>
-         <property name="text">
-          <string>Save</string>
-         </property>
+         <widget class="QCheckBox" name="hold">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text">
+           <string>Hold</string>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>Data</string>
-         </property>
-        </item>
-       </widget>
+       </layout>
       </item>
      </layout>
     </widget>
@@ -822,6 +844,32 @@
       <property name="spacing">
        <number>2</number>
       </property>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="rotations">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Rotations</string>
+        </property>
+        <property name="statusTip">
+         <string>Rotations</string>
+        </property>
+        <property name="whatsThis">
+         <string>Rotations</string>
+        </property>
+        <property name="text">
+         <string>R</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../qagate/qagate.qrc">
+          <normaloff>:/MD/icons/rotations.svg</normaloff>:/MD/icons/rotations.svg</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
       <item row="0" column="0">
        <widget class="QToolButton" name="polarization">
         <property name="toolTip">
@@ -845,26 +893,17 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QToolButton" name="rotations">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="toolTip">
-         <string>Rotations</string>
-        </property>
-        <property name="statusTip">
-         <string>Rotations</string>
-        </property>
-        <property name="whatsThis">
-         <string>Rotations</string>
-        </property>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="xy">
         <property name="text">
-         <string>R</string>
+         <string notr="true">xy</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
-          <normaloff>:/MD/icons/rotations.svg</normaloff>:/MD/icons/rotations.svg</iconset>
+          <normaloff>:/MD/icons/xy.svg</normaloff>:/MD/icons/xy.svg</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
         </property>
         <property name="autoRaise">
          <bool>true</bool>

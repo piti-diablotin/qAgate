@@ -18,7 +18,9 @@ MD::MD(QWidget *parent) :
   _rmax(0),
   _smearing(100),
   _currentLeft(0),
-  _currentRight(0)
+  _currentRight(0),
+  _xyMode(false),
+  _xyPlot()
 {
   ui->setupUi(this);
   bool buildPlotter = false;
@@ -85,6 +87,32 @@ void MD::updateStatus(View *view)
   ui->thermo->setEnabled(isMD);
   ui->vacf->setEnabled(isMD);
   ui->pdos->setEnabled(isMD);
+}
+
+void MD::plotFunction(const QString& function)
+{
+  if (_xyMode)
+  {
+    if (_xyPlot[0].isEmpty())
+    {
+      _xyPlot[0] = function;
+      emit(statusMessage(tr("Select y function"),-1));
+    }
+    else
+    {
+      _xyPlot[1] = function;
+      QString fullFunction="xy x=\"%0\" y=\"%1\"";
+      fullFunction = fullFunction.arg(_xyPlot[0],_xyPlot[1]);
+      ui->xy->toggle();
+      this->plotFunction(fullFunction);
+    }
+  }
+  else
+  {
+    if (_plot->isHidden()) _plot->show();
+    QString hold = ui->hold->isChecked()? "true" : "false";
+    emit(sendCommand(_plotCommand+function+QString(" hold=%0").arg(hold)));
+  }
 }
 
 void MD::setCombo()
@@ -170,30 +198,26 @@ void MD::on_graphCombo_currentIndexChanged(int index)
 
 void MD::on_angle_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" angle"));
+  this->plotFunction("angle");
 }
 
 void MD::on_plot_activated(int index)
 {
-  _plotCommand = ui->plot->itemData(index).toString();
+  _plotCommand = ui->plot->itemData(index).toString()+" ";
 }
 
 void MD::on_lattice_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" acell"));
+  this->plotFunction("acell");
 }
 
 void MD::on_gyration_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" gyration"));
+  this->plotFunction("gyration");
 }
 
 void MD::on_distance_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
   AtomDialog dialog(2,_natom,this);
   if (dialog.exec()==QDialog::Accepted)
     {
@@ -203,13 +227,12 @@ void MD::on_distance_clicked()
         {
           data += " "+QString::number(atoms[i]);
         }
-      emit(sendCommand(_plotCommand+" distance"+data));
+      this->plotFunction("distance"+data);
     }
 }
 
 void MD::on_angles_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
   AtomDialog dialog(3,_natom,this);
   if (dialog.exec()==QDialog::Accepted)
     {
@@ -219,95 +242,82 @@ void MD::on_angles_clicked()
         {
           data += " "+QString::number(atoms[i]);
         }
-      emit(sendCommand(_plotCommand+" angle"+data));
+      this->plotFunction("angle"+data);
     }
 }
 
 void MD::on_volume_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" V"));
+  this->plotFunction("V");
 }
 
 void MD::on_temperature_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" T"));
+  this->plotFunction("T");
 }
 
 void MD::on_pressure_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" P"));
+  this->plotFunction("P");
 }
 
 void MD::on_entropy_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" entropy"));
+  this->plotFunction("entropy");
 }
 
 void MD::on_energy_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" etotal"));
+  this->plotFunction("etotal");
 }
 
 void MD::on_kinetic_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" ekin"));
+  this->plotFunction("ekin");
 }
 
 void MD::on_stress_clicked()
 {
   StressDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+QString(" stress only=%0").arg(dialog.only())));
+  this->plotFunction(QString("stress only=%0").arg(dialog.only()));
 }
 
 void MD::on_thermo_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" thermo"));
+  this->plotFunction("thermo");
 }
 
 void MD::on_positions_clicked()
 {
   PlanDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" positions "+dialog.plan()+" "+dialog.coordinates()));
+  this->plotFunction("positions "+dialog.plan()+" "+dialog.coordinates());
 }
 
 void MD::on_pdf_clicked()
 {
   PdfDialog dialog(_rmax,_rmax/1000,this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" g(r) "+QString::number(dialog.Rmax())+ " "+ QString::number(dialog.dR())));
+  this->plotFunction("g(r) "+QString::number(dialog.Rmax())+ " "+ QString::number(dialog.dR()));
 }
 
 void MD::on_msd_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" msd"));
+  this->plotFunction("msd");
 }
 
 void MD::on_vacf_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+" vacf"));
+  this->plotFunction("vacf");
 }
 
 void MD::on_pdos_clicked()
 {
   SmearingDialog dialog(this);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot->isHidden()) _plot->show();
   QString data = "tsmear "+QString::number(dialog.smearing());
-  emit(sendCommand(_plotCommand+" pdos "+ data));
+  this->plotFunction("pdos "+ data);
 }
 
 void MD::on_interpolate_clicked()
@@ -320,8 +330,7 @@ void MD::on_strain_clicked()
   StrainDialog dialog(this);
   dialog.setCurrentFolder(_currentFolder);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+QString(" strain reference=%0 time=%1 only=%2").arg(dialog.reference(),dialog.time(),dialog.only())));
+  this->plotFunction(QString("strain reference=%0 time=%1 only=%2").arg(dialog.reference(),dialog.time(),dialog.only()));
 }
 
 void MD::on_polarization_clicked()
@@ -329,12 +338,22 @@ void MD::on_polarization_clicked()
   PolarizationDialog dialog(this);
   dialog.setCurrentFolder(_currentFolder);
   if (dialog.exec()!=QDialog::Accepted) return;
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+QString(" polarization ddb=%0").arg(dialog.ddb())));
+  this->plotFunction(QString(" polarization ddb=%0").arg(dialog.ddb()));
 }
 
 void MD::on_rotations_clicked()
 {
-  if (_plot->isHidden()) _plot->show();
-  emit(sendCommand(_plotCommand+QString(" rotations")));
+  this->plotFunction("rotations");
+}
+
+void MD::on_xy_toggled(bool checked)
+{
+  _xyMode = checked;
+  if ( !checked )
+  {
+    _xyPlot[0].clear();
+    _xyPlot[1].clear();
+  }
+  else
+    emit(statusMessage(tr("Select x function"),-1));
 }

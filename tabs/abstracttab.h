@@ -30,6 +30,7 @@ signals:
   void sendCommand(QString command,bool=true);
   void plotChanged(QPlot* plot);
   void needCommandLine();
+  void statusMessage(QString message,int);
 
 };
 
