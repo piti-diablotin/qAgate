@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "tabs/abstracttab.h"
+#include "dialogs/mbgeneratordialog.h"
 
 namespace Ui {
   class MultibinitTab;
@@ -20,8 +21,6 @@ protected:
   virtual void updateStatus(View* view);
 
   private slots:
-    void on_seedType_currentIndexChanged(int index);
-
     void on_instable_currentIndexChanged(int index);
 
     void on_generate_clicked();
@@ -34,8 +33,11 @@ protected:
 
     void on_pumpButton_clicked();
 
+    void on_generatorSettings_clicked();
+
   private:
     Ui::MultibinitTab *ui;
+    MBGeneratorDialog _mbGenerator;
 };
 
 #endif // MULTIBINIT_H

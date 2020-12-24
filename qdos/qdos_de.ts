@@ -951,6 +951,79 @@
     </message>
 </context>
 <context>
+    <name>MBGeneratorDialog</name>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="14"/>
+        <source>Generator options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="37"/>
+        <source>Random seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="42"/>
+        <source>User defined seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="47"/>
+        <source>Time based seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="52"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="68"/>
+        <source>Seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="80"/>
+        <source>Seed type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="87"/>
+        <source>Random distribution</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="94"/>
+        <source>Statistics distribution</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="102"/>
+        <source>Normal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="107"/>
+        <source>Uniform</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="137"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.cpp" line="59"/>
+        <source>Missing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.cpp" line="59"/>
+        <source>You need to give the seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MD</name>
     <message>
         <location filename="../tabs/md.ui" line="14"/>
@@ -1498,95 +1571,59 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="374"/>
-        <source>Seed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.ui" line="389"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.ui" line="411"/>
-        <source>Random seed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.ui" line="416"/>
-        <source>User defined seed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.ui" line="421"/>
-        <source>Time based seed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.ui" line="426"/>
-        <source>None</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.ui" line="440"/>
+        <location filename="../tabs/multibinittab.ui" line="386"/>
         <source>Pump phonons</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="474"/>
+        <location filename="../tabs/multibinittab.ui" line="420"/>
         <source>Time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="534"/>
+        <location filename="../tabs/multibinittab.ui" line="480"/>
         <source>Pump</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="75"/>
-        <location filename="../tabs/multibinittab.cpp" line="84"/>
-        <location filename="../tabs/multibinittab.cpp" line="95"/>
-        <location filename="../tabs/multibinittab.cpp" line="104"/>
+        <location filename="../tabs/multibinittab.cpp" line="64"/>
+        <location filename="../tabs/multibinittab.cpp" line="73"/>
+        <location filename="../tabs/multibinittab.cpp" line="91"/>
         <source>Missing data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="75"/>
+        <location filename="../tabs/multibinittab.cpp" line="64"/>
         <source>You need to give the size of the supercell as X X X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="84"/>
+        <location filename="../tabs/multibinittab.cpp" line="73"/>
         <source>You need to provide a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="95"/>
-        <source>You need to give the seed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../tabs/multibinittab.cpp" line="104"/>
+        <location filename="../tabs/multibinittab.cpp" line="91"/>
         <source>You need to give the amplitude for instable modes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="136"/>
+        <location filename="../tabs/multibinittab.cpp" line="123"/>
         <source>Open File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="149"/>
+        <location filename="../tabs/multibinittab.cpp" line="136"/>
         <source>Bad file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="149"/>
+        <location filename="../tabs/multibinittab.cpp" line="136"/>
         <source>File is not recognized with a correct format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="156"/>
+        <location filename="../tabs/multibinittab.cpp" line="143"/>
         <source>Save File</source>
         <translation type="unfinished"></translation>
     </message>

@@ -9,16 +9,12 @@
 
 MultibinitTab::MultibinitTab(QWidget *parent) :
   AbstractTab(parent),
-  ui(new Ui::MultibinitTab)
+  ui(new Ui::MultibinitTab),
+  _mbGenerator()
 {
   ui->setupUi(this);
-  ui->seed->setValidator(new QIntValidator(this));
   ui->amplitude->setValidator(new QDoubleValidator(0.1,10,10,this));
   ui->supercell->setValidator(new QRegExpValidator(QRegExp("^(\\d+) (\\d+) (\\d+)$")));
-  ui->seedType->setItemData(0,"random");
-  ui->seedType->setItemData(1,"user");
-  ui->seedType->setItemData(2,"time");
-  ui->seedType->setItemData(3,"none");
   ui->instable->setItemData(0,"ignore");
   ui->instable->setItemData(0,"ignore");
   ui->instable->setItemData(1,"constant");
@@ -50,13 +46,6 @@ void MultibinitTab::updateStatus(View* view)
   */
 }
 
-void MultibinitTab::on_seedType_currentIndexChanged(int index)
-{
-  bool enable = (index==1);
-  ui->seed->setEnabled(enable);
-  ui->seedLabel->setEnabled(enable);
-}
-
 void MultibinitTab::on_instable_currentIndexChanged(int index)
 {
   bool enable = (index==1);
@@ -75,8 +64,8 @@ void MultibinitTab::on_generate_clicked()
       QMessageBox::information(this,tr("Missing data"),tr("You need to give the size of the supercell as X X X"));
       return;
     }
-    command = ":thermalPop temperature=%0 ntime=%1 qpt=%2 seedType=%3 instable=%4";
-    command = command.arg(ui->temperature->value()).arg(ui->quantity->value()).arg(ui->supercell->text(),ui->seedType->currentData().toString(),ui->instable->currentData().toString());
+    command = ":thermalPop ntime=%0 qpt=%1";
+    command = command.arg(ui->quantity->value()).arg(ui->supercell->text());
   }
   else {
     if ( ui->trajHist->text().isEmpty() )
@@ -84,19 +73,17 @@ void MultibinitTab::on_generate_clicked()
       QMessageBox::information(this,tr("Missing data"),tr("You need to provide a file"));
       return;
     }
-    command = ":thermalPop temperature=%0 trajectory=%1 seedType=%2 instable=%3";
+    command = ":thermalPop trajectory=%0";
     auto filename = ui->trajFile->text().replace(" ","\\ ");
-    command = command.arg(ui->temperature->value()).arg(filename).arg(ui->seedType->currentData().toString(),ui->instable->currentData().toString());
+    command = command.arg(filename);
   }
-  if (ui->seedType->currentIndex()==1)
+  command += " temperature=%0 seedType=%1 instable=%2";
+  command = command.arg(ui->temperature->value()).arg(_mbGenerator.seedType(),ui->instable->currentData().toString());
+  if (_mbGenerator.seedType()=="user")
   {
-    if (ui->seed->text().isEmpty())
-    {
-      QMessageBox::information(this,tr("Missing data"),tr("You need to give the seed"));
-      return;
-    }
-    command += QString(" seed=%0").arg(QString::number(ui->seed->text().toInt()));
+    command += QString(" seed=%0").arg(_mbGenerator.seed());
   }
+  command += QString(" distribution=%0 statistics=%1").arg(_mbGenerator.distribution(),_mbGenerator.statistics());
   if (ui->instable->currentIndex()==1)
   {
     if (ui->amplitude->text().isEmpty())
@@ -160,4 +147,10 @@ void MultibinitTab::on_pumpButton_clicked()
     int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
     _currentFolder = fileName.left(pos+1);
   }
+}
+
+void MultibinitTab::on_generatorSettings_clicked()
+{
+  _mbGenerator.show();
+  _mbGenerator.setFocus();
 }

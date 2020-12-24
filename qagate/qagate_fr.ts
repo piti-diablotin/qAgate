@@ -959,6 +959,79 @@
     </message>
 </context>
 <context>
+    <name>MBGeneratorDialog</name>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="14"/>
+        <source>Generator options</source>
+        <translation>Options de génération</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="37"/>
+        <source>Random seed</source>
+        <translation>Graine aléatoire</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="42"/>
+        <source>User defined seed</source>
+        <translation>Graine donnée par l&apos;utilisateur</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="47"/>
+        <source>Time based seed</source>
+        <translation>Graine basée sur l&apos;heure</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="52"/>
+        <source>None</source>
+        <translation>Aucune</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="68"/>
+        <source>Seed</source>
+        <translation>Graine</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="80"/>
+        <source>Seed type</source>
+        <translation>Type de graine</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="87"/>
+        <source>Random distribution</source>
+        <translation>Distribution aléatoire</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="94"/>
+        <source>Statistics distribution</source>
+        <translation>Distribution statistique</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="102"/>
+        <source>Normal</source>
+        <translation>Normale</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="107"/>
+        <source>Uniform</source>
+        <translation>Uniforme</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.ui" line="137"/>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.cpp" line="59"/>
+        <source>Missing data</source>
+        <translation>Données manquantes</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/mbgeneratordialog.cpp" line="59"/>
+        <source>You need to give the seed</source>
+        <translation>Vous devez renseigner la graine</translation>
+    </message>
+</context>
+<context>
     <name>MD</name>
     <message>
         <location filename="../tabs/md.ui" line="14"/>
@@ -1593,95 +1666,87 @@
         <translation>Modes instables</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="374"/>
         <source>Seed</source>
-        <translation>Graine</translation>
+        <translation type="vanished">Graine</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="389"/>
         <source>0</source>
-        <translation>0</translation>
+        <translation type="vanished">0</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="411"/>
         <source>Random seed</source>
-        <translation>Graine aléatoire</translation>
+        <translation type="vanished">Graine aléatoire</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="416"/>
         <source>User defined seed</source>
-        <translation>Graine donnée par l&apos;utilisateur</translation>
+        <translation type="vanished">Graine donnée par l&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="421"/>
         <source>Time based seed</source>
-        <translation>Graine basée sur l&apos;heure</translation>
+        <translation type="vanished">Graine basée sur l&apos;heure</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="426"/>
         <source>None</source>
-        <translation>Aucune</translation>
+        <translation type="vanished">Aucune</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="440"/>
+        <location filename="../tabs/multibinittab.ui" line="386"/>
         <source>Pump phonons</source>
         <translation>Pompage de phonons</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="474"/>
+        <location filename="../tabs/multibinittab.ui" line="420"/>
         <source>Time:</source>
         <translation>Temps:</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.ui" line="534"/>
+        <location filename="../tabs/multibinittab.ui" line="480"/>
         <source>Pump</source>
         <translation>Pomper</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="75"/>
-        <location filename="../tabs/multibinittab.cpp" line="84"/>
-        <location filename="../tabs/multibinittab.cpp" line="95"/>
-        <location filename="../tabs/multibinittab.cpp" line="104"/>
+        <location filename="../tabs/multibinittab.cpp" line="64"/>
+        <location filename="../tabs/multibinittab.cpp" line="73"/>
+        <location filename="../tabs/multibinittab.cpp" line="91"/>
         <source>Missing data</source>
         <translation>Données manquantes</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="75"/>
+        <location filename="../tabs/multibinittab.cpp" line="64"/>
         <source>You need to give the size of the supercell as X X X</source>
         <translation>Vous devez donner la tailler de la supercellule X X X</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="84"/>
+        <location filename="../tabs/multibinittab.cpp" line="73"/>
         <source>You need to provide a file</source>
         <translation>Vous devez fournir un fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="95"/>
         <source>You need to give the seed</source>
-        <translation>Vous devez renseigner la graine</translation>
+        <translation type="vanished">Vous devez renseigner la graine</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="104"/>
+        <location filename="../tabs/multibinittab.cpp" line="91"/>
         <source>You need to give the amplitude for instable modes</source>
         <translation>Vous devez donner l&apos;amplitudes des modes instables</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="136"/>
+        <location filename="../tabs/multibinittab.cpp" line="123"/>
         <source>Open File</source>
         <translation>Ouvrir fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="149"/>
+        <location filename="../tabs/multibinittab.cpp" line="136"/>
         <source>Bad file</source>
         <translation>Mauvais format de fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="149"/>
+        <location filename="../tabs/multibinittab.cpp" line="136"/>
         <source>File is not recognized with a correct format</source>
         <translation>Le format du fichier n&apos;est pas reconnu</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="156"/>
+        <location filename="../tabs/multibinittab.cpp" line="143"/>
         <source>Save File</source>
         <translation>Enregistrer fichier</translation>
     </message>

@@ -51,6 +51,7 @@ DEFINES += DDB_FILES_FILTER="\"\\\"Abinit (*.abo *_DDB *_PHBST.nc);;VASP (OUTCAR
 
 
 SOURCES += \
+    dialogs/mbgeneratordialog.cpp \
     dialogs/stressdialog.cpp \
     dialogs/straindialog.cpp \
     qagate/main_qagate.cpp \
@@ -107,6 +108,7 @@ SOURCES += \
     tabs/multibinittab.cpp
 
 HEADERS += \
+    dialogs/mbgeneratordialog.h \
     dialogs/stressdialog.h \
     dialogs/straindialog.h \
     qagate/qagate.h \
@@ -162,6 +164,7 @@ HEADERS += \
     tabs/multibinittab.h
 
 FORMS += \
+    dialogs/mbgeneratordialog.ui \
     dialogs/stressdialog.ui \
     dialogs/straindialog.ui \
     qagate/qagate.ui \
