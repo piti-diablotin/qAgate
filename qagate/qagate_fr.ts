@@ -756,119 +756,126 @@
         <translation>Ajouter un octahèdre</translation>
     </message>
     <message>
+        <location filename="../tabs/localmode.ui" line="159"/>
         <location filename="../tabs/localmode.ui" line="162"/>
+        <location filename="../tabs/localmode.ui" line="165"/>
+        <source>Plot average rotations</source>
+        <translation>Tracer les rotations moyennes</translation>
+    </message>
+    <message>
+        <location filename="../tabs/localmode.ui" line="185"/>
         <source>Options</source>
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="188"/>
-        <location filename="../tabs/localmode.ui" line="191"/>
-        <location filename="../tabs/localmode.ui" line="194"/>
+        <location filename="../tabs/localmode.ui" line="211"/>
+        <location filename="../tabs/localmode.ui" line="214"/>
+        <location filename="../tabs/localmode.ui" line="217"/>
         <source>Display rotations</source>
         <translation>Montrer les rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="197"/>
+        <location filename="../tabs/localmode.ui" line="220"/>
         <source>&amp;Rotations</source>
         <translation>&amp;Rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="225"/>
-        <location filename="../tabs/localmode.ui" line="228"/>
-        <location filename="../tabs/localmode.ui" line="231"/>
+        <location filename="../tabs/localmode.ui" line="248"/>
+        <location filename="../tabs/localmode.ui" line="251"/>
+        <location filename="../tabs/localmode.ui" line="254"/>
         <source>Use cartesian axis as reference</source>
         <translation>Utiliser les axes cartésien comm référence</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="234"/>
+        <location filename="../tabs/localmode.ui" line="257"/>
         <source>&amp;Cartesian</source>
         <translation>&amp;Cartésien</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="249"/>
+        <location filename="../tabs/localmode.ui" line="272"/>
         <source>Basis:</source>
         <translation>Base:</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="268"/>
-        <location filename="../tabs/localmode.ui" line="271"/>
-        <location filename="../tabs/localmode.ui" line="274"/>
+        <location filename="../tabs/localmode.ui" line="291"/>
+        <location filename="../tabs/localmode.ui" line="294"/>
+        <location filename="../tabs/localmode.ui" line="297"/>
         <source>Display lengths</source>
         <translation>Montrer les distances</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="277"/>
+        <location filename="../tabs/localmode.ui" line="300"/>
         <source>&amp;Lengths</source>
         <translation>&amp;Longueures</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="292"/>
-        <location filename="../tabs/localmode.ui" line="295"/>
-        <location filename="../tabs/localmode.ui" line="298"/>
+        <location filename="../tabs/localmode.ui" line="315"/>
+        <location filename="../tabs/localmode.ui" line="318"/>
+        <location filename="../tabs/localmode.ui" line="321"/>
         <source>Use first step as reference</source>
         <translation>Utiliser le premier pqs comme référence</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="301"/>
+        <location filename="../tabs/localmode.ui" line="324"/>
         <source>Relati&amp;ve</source>
         <translation>Relati&amp;ve</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="316"/>
+        <location filename="../tabs/localmode.ui" line="339"/>
         <source>Display:</source>
         <translation>Affichage:</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="326"/>
+        <location filename="../tabs/localmode.ui" line="349"/>
         <source>Colors</source>
         <translation>Couleurs</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="352"/>
+        <location filename="../tabs/localmode.ui" line="375"/>
         <source>Clockwise rotations</source>
         <translation>Rotations horaires</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="364"/>
+        <location filename="../tabs/localmode.ui" line="387"/>
         <source>Anticlockwise rotations</source>
         <translation>Rotations anti-horaires</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="371"/>
-        <location filename="../tabs/localmode.ui" line="374"/>
-        <location filename="../tabs/localmode.ui" line="377"/>
-        <location filename="../tabs/localmode.ui" line="387"/>
-        <location filename="../tabs/localmode.ui" line="390"/>
-        <location filename="../tabs/localmode.ui" line="393"/>
+        <location filename="../tabs/localmode.ui" line="394"/>
+        <location filename="../tabs/localmode.ui" line="397"/>
+        <location filename="../tabs/localmode.ui" line="400"/>
+        <location filename="../tabs/localmode.ui" line="410"/>
+        <location filename="../tabs/localmode.ui" line="413"/>
+        <location filename="../tabs/localmode.ui" line="416"/>
         <source>Change color</source>
         <translation>Changer de couleur</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="419"/>
+        <location filename="../tabs/localmode.ui" line="442"/>
         <source>Export</source>
         <translation>Export</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="430"/>
-        <location filename="../tabs/localmode.ui" line="433"/>
-        <location filename="../tabs/localmode.ui" line="436"/>
+        <location filename="../tabs/localmode.ui" line="453"/>
+        <location filename="../tabs/localmode.ui" line="456"/>
+        <location filename="../tabs/localmode.ui" line="459"/>
         <source>Export rotations to file</source>
         <translation>Exporter les rotations dans un fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="439"/>
+        <location filename="../tabs/localmode.ui" line="462"/>
         <source>Rotations</source>
         <translation>Rotations</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="455"/>
-        <location filename="../tabs/localmode.ui" line="458"/>
-        <location filename="../tabs/localmode.ui" line="461"/>
+        <location filename="../tabs/localmode.ui" line="478"/>
+        <location filename="../tabs/localmode.ui" line="481"/>
+        <location filename="../tabs/localmode.ui" line="484"/>
         <source>Export lengths to file</source>
         <translation>Exporter les distances dans un fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/localmode.ui" line="464"/>
+        <location filename="../tabs/localmode.ui" line="487"/>
         <source>Lengths</source>
         <translation>Longueures</translation>
     </message>
@@ -900,8 +907,8 @@
     </message>
     <message>
         <location filename="../gui/logger.ui" line="114"/>
-        <location filename="../gui/logger.cpp" line="113"/>
-        <location filename="../gui/logger.cpp" line="129"/>
+        <location filename="../gui/logger.cpp" line="119"/>
+        <location filename="../gui/logger.cpp" line="135"/>
         <source>Console</source>
         <translation>Console</translation>
     </message>
@@ -941,12 +948,12 @@
         <translation>Copier le contenu dans le presse-papier</translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="156"/>
+        <location filename="../gui/logger.cpp" line="162"/>
         <source>Console*</source>
         <translation>Console*</translation>
     </message>
     <message>
-        <location filename="../gui/logger.cpp" line="137"/>
+        <location filename="../gui/logger.cpp" line="143"/>
         <source>Content copied to clipboard</source>
         <translation>Contenu copier dans le presse-papier</translation>
     </message>
@@ -995,192 +1002,242 @@
         <translation>Sélectionner graph</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="148"/>
-        <location filename="../tabs/md.ui" line="151"/>
-        <location filename="../tabs/md.ui" line="154"/>
+        <location filename="../tabs/md.ui" line="153"/>
+        <location filename="../tabs/md.ui" line="156"/>
+        <location filename="../tabs/md.ui" line="159"/>
         <source>Select option</source>
         <translation>Choisir une option</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="158"/>
+        <location filename="../tabs/md.ui" line="163"/>
         <source>Plot</source>
         <translation>Tracer</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="163"/>
+        <location filename="../tabs/md.ui" line="168"/>
         <source>Save</source>
         <translation>Enregistrer</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="168"/>
+        <location filename="../tabs/md.ui" line="173"/>
         <source>Data</source>
         <translation>Données</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="179"/>
+        <location filename="../tabs/md.ui" line="189"/>
+        <source>Hold</source>
+        <translation>Retenir</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="201"/>
         <source>Geometry</source>
         <translation>Géométrie</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="206"/>
-        <location filename="../tabs/md.ui" line="209"/>
-        <location filename="../tabs/md.ui" line="212"/>
+        <location filename="../tabs/md.ui" line="228"/>
+        <location filename="../tabs/md.ui" line="231"/>
+        <location filename="../tabs/md.ui" line="234"/>
         <source>Lattice parameters</source>
         <translation>Paramètres de maille</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="235"/>
-        <location filename="../tabs/md.ui" line="238"/>
-        <location filename="../tabs/md.ui" line="241"/>
+        <location filename="../tabs/md.ui" line="257"/>
+        <location filename="../tabs/md.ui" line="260"/>
+        <location filename="../tabs/md.ui" line="263"/>
         <source>Cell angles</source>
         <translation>Angles de maille</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="264"/>
-        <location filename="../tabs/md.ui" line="267"/>
-        <location filename="../tabs/md.ui" line="270"/>
+        <location filename="../tabs/md.ui" line="286"/>
+        <location filename="../tabs/md.ui" line="289"/>
+        <location filename="../tabs/md.ui" line="292"/>
         <source>Angle between 3 atoms</source>
         <translation>Angle entre 3 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="293"/>
-        <location filename="../tabs/md.ui" line="296"/>
-        <location filename="../tabs/md.ui" line="299"/>
+        <location filename="../tabs/md.ui" line="315"/>
+        <location filename="../tabs/md.ui" line="318"/>
+        <location filename="../tabs/md.ui" line="321"/>
         <source>Distance between 2 atoms</source>
         <translation>Distance entre 2 atomes</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="322"/>
-        <location filename="../tabs/md.ui" line="325"/>
-        <location filename="../tabs/md.ui" line="328"/>
+        <location filename="../tabs/md.ui" line="344"/>
+        <location filename="../tabs/md.ui" line="347"/>
+        <location filename="../tabs/md.ui" line="350"/>
         <source>Volume</source>
         <translation>Volume</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="348"/>
+        <location filename="../tabs/md.ui" line="372"/>
+        <location filename="../tabs/md.ui" line="375"/>
+        <location filename="../tabs/md.ui" line="378"/>
+        <source>Strain</source>
+        <translation>Déformation</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="398"/>
         <source>Thermodynamics</source>
         <translation>Thermodynamique</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="375"/>
-        <location filename="../tabs/md.ui" line="378"/>
-        <location filename="../tabs/md.ui" line="381"/>
+        <location filename="../tabs/md.ui" line="425"/>
+        <location filename="../tabs/md.ui" line="428"/>
+        <location filename="../tabs/md.ui" line="431"/>
         <source>Pressure</source>
         <translation>Pression</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="404"/>
-        <location filename="../tabs/md.ui" line="407"/>
-        <location filename="../tabs/md.ui" line="410"/>
+        <location filename="../tabs/md.ui" line="454"/>
+        <location filename="../tabs/md.ui" line="457"/>
+        <location filename="../tabs/md.ui" line="460"/>
         <source>Kinetic energy</source>
         <translation>Energie cinétique</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="433"/>
-        <location filename="../tabs/md.ui" line="436"/>
-        <location filename="../tabs/md.ui" line="439"/>
+        <location filename="../tabs/md.ui" line="483"/>
+        <location filename="../tabs/md.ui" line="486"/>
+        <location filename="../tabs/md.ui" line="489"/>
         <source>Electronic entropy</source>
         <translation>Entropie électronique</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="462"/>
-        <location filename="../tabs/md.ui" line="465"/>
-        <location filename="../tabs/md.ui" line="468"/>
+        <location filename="../tabs/md.ui" line="512"/>
+        <location filename="../tabs/md.ui" line="515"/>
+        <location filename="../tabs/md.ui" line="518"/>
         <source>Thermodynamical functions</source>
         <translation>Fonctions thermodynamiques</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="491"/>
-        <location filename="../tabs/md.ui" line="494"/>
-        <location filename="../tabs/md.ui" line="497"/>
+        <location filename="../tabs/md.ui" line="541"/>
+        <location filename="../tabs/md.ui" line="544"/>
+        <location filename="../tabs/md.ui" line="547"/>
         <source>Electronic total energy</source>
         <translation>Energie électronique totale</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="520"/>
-        <location filename="../tabs/md.ui" line="523"/>
-        <location filename="../tabs/md.ui" line="526"/>
+        <location filename="../tabs/md.ui" line="570"/>
+        <location filename="../tabs/md.ui" line="573"/>
+        <location filename="../tabs/md.ui" line="576"/>
         <source>Stress tensor</source>
         <translation>Tenseur de contrainte</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="549"/>
-        <location filename="../tabs/md.ui" line="552"/>
-        <location filename="../tabs/md.ui" line="555"/>
+        <location filename="../tabs/md.ui" line="599"/>
+        <location filename="../tabs/md.ui" line="602"/>
+        <location filename="../tabs/md.ui" line="605"/>
         <source>Temperature</source>
         <translation>Température</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="581"/>
+        <location filename="../tabs/md.ui" line="631"/>
         <source>Statistics</source>
         <translation>Statistiques</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="608"/>
-        <location filename="../tabs/md.ui" line="611"/>
-        <location filename="../tabs/md.ui" line="614"/>
+        <location filename="../tabs/md.ui" line="658"/>
+        <location filename="../tabs/md.ui" line="661"/>
+        <location filename="../tabs/md.ui" line="664"/>
         <source>Phonon density of states</source>
         <translation>Densité d&apos;états de phonons</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="637"/>
-        <location filename="../tabs/md.ui" line="640"/>
-        <location filename="../tabs/md.ui" line="643"/>
+        <location filename="../tabs/md.ui" line="687"/>
+        <location filename="../tabs/md.ui" line="690"/>
+        <location filename="../tabs/md.ui" line="693"/>
         <source>Velocity auto-correlation function</source>
         <translation>Autocorrélation des vitesses</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="666"/>
-        <location filename="../tabs/md.ui" line="669"/>
-        <location filename="../tabs/md.ui" line="672"/>
+        <location filename="../tabs/md.ui" line="716"/>
+        <location filename="../tabs/md.ui" line="719"/>
+        <location filename="../tabs/md.ui" line="722"/>
         <source>Mean square displacement</source>
         <translation>Déplacement moyen carré</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="695"/>
-        <location filename="../tabs/md.ui" line="698"/>
-        <location filename="../tabs/md.ui" line="701"/>
+        <location filename="../tabs/md.ui" line="745"/>
+        <location filename="../tabs/md.ui" line="748"/>
+        <location filename="../tabs/md.ui" line="751"/>
         <source>Gyration tensor</source>
         <translation>Tenseur de gyration</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="724"/>
-        <location filename="../tabs/md.ui" line="727"/>
-        <location filename="../tabs/md.ui" line="730"/>
+        <location filename="../tabs/md.ui" line="774"/>
+        <location filename="../tabs/md.ui" line="777"/>
+        <location filename="../tabs/md.ui" line="780"/>
         <source>Pair distribution function</source>
         <translation>Fonction de distribution de paires</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="753"/>
-        <location filename="../tabs/md.ui" line="756"/>
-        <location filename="../tabs/md.ui" line="759"/>
+        <location filename="../tabs/md.ui" line="803"/>
+        <location filename="../tabs/md.ui" line="806"/>
+        <location filename="../tabs/md.ui" line="809"/>
         <source>Positions in a plan</source>
         <translation>Positions dans le plan</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="785"/>
+        <location filename="../tabs/md.ui" line="829"/>
+        <source>Others</source>
+        <translation>Divers</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="853"/>
+        <location filename="../tabs/md.ui" line="856"/>
+        <location filename="../tabs/md.ui" line="859"/>
+        <source>Rotations</source>
+        <translation>Rotations</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="862"/>
+        <source>R</source>
+        <translation>R</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="876"/>
+        <location filename="../tabs/md.ui" line="879"/>
+        <location filename="../tabs/md.ui" line="882"/>
+        <source>Polarization</source>
+        <translation>Polarisation</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="925"/>
         <source>Interpolation</source>
         <translation>Interpolation</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="828"/>
-        <source>Number of points per segments</source>
-        <translation>Nombre de points par segments</translation>
+        <location filename="../tabs/md.ui" line="968"/>
+        <source>Points</source>
+        <translation>Points</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="864"/>
+        <source>Number of points per segments</source>
+        <translation type="vanished">Nombre de points par segments</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.ui" line="1004"/>
         <source>Amplitude</source>
         <translation>Amplitude</translation>
     </message>
     <message>
-        <location filename="../tabs/md.ui" line="914"/>
+        <location filename="../tabs/md.ui" line="1054"/>
         <source>Interpolate</source>
         <translation>Interpoler</translation>
     </message>
     <message>
-        <location filename="../tabs/md.cpp" line="90"/>
+        <location filename="../tabs/md.cpp" line="99"/>
+        <source>Select y function</source>
+        <translation>Sélectionner la fonction y</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.cpp" line="125"/>
         <source>New Graph</source>
         <translation>Nouveau</translation>
+    </message>
+    <message>
+        <location filename="../tabs/md.cpp" line="358"/>
+        <source>Select x function</source>
+        <translation>Sélectionner la fonction x</translation>
     </message>
 </context>
 <context>
@@ -1614,7 +1671,17 @@
         <translation>Ouvrir fichier</translation>
     </message>
     <message>
-        <location filename="../tabs/multibinittab.cpp" line="151"/>
+        <location filename="../tabs/multibinittab.cpp" line="149"/>
+        <source>Bad file</source>
+        <translation>Mauvais format de fichier</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.cpp" line="149"/>
+        <source>File is not recognized with a correct format</source>
+        <translation>Le format du fichier n&apos;est pas reconnu</translation>
+    </message>
+    <message>
+        <location filename="../tabs/multibinittab.cpp" line="156"/>
         <source>Save File</source>
         <translation>Enregistrer fichier</translation>
     </message>
@@ -1943,6 +2010,44 @@
         <location filename="../dialogs/plotwindow.cpp" line="48"/>
         <source>Graph </source>
         <translation>Graph </translation>
+    </message>
+</context>
+<context>
+    <name>PolarizationDialog</name>
+    <message>
+        <location filename="../dialogs/polarizationdialog.ui" line="14"/>
+        <source>Polarization properties</source>
+        <translation>Options pour la polarisation</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/polarizationdialog.ui" line="22"/>
+        <source>DDB</source>
+        <translation>DDB</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/polarizationdialog.ui" line="34"/>
+        <source>DDB file</source>
+        <translation>Fichier DDB</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/polarizationdialog.ui" line="41"/>
+        <source>Browse</source>
+        <translation>Parcourir</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/polarizationdialog.cpp" line="21"/>
+        <source>Open File</source>
+        <translation>Ouvrir fichier</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/polarizationdialog.cpp" line="30"/>
+        <source>Bad file</source>
+        <translation>Mauvais format de fichier</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/polarizationdialog.cpp" line="30"/>
+        <source>File is not recognized with a correct format</source>
+        <translation>Le format du fichier n&apos;est pas reconnu</translation>
     </message>
 </context>
 <context>
@@ -3092,6 +3197,82 @@
     </message>
 </context>
 <context>
+    <name>StrainDialog</name>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="14"/>
+        <source>Strain properties</source>
+        <translation>Options pour la déformation</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="22"/>
+        <source>Reference</source>
+        <translation>Référence</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="29"/>
+        <source>Time</source>
+        <translation>Temps</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="36"/>
+        <source>Only</source>
+        <translation>Seulement</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="48"/>
+        <source>reference structure</source>
+        <translation>structure de référence</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="55"/>
+        <source>Browse</source>
+        <translation>Parcourir</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="67"/>
+        <source>time step in the reference</source>
+        <translation>Pas de temps dans la référence</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.ui" line="75"/>
+        <source>All</source>
+        <translation>Tous</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.cpp" line="23"/>
+        <source>Open File</source>
+        <translation>Ouvrir fichier</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.cpp" line="37"/>
+        <source>Bad file</source>
+        <translation>Mauvais format de fichier</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/straindialog.cpp" line="37"/>
+        <source>File is not recognized with a correct format</source>
+        <translation>Le format du fichier n&apos;est pas reconnu</translation>
+    </message>
+</context>
+<context>
+    <name>StressDialog</name>
+    <message>
+        <location filename="../dialogs/stressdialog.ui" line="14"/>
+        <source>Stress properties</source>
+        <translation>Options pour les contraintes</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/stressdialog.ui" line="22"/>
+        <source>Only</source>
+        <translation>Seulement</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/stressdialog.ui" line="30"/>
+        <source>All</source>
+        <translation>Tous</translation>
+    </message>
+</context>
+<context>
     <name>SupercellDialog</name>
     <message>
         <location filename="../dialogs/supercelldialog.ui" line="20"/>
@@ -3722,18 +3903,18 @@
         <translation>Phonons</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="163"/>
+        <location filename="qagate.cpp" line="164"/>
         <source>Ignoring file </source>
         <translation>Fichier ignoré </translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="164"/>
-        <location filename="qagate.cpp" line="172"/>
+        <location filename="qagate.cpp" line="165"/>
+        <location filename="qagate.cpp" line="173"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="qagate.cpp" line="171"/>
+        <location filename="qagate.cpp" line="172"/>
         <source>Updating canvas failed</source>
         <translation>Echec de l&apos;actualisation du canvas</translation>
     </message>

@@ -378,7 +378,7 @@
          <string>Strain</string>
         </property>
         <property name="text">
-         <string>E</string>
+         <string notr="true">D</string>
         </property>
         <property name="icon">
          <iconset resource="../qagate/qagate.qrc">
