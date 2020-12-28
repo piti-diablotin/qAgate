@@ -42,6 +42,7 @@
     </qresource>
     <qresource prefix="/visuals">
         <file>../icons/eye.svg</file>
+        <file>../icons/eye-off.svg</file>
         <file>../icons/minus-square.svg</file>
         <file>../icons/plus-square.svg</file>
         <file>../icons/camangles.svg</file>

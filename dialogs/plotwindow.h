@@ -47,7 +47,11 @@ private slots:
 
   void rise();
 
-private:
+  void on_actionCloseTab_triggered();
+
+  void on_actionCloseWindow_triggered();
+
+  private:
   Ui::PlotWindow *ui;
 };
 

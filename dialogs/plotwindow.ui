@@ -109,6 +109,29 @@
         </spacer>
        </item>
        <item>
+        <widget class="QToolButton" name="closeButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QToolButton" name="restoreRight">
          <property name="toolTip">
           <string>Restore right view</string>
@@ -287,6 +310,32 @@
    </property>
    <property name="shortcut">
     <string notr="true">Shift+U</string>
+   </property>
+  </action>
+  <action name="actionCloseTab">
+   <property name="text">
+    <string>CloseTab</string>
+   </property>
+   <property name="toolTip">
+    <string>Close tab</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionCloseWindow">
+   <property name="icon">
+    <iconset resource="../qagate/qagate.qrc">
+     <normaloff>:/visuals/icons/eye-off.svg</normaloff>:/visuals/icons/eye-off.svg</iconset>
+   </property>
+   <property name="text">
+    <string>CloseWindow</string>
+   </property>
+   <property name="toolTip">
+    <string>Close window</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
    </property>
   </action>
  </widget>

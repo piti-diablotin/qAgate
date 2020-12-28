@@ -10,6 +10,7 @@ PlotWindow::PlotWindow(QWidget *parent) :
   ui->saveRight->setDefaultAction(ui->actionSaveRight);
   ui->restoreLeft->setDefaultAction(ui->actionRestoreLeft);
   ui->restoreRight->setDefaultAction(ui->actionRestoreRight);
+  ui->closeButton->setDefaultAction(ui->actionCloseWindow);
 }
 
 PlotWindow::~PlotWindow()
@@ -132,4 +133,13 @@ void PlotWindow::on_actionRestoreRight_triggered()
 void PlotWindow::rise()
 {
   if (this->isHidden()) this->show();
+}
+
+void PlotWindow::on_actionCloseTab_triggered()
+{
+}
+
+void PlotWindow::on_actionCloseWindow_triggered()
+{
+  this->hide();
 }
