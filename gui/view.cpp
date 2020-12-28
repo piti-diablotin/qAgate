@@ -31,9 +31,6 @@ View::View(QWidget *parent) :
   this->setCursor(QCursor(Qt::OpenHandCursor));
   //this->makeCurrent();
   _render._doRender = false;
-  _mouseButtonLeft = 0;
-  _mouseButtonRight = 1;
-  _mouseButtonMiddle = 2;
   connect(ui->commandLine,SIGNAL(goBackwards()),this,SLOT(backInHistory()));
   connect(ui->commandLine,SIGNAL(goForwards()),this,SLOT(forwardInHistory()));
 }
@@ -88,14 +85,24 @@ void View::keyPressEvent(QKeyEvent *keyEvent)
 
 bool View::getChar(unsigned key)
 {
-  (void) key;
-  return false;
+  bool pressed = false;
+  if ( key >= _maxKeys ) {
+    return pressed;
+  }
+  pressed = _inputKeys[key];
+  _inputKeys[key] = false;
+  return pressed;
 }
 
 bool View::getCharPress(unsigned key)
 {
-  (void) key;
-  return false;
+  bool pressed = false;
+  if ( key >= _maxKeys ) {
+    return pressed;
+  }
+  pressed = _inputKeys[key];
+  _inputKeys[key] = false;
+  return pressed;
 }
 
 bool View::getMouse(unsigned int key)
@@ -189,17 +196,17 @@ void View::timeOut()
 
 void View::backInHistory()
 {
-  if ( (_commandStackNo-1) < _commandStack.size()) { // _commandStackNo is unsigend so if <0 it is apriori >> _commandStack.size()
-    auto tmp = _commandStack[--_commandStackNo];
-    ui->commandLine->setText(QString::fromStdString(tmp.substr(0,tmp.size()-1)));
+  std::string tmp;
+  if ( Window::previousHistoryEntry(tmp) ) {
+    ui->commandLine->setText(QString::fromStdString(tmp));
   }
 }
 
 void View::forwardInHistory()
 {
-  if ( (_commandStackNo+1) < _commandStack.size() ) {
-    auto tmp = _commandStack[++_commandStackNo];
-    ui->commandLine->setText(QString::fromStdString(tmp.substr(0,tmp.size()-1)));
+  std::string tmp;
+  if ( Window::nextHistoryEntry(tmp) ) {
+    ui->commandLine->setText(QString::fromStdString(tmp));
   }
 }
 
@@ -215,8 +222,11 @@ void View::zoomOut()
 
 void View::processCommand(QString command, bool pop)
 {
-  if ( pop )
+  if ( pop ) {
     while (_inputChar.size() > 0 ) _inputChar.pop();
+    _command.clear();
+    _cursorPos = 0;
+  }
   for ( int i = 0 ; i < command.size() ; ++i )
     _inputChar.push((unsigned int)command[i].toLatin1());
   if (command.startsWith(':')) _inputChar.push((unsigned int)'\n');
@@ -444,7 +454,7 @@ void View::on_commandFocus_clicked()
   ui->commandLine->setReadOnly(false);
   ui->commandLine->setFocus();
   ui->commandLine->setText(":");
-  _commandStackNo = _commandStack.size();
+  _inputChar.push(':');
 }
 
 void View::on_commandLine_returnPressed()
@@ -458,7 +468,9 @@ void View::on_commandLine_returnPressed()
 void View::on_commandLine_cleared()
 {
   ui->commandLine->setReadOnly(true);
-  ui->commandLine->setText(QString::fromStdString(_command));
+  ui->commandLine->setText(QString::fromStdString(_canvas->info()));
+  _inputKeys[_keyEscape] = true;
+  this->userInput();
 }
 
 void View::stop() { _timer->stop(); while ( !_inputChar.empty() ) _inputChar.pop();}
