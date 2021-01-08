@@ -1,3 +1,10 @@
+qagate (1.2.0-1) focal; urgency=medium
+
+  * Update for new libagate-1.2.0 API
+  * Add new buttons for plots
+
+ -- Jordan Bieder <jordan.bieder@uliege.be>  Thu, 12 Nov 2020 15:34:16 +0100
+
 qagate (1.1.1-1) focal; urgency=medium
 
   * Change dependcy to libagate-dev 
