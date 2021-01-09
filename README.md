@@ -52,17 +52,29 @@ First you need to install some dependancies (works for all maintained Ubuntu ver
   Download the `.dmg` file, open it and *drag-and-drop* the app in you `Applications` folder or in your dock.
 
 ### Homebrew
-  If you have installed `agate` with Homebrew following the [HowTo](https://github.com/piti-diablotin/agate/blob/master/README.md) you can then just install `qAgate with brew like
+
+#### By Cask
+
+Simply install the available cask with
+```
+brew install --cask qagate
+```
+`qAgate` will be available in your application launcher.
+
+#### By Formulae
+
+  You can just install `qAgate` with brew with
   ```
   brew install qagate
   ```
   The `.app` will be place in `/usr/local/Cellar/qagate/X.X.X/bin`
-  You can then make a symlink to `/Applications/.
+  You can then make a symlink to `/Applications/` if you want.
 
   For instance for version 1.1.1 `ln -s /usr/local/Cellar/qagate/1.1.1/bin/qAgate.app /Applications/`.
-  The app will then appear in the launchpad.
+  The app will then appear in the launcher.
 
 ### From sources
+
   `qAgate` can be compiled with homebrew. Here is an example supposing `agate` has been compiled and installed in `/usr/local` following this [HowTo](https://github.com/piti-diablotin/agate/blob/master/README.md)
   ```
   brew install freetype git libssh qt
