@@ -267,6 +267,7 @@ DISTFILES += \
     icons/energy.svg \
     icons/entropy.svg \
     icons/eye.svg \
+    icons/eye-off.svg \
     icons/fast-forward.svg \
     icons/file-plus.svg \
     icons/file.svg \
