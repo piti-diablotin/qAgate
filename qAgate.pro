@@ -217,18 +217,6 @@ RESOURCES += \
     qdos/qdos.qrc
 
 TRANSLATIONS += \
-    qtdep/qtdep_fr.ts \
-    qtdep/qtdep_it.ts \
-    qtdep/qtdep_de.ts \
-    qdos/qdos_fr.ts \
-    qdos/qdos_it.ts \
-    qdos/qdos_de.ts \
-    qdispersion/qdispersion_fr.ts \
-    qdispersion/qdispersion_it.ts \
-    qdispersion/qdispersion_de.ts \
-    qconducti/qconducti_fr.ts \
-    qconducti/qconducti_it.ts \
-    qconducti/qconducti_de.ts \
     qagate/qagate_fr.ts \
     qagate/qagate_it.ts \
     qagate/qagate_de.ts
@@ -302,6 +290,7 @@ DISTFILES += \
     icons/plus-circle.svg \
     icons/plus-square.svg \
     icons/plus.svg \
+    icons/polarization.svg \
     icons/positions.svg \
     icons/pressure.svg \
     icons/projection.svg \
@@ -311,6 +300,7 @@ DISTFILES += \
     icons/repeat.svg \
     icons/rewind.svg \
     icons/rotate-cw.svg \
+    icons/rotations.svg \
     icons/rule.svg \
     icons/save-abinit.svg \
     icons/save-poscar.svg \
@@ -336,6 +326,7 @@ DISTFILES += \
     icons/video-off.svg \
     icons/video.svg \
     icons/volume.svg \
+    icons/xy.svg \
     icons/zoom-1.svg \
     icons/zoom-in.svg \
     icons/zoom-out.svg \
@@ -345,7 +336,23 @@ DISTFILES += \
     qtdep/qtdep.svg \
     qagate/qagate.svg \
     qagate/qagate.icns \
-    qagate/qagate.desktop
+    qagate/qagate.desktop \
+    qagate/qagate_fr.qm \
+    qagate/qagate_it.qm \
+    qagate/qagate_de.qm \
+    qconducti/qconducti_de.qm \
+    qconducti/qconducti_fr.qm \
+    qconducti/qconducti_it.qm \
+    qdispersion/qdispersion_de.qm \
+    qdispersion/qdispersion_fr.qm \
+    qdispersion/qdispersion_it.qm \
+    qdos/qdos_de.qm \
+    qdos/qdos_fr.qm \
+    qdos/qdos_it.qm \
+    qtdep/qtdep_de.qm \
+    qtdep/qtdep_fr.qm \
+    qtdep/qtdep_it.qm
+
 
 logo.files = qagate/qagate.svg
 logo.path = $$PREFIX/share/qAgate/images/
