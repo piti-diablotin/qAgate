@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui opengl
+QT       += core gui opengl network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
@@ -105,7 +105,8 @@ SOURCES += \
     qdos/qdos.cpp \
     tools/coloritemdelegate.cpp \
     dialogs/about.cpp \
-    tabs/multibinittab.cpp
+    tabs/multibinittab.cpp \
+    tools/versionchecker.cpp \
 
 HEADERS += \
     dialogs/mbgeneratordialog.h \
@@ -161,7 +162,8 @@ HEADERS += \
     qdos/qdos.h \
     tools/coloritemdelegate.h \
     dialogs/about.h \
-    tabs/multibinittab.h
+    tabs/multibinittab.h \
+    tools/versionchecker.h \
 
 FORMS += \
     dialogs/mbgeneratordialog.ui \

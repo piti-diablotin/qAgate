@@ -7,6 +7,7 @@
 #include "base/exception.hpp"
 #include "base/utils.hpp"
 #include <QApplication>
+#include <QCoreApplication>
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
 #include <QSurfaceFormat>
 #else
@@ -17,6 +18,8 @@
 #include "io/parser.hpp"
 #include <csignal>
 #include "window/window.hpp"
+
+#include "tools/versionchecker.h"
 
 /**
  * Simple function to display the name and version of the package and what window manager we use.
@@ -32,6 +35,10 @@ void handle_signal (int para);
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
+  QCoreApplication::setApplicationName("qAgate");
+  QCoreApplication::setOrganizationName("qAgate");
+  QCoreApplication::setOrganizationDomain("qAgate");
+  QCoreApplication::setApplicationVersion(QAGATE_VERSION);
 
   Parser parser(argc,argv);
   parser.setOption("config",'c',"","Configuration file to configure the animation.");
@@ -91,6 +98,9 @@ int main(int argc, char *argv[])
       }
 
     w.initInput(argc-1,(const char**) argv+1);
+  VersionChecker checker;
+  checker.checkAgate();
+  checker.checkqAgate();
     w.show();
     rvalue = a.exec();
   }
@@ -166,4 +176,5 @@ void Version()
 {
   utils::Version();
   std::cout << "Using Qt version " << qVersion() << std::endl;
+  std::cout << "qAgate version " << QAGATE_VERSION << std::endl;
 }
