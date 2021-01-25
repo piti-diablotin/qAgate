@@ -44,6 +44,8 @@ First you need to install some dependancies (works for all maintained Ubuntu ver
   ```
   That's it.
   You can now run it with `qAgate`
+  
+  The `qmake` step can be replaced by `qmake "PREFIX_AGATE=/usr/local"` if `agate` is installed in `/usr/local/`.
 
 ## MacOS
 
@@ -80,11 +82,11 @@ brew install --cask qagate
   brew install freetype git libssh qt
   git clone https://github.com/piti-diablotin/qAgate.git
   cd qAagate
-  qmake "PREFIX=/usr/local" "PREFIX_AGATE=/usr/local" "PREFIX_FREETYPE=/usr/local" "PREFIX_SSH=/usr/local"
+  qmake
   make
   sudo make install
   ```
 
-  *Tips*: If agate, libssg or freetype are installed in a custom repository you can specify this directory with the environement variable
+  *Tips*: If agate, libssh or freetype are installed in a custom repository you can specify this directory with the environement variable
   `PREFIX_AGATE PREFIX_SSH PREFIX_FREETYPE`.
   You can set the installation prefix with the variable `PREFIX`
