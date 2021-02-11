@@ -1,3 +1,14 @@
+qagate (1.2.1-1) focal; urgency=medium
+
+  * Update README.md
+  * Add cask description
+  * Add missing file
+  * Fix dist package
+  * Add version checker at opening.
+  * Update README.md
+
+ -- Jordan Bieder <jordan.bieder@uliege.be>  Thu, 12 Nov 2020 15:34:16 +0100
+
 qagate (1.2.0-1) focal; urgency=medium
 
   * Update for new libagate-1.2.0 API
