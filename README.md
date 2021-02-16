@@ -28,7 +28,7 @@ Simply execute `qAgate` in a terminal.
 ## From sources
 First you need to install some dependancies (works for all maintained Ubuntu versions)
   ```
-  sudo apt install libfreetype6-dev libboost-dev qtbase5-dev qt5-qmake qt5-default libqt5opengl5-dev libssh-dev git
+  sudo apt install libfreetype6-dev libboost-dev qtbase5-dev qt5-qmake libqt5opengl5-dev libssh-dev git
   ```
   Note that you can install libagate-dev with its dependencies.
   ```
