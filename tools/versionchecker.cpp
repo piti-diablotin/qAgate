@@ -33,8 +33,6 @@ void VersionChecker::checkqAgate() {
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
   _request.setAttribute(QNetworkRequest::RedirectPolicyAttribute,
                         QNetworkRequest::ManualRedirectPolicy);
-#else
-  _request.setMaximumRedirectsAllowed(0);
 #endif
   QObject::connect(
       &_manager, &QNetworkAccessManager::finished,
