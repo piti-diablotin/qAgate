@@ -1,3 +1,7 @@
+qagate (1.2.1-2) focal; urgency=medium
+
+  * Rebuilt to update API
+
 qagate (1.2.1-1) focal; urgency=medium
 
   * Update README.md
