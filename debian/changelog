@@ -1,3 +1,7 @@
+qagate (1.2.2-1) focal; urgency=medium
+
+  * Include bugfix of libagate
+
 qagate (1.2.1-2) focal; urgency=medium
 
   * Rebuilt to update API
