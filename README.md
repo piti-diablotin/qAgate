@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/piti-diablotin/qAgate.svg?branch=master)](https://travis-ci.com/piti-diablotin/qAgate)
 [![Downloads](https://img.shields.io/github/downloads/piti-diablotin/qAgate/latest/total.svg)](https://github.com/piti-diablotin/qAgate/releases/latest)
+[![DOI](https://zenodo.org/badge/103832429.svg)](https://zenodo.org/badge/latestdoi/103832429)
+
 
 # qAgate
 qAgate is the new Qt interface for [agate](https://github.com/piti-diablotin/agate).
