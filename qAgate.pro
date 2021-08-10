@@ -9,7 +9,7 @@ QT       += core gui opengl network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = qAgate
-VERSION = 1.2.2
+VERSION = 1.2.3
 TEMPLATE = app
 CONFIG += c++11
 isEmpty(PREFIX) {
