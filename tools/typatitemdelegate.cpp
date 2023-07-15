@@ -45,5 +45,9 @@ void TypatItemDelegate::setModelData(QWidget *editor, QAbstractItemModel *model,
 
 void TypatItemDelegate::setTypat(const std::vector<int> znucl)
 {
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+  _znucl = QVector<int>(znucl.begin(),znucl.end());
+#else
   _znucl = QVector<int>::fromStdVector(znucl);
+#endif
 }

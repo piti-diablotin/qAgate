@@ -53,7 +53,11 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
       }
       ++label;
     }
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+    graph->setData(QVector<double>(x.begin(),x.end()),QVector<double>(*yp->begin(),*yp->end()));
+#else
     graph->setData(QVector<double>::fromStdVector(x),QVector<double>::fromStdVector(*yp));
+#endif
     ++yp;
   }
   this->rescaleAxes(true);
@@ -133,7 +137,11 @@ void QPlot::plot(const std::list< std::pair< std::vector<double>,std::vector<dou
       }
       ++label;
     }
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+    newCurve->setData(QVector<double>(xyp->first.begin(),xyp->first.end()),QVector<double>(xyp->second.begin(),xyp->second.end()));
+#else
     newCurve->setData(QVector<double>::fromStdVector(xyp->first),QVector<double>::fromStdVector(xyp->second));
+#endif
     ++xyp;
   }
   this->rescaleAxes(true);

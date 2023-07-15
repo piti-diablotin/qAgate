@@ -55,8 +55,8 @@ void View::initializeGL()
 
 void View::resizeGL(int width, int height)
 {
-  _width = width;
-  _height = height;
+  _width = width * devicePixelRatio();
+  _height = height * devicePixelRatio();
   emit(newSize(_width,_height));
 }
 
@@ -278,7 +278,11 @@ void View::mouseReleaseEvent( QMouseEvent *mouseEvent ) {
 
 void View::wheelEvent(QWheelEvent *mouseEvent)
 {
-  _wheelDelta = (double)mouseEvent->delta()/120.;
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 9, 0))
+  _wheelDelta = (double)mouseEvent->angleDelta().y()/120;
+#else
+  _wheelDelta = (double)mouseEvent->delta()/120;
+#endif
 }
 
 void View::dragEnterEvent( QDragEnterEvent *dragEnterEvent ) {

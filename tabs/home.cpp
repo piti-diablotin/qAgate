@@ -105,7 +105,12 @@ void Home::updateStatus(View *view)
 
   if (something)
   {
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+    auto& znucl = view->getCanvas()->histdata()->znucl();
+    _znucl = QVector<int>(znucl.begin(),znucl.end());
+#else
     _znucl = QVector<int>::fromStdVector(view->getCanvas()->histdata()->znucl());
+#endif
   }
 }
 
