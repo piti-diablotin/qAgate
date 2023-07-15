@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include <QIntValidator>
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 #include "base/ssh.hpp"
 #include "tools/qostreamcatcher.h"
 
@@ -38,7 +38,7 @@ private slots:
 private:
   Ui::RemoteDialog *ui;
   QIntValidator _intValidator;
-  QRegExpValidator _textValidator;
+  QRegularExpressionValidator _textValidator;
   QOstreamCatcher _stream;
   std::string _filename;
 

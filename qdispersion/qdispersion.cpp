@@ -9,9 +9,9 @@
 QDispersion::QDispersion(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::QDispersion), _magneticMomentum(),
       _intValidator(1, 10000, this),
-      //_atomValidator(QRegExp("^((((\\d+)-(\\*|(\\d+ )))|((\\d+)(
+      //_atomValidator(QRegularExpression("^((((\\d+)-(\\*|(\\d+ )))|((\\d+)(
       //\\d+)+))+)$"),this),
-      _atomValidator(QRegExp("^((\\d+)( \\d+)+)$"), this), _eigparser(nullptr),
+      _atomValidator(QRegularExpression("^((\\d+)( \\d+)+)$"), this), _eigparser(nullptr),
       _currentDirectory() {
   ui->setupUi(this);
   ui->ndiv1->setValidator(&_intValidator);
@@ -118,7 +118,7 @@ void QDispersion::openFile(const QString &filename) {
       ui->fatbands->setEnabled(false);
       ui->fatbands->setChecked(false);
     }
-    pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+    pos = filename.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentDirectory = filename.left(pos + 1);
     QDispersion::plot();
   } catch (Exception &e) {
@@ -353,7 +353,7 @@ void QDispersion::on_buttonBox_clicked(QAbstractButton *button) {
     if (!filename.endsWith(".pdf"))
       filename += ".pdf";
     ui->plot->savePdf(filename, 0, 0, QCP::epNoCosmetic);
-    int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = filename.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentDirectory = filename.left(pos + 1);
   } else if (b == QDialogButtonBox::Open) {
     QString filename =

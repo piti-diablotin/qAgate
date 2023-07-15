@@ -308,7 +308,7 @@ QString QPlot::translateToUnicode(const QString &input) {
 
   QString output = input;
   for ( auto& word : translator ) {
-    output.replace(QRegExp("\\b"+word.first+"\\b"),word.second);
+    output.replace(QRegularExpression("\\b"+word.first+"\\b"),word.second);
   }
   return output;
 }

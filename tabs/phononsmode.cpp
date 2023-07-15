@@ -310,7 +310,7 @@ void PhononsMode::on_ddb_clicked()
   if ( !fileName.isEmpty() )
   {
     emit(sendCommand(":dumpDDB "+fileName));
-    int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentFolder = fileName.left(pos+1);
   }
 }
@@ -328,7 +328,7 @@ void PhononsMode::on_dynamt_clicked()
   //{
   emit(sendCommand(":qpt "+qpt,false));
   emit(sendCommand(":dynmat "/*+fileName*/,false));
-  //  int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+  //  int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
   //  _currentFolder = fileName.left(pos+1);
   //}
 }
@@ -343,7 +343,7 @@ void PhononsMode::on_open_clicked()
     if (file1.isEmpty())
       return;
     emit(sendCommand(":open "+file2.replace(" ","\\ ")));
-    int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = file1.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentFolder = file1.left(pos+1);
 
     for ( auto file = fileNames.begin()+1 ; file != fileNames.end() ; ++file )
@@ -371,7 +371,7 @@ void PhononsMode::on_append_clicked()
         auto file2 = *file;
         emit(sendCommand(":append "+file2.replace(" ","\\ "),pop));
         pop = false;
-        int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
+        int pos = file->lastIndexOf(QRegularExpression("[/\\\\]"));
         _currentFolder = file->left(pos+1);
       }
     }
@@ -402,7 +402,7 @@ void PhononsMode::on_qpt_clicked()
   auto fileName = QFileDialog::getOpenFileName(this,"Open File",_currentFolder,INPUT_FILES_FILTER,nullptr,QFileDialog::DontUseNativeDialog);
   if ( !fileName.isEmpty() )
   {
-    int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentFolder = fileName.left(pos+1);
     QPlot* plot;
     _plot->getPlot(PlotWindow::Left,-1,&plot);

@@ -16,7 +16,7 @@ View::View(QWidget *parent) :
   _timer(new QTimer(this)),
   _inputKeys({false}),
   _wheelDelta(0),
-  _cmdValidator(QRegExp("^:.*$"),this),
+  _cmdValidator(QRegularExpression("^:.*$"),this),
   _fromCommandLine(false)
 {
   ui->setupUi(this);

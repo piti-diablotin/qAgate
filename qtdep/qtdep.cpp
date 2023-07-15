@@ -39,7 +39,7 @@ void qTdep::openFile(const QString &filename) {
         tr("You need to select Supercell or Unit cell to open a file"),
         QMessageBox::Ok);
   }
-  int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+  int pos = filename.lastIndexOf(QRegularExpression("[/\\\\]"));
   _currentDirectory = filename.left(pos + 1);
 }
 
@@ -112,7 +112,7 @@ void qTdep::on_buttonBox_clicked(QAbstractButton *button) {
     if (!filename.endsWith(".pdf"))
       filename += ".pdf";
     ui->plot->savePdf(filename, 0, 0, QCP::epNoCosmetic);
-    int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = filename.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentDirectory = filename.left(pos + 1);
   } else if (b == QDialogButtonBox::Open) {
     QWidget *widget = ui->toolBox->currentWidget();

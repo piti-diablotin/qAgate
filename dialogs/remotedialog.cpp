@@ -15,7 +15,7 @@ RemoteDialog::RemoteDialog(QWidget *parent) :
   QDialog(parent),
   ui(new Ui::RemoteDialog),
   _intValidator(1,65535,this),
-  _textValidator(QRegExp("[a-z0-9.-]+"),this),
+  _textValidator(QRegularExpression("[a-z0-9.-]+"),this),
   _stream(this),
   _filename()
 {

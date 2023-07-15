@@ -1,7 +1,7 @@
 #include "qtdepoptions.h"
 #include "ui_qtdepoptions.h"
 #include <QDoubleValidator>
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 
 qTdepOptions::qTdepOptions(QWidget *parent) :
   QWidget(parent),
@@ -12,7 +12,7 @@ qTdepOptions::qTdepOptions(QWidget *parent) :
   ui->rcut2->setValidator(dv);
   ui->rcut3->setValidator(dv);
   ui->dosdeltae->setValidator(dv);
-  QRegExpValidator *rev = new QRegExpValidator(QRegExp("^\\d+ \\d+ \\d+$"),this);
+  QRegularExpressionValidator *rev = new QRegularExpressionValidator(QRegularExpression("^\\d+ \\d+ \\d+$"),this);
   ui->ngqpt2->setValidator(rev);
   ui->energyUnit->setCurrentIndex(4);
 }

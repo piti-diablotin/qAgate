@@ -7,6 +7,7 @@
 QT       += core gui opengl network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+greaterThan(QT_MAJOR_VERSION, 5): QT += openglwidgets
 
 TARGET = qAgate
 VERSION = 1.2.3
