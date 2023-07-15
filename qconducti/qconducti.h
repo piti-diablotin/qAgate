@@ -41,11 +41,11 @@ private slots:
 
   void on_buttonBox_clicked(QAbstractButton *button);
 
-  void on_energyCombo_currentIndexChanged(const QString &arg1);
+  void on_energyCombo_currentTextChanged(const QString &arg1);
 
-  void on_rangeUnit_currentIndexChanged(const QString &arg1);
+  void on_rangeUnit_currentTextChanged(const QString &arg1);
 
-  void on_smearingUnit_currentIndexChanged(const QString &arg1);
+  void on_smearingUnit_currentTextChanged(const QString &arg1);
 
   void on_omin_editingFinished();
 
@@ -55,7 +55,7 @@ private slots:
 
   void on_energyButton_clicked();
 
-  void on_conductiCombo_currentIndexChanged(const QString &arg1);
+  void on_conductiCombo_currentTextChanged(const QString &arg1);
 
   void on_selectionBox_toggled(bool checked);
 
@@ -71,7 +71,7 @@ private slots:
 
   void on_btmax_editingFinished();
 
-  void on_unit_currentIndexChanged(const QString &arg1);
+  void on_unit_currentTextChanged(const QString &arg1);
 
   void on_efmin_editingFinished();
 

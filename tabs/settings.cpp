@@ -105,27 +105,39 @@ void Settings::on_ndiv_valueChanged(int arg1)
   if (!_autoUpdate) emit(sendCommand(":div "+QString::number(arg1)));
 }
 
-void Settings::on_format_currentIndexChanged(const QString &arg1)
+void Settings::on_format_currentTextChanged(const QString &arg1)
 {
   if (!_autoUpdate) emit(sendCommand(":image_format "+arg1));
 }
 
-void Settings::on_suffix_currentIndexChanged(const QString &arg1)
+void Settings::on_suffix_currentTextChanged(const QString &arg1)
 {
   if (!_autoUpdate) emit(sendCommand(":image_suffix "+arg1));
 }
 
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
 void Settings::on_quality_valueChanged(const QString &arg1)
+#else
+void Settings::on_quality_textChanged(const QString &arg1)
+#endif
 {
   if (!_autoUpdate) emit(sendCommand(":image_quality "+arg1));
 }
 
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
 void Settings::on_size_valueChanged(const QString &arg1)
+#else
+void Settings::on_size_textChanged(const QString &arg1)
+#endif
 {
    if (!_autoUpdate) emit(sendCommand(":fontsize "+arg1));
 }
 
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
 void Settings::on_ndiv_valueChanged(const QString &arg1)
+#else
+void Settings::on_ndiv_textChanged(const QString &arg1)
+#endif
 {
    if (!_autoUpdate) emit(sendCommand(":division "+arg1));
 }

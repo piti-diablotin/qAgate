@@ -214,7 +214,7 @@ void QConducti::updateInfo()
                      +"]");
 }
 
-void QConducti::on_energyCombo_currentIndexChanged(const QString &arg1)
+void QConducti::on_energyCombo_currentTextChanged(const QString &arg1)
 {
   auto newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::Ha);
@@ -235,7 +235,7 @@ void QConducti::on_energyCombo_currentIndexChanged(const QString &arg1)
   Graph::plot(_config[5],ui->histogram);
 }
 
-void QConducti::on_rangeUnit_currentIndexChanged(const QString &arg1)
+void QConducti::on_rangeUnit_currentTextChanged(const QString &arg1)
 {
   auto newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::Ha);
@@ -253,7 +253,7 @@ void QConducti::on_rangeUnit_currentIndexChanged(const QString &arg1)
   _units[omegaUnit] = newUnit;
 }
 
-void QConducti::on_smearingUnit_currentIndexChanged(const QString &arg1)
+void QConducti::on_smearingUnit_currentTextChanged(const QString &arg1)
 {
   auto newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::Ha);
@@ -394,7 +394,7 @@ void QConducti::computeAll()
   }
 }
 
-void QConducti::on_conductiCombo_currentIndexChanged(const QString &arg1)
+void QConducti::on_conductiCombo_currentTextChanged(const QString &arg1)
 {
   auto newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::au);
@@ -489,7 +489,7 @@ void QConducti::setEnergyRange(bool setValue) {
     }
 }
 
-void QConducti::on_unit_currentIndexChanged(const QString &arg1)
+void QConducti::on_unit_currentTextChanged(const QString &arg1)
 {
   auto newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::Ha);

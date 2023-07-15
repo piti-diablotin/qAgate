@@ -42,11 +42,17 @@ private slots:
   void on_actionFilling_triggered();
   void on_actionAA_triggered();
   void on_ndiv_valueChanged(int arg1);
-  void on_format_currentIndexChanged(const QString &arg1);
-  void on_suffix_currentIndexChanged(const QString &arg1);
+  void on_format_currentTextChanged(const QString &arg1);
+  void on_suffix_currentTextChanged(const QString &arg1);
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
   void on_quality_valueChanged(const QString &arg1);
   void on_size_valueChanged(const QString &arg1);
   void on_ndiv_valueChanged(const QString &arg1);
+#else
+  void on_quality_textChanged(const QString &arg1);
+  void on_size_textChanged(const QString &arg1);
+  void on_ndiv_textChanged(const QString &arg1);
+#endif
   void on_background_clicked();
   void on_foreground_clicked();
   //void on_width_valueChanged(const QString &arg1);

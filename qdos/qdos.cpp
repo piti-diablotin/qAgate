@@ -46,7 +46,7 @@ QDos::~QDos()
   delete ui;
 }
 
-void QDos::on_unit_currentIndexChanged(const QString &arg1)
+void QDos::on_unit_currentTextChanged(const QString &arg1)
 {
   ui->unitDisplay->setText(arg1);
   UnitConverter newUnit = ui->unit->currentUnit();

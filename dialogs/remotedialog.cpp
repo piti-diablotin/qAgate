@@ -32,7 +32,7 @@ RemoteDialog::RemoteDialog(QWidget *parent) :
   connect(ui->password,SIGNAL(textChanged(QString)),this,SLOT(need_to_retest(QString)));
   connect(ui->port,SIGNAL(textChanged(QString)),this,SLOT(need_to_retest(QString)));
   connect(ui->remote,SIGNAL(textChanged(QString)),this,SLOT(need_to_retest(QString)));
-  connect(ui->protocol,SIGNAL(currentIndexChanged(QString)),this,SLOT(need_to_retest(QString)));
+  connect(ui->protocol,SIGNAL(currentTextChanged(QString)),this,SLOT(need_to_retest(QString)));
 }
 
 RemoteDialog::~RemoteDialog()

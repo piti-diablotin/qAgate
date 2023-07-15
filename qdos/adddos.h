@@ -26,7 +26,7 @@ public:
 private slots:
   void on_atom_currentIndexChanged(int index);
 
-  void on_projection_currentIndexChanged(const QString &arg1);
+  void on_projection_currentTextChanged(const QString &arg1);
 
   void on_color_clicked();
 
