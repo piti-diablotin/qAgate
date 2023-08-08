@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 greaterThan(QT_MAJOR_VERSION, 5): QT += openglwidgets
 
 TARGET = qAgate
-VERSION = 1.2.3
+VERSION = 1.3.0
 TEMPLATE = app
 CONFIG += c++11
 isEmpty(PREFIX) {
