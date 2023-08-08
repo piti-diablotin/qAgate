@@ -2,7 +2,7 @@
 #include "ui_multibinittab.h"
 #include <QIntValidator>
 #include <QDoubleValidator>
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 #include "hist/histcustommodes.hpp"
 #include "canvas/canvasphonons.hpp"
 #include <QMessageBox>
@@ -14,7 +14,7 @@ MultibinitTab::MultibinitTab(QWidget *parent) :
 {
   ui->setupUi(this);
   ui->amplitude->setValidator(new QDoubleValidator(0.1,10,10,this));
-  ui->supercell->setValidator(new QRegExpValidator(QRegExp("^(\\d+) (\\d+) (\\d+)$")));
+  ui->supercell->setValidator(new QRegularExpressionValidator(QRegularExpression("^(\\d+) (\\d+) (\\d+)$")));
   ui->instable->setItemData(0,"ignore");
   ui->instable->setItemData(0,"ignore");
   ui->instable->setItemData(1,"constant");
@@ -124,7 +124,7 @@ void MultibinitTab::on_browse_clicked()
   if ( !fileName.isEmpty() )
   {
     try {
-      int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+      int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
       _currentFolder = fileName.left(pos+1);
       HistData* tmp = HistData::getHist(fileName.toStdString());
       ui->trajFile->setText(fileName);
@@ -144,7 +144,7 @@ void MultibinitTab::on_pumpButton_clicked()
   if (!fileName.isEmpty())
   {
     emit(sendCommand(QString(":pump structure=%0 time=%1 output=%2").arg(ui->trajFile->text(),QString::number(ui->time->value()), fileName.replace(" ","\\ "))));
-    int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentFolder = fileName.left(pos+1);
   }
 }

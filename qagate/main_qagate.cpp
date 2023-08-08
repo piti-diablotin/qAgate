@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
   Exception::setVerbosity(5);
   QString locale = QLocale::system().name().section('_', 0, 0);
   QTranslator translator;
-  translator.load(QString(":/translations/qagate_")+ locale);
+  [[maybe_unused]] auto transLoaded = translator.load(QString(":/translations/qagate_")+ locale);
   a.installTranslator(&translator);
   // Need to correctly read DDB files and probably numbers elsewhere
   setlocale(LC_NUMERIC,"C");

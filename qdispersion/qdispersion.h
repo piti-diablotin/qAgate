@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QIntValidator>
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 #include "io/eigparser.hpp"
 #include <memory>
 #include <QDragEnterEvent>
@@ -61,7 +61,7 @@ private slots:
   Ui::QDispersion *ui;
   QList<QLayoutItem*> _magneticMomentum;
   QIntValidator _intValidator;
-  QRegExpValidator _atomValidator;
+  QRegularExpressionValidator _atomValidator;
   std::unique_ptr<EigParser> _eigparser;
   QString _currentDirectory;
 

@@ -1,6 +1,7 @@
 #include "analyzedialog.h"
 #include "ui_analyzedialog.h"
 #include <QFileDialog>
+#include <QRegularExpression>
 
 AnalyzeDialog::AnalyzeDialog(QWidget *parent) :
   QDialog(parent),
@@ -46,7 +47,7 @@ void AnalyzeDialog::on_browse_clicked()
   if ( !fileName.isEmpty() )
   {
     ui->file->setText(fileName);
-    int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentFolder = fileName.left(pos+1);
   }
 }

@@ -15,7 +15,7 @@ RemoteDialog::RemoteDialog(QWidget *parent) :
   QDialog(parent),
   ui(new Ui::RemoteDialog),
   _intValidator(1,65535,this),
-  _textValidator(QRegExp("[a-z0-9.-]+"),this),
+  _textValidator(QRegularExpression("[a-z0-9.-]+"),this),
   _stream(this),
   _filename()
 {
@@ -32,7 +32,7 @@ RemoteDialog::RemoteDialog(QWidget *parent) :
   connect(ui->password,SIGNAL(textChanged(QString)),this,SLOT(need_to_retest(QString)));
   connect(ui->port,SIGNAL(textChanged(QString)),this,SLOT(need_to_retest(QString)));
   connect(ui->remote,SIGNAL(textChanged(QString)),this,SLOT(need_to_retest(QString)));
-  connect(ui->protocol,SIGNAL(currentIndexChanged(QString)),this,SLOT(need_to_retest(QString)));
+  connect(ui->protocol,SIGNAL(currentTextChanged(QString)),this,SLOT(need_to_retest(QString)));
 }
 
 RemoteDialog::~RemoteDialog()

@@ -46,7 +46,7 @@ QDos::~QDos()
   delete ui;
 }
 
-void QDos::on_unit_currentIndexChanged(const QString &arg1)
+void QDos::on_unit_currentTextChanged(const QString &arg1)
 {
   ui->unitDisplay->setText(arg1);
   UnitConverter newUnit = ui->unit->currentUnit();
@@ -161,7 +161,7 @@ void QDos::on_buttonBox_clicked(QAbstractButton *button)
       QString filename = QFileDialog::getSaveFileName(this,tr("PDF file"),_currentFolder,"PDF (*.pdf)",nullptr,QFileDialog::DontUseNativeDialog);
       if (!filename.endsWith(".pdf")) filename += ".pdf";
       ui->plot->savePdf(filename,0,0,QCP::epNoCosmetic);
-      int pos = filename.lastIndexOf(QRegExp("[/\\\\]"));
+      int pos = filename.lastIndexOf(QRegularExpression("[/\\\\]"));
       _currentFolder= filename.left(pos+1);
   }
   else if ( b == QDialogButtonBox::Reset)

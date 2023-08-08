@@ -75,7 +75,7 @@ void AddDos::on_atom_currentIndexChanged(int index)
         ui->magneticLabel->setEnabled(true);
         ui->magnetic->setVisible(true);
         ui->magneticLabel->setVisible(true);
-        this->on_projection_currentIndexChanged(ui->projection->currentText());
+        this->on_projection_currentTextChanged(ui->projection->currentText());
       }
       else
       {
@@ -99,7 +99,7 @@ void AddDos::setDb(DosDB *db)
   ui->atom->setCurrentIndex(0);
 }
 
-void AddDos::on_projection_currentIndexChanged(const QString &arg1)
+void AddDos::on_projection_currentTextChanged(const QString &arg1)
 {
   if (arg1.size() == 1)  // angular projection
   {

@@ -105,7 +105,12 @@ void Home::updateStatus(View *view)
 
   if (something)
   {
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+    auto& znucl = view->getCanvas()->histdata()->znucl();
+    _znucl = QVector<int>(znucl.begin(),znucl.end());
+#else
     _znucl = QVector<int>::fromStdVector(view->getCanvas()->histdata()->znucl());
+#endif
   }
 }
 
@@ -331,7 +336,7 @@ void Home::on_open_triggered()
       return;
     auto file2 = file1;
     emit(sendCommand(":open "+file2.replace(" ","\\ "),true));
-    int pos = file1.lastIndexOf(QRegExp("[/\\\\]"));
+    int pos = file1.lastIndexOf(QRegularExpression("[/\\\\]"));
     _currentFolder = file1.left(pos+1);
 
     for ( auto file = fileNames.begin()+1 ; file != fileNames.end() ; ++file )
@@ -358,7 +363,7 @@ void Home::on_append_triggered()
         auto file2 = *file;
         emit(sendCommand(":append "+file2.replace(" ","\\ "),pop));
         pop = false;
-        int pos = file->lastIndexOf(QRegExp("[/\\\\]"));
+        int pos = file->lastIndexOf(QRegularExpression("[/\\\\]"));
         _currentFolder = file->left(pos+1);
       }
     }

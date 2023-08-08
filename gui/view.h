@@ -12,7 +12,7 @@
 
 #include <QOpenGLFunctions>
 #include <QTimer>
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 #include "window/window.hpp"
 
 namespace Ui {
@@ -102,7 +102,7 @@ private:
   static const size_t _maxKeys = 14;
   std::array<bool,_maxKeys> _inputKeys;
   double _wheelDelta;
-  QRegExpValidator _cmdValidator;
+  QRegularExpressionValidator _cmdValidator;
   bool _fromCommandLine;
 };
 

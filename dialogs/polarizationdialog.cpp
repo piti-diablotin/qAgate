@@ -3,6 +3,7 @@
 #include "base/exception.hpp"
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QRegularExpression>
 
 PolarizationDialog::PolarizationDialog(QWidget *parent) :
   QDialog(parent),
@@ -22,7 +23,7 @@ void PolarizationDialog::on_browse_clicked()
   if ( !fileName.isEmpty() )
   {
     try {
-      int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+      int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
       _currentFolder = fileName.left(pos+1);
       ui->ddb->setText(fileName);
     }

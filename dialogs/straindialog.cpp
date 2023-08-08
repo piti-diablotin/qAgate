@@ -24,7 +24,7 @@ void StrainDialog::on_browse_clicked()
   if ( !fileName.isEmpty() )
   {
     try {
-      int pos = fileName.lastIndexOf(QRegExp("[/\\\\]"));
+      int pos = fileName.lastIndexOf(QRegularExpression("[/\\\\]"));
       _currentFolder = fileName.left(pos+1);
       HistData* tmp = HistData::getHist(fileName.toStdString());
       ui->time->setEnabled(tmp->ntime()>1);

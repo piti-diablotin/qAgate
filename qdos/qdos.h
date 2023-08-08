@@ -26,7 +26,7 @@ public:
 private slots:
   void coordStatusBar(QMouseEvent *event);
 
-  void on_unit_currentIndexChanged(const QString &arg1);
+  void on_unit_currentTextChanged(const QString &arg1);
 
   void on_browse_clicked();
 

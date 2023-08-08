@@ -32,24 +32,27 @@ void LocalMode::updateStatus(View *view)
       bool draw;
       auto octa = canvas->getOctahedra(draw);
       auto znucl = hist->znucl();
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+      _znuclOrder = QVector<int>(znucl.begin(),znucl.end());
+#else
       _znuclOrder = QVector<int>::fromStdVector(znucl);
+#endif
       for (unsigned i = 0; i < znucl.size(); ++i)
       {
         auto found = std::find(octa.begin(),octa.end(),znucl[i]);
-        QVariant data(znucl[i]);
         if (found == octa.end())
         {
           int newPos = 1;
           for (newPos=1 ; newPos<ui->octaAdd->count(); ++newPos)
-            if (ui->octaAdd->itemData(newPos)>data) break;
-          ui->octaAdd->insertItem(newPos,QString(MendeTable.name[znucl[i]]),data);
+            if (ui->octaAdd->itemData(newPos).toInt()>znucl[i]) break;
+          ui->octaAdd->insertItem(newPos,QString(MendeTable.name[znucl[i]]),QVariant(znucl[i]));
         }
         else
         {
           int newPos = 1;
           for (newPos=1 ; newPos<ui->octaDel->count(); ++newPos)
-            if (ui->octaDel->itemData(newPos)>data) break;
-          ui->octaDel->insertItem(newPos,QString(MendeTable.name[znucl[i]]),data);
+            if (ui->octaDel->itemData(newPos).toInt()>znucl[i]) break;
+          ui->octaDel->insertItem(newPos,QString(MendeTable.name[znucl[i]]),QVariant(znucl[i]));
         }
       }
     }
@@ -84,7 +87,7 @@ void LocalMode::on_octaAdd_activated(int index)
   auto data = ui->octaAdd->itemData(index);
   int newPos = 1;
   for (newPos=1 ; newPos<ui->octaDel->count(); ++newPos)
-    if (ui->octaDel->itemData(newPos)>data) break;
+    if (ui->octaDel->itemData(newPos).toInt()>data.toInt()) break;
   ui->octaDel->insertItem(newPos,ui->octaAdd->itemText(index),data);
   ui->octaAdd->removeItem(index);
   ui->octaAdd->setCurrentIndex(0);
@@ -98,7 +101,7 @@ void LocalMode::on_octaDel_activated(int index)
   auto data = ui->octaDel->itemData(index);
   int newPos = 1;
   for (newPos=1 ; newPos<ui->octaAdd->count(); ++newPos)
-    if (ui->octaAdd->itemData(newPos)>data) break;
+    if (ui->octaAdd->itemData(newPos).toInt()>data.toInt()) break;
   ui->octaAdd->insertItem(newPos,ui->octaDel->itemText(index),data);
   ui->octaDel->removeItem(index);
   ui->octaDel->setCurrentIndex(0);

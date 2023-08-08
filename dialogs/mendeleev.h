@@ -27,17 +27,17 @@ public slots:
 private slots:
   void on_mass_valueChanged(double arg1);
 
-  void on_massUnit_currentIndexChanged(const QString &arg1);
+  void on_massUnit_currentTextChanged(const QString &arg1);
 
   void on_color_clicked();
 
   void on_radius_valueChanged(double arg1);
 
-  void on_radiusUnit_currentIndexChanged(const QString &arg1);
+  void on_radiusUnit_currentTextChanged(const QString &arg1);
 
   void on_rcov_valueChanged(double arg1);
 
-  void on_rcovUnit_currentIndexChanged(const QString &arg1);
+  void on_rcovUnit_currentTextChanged(const QString &arg1);
 
 
 private:

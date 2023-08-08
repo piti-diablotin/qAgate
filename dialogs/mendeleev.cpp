@@ -104,7 +104,7 @@ void Mendeleev::on_mass_valueChanged(double arg1)
   _activeElement->setMass(arg1/_massUnit);
 }
 
-void Mendeleev::on_massUnit_currentIndexChanged(const QString &arg1)
+void Mendeleev::on_massUnit_currentTextChanged(const QString &arg1)
 {
   UnitConverter newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::amu);
@@ -149,7 +149,7 @@ void Mendeleev::on_radius_valueChanged(double arg1)
   _activeElement->setRadius(arg1/_radiusUnit);
 }
 
-void Mendeleev::on_radiusUnit_currentIndexChanged(const QString &arg1)
+void Mendeleev::on_radiusUnit_currentTextChanged(const QString &arg1)
 {
   UnitConverter newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::bohr);
@@ -172,7 +172,7 @@ void Mendeleev::on_rcov_valueChanged(double arg1)
   _activeElement->setRcov(arg1/_rcovUnit);
 }
 
-void Mendeleev::on_rcovUnit_currentIndexChanged(const QString &arg1)
+void Mendeleev::on_rcovUnit_currentTextChanged(const QString &arg1)
 {
   UnitConverter newUnit = UnitConverter::getFromString(arg1.toStdString());
   newUnit.rebase(UnitConverter::bohr);
