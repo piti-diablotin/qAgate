@@ -119,7 +119,7 @@ void Visuals::updateStatus(View *view)
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
       _znuclOrder = QVector<int>(znucl.begin(),znucl.end());
 #else
-      _znuclOrder = QVector<int>fromStdVector(znucl);
+      _znuclOrder = QVector<int>::fromStdVector(znucl);
 #endif
       for (unsigned i = 0; i < znucl.size(); ++i)
       {
