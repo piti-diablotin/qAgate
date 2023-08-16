@@ -61,12 +61,6 @@
       </property>
       <item>
        <widget class="QLabel" name="upperLeft">
-        <property name="font">
-         <font>
-          <family>Ubuntu</family>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
         <property name="styleSheet">
          <string notr="true">#upperLeft
 {
@@ -164,12 +158,6 @@ background-color:rgba(0,0,0,0);
       </property>
       <item>
        <widget class="QLabel" name="infoLine">
-        <property name="font">
-         <font>
-          <family>Ubuntu</family>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
         <property name="styleSheet">
          <string notr="true">#infoLine
 {
@@ -205,12 +193,6 @@ color:#FFFFFF;
    </item>
    <item>
     <widget class="CommandLine" name="commandLine">
-     <property name="font">
-      <font>
-       <family>Ubuntu</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
      <property name="focusPolicy">
       <enum>Qt::ClickFocus</enum>
      </property>
