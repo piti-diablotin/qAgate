@@ -277,12 +277,6 @@ background: url(:/logger/icons/alert-circle.svg) no-repeat;
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
-     <property name="font">
-      <font>
-       <family>Ubuntu Mono</family>
-       <pointsize>9</pointsize>
-      </font>
-     </property>
      <property name="focusPolicy">
       <enum>Qt::NoFocus</enum>
      </property>
