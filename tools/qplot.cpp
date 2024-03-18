@@ -54,7 +54,7 @@ void QPlot::plot(const std::vector<double> &x, const std::list<std::vector<doubl
       ++label;
     }
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
-    graph->setData(QVector<double>(x.begin(),x.end()),QVector<double>(*yp->begin(),*yp->end()));
+    graph->setData(QVector<double>(x.begin(),x.end()),QVector<double>(yp->begin(),yp->end()));
 #else
     graph->setData(QVector<double>::fromStdVector(x),QVector<double>::fromStdVector(*yp));
 #endif
